@@ -8,6 +8,11 @@ Assets
 
 * [Character Mesh Replacement](CharacterMeshReplacement.md)
 
+Mapping
+-------
+
+* [Level Config](LevelConfig.md)
+
 Programming
 -----------
 
