@@ -10,7 +10,7 @@ You can opt-in to the 2018.4 LTS beta version from the Steam library:
 2. Find Unturned
 3. Right click and select Properties
 4. Switch to Betas tab
-5. Choose "unity-2018" from dropdown
+5. Choose "unity-2018.4" from dropdown
 
 Known Issues
 ------------
@@ -33,12 +33,14 @@ Uploads from the beta will be incompatible with past versions of the game, and a
 
 2017.4 Availability
 -------------------
-For archival purposes the 2017.4 version of the game will remain in a "unity-2017" beta branch.
+For archival purposes the 2017.4 version of the game will remain in a "unity-2017.4" beta branch.
 
 Platforms
 ---------
 
 Linux 32-bit and MacOS 32-bit have been removed, and of course 64-bit versions will always be available. Servers that were still using the outdated Linux 32-bit depot should update to the 64-bit Linux dedicated server.
+
+Headless server files have been removed from the player Linux depot, and are instead only in the dedicated server Linux depot. Windows headless mode is now supported in 2018.4, and is enabled for the Windows dedicated server depot.
 
 Game Changes
 ------------
@@ -46,6 +48,7 @@ Game Changes
 - Updated usage of OnApplicationQuit to new API.
 - Updated usage of SplatPrototypes to TerrainLayers.
 - Updated usage of WWW to UnityWebRequest.
+- Windows dedicated server depot uses the headless player.
 - Optimized Steam thumbnail retrieval.
 - Prevent duplicates in pending-load master bundles list.
 - Assorted fixes to runtime-loaded UI textures.
