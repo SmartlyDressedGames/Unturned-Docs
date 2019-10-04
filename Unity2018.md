@@ -48,6 +48,7 @@ Game Changes
 - Updated usage of OnApplicationQuit to new API.
 - Updated usage of SplatPrototypes to TerrainLayers.
 - Updated usage of WWW to UnityWebRequest.
+- Reworked all logging systems, removing usage of Unity's built-in debug and older terminal. Logs are unified as Client_* and Server_* in logs folder, and -logfile redirects are not as necessary.
 - Windows dedicated server depot uses the headless player.
 - Optimized Steam thumbnail retrieval.
 - Prevent duplicates in pending-load master bundles list.
