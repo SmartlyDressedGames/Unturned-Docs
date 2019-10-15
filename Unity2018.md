@@ -12,11 +12,6 @@ You can opt-in to the 2018.4 LTS beta version from the Steam library:
 4. Switch to Betas tab
 5. Choose "unity-2018.4" from dropdown
 
-Known Issues
-------------
-
-Germany crashes when loaded. This should be fixed in a future LTS release: https://forum.unity.com/threads/having-a-crash-in-physicsmanager-simulate.735407/
-
 Asset Bundles
 -------------
 
@@ -25,6 +20,11 @@ There should not be any breaking changes (unlike 2017.4).
 All backwards-compatibility is handled by the game. Individual .unity3d asset bundles as well as .masterbundles will have their shaders consolidated with new versions by the game. Custom shaders will need to be re-exported, at which point Asset_Bundle_Version can be set to 3 in MasterBundle.dat or individual .dat files.
 
 All_Shaders.unitypackage has been updated for 2018.4 and now has a consistent export process to ensure the contents are kept valid.
+
+Logging / Server Console
+------------------------
+
+Usage of Unity's built-in Debug.Log has been replaced with logging to the Client.log or Server_XYZ.log files in the Logs folder. This works around conflict with standard output on the Linux server, so -logfile redirect workarounds should no longer be necessary. -ThreadedConsole implementation has been made the default, but can be disabled by -LegacyConsole.
 
 Workshop
 --------
