@@ -15,7 +15,7 @@ __Map Variety__: New maps should feel noticeably different in order to be a cand
 
 __Asset Validation__: Running the game with the [-ValidateAssets](ValidateAssets.md) command-line flag should not produce any warnings or errors.
 
-__English Text__: Having an English-speaking member of the mod team is recommended, and [MoltonMontro](moltonmontro@smartlydressedgames.com) has offered to help with English-related questions. Most importantly in this regard is proper punctuation and grammar: while native English speakers can easily read incorrect punctuation, it is very helpful for non-native readers. Ironically this paragraph probably has some punctuation errors.
+__English Text__: Having an English-speaking member of the mod team is recommended, and [MoltonMontro](mailto:moltonmontro@smartlydressedgames.com) has offered to help with English-related questions. Most importantly in this regard is proper punctuation and grammar: while native English speakers can easily read incorrect punctuation, it is very helpful for non-native readers. Ironically this paragraph probably has some punctuation errors.
 
 __Project Organization__: To prevent unintended assets from being exported into asset bundles, convention is to separate the project files into Sources and MasterBundle directories. Hawaii is split between a directory called "HawaiiMasterBundle" in the project root, and a Sources directory which contains all of the .blend, .mb, .xcf, .psd, .ai, etc files. When exporting the asset bundle this ensures only game files like .fbx and .prefab are included.
 
