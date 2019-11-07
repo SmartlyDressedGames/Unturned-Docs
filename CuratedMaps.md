@@ -41,3 +41,17 @@ __Curated Workshop Item__: Payment splits are handled by a hidden curated worksh
 __Bundles__: Two or three collections of sets of four to six items.
 
 __Mystery Boxes__: Fifteen to twenty items that have individual value (not parts of sets like a shirt/pants).
+
+
+Eligibility for Curation
+------------------------
+
+Even if a map is of substantial quality, it may not be eligible for curation. When considering eligibility, it is important that the map fits the vanilla style of the game.
+
+Although not every map should be curated, it is important to recognize the amount of effort that modders have put into their projects. Depending on the direction of the project, non-vanilla assets should either be adjusted to fit the vanilla style, or alternatives to curation should be considered instead.
+
+__Vanilla-style maps__: are eligible for curation. They are also eligible for cosmetic bundles or mystery boxes.
+
+__Non-vanilla maps__: are eligible to be featured. They are also eligible to have cosmetic content on the Stockpile.
+
+It is encouraged to still work on a project even if it is not eligible for curation. Creating a variety of Workshop content creates a valuable portfolio for future curation attempts, and may still benefit from being featured.
