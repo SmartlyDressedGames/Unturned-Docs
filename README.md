@@ -6,6 +6,7 @@ This repository exists to document [Unturned's](https://store.steampowered.com/a
 Assets
 ------
 
+* [Getting Started](GettingStarted.md)
 * [Exporting Asset Bundles](AssetBundles.md)
 * [Character Mesh Replacement](CharacterMeshReplacement.md)
 * [Upgrading from Unity 2017.4 LTS to 2018.4 LTS](Unity2018.md)

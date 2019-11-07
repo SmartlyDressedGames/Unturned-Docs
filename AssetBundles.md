@@ -5,6 +5,16 @@ The game loads textures, audio, meshes, prefabs, etc from Unity __Asset Bundles_
 
 [Master Bundles](#master-bundles) should be used for essentially all new projects.
 
+Tool Setup
+----------
+
+Prior to using any of these tools they must be imported into a Unity project
+
+1. Inside Unity open the Assets > Import Package > Custom Package... wizard.
+1. Find the Unturned installation directory.
+3. Navigate to the Bundles/Sources directory.
+4. Import the Project.unitypackage.
+
 Individual Asset Bundles (*.unity3d)
 -----------------------------------
 
@@ -12,12 +22,11 @@ Most official files have transitioned to the master bundle system, but some uses
 
 ### Tool Usage:
 
-1. Navigate to the Bundles/Sources/Tools directory.
-2. Import BundleTool.cs into a Unity project's Assets/Editor directory.
-3. Open the tool from the Window > Unturned > Bundle Tool menu.
-4. Select individual assets or directories of assets in the Project window.
-5. Click Grab to preview which assets will be exported.
-6. Click Bundle to choose a destination for the asset bundle file.
+1. Follow _Tool Setup_ instructions.
+2. Open the tool from the Window > Unturned > Bundle Tool menu.
+3. Select individual assets or directories of assets in the Project window.
+4. Click Grab to preview which assets will be exported.
+5. Click Bundle to choose a destination for the asset bundle file.
 
 ### Motivations:
 
@@ -30,13 +39,12 @@ This format is used by devkit landscapes, material palettes and radio songs, but
 
 ### Tool Usage:
 
-1. Navigate to the Bundles/Sources/Tools directory.
-2. Import ContentTool.cs into a Unity project's Assets/Editor directory.
-3. Open the tool from the Window > Unturned > Content Tool menu.
-4. Select directories of assets in the Project window.
-5. In the Inspector window tag them in an asset bundle ending with ".content".
-6. Click ... to choose a destination for the content bundle file.
-7. Click Export.
+1. Follow _Tool Setup_ instructions.
+2. Open the tool from the Window > Unturned > Content Tool menu.
+3. Select directories of assets in the Project window.
+4. In the Inspector window tag them in an asset bundle ending with ".content".
+5. Click ... to choose a destination for the content bundle file.
+6. Click Export.
 
 ### Motivations:
 
@@ -77,14 +85,13 @@ Individual asset *.dats can set the following keys:
 
 ### Tool Usage:
 
-1. Navigate to the Bundles/Sources/Tools directory.
-2. Import EditorAssetBundleHelper.cs, MasterBundleHelper.cs and MasterBundleTool.cs into a Unity project's Assets/Editor directory.
-3. Open the tool from the Window > Unturned > Master Bundle Tool menu.
-4. Select directories of assets in the Project window.
-5. In the Inspector window tag them in any asset bundle.
-6. Click the checkbox next to an asset bundle's name in the tool to mark it as a master bundle. This filters the list of asset bundles to show, and tracks an export path associated with it.
-7. Click the ... to choose a destination for the bundle file.
-8. Click Export.
+1. Follow _Tool Setup_ instructions.
+2. Open the tool from the Window > Unturned > Master Bundle Tool menu.
+3. Select directories of assets in the Project window.
+4. In the Inspector window tag them in any asset bundle.
+5. Click the checkbox next to an asset bundle's name in the tool to mark it as a master bundle. This filters the list of asset bundles to show, and tracks an export path associated with it.
+6. Click the ... to choose a destination for the bundle file.
+7. Click Export.
 
 ### Motivations:
 
