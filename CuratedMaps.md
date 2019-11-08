@@ -6,6 +6,26 @@ Overview
 
 Community-created updates and maps that are officially linked from the game are considered __Curated Maps__. They help players find high-quality new experiences, and keep the game updated with fresh content. Modders can then earn money from their work on their hobby, and get their creations highlighted.
 
+Menu Visibility
+---------------
+
+One key component of sharing a curated map, trending popular workshop item, or specifically featured map is spotlighting it on the main menu. In any of these cases an article is placed above the recent news and announcements showcasing the preview image, and an expandable description.
+
+In-game the description supports the following bbcode tags:
+- [b]
+- [i]
+- [list]
+- [*]
+- [h1]
+- [img]
+- [url]
+
+Ideally descriptions are kept succinct, so separate discussion topics might be a better place for long sections like ID lists.
+
+By default popular items are surfaced, but workshop items can be specifically featured to help bring attention to projects with a lot of effort put into them, and curated maps. This can be done for new releases or major updates.
+
+Additionally, curated maps are linked from the singleplayer curated maps list, and will inherit the main menu "new" or "updated" label.
+
 Quality Assurance
 -----------------
 
@@ -32,7 +52,7 @@ __Item Icons__: Each item should have a proper icon in the inventory. One way to
 Stockpile Preparation
 ---------------------
 
-Each release is usually accompanied by a few cosmetics and skins in the game's item store. Royalties from the sales are shared with the mod team.
+Each curated map release is usually accompanied by a few cosmetics and skins in the game's item store. Royalties from the sales are shared with the mod team. Even if a project is not eligible for curation, it may be appropriate to have some support-the-creator items in the Stockpile e.g. the Candyland map.
 
 __File Sharing__: Ideally the items have been setup for use as clothes in-game, and then exported into a .unitypackage. This package will then be imported into the vanilla project.
 
@@ -50,8 +70,6 @@ Even if a map is of substantial quality, it may not be eligible for curation. Wh
 
 Although not every map should be curated, it is important to recognize the amount of effort that modders have put into their projects. Depending on the direction of the project, non-vanilla assets should either be adjusted to fit the vanilla style, or alternatives to curation should be considered instead.
 
-__Vanilla-style Maps__: are eligible for curation. They are also eligible for cosmetic bundles or mystery boxes.
-
-__Non-vanilla Maps__: are eligible to be featured. They are also eligible to have cosmetic content on the Stockpile.
+Vanilla-style maps are eligible for curation, whereas non-vanilla maps are eligible to be featured. To help support the creators, both are eligible for revenue sharing cosmetic content in the game's item store e.g. the Candyland map.
 
 It is encouraged to still work on a project even if it is not eligible for curation. Creating a variety of Workshop content creates a valuable portfolio for future curation attempts, and may still benefit from being featured.
