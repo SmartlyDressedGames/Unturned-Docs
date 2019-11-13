@@ -68,29 +68,29 @@ Blueprints
 
 __Blueprints__:
 
-__Blueprint_#_Type__: Supply
+__Blueprint\_#\_Type__: Supply
 
-__Blueprint_#_Supplies__:
+__Blueprint\_#\_Supplies__:
 
-__Blueprint_#_Supply_#_ID__:
+__Blueprint\_#\_Supply\_#\_ID__:
 
-__Blueprint_#_Level__:
+__Blueprint\_#\_Level__:
 
-__Blueprint_#_Skill__: Cook, Craft
+__Blueprint\_#\_Skill__: Cook, Craft
 
-__Blueprint_#_Build__:
+__Blueprint\_#\_Build__:
 
 Actions
 =======
 
 __Actions__:
 
-__Action_#_Type__: Blueprint
+__Action\_#\_Type__: Blueprint
 
-__Action_#_Source__: ID of the item with the blueprint this action should perform.
+__Action\_#\_Source__: ID of the item with the blueprint this action should perform.
 
-__Action_#_Blueprints__:
+__Action\_#\_Blueprints__:
 
-__Action_#_Blueprint_#_Index__:
+__Action\_#\_Blueprint\_#\_Index__:
 
-__Action_#_Key__: Craft_Seed
+__Action\_#\_Key__: Craft_Seed
