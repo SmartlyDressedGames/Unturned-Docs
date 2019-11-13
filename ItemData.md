@@ -1,15 +1,9 @@
-Consumables
-============
-
-Consumables in _Unturned_ encompass anything that is irreversibly consumed by the player on use, and directly affect a player's stats such as food or health.
+Non-specific Data
+=================
 
 __GUID__:
 
-__Type__: Food, Medical, Water
-
 __Rarity__: Common, Uncommon, Rare, Epic, Legendary, Mythical
-
-__Useable__: Consumeable
 
 __ID__:
 
@@ -18,6 +12,47 @@ __Size_X__:
 __Size_Y__:
 
 __Size_Z__:
+
+Blueprints
+----------
+
+__Blueprints__:
+
+__Blueprint\_#\_Type__: Supply
+
+__Blueprint\_#\_Supplies__:
+
+__Blueprint\_#\_Supply\_#\_ID__:
+
+__Blueprint\_#\_Level__:
+
+__Blueprint\_#\_Skill__: Cook, Craft
+
+__Blueprint\_#\_Build__:
+
+Actions
+-------
+
+__Actions__:
+
+__Action\_#\_Type__: Blueprint
+
+__Action\_#\_Source__: ID of the item with the blueprint this action should perform.
+
+__Action\_#\_Blueprints__:
+
+__Action\_#\_Blueprint\_#\_Index__:
+
+__Action\_#\_Key__: Craft_Seed
+
+Consumables
+============
+
+Consumables in _Unturned_ encompass anything that is irreversibly consumed by the player on use, and directly affect a player's stats such as food or health.
+
+__Type__: Food, Medical, Water
+
+__Useable__: Consumeable
 
 __Quality_Max__:
 
@@ -62,35 +97,3 @@ __Bleeding__: Specified if bleeding is cured. Requires that Health is also added
 __Broken__: Specified if broken legs are cured.
 
 __Aid__: Specified if the item can be used on other players via right-click.
-
-Blueprints
-==========
-
-__Blueprints__:
-
-__Blueprint\_#\_Type__: Supply
-
-__Blueprint\_#\_Supplies__:
-
-__Blueprint\_#\_Supply\_#\_ID__:
-
-__Blueprint\_#\_Level__:
-
-__Blueprint\_#\_Skill__: Cook, Craft
-
-__Blueprint\_#\_Build__:
-
-Actions
-=======
-
-__Actions__:
-
-__Action\_#\_Type__: Blueprint
-
-__Action\_#\_Source__: ID of the item with the blueprint this action should perform.
-
-__Action\_#\_Blueprints__:
-
-__Action\_#\_Blueprint\_#\_Index__:
-
-__Action\_#\_Key__: Craft_Seed
