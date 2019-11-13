@@ -13,6 +13,29 @@ __Size_Y__:
 
 __Size_Z__:
 
+Damage
+------
+
+__Player_Damage__:
+
+__Zombie_Damage__:
+
+__Animal_Damage__:
+
+__Barricade_Damage__:
+
+__Structure_Damage__:
+
+__Vehicle_Damage__:
+
+__Resource_Damage__:
+
+__Object_Damage__:
+
+__Range__:
+
+__Explosion__:
+
 Blueprints
 ----------
 
@@ -55,26 +78,6 @@ __Type__: Food, Medical, Water
 __Useable__: Consumeable
 
 __Quality_Max__:
-
-__Player_Damage__:
-
-__Zombie_Damage__:
-
-__Animal_Damage__:
-
-__Barricade_Damage__:
-
-__Structure_Damage__:
-
-__Vehicle_Damage__:
-
-__Resource_Damage__:
-
-__Object_Damage__:
-
-__Range__:
-
-__Explosion__:
 
 __Health__: The amount of health to add.
 
