@@ -79,6 +79,12 @@ __Useable__: Consumeable
 
 __Quality_Max__:
 
+__Aid__: Specified if the item can be used on other players via right-click.
+
+__Bleeding__: Specified if bleeding is cured. Requires that Health is also added by the item.
+
+__Broken__: Specified if broken legs are cured.
+
 __Health__: The amount of health to add.
 
 __Food__: The amount of food to add.
@@ -94,9 +100,3 @@ __Virus__: The amount of immunity to remove.
 __Energy__: The amount of energy to add.
 
 __Vision__: The length of hallucinations. This is stacked with each time eaten.
-
-__Bleeding__: Specified if bleeding is cured. Requires that Health is also added by the item.
-
-__Broken__: Specified if broken legs are cured.
-
-__Aid__: Specified if the item can be used on other players via right-click.
