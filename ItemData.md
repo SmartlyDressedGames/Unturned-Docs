@@ -99,4 +99,4 @@ __Virus__: The amount of immunity to remove.
 
 __Energy__: The amount of energy to add.
 
-__Vision__: The length of hallucinations. This is stacked with each time eaten.
+__Vision__: The length of hallucinations. The length does not stack with each time eaten, but the timer is reset for equal or longer Vision values relative to the remaining hallucination time.
