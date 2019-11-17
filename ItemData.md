@@ -9,13 +9,13 @@ __Useable__: This defines which class to use for the item when equipped. If unsp
 
 __Rarity__: Common, Uncommon, Rare, Epic, Legendary, Mythical
 
-__ID__:
+__ID__: The item ID is used to spawn the item into the game, and is represented as an unsigned 16 bit integer (a range of 0–65535). It is recommended not to use a value less than 2,000 as those are reserved for official content. It is also recommended to avoid any ID range being used by curated content, as those are often used by modded servers and custom Workshop maps.
 
-__Size_X__:
+__Size_X__: The width of the item in the inventory.
 
-__Size_Y__:
+__Size_Y__: The height of the item in the inventory.
 
-__Size_Z__:
+__Size_Z__: The size of the camera for item icons.
 
 Damage
 ------
