@@ -1,7 +1,11 @@
 Non-specific Data
 =================
 
-__GUID__:
+__GUID__: The GUID is automatically generated for the item when the game is launched. If it is not automatically generated, then it is assumable that the content was not set up properly.
+
+__Type__: Each category of item has its own type. The type to use can be found for each specific item category below, and is used for the item's context type as viewed in the context menu.
+
+__Useable__: This defines which class to use for the item when equipped. If unspecified it will default to None, meaning that the item cannot be equipped. Which value to use for equippable items can be found below for each item category.
 
 __Rarity__: Common, Uncommon, Rare, Epic, Legendary, Mythical
 
