@@ -10,6 +10,8 @@ Asset properties:
 * Has_1P_Character_Mesh_Override: true
 * Character_Mesh_3P_Override_LODs: >0
 * Has_Character_Material_Override: true
+* Hair_Visible: true/false
+* Beard_Visible: true/false
 
 If Has_1P_Character_Mesh_Override is true then the game will try to load a prefab named "Character_Mesh_1P_Override_0". This should have a MeshFilter component with the first person arms replacement mesh.
 
