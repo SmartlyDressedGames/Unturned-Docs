@@ -84,8 +84,6 @@ __Use_Legacy_Objects__ _bool_: Should objects be loaded from Objects.dat file? U
 
 __Use_Legacy_Snow_Height__ _bool_: Should travelling vertically past snow height threshold enable snow effects? Defaults to true.
 
-__Use_Legacy_Fog_Height__ _bool_: Should default terrain height be used for fog falloff? If false, devkit landscape tile limits are used instead. Defaults to true.
-
 __Use_Legacy_Oxygen_Height__ _bool_: Should travelling vertically past a certain point deplete oxygen? Defaults to true.
 
 __Use_Rain_Volumes__ _bool_: Should rain flag in ambiance volume be used?
@@ -143,6 +141,8 @@ __Allow_Information__ bool
 
 Deprecated
 ----------
+
+__Use_Legacy_Fog_Height__ _bool_: Should default terrain height be used for fog falloff? If false, devkit landscape tile limits are used instead. Defaults to true.
 
 __Load_From_Resources__ _bool_: Used in the past for curated maps with assets in the vanilla Resources/Bundles/* directory. Master Bundles completely replaced this.
 
