@@ -15,6 +15,6 @@ Asset properties:
 
 If Has_1P_Character_Mesh_Override is true then the game will try to load a prefab named "Character_Mesh_1P_Override_0". This should have a MeshFilter component with the first person arms replacement mesh.
 
-If Character_Mesh_3P_Override_LODs is greather than zero then the game will try to load prefabs for each LOD index e.g. Character_Mesh_3P_Override_0. These should have MeshFilter componens for the third person replacement meshes.
+If Character_Mesh_3P_Override_LODs is greater than zero then the game will try to load prefabs for each LOD index (e.g., Character_Mesh_3P_Override_0). These should have MeshFilter components for the third person replacement meshes.
 
-If Has_Character_Material_Override is true then the game will try to load a material named "Character_Material_Override" to replace the 1P and 3P mesh materials. Without this equipped  shirt and pants textures will be used by default.
+If Has_Character_Material_Override is true then the game will try to load a material named "Character_Material_Override" to replace the 1P and 3P mesh materials. Without this, equipped shirt and pants textures will be used by default.
