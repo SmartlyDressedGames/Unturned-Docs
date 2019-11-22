@@ -12,6 +12,7 @@ Assets
 * [Upgrading from Unity 2017.4 LTS to 2018.4 LTS](Unity2018.md)
 * [Mod Hooks](ModHooks.md)
 * [Asset Validation](AssetValidation.md)
+* [Currency](Currency.md)
 
 Mapping
 -------
