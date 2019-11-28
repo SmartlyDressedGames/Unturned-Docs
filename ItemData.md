@@ -85,7 +85,7 @@ __Quality_Max__:
 
 __Aid__: Specified if the item can be used on other players via right-click.
 
-__Bleeding__: Specified if bleeding is cured. Requires that Health is also added by the item.
+__Bleeding__: Specified if bleeding is cured.
 
 __Broken__: Specified if broken legs are cured.
 
