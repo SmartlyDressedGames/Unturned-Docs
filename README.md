@@ -20,6 +20,7 @@ Mapping
 
 * [Level Config](LevelConfig.md)
 * [Curated Maps](CuratedMaps.md)
+* [Favorite Searches](FavoriteSearches.md)
 
 Programming
 -----------
