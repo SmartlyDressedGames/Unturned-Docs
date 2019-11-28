@@ -114,6 +114,8 @@ __Prevent_Building_Near_Spawnpoint_Radius__ _float_: Closest distance players ca
 
 __Spawn_Loadouts__ Array of items to grant when spawning in any mode. Refer to Arena_Loadouts.
 
+__Allow_Holiday_Redirects__ _bool_: Whether certain assets like objects, trees and landscapes should load alternative versions during holiday events.
+
 HUD
 ---
 
