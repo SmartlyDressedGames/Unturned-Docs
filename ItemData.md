@@ -7,7 +7,7 @@ __Type__: Each category of item has its own type. The type to use can be found f
 
 __Useable__: This defines which class to use for the item when equipped. If unspecified it will default to None, meaning that the item cannot be equipped. Which value to use for equippable items can be found below for each item category.
 
-__Rarity__: Common, Uncommon, Rare, Epic, Legendary, Mythical
+__Rarity__: <code>Common</code>, <code>Uncommon</code>, <code>Rare</code>, <code>Epic</code>, <code>Legendary</code>, <code>Mythical</code>
 
 __ID__: The item ID is used to spawn the item into the game, and is represented as an unsigned 16 bit integer (a range of 0–65535). It is recommended not to use a value less than 2,000 as those are reserved for official content. It is also recommended to avoid any ID range being used by curated content, as those are often used by modded servers and custom Workshop maps.
 
@@ -74,7 +74,7 @@ __Action\_#\_Blueprints__:
 
 __Action\_#\_Blueprint\_#\_Index__:
 
-__Action\_#\_Key__: Craft_Dressing, Craft_Seed
+__Action\_#\_Key__: <code>Craft_Dressing</code>, <code>Craft_Seed</code>
 
 Consumables
 ============
