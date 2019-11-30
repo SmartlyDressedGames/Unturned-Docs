@@ -20,6 +20,8 @@ __Size_Z__: The size of the camera for item icons.
 Damage
 ------
 
+Damage data can be utilized by explosive consumables, explosive throwables, melee weapons, and ranged weapons.
+
 __Player_Damage__:
 
 __Zombie_Damage__:
