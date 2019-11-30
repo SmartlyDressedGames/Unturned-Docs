@@ -17,6 +17,8 @@ __Size_Y__: The height of the item in the inventory.
 
 __Size_Z__: The size of the camera for item icons.
 
+__Size2_Z__:
+
 Damage
 ------
 
