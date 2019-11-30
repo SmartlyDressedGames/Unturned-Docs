@@ -72,7 +72,7 @@ __Action\_#\_Blueprints__:
 
 __Action\_#\_Blueprint\_#\_Index__:
 
-__Action\_#\_Key__: Craft_Seed
+__Action\_#\_Key__: Craft_Dressing, Craft_Seed
 
 Consumables
 ============
