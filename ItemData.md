@@ -85,7 +85,11 @@ __Quality_Max__:
 
 __Aid__: Specified if the item can be used on other players via right-click.
 
+__Bleeding_Modifier__:
+
 __Bleeding__: Specified if bleeding is cured.
+
+__Bones_Modifier__:
 
 __Broken__: Specified if broken legs are cured.
 
@@ -104,3 +108,5 @@ __Virus__: The amount of immunity to remove.
 __Energy__: The amount of energy to add.
 
 __Vision__: The length of hallucinations. The length does not stack with each time eaten, but the timer is reset for equal or longer Vision values relative to the remaining hallucination time.
+
+__Oxygen__:
