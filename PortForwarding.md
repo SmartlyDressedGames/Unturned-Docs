@@ -36,6 +36,9 @@ In general the steps are along the lines of:
 4. Find the option to add a new rule.
 5. Name the new rule something related to Unturned for reference.
 6. Input 27015 as the starting port(s) and 27017 as the ending port(s).
+
+	On some routers it might not be possible to input multiple ports within a single rule. In that case multiple rules can be setup; one for each of the three port.
+
 7. Enable TCP and UDP protocols.
 8. Set destination internal IP to the local host address.
 9. Save the new rule.
