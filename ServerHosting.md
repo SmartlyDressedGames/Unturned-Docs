@@ -3,15 +3,18 @@ Server Hosting
 
 All multiplayer servers are hosted using the Unturned Dedicated Server tool, which is installed and updated through Valve's [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD) tool.
 
+__Multiplatform:__
+- [How to Configure Server](#How-to-Configure-Server)
+- [How to Host Over Internet](#How-to-Host-Over-Internet)
+- [Port Forwarding](PortForwarding.md)
+
 __Windows:__
 - [How to Install SteamCMD](#How-to-Install-SteamCMD-on-Windows)
 - [How to Launch Server](#How-to-Launch-Server-on-Windows)
-- [How to Configure Server](#How-to-Configure-Server)
 
 __Linux:__
 - [How to Install SteamCMD](#How-to-Install-SteamCMD-on-Linux)
 - [How to Launch Server](#How-to-Launch-Server-on-Linux)
-- [How to Configure Server](#How-to-Configure-Server)
 
 How to Install SteamCMD on Windows
 ----------------------------------
@@ -20,14 +23,14 @@ How to Install SteamCMD on Windows
 2. Extract the contents of the zip somewhere you can find it again.
 3. Run `steamcmd.exe`
 
-Continue to: [How to Launch Server on Windows](#How-to-Launch-Server-on-Windows)
+Continue to: [How to Install Server using SteamCMD](#How-to-Install-Server-using-SteamCMD)
 
 How to Install SteamCMD on Linux
 --------------------------------
 
 Installation on Linux varies by distribution and your admin preferences, so refer to [Valve's Linux Documentation](https://developer.valvesoftware.com/wiki/SteamCMD#Linux). Once downloaded, run the `steamcmd.sh` script.
 
-Continue to: [How to Launch Server on Linux](#How-to-Launch-Server-on-Linux)
+Continue to: [How to Install Server using SteamCMD](#How-to-Install-Server-using-SteamCMD)
 
 How to Install Server using SteamCMD
 -------------------------------------------------------
@@ -47,6 +50,8 @@ How to Install Server using SteamCMD
 		quit
 
 4. The server files are now in the SteamCMD > steamapps > common > U3DS directory.
+
+Continue to: [How to Launch Server on Windows](#How-to-Launch-Server-on-Windows) or [How to Launch Server on Linux](#How-to-Launch-Server-on-Linux)
 
 How to Launch Server on Windows
 -------------------------------
@@ -157,3 +162,12 @@ To include a Workshop file on your server:
 		],
 
 4. During startup the files will be updated, and any dependencies detected. Players will have the files downloaded while connecting to the server.
+
+How to Host Over Internet
+-------------------------
+
+Hosting a publicly-accessible internet server requires an extra step compared to a LAN server. When on a home network [Port Forwarding](PortForwarding.md) is required in order to direct traffic to the host computer.
+
+One way to think of it is that when there are multiple devices (e.g. computers and phones) connected to the LAN, the outside internet does not know which device is the Unturned server. In this case port forwarding specifies which LAN device is the host.
+
+For port ranges and other details: [Port Forwarding](PortForwarding.md)
