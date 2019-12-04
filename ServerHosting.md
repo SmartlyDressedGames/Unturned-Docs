@@ -130,14 +130,14 @@ Common useful commands are:
 		Port 27015
 		Port 27018
 
-- __Name__: Advertise server listing by name, or "Unturned" by default.
+- __Name__: Name of the server on the server list; set as "Unturned" by default.
 - __Password__: Requires password to join server. Note that password is only SHA1 hashed, so don't use the same password anywhere else.
 - __Perspective__: Can be set to "First", "Third", "Both", or "Vehicle" to change camera options.
 - __Cheats__: Allows admins to invoke cheat commands like spawning items or vehicles from the chat.
 
 Game rules, listing display, and many other options are available in the `Config.json` file. Game options mirror the in-game Play > Singleplayer > Config menu. This file deserves further documentation, but is not officially documented yet.
 
-Steam Workshop maps, items, vehicles, etc are setup in the `WorkshopDownloadConfig.json` file.
+Steam Workshop add-ons (e.g., maps, items, vehicles) are setup in the `WorkshopDownloadConfig.json` file.
 To include a Workshop file on your server:
 
 1. Browse to its web page, for example: [Hawaii](https://steamcommunity.com/sharedfiles/filedetails/?id=1753134636)
