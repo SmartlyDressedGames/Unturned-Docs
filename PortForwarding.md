@@ -39,3 +39,11 @@ In general the steps are along the lines of:
 7. Enable TCP and UDP protocols.
 8. Set destination internal IP to the local host address.
 9. Save the new rule.
+
+### Single Port Forwarding
+
+Some routers may not support port range forwarding (e.g., 27015 as the starting port(s) and 27017 as the ending port(s) as one rule rule). Instead, a unique rule must be created for each port being opened. For example:
+
+* **Rule 1**: 27015 as the starting port(s) and 27015 as the ending port(s)
+* **Rule 2**: 27016 as the starting port(s) and 27016 as the ending port(s)
+* **Rule 3**: 27017 as the starting port(s) and 27017 as the ending port(s)
