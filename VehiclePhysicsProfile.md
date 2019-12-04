@@ -24,7 +24,15 @@ Asset Properties Reference
 
 __Root_Mass__: If set, overrides vehicle rigidbody's mass.
 
+__Root_Mass_Multiplier__: If set, multiplies vehicle rigidbody's mass.
+
+__Root_Drag_Multiplier__: If set, multiplies vehicle rigidbody's positional drag force.
+
+__Root_Angular_Drag_Multiplier__: If set, multiplies vehicle rigidbody's angular drag force.
+
 __Wheel_Mass__: If set, overrides wheel collider mass. Ignored if vehicle asset has Wheel_Collider_Mass_Override set.
+
+__Wheel_Mass_Multiplier__: If set, multiplies wheel collider mass.
 
 __Wheel_Damping_Rate__: If set, override wheel collider damping rate. Lower values accelerate faster.
 
