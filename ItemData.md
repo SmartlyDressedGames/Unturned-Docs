@@ -89,13 +89,13 @@ __Quality_Max__:
 
 __Aid__: Specified if the item can be used on other players via right-click.
 
-__Bleeding_Modifier__:
+__Bleeding_Modifier__: <code>Cut</code>, <code>Heal</code>, <code>None</code>
 
-__Bleeding__: Specified if bleeding is cured.
+__Bleeding__: Specified if bleeding is healed. Deprecated in favor of Bleeding_Modifier.
 
-__Bones_Modifier__:
+__Bones_Modifier__: <code>Break</code>, <code>Heal</code>, <code>None</code>
 
-__Broken__: Specified if broken legs are cured.
+__Broken__: Specified if broken legs are healed. Deprecated in favor of Bones_Modifier.
 
 __Health__: The amount of health to add.
 
@@ -107,10 +107,10 @@ __Food_Constrains_Water__:
 
 __Disinfectant__: The amount of immunity to add.
 
-__Virus__: The amount of immunity to remove.
+__Virus__: The amount of immunity to subtract.
 
 __Energy__: The amount of energy to add.
 
 __Vision__: The length of hallucinations. The length does not stack with each time eaten, but the timer is reset for equal or longer Vision values relative to the remaining hallucination time.
 
-__Oxygen__:
+__Oxygen__: The amount of oxygen to add or subtract.
