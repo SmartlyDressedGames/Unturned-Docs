@@ -11,7 +11,7 @@ Menu Visibility
 
 One key component of sharing a curated map, trending popular workshop item, or specifically featured map is spotlighting it on the main menu. In any of these cases an article is placed above the recent news and announcements showcasing the preview image, and an expandable description.
 
-In-game the description supports the following bbcode tags:
+In-game the description supports the following BBCode tags:
 - [b]
 - [i]
 - [list]
