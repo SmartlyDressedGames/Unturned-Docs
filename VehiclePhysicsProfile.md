@@ -62,6 +62,6 @@ __Brake_Torque_Multiplier__: Multiplies wheel collider brake torque.
 
 __Brake_Torque_Traction_Multiplier__: Multiplies wheel collider brake torque when driving in snow. Default: 0.5
 
-__Wheel_Drive_Model__: Front, Rear or All. By default all cars are rear-wheel drive, but in the real world cars are front-wheel drive. This discrepency is due to a poor understanding of cars when they were added to the game in 2014.
+__Wheel_Drive_Model__: <code>Front</code>, <code>Rear</code> or <code>All</code>. By default all cars are rear-wheel drive, but in the real world cars are front-wheel drive. This discrepency is due to a poor understanding of cars when they were added to the game in 2014.
 
-__Wheel_Brake_Model__: Front, Rear or All. Modern cars have all-wheel breaking, which is the default.
+__Wheel_Brake_Model__: <code>Front</code>, <code>Rear</code> or <code>All</code>. Modern cars have all-wheel breaking, which is the default.
