@@ -1,7 +1,7 @@
 Asset Bundles
 =============
 
-The game loads textures, audio, meshes, prefabs, etc from Unity __Asset Bundles__ at runtime. How these are setup and used has evolved over the years from individual *.unity3d bundles to .content bundles to .masterbundle files.
+The game loads textures, audio, meshes, prefabs, etc. from Unity __Asset Bundles__ at runtime. How these are setup and used has evolved over the years from individual *.unity3d bundles to .content bundles to .masterbundle files.
 
 [Master Bundles](#master-bundles) should be used for essentially all new projects.
 
@@ -30,7 +30,7 @@ Most official files have transitioned to the master bundle system, but some uses
 
 ### Motivations:
 
-When beginning development of 3.0 it was key to support runtime loading of custom modded content. At the time files in asset bundles were loaded by name without extension, so each game type looked for specific names like "Item", "Object", "Animal", etc. The .unity3d extension was chosen for web browser compatibility. Obviously this system did not age well.
+When beginning development of 3.0, it was key to support runtime loading of custom modded content. At the time files in asset bundles were loaded by name without extension, so each game type looked for specific names like "Item", "Object", "Animal", etc. The .unity3d extension was chosen for web browser compatibility. Obviously this system did not age well.
 
 Content Bundles (*.content)
 ---------------------------
@@ -48,7 +48,7 @@ This format is used by devkit landscapes, material palettes and radio songs, but
 
 ### Motivations:
 
-In late 2016 and early 2017 development was focused on improving the editor experience, and one aspect of that was asset bundling. Content bundles scanned a manifest of contained assets in order to allow browsing individually from the in-game editor, and the idea was to allow each content reference to be configured per-game-property. Unfortunately this effort was far too broad - from building an interface between the game code / online subsystem code to revising the ID system to use GUIDs. In retrospect it would have been wiser to crack down on individual features which has been the approach since then.
+In late 2016 and early 2017 development was focused on improving the editor experience, and one aspect of that was asset bundling. Content bundles scanned a manifest of contained assets in order to allow browsing individually from the in-game editor, and the idea was to allow each content reference to be configured per-game-property. Unfortunately, this effort was far too broad - from building an interface between the game code / online subsystem code to revising the ID system to use GUIDs. In retrospect it would have been wiser to crack down on individual features which has been the approach since then.
 
 Master Bundles (*.masterbundle)
 -------------------------------
@@ -57,7 +57,7 @@ Most official files including curated maps have been transitioned to master bund
 
 ### File Setup:
 
-Master bundles can be loaded from any directory the game loads *.dat files from. Unless an override is specified, the nearest master bundle in the file hierarchy is used. While loading each directory is checked for a MasterBundle.dat file signalling the presence of a master bundle. For example refer to the core.masterbundle in the Bundles directory.
+Master bundles can be loaded from any directory the game loads *.dat files from. Unless an override is specified, the nearest master bundle in the file hierarchy is used. While loading each directory is checked for a MasterBundle.dat file signalling the presence of a master bundle. For example, refer to the core.masterbundle in the Bundles directory.
 
 MasterBundle.dat can set the following keys:
 
