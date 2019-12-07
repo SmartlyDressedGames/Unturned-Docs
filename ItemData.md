@@ -51,7 +51,7 @@ Blueprints
 
 __Blueprints__:
 
-__Blueprint\_#\_Type__: Supply
+__Blueprint\_#\_Type__: <code>Supply</code>
 
 __Blueprint\_#\_Supplies__:
 
@@ -59,7 +59,7 @@ __Blueprint\_#\_Supply\_#\_ID__:
 
 __Blueprint\_#\_Level__:
 
-__Blueprint\_#\_Skill__: Cook, Craft
+__Blueprint\_#\_Skill__: <code>Cook</code>, <code>Craft</code>
 
 __Blueprint\_#\_Build__:
 
@@ -68,7 +68,7 @@ Actions
 
 __Actions__:
 
-__Action\_#\_Type__: Blueprint
+__Action\_#\_Type__: <code>Blueprint</code>
 
 __Action\_#\_Source__: ID of the item with the blueprint this action should perform.
 
@@ -83,9 +83,9 @@ Consumables
 
 Consumables in _Unturned_ encompass anything that is irreversibly consumed by the player on use, and directly affect a player's stats such as food or health.
 
-__Type__: Food, Medical, Water
+__Type__: <code>Food</code>, <code>Medical</code>, <code>Water</code>
 
-__Useable__: Consumeable
+__Useable__: <code>Consumeable</code>
 
 __Quality_Max__:
 
