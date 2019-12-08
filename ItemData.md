@@ -135,7 +135,7 @@ __Food__: The number of food to add.
 
 __Water__: The number of water to add.
 
-__Food_Constrains_Water__:
+__Food_Constrains_Water__: Max potential water gain is capped by actual food gain. Applies to items where max potential water gain is less than max potential food gain.
 
 __Disinfectant__: The number of immunity to add.
 
