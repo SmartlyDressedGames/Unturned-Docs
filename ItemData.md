@@ -3,6 +3,8 @@ __Items__ in _Unturned_ encompass anything that can be carried in a player's in-
 Non-specific Data
 =================
 
+This first set of data is universal, and is applicable to any item type. Some of this data is required in order for the item to function.
+
 __GUID__: The GUID is automatically generated for the item when the game is launched. If it is not automatically generated, then it is assumable that the content was not set up properly.
 
 __Type__: Each category of item has its own type. The type to use can be found for each specific item category below, and is used for the item's context type as viewed in the context menu.
@@ -41,9 +43,11 @@ __Quality_Min__: The minimum quality to generate. Set to 10 by default.
 
 __Quality_Max__: The maximum quality to generate. Set to 90 by default.
 
-__Durability__: Amount of quality loss upon action.
+__Durability__: Decimal probability chance of quality loss upon action.
 
 * _Canteens_: Durability loss occurs upon drinking.
+* _Melee Weapons_: Durability loss occurs upon hitting.
+* _Ranged Weapons_: Durability loss occurs upon shooting.
 
 __Wear__:
 
@@ -118,17 +122,8 @@ __Action\_#\_Blueprint\_#\_Index__:
 
 __Action\_#\_Key__: <code>Craft_Dressing</code>, <code>Craft_Seed</code>
 
-Canteens
-========
-
-__Type__: <code>Refill</code>
-
-__Useable__: <code>Refill</code>
-
-__Water__: The number of water to add.
-
 Consumables
-============
+===========
 
 Consumables in _Unturned_ encompass anything that is irreversibly consumed by the player on use, and directly affect a player's stats such as food or health.
 
@@ -146,29 +141,38 @@ __Bones_Modifier__: <code>Break</code>, <code>Heal</code>, <code>None</code>
 
 __Broken__: Specified if broken legs are healed. Deprecated in favor of Bones_Modifier.
 
-__Health__: The number of health to add.
+__Health__: The number of health to restore.
 
-__Food__: The number of food to add.
+__Food__: The number of food to restore.
 
-__Water__: The number of water to add.
+__Water__: The number of water to restore.
 
 __Food_Constrains_Water__: Max potential water gain is capped by actual food gain. Applies to items where max potential water gain is less than max potential food gain.
 
-__Disinfectant__: The number of immunity to add.
+__Disinfectant__: The number of immunity to restore.
 
-__Virus__: The number of immunity to subtract.
+__Virus__: The number of immunity to deplete.
 
-__Energy__: The number of energy to add.
+__Energy__: The number of energy to restore.
 
 __Vision__: The length of hallucinations. The length does not stack with each time eaten, but the timer is reset for equal or longer Vision values relative to the remaining hallucination time.
 
-__Oxygen__: The number of oxygen to add or subtract.
+__Oxygen__: The number of oxygen to restore or deplete.
 
-Fishing
-=======
+Fishing Poles
+=============
 
 __Type__: <code>Fisher</code>
 
 __Useable__: <code>Fisher</code>
 
 __Reward_ID__: ID of the spawn table to pull catchable items from.
+
+Water Canisters
+===============
+
+__Type__: <code>Refill</code>
+
+__Useable__: <code>Refill</code>
+
+__Water__: The number of water to restore.
