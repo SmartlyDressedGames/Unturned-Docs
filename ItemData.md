@@ -21,7 +21,7 @@ __Size_Z__: The size of the camera for item icons.
 
 __Size2_Z__:
 
-__Backward__: Item is held in the opposite hand.
+__Backward__: Specified if this item should be visually held in the opposite hand.
 
 Capacity
 --------
@@ -118,8 +118,6 @@ Consumables in _Unturned_ encompass anything that is irreversibly consumed by th
 __Type__: <code>Food</code>, <code>Medical</code>, <code>Water</code>
 
 __Useable__: <code>Consumeable</code>
-
-__Quality_Max__:
 
 __Aid__: Specified if the item can be used on other players via right-click.
 
