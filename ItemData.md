@@ -5,9 +5,11 @@ __GUID__: The GUID is automatically generated for the item when the game is laun
 
 __Type__: Each category of item has its own type. The type to use can be found for each specific item category below, and is used for the item's context type as viewed in the context menu.
 
+__Rarity__: <code>Common</code>, <code>Uncommon</code>, <code>Rare</code>, <code>Epic</code>, <code>Legendary</code>, <code>Mythical</code>
+
 __Useable__: This defines which class to use for the item when equipped. If unspecified it will default to None, meaning that the item cannot be equipped. Which value to use for equippable items can be found below for each item category.
 
-__Rarity__: <code>Common</code>, <code>Uncommon</code>, <code>Rare</code>, <code>Epic</code>, <code>Legendary</code>, <code>Mythical</code>
+__Slot__: <code>Primary</code>, <code>Secondary</code>, <code>Any</code>
 
 __ID__: The item ID is used to spawn the item into the game, and is represented as an unsigned 16 bit integer (a range of 0–65535). It is recommended not to use a value less than 2,000 as those are reserved for official content. It is also recommended to avoid any ID range being used by curated content, as those are often used by modded servers and custom Workshop maps.
 
@@ -18,6 +20,24 @@ __Size_Y__: The height of the item in the inventory.
 __Size_Z__: The size of the camera for item icons.
 
 __Size2_Z__:
+
+__Backward__: Item is held in the opposite hand.
+
+Capacity
+--------
+
+__Amount__: Maximum capacity of a container.
+
+__Count_Min__: The minimum amount to generate in the container.
+
+__Count_Max__: The maximum amount to generate in the container.
+
+Quality
+-------
+
+__Quality_Min__: The minimum quality to generate. Set to 10 by default.
+
+__Quality_Max__: The maximum quality to generate. Set to 90 by default.
 
 Damage
 ------
@@ -49,19 +69,31 @@ __Spawn_Explosion_On_Dedicated_Server__:
 Blueprints
 ----------
 
-__Blueprints__:
+__Blueprints__: The number of blueprints available.
 
-__Blueprint\_#\_Type__: <code>Supply</code>
+__Blueprint\_#\_Type__: <code>Ammo</code>, <code>Apparel</code>, <code>Barricade</code>, <code>Gear</code>, <code>Repair</code> ,<code>Structure</code>, <code>Supply</code>,<code>Tool</code>
 
-__Blueprint\_#\_Supplies__:
+__Blueprint\_#\_Supplies__: The number of unique supplies required for the blueprint.
 
-__Blueprint\_#\_Supply\_#\_ID__:
+__Blueprint\_#\_Supply\_#\_ID__: The ID of the unique supply required.
 
-__Blueprint\_#\_Level__:
+__Blueprint\_#\_Supply\_#\_Amount__: The amount of the unique supply required.
 
-__Blueprint\_#\_Skill__: <code>Cook</code>, <code>Craft</code>
+__Blueprint\_#\_Level__: The skill level needed.
 
-__Blueprint\_#\_Build__:
+__Blueprint\_#\_Skill__: <code>Cook</code>, <code>Craft</code>, <code>None</code>, <code>Repair</code>. The skill required to craft – defaults to None.
+
+__Blueprint\_#\_Product__: The ID of the product created.
+
+__Blueprint\_#\_Products__: The amount of the product created.
+
+__Blueprint\_#\_Outputs__: The number of unique products created from fulfilling the blueprint.
+
+__Blueprint\_#\_Output\_#\_ID__: The ID of the unique product created.
+
+__Blueprint\_#\_Output\_#\_Amount__: The amount of the unique product created.
+
+__Blueprint\_#\_Build__: The auditory effect ID to play.
 
 Actions
 -------
@@ -99,20 +131,20 @@ __Bones_Modifier__: <code>Break</code>, <code>Heal</code>, <code>None</code>
 
 __Broken__: Specified if broken legs are healed. Deprecated in favor of Bones_Modifier.
 
-__Health__: The amount of health to add.
+__Health__: The number of health to add.
 
-__Food__: The amount of food to add.
+__Food__: The number of food to add.
 
-__Water__: The amount of water to add.
+__Water__: The number of water to add.
 
 __Food_Constrains_Water__:
 
-__Disinfectant__: The amount of immunity to add.
+__Disinfectant__: The number of immunity to add.
 
-__Virus__: The amount of immunity to subtract.
+__Virus__: The number of immunity to subtract.
 
-__Energy__: The amount of energy to add.
+__Energy__: The number of energy to add.
 
 __Vision__: The length of hallucinations. The length does not stack with each time eaten, but the timer is reset for equal or longer Vision values relative to the remaining hallucination time.
 
-__Oxygen__: The amount of oxygen to add or subtract.
+__Oxygen__: The number of oxygen to add or subtract.
