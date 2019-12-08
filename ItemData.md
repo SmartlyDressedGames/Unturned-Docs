@@ -39,6 +39,12 @@ __Quality_Min__: The minimum quality to generate. Set to 10 by default.
 
 __Quality_Max__: The maximum quality to generate. Set to 90 by default.
 
+__Durability__: Amount of quality loss upon action.
+
+__Wear__:
+
+For fishing, durability is lost upon cast.
+
 Damage
 ------
 
@@ -146,3 +152,12 @@ __Energy__: The number of energy to add.
 __Vision__: The length of hallucinations. The length does not stack with each time eaten, but the timer is reset for equal or longer Vision values relative to the remaining hallucination time.
 
 __Oxygen__: The number of oxygen to add or subtract.
+
+Fishing
+-------
+
+__Type__: <code>Fisher</code>
+
+__Useable__: <code>Fisher</code>
+
+__Reward_ID__: ID of the spawn table to pull catchable items from.
