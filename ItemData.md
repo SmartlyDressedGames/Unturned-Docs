@@ -41,9 +41,9 @@ __Quality_Max__: The maximum quality to generate. Set to 90 by default.
 
 __Durability__: Amount of quality loss upon action.
 
-__Wear__:
+* _Canteens_: Durability loss occurs upon drinking.
 
-For fishing, durability is lost upon cast.
+__Wear__:
 
 Damage
 ------
@@ -115,6 +115,15 @@ __Action\_#\_Blueprints__:
 __Action\_#\_Blueprint\_#\_Index__:
 
 __Action\_#\_Key__: <code>Craft_Dressing</code>, <code>Craft_Seed</code>
+
+Canteens
+========
+
+__Type__: <code>Refill</code>
+
+__Useable__: <code>Refill</code>
+
+__Water__: The number of water to add.
 
 Consumables
 ============
