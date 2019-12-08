@@ -154,7 +154,7 @@ __Vision__: The length of hallucinations. The length does not stack with each ti
 __Oxygen__: The number of oxygen to add or subtract.
 
 Fishing
--------
+=======
 
 __Type__: <code>Fisher</code>
 
