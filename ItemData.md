@@ -23,7 +23,7 @@ __Size2_Z__:
 
 __Backward__: Item is held in the opposite hand.
 
-Capacity
+Capacity & Quality
 --------
 
 __Amount__: Maximum capacity of a container.
@@ -31,9 +31,6 @@ __Amount__: Maximum capacity of a container.
 __Count_Min__: The minimum amount to generate in the container.
 
 __Count_Max__: The maximum amount to generate in the container.
-
-Quality
--------
 
 __Quality_Min__: The minimum quality to generate. Set to 10 by default.
 
