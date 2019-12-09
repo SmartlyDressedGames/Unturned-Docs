@@ -247,6 +247,20 @@ __Useable__: `Optic`
 
 __Zoom__: Multiplicative amount of zoom.
 
+Mapping Equipment
+=================
+
+__Type__: `Map`, `Compass`
+
+__Enables_Map__: Specified if this item provides a satellite map display.
+
+__Enables_Chart__: Specified if this item provides a chart map display.
+
+__Enables_Compass__: Specified if this item provides a compass display.
+
+Parachutes
+==========
+
 Projectiles
 ===========
 
