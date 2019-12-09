@@ -93,6 +93,12 @@ __Blueprint\_#\_Supply\_#\_ID__: The ID of the unique supply required.
 
 __Blueprint\_#\_Supply\_#\_Amount__: The amount of the unique supply required.
 
+__Blueprint\_#\_Supply\_#\_Critical__: Specified if the unique supply is a prerequisite to showing the blueprint.
+
+__Blueprint\_#\_Tool__: The ID of the unique non-consumed tool required.
+
+__Blueprint\_#\_Tool_Critical__: Specified if the unique non-consumed tool is a prerequisite to showing the blueprint.
+
 __Blueprint\_#\_Level__: The skill level needed.
 
 __Blueprint\_#\_Skill__: `Cook`, `Craft`, `None`, `Repair`. The skill required to craft – defaults to None.
@@ -112,17 +118,17 @@ __Blueprint\_#\_Build__: The auditory effect ID to play.
 Actions
 -------
 
-__Actions__:
+__Actions__: The number of actions available.
 
 __Action\_#\_Type__: `Blueprint`
 
 __Action\_#\_Source__: ID of the item with the blueprint this action should perform.
 
-__Action\_#\_Blueprints__:
+__Action\_#\_Blueprints__: The amount of the unique blueprint actions.
 
-__Action\_#\_Blueprint\_#\_Index__:
+__Action\_#\_Blueprint\_#\_Index__: ID of the specific blueprint this action should perform.
 
-__Action\_#\_Key__: `Craft_Dressing`, `Craft_Seed`
+__Action\_#\_Key__: `Craft_Bandage`, `Craft_Dressing`, `Craft_Seed`
 
 Attachments
 ===========
@@ -141,6 +147,18 @@ Sights
 
 Tacticals
 ---------
+
+__Type__: `Tactical`
+
+__Firerate__: Amount to decrease minimum fire rate delay.
+
+__Laser__: Specified if a laser can be toggled.
+
+__Light__: Specified if a light can be toggled.
+
+__Rangefinder__: Specified if a rangefinder can be toggled.
+
+__Melee__: Specified if a melee attack can be performed.
 
 Building
 ========
