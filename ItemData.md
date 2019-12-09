@@ -122,6 +122,66 @@ __Action\_#\_Blueprint\_#\_Index__:
 
 __Action\_#\_Key__: `Craft_Dressing`, `Craft_Seed`
 
+Attachments
+===========
+
+Barrels
+-------
+
+Grips
+-----
+
+Magazines
+---------
+
+Sights
+------
+
+Tacticals
+---------
+
+Building
+========
+
+Barricades
+----------
+
+Plants
+------
+
+Storage
+-------
+
+Structures
+----------
+
+Traps
+-----
+
+Clothing
+========
+
+Backpacks
+---------
+
+Glasses
+-------
+
+Hats
+----
+
+Masks
+-----
+
+Pants
+-----
+
+Shirts
+------
+
+Vests
+-----
+
 Consumables
 ===========
 
@@ -168,6 +228,36 @@ __Useable__: `Fisher`
 
 __Reward_ID__: ID of the spawn table to pull catchable items from.
 
+Fuel Canisters
+==============
+
+Growth Supplements
+==================
+
+Optics
+======
+
+Projectiles
+===========
+
+Tools
+=====
+
+Walkie-talkies
+--------------
+
+Car Lock Picks
+--------------
+
+Car Jacks
+---------
+
+Vehicle Batteries
+-----------------
+
+Tire Replacements
+-----------------
+
 Water Canisters
 ===============
 
@@ -176,3 +266,12 @@ __Type__: `Refill`
 __Useable__: `Refill`
 
 __Water__: The number of water to restore.
+
+Weapons
+=======
+
+Melee
+-----
+
+Ranged
+------
