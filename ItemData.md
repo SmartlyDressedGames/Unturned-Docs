@@ -43,6 +43,8 @@ __Quality_Min__: The minimum quality to generate. Set to 10 by default.
 
 __Quality_Max__: The maximum quality to generate. Set to 90 by default.
 
+__Override_Show_Quality__:
+
 __Durability__: Decimal probability chance of quality loss upon action.
 
 * _Canteens_: Durability loss occurs upon drinking.
