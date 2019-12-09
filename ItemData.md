@@ -130,7 +130,7 @@ __Action\_#\_Blueprints__: The amount of the unique blueprint actions.
 
 __Action\_#\_Blueprint\_#\_Index__: ID of the specific blueprint this action should perform.
 
-__Action\_#\_Key__: `Craft_Bandage`, `Craft_Dressing`, `Craft_Seed`
+__Action\_#\_Key__: `Craft_Bandage`, `Craft_Dressing`, `Craft_Rag`, `Craft_Seed`
 
 Attachments
 ===========
@@ -192,6 +192,8 @@ __Height__: The amount of vertical storage space.
 __Hair__: Specified if hair shows up when wearing. Only applicable to hats, masks, and glasses.
 
 __Beard__: Specified if beard shows up when wearing. Only applicable to hats, masks, and glasses.
+
+__Pro__:
 
 Backpacks
 ---------
@@ -310,23 +312,70 @@ __Type__: `Throwable`
 
 __Useable__: `Throwable`
 
+Restraining Devices
+===================
+
+Catchers
+--------
+
+Releasers
+---------
+
+__Type__: `Arrest_End`
+
+__Useable__: `Arrest_End`
+
+__Recover__: ID of the restraining device that can be unlocked with this item.
+
 Tools
 =====
-
-Walkie-talkies
---------------
-
-Car Lock Picks
---------------
 
 Car Jacks
 ---------
 
-Vehicle Batteries
------------------
+Car jacks launch vehicles into the air as a method of reorienting them if they were flipped over.
+
+__Type__: `Tool`
+
+__Useable__: `Carjack`
+
+Car Lock Picks
+--------------
+
+Car lock picks allow players to unlock any locked vehicle, but are single-use.
+
+__Type__: `Tool`
+
+__Useable__: `Carlockpick`
 
 Tire Replacements
 -----------------
+
+Tire replacements allow for adding or removing tires from four-wheeled vehicles.
+
+__Type__: `Tire`
+
+__Useable__: `Tire`
+
+__Mode__: `Add`, `Remove`
+
+Vehicle Batteries
+-----------------
+
+Vehicle batteries can be placed into vehicles, allowing them to perform activities that consume electrical energy rather than fuel. They are affected by quality.
+
+__Type__: `Vehicle_Repair_Tool`
+
+__Useable__: `Battery_Vehicle`
+
+Walkie-talkies
+--------------
+
+When initiating voice chat with a walkie-talkie held, voice is transmitted through a two-way radio. An audible cue plays when initiating voice chat.
+
+__Type__: `Tool`
+
+__Useable__: `Walkie_Talkie`
 
 Water Canisters
 ===============
