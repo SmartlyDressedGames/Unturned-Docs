@@ -72,9 +72,11 @@ __Resource_Damage__:
 
 __Object_Damage__:
 
-__Range__:
+__Range__: For ranged and melee weapons – max distance in meters before damage is no longer possible. For explosive weapons (including projectiles) – the radius of the explosion in meters.
 
-__Explosion__:
+__Explosive__: Specified if the explosive component is used.
+
+__Explosion__: The visual effect ID to play as the explosion.
 
 __Spawn_Explosion_On_Dedicated_Server__:
 
@@ -161,6 +163,16 @@ Traps
 Clothing
 ========
 
+__Armor__: Decimal multiplier on incoming damage.
+
+__Width__: The amount of horizontal storage space.
+
+__Height__: The amount of vertical storage space.
+
+__Hair__: Specified if hair shows up when wearing. Only applicable to hats, masks, and glasses.
+
+__Beard__: Specified if beard shows up when wearing. Only applicable to hats, masks, and glasses.
+
 Backpacks
 ---------
 
@@ -178,6 +190,10 @@ Pants
 
 Shirts
 ------
+
+__Type__: `Shirt`
+
+__Useable__: `Shirt`
 
 Vests
 -----
@@ -269,6 +285,10 @@ __Gravity__: Decimal multiplier on the influence of gravity.
 
 Projectiles
 ===========
+
+__Type__: `Throwable`
+
+__Useable__: `Throwable`
 
 Tools
 =====
