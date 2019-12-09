@@ -207,7 +207,7 @@ __Food__: The number of food to restore.
 
 __Water__: The number of water to restore.
 
-__Food_Constrains_Water__: Max potential water gain is capped by actual food gain. Applies to items where max potential water gain is less than max potential food gain.
+__Food_Constrains_Water__: Specified if max potential water gain should be capped by actual food gain. Applies to items where max potential water gain is less than max potential food gain.
 
 __Disinfectant__: The number of immunity to restore.
 
@@ -260,6 +260,12 @@ __Enables_Compass__: Specified if this item provides a compass display.
 
 Parachutes
 ==========
+
+__Type__: `Cloud`
+
+__Useable__: `Cloud`
+
+__Gravity__: Decimal multiplier on the influence of gravity.
 
 Projectiles
 ===========
