@@ -234,8 +234,18 @@ Fuel Canisters
 Growth Supplements
 ==================
 
+__Type__: `Grower`
+
+__Useable__: `Grower`
+
 Optics
 ======
+
+__Type__: `Optic`
+
+__Useable__: `Optic`
+
+__Zoom__: Multiplicative amount of zoom.
 
 Projectiles
 ===========
