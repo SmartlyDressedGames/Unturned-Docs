@@ -9,11 +9,11 @@ __GUID__: The GUID is automatically generated for the item when the game is laun
 
 __Type__: Each category of item has its own type. The type to use can be found for each specific item category below, and is used for the item's context type as viewed in the context menu.
 
-__Rarity__: <code>Common</code>, <code>Uncommon</code>, <code>Rare</code>, <code>Epic</code>, <code>Legendary</code>, <code>Mythical</code>
+__Rarity__: `Common`, `Uncommon`, `Rare`, `Epic`, `Legendary`, `Mythical`
 
 __Useable__: This defines which class to use for the item when equipped. If unspecified it will default to None, meaning that the item cannot be equipped. Which value to use for equippable items can be found below for each item category.
 
-__Slot__: <code>Primary</code>, <code>Secondary</code>, <code>Any</code>
+__Slot__: `Primary`, `Secondary`, `Any`
 
 __ID__: The item ID is used to spawn the item into the game, and is represented as an unsigned 16 bit integer (a range of 0–65535). It is recommended not to use a value less than 2,000 as those are reserved for official content. It is also recommended to avoid any ID range being used by curated content, as those are often used by modded servers and custom Workshop maps.
 
@@ -83,7 +83,7 @@ Blueprints
 
 __Blueprints__: The number of blueprints available.
 
-__Blueprint\_#\_Type__: <code>Ammo</code>, <code>Apparel</code>, <code>Barricade</code>, <code>Gear</code>, <code>Repair</code> ,<code>Structure</code>, <code>Supply</code>,<code>Tool</code>
+__Blueprint\_#\_Type__: `Ammo`, `Apparel`, `Barricade`, `Gear`, `Repair` ,`Structure`, `Supply`,`Tool`
 
 __Blueprint\_#\_Supplies__: The number of unique supplies required for the blueprint.
 
@@ -93,7 +93,7 @@ __Blueprint\_#\_Supply\_#\_Amount__: The amount of the unique supply required.
 
 __Blueprint\_#\_Level__: The skill level needed.
 
-__Blueprint\_#\_Skill__: <code>Cook</code>, <code>Craft</code>, <code>None</code>, <code>Repair</code>. The skill required to craft – defaults to None.
+__Blueprint\_#\_Skill__: `Cook`, `Craft`, `None`, `Repair`. The skill required to craft – defaults to None.
 
 __Blueprint\_#\_Product__: The ID of the product created.
 
@@ -112,7 +112,7 @@ Actions
 
 __Actions__:
 
-__Action\_#\_Type__: <code>Blueprint</code>
+__Action\_#\_Type__: `Blueprint`
 
 __Action\_#\_Source__: ID of the item with the blueprint this action should perform.
 
@@ -120,24 +120,24 @@ __Action\_#\_Blueprints__:
 
 __Action\_#\_Blueprint\_#\_Index__:
 
-__Action\_#\_Key__: <code>Craft_Dressing</code>, <code>Craft_Seed</code>
+__Action\_#\_Key__: `Craft_Dressing`, `Craft_Seed`
 
 Consumables
 ===========
 
 Consumables in _Unturned_ encompass anything that is irreversibly consumed by the player on use, and directly affect a player's stats such as food or health.
 
-__Type__: <code>Food</code>, <code>Medical</code>, <code>Water</code>
+__Type__: `Food`, `Medical`, `Water`
 
-__Useable__: <code>Consumeable</code>
+__Useable__: `Consumeable`
 
 __Aid__: Specified if the item can be used on other players via right-click.
 
-__Bleeding_Modifier__: <code>Cut</code>, <code>Heal</code>, <code>None</code>
+__Bleeding_Modifier__: `Cut`, `Heal`, `None`
 
 __Bleeding__: Specified if bleeding is healed. Deprecated in favor of Bleeding_Modifier.
 
-__Bones_Modifier__: <code>Break</code>, <code>Heal</code>, <code>None</code>
+__Bones_Modifier__: `Break`, `Heal`, `None`
 
 __Broken__: Specified if broken legs are healed. Deprecated in favor of Bones_Modifier.
 
@@ -162,17 +162,17 @@ __Oxygen__: The number of oxygen to restore or deplete.
 Fishing Poles
 =============
 
-__Type__: <code>Fisher</code>
+__Type__: `Fisher`
 
-__Useable__: <code>Fisher</code>
+__Useable__: `Fisher`
 
 __Reward_ID__: ID of the spawn table to pull catchable items from.
 
 Water Canisters
 ===============
 
-__Type__: <code>Refill</code>
+__Type__: `Refill`
 
-__Useable__: <code>Refill</code>
+__Useable__: `Refill`
 
 __Water__: The number of water to restore.
