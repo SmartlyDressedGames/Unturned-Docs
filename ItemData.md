@@ -1,5 +1,24 @@
 __Items__ in _Unturned_ encompass anything that can be carried in a player's in-game inventory. All items share some properties, while each item type has its own unique data. All of the data applicable to each possible item type can be found below.
 
+- [Non-specific Data](#Non-specific-Data)
+- [Attachments](#Attachments)
+- [Barricades](#Barricades)
+- [Clothing](#Clothing)
+- [Consumables](#Consumables)
+- [Crafting Supplies](#Crafting-Supplies)
+- [Fishing Poles](#Fishing-Poles)
+- [Fuel Canisters](#Fuel-Canisters)
+- [Growth Supplements](#Growth-Supplements)
+- [Mapping Equipment](#Mapping-Equipment)
+- [Optics](#Optics)
+- [Parachutes](#Parachutes)
+- [Projectiles](#Projectiles)
+- [Radiation Filters](#Radiation-Filters)
+- [Remote Triggers](#Remote-Triggers)
+- [Restraining Devices](#Restraining-Devices)
+- [Tools](#Tools)
+- [Water Canisters](#Water-Canisters)
+
 Non-specific Data
 =================
 
@@ -25,6 +44,8 @@ __Size_Z__: The size of the camera for item icons.
 
 __Size2_Z__:
 
+__Can_Use_Underwater__: `false`, `true`. Applicable to equipable items, and defaults to false for primary weapons.
+
 __Backward__: Specified if this item should be visually held in the opposite hand.
 
 Capacity
@@ -45,36 +66,70 @@ __Quality_Max__: The maximum quality to generate. Set to 90 by default.
 
 __Override_Show_Quality__:
 
-__Durability__: Decimal probability chance of quality loss upon action.
+__Durability__: Either a decimal probability chance of quality loss upon action, or guaranteed loss and durability value is instead representative of the amount lost.
 
-* _Canteens_: Durability loss occurs upon drinking.
-* _Melee Weapons_: Durability loss occurs upon hitting.
-* _Ranged Weapons_: Durability loss occurs upon shooting.
+* _Canteens_: Guaranteed quality loss occurs upon drinking. Durability value represents the amount of quality loss.
+* _Melee Weapons_: Decimal probability chance of quality loss occurs upon hitting.
+* _Ranged Weapons_: Decimal probability chance of quality loss occurs upon shooting.
 
-__Wear__:
+__Wear__: Increment to degrade quality by. Only applicable to items where durability represents a decimal probability chance of quality loss.
 
 Damage
 ------
 
-Damage data can be utilized by explosive consumables, explosive throwables, melee weapons, and ranged weapons.
+Damage data can be utilized by explosive consumables, explosive throwables, traps, remote explosives, melee weapons, and ranged weapons.
 
-__Player_Damage__:
+__Player_Damage__: Base damage dealt to player entities, prior to calculating limb modifiers, and used independently from limb modifiers for explosive and trap damage.
 
-__Zombie_Damage__:
+__Player_Leg_Multiplier__: The multiplier of player_damage against player legs.
 
-__Animal_Damage__:
+__Player_Arm_Multiplier__: The multiplier of player_damage against player arms.
 
-__Barricade_Damage__:
+__Player_Spine_Multiplier__: The multiplier of player_damage against player torso.
 
-__Structure_Damage__:
+__Player_Skull_Multiplier__: The multiplier of player_damage against player head.
 
-__Vehicle_Damage__:
+__Player_Damage_Bleeding__: `Always`, `Default`, `Heal`, `Never`
 
-__Resource_Damage__:
+__Player_Damage_Bones__: `Always`, `Heal`, `None`
 
-__Object_Damage__:
+__Player_Damage_Food__: Damage dealt to a player's food.
 
-__Range__: For ranged and melee weapons – max distance in meters before damage is no longer possible. For explosive weapons (including projectiles) – the radius of the explosion in meters.
+__Player_Damage_Water__: Damage dealt to a player's water.
+
+__Player_Damage_Virus__: Damage dealt to a player's immunity.
+
+__Player_Damage_Hallucination__: Length of hallucinations inflicted upon a player.
+
+__Zombie_Damage__: Base damage dealt to zombie entities, prior to calculating limb modifiers, and used independently from limb modifiers for explosive and trap damage.
+
+__Zombie_Leg_Multiplier__: The multiplier of zombie_damage against zombie legs.
+
+__Zombie_Arm_Multiplier__: The multiplier of zombie_damage against zombie arms.
+
+__Zombie_Spine_Multiplier__: The multiplier of zombie_damage against zombie torso.
+
+__Zombie_Skull_Multiplier__: The multiplier of zombie_damage against zombie head.
+
+__Animal_Damage__: Base damage dealt to animal entities, prior to calculating limb modifiers, and used independently from limb modifiers for explosive and trap damage.
+
+__Animal_Leg_Multiplier__: The multiplier of animal_damage against animal limbs.
+
+__Animal_Spine_Multiplier__: The multiplier of animal_damage against animal torso.
+
+__Animal_Skull_Multiplier__: The multiplier of animal_damage against animal head.
+
+__Barricade_Damage__: Damage dealt to barricades.
+
+__Structure_Damage__: Damage dealt to structures. Multiplied by 3 in single-player.
+
+__Vehicle_Damage__: Damage dealt to vehicles.
+
+__Resource_Damage__: Damage dealt to resources.
+
+__Object_Damage__: Damage dealt to objects.
+
+__Range__: For ranged and melee weapons – max distance in meters before damage is no longer possible. For explosive weapons (including magazine attachments that generate explosive projectiles) – the radius of the explosion in meters.
 
 __Explosive__: Specified if the explosive component is used.
 
@@ -87,7 +142,7 @@ Blueprints
 
 __Blueprints__: The number of blueprints available.
 
-__Blueprint\_#\_Type__: `Ammo`, `Apparel`, `Barricade`, `Gear`, `Repair` ,`Structure`, `Supply`,`Tool`
+__Blueprint\_#\_Type__: `Ammo`, `Apparel`, `Barricade`, `Furniture`, `Gear`, `Repair`, `Structure`, `Supply`, `Tool`, `Utilities`
 
 __Blueprint\_#\_Supplies__: The number of unique supplies required for the blueprint.
 
@@ -117,6 +172,12 @@ __Blueprint\_#\_Output\_#\_Amount__: The amount of the unique product created.
 
 __Blueprint\_#\_Build__: The auditory effect ID to play.
 
+__Blueprint\_#\_Conditions__: The number of required conditions.
+
+__Blueprint\_#\_Condition\_#\_Type__: `Holiday`
+
+__Blueprint\_#\_Condition\_#\_Value__: `Christmas`, `Halloween`
+
 Actions
 -------
 
@@ -132,20 +193,75 @@ __Action\_#\_Blueprint\_#\_Index__: ID of the specific blueprint this action sho
 
 __Action\_#\_Key__: `Craft_Bandage`, `Craft_Dressing`, `Craft_Rag`, `Craft_Seed`
 
+Error Handling
+--------------
+
+__Ignore_TexRW__: Specified if read/writeable texture errors for the item should be hidden from the error logs.
+
 Attachments
 ===========
+
+__Calibers__: The number of calibers applicable.
+
+__Caliber_#__: ID of an applicable caliber.
+
+__Recoil_X__: Decimal amount to multiply horizontal look recoil by.
+
+__Recoil_Y__: Decimal amount to multiply vertical look recoil by.
+
+__Spread__: Decimal amount to multiply spread by.
+
+__Shake__: Decimal amount to multiply physical recoil by.
+
+__Damage__: Decimal amount to multiply damage by.
+
+__Paintable__: Specified if skins can retexture the attachment.
 
 Barrels
 -------
 
+__Type__: `Barrel`
+
+__Braked__: Specified if a muzzle flash is hidden.
+
+__Silenced__: Specified if alerts are not generated.
+
+__Volume__: Amount to multiply gunfire sound volume.
+
 Grips
 -----
+
+__Type__: `Grip`
+
+__Bipod__: Specified if effects only take place when prone.
 
 Magazines
 ---------
 
+__Type__: `Magazine`
+
+__Pellets__: Number of bullet rays shot.
+
+__Tracer__: Tracer effect ID.
+
+__Impact__: Impact effect ID.
+
+__Stuck__: Amount of quality to lose when hit. Fired projectiles can be picked back up until quality reaches 0.
+
+__Projectile_Damage_Multiplier__: Multiplier on the damage dealt by projectile weapons.
+
+__Projectile_Blast_Radius_Multiplier__: Multiplier on the blast radius of projectiles fired from projectile weapons.
+
+__Projectile_Launch_Force_Multiplier__: Multiplier on the launch force applied to projectiles fired from projectile weapons.
+
+__Should_Fill_After_Detach__: Specified if ammunition is fully refilled when reloaded, effectively allowing for infinite ammunition only limited by reload time.
+
 Sights
 ------
+
+__Type__: `Sight`
+
+__Zoom__: Multiplicative amount of zoom.
 
 Tacticals
 ---------
@@ -162,23 +278,198 @@ __Rangefinder__: Specified if a rangefinder can be toggled.
 
 __Melee__: Specified if a melee attack can be performed.
 
-Building
-========
-
 Barricades
+==========
+
+__Type__: `Barricade`
+
+__Useable__: `Barricade`
+
+__Build__: `Barrel_Rain`, `Barricade`, `Bed`, `Cage`, `Campfire`, `Claim`, `Clock`, `Door`, `Fortification`, `Freeform`, `Gate`, `Glass`, `Hatch`, `Ladder`, `Mannequin`, `Note`, `Oven`, `Oxygenator`, `Safezone`, `Shutter`, `Sign`, `Sign_Wall`, `Spot`, `Stereo`, `Torch`, `Vehicle`
+
+__Health__: Amount of health.
+
+__Range__: Distance away the barricade can be placed from the player.
+
+__Radius__:
+
+__Offset__: Inherent distance above the point to place.
+
+__Locked__: Usability/interactivity access restricted to owner.
+
+__Explosion__: Destruction effect ID.
+
+__Salvage_Duration_Multiplier__: Multiplier on salvage duration.
+
+__Unpickupable__: Cannot be salvaged.
+
+__Unrepairable__: Cannot be repaired.
+
+__Unsalvageable__: If damaged, salvaging yields no partial ingredients.
+
+__Unsaveable__: Cannot be saved by the game.
+
+__Vulnerable__: Specified if the barricade can be destroyed by low-power weaponry.
+
+__Proof_Explosion__: Specified in immune to explosion damage.
+
+__Armor_Tier__: `High`. Doubles health value.
+
+__Use_Water_Height_Transparent_Sort__:
+
+__Should_Close_When_Outside_Range__: `true`. Defaults to false. Only applicable to interactive barricades that generate a UI element, such as item storages and signs.
+
+__Allow_Collision_While_Animating__: Allows animated interactables (e.g., doors) to perform collision movement upon players.
+
+__Allow_Placement_On_Vehicle__: `false`, `true`. Defaults to false for beds and robotic turrets.
+
+Beacons
+-------
+
+__Type__: `Beacon`
+
+__Useable__: `Barricade`
+
+__Build__: `Beacon`
+
+__Wave__: Number of zombies that must be killed.
+
+__Rewards__: Number of rewards spawned.
+
+__Reward_ID__: Spawn table ID for rewards.
+
+Experience Storages
+-------------------
+
+__Type__: `Library`
+
+__Useable__: `Barricade`
+
+__Build__: `Library`
+
+__Capacity__: Numerical maximum capacity of experience able to be stored.
+
+__Tax__: Percent tax on deposits.
+
+Generators
 ----------
+
+__Type__: `Generator`
+
+__Useable__: `Barricade`
+
+__Build__: `Generator`
+
+__Capacity__: Numerical maximum capacity of fuel units able to be stored.
+
+__Wirerange__: Radius range in meters (representative of a sphere) for how large of an area is considered powered.
+
+__Burn__: Number of seconds before one fuel unit is burned.
+
+Item Storages
+-------------
+
+__Type__: `Storage`
+
+__Useable__: `Barricade`
+
+__Build__: `Storage`, `Storage_Wall`
+
+__Storage_X__: Horizontal storage space.
+
+__Storage_Y__: Vertical storage space.
+
+__Display__: Stored item is visible.
+
+Liquid Storages
+---------------
+
+__Type__: `Tank`
+
+__Useable__: `Barricade`
+
+__Build__: `Tank`
+
+__Source__: `Fuel`, `Water`
+
+__Resource__: Numerical maximum capacity of liquid units that can be stored. Water units are measured in potential drinking uses.
+
+Oil Pumps
+---------
+
+__Type__: `Oil_Pump`
+
+__Useable__: `Barricade`
+
+__Build__: `Oil`
+
+__Fuel_Capacity__: Numerical maximum capacity of fuel units able to be stored. 
 
 Plants
 ------
 
-Storage
--------
+__Type__: `Farm`
 
-Structures
-----------
+__Useable__: `Barricade`
+
+__Build__: `Farm`
+
+__Growth__: Number of seconds required to fully grow.
+
+__Grow__: ID of the item generated when harvesting a fully grown plant.
+
+Remote Explosives
+-----------------
+
+__Type__: `Charge`
+
+__Useable__: `Barricade`
+
+__Build__: `Charge`
+
+__Range2__: Meter radius of range for explosive damage.
+
+__Explosion2__: Explosion effect ID for the damaging explosion.
+
+Limb-independent entity damage is also applicable.
+
+Robotic Turrets
+---------------
+
+__Type__: `Sentry`, `Sentry_Freeform`
+
+__Useable__: `Barricade`
+
+__Build__: `Sentry`
+
+__Storage_X__: Horizontal storage space.
+
+__Storage_Y__: Vertical storage space.
+
+__Display__: Stored item is visible.
+
+__Mode__: `Friendly`, `Hostile`, `Neutral`
+
+__Infinite_Ammo__: Weapon ammunition never depletes.
+
+__Infinite_Quality__: Weapon quality never depletes.
 
 Traps
 -----
+
+__Type__: `Trap`
+
+__Useable__: `Barricade`
+
+__Build__: `Spike`, `Wire`
+
+__Damage_Tires__: Specified if tires can be popped when ran over by a vehicle.
+
+__Range2__: Meter radius of range for explosive damage.
+
+__Explosion2__: Explosion effect ID for the damaging explosion.
+
+Limb-independent entity damage is also applicable.
 
 Clothing
 ========
@@ -193,7 +484,11 @@ __Hair__: Specified if hair shows up when wearing. Only applicable to hats, mask
 
 __Beard__: Specified if beard shows up when wearing. Only applicable to hats, masks, and glasses.
 
+__Hair_Override__: Specified if hair material should be used. Only applicable to hats, masks, and glasses.
+
 __Pro__:
+
+__Visible_On_Ragdoll__: `false`, `true`. Defaults to true.
 
 Backpacks
 ---------
@@ -216,6 +511,20 @@ Shirts
 __Type__: `Shirt`
 
 __Useable__: `Shirt`
+
+### Body Mesh Replacements 
+
+See [CharacterMeshReplacement.md] for full documentation.
+
+__Has_1P_Character_Mesh_Override__: `false`, `true`
+
+__Character_Mesh_3P_Override_LODs__: Number of LODs.
+
+__Has_Character_Material_Override__: `false`, `true`
+
+__Hair_Visible__: `false`, `true`. Defaults to true.
+
+__Beard_Visible__: `false`, `true`. Defaults to true.
 
 Vests
 -----
@@ -257,6 +566,19 @@ __Vision__: The length of hallucinations. The length does not stack with each ti
 
 __Oxygen__: The number of oxygen to restore or deplete.
 
+__Should_Delete_After_Use__: `false`, `true`. Defaults to true.
+
+__Item_Reward_Spawn_ID__: ID of an item generated upon usage of the consumable.
+
+__Min_Item_Rewards__: Minimum possible amount of items rewarded.
+
+__Max_Item_Rewards__: Maximum possible amount of item rewarded.
+
+Crafting Supplies
+=================
+
+__Type__: `Supply`
+
 Fishing Poles
 =============
 
@@ -269,21 +591,18 @@ __Reward_ID__: ID of the spawn table to pull catchable items from.
 Fuel Canisters
 ==============
 
+__Type__: `Fuel`
+
+__Useable__: `Fuel`
+
+__Fuel__: Amount of fuel units added to target.
+
 Growth Supplements
 ==================
 
 __Type__: `Grower`
 
 __Useable__: `Grower`
-
-Optics
-======
-
-__Type__: `Optic`
-
-__Useable__: `Optic`
-
-__Zoom__: Multiplicative amount of zoom.
 
 Mapping Equipment
 =================
@@ -295,6 +614,15 @@ __Enables_Map__: Specified if this item provides a satellite map display.
 __Enables_Chart__: Specified if this item provides a chart map display.
 
 __Enables_Compass__: Specified if this item provides a compass display.
+
+Optics
+======
+
+__Type__: `Optic`
+
+__Useable__: `Optic`
+
+__Zoom__: Multiplicative amount of zoom.
 
 Parachutes
 ==========
@@ -312,11 +640,31 @@ __Type__: `Throwable`
 
 __Useable__: `Throwable`
 
+Radiation Filters
+=================
+
+__Type__: `Filter`
+
+__Useable__: `Filter`
+
+Remote Triggers
+===============
+
+__Type__: `Detonator`
+
+__Useable__: `Detonator`
+
 Restraining Devices
 ===================
 
 Catchers
 --------
+
+__Type__: `Arrest_Start`
+
+__Useable__: `Arrest_Start`
+
+__Strength__: Amount of effort required to break free.
 
 Releasers
 ---------
