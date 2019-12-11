@@ -16,6 +16,7 @@ __Items__ in _Unturned_ encompass anything that can be carried in a player's in-
 - [Radiation Filters](#Radiation-Filters)
 - [Remote Triggers](#Remote-Triggers)
 - [Restraining Devices](#Restraining-Devices)
+- [Structures](#Structures)
 - [Tools](#Tools)
 - [Water Canisters](#Water-Canisters)
 
@@ -680,6 +681,21 @@ __Type__: `Arrest_End`
 __Useable__: `Arrest_End`
 
 __Recover__: ID of the restraining device that can be unlocked with this item.
+
+Structures
+==========
+
+__Type__: `Structure`
+
+__Useable__: `Structure`
+
+__Construct__: 
+
+__Health__: Amount of health.
+
+__Range__: Distance away the barricade can be placed from the player.
+
+__Explosion__: Destruction effect ID.
 
 Tools
 =====
