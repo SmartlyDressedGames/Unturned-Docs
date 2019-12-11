@@ -46,6 +46,12 @@ __Size2_Z__:
 
 __Can_Use_Underwater__: `false`, `true`. Applicable to equipable items, and defaults to false for primary weapons.
 
+__Should_Drop_On_Death__: `false`, `true`. Defaults to true.
+
+__Should_Delete_At_Zero_Quality__: `false`, `true`. Applicable to usable items, and defaults to false.
+
+__Allow_Manual_Drop__: `false`, `true`. Defaults to true.
+
 __Backward__: Specified if this item should be visually held in the opposite hand.
 
 Capacity
@@ -255,6 +261,8 @@ __Projectile_Blast_Radius_Multiplier__: Multiplier on the blast radius of projec
 __Projectile_Launch_Force_Multiplier__: Multiplier on the launch force applied to projectiles fired from projectile weapons.
 
 __Should_Fill_After_Detach__: Specified if ammunition is fully refilled when reloaded, effectively allowing for infinite ammunition only limited by reload time.
+
+Limb-independent damage is also applicable.
 
 Sights
 ------
@@ -474,6 +482,10 @@ Limb-independent entity damage is also applicable.
 Clothing
 ========
 
+__Type__: `Backpack`, `Glasses`, `Hat`, `Mask`, `Pants`, `Shirt`, `Vest`
+
+__Useable__: `Backpack`, `Glasses`, `Hat`, `Mask`, `Pants`, `Shirt`, `Vest`
+
 __Armor__: Decimal multiplier on incoming damage.
 
 __Width__: The amount of horizontal storage space.
@@ -486,35 +498,21 @@ __Beard__: Specified if beard shows up when wearing. Only applicable to hats, ma
 
 __Hair_Override__: Specified if hair material should be used. Only applicable to hats, masks, and glasses.
 
-__Pro__:
+__Pro__: Specified if the item should be unable to spawn. Intended for cosmetics.
 
 __Visible_On_Ragdoll__: `false`, `true`. Defaults to true.
-
-Backpacks
----------
 
 Glasses
 -------
 
-Hats
-----
+__Blindfold__: Specified if the player should be blinded when the glasses are worn.
 
-Masks
------
+__Vision__: `Civilian`, `Headlamp`, `Military`
 
-Pants
------
+Body Mesh Replacements
+----------------------
 
-Shirts
-------
-
-__Type__: `Shirt`
-
-__Useable__: `Shirt`
-
-### Body Mesh Replacements 
-
-See [CharacterMeshReplacement.md] for full documentation.
+Body mesh replacements are only applicable to shirts. See [CharacterMeshReplacement.md](CharacterMeshReplacement.md) for full documentation.
 
 __Has_1P_Character_Mesh_Override__: `false`, `true`
 
@@ -639,6 +637,14 @@ Projectiles
 __Type__: `Throwable`
 
 __Useable__: `Throwable`
+
+__Explode_On_Impact__: Specified if the projectile immediately explodes upon impact.
+
+__Sticky__: Specified if the projectile sticks to objects upon impact.
+
+__Fuse_Length__: Timer in seconds for fuse length. Default is 2 seconds.
+
+Limb-independent damage is also applicable.
 
 Radiation Filters
 =================
