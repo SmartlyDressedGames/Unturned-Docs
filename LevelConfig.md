@@ -48,13 +48,15 @@ __Asset__: Object with GUID of level asset to instantiate on this map. For examp
 
 	"Asset": { "GUID": "12dc9fdbe9974022afd21158ad54b76a" }
 
-__Trains__: Array of train vehicles to spawn. Only one of each train asset can exist at a given time because the vehicle ID is used to match saved trains to tracks. Road index can be seen by selecting a road in the level editor. For example:
+__Trains__: Array of train vehicles to spawn. Only one of each train asset can exist at a given time because the vehicle ID is used to match saved trains to tracks. Road index can be seen by selecting a road in the level editor. Placement is normalized between the start and end of the track length. For example:
 
 	"Trains":
 	[
 		{
 			"VehicleID": 187,
-			"RoadIndex": 0
+			"RoadIndex": 0,
+			"Min_Spawn_Placement": 0.1,
+			"Max_Spawn_Placement": 0.9
 		}
 	]
 
@@ -83,8 +85,6 @@ __Use_Vanilla_Bubbles__ _bool_: Should vanilla water bubble effects be enabled? 
 __Use_Legacy_Objects__ _bool_: Should objects be loaded from Objects.dat file? Using devkit objects is not as well supported, so safest to leave at true.
 
 __Use_Legacy_Snow_Height__ _bool_: Should travelling vertically past snow height threshold enable snow effects? Defaults to true.
-
-__Use_Legacy_Fog_Height__ _bool_: Should default terrain height be used for fog falloff? If false, devkit landscape tile limits are used instead. Defaults to true.
 
 __Use_Legacy_Oxygen_Height__ _bool_: Should travelling vertically past a certain point deplete oxygen? Defaults to true.
 
@@ -116,6 +116,8 @@ __Prevent_Building_Near_Spawnpoint_Radius__ _float_: Closest distance players ca
 
 __Spawn_Loadouts__ Array of items to grant when spawning in any mode. Refer to Arena_Loadouts.
 
+__Allow_Holiday_Redirects__ _bool_: Whether certain assets like objects, trees and landscapes should load alternative versions during holiday events.
+
 HUD
 ---
 
@@ -143,6 +145,8 @@ __Allow_Information__ bool
 
 Deprecated
 ----------
+
+__Use_Legacy_Fog_Height__ _bool_: Should default terrain height be used for fog falloff? If false, devkit landscape tile limits are used instead. Defaults to true.
 
 __Load_From_Resources__ _bool_: Used in the past for curated maps with assets in the vanilla Resources/Bundles/* directory. Master Bundles completely replaced this.
 
