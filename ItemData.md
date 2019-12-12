@@ -211,10 +211,10 @@ Error Handling
 
 __Ignore_TexRW__: Specified if read/writeable texture errors for the item should be hidden from the error logs.
 
-Master Bundles
+Asset Bundles
 --------------
 
-[AssetBundles.md]
+See [AssetBundles.md](AssetBundles.md) for full documentation regarding asset bundles.
 
 Attachments
 ===========
