@@ -98,6 +98,8 @@ __Player_Spine_Multiplier__: The multiplier of player_damage against player tors
 
 __Player_Skull_Multiplier__: The multiplier of player_damage against player head.
 
+__Instakill_Headshots__: `false`, `true`. Defaults to false. If true, headshots bypass hat armor on servers with Allow_Instakill_Headshots enabled.
+
 __Player_Damage_Bleeding__: `Always`, `Default`, `Heal`, `Never`
 
 __Player_Damage_Bones__: `Always`, `Heal`, `None`
@@ -551,13 +553,13 @@ __Useable__: `Consumeable`
 
 __Aid__: Specified if the item can be used on other players via right-click.
 
-__Bleeding_Modifier__: `Cut`, `Heal`, `None`
-
 __Bleeding__: Specified if bleeding is healed. Deprecated in favor of Bleeding_Modifier.
 
-__Bones_Modifier__: `Break`, `Heal`, `None`
+__Bleeding_Modifier__: `Cut`, `Heal`, `None`
 
 __Broken__: Specified if broken legs are healed. Deprecated in favor of Bones_Modifier.
+
+__Bones_Modifier__: `Break`, `Heal`, `None`
 
 __Health__: The number of health to restore.
 
@@ -732,7 +734,9 @@ __Reload_Time__: Multiplier on reload animation length.
 
 __Action__: `Bolt`, `Break`, `Minigun`, `Pump`, `Rail`, `Rocket`, `String`, `Trigger`. Rocket action has inherently explosive projectiles, uses ballistic force instead of alternative advanced ballistics options, and has infinite firing range.
 
-__Delete_Empty_Magazines__: Specified if the attached magazine should be deleted when depleted.
+__Delete_Empty_Magazines__: Specified if the attached magazine should be deleted when depleted. Deprecated in favor of Should_Delete_Empty_Magazines.
+
+__Should_Delete_Empty_Magazines__: `false`, `true`. No applicable default flag. If set to true, it will override how empty magazines are handled by the action item mode.
 
 __Spread_Aim__: The spread multiplier when aiming down sights. This is multiplied by the spread_hip value.
 
@@ -778,6 +782,22 @@ __Shell__: The shell effect ID to play after shooting.
 
 __Turret__: Specified if the weapon should be treated as a vehicular turret.
 
+__Can_Ever_Jam__: Specified if the weapon can jam.
+
+__Jam_Quality_Threshold__: Decimal representative of the quality percentage threshold for jamming can begin to occur.
+
+__Jam_Max_Chance__: Decimal-to-percent chance for jamming to occur.
+
+__Unjam_Chamber_Anim__: Name of the animation clip to play for unjamming. Defaults to UnjamChamber.
+
+__Can_Aim_During_Sprint__: Specified if the player can sprint while aiming down sights.
+
+__Ammo_Per_Shot__: Numeric option for ammunition consumed per shot.
+
+__Fire_Delay_Seconds__: Numeric option for the delay between initiating attempting to fire, and the actual firing of the weapon.
+
+__Allow_Magazine_Change__: `false`, `true`. Defaults to true. If false, the magazine in the weapon cannot be reloaded, unloaded, or replaced.
+
 Damage data (explosive, limb-dependent, and limb-independent setups), durability, and wear are also applicable.
 
 Remote Triggers
@@ -815,13 +835,15 @@ __Type__: `Structure`
 
 __Useable__: `Structure`
 
-__Construct__: 
+__Construct__: `Floor`, `Floor_Poly`, `Pillar`, `Post`, `Rampart`, `Roof`, `Roof_Poly`, `Wall`
 
 __Health__: Amount of health.
 
 __Range__: Distance away the barricade can be placed from the player.
 
 __Explosion__: Destruction effect ID.
+
+__Foliage_Cut_Radius__: Numerical value in meters for the radius in which foliage is removed from around the structure. Only applicable to floor structure types.
 
 Tools
 =====
