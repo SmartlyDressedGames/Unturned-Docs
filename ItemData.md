@@ -10,10 +10,12 @@ __Items__ in _Unturned_ encompass anything that can be carried in a player's in-
 - [Fuel Canisters](#Fuel-Canisters)
 - [Growth Supplements](#Growth-Supplements)
 - [Mapping Equipment](#Mapping-Equipment)
+- [Melee Weapons](#Melee-Weapons)
 - [Optics](#Optics)
 - [Parachutes](#Parachutes)
 - [Projectiles](#Projectiles)
 - [Radiation Filters](#Radiation-Filters)
+- [Ranged Weapons](#Ranged-Weapons)
 - [Remote Triggers](#Remote-Triggers)
 - [Restraining Devices](#Restraining-Devices)
 - [Structures](#Structures)
@@ -29,7 +31,7 @@ __GUID__: The GUID is automatically generated for the item when the game is laun
 
 __Type__: Each category of item has its own type. The type to use can be found for each specific item category below, and is used for the item's context type as viewed in the context menu.
 
-__Rarity__: `Common`, `Uncommon`, `Rare`, `Epic`, `Legendary`, `Mythical`
+__Rarity__: `Common`, `Uncommon`, `Rare`, `Epic`, `Legendary`, `Mythical`. Defaults to common.
 
 __Useable__: This defines which class to use for the item when equipped. If unspecified it will default to None, meaning that the item cannot be equipped. Which value to use for equippable items can be found below for each item category.
 
@@ -136,6 +138,8 @@ __Resource_Damage__: Damage dealt to resources.
 
 __Object_Damage__: Damage dealt to objects.
 
+__Invulnerable__: Specified if damage ignores structures, barricades, and vehicles that are considered invulnerable to low-power weaponry. Not applicable to explosive damage, which always ignores invulnerability.
+
 __Range__: For ranged and melee weapons – max distance in meters before damage is no longer possible. For explosive weapons (including magazine attachments that generate explosive projectiles) – the radius of the explosion in meters.
 
 __Explosive__: Specified if the explosive component is used.
@@ -179,6 +183,8 @@ __Blueprint\_#\_Output\_#\_Amount__: The amount of the unique product created.
 
 __Blueprint\_#\_Build__: The auditory effect ID to play.
 
+__Blueprint\_#\_Map__: Name of the map the condition applies to.
+
 __Blueprint\_#\_Conditions__: The number of required conditions.
 
 __Blueprint\_#\_Condition\_#\_Type__: `Holiday`
@@ -204,6 +210,11 @@ Error Handling
 --------------
 
 __Ignore_TexRW__: Specified if read/writeable texture errors for the item should be hidden from the error logs.
+
+Master Bundles
+--------------
+
+[AssetBundles.md]
 
 Attachments
 ===========
@@ -253,6 +264,8 @@ __Tracer__: Tracer effect ID.
 
 __Impact__: Impact effect ID.
 
+__Speed__: Multiplier on reload speed.
+
 __Stuck__: Amount of quality to lose when hit. Fired projectiles can be picked back up until quality reaches 0.
 
 __Projectile_Damage_Multiplier__: Multiplier on the damage dealt by projectile weapons.
@@ -262,6 +275,8 @@ __Projectile_Blast_Radius_Multiplier__: Multiplier on the blast radius of projec
 __Projectile_Launch_Force_Multiplier__: Multiplier on the launch force applied to projectiles fired from projectile weapons.
 
 __Should_Fill_After_Detach__: Specified if ammunition is fully refilled when reloaded, effectively allowing for infinite ammunition only limited by reload time.
+
+__Delete_Empty__: Specified if the magazine should be deleted when depleted.
 
 Limb-independent damage is also applicable.
 
@@ -614,6 +629,9 @@ __Enables_Chart__: Specified if this item provides a chart map display.
 
 __Enables_Compass__: Specified if this item provides a compass display.
 
+Melee Weapons
+=============
+
 Optics
 ======
 
@@ -643,7 +661,7 @@ __Explode_On_Impact__: Specified if the projectile immediately explodes upon imp
 
 __Sticky__: Specified if the projectile sticks to objects upon impact.
 
-__Fuse_Length__: Timer in seconds for fuse length. Default is 2 seconds.
+__Fuse_Length__: Timer in seconds for fuse length. Defaults to 2 seconds.
 
 Limb-independent damage is also applicable.
 
@@ -653,6 +671,117 @@ Radiation Filters
 __Type__: `Filter`
 
 __Useable__: `Filter`
+
+Ranged Weapons
+==============
+
+__Type__: `Gun`
+
+__Useable__: `Gun`
+
+__Barrel__: The barrel item ID to spawn attached.
+
+__Grip__: The grip item ID to spawn attached.
+
+__Sight__: The sight item ID to spawn attached.
+
+__Tactical__: The tactical item ID to spawn attached.
+
+__Hook_Barrel__: Specified if a barrel can be manually attached.
+
+__Hook_Grip__: Specified if a grip can be manually attached.
+
+__Hook_Sight__: Specified if a sight can be manually attached.
+
+__Hook_Tactical__: Specified if a tactical can be manually attached.
+
+__Magazine__: The magazine item ID to spawn attached.
+
+__Magazine_Replacements__: Number of unique conditions with alternative default magazine attachments.
+
+__Magazine_Replacement\_#\_Map__: Name of the map the condition applies to.
+
+__Magazine_Replacement\_#\_ID__: ID of the alternative magazine attachment.
+
+__Ammo_Min__: The minimum amount of ammo to generate.
+
+__Ammo_Max__: The maximum amount of ammo to generate.
+
+__Safety__: Specified if the safety firing mode can be swapped to.
+
+__Semi__: Specified if semi-automatic firing mode can be swapped to.
+
+__Bursts__: Number of shots fired in a burst. Specified if burst firing mode can be swapped to.
+
+__Auto__: Specified if automatic firing mode can be swapped to.
+
+__Caliber__: The caliber ID to check for attachment compatibility.
+
+__Attachment_Calibers__: Number of unique attachment calibers.
+
+__Attachment_Caliber_#__: ID of applicable caliber for hook attachments.
+
+__Magazine_Calibers__: Number of unique magazine calibers.
+
+__Magazine_Caliber_#__: ID of applicable caliber for magazine attachments.
+
+__Firerate__: The minimum number of ticks between the firing of each bullet.
+
+__Replace__: Multiplier of the reload animation length before the magazine is respawned.
+
+__Unplace__: Multiplier of the reload animation length before the magazine is despawned.
+
+__Reload_Time__: Multiplier on reload animation length.
+
+__Action__: `Bolt`, `Break`, `Minigun`, `Pump`, `Rail`, `Rocket`, `String`, `Trigger`. Rocket action has inherently explosive projectiles, uses ballistic force instead of alternative advanced ballistics options, and has infinite firing range.
+
+__Delete_Empty_Magazines__: Specified if the attached magazine should be deleted when depleted.
+
+__Spread_Aim__: The spread multiplier when aiming down sights. This is multiplied by the spread_hip value.
+
+__Spread_Hip__: The spread multiplier when not aiming down sights.
+
+__Ballistic_Force__: Measured in Newtons. Primarily applicable to the rocket action, and usage ignores all other advanced ballistic options.
+
+__Ballistic_Steps__: Defaults to (range / 10).
+
+__Ballistic_Travel__: Defaults to 10.
+
+__Ballistic_Drop__: Defaults to 0.002.
+
+__Recoil_Aim__: Multiplier on all recoil parameters when aiming down sights. Defaults to 1.
+
+__Recoil_Min_X__: The minimum horizontal look recoil in degrees.
+
+__Recoil_Min_Y__: The minimum vertical look recoil in degrees.
+
+__Recoil_Max_X__: The maximum horizontal look recoil in degrees.
+
+__Recoil_Max_Y__: The maximum vertical look recoil in degrees.
+
+__Recover_X__: Multiplier on degrees to be counter-animated horizontally over the next 250 milliseconds.
+
+__Recovery_Y__: Multiplier on degrees to be counter-animated vertically over the next 250 milliseconds.
+
+__Shake_Min_X__: The minimum X axis physical recoil.
+
+__Shake_Max_X__: The maximum X axis physical recoil.
+
+__Shake_Min_Y__: The minimum Y axis physical recoil.
+
+__Shake_Max_Y__: The maximum Y axis physical recoil.
+
+__Shake_Min_Z__: The minimum Z axis physical recoil.
+
+__Shake_Max_Z__: The maximum Z axis physical recoil.
+
+__Muzzle__: The muzzle effect ID to play when shooting.
+
+__Shell__: The shell effect ID to play after shooting.
+
+__Turret__: Specified if the weapon should be treated as a vehicular turret.
+
+Damage data (explosive, limb-dependent, and limb-independent setups), durability, and wear are also applicable.
 
 Remote Triggers
 ===============
@@ -755,12 +884,3 @@ __Type__: `Refill`
 __Useable__: `Refill`
 
 __Water__: The number of water to restore.
-
-Weapons
-=======
-
-Melee
------
-
-Ranged
-------
