@@ -10,6 +10,7 @@ Assets
 * [Exporting Asset Bundles](AssetBundles.md)
 * [Character Mesh Replacement](CharacterMeshReplacement.md)
 * [Upgrading from Unity 2017.4 LTS to 2018.4 LTS](Unity2018.md)
+* [Animation](Animation.md)
 * [Mod Hooks](ModHooks.md)
 * [Asset Validation](AssetValidation.md)
 * [Currency](Currency.md)
