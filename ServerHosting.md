@@ -7,6 +7,7 @@ __Multiplatform:__
 - [How to Configure Server](#How-to-Configure-Server)
 - [How to Host Over Internet](#How-to-Host-Over-Internet)
 - [Port Forwarding](PortForwarding.md)
+- [RocketMod](RocketMod.md)
 
 __Windows:__
 - [How to Install SteamCMD](#How-to-Install-SteamCMD-on-Windows)
