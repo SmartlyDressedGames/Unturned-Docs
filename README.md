@@ -14,6 +14,7 @@ Assets
 * [Mod Hooks](ModHooks.md)
 * [Asset Validation](AssetValidation.md)
 * [Currency](Currency.md)
+* [Foliage](Foliage.md)
 * [Vehicle Physics Profile](VehiclePhysicsProfile.md)
 
 Mapping
