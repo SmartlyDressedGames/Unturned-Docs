@@ -5,6 +5,7 @@ All multiplayer servers are hosted using the Unturned Dedicated Server tool, whi
 
 __Multiplatform:__
 - [How to Configure Server](#How-to-Configure-Server)
+- [How to Host Curated Maps](#How-to-Host-Curated-Maps)
 - [How to Host Over Internet](#How-to-Host-Over-Internet)
 - [Port Forwarding](PortForwarding.md)
 - [RocketMod](RocketMod.md)
@@ -163,6 +164,27 @@ To include a Workshop file on your server:
 		],
 
 4. During startup the files will be updated, and any dependencies detected. Players will have the files downloaded while connecting to the server.
+
+How to Host Curated Maps
+------------------------
+
+Curated maps are available as workshop items, so are configured in the `WorkshopDownloadConfig.json` file. During startup the Map command searches installed workshop items for a matching name.
+
+Alphabetically sorted list of curated map file IDs:
+
+- Athens Arena: 1454125991
+- Belgium: 1727125581
+- Bunker Arena: 1257784170
+- California: 1905768396
+- Canyon Arena: 1850209768
+- Carpat: 1497352180
+- Cyprus Arena: 1647991167
+- Cyprus Survival: 1647986053
+- Dango: 1850228333
+- France: 1975500516
+- Greece: 1702240229
+- Hawaii: 1753134636
+- Rio de Janeiro: 1821848824
 
 How to Host Over Internet
 -------------------------
