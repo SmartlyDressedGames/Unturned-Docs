@@ -30,6 +30,8 @@ __Root_Drag_Multiplier__: If set, multiplies vehicle rigidbody's positional drag
 
 __Root_Angular_Drag_Multiplier__: If set, multiplies vehicle rigidbody's angular drag force.
 
+__Carjack_Force_Multiplier__: If set, multiplies carjack item's force applied.
+
 __Wheel_Mass__: If set, overrides wheel collider mass. Ignored if vehicle asset has Wheel_Collider_Mass_Override set.
 
 __Wheel_Mass_Multiplier__: If set, multiplies wheel collider mass.
