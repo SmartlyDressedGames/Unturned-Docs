@@ -3,21 +3,20 @@ RocketMod
 
 __Rocket__ is a popular server-side plugin framework which expands the administrative toolset and wraps the Unturned APIs in a user-friendly manner.
 
-Installation
-------------
-
-1. Browse to the [Rocket.Unturned Releases](https://github.com/RocketMod/Rocket.Unturned/releases)
-2. Download the latest `Rocket.Unturned.zip` file.
-3. Unzip and navigate to the contained `Modules` directory.
-4. Cut the `Rocket.Unturned` module directory.
-5. Paste it into Unturned's `Modules` directory.
-
 Status
 ------
 
-On the 20th of December 2019 Sven Mawby "fr34kyn01535" and Enes Sadık Özbek "Trojaner" officially ceased maintenance of RocketMod. They have released the source code under the MIT license. [Read their full farewell statement here.](https://github.com/RocketMod/Rocket/blob/master/Farewell.md)
+On the 20th of December 2019 Sven Mawby "fr34kyn01535" and Enes Sadık Özbek "Trojaner" officially ceased maintenance of RocketMod. They have kindly released the source code under the MIT license. [Read their full farewell statement here.](https://github.com/RocketMod/Rocket/blob/master/Farewell.md)
 
-Unturned protects core Rocket compatibility between versions, so the final official Rocket.Unturned release should continue to function with all future releases of the game. Plugins may require updates, however.
+Unturned protects core Rocket compatibility between versions, so it will continue to function with all future releases of the game. Plugins may require updates, however.
+
+Installation
+------------
+
+Unturned includes an optional pre-built fork of the final version of RocketMod. It exists to fix issues that cropped up in the final release and preserve compatibility.
+
+1. Copy the Rocket.Unturned module from the game's Extras directory.
+2. Paste it into the game's Modules directory.
 
 Resources
 ---------
