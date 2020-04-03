@@ -181,6 +181,7 @@ Alphabetically sorted list of curated map file IDs:
 - Cyprus Arena: 1647991167
 - Cyprus Survival: 1647986053
 - Dango: 1850228333
+- Easter Island: 1983200271
 - France: 1975500516
 - Greece: 1702240229
 - Hawaii: 1753134636
