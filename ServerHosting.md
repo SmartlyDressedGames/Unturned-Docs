@@ -89,11 +89,11 @@ How to Launch Server on Linux
 1. Navigate to the SteamCMD > steamapps > common > U3DS directory.
 2. For an internet server run the following command:
 
-		./ServerHelper.sh +InternetServer/MyServer
+		./ServerHelper.sh +InternetServer/MyServer -ThreadedConsole
 
 	Alternatively, for a LAN server run the following command:
 
-		./ServerHelper.sh +LanServer/MyServer
+		./ServerHelper.sh +LanServer/MyServer -ThreadedConsole
 
 	_Note: In this example MyServer is used as the ServerID for savedata and configuration purposes._
 
