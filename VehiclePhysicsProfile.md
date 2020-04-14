@@ -5,6 +5,8 @@ This asset exists to tune vehicle physics in bulk without rebuilding asset bundl
 
 One of the goals introducing profiles is to improve the handling of vanilla wheeled vehicles. Feel free to experiment with the default profile, and propose changes to it.
 
+This is an [Asset v2](AssetsV2.md) class.
+
 How to test?
 ------------
 

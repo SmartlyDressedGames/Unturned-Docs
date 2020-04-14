@@ -8,6 +8,8 @@ Any collection of items with different numeric values can be associated together
 Asset Setup
 -----------
 
+This is an [Asset v2](AssetsV2.md) class.
+
 The currency asset defines how numbers are formatted, which items make up the currency, and their individual values. An example can be found at Bundles/Items/Supplies/CanadianCurrency.asset.
 
 __ValueFormat__: String to format numeric value into.
