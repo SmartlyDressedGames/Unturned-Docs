@@ -22,7 +22,7 @@ In-game the description supports the following BBCode tags:
 
 Ideally descriptions are kept succinct, so separate discussion topics might be a better place for long sections like ID lists.
 
-By default popular items are surfaced, but workshop items can be specifically featured to help bring attention to projects with a lot of effort put into them, and curated maps. This can be done for new releases or major updates.
+By default popular items are surfaced, but workshop items can be specifically featured to help bring attention to projects with a lot of effort put into them, and curated maps. This can be done for new releases or major updates. Updates can link to a separate URL for the release notes.
 
 Additionally, curated maps are linked from the singleplayer curated maps list, and will inherit the main menu "new" or "updated" label.
 
