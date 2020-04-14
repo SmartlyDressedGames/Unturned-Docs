@@ -44,7 +44,7 @@ __Arena_Loadouts__: Array of items to grant when spawning into arena. Each entry
 General
 -------
 
-__Asset__: Object with GUID of level asset to instantiate on this map. For example:
+__Asset__: Object with GUID of [Level Asset](LevelAsset.md) to instantiate on this map. For example:
 
 	"Asset": { "GUID": "12dc9fdbe9974022afd21158ad54b76a" }
 
