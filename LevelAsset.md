@@ -5,7 +5,7 @@ Each map can be associated with a **Level Asset**. These assets contain gameplay
 
 For examples check the `Assets/Levels` directory.
 
-`Dropship_Prefab` [Master Bundle Pointer](MasterBundlePtr.md): Overrides the model seen flying over the map when a care package is dropped.
+`Dropship` [Master Bundle Pointer](MasterBundlePtr.md): Overrides the model seen flying over the map when a care package is dropped.
 
 `Airdrop` [Asset Pointer](AssetPtr.md): to an [Airdrop Asset](AirdropAsset.md). Overrides the falling care package model.
 
