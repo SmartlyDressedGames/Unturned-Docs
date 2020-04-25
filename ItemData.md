@@ -57,6 +57,8 @@ __Allow_Manual_Drop__: `false`, `true`. Defaults to true.
 
 __Backward__: Specified if this item should be visually held in the opposite hand.
 
+__Bypass_Hash_Verification__: Bypasses hash-based file verification.
+
 Capacity
 --------
 
