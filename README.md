@@ -16,6 +16,7 @@ Assets
 * [Currency](Currency.md)
 * [Foliage](Foliage.md)
 * [Vehicle Physics Profile](VehiclePhysicsProfile.md)
+* [Song/Music](StereoSongAsset.md)
 
 Mapping
 -------
