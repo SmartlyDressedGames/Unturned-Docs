@@ -14,7 +14,6 @@ Assets
 * [Mod Hooks](ModHooks.md)
 * [Asset Validation](AssetValidation.md)
 * [Currency](Currency.md)
-* [Foliage](Foliage.md)
 * [Vehicle Physics Profile](VehiclePhysicsProfile.md)
 * [Song/Music](StereoSongAsset.md)
 
@@ -24,6 +23,8 @@ Mapping
 * [Level Config](LevelConfig.md)
 * [Curated Maps](CuratedMaps.md)
 * [Favorite Searches](FavoriteSearches.md)
+* [Foliage](Foliage.md)
+* [Landscape](Landscape.md)
 
 Programming
 -----------
