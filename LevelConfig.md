@@ -92,6 +92,8 @@ __Use_Rain_Volumes__ _bool_: Should rain flag in ambiance volume be used?
 
 __Use_Snow_Volumes__ _bool_: Should snow flag in ambiance volume be used?
 
+__Use_Underground_Whitelist__ _bool_: Should underground players not inside a whitelist volume be teleported to the terrain surface? Useful to curb out-of-bounds exploits.
+
 __Is_Aurora_Borealis_Visible__ _bool_: Should aurora borealis effects be enabled?
 
 __Snow_Affects_Temperature__ _bool_: Should snow inflict cold damage?
