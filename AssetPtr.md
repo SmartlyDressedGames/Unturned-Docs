@@ -13,6 +13,9 @@ Note that the GUID here is not wrapped in quotes because Unturned \*.dat files a
 In \*.asset files
 -----------------
 
+Two formats are supported in these files. The inline style was added later so you will see the older style used in many official assets.
+
+	"MyAssetPtr" "################################"
 	"MyAssetPtr" { "GUID" "################################" }
 
 In JSON files
