@@ -16,6 +16,7 @@ Assets
 * [Currency](Currency.md)
 * [Vehicle Physics Profile](VehiclePhysicsProfile.md)
 * [Song/Music](StereoSongAsset.md)
+* [Crafting Blacklist](CraftingBlacklistAsset.md)
 
 Mapping
 -------
