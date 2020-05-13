@@ -23,7 +23,7 @@ __Size2\_Z__: Controls orthagonal camera size for vehicle skin icons. Basically 
 
 __Shared_Skin_Name__:
 
-Shared_Skin_Lookup_ID
+__Shared_Skin_Lookup_ID__ `uint16`
 
 __Engine__: `Car`, `Plane`, `Helicopter`, `Blimp`, `Boat`, `Train`. Defaults to Car.
 
@@ -55,11 +55,11 @@ __Battery\_Charge_Rate__: Defaults to 20.
 
 __BatteryMode\_Driving__: `Charge`, `Burn`, `None`.
 
-__BatteryMode\_Empty__:
+__BatteryMode\_Empty__: `Charge`, `Burn`, `None`.
 
-__BatteryMode\_Headlights__:
+__BatteryMode\_Headlights__: `Charge`, `Burn`, `None`.
 
-__BatteryMode\_Sirens__:
+__BatteryMode\_Sirens__: `Charge`, `Burn`, `None`.
 
 __Fuel\_Burn\_Rate__: The rate fuel burns at. Set to 2.05 for Car, 4.2 for others by default.
 
@@ -71,103 +71,103 @@ __Speed\_Min__: Maximum reverse speed in Meters per Second.
 
 __Speed\_Max__: Maximum forward speed in Meters per Second.
 
-Steer\_Min
+__Steer\_Min__: Steering angle at the lowest possible speed.
 
-Steer\_Max
+__Steer\_Max__: Steering angle at the highest possible speed.
 
-Brake
+__Brake__: Determines the amount of braking force applied to the vehicle.
 
-Fuel\_Min
+__Fuel\_Min__: Minimum fuel that the vehicle can spawn with.
 
-Fuel\_Max
+__Fuel\_Max__: Maximum fuel that the vehicle can spawn with.
 
-Fuel
+__Fuel__: Maximum ammout of fuel the vehicle can hold.
 
-Health\_Min:
+__Health\_Min__: Minimum health that the vehicle can spawn with.
 
-Health\_Min:
+__Health\_Min__: Maximum health that the vehicle can spawn with.
 
 __Explosion__: ID of the explosion effect to use when destroyed.
 
-Explosion_Min_Force_Y:
+__Explosion_Min_Force_Y__: Defaults to `00, 1024, 0.0`
 
-Explosion_Max_Force_Y:
+__Explosion_Max_Force_Y__: Defaults to `00, 1024, 0.0`
 
-Exit:
+__Exit__: Exit distance from vehicle.
 
-__Cam_Follow_Distance__:
+__Cam_Follow_Distance__: Camera distance from player while in vehicle.
 
-Cam_Driver_Offset:
+__Cam_Driver_Offset__:  Offsets the position of the drivers first person camera by set amount.
 
 __Cam_Passenger_Offset__: Offsets the position of the passengers first person camera by set amount.
 
-Bumper_Multiplier:
+__Bumper_Multiplier__: Multiplies bumper damage
 
 __Passenger_Explosion_Armor__: `0.0`
 
 __Turrets__: `0`
 
-__Turret\_`x`\_Seat_Index\_`y`__
+__Turret\_`x`\_Seat_Index\_`y`__:
 
-Turret\_`x`\_Item\_ID z
+__Turret\_`x`\_Item\_ID__: z
 
-Turret\_`x`\_Yaw_Min
+__Turret\_`x`\_Yaw_Min__:
 
-Turret\_`x`\_Yaw_Max
+__Turret\_`x`\_Yaw_Max__:
 
-Turret\_`x`\_Pitch_Min
+__Turret\_`x`\_Pitch_Min__:
 
-Turret\_`x`\_Pitch_Max
+__Turret\_`x`\_Pitch_Max__:
 
-Turret\_`x`\_Ignore_Aim_Camera
+__Turret\_`x`\_Ignore_Aim_Camera__:
 
-Turret\_`x`\_Aim\_Offset
+__Turret\_`x`\_Aim\_Offset__:
 
-Invulnerable
+__Invulnerable__:
 
-Explosions_Invulnerable
+__Explosions_Invulnerable__:
 
-Environment_Invulnerable
+__Environment_Invulnerable__:
 
-Bumper_Invulnerable
+__Bumper_Invulnerable__:
 
-__Tires_Invulnerable__: Makes tires undestroyable 
+__Tires_Invulnerable__: Makes tires Invulnerable.
 
-Child_Explosion_Armor_Multiplier
+__Child_Explosion_Armor_Multiplier__: Multiplies explosion damage dealt to people in the vehicle by provided number.
 
 __Bicycle_Anim_Speed__: The speed at which the bicycle pedals spin.
 
-Stamina_Boost
+__Stamina_Boost__: If present the vehicle will recieve a boost when shift is pressed.
 
-Stamina_Powered
+__Stamina_Powered__: If present the vehicle will use stamina for power.
 
-Supports_Mobile_Buildables
+__Supports_Mobile_Buildables__:
 
-Can_Be_Locked
+__Can_Be_Locked__: If present it will not be possible to lock the vehicle.
 
-Trunk_Storage_X
+__Trunk_Storage_X__: Width of trunk storage.
 
-Trunk_Storage_Y
+__Trunk_Storage_Y__: Height of trunk storage.
 
-Drops_Table_ID
+__Drops_Table_ID__: Defaults to `518`.
 
-Drops_Min
+__Drops_Min__: Defaults to`3`.
 
-Drops_Max
+__Drops_Max__: Defaults to`7`.
 
-Tire_ID
+__Tire_ID__: ID of the item used to attach a tire. Defaults to `1451`.
 
-__Num_Steering_Tires__:
+__Num_Steering_Tires__: Steers tires 1 through n; with n being the number of tire models. If `crawler` is set this property is ignored.
 
-Override_Center_Of_Mass
+__Override_Center_Of_Mass__: Requires unity gameobject named "Center_Of_Mass".
 
-__Wheel_Collider_Mass_Override__: 
+__Wheel_Collider_Mass_Override__: Overrides the setting of your wheel colliders mass to provided value. Should default to `3`
 
-__Center_Of_Mass__
+__Center_Of_Mass__: You apparently can manually specify this, though why you'd bother is beyond me.
 
 __Physics_Profile__: Physics Profile GUID. [Documentation can be found here](VehiclePhysicsProfile.md)
 
-__Bypass_Hash_Verification__
+__Bypass_Hash_Verification__:
 
 __Bypass_Buildable_Mobility__: Allows you to place beds on a vehicle.
 
@@ -179,13 +179,13 @@ __Bypass_Buildable_Mobility__: Allows you to place beds on a vehicle.
 
 ---
 
-Air_Turn_Responsiveness
+__Air_Turn_Responsiveness__: Defaults to `2`.
 
-Air_Steer_Min
+__Air_Steer_Min__:
 
-Air_Steer_Max
+__Air_Steer_Max__:
 
-__Lift__:
+__Lift__: Upwards force applied to the vehicle
 
 ## Helicopter
 
