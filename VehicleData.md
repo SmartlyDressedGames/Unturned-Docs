@@ -3,6 +3,7 @@
 **Vehicles** in _Unturned_ consist of the 6 different engine types, Car, Plane, Helicopter, Blimp, Boat, and Train. Many properties of the different engine types are shared between them, however, some are specific to each engine type, and are categorized as such below.
 
 - [Non-specific Data](#Non-specific-Data)
+  - [Battery Settings](#Battery-Settings)
 - [Car](#Car)
 - [Plane](#Plane)
 - [Helicopter](#Helicopter)
@@ -14,11 +15,11 @@
 
 ---
 
-__Bypass_ID_Limit__: Allows you to use an ID that is within the space reserved for vanilla content.
+__ID__: The item ID is used to spawn the item into the game, and is represented as an unsigned 16 bit integer (a range of 0–65535). It is recommended not to use a value less than 2,000 as those are reserved for official content. It is also recommended to avoid any ID range being used by curated content, as those are often used by modded servers and custom Workshop maps. Vehicles ID ranges do not conflict with those of Items or Objects.
 
-Name
+__Bypass\_ID\_Limit__: Allows you to use an ID that is within the space reserved for vanilla content.
 
-__Size2_Z__: Controls orthagonal camera size for vehicle skin icons. Basically irrelevant since very few vehicles have skins.
+__Size2\_Z__: Controls orthagonal camera size for vehicle skin icons. Basically irrelevant since very few vehicles have skins.
 
 __Shared_Skin_Name__:
 
@@ -26,67 +27,67 @@ Shared_Skin_Lookup_ID
 
 __Engine__: `Car`, `Plane`, `Helicopter`, `Blimp`, `Boat`, `Train`. Defaults to Car.
 
-__Rarity__:
+__Rarity__: `Common`, `Uncommon`, `Rare`, `Epic`, `Legendary`, `Mythical`. Defaults to common. 
 
-__Zip__:
+__Zip__: Handlebar related property.
 
-__Bicycle__: Tells unturned to use bycicle animations
+__Bicycle__: Tells unturned to use bycicle animations.
 
-__Reclined__:
+__Reclined__: Uses the slightly different drivers reclined animation.
 
-__Crawler__:
+__Crawler__: Locks wheel turning.
 
-__LockMouse__:
+__LockMouse__: Locks the mouse to the forward position so the driver cannot move their view.
 
-__Traction__:
+__Traction__: Changes the wheels physics on ice and offroad.
 
-Sleds
+__Sleds__: Makes the wheels slide easier. For us on plane wheels where this effect is desired.
 
-### Battery Settings
+### Battery-Settings
 
-Cannot_Spawn_With_Battery
+__Cannot\_Spawn\_With\_Battery__: If present the vehicle will not spawn with a battery present.
 
-Battery_Spawn_Charge_Multiplier
+__Battery\_Spawn\_Charge\_Multiplier__ Defaults to 1.
 
-Battery_Burn_Rate
+__Battery\_Burn_Rate__: Defaults to 20.
 
-Battery_Charge_Rate
+__Battery\_Charge_Rate__: Defaults to 20.
 
-BatteryMode_Driving
+__BatteryMode\_Driving__: `Charge`, `Burn`, `None`.
 
-BatteryMode_Empty
+__BatteryMode\_Empty__:
 
-BatteryMode_Headlights
+__BatteryMode\_Headlights__:
 
-BatteryMode_Sirens
+__BatteryMode\_Sirens__:
 
-Fuel_Burn_Rate
+__Fuel\_Burn\_Rate__: The rate fuel burns at. Set to 2.05 for Car, 4.2 for others by default.
 
-Pitch_Idle
+__Pitch\_Idle__: Changes the pitch of the engine audio at idle. If your audio clip is named Engine_Large or Engine_Medium this is preset to .75 and .625
 
-Pitch_Drive
+__Pitch\_Drive__: Changes the pitch of the engine audio while driving. If your audio clip is named Engine_Large or Engine_Medium this is preset to .075 and .025
 
-Speed_Min
+__Speed\_Min__: Maximum reverse speed in Meters per Second.
 
-Speed_Max
+__Speed\_Max__: Maximum forward speed in Meters per Second.
 
-Steer_Min
+Steer\_Min
 
-Steer_Max
+Steer\_Max
 
 Brake
 
-Fuel_Min
+Fuel\_Min
 
-Fuel_Max
+Fuel\_Max
 
 Fuel
 
-Health_Min:
+Health\_Min:
 
-Health_Min:
+Health\_Min:
 
-Explosion:
+__Explosion__: ID of the explosion effect to use when destroyed.
 
 Explosion_Min_Force_Y:
 
@@ -94,33 +95,33 @@ Explosion_Max_Force_Y:
 
 Exit:
 
-Cam_Follow_Distance:
+__Cam_Follow_Distance__:
 
 Cam_Driver_Offset:
 
-Cam_Passenger_Offset:
+__Cam_Passenger_Offset__: Offsets the position of the passengers first person camera by set amount.
 
 Bumper_Multiplier:
 
 __Passenger_Explosion_Armor__: `0.0`
 
-Turrets
+__Turrets__: `0`
 
-Turret_`x`_Seat_Index_`y`
+__Turret\_`x`\_Seat_Index\_`y`__
 
-Turret_`x`_Item_ID z
+Turret\_`x`\_Item\_ID z
 
-Turret_`x`_Yaw_Min
+Turret\_`x`\_Yaw_Min
 
-Turret_`x`_Yaw_Max
+Turret\_`x`\_Yaw_Max
 
-Turret_`x`_Pitch_Min
+Turret\_`x`\_Pitch_Min
 
-Turret_`x`_Pitch_Max
+Turret\_`x`\_Pitch_Max
 
-Turret_`x`_Ignore_Aim_Camera
+Turret\_`x`\_Ignore_Aim_Camera
 
-Turret_`x`_Aim_Offset
+Turret\_`x`\_Aim\_Offset
 
 Invulnerable
 
@@ -130,17 +131,11 @@ Environment_Invulnerable
 
 Bumper_Invulnerable
 
-Tires_Invulnerable
+__Tires_Invulnerable__: Makes tires undestroyable 
 
 Child_Explosion_Armor_Multiplier
 
-Air_Turn_Responsiveness
-
-Air_Steer_Min
-
-Air_Steer_Max
-
-Bicycle_Anim_Speed
+__Bicycle_Anim_Speed__: The speed at which the bicycle pedals spin.
 
 Stamina_Boost
 
@@ -162,25 +157,19 @@ Drops_Max
 
 Tire_ID
 
-Num_Steering_Tires
+__Num_Steering_Tires__:
 
 Override_Center_Of_Mass
 
-Wheel_Collider_Mass_Override
+__Wheel_Collider_Mass_Override__: 
 
-Center_Of_Mass
+__Center_Of_Mass__
 
-Physics_Profile
+__Physics_Profile__: Physics Profile GUID. [Documentation can be found here](VehiclePhysicsProfile.md)
 
-Train_Track_Offset
+__Bypass_Hash_Verification__
 
-Train_Wheel_Offset
-
-Train_Car_Length
-
-Bypass_Hash_Verification
-
-__Bypass_Buildable_Mobility__: Allows you to place beds on a vehicle
+__Bypass_Buildable_Mobility__: Allows you to place beds on a vehicle.
 
 ## Car
 
@@ -190,7 +179,13 @@ __Bypass_Buildable_Mobility__: Allows you to place beds on a vehicle
 
 ---
 
-Lift
+Air_Turn_Responsiveness
+
+Air_Steer_Min
+
+Air_Steer_Max
+
+__Lift__:
 
 ## Helicopter
 
@@ -207,3 +202,9 @@ Lift
 ## Train
 
 ---
+
+__Train\_Track\_Offset__:
+
+__Train\_Wheel\_Offset__:
+
+__Train\_Car\_Length__:
