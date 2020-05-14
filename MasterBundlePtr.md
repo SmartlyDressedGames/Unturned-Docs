@@ -15,3 +15,7 @@ In \*.asset files
 		"MasterBundle" "core.masterbundle"
 		"AssetPath" "path/to/file.extension"
 	}
+
+If the asset default master bundle should be used then the path can be specified inline:
+
+	"MyMasterBundlePtr" "path/to/file.extension"
