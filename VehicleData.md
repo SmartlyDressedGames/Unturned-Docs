@@ -83,9 +83,11 @@ __Fuel\_Max__: Maximum fuel that the vehicle can spawn with.
 
 __Fuel__: Maximum ammout of fuel the vehicle can hold.
 
+__Health__: Health of the vehicle.
+
 __Health\_Min__: Minimum health that the vehicle can spawn with.
 
-__Health\_Min__: Maximum health that the vehicle can spawn with.
+__Health\_Max__: Maximum health that the vehicle can spawn with.
 
 __Explosion__: ID of the explosion effect to use when destroyed.
 
