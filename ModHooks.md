@@ -30,6 +30,10 @@ Events for driver entering and exiting the vehicle. These events are fired on se
 
 Events for day, night, full moon, and weather. These events are fired on server and client.
 
+### Custom Weather Event Hook
+
+Events for a specific custom [Weather Asset](WeatherAsset.md). Any map can have an unlimited number of weather types and weather listeners.
+
 ## Event Instigators
 
 ### Client Text Chat Messenger
