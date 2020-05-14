@@ -105,23 +105,27 @@ __Bumper_Multiplier__: Multiplies bumper damage
 
 __Passenger_Explosion_Armor__: `0.0`
 
-__Turrets__: `0`
+### Turret-Settings
 
-__Turret\_`x`\_Seat_Index\_`y`__:
+__Turrets__: `0` Specifies the number of turrets on the vehicle.
 
-__Turret\_`x`\_Item\_ID__: z
+__Turret\_`x`\_Seat_Index\_`y`__: Specifies which `Seat_y` the turret will use. `x` stands for the number of the turret (goes from 0,1,2...)
 
-__Turret\_`x`\_Yaw_Min__:
+__Turret\_`x`\_Item\_ID__: Specifies the ID of the turret weapon (IT IS ADVISED that the turret gun has Turret in it's .dat)
 
-__Turret\_`x`\_Yaw_Max__:
+__Turret\_`x`\_Yaw_Min__: Yaw determines turret rotation. `_Min` decides for the left side (Keep number lower than -180 if you want a forever spinny boi)
 
-__Turret\_`x`\_Pitch_Min__:
+__Turret\_`x`\_Yaw_Max__: Determines turret rotation to the right side. (Keep number higher than 180 if you want a forever spinny boi) -360 and 360 make forever spinny boy
 
-__Turret\_`x`\_Pitch_Max__:
+__Turret\_`x`\_Pitch_Min__: Specifies how high the Pitch of the turret can go. ↑ (This is called elevation)
 
-__Turret\_`x`\_Ignore_Aim_Camera__:
+__Turret\_`x`\_Pitch_Max__: Specifies how low the Pitch of the turret can go. ↓ (This is called depression)
 
-__Turret\_`x`\_Aim\_Offset__:
+__Turret\_`x`\_Ignore_Aim_Camera__: Use this if you want the turret control view to be from the seated player's perspective.
+
+__Turret\_`x`\_Aim\_Offset__: Offsets the Aim on the Y axis.
+
+### Invulnerability-properties
 
 __Invulnerable__:
 
@@ -129,7 +133,7 @@ __Explosions_Invulnerable__:
 
 __Environment_Invulnerable__:
 
-__Bumper_Invulnerable__:
+__Bumper_Invulnerable__: Makes vehicle invulnerable to collisions to damages caused by collisions with other objects (such as zombies or players).
 
 __Tires_Invulnerable__: Makes tires Invulnerable.
 
@@ -167,7 +171,7 @@ __Center_Of_Mass__: You apparently can manually specify this, though why you'd b
 
 __Physics_Profile__: Physics Profile GUID. [Documentation can be found here](VehiclePhysicsProfile.md)
 
-__Bypass_Hash_Verification__:
+__Bypass_Hash_Verification__: Bypasses hash-based file verification.
 
 __Bypass_Buildable_Mobility__: Allows you to place beds on a vehicle.
 
