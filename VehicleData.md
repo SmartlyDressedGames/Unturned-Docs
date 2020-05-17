@@ -203,7 +203,7 @@ __Center_Of_Mass__: You apparently can manually specify this, though why you'd b
 
 __Bypass_Hash_Verification__: Bypasses hash-based file verification.
 
-__Bypass_Buildable_Mobility__: Allows you to place beds on a vehicle.
+__Bypass_Buildable_Mobility__: Allows you to place sentry guns and beds on a vehicle.
 
 __Supports_Mobile_Buildables__:
 
