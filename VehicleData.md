@@ -64,13 +64,15 @@ __Steer\_Max__: Steering angle at the highest possible speed.
 
 __Brake__: Determines the amount of braking force applied to the vehicle.
 
-__Override_Center_Of_Mass__: Defaults to `false`. 
+__Override_Center_Of_Mass__: Defaults to `false`.
 
-    Override_Center_Of_Mass_x
-    Override_Center_Of_Mass_y
-    Override_Center_Of_Mass_z
+__Center_Of_Mass__:  This 
 
-__Wheel_Collider_Mass_Override__: Overrides the setting of your wheel colliders mass to provided value. Should default to `3`
+    Center_Of_Mass_x
+    Center_Of_Mass_y
+    Center_Of_Mass_z
+
+__Wheel_Collider_Mass_Override__: Overrides the setting of your wheel colliders mass to provided value. Should default to `3`.
 
 __Physics_Profile__: Physics Profile GUID. [Documentation can be found here](VehiclePhysicsProfile.md)
 
@@ -164,7 +166,6 @@ __Exit__: Exit distance from vehicle.
 
 __Cam_Follow_Distance__: Camera distance from player while in vehicle. Defaults to `5.5` unless __Cam_Follow_Distance__ is present, in which case the default value is `0.0`.
 
-
 __Cam_Driver_Offset__:  Offsets the position of the drivers first person camera by set amount.
 
 __Cam_Passenger_Offset__: Offsets the position of the passengers first person camera by set amount.
@@ -199,8 +200,6 @@ __Crawler__: Locks wheel turning.
 
 __LockMouse__: Locks the mouse to the forward position so the driver cannot move their view.
 
-__Center_Of_Mass__: You apparently can manually specify this, though why you'd bother is beyond me.
-
 __Bypass_Hash_Verification__: Bypasses hash-based file verification.
 
 __Bypass_Buildable_Mobility__: Allows you to place sentry guns and beds on a vehicle.
@@ -220,7 +219,6 @@ __Air_Steer_Min__:
 __Air_Steer_Max__:
 
 __Lift__: Upwards force applied to the vehicle
-
 
 ## Boat
 
