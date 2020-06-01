@@ -38,7 +38,7 @@ Each of the four main times of day can override certain properties.
 
 Multiple effects can be instantiated while the weather is active.
 
-`Prefab` [Master Bundle Pointer](MasterBundlePtr.md): game object with a particle system. PlayOnAwake should be disabled.
+`Prefab` [Master Bundle Pointer](MasterBundlePtr.md): game object with a particle system. PlayOnAwake should be disabled. For effects tied to the view it may be helpful to change the culling mode to Always Simulate.
 
 `Emission_Exponent` *float*: power applied to weather intensity multiplied by default constant rate over time.
 
