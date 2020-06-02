@@ -8,7 +8,7 @@ __Multiplatform:__
 - [How to Host Curated Maps](#How-to-Host-Curated-Maps)
 - [How to Host Over Internet](#How-to-Host-Over-Internet)
 - [Port Forwarding](PortForwarding.md)
-- [RocketMod](RocketMod.md)
+- [Rocket](Rocket.md)
 - [Login Tokens](GameServerLoginTokens.md)
 
 __Windows:__
