@@ -38,8 +38,15 @@ Events for a specific custom [Weather Asset](WeatherAsset.md). Any map can have 
 
 ### Client Text Chat Messenger
 
+#### Notice:
+`Allow_Client_Messages`& `Allow_Client_Commands` must be explicitly enabled in `Config.json` for servers.
+
 Allows Unity events to request a text chat message be sent on behalf of the client. For example, to execute a command.
 
+
 ### Server Text Chat Messenger
+
+#### Notice:
+`Allow_Server_Messages`& `Allow_Server_Commands` must be explicitly enabled in `Config.json` for servers.
 
 Allows Unity events to broadcast messages from the server. Icons and rich text are optional. Can also execute commands that are not available (yet) to NPCs like changing the weather or triggering an airdrop.
