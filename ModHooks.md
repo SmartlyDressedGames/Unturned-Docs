@@ -47,3 +47,7 @@ The `UnityEvents.Allow_Client_Messages` and/or `UnityEvents.Allow_Client_Command
 Allows Unity events to broadcast messages from the server. Icons and rich text are optional. Can also execute commands that are not available (yet) to NPCs like changing the weather or triggering an airdrop.
 
 The `UnityEvents.Allow_Server_Messages` and/or `UnityEvents.Allow_Server_Commands` settings must be enabled in the server `Config.json` file before these can be triggered. This ensures hosts are aware of their usage. Singleplayer defaults to enabled.
+
+### Effect Spawner
+
+Allows Unity events to spawn effect assets. When the `AuthorityOnly` field is enabled only the server will spawn effects and replicate them to clients.
