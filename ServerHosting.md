@@ -66,11 +66,11 @@ How to Launch Server on Windows
 5. Right-click on the batch script (`Tutorial.bat`) and select Edit.
 6. For an internet server insert the following text into the file:
 
-		start %~dp0ServerHelper.bat +InternetServer/MyServer
+		start "" "%~dp0ServerHelper.bat" +InternetServer/MyServer
 
 	Alternatively, for a LAN server insert the following text into the file:
 
-		start %~dp0ServerHelper.bat +LanServer/MyServer
+		start "" "%~dp0ServerHelper.bat" +LanServer/MyServer
 
 	_Note: In this example MyServer is used as the ServerID for savedata and configuration purposes._
 
