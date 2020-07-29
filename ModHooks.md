@@ -10,6 +10,10 @@ Originally proposed and coined by VitaxaRusModding in this GitHub issue: [Link](
 
 ## Event Listeners
 
+### Activaton Event Hook
+
+Events when a component or game object are enabled and disabled. Useful for extending toggleable actions in the base game.
+
 ### Collision Event Hook
 
 Events for player overlaps with a trigger collider. Primarily useful for server-side objects as collisions are not triggered by other players client-side, but this limitation may be resolved in the future.
@@ -21,6 +25,10 @@ Events for player overlaps with a trigger collider. Primarily useful for server-
 ### Text Chat Event Hook
 
 Event when a text chat message passes certain filters such as channel, within a radius, and containing a secret phrase. Only fired on the server.
+
+### Timer Event Hook
+
+Allows events to set or cancel a timer, and triggers an event when the timer expires.
 
 ### Vehicle Event Hook
 
@@ -51,3 +59,9 @@ The `UnityEvents.Allow_Server_Messages` and/or `UnityEvents.Allow_Server_Command
 ### Effect Spawner
 
 Allows Unity events to spawn effect assets. When the `AuthorityOnly` field is enabled only the server will spawn effects and replicate them to clients.
+
+## Misc
+
+### Fall Damage Override
+
+Allows any game object to override the fall damage when a character lands on it or one of its descendants.
