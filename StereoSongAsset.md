@@ -39,3 +39,5 @@ OR
 		"Name" "core.content"
 		"Path" "assets/resources/bundles/songs/unturned_theme.mp3"
 	}
+
+`Link_URL` string: optional URL to open in web browser when external link button is clicked.
