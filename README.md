@@ -43,7 +43,9 @@ Servers
 Video Tutorials
 ---------------
 
-Several official tutorial videos have been created over the years. They are gradually becoming outdated and don't represent the current development direction, but are listed here for completeness:
+[How to host a Dedicated Server on Windows](https://www.youtube.com/watch?v=8axVrnSLlx4)
+
+Several older tutorial videos are gradually becoming outdated and don't represent the current development direction, but are listed here for completeness:
 
 * [Uploading Skins to the Curated Workshop](https://www.youtube.com/watch?v=rF4YvEuxse8)
 

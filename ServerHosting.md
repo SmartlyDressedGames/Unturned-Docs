@@ -14,6 +14,7 @@ __Multiplatform:__
 __Windows:__
 - [How to Install SteamCMD](#How-to-Install-SteamCMD-on-Windows)
 - [How to Launch Server](#How-to-Launch-Server-on-Windows)
+- [Video Tutorial](https://www.youtube.com/watch?v=8axVrnSLlx4)
 
 __Linux:__
 - [How to Install SteamCMD](#How-to-Install-SteamCMD-on-Linux)
