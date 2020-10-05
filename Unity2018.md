@@ -1,4 +1,4 @@
-Upgrading from Unity 2017.4 LTS to 2018.4 LTS
+Upgrading from Unity 2017 LTS to 2018 LTS
 =============================================
 
 Asset Bundles
@@ -11,7 +11,7 @@ Some of the slower asset checks like finding missing meshes have been made optio
 Unity Packages
 --------------
 
-All example content has been updated for 2018.4, and now has a consistent export process to ensure the contents are kept valid. What were once individual packages (e.g. All_Shaders.unitypackage) have been merged into a single ExampleAssets.unitypackage in the Bundles/Sources/Examples directory.
+All example content has been updated for 2018 LTS, and now has a consistent export process to ensure the contents are kept valid. What were once individual packages (e.g. All_Shaders.unitypackage) have been merged into a single ExampleAssets.unitypackage in the Bundles/Sources/Examples directory.
 
 Logging / Server Console
 ------------------------
@@ -21,16 +21,16 @@ Usage of Unity's built-in Debug.Log has been replaced with logging to the Client
 Workshop
 --------
 
-Uploads from 2018.4 are incompatible with past versions of the game, and a warning message is shown when loading newer content in the 2017.4 version.
+Uploads from 2018 LTS are incompatible with past versions of the game, and a warning message is shown when loading newer content in the 2017 LTS version.
 
-2017.4 Availability
+2017 LTS Availability
 -------------------
 
-For archival purposes the 2017.4 version of the game will remain in a "unity-2017.4" beta branch.
+For archival purposes the 2017 LTS version of the game will remain in a "unity-2017" beta branch.
 
 Platforms
 ---------
 
 Linux 32-bit and MacOS 32-bit have been removed in favor of the 64-bit versions. Servers that were still using the outdated Linux 32-bit depot should update to the 64-bit Linux dedicated server.
 
-Headless server files have been removed from the player Linux depot, and are instead only in the dedicated server Linux depot. Windows headless mode is now supported in 2018.4, and is enabled for the Windows dedicated server depot.
+Headless server files have been removed from the player Linux depot, and are instead only in the dedicated server Linux depot. Windows headless mode is now supported in 2018 LTS, and is enabled for the Windows dedicated server depot.
