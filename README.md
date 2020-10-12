@@ -40,6 +40,7 @@ Servers
 * [Server Hosting](ServerHosting.md)
 * [Port Forwarding](PortForwarding.md)
 * [Rocket](Rocket.md)
+* [OpenMod](OpenMod.md)
 
 Video Tutorials
 ---------------
