@@ -220,7 +220,7 @@ Attachments
 
 __Calibers__: The number of calibers applicable.
 
-__Caliber_#__: ID of an applicable caliber.
+__Caliber\_#__: ID of an applicable caliber.
 
 __Recoil_X__: Decimal amount to multiply horizontal look recoil by.
 
@@ -473,7 +473,7 @@ __Display__: Stored item is visible.
 
 __Mode__: `Friendly`, `Hostile`, `Neutral`
 
-__Infinite_Ammo__: Weapon ammunition never depletes.
+__Infinite_Ammo__: ammunition never depletes.
 
 __Infinite_Quality__: Weapon quality never depletes.
 
@@ -631,6 +631,8 @@ __Enables_Compass__: Specified if this item provides a compass display.
 Melee Weapons
 =============
 
+No documentation is available at this time.
+
 Optics
 ======
 
@@ -718,11 +720,11 @@ __Caliber__: The caliber ID to check for attachment compatibility.
 
 __Attachment_Calibers__: Number of unique attachment calibers.
 
-__Attachment_Caliber_#__: ID of applicable caliber for hook attachments.
+__Attachment_Caliber\_#__: ID of applicable caliber for hook attachments.
 
 __Magazine_Calibers__: Number of unique magazine calibers.
 
-__Magazine_Caliber_#__: ID of applicable caliber for magazine attachments.
+__Magazine_Caliber\_#__: ID of applicable caliber for magazine attachments.
 
 __Firerate__: The minimum number of ticks between the firing of each bullet.
 
@@ -742,6 +744,12 @@ __Spread_Aim__: The spread multiplier when aiming down sights. This is multiplie
 
 __Spread_Hip__: The spread multiplier when not aiming down sights.
 
+__Spread_Sprint__: The spread multiplier when sprinting. Defaults to 1. Requires `Can_Aim_During_Sprint true`.
+
+__Spread_Crouch__: The spread multiplier when crouched. Defaults to 1.
+
+__Spread_Prone__: The spread multiplier when prone. Defaults to 1.
+
 __Ballistic_Force__: Measured in Newtons. Primarily applicable to the rocket action, and usage ignores all other advanced ballistic options.
 
 __Ballistic_Steps__: Defaults to (range / 10).
@@ -751,6 +759,12 @@ __Ballistic_Travel__: Defaults to 10.
 __Ballistic_Drop__: Defaults to 0.002.
 
 __Recoil_Aim__: Multiplier on all recoil parameters when aiming down sights. Defaults to 1.
+
+__Recoil_Sprint__: Multiplier on horizontal and vertical look recoil while sprinting. Defaults to 1. Requires `Can_Aim_During_Sprint true`.
+
+__Recoil_Crouch__: Multiplier on horizontal and vertical look recoil while crouched. Defaults to 1. 
+
+__Recoil_Prone__: Multiplier on horizontal and vertical look recoil while proned. Defaults to 1. 
 
 __Recoil_Min_X__: The minimum horizontal look recoil in degrees.
 
@@ -762,7 +776,7 @@ __Recoil_Max_Y__: The maximum vertical look recoil in degrees.
 
 __Recover_X__: Multiplier on degrees to be counter-animated horizontally over the next 250 milliseconds.
 
-__Recovery_Y__: Multiplier on degrees to be counter-animated vertically over the next 250 milliseconds.
+__Recover_Y__: Multiplier on degrees to be counter-animated vertically over the next 250 milliseconds.
 
 __Shake_Min_X__: The minimum X axis physical recoil.
 
@@ -790,7 +804,7 @@ __Jam_Max_Chance__: Decimal-to-percent chance for jamming to occur.
 
 __Unjam_Chamber_Anim__: Name of the animation clip to play for unjamming. Defaults to UnjamChamber.
 
-__Can_Aim_During_Sprint__: Specified if the player can sprint while aiming down sights.
+__Can_Aim_During_Sprint__: `false`, `true`. Defaults to false. If true, the player can sprint while aiming down sights.
 
 __Ammo_Per_Shot__: Numeric option for ammunition consumed per shot.
 
