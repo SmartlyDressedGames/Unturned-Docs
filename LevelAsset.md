@@ -11,4 +11,6 @@ For examples check the `Assets/Levels` directory.
 
 `Crafting_Blacklists` array of [Asset Pointers](AssetPtr.md) to [Crafting Blacklist(s)](CraftingBlacklistAsset.md). Prevents specific items or blueprints from being used while crafting in the level.
 
+`Min_Stealth_Radius` float: Player stealth skill level cannot reduce minimum detection distance below this value.
+
 This is an [Asset v2](AssetsV2.md) class.
