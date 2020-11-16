@@ -1,7 +1,7 @@
 Getting Started
 ===============
 
-Installing the Unity Editor is required for exporting custom content into the game. Any 2018.4 LTS version should be compatible. [View Download Links](https://unity3d.com/unity/qa/lts-releases?version=2018.4)
+Installing the Unity Editor is required for exporting custom content into the game. Any 2019.4 LTS version should be compatible. [View Download Links](https://unity3d.com/unity/qa/lts-releases?version=2019.4)
 
 Once Unity is installed a project can be created to house custom content. At this point it is recommended to import Unturned's provided source packages:
 
