@@ -25,6 +25,7 @@ Mapping
 * [Level Config](LevelConfig.md)
 * [Curated Maps](CuratedMaps.md)
 * [Favorite Searches](FavoriteSearches.md)
+* [Bulk Replace Objects](EditorAssetRedirectors.md)
 * [Foliage](Foliage.md)
 * [Landscape](Landscape.md)
 
