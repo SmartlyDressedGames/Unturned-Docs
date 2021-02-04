@@ -13,4 +13,18 @@ For examples check the `Assets/Levels` directory.
 
 `Min_Stealth_Radius` float: Player stealth skill level cannot reduce minimum detection distance below this value.
 
+`Weather_Types` *array*: determines which weather can be scheduled to occur naturally. Refer to weather properties.
+
 This is an [Asset v2](AssetsV2.md) class.
+
+## Weather Properties
+
+`Asset` [Asset Pointer](AssetPtr.md) to a [Weather Asset](WeatherAsset.md).
+
+`Min_Frequency` *float*: When chosen to be the next scheduled weather event, minimum number of in-game days before it will start.
+
+`Max_Frequency` *float*: When chosen to be the next scheduled weather event, maximum number of in-game days before it will start.
+
+`Min_Duration` *float*: Minimum number of in-game days before the weather event will end.
+
+`Max_Duration` *float*: Maximum number of in-game days before the weather event will end.

@@ -2,6 +2,8 @@
 
 Overrides the built-in snow and rain weather with custom events. This is feature is a work-in-progress.
 
+Random weather can be scheduled to occur naturally on a map with the `Weather_Types` property of the [Level Asset](LevelAsset.md).
+
 This is an [Asset v2](AssetsV2.md) class.
 
 ## How to test?
@@ -47,3 +49,25 @@ Multiple effects can be instantiated while the weather is active.
 `Translate_With_View` *bool*: should position in world-space match the camera? The built-in snow and rain move with the view. Position is zeroed when false. May be useful for transition effects like dust blowing into the map signaling the start of a sandstorm.
 
 `Rotate_Yaw_With_Wind` *bool*: should y-axis rotation match the wind direction? The built-in snow and rain rotate with wind.
+
+## NPC Conditions
+
+The weather status condition tests the state of the global weather. This condition is supported by visibility.
+
+`Type` Weather_Status
+
+`Logic` Equal or Not_Equal
+
+`GUID` *string*: weather asset GUID to test.
+
+`Value` *enum*: Active, Transitioning_In, Fully_Transitioned_In, Transitioning_Out, Fully_Transitioned_Out, or Transitioning
+
+The weather blend alpha condition compares the current intensity to a value. For example, an NPC could sell umbrellas while rain is greater than 50% (0.5) blended in. This condition is supported by visibility, but is more expensive for visibility than the state condition because each listening object is updated when the intensity changes by 1% (0.01).
+
+`Type` Weather_Blend_Alpha
+
+`Logic` Less_Than or Greater_Than
+
+`GUID` *string*: weather asset GUID to test.
+
+`Value` *float*: [0, 1] weather intensity.
