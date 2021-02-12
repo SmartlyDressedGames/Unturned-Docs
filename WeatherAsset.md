@@ -28,6 +28,16 @@ When a GUID is passed to the weather command it will start a custom weather even
 
 `Effects` *array*: refer to Effects section.
 
+`Stamina_Per_Second` *float*: stamina +/- buff.
+
+`Health_Per_Second` *float*: health +/- buff.
+
+`Food_Per_Second` *float*: food +/- buff.
+
+`Water_Per_Second` *float*: water +/- buff.
+
+`Virus_Per_Second` *float*: virus +/- buff.
+
 ## Time of Day Properties
 
 Each of the four main times of day can override certain properties.
