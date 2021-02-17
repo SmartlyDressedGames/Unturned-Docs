@@ -10,6 +10,7 @@ __Multiplatform:__
 - [Port Forwarding](PortForwarding.md)
 - [Rocket](Rocket.md)
 - [Login Tokens](GameServerLoginTokens.md)
+- [Update Notifications](ServerUpdateNotifications.md)
 
 __Windows:__
 - [How to Install SteamCMD](#How-to-Install-SteamCMD-on-Windows)
