@@ -15,6 +15,9 @@
 3. Start your server. The first start will take a while since OpenMod will download its core components.
 4. Done! Now you can [start installing plugins](https://openmod.github.io/openmod-docs/userdoc/concepts/plugins.html).
 
+# Plugins
+You can find open-source OpenMod plugins [here](http://openmod.github.io/openmod-plugins).
+
 ## Resources
 - [GitHub Repository](https://github.com/openmod/openmod)
 - [Documentation](https://openmod.github.io/openmod-docs/)
