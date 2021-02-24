@@ -1,21 +1,26 @@
 # OpenMod
 
-[OpenMod](https://github.com/openmod/openmod) is a spiritual successor to [Rocket](Rocket.md) developed by one of Rocket's original maintainers. It has its own plugin framework, but supports compatibility with existing Rocket plugins using LDM.
+[OpenMod](https://github.com/openmod/openmod) is a spiritual successor to [Rocket](Rocket.md) developed by one of Rocket's original maintainers. It has its own plugin framework, but supports compatibility with existing Rocket plugins by integrating with RocketMod and LDM.
+
+# Installation
+## Installing OpenMod Using the RocketMod Installer Plugin (recommended)
+1. Download the latest OpenMod Installer Plugin for RocketMod from [here](https://github.com/openmod/OpenMod.Installer.RocketMod/releases/latest).
+2. Move it to the `/Rocket/Plugins` folder and restart your server.
+3. Run `/openmod install` and follow the instructions.
+4. Done! Now you can [start installing plugins](https://openmod.github.io/openmod-docs/userdoc/concepts/plugins.html).
+
+## Installing OpenMod Manually
+1. Download the latest OpenMod.Unturned.Module-vX.X.X.zip from [here](https://github.com/openmod/OpenMod/releases/latest).
+2. Copy the "OpenMod.Unturned" folder into the "Modules" folder inside the Unturned installation directory.
+3. Start your server. The first start will take a while since OpenMod will download its core components.
+4. Done! Now you can [start installing plugins](https://openmod.github.io/openmod-docs/userdoc/concepts/plugins.html).
+
+# Plugins
+You can find open-source OpenMod plugins [here](http://openmod.github.io/openmod-plugins).
 
 ## Resources
-
 - [GitHub Repository](https://github.com/openmod/openmod)
 - [Documentation](https://openmod.github.io/openmod-docs/)
-- [Migrating from RocketMod to OpenMod](https://openmod.github.io/openmod-docs/user-guide/migration/rocketmod/)
 
-## Rocket Compatibility
-
-OpenMod offers a built-in plugin called the "OpenMod RocketMod Bridge" which supports compatibility with existing Rocket plugins without the need for workarounds or rewrites.
-
-Caveats:
-
-- Rocket plugins are not converted to OpenMod plugins, so they cannot be managed from OpenMod.
-- Rocket has its own configuration system, permissions system, command system, etc. Another built-in plugin called "RocketMod Permission Link" can be installed for Rocket to use OpenMod's permission system instead.
-- Rocket command names may conflict with OpenMod command names in which case they can be renamed, or simply prefix commands with "rocket:" instead e.g. "/rocket:god".
-
-For a guide and further details: [Migrating from RocketMod to OpenMod](https://openmod.github.io/openmod-docs/user-guide/migration/rocketmod/)
+## RocketMod Compatibility
+OpenMod can be installed side-by-side with RocketMod, so you can use both RocketMod and OpenMod without any issue. OpenMod does not aim to replace RocketMod but to work with it together instead.
