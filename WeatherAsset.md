@@ -14,6 +14,8 @@ When a GUID is passed to the weather command it will start a custom weather even
 
 ## Properties Reference
 
+`Volume_Mask` [u32 Mask](Bitmask.md): only enabled while inside an ambience volume with non-zero bitwise AND result. Defaults to 0xFFFFFFFF.
+
 `Fade_In_Duration` *float*: seconds between weather event starting and reaching full intensity.
 
 `Fade_Out_Duration` *float*: seconds between weather event ending and reaching zero intensity.
@@ -23,6 +25,12 @@ When a GUID is passed to the weather command it will start a custom weather even
 `Override_Fog` *bool*: should fog configured in the lighting be overridden?
 
 `Override_Atmospheric_Fog` *bool*: should fog affect the skybox?
+
+`Shadow_Strength_Multiplier` *float*: directional light shadow strength multiplier.
+
+`Fog_Blend_Exponent` *float*: power applied to fog blending alpha.
+
+`Cloud_Blend_Exponent` *float*: power applied to cloud blending alpha.
 
 `Dawn`, `Midday`, `Dusk` and `Midnight`: refer to the Time of Day section.
 
@@ -42,9 +50,13 @@ When a GUID is passed to the weather command it will start a custom weather even
 
 Each of the four main times of day can override certain properties.
 
-`Fog_Color` *color*: distance-based fog. Optionally overrides the skybox color.
+`Fog_Color` *struct*: distance-based fog. Optionally overrides the skybox color. Refer to Color section.
 
 `Fog_Density` *float*: [0, 1] similar to fog intensity in ambiance volume.
+
+`Cloud_Color` *struct*: inner body of cloud. Refer to Color section.
+
+`Cloud_Rim_Color` *struct*: outer edge of cloud. More visible than inner color. Refer to Color section.
 
 ## Effect Properties
 
@@ -59,6 +71,13 @@ Multiple effects can be instantiated while the weather is active.
 `Translate_With_View` *bool*: should position in world-space match the camera? The built-in snow and rain move with the view. Position is zeroed when false. May be useful for transition effects like dust blowing into the map signaling the start of a sandstorm.
 
 `Rotate_Yaw_With_Wind` *bool*: should y-axis rotation match the wind direction? The built-in snow and rain rotate with wind.
+
+## Color Properties
+
+Each color can use a custom override, or a color from the level editor lighting panel. Using a level color is primarily for rain and snow backwards compatibility.
+
+`Level_Enum` *enum*: if set then the RGB specified are multiplied by this color.
+`R`, `G`, `B` *uint8*: color channel values.
 
 ## NPC Conditions
 

@@ -13,11 +13,15 @@ For examples check the `Assets/Levels` directory.
 
 `Min_Stealth_Radius` float: Player stealth skill level cannot reduce minimum detection distance below this value.
 
-`Weather_Types` *array*: determines which weather can be scheduled to occur naturally. Refer to weather properties.
+`Weather_Types` *array*: determines which weather can occur naturally. Refer to schedulable weather properties. If weather is using legacy weather the default rain and snow will be included.
+
+`Perpetual_Weather_Asset` [Asset Pointer](AssetPtr.md): to a [Weather Asset](WeatherAsset.md). Overrides weather scheduling.
+
+`Global_Weather_Mask` [u32 Mask](Bitmask.md): fallback weather mask while player is not inside an ambience volume. Defaults to 0xFFFFFFFF.
 
 This is an [Asset v2](AssetsV2.md) class.
 
-## Weather Properties
+## Schedulable Weather Properties
 
 `Asset` [Asset Pointer](AssetPtr.md) to a [Weather Asset](WeatherAsset.md).
 
