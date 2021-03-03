@@ -32,6 +32,8 @@ When a GUID is passed to the weather command it will start a custom weather even
 
 `Cloud_Blend_Exponent` *float*: power applied to cloud blending alpha.
 
+`Wind_Main` *float*: wind zone windMain value. Will be replaced by more configurable game-specific wind eventually.
+
 `Dawn`, `Midday`, `Dusk` and `Midnight`: refer to the Time of Day section.
 
 `Effects` *array*: refer to Effects section.
