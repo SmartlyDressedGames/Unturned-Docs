@@ -18,6 +18,10 @@ Events when a component or game object are enabled and disabled. Useful for exte
 
 Events for player overlaps with a trigger collider. Primarily useful for server-side objects as collisions are not triggered by other players client-side, but this limitation may be resolved in the future.
 
+### Destroy Event Hook
+
+Event when a component or game object is removed from the scene.
+
 ### Interactable Object Binary State Event Hook (IOBS)
 
 (IOBS for short) are any prop placed from the level editor which can have F pressed on them to open, close, turn on/off, etc. This hook can be added to any GameObject within an IOBS to trigger events during state changes, and even control the IOBS from client and server side.
