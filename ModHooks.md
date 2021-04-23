@@ -38,6 +38,10 @@ Allows events to set or cancel a timer, and triggers an event when the timer exp
 
 Events for driver entering and exiting the vehicle. These events are fired on server and client.
 
+### Vehicle Turret Event Hook
+
+Events for Turret_# GameObjects in the vehicle when guns are used. These events are fired on server and client.
+
 ### Weather Event Hook
 
 Events for day, night, full moon, and weather. These events are fired on server and client.
