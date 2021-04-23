@@ -50,6 +50,13 @@
 6. Open the Unity AppData folder
 7. Attach the Player.log file to your email
 
+## Unity Windows Crash Files
+
+1. Right-click Unturned in your Steam Library
+2. Select Properties... > Local Files > Browse...
+3. Open the "Unity Temp" folder
+4. Zip and attach the Crashes folder to your email
+
 ## Repair BattlEye
 
 1. Right-click Unturned in your Steam Library
