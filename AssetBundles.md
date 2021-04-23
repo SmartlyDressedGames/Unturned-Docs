@@ -1,12 +1,10 @@
-Asset Bundles
-=============
+# Asset Bundles
 
 The game loads textures, audio, meshes, prefabs, etc. from Unity __Asset Bundles__ at runtime. How these are setup and used has evolved over the years from individual *.unity3d bundles to .content bundles to .masterbundle files.
 
 [Master Bundles](#master-bundles) should be used for essentially all new projects.
 
-Tool Setup
-----------
+## Tool Setup
 
 Prior to using any of these tools they must be imported into a Unity project
 
@@ -15,43 +13,7 @@ Prior to using any of these tools they must be imported into a Unity project
 3. Navigate to the Bundles/Sources directory.
 4. Import the Project.unitypackage.
 
-Individual Asset Bundles (*.unity3d)
------------------------------------
-
-Most official files have transitioned to the master bundle system, but some uses still exist like the per-map road textures.
-
-### Tool Usage:
-
-1. Follow _Tool Setup_ instructions.
-2. Open the tool from the Window > Unturned > Bundle Tool menu.
-3. Select individual assets or directories of assets in the Project window.
-4. Click Grab to preview which assets will be exported.
-5. Click Bundle to choose a destination for the asset bundle file.
-
-### Motivations:
-
-When beginning development of 3.0, it was key to support runtime loading of custom modded content. At the time files in asset bundles were loaded by name without extension, so each game type looked for specific names like "Item", "Object", "Animal", etc. The .unity3d extension was chosen for web browser compatibility. Obviously this system did not age well.
-
-Content Bundles (*.content)
----------------------------
-
-This format is used by devkit landscapes, material palettes and radio songs, but is unlikely to see any further use in favor of master bundles. Ideally support for these usages will be transitioned to master bundles.
-
-### Tool Usage:
-
-1. Follow _Tool Setup_ instructions.
-2. Open the tool from the Window > Unturned > Content Tool menu.
-3. Select directories of assets in the Project window.
-4. In the Inspector window tag them in an asset bundle ending with ".content".
-5. Click ... to choose a destination for the content bundle file.
-6. Click Export.
-
-### Motivations:
-
-In late 2016 and early 2017 development was focused on improving the editor experience, and one aspect of that was asset bundling. Content bundles scanned a manifest of contained assets in order to allow browsing individually from the in-game editor, and the idea was to allow each content reference to be configured per-game-property. Unfortunately, this effort was far too broad - from building an interface between the game code / online subsystem code to revising the ID system to use GUIDs. In retrospect it would have been wiser to crack down on individual features which has been the approach since then.
-
-Master Bundles (*.masterbundle)
--------------------------------
+## Master Bundles (*.masterbundle)
 
 Most official files including curated maps have been transitioned to master bundles, and they will be used for the forseeable future.
 
@@ -96,3 +58,36 @@ Individual asset *.dats can set the following keys:
 ### Motivations:
 
 When upgrading to Unity 2017.4 LTS it became apparent that all asset bundles would have to be re-exported from Unity due to shader compatibility changes. This would be an incredible amount of files, so it was time to re-approach the *.content issue in a way that could quickly convert all existing content. This was handled by keeping the file hierarchy 1:1 and guessing the file extension for the by-name loading.
+
+## Individual Asset Bundles (*.unity3d)
+
+Most official files have transitioned to the master bundle system, but some uses still exist like the per-map road textures.
+
+### Tool Usage:
+
+1. Follow _Tool Setup_ instructions.
+2. Open the tool from the Window > Unturned > Bundle Tool menu.
+3. Select individual assets or directories of assets in the Project window.
+4. Click Grab to preview which assets will be exported.
+5. Click Bundle to choose a destination for the asset bundle file.
+
+### Motivations:
+
+When beginning development of 3.0, it was key to support runtime loading of custom modded content. At the time files in asset bundles were loaded by name without extension, so each game type looked for specific names like "Item", "Object", "Animal", etc. The .unity3d extension was chosen for web browser compatibility. Obviously this system did not age well.
+
+## Content Bundles (*.content) *DEPRECATED*
+
+This format was used by terrain, material palettes and radio songs. After the 3.21.15.0 update on 2021-04-23 these can all use master bundles instead. Old references from these assets will continue to function, but new references should use a master bundle name and relative path for the "Name" and "Path" properties.
+
+### Tool Usage:
+
+1. Follow _Tool Setup_ instructions.
+2. Open the tool from the Window > Unturned > Content Tool menu.
+3. Select directories of assets in the Project window.
+4. In the Inspector window tag them in an asset bundle ending with ".content".
+5. Click ... to choose a destination for the content bundle file.
+6. Click Export.
+
+### Motivations:
+
+In late 2016 and early 2017 development was focused on improving the editor experience, and one aspect of that was asset bundling. Content bundles scanned a manifest of contained assets in order to allow browsing individually from the in-game editor, and the idea was to allow each content reference to be configured per-game-property. Unfortunately, this effort was far too broad - from building an interface between the game code / online subsystem code to revising the ID system to use GUIDs. In retrospect it would have been wiser to crack down on individual features which has been the approach since then.
