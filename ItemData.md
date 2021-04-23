@@ -492,7 +492,7 @@ __Range2__: Meter radius of range for explosive damage.
 
 __Explosion2__: Explosion effect ID for the damaging explosion.
 
-Limb-independent entity damage is also applicable.
+Limb-independent entity damage (e.g., Player_Damage) is also applicable.
 
 Clothing
 ========
@@ -513,6 +513,10 @@ __Beard__: Specified if beard shows up when wearing. Only applicable to hats, ma
 
 __Hair_Override__: Specified if hair material should be used. Only applicable to hats, masks, and glasses.
 
+__Proof_Water__: Specified to add the waterproof property. Only applicable to backpacks and glasses. When waterproof glasses are worn, the player will not have their screen blurred while underwater. When waterproof glasses and a waterproof backpack are worn at the same time, the player will suffocate at a greatly reduced rate.
+
+__Proof_Fire__: Specified to add the fireproof property. Only applicable to shirts and pants. When fireproof pants and a fireproof shirt are worn at the same time, the player will be immune to fire damage.
+
 __Pro__: Specified if the item should be unable to spawn. Intended for cosmetics.
 
 __Visible_On_Ragdoll__: `false`, `true`. Defaults to true.
@@ -523,6 +527,11 @@ Glasses
 __Blindfold__: Specified if the player should be blinded when the glasses are worn.
 
 __Vision__: `Civilian`, `Headlamp`, `Military`
+
+Masks
+-----
+
+__Proof_Radiation__: Specified to add the radiation-proof property. When a radiation-proof mask is worn, the player will not be damaged by deadzones for as long as the item quality remains greater than 0%. Items with "Type Filter" can be used to restore quality to the item.
 
 Body Mesh Replacements
 ----------------------
