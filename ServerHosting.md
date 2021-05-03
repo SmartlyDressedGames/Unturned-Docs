@@ -11,6 +11,7 @@ __Multiplatform:__
 - [Rocket](Rocket.md)
 - [Login Tokens](GameServerLoginTokens.md)
 - [Update Notifications](ServerUpdateNotifications.md)
+- [Rules and Guidelines](ServerHostingRules.md)
 
 __Windows:__
 - [How to Install SteamCMD](#How-to-Install-SteamCMD-on-Windows)

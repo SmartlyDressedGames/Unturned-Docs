@@ -39,6 +39,7 @@ Servers
 -------
 
 * [Server Hosting](ServerHosting.md)
+* [Rules and Guidelines](ServerHostingRules.md)
 * [Port Forwarding](PortForwarding.md)
 * [Rocket](Rocket.md)
 * [OpenMod](OpenMod.md)
