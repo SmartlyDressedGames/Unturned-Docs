@@ -48,6 +48,12 @@ When a GUID is passed to the weather command it will start a custom weather even
 
 `Virus_Per_Second` *float*: virus +/- buff.
 
+`Has_Lightning` *bool*: if true, lightning will be enabled for this weather type. In the future this should get cleaned up, but for now it is hardcoded for assigning a net id.
+
+`Min_Lightning_Interval` *float*: minimum seconds between lightning strikes.
+
+`Max_Lightning_Interval` *float*: maximum seconds between lightning strikes.
+
 ## Time of Day Properties
 
 Each of the four main times of day can override certain properties.
@@ -59,6 +65,8 @@ Each of the four main times of day can override certain properties.
 `Cloud_Color` *struct*: inner body of cloud. Refer to Color section.
 
 `Cloud_Rim_Color` *struct*: outer edge of cloud. More visible than inner color. Refer to Color section.
+
+`Brightness_Multiplier` *float*: all ambient lighting colors are multiplied by this.
 
 ## Effect Properties
 
