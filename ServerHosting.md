@@ -55,59 +55,49 @@ How to Install Server using SteamCMD
 
 		quit
 
-4. The server files are now in the SteamCMD > steamapps > common > U3DS directory.
+4. The server files are now in the ...SteamCMD\steamapps\common\U3DS directory.
 
 Continue to: [How to Launch Server on Windows](#How-to-Launch-Server-on-Windows) or [How to Launch Server on Linux](#How-to-Launch-Server-on-Linux)
 
 How to Launch Server on Windows
 -------------------------------
 
-1. Navigate to the SteamCMD > steamapps > common > U3DS directory.
-2. Right-click within the folder.
-3. Select New > Text Document
-4. Replace "New Text Document.txt" with "Tutorial.bat"
-5. Right-click on the batch script (`Tutorial.bat`) and select Edit.
-6. For an internet server insert the following text into the file:
+1. Navigate to the `...\SteamCMD\steamapps\common\U3DS` directory.
+2. Create a new text file by right-clicking an empty space within the U3DS directory, and selecting New > Text Document. This will create a new text file called "New Text Document.txt".
+	1. **If the file name displays the `.txt` file extension, then you need to enable the viewing of "File name extensions".**
+	2. At the top of the File Explorer window, navigate to the View tab on the ribbon.
+	3. In the Show/hide section of options, ensure that the "File name extensions" box is checked.
+	![image](https://user-images.githubusercontent.com/7608445/118378950-cd5ecd80-b59c-11eb-87e4-13f28585f550.png)
+	4. File extensions should now be displayed at the end of file names.
+3. Rename the "New Text Document.txt" file, and change it from a text file (.txt) to a batch script file (.bat). For example, "Tutorial.bat".
+4. Right-click on the batch script (`Tutorial.bat`) and select Edit. This will open the batch file in your default text editor, although any text editor (e.g., Notepad, WordPad, Notepad++) can be used.
+5. We want to add the script that will start your server when the batch script is ran.
+	* For an internet server, copy-and-paste the following text into the file: `start "" "%~dp0ServerHelper.bat" +InternetServer/MyServer`
+	* For a LAN server insert the following text into the file: `start "" "%~dp0ServerHelper.bat" +LanServer/MyServer`
 
-		start "" "%~dp0ServerHelper.bat" +InternetServer/MyServer
+	<sup>_Note 1: In this example "MyServer" is used as the ServerID for savedata and configuration purposes. You may choose to replace "MyServer" with a different name.<br />Note 2: Running an internet server will require opening ports on your router (this is called "port forwarding").<br />Note 3: For an example batch script, open the built-in `ExampleServer.bat` file in a text editor._</sup>
 
-	Alternatively, for a LAN server insert the following text into the file:
+6. Save your changes to the file, and close the file.
+7. Double-click the batch script to launch the server. A command-line interface should appear. Because this is the first time we have ran the batch file, it is going to generate a bunch of necessary server files.
+	![image](https://user-images.githubusercontent.com/7608445/118379743-54627480-b5a2-11eb-8c61-9e16c31c2f59.png)
 
-		start "" "%~dp0ServerHelper.bat" +LanServer/MyServer
+8. When the command-line interface stops outputting new lines of text, it has finished loading (and finished generating all necessary files). You can safely close the server by executing (typing, and then pressing the "↵ Enter" key on your keyboard) the following command on the command-line interface: `shutdown`
 
-	_Note: In this example MyServer is used as the ServerID for savedata and configuration purposes._
-
-7. Save your changes.
-8. Double-click the batch script to launch the server.
-3. Cleanly shutdown the server once it finishes loading:
-
-		shutdown
-
-	Running it will have created a "MyServer" directory in U3DS > Servers. This is where all savedata and configuration files are kept. Changing the `MyServer` ServerID in the batch script can be done to run multiple servers at once, or to keep savedata separate.
-
-For an example script open the built-in `ExampleServer.bat` file.
+9. The batch script has created a new file directory located in ...\U3DS\Servers, called "MyServer". This directory is where all the savedata and configuration files are kept. Changing the `MyServer` ServerID (from step 5) in the batch script to a different name will allow for keeping savedata separate across multiple servers, and for running multiple servers at once.
 
 How to Launch Server on Linux
 -----------------------------
 
-1. Navigate to the SteamCMD > steamapps > common > U3DS directory.
-2. For an internet server run the following command:
+1. Navigate to the `...\SteamCMD\steamapps\common\U3DS` directory.
+2. To create our server, we need to execute a command.
+	* For an internet server run the following command: `./ServerHelper.sh +InternetServer/MyServer`
+	* For a LAN server run the following command: `./ServerHelper.sh +LanServer/MyServer`
 
-		./ServerHelper.sh +InternetServer/MyServer
+	_<sup>Note 1: In this example MyServer is used as the ServerID for savedata and configuration purposes.<br />Note 2: Running an internet server will require opening ports on your router (this is called "port forwarding").<br />Note 3: For an example batch script, open the built-in `ExampleServer.bat` file in a text editor.</sup>_
 
-	Alternatively, for a LAN server run the following command:
+3. You can safely close the server by executing (typing, and then pressing the "↵ Enter" key on your keyboard) the following command on the command-line interface: `shutdown`
 
-		./ServerHelper.sh +LanServer/MyServer
-
-	_Note: In this example MyServer is used as the ServerID for savedata and configuration purposes._
-
-3. Cleanly shutdown the server once it finishes loading:
-
-		shutdown
-
-	Running it will have created a "MyServer" directory in U3DS > Servers. This is where all savedata and configuration files are kept. Changing the `MyServer` ServerID in the launch arguments can be done to run multiple servers at once, or to keep savedata separate.
-
-For an example script open the built-in `ExampleServer.sh` file.
+4. The executed command has created a new file directory located in ...\U3DS\Servers, called "MyServer". This directory is where all the savedata and configuration files are kept. Changing the `MyServer` ServerID (from step 2) in the batch script to a different name will allow for keeping savedata separate across multiple servers, and for running multiple servers at once.
 
 How to Configure Server
 -----------------------
