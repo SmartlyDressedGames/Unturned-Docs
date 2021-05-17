@@ -64,18 +64,20 @@ How to Launch Server on Windows
 
 1. Navigate to the `...\SteamCMD\steamapps\common\U3DS` directory.
 2. Create a new text file by right-clicking an empty space within the U3DS directory, and selecting New > Text Document. This will create a new text file called "New Text Document.txt".
-	1. **If the file name displays the `.txt` file extension, then you need to enable the viewing of "File name extensions".**
+	1. **If the file name does not display the `.txt` file extension, then you need to enable the viewing of "File name extensions".**
 	2. At the top of the File Explorer window, navigate to the View tab on the ribbon.
 	3. In the Show/hide section of options, ensure that the "File name extensions" box is checked.
 	![image](https://user-images.githubusercontent.com/7608445/118378950-cd5ecd80-b59c-11eb-87e4-13f28585f550.png)
 	4. File extensions should now be displayed at the end of file names.
 3. Rename the "New Text Document.txt" file, and change it from a text file (.txt) to a batch script file (.bat). For example, "Tutorial.bat".
 4. Right-click on the batch script (`Tutorial.bat`) and select Edit. This will open the batch file in your default text editor, although any text editor (e.g., Notepad, WordPad, Notepad++) can be used.
-5. We want to add the script that will start your server when the batch script is ran.
+5. Add the script that will start your server when the batch script is ran.
 	* For an internet server, copy-and-paste the following text into the file: `start "" "%~dp0ServerHelper.bat" +InternetServer/MyServer`
-	* For a LAN server insert the following text into the file: `start "" "%~dp0ServerHelper.bat" +LanServer/MyServer`
+	* For a LAN server, copy-and-paste the following text into the file: `start "" "%~dp0ServerHelper.bat" +LanServer/MyServer`
 
-	<sup>_Note 1: In this example "MyServer" is used as the ServerID for savedata and configuration purposes. You may choose to replace "MyServer" with a different name.<br />Note 2: Running an internet server will require opening ports on your router (this is called "port forwarding").<br />Note 3: For an example batch script, open the built-in `ExampleServer.bat` file in a text editor._</sup>
+	_Note: running an internet server will require opening ports on your router (this is called "port forwarding")._
+
+	In this example "MyServer" is used as the ServerID for savedata and configuration purposes; you may choose to replace "MyServer" with a different name. For an example batch script, open the built-in `ExampleServer.bat` file in a text editor._
 
 6. Save your changes to the file, and close the file.
 7. Double-click the batch script to launch the server. A command-line interface should appear. Because this is the first time we have ran the batch file, it is going to generate a bunch of necessary server files.
@@ -88,16 +90,18 @@ How to Launch Server on Windows
 How to Launch Server on Linux
 -----------------------------
 
-1. Navigate to the `...\SteamCMD\steamapps\common\U3DS` directory.
+1. Navigate to the `.../SteamCMD/steamapps/common\U3DS` directory.
 2. To create our server, we need to execute a command.
 	* For an internet server run the following command: `./ServerHelper.sh +InternetServer/MyServer`
 	* For a LAN server run the following command: `./ServerHelper.sh +LanServer/MyServer`
 
-	_<sup>Note 1: In this example MyServer is used as the ServerID for savedata and configuration purposes.<br />Note 2: Running an internet server will require opening ports on your router (this is called "port forwarding").<br />Note 3: For an example batch script, open the built-in `ExampleServer.bat` file in a text editor.</sup>_
+	_Note: running an internet server will require opening ports on your router (this is called "port forwarding")._
+
+	In this example "MyServer" is used as the ServerID for savedata and configuration purposes; you may choose to replace "MyServer" with a different name. For an example batch script, open the built-in `ExampleServer.bat` file in a text editor._
 
 3. You can safely close the server by executing (typing, and then pressing the "↵ Enter" key on your keyboard) the following command on the command-line interface: `shutdown`
 
-4. The executed command has created a new file directory located in ...\U3DS\Servers, called "MyServer". This directory is where all the savedata and configuration files are kept. Changing the `MyServer` ServerID (from step 2) in the batch script to a different name will allow for keeping savedata separate across multiple servers, and for running multiple servers at once.
+4. The executed command has created a new file directory located in .../U3DS/Servers, called "MyServer". This directory is where all the savedata and configuration files are kept. Changing the `MyServer` ServerID (from step 2) in the batch script to a different name will allow for keeping savedata separate across multiple servers, and for running multiple servers at once.
 
 How to Configure Server
 -----------------------
