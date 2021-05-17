@@ -13,6 +13,7 @@ Examples of allowed monetization:
 - Selling permanent or monthly subscription access to play on the server(s).
 - Selling ranks, kits, unlocks, benefits, etc. available permanently or for the duration of the monthly subscription. Timers or cooldowns are fine.
 - Selling cosmetics like custom skins, name tags, chat colors, etc. available permanently or for the duration of the monthly subscription.
+- Selling services or commissions, for example a modder taking commissions for new content that gets added to the server for all players.
 
 Examples of banned monetization:
 - Selling in-game items like weapons, ammunition, supplies, bases, etc.
@@ -20,7 +21,6 @@ Examples of banned monetization:
 - Selling experience points.
 - Selling currency.
 - Selling ranks, kits, unlocks, benefits, etc. which stack with themselves as a loophole.
-- Selling unbans.
 
 ## Online Conduct
 
