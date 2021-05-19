@@ -2,7 +2,7 @@
 
 Servers that violate these rules may be temporarily or permanently banned.
 
-## Monetization
+## Monetization Types
 
 Starting on May 28th warnings will begin getting sent out for breaking this rule, and it will take full effect on June 11th.
 
@@ -21,6 +21,10 @@ Examples of banned monetization:
 - Selling experience points.
 - Selling currency.
 - Selling ranks, kits, unlocks, benefits, etc. which stack with themselves as a loophole.
+
+## Monetization Filter
+
+The "Monetization" field in each server's Config.json file defaults to "Unspecified", but can be set to "None" or "NonGameplay". If configuring this field please ensure to be truthful. "None" is for unmonetized or donation-only servers, and "NonGameplay" is for servers with purchases that do not provide a gameplay advantage. Players filtering the server list by "NonGameplay" will also see "None" servers.
 
 ## Online Conduct
 
