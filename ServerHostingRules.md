@@ -2,6 +2,8 @@
 
 Servers that violate these rules may be temporarily or permanently banned.
 
+[View Moderation List](https://smartlydressedgames.com/UnturnedHostBans/index.html)
+
 ## Monetization Types
 
 Starting on May 28th warnings will begin getting sent out for breaking this rule, and it will take full effect on June 11th.
