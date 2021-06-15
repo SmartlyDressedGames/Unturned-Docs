@@ -1,14 +1,14 @@
-# Command-line arguments
+Command-line arguments
+======================
 
-Unity's built-in command-line arguments take priority over *Unturned*'s equivalents. Some of the more relevant Unity arguments are mentioned below, but the rest can be found in the [Unity User Manual](https://docs.unity3d.com/Manual/CommandLineArguments.html).
+Game options
+------------
 
 Some command-line arguments are primarily intended for use with the Unturned Dedicated Server app.
 
-**-batchmode**: Run in batch mode.
+
 
 **+connect**: Connect to a server, in the format of `+connect <ip address>:<port>`.
-
-**-force-glcore**: Force OpenGL.
 
 **-FullscreenMode=**: Window mode override.
 
@@ -32,8 +32,6 @@ Some command-line arguments are primarily intended for use with the Unturned Ded
 
 **-NoDeferAssets**: Disable the deferring of loading vehicles and level objects until map load time, and instead load on startup.
 
-**-nographics**: Do not initialize the graphics device when running in batch mode.
-
 **-OfflineOnly**: Disables requests to the internet. For LAN servers, it skips the Steam backend connection and uses locally-cached Workshop items.
 
 **-RazerChroma**: Enable Razer Chroma integration on compatible devices.
@@ -49,3 +47,14 @@ Some command-line arguments are primarily intended for use with the Unturned Ded
 **-w** *int*: Alias of `-width`.
 
 **-width** *int*: Override in-game resolution width.
+
+Unity options
+-------------
+
+Unity's built-in command-line arguments take priority over *Unturned*'s equivalents. Some of the more relevant Unity arguments are mentioned below, but the rest can be found in the [Unity User Manual](https://docs.unity3d.com/Manual/CommandLineArguments.html).
+
+**-batchmode**: Run in batch mode.
+
+**-force-glcore**: Force OpenGL.
+
+**-nographics**: Do not initialize the graphics device when running in batch mode.
