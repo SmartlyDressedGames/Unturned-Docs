@@ -1,7 +1,7 @@
 GUID
 ====
 
-Globally Unique Identifiers (**GUID**s) are 32 digit numbers used to identify assets. They are preferable to file names because the files can be moved without redirectors.
+Globally Unique Identifiers (**GUID**s) are 32 hexadecimal digits used to identify assets. They are preferable to file names because the files can be moved without redirectors.
 
 At the time of writing a useful tool for generating GUIDs is: https://www.guidgenerator.com/
 
