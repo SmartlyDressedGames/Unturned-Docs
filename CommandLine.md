@@ -4,15 +4,9 @@ Unity's built-in command-line arguments take priority over *Unturned*'s equivale
 
 Some command-line arguments are primarily intended for use with the Unturned Dedicated Server app.
 
-**-AggressiveGC**: Force frequent garbage collection.
-
 **-batchmode**: Run in batch mode.
 
 **+connect**: Connect to a server, in the format of `+connect <ip address>:<port>`.
-
-**-ConstNetEvents**: Debug whether plugins are writing to the network buffers.
-
-**force-d3d11-bltblt-mode=**: Fallback to using the Windows 7-style BltBlt model for D3D11, instead of DXGI Flip Model Swapchain. This will hurt performance, but may fix some instances of crashing related to D3D11.
 
 **-force-glcore**: Force OpenGL.
 
@@ -45,8 +39,6 @@ Some command-line arguments are primarily intended for use with the Unturned Ded
 **-RazerChroma**: Enable Razer Chroma integration on compatible devices.
 
 **-RefreshRate=**: Monitor refresh rate override.
-
-**-SNS_AllowWithoutAuth**: Allow Steam Networking Sockets connection without authentication. This was originally added as a potential workaround for a OpenSSL regression that has since been fixed by Steam.
 
 **-SkipAssets**: Disable loading asset bundles and Workshop content. This is useful for quickly iterating on serverside code.
 
