@@ -51,7 +51,7 @@ Some command-line arguments are primarily intended for use with the Unturned Ded
 Unity options
 -------------
 
-Unity's built-in command-line arguments take priority over *Unturned*'s equivalents. Some of the more relevant Unity arguments are mentioned below, but the rest can be found in the [Unity User Manual](https://docs.unity3d.com/Manual/CommandLineArguments.html).
+Unity's built-in command-line arguments take priority over *Unturned*'s equivalents. Some of the more relevant Unity arguments are mentioned below, but the rest can be found in the [Unity User Manual](https://docs.unity3d.com/2019.4/Documentation/Manual/CommandLineArguments.html).
 
 **-batchmode**: Run in batch mode.
 
