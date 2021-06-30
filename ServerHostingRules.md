@@ -6,7 +6,7 @@ Servers that violate these rules may be temporarily or permanently banned.
 
 ## Monetization Types
 
-Starting on May 28th warnings will begin getting sent out for breaking this rule, and it will take full effect on June 11th.
+Warnings for breaking the monetization rules first began being sent out on May 28, 2021. The monetization rules have now been in full effect since June 11, 2021.
 
 Hosts are allowed to sell permanent benefits and monthly subscriptions. Consumable microtransactions are **not** allowed.
 
