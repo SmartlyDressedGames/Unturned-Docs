@@ -26,6 +26,10 @@ Event when a component or game object is removed from the scene.
 
 (IOBS for short) are any prop placed from the level editor which can have F pressed on them to open, close, turn on/off, etc. This hook can be added to any GameObject within an IOBS to trigger events during state changes, and even control the IOBS from client and server side.
 
+### NPC Global Event Hook
+
+Event triggered when corresponding NPC Event reward type is triggered.
+
 ### Text Chat Event Hook
 
 Event when a text chat message passes certain filters such as channel, within a radius, and containing a secret phrase. Only fired on the server.
