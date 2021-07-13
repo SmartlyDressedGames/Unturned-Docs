@@ -19,6 +19,8 @@ For examples check the `Assets/Levels` directory.
 
 `Global_Weather_Mask` [u32 Mask](Bitmask.md): fallback weather mask while player is not inside an ambience volume. Defaults to 0xFFFFFFFF.
 
+`Skills` *array*: overrides skill default and max levels. Refer to skill rule properties.
+
 This is an [Asset v2](AssetsV2.md) class.
 
 ## Schedulable Weather Properties
@@ -32,3 +34,11 @@ This is an [Asset v2](AssetsV2.md) class.
 `Min_Duration` *float*: Minimum number of in-game days before the weather event will end.
 
 `Max_Duration` *float*: Maximum number of in-game days before the weather event will end.
+
+## Skill Rule Properties
+
+`Id` string: Name of skill, for example Sharpshooter.
+
+`Default_Level` int: Skill level when player spawns. Note server config Spawn_With_Max_Skills takes priority.
+
+`Max_Unlockable_Level` int: Maximum skill level attainable through gameplay. Higher levels are hidden in the skills menu.
