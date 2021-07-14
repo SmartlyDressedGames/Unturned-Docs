@@ -91,22 +91,4 @@ Each color can use a custom override, or a color from the level editor lighting 
 
 ## NPC Conditions
 
-The weather status condition tests the state of the global weather. This condition is supported by visibility.
-
-`Type` Weather_Status
-
-`Logic` Equal or Not_Equal
-
-`GUID` *string*: weather asset GUID to test.
-
-`Value` *enum*: Active, Transitioning_In, Fully_Transitioned_In, Transitioning_Out, Fully_Transitioned_Out, or Transitioning
-
-The weather blend alpha condition compares the current intensity to a value. For example, an NPC could sell umbrellas while rain is greater than 50% (0.5) blended in. This condition is supported by visibility, but is more expensive for visibility than the state condition because each listening object is updated when the intensity changes by 1% (0.01).
-
-`Type` Weather_Blend_Alpha
-
-`Logic` Less_Than or Greater_Than
-
-`GUID` *string*: weather asset GUID to test.
-
-`Value` *float*: [0, 1] weather intensity.
+Global weather state and current weather intensity blend can be tested through NPC conditions. Refer to [Conditions.md](/NPCAsset/Conditions.md) for documentation.
