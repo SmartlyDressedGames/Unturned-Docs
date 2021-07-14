@@ -177,7 +177,7 @@ Refer to [Currency](/Currency.md) documentation.
 
 **Condition\_#\_Status** *enum* (`Active`, `Completed`, `Ready`): Current state of the quest.
 
-**Condition\_#\_Ignore\_NPC** *bool*
+**Condition\_#\_Ignore\_NPC** *bool*: Player does not need to be talking to an NPC within 20 meters for the quest to be completable and turned in.
 
 ### Reputation
 
