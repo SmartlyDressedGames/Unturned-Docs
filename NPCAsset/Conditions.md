@@ -1,6 +1,8 @@
 Conditions
 ==========
 
+Conditions can be held by NPC assets, interactable objects, and item blueprints.
+
 **Conditions** *int*: Total number of conditions.
 
 **Condition\_#\_Type** *enum*
