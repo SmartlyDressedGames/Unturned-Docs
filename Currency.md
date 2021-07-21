@@ -36,11 +36,7 @@ To link a vendor with a currency set the vendor asset's __Currency__ to the curr
 NPC Logic
 ---------
 
-Conditions can use the __Currency__ type to require different total amounts in the player's inventory. Rewards can use the __Currency__ type as well to grant amounts. Each of these uses the following properties:
-
-__GUID__: Currency asset's GUID.
-
-__Value__: Total value of currency.
+Conditions can use the __Currency__ type to require different total amounts in the player's inventory. Rewards can use the __Currency__ type as well to grant amounts. Refer to [Conditions.md](/NPCAsset/Conditions.md) and [Rewards.md](/NPCAsset/Rewards.md) for documentation.
 
 Testing
 -------
