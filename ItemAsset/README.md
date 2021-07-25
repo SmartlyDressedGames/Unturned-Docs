@@ -76,3 +76,10 @@ Blueprints and Actions
 ----------------------
 
 Items can have crafting blueprints and context menu actions. Refer to [Blueprints.md](/ItemAsset/Blueprints.md) and [Actions.md](/ItemAsset/Actions.md) for documentation.
+
+Localization
+------------
+
+**Name** *string*: Item name in user interfaces.
+
+**Description** *string*: Item description in user interfaces. 
