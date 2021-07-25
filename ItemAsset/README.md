@@ -71,3 +71,8 @@ Other Properties
 **Bypass\_Hash\_Verification** *bool*: Disable hash verification check, and allow for mismatched files. Defaults to false.
 
 **Ignore_TexRW** *bool*: Read/writeable texture errors for the asset should be hidden from the error logs. Defaults to false.
+
+Blueprints and Actions
+----------------------
+
+Items can have crafting blueprints and context menu actions. Refer to [Blueprints.md](/ItemAsset/Blueprints.md) and [Actions.md](/ItemAsset/Actions.md) for documentation.
