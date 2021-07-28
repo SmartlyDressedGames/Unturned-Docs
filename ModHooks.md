@@ -28,7 +28,7 @@ Event when a component or game object is removed from the scene.
 
 ### NPC Global Event Hook
 
-Event triggered when corresponding NPC Event reward type is triggered.
+Event triggered when corresponding [NPC Event reward](NPCAsset/Rewards.md#event) type is triggered. For example, when any NPC Event with ID "Fireworks" is broadcast all of the components with event ID "Fireworks" will have their corresponding Unity event triggered as well, in this case perhaps to spawn a fireworks effect.
 
 ### Text Chat Event Hook
 
