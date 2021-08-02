@@ -21,6 +21,8 @@ For examples check the `Assets/Levels` directory.
 
 `Skills` *array*: overrides skill default and max levels. Refer to skill rule properties.
 
+`Enable_Admin_Faster_Salvage_Duration` *bool*: by default players in singleplayer and admins in multiplayer have a faster salvage time.
+
 This is an [Asset v2](AssetsV2.md) class.
 
 ## Schedulable Weather Properties
