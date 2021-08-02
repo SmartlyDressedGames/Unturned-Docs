@@ -6,6 +6,8 @@ Servers that violate these rules may be temporarily or permanently banned.
 
 ## Monetization Types
 
+Update 2nd of August 2021: fictitious and deceptive pricing is not allowed. For example, lying that a discount is nearly expired, or pretending the price is discounted when it has never been at full price. We would strongly advise following [Steam's discounting rules](https://partner.steamgames.com/doc/marketing/discounts) to help avoid breaking any real-world laws.
+
 Warnings for breaking the monetization rules first began being sent out on May 28, 2021. The monetization rules have now been in full effect since June 11, 2021.
 
 Hosts are allowed to sell permanent benefits and monthly subscriptions. Consumable microtransactions are **not** allowed.
