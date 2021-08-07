@@ -1,7 +1,7 @@
 NPC Character
 =============
 
-**GUID** *32-digit hexadecimal*: Refer to [GUID](GUID.md) documentation.
+**GUID** *32-digit hexadecimal*: Refer to [GUID](/GUID.md) documentation.
 
 **Type** *enum* (`NPC`)
 
@@ -91,6 +91,11 @@ Pose
 **Dialogue** *uint16*: ID of the dialogue asset to open when interacted with.
 
 **Pose** *enum* (`Asleep`, `Crouch`, `Passive`, `Prone`, `Rest`, `Sit`, `Stand`, `Surrender`, `Under_Arrest`): Idle animation.
+
+Conditions
+----------
+
+An NPC character can be made to only appear while certain [conditions](/NPCAsset/Conditions.md) are met by the player.
 
 Localization
 ------------
