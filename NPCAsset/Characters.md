@@ -1,7 +1,7 @@
 NPC Character
 =============
 
-**GUID** *32-digit hexadecimal*: Refer to [GUID](GUID.md) documentation.
+**GUID** *32-digit hexadecimal*: Refer to [GUID](/GUID.md) documentation.
 
 **Type** *enum* (`NPC`)
 
