@@ -92,6 +92,11 @@ Pose
 
 **Pose** *enum* (`Asleep`, `Crouch`, `Passive`, `Prone`, `Rest`, `Sit`, `Stand`, `Surrender`, `Under_Arrest`): Idle animation.
 
+Conditions
+----------
+
+An NPC character can be made to only appear while certain [conditions](/NPCAsset/Conditions.md) are met by the player.
+
 Localization
 ------------
 
