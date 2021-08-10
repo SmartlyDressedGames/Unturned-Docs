@@ -184,6 +184,7 @@ Alphabetically sorted list of curated map file IDs:
 - France: 1975500516
 - Greece: 1702240229
 - Hawaii: 1753134636
+- Ireland: 1411633953
 - Kuwait: 2483365750
 - Rio de Janeiro: 1821848824
 
