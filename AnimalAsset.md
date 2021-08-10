@@ -15,9 +15,9 @@ Animal Properties
 
 **Behaviour** *enum* (`Defense`, `Offense`, `Ignore`): AI behavior type. Defense AI will run away when alerted, Offense AI will attack when alerted, and Ignore AI will run away when attacked.
 
-**Speed_Run** *float*: Running speed in kph.
+**Speed_Run** *float*: Running speed in m/s.
 
-**Speed_Walk** *float*: Walking speed in kph.
+**Speed_Walk** *float*: Walking speed in m/s.
 
 **Horizontal\_Attack\_Range** *float*: Maximum attack range on the horizontal plane. Defaults to 2.25 meters.
 
