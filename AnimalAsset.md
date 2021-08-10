@@ -37,7 +37,7 @@ Animal Properties
 
 **Startle\_Anim\_Variants** *int*: Total number of startle animations in Unity. Defaults to 1.
 
-**Should\_Play\_Anims\_On\_Dedicated\_Server** *bool*: Defaults to false.
+**Should\_Play\_Anims\_On\_Dedicated\_Server** *bool*: If animations are needed on the server, such as due to having complicated triggers tied to the attack animations. Defaults to false.
 
 Drops
 -----
