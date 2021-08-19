@@ -38,6 +38,10 @@ Event when a text chat message passes certain filters such as channel, within a 
 
 Allows events to set or cancel a timer, and triggers an event when the timer expires.
 
+### Useable Gun Event Hook
+
+Events for EquipableItem prefab. Supersedes VehicleTurretEventHook. These events are fired on server and client.
+
 ### Vehicle Event Hook
 
 Events for driver entering and exiting the vehicle. These events are fired on server and client.
