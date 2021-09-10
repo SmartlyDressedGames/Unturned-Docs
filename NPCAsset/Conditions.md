@@ -145,6 +145,8 @@ Refer to [Currency](/Currency.md) documentation.
 
 **Condition\_#\_Radius** *float*: Radius around players that zombies should be killed within, in meters. When a navmesh is unset and a radius is not specified, the radius defaults to 512 meters and is used for the condition.
 
+**Condition\_#\_MinRadius** *float*: Zombies must be killed at least this many meters away from the player.
+
 **Condition\_#\_Spawn** *bool*: The zombie type should be forcefully generated upon entering the area, which will then be deleted upon leaving the area.
 
 ### Player_Life_Food
