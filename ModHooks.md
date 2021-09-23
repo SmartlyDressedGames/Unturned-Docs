@@ -10,7 +10,7 @@ Originally proposed and coined by VitaxaRusModding in this GitHub issue: [Link](
 
 ## Event Listeners
 
-### Activaton Event Hook
+### Activation Event Hook
 
 Events when a component or game object are enabled and disabled. Useful for extending toggleable actions in the base game.
 
