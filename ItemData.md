@@ -588,6 +588,8 @@ __Vision__: The length of hallucinations. The length does not stack with each ti
 
 __Oxygen__: The number of oxygen to restore or deplete.
 
+__Experience__: The number of experience to be gained or be taken away upon consumption.
+
 __Should_Delete_After_Use__: `false`, `true`. Defaults to true.
 
 __Item_Reward_Spawn_ID__: ID of an item generated upon usage of the consumable.
