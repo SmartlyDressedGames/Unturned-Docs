@@ -18,7 +18,10 @@ __Feedback__ _string_: URL to discussions. If not explicitly set, defaults to th
 
 __Visible_In_Matchmaking__ _bool_: Should this map be listed in the matchmaking menu? Used to filter out test and demo maps.
 
-__Version__ _string_: X.Y.Z.W style version number. Vanilla version numbers use 3.Year.Update.Patch, but that's optional. Servers will reject clients with different map versions.
+__Version__ _string_: #.#.#.# format version number. Vanilla version numbers use 3.Year.Update.Patch, but that is optional. Incrementing the version number for every upload is good practice because:
+
+1. When client and server files do not match it is more helpful to show a version number error message rather than a generic file mismatch error.
+2. Searching by map in the server browser can filter servers running the same version of the map.
 
 __Tips__ _int_: Number of Tip_# keys defined in level's localization files, if any. Overrides vanilla tip messages on the loading screen.
 
@@ -102,7 +105,7 @@ __Weather_Override__ _ELevelWeatherOverride_: Can be set to rain or snow to lock
 
 __Has_Atmosphere__ _bool_: If false, disable stars in skybox.
 
-__Should_Verify_Objects_Hash__ _bool_: Should server verify client level files match? Not recommended for maps with tons of required downloads because loading mismatch will break hash. Maps with one or two dependencies should be fine.
+__Should_Verify_Objects_Hash__ _bool_: Should server verify client level files match? Disabled by default, but should be enabled on most maps. Not recommended for maps with dozens of required downloads because loading mismatch will break hash.
 
 __Can_Use_Bundles__ _bool_: Should assets in the map's Bundles directory be usable from the level editor? Was disabled for older curated maps to prevent breaking after transitioning to the workshop.
 
