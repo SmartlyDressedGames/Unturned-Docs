@@ -54,6 +54,7 @@ Individual asset *.dats can set the following keys:
 5. Click the checkbox next to an asset bundle's name in the tool to mark it as a master bundle. This filters the list of asset bundles to show, and tracks an export path associated with it.
 6. Click the ... to choose a destination for the bundle file.
 7. Click Export.
+8. (optional) When redistributing the asset bundle the "multiplatform" toggle should be enabled. This ensures the appropriate shaders for each platform are included, and exports a ".hash" file so the server can validate client asset bundle integrity.
 
 ### Motivations:
 
