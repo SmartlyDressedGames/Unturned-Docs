@@ -21,7 +21,7 @@ Blueprints
 
 **Blueprint\_#\_Level** *int*: Skill level required.
 
-**Blueprint\_#\_Skill** *enum* (`Cook`, `Craft`, `None`, `Repair`): The skill required.
+**Blueprint\_#\_Skill** *enum* (`Cook`, `Craft`, `None`, `Repair`): The skill required. If value is set to "Cook", then the player will also need to be next to a heat source (such as a lit Campfire).
 
 **Blueprint\_#\_Build** *int16*: Auditory effect ID to play upon crafting.
 
