@@ -6,7 +6,7 @@ Tactical attachments are inventory items that can be attached to ranged weapons.
 Item Asset Properties
 ---------------------
 
-**GUID** *32-digit hexadecimal*: Refer to [GUID](GUID.md) documentation.
+**GUID** *32-digit hexadecimal*: Refer to [GUID](/GUID.md) documentation.
 
 **Type** *enum* (`Tactical`)
 
