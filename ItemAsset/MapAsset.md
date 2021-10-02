@@ -6,7 +6,7 @@ Maps and compasses provide the player with additional UI information for as long
 Item Asset Properties
 ---------------------
 
-**GUID** *32-digit hexadecimal*: Refer to [GUID](GUID.md) documentation.
+**GUID** *32-digit hexadecimal*: Refer to [GUID](/GUID.md) documentation.
 
 **Type** *enum* (`Map`, `Compass`)
 

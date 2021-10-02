@@ -6,7 +6,7 @@ Crafting supplies are items primarily intended to be used as ingredients in craf
 Item Asset Properties
 ---------------------
 
-**GUID** *32-digit hexadecimal*: Refer to [GUID](GUID.md) documentation.
+**GUID** *32-digit hexadecimal*: Refer to [GUID](/GUID.md) documentation.
 
 **Type** *enum* (`Supply`)
 
