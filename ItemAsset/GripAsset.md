@@ -36,18 +36,4 @@ Caliber Asset Properties
 Grip Asset Properties
 ---------------------
 
-**Damage** *float*: Multiplier on damage.
-
-**Firerate** *byte*: Amount to decrease ranged weapon's firerate value by. Decreasing by a larger value will allow the ranged weapon to fire more often.
-
-**Laser** *bool*: Provides a toggleable laser.
-
-**Light** *bool*: Provides a toggleable flashlight.
-
-**Melee** *bool*: Provides the ability to perform a melee attack.
-
-
-
-__Type__: `Grip`
-
-__Bipod__: Specified if effects only take place when prone.
+**Bipod** *bool*: Specified if effects should only take place while prone.
