@@ -12,20 +12,16 @@ Item Asset Properties
 
 **ID** *uint16*: Must be a unique identifier.
 
-Tactical Asset Properties
--------------------------
+Caliber Asset Properties
+------------------------
 
-**Damage** *float*: Multiplier on damage.
+**Ballistic_Damage_Multiplier** *float*: Multiplier on damage. Defaults to the value used for the Damage property.
+
+**Damage** *float*: Multiplier on damage. Defaults to 1. Deprecated in favor of Ballistic_Damage_Multiplier.
 
 **Firerate** *byte*: Amount to decrease ranged weapon's firerate value by. Decreasing by a larger value will allow the ranged weapon to fire more often.
 
-**Laser** *bool*: Provides a toggleable laser.
-
-**Light** *bool*: Provides a toggleable flashlight.
-
-**Melee** *bool*: Provides the ability to perform a melee attack.
-
-**Rangefinder** *bool*: Provides a toggleable rangefinder.
+**Paintable** *bool*: Specified if the attachment should be affected by Steam Economy ranged weapon skins that include support for attachments.
 
 **Recoil_X** *float*: Multiplier on horizontal recoil.
 
@@ -34,3 +30,16 @@ Tactical Asset Properties
 **Shake** *float*: Multiplier on shake.
 
 **Spread** *float*: Multiplier on spread.
+
+**Sway** *float*: Multiplier on sway.
+
+Tactical Asset Properties
+-------------------------
+
+**Laser** *bool*: Provides a toggleable laser.
+
+**Light** *bool*: Provides a toggleable flashlight.
+
+**Melee** *bool*: Provides the ability to perform a melee attack.
+
+**Rangefinder** *bool*: Provides a toggleable rangefinder.

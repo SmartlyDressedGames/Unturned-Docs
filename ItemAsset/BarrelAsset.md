@@ -1,14 +1,14 @@
-Sight Assets
-============
+Barrel Assets
+=============
 
-Sight attachments are inventory items that can be attached to ranged weapons.
+Barrel attachments are inventory items that can be attached to ranged weapons.
 
 Item Asset Properties
 ---------------------
 
 **GUID** *32-digit hexadecimal*: Refer to [GUID](/GUID.md) documentation.
 
-**Type** *enum* (`Sight`)
+**Type** *enum* (`Barrel`)
 
 **ID** *uint16*: Must be a unique identifier.
 
@@ -33,11 +33,17 @@ Caliber Asset Properties
 
 **Sway** *float*: Multiplier on sway.
 
-Sight Asset Properties
-----------------------
+Barrel Asset Properties
+-----------------------
 
-**Holographic** *bool*: Specified if sight is holographic.
+**Ballistic_Drop** *float*: Multiplier on ballistic drop. Defaults to 1.
 
-**Vision** *enum* (`None`, `Military`, `Civilian`, `Headlamp`): Type of unique lighting vision effect to use. Defaults to None.
+**Braked** *bool*: Specified if a muzzle flash should be hidden.
 
-**Zoom** *float*: Multiplicative amount of zoom. Defaults to 1.
+**Durability** *byte*: Amount of quality lost after each firing of the ranged weapon. When this value is greater than 0, the item always has a visible item quality shown. Defaults to 0.
+
+**Gunshot_Rolloff_Distance_Multiplier** *float*: Multiplier on gunshot rolloff distance. Defaults to 0.5 if Silenced, otherwise to 1.
+
+**Silenced** *bool*: Specified if alerts should not be generated.
+
+**Volume** *float*: Multiplier on gunfire sound volume.

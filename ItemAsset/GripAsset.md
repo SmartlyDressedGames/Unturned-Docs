@@ -1,14 +1,14 @@
-Sight Assets
+Grip Assets
 ============
 
-Sight attachments are inventory items that can be attached to ranged weapons.
+Grip attachments are inventory items that can be attached to ranged weapons.
 
 Item Asset Properties
 ---------------------
 
 **GUID** *32-digit hexadecimal*: Refer to [GUID](/GUID.md) documentation.
 
-**Type** *enum* (`Sight`)
+**Type** *enum* (`Grip`)
 
 **ID** *uint16*: Must be a unique identifier.
 
@@ -33,11 +33,7 @@ Caliber Asset Properties
 
 **Sway** *float*: Multiplier on sway.
 
-Sight Asset Properties
-----------------------
+Grip Asset Properties
+---------------------
 
-**Holographic** *bool*: Specified if sight is holographic.
-
-**Vision** *enum* (`None`, `Military`, `Civilian`, `Headlamp`): Type of unique lighting vision effect to use. Defaults to None.
-
-**Zoom** *float*: Multiplicative amount of zoom. Defaults to 1.
+**Bipod** *bool*: Specified if effects should only take place while prone.
