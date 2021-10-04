@@ -17,6 +17,10 @@ Caliber Asset Properties
 
 **Ballistic_Damage_Multiplier** *float*: Multiplier on damage. Defaults to the value used for the Damage property.
 
+**Calibers** *uint16*: Total amount of unique calibers.
+
+**Caliber_#** *uint16*: Caliber ID for acceptable attachment compatibility.
+
 **Damage** *float*: Multiplier on damage. Defaults to 1. Deprecated in favor of Ballistic_Damage_Multiplier.
 
 **Firerate** *byte*: Amount to decrease ranged weapon's firerate value by. Decreasing by a larger value will allow the ranged weapon to fire more often.
