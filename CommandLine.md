@@ -30,6 +30,8 @@ Some command-line arguments are primarily intended for use with the Unturned Ded
 
 **-NoDeferAssets**: Disable the deferring of loading vehicles and level objects until map load time, and instead load on startup.
 
+**-NoSteamTextFiltering**: Disable Steam text filter, and instead revert to the old naïve filter.
+
 **-OfflineOnly**: Disables requests to the internet. For LAN servers, it skips the Steam backend connection and uses locally-cached Workshop items.
 
 **-RazerChroma**: Enable Razer Chroma integration on compatible devices.
