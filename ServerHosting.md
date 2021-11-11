@@ -127,12 +127,12 @@ Common useful commands are:
 		Map Washington
 		Map Russia
 
-- __Port__: Running multiple internet servers simultaneously requires specifying different ports. Unturned will use the set port for game traffic, port + 1 for server list queries and port + 2 for the Steam backend. Recommended port values are 27015 for the first server, 27018 for the second server, so on and so forth.
+- __Port__: Running multiple servers simultaneously requires specifying different ports. Unturned uses two consecutive ports. The first is for server list queries, and the second for in-game traffic. Recommended port values are 27015 for the first server, 27017 for the second server, 27019 for the third server, so on and so forth.
 
 	Examples:
 
 		Port 27015
-		Port 27018
+		Port 27017
 
 - __Name__: Name of the server on the server list; set as "Unturned" by default.
 - __Password__: Requires password to join server. Note that password is only SHA1 hashed, so don't use the same password anywhere else.

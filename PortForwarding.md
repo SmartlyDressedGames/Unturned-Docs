@@ -8,9 +8,9 @@ Two pieces of information: the port range and local device address are required 
 Port Range
 ----------
 
-Each Unturned server uses three consecutive ports while running. The first is used for game traffic, the second for server list queries, and the third for communicating with the Steam backend services.
+Each Unturned server uses two consecutive ports while running. The first is for server list queries, and the second for in-game traffic.
 
-By default 27015, 27016, and 27017 are used. Setting a different value with the `Port` command uses that value, value + 1 and value + 2. Recommended `Port` command settings are 27015 for the first server, 27018 for the second server, 27021 for the third server, so on and so forth.
+By default 27015 and 27016 are used. Setting a different value with the `Port` command uses that value and plus one. Recommended `Port` command settings are 27015 for the first server, 27017 for the second server, 27019 for the third server, so on and so forth.
 
 Local Device Address
 --------------------
@@ -35,10 +35,10 @@ In general the steps are along the lines of:
 3. Find Port Forwarding menu.
 4. Find the option to add a new rule.
 5. Name the new rule something related to Unturned for reference.
-6. Input 27015 as the starting port(s) and 27017 as the ending port(s).
+6. Input 27015 as the starting port(s) and 27016 as the ending port(s).
 
-	On some routers it might not be possible to input multiple ports within a single rule. In that case multiple rules can be setup; one for each of the three port.
+	On some routers it might not be possible to input multiple ports within a single rule. In that case multiple rules can be setup; one for each of the two ports.
 
-7. Enable TCP and UDP protocols.
+7. Enable UDP protocol.
 8. Set destination internal IP to the local host address.
 9. Save the new rule.
