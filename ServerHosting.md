@@ -87,6 +87,8 @@ How to Launch Server on Windows
 
 9. The batch script has created a new file directory located in ...\U3DS\Servers, called "MyServer". This directory is where all the savedata and configuration files are kept. Changing the `MyServer` ServerID (from step 5) in the batch script to a different name will allow for keeping savedata separate across multiple servers, and for running multiple servers at once.
 
+10. (optional) For your server to be visible on the in-game internet server list you will need to set a [Login Token](GameServerLoginTokens.md) and configure [Port Forwarding](PortForwarding.md).
+
 How to Launch Server on Linux
 -----------------------------
 
@@ -102,6 +104,8 @@ How to Launch Server on Linux
 3. You can safely close the server by executing (typing, and then pressing the "↵ Enter" key on your keyboard) the following command on the command-line interface: `shutdown`
 
 4. The executed command has created a new file directory located in .../U3DS/Servers, called "MyServer". This directory is where all the savedata and configuration files are kept. Changing the `MyServer` ServerID (from step 2) in the batch script to a different name will allow for keeping savedata separate across multiple servers, and for running multiple servers at once.
+
+5. (optional) For your server to be visible on the in-game internet server list you will need to set a [Login Token](GameServerLoginTokens.md) and configure [Port Forwarding](PortForwarding.md).
 
 How to Configure Server
 -----------------------
@@ -196,3 +200,5 @@ Hosting a publicly-accessible internet server requires an extra step compared to
 One way to think of it is that when there are multiple devices (e.g. computers and phones) connected to the LAN, the outside internet does not know which device is the Unturned server. In this case port forwarding specifies which LAN device is the host.
 
 For port ranges and other details: [Port Forwarding](PortForwarding.md)
+
+Listing your server on the in-game internet server list requires a [Login Token](GameServerLoginTokens.md) to be set.
