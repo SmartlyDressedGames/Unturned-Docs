@@ -3,6 +3,6 @@ GUID
 
 Globally Unique Identifiers (**GUID**s) are 32 hexadecimal digits used to identify assets. They are preferable to file names because the files can be moved without redirectors.
 
-The game will assign a random GUID during a successful load. Alternatively, a useful tool for generating GUIDs is [guidgenerator.com](https://www.guidgenerator.com/).
+If the GUID property is omitted from an asset file, the game will assign a random GUID during a successful load. Alternatively, a useful tool for manually generating GUIDs is [guidgenerator.com](https://www.guidgenerator.com/).
 
 Legacy ids are 16 bits with a [0, 65535] range, whereas GUIDs are 128 bits with an unimaginably huge range. This allows them to be generated without coordination or registration between developers.
