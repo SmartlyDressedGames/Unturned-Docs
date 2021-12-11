@@ -7,7 +7,7 @@ Consists of Damage data and Blueprint data [Blueprints](/ItemAsset/Blueprints.md
 
 **Type** *enum* (`Melee`)
 
-**Rarity** *enum* (`Common`, `Uncommon`, `Rare`, `Epic`, `Legendary`, `Mythical`.) Defaults to common if tag is absent.
+**Rarity** *enum* (`Common`, `Uncommon`, `Rare`, `Epic`, `Legendary`, `Mythical`.) Defaults to Common if tag is absent.
 
 **Useable** *enum* (`Melee`)
 
