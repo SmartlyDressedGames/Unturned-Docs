@@ -1,0 +1,42 @@
+Melee Weapons
+=============
+They are items that can be equipped to do damage.
+Consists of Damage data and Blueprint data [Blueprints](/ItemAsset/Blueprints.md).
+
+**GUID** *32-digit hexadecimal*: Refer to [GUID](/GUID.md) documentation.
+
+**Type** *enum* (`Melee`)
+
+**Rarity** *enum* (`Common`, `Uncommon`, `Rare`, `Epic`, `Legendary`, `Mythical`.) Defaults to common if tag is absent.
+
+**Useable** *enum* (`Melee`)
+
+**Slot** *enum* (`Primary`, `Secondary` or `Any`)
+
+**ID** *uint16*: Must be a unique identifier.
+
+**Range**: Max distance in meters before damage is no longer possible.
+
+**BladeID**: When this numeric value is the same as the one specified in `Resource: Tree`, this melee weapon can then damage the Resource.
+* e.g. 2 is for metal rocks, 3 is for Cane #1, 4 is for Snow Pile #1
+
+**Alert_Radius**: Distance in meters whereby zombies will be alerted to the person using the weapon.
+
+**Weak**:
+
+**Strong**:
+
+**Strength**:
+
+**Stamina**: Value of Stamina to be drained when doing a power attack.
+
+**Light**: If tag is present, the `Light` component in the item's Unity Gameobject can be toggled.
+
+**Durability**: Decimal probability chance of quality loss that occurs upon hitting.
+
+**Repair**: If tag is present, this melee weapon is used to repair Barricades, Structures and Vehicles.
+
+**Repeated**: If tag is present, person can press and hold attack button to attack constantly. e.g. In Chainsaw and Jackhammer.
+
+**AttackAudioClip**: Directory of sound file in Masterbundle to be played.
+* e.g. `PlacementAudioClip core.masterbundle:Sounds/WoodenPlacement.mp3` would point to the particular sound file within core.masterbundle.
