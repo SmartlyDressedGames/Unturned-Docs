@@ -10,7 +10,7 @@ Vendors
 Buying
 ------
 
-Properties pertaining to items that the vendor is willing to buy from players. Vendors can set conditions for the items they are buying. These conditions are prefixed with `Buying_#_`. For example, `Buying_0_Conditions 1`. Refer to [Conditions.md](/NPCAsset/Conditions.md) for additional documentation.
+Properties pertaining to items that the vendor is willing to buy from players. Vendors can set conditions for the items they are buying. These conditions are prefixed with `Buying_#_`. For example, `Buying_0_Conditions 1`. Refer to [Conditions.md](/NPCAsset/Conditions.md) and [Rewards.md](/NPCAsset/Rewards.md) for documentation.
 
 **Buying** *byte*: Total number items being bought by the vendor.
 
@@ -21,7 +21,7 @@ Properties pertaining to items that the vendor is willing to buy from players. V
 Selling
 -------
 
-Properties pertaining to items or vehicles that the vendor is willing to sell to players. Vendors can set conditions for the items/vehicles they are selling. These conditions are prefixed with `Selling_#_`. For example, `Selling_0_Conditions 1`. Refer to [Conditions.md](/NPCAsset/Conditions.md) for additional documentation.
+Properties pertaining to items or vehicles that the vendor is willing to sell to players. Vendors can set conditions for the items/vehicles they are selling. These conditions are prefixed with `Selling_#_`. For example, `Selling_0_Conditions 1`. Refer to [Conditions.md](/NPCAsset/Conditions.md) and [Rewards.md](/NPCAsset/Rewards.md) for documentation.
 
 **Selling** *byte*: Total number of items/vehicles being sold by the vendor.
 
