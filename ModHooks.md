@@ -14,6 +14,10 @@ Originally proposed and coined by VitaxaRusModding in this GitHub issue: [Link](
 
 Events when a component or game object are enabled and disabled. Useful for extending toggleable actions in the base game.
 
+### Binary Random Component
+
+When triggered will invoke one of two events depending on percentage probability. For example with a probability of 0.05 the OnTrue event will be invoked 5% of the time, and OnFalse will be invoked the remaining 95% of times.
+
 ### Collision Event Hook
 
 Events for player overlaps with a trigger collider. Primarily useful for server-side objects as collisions are not triggered by other players client-side, but this limitation may be resolved in the future.
