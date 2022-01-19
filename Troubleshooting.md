@@ -83,3 +83,12 @@ Your stored files can be found at:
 
 This page lists your Steam account's Unturned file subscriptions:
 https://steamcommunity.com/my/myworkshopfiles/?appid=304930&browsefilter=mysubscriptions
+
+## Temporarily Disable All Workshop Files
+
+Disabling loading of your Steam account's Unturned file subscriptions can be helpful to narrow down whether a problem is mod-related or not.
+
+1. Right-click Unturned in your Steam Library
+2. Select Properties... > General
+3. Find the Launch Options field
+4. Type "-NoWorkshopSubscriptions" without quotes
