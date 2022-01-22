@@ -18,7 +18,7 @@ Some command-line arguments are primarily intended for use with the Unturned Ded
 
 **-height** *int*: Override in-game resolution height.
 
-**-Holiday=** *enum* (`Christmas`, `Halloween`, `XMAS`): Override the active holiday.
+**-Holiday=** *enum* (`AprilFools`, `Christmas`, `Halloween`, `HW`, `XMAS`): Override the active holiday.
 
 **-HostPlayerLimit=** *int*: Clamps max number of players to this number. Useful for hosting providers.
 
