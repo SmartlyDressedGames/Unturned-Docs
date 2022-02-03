@@ -34,6 +34,8 @@ Some command-line arguments are primarily intended for use with the Unturned Ded
 
 **-NoSteamTextFiltering**: Disable Steam text filter, and instead revert to the old naïve filter.
 
+**-NoWorkshopSubscriptions**: Disable loading of all Steam Workshop subscriptions. This can be helpful when troubleshooting issues.
+
 **-OfflineOnly**: Disables requests to the internet. For LAN servers, it skips the Steam backend connection and uses locally-cached Workshop items.
 
 **-RazerChroma**: Enable Razer Chroma integration on compatible devices.
