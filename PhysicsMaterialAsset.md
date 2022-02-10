@@ -16,4 +16,16 @@ This is an [Asset v2](AssetsV2.md) class.
 
 `Base` [Asset Pointer](AssetPtr.md): to a physics material asset to extend. Properties from the extension asset will be appended to the base asset.
 
-`AudioDefs` *dictionary*: pairs of key/name and [Master Bundle Pointer](MasterBundlePtr.md) to OneShotAudioDefinition. For example the `ParticleSystemCollisionAudio` component `MaterialPropertyName` is referring to these keys. Official properties include BipedLand, FootstepWalk, FootstepRun, BulletCasingBounce, ShotgunShellBounce, and BulletImpact.
+`AudioDefs` *dictionary*: pairs of key/name and [Master Bundle Pointer](MasterBundlePtr.md) to OneShotAudioDefinition. For example the `ParticleSystemCollisionAudio` component `MaterialPropertyName` is referring to these keys. Official properties include:
+- BulletCasingBounce: used by vanilla non-shotgun particle collision audio.
+- BulletImpact: fired bullet hitting surface.
+- BipedLand: player landing on a surface after falling. Could be used for other two-legged characters (zombies) in the future.
+- FootstepWalk: individual non-sprinting footstep.
+- FootstepRun: individual sprinting footstep.
+- LegacyImpact: will probably be phased-out. Still used by vehicle bumper collision and as a fallback for melee impact.
+- MeleeImpact: melee attack hitting surface.
+- ShotgunShellBounce: used by vanilla shotgun particle collision audio.
+
+`IsArable` *bool*: If true, crops can be planted on this material.
+
+`HasOil` *bool*: If true, oil drills can be placed on this material. Note at the time of writing (2022-02-10) oil drills can only be placed on terrain materials.
