@@ -42,13 +42,13 @@ Sight Asset Properties
 
 **Holographic** *bool*: Specified if sight is holographic.
 
-**Nightvision_Color_B** (*byte* or *float*): The blue color component of an RGBA color, represented as either a byte or a float. Default value for Civilian is 0.4. Default value for `Vision Military` is 20.
+**Nightvision_Color_B** (*byte* or *float*): The blue color component of an RGBA color, represented as either a byte or a float. Default value for Civilian is 0.4. Default value for Military is 20.
 
-**Nightvision_Color_G** (*byte* or *float*): The green color component of an RGBA color, represented as either a byte or a float. Default value for Civilian is 0.4. Default value for `Vision Military` is 120.
+**Nightvision_Color_G** (*byte* or *float*): The green color component of an RGBA color, represented as either a byte or a float. Default value for Civilian is 0.4. Default value for Military is 120.
 
-**Nightvision_Color_R** (*byte* or *float*): The red color component of an RGBA color, represented as either a byte or a float. Default value for Civilian is 0.4. Default value for `Vision Military` is 80.
+**Nightvision_Color_R** (*byte* or *float*): The red color component of an RGBA color, represented as either a byte or a float. Default value for Civilian is 0.4. Default value for Military is 80.
 
-**Nightvision_Fog_Intensity** *float*: Intensity of fog while nightvision is active. Default value for `Vision Civilian` is 0.5. Default value for Military is 0.25.
+**Nightvision_Fog_Intensity** *float*: Intensity of fog while nightvision is active. Default value for Civilian is 0.5. Default value for Military is 0.25.
 
 **Vision** *enum* (`None`, `Military`, `Civilian`, `Headlamp`): Type of unique lighting vision effect to use. Defaults to None.
 
