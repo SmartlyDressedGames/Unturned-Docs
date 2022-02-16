@@ -3,6 +3,8 @@ Sight Assets
 
 Sight attachments are inventory items that can be attached to ranged weapons.
 
+Inherits the [CaliberAsset](/ItemAsset/CaliberAsset.md) class.
+
 Item Asset Properties
 ---------------------
 
