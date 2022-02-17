@@ -3,6 +3,8 @@ Supply Assets
 
 Crafting supplies are items primarily intended to be used as ingredients in crafting blueprints. They can neither be held nor equipped.
 
+This inherits the [ItemAsset](/ItemAsset/README.md) class.
+
 Item Asset Properties
 ---------------------
 
