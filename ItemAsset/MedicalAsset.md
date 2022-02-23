@@ -16,7 +16,7 @@ Item Asset Properties
 
 **ID** *uint16*: Must be a unique identifier.
 
-Food Asset Properties
----------------------
+Medical Asset Properties
+------------------------
 
 Medicine have no unique asset properties. Refer to parent classes for additional properties.
