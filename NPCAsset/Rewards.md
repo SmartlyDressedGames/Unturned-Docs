@@ -1,7 +1,7 @@
 Rewards
 =======
 
-Rewards can be granted by NPC assets, interactable objects, and item blueprints.
+Rewards can be granted by NPC assets, interactable objects, and item blueprints. The specific property prefix may differ between asset types.
 
 **Rewards** *byte*: Total number of rewards.
 
