@@ -1,7 +1,7 @@
 Conditions
 ==========
 
-Conditions can be held by NPC assets, interactable objects, and item blueprints.
+Conditions can be held by NPC assets, interactable objects, and item blueprints. The specific property prefix may differ between asset types.
 
 **Conditions** *byte*: Total number of conditions.
 
