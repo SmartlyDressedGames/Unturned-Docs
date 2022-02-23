@@ -3,9 +3,9 @@ Rewards
 
 Rewards can be granted by NPC assets, interactable objects, and item blueprints.
 
-**Rewards**: Total number of rewards.
+**Rewards** *byte*: Total number of rewards.
 
-**Reward\_#\_Type** *enum*
+**Reward\_#\_Type** *enum* (`Flag_Bool`, `Flag_Math`, `Flag_Short`, `Flag_Short_Random`, `Achievement`, `Currency`, `Event`, `Experience`, `Item`, `Item_Random`, `Hint`, `Quest`, `Reputation`, `Teleport`, `Vehicle`)
 
 Flags
 -----
