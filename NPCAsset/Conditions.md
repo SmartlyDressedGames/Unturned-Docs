@@ -3,9 +3,9 @@ Conditions
 
 Conditions can be held by NPC assets, interactable objects, and item blueprints.
 
-**Conditions** *int*: Total number of conditions.
+**Conditions** *byte*: Total number of conditions.
 
-**Condition\_#\_Type** *enum*
+**Condition\_#\_Type** *enum* (`Compare_Flags`, `Flag_Bool`, `Flag_Short`, `Currency`, `Experience`, `Item`, `Kills_Animal`, `Kills_Horde`, `Kills_Object`, `Kills_Player`, `Kills_Tree`, `Kills_Resource`, `Player_Life_Food`, `Player_Life_Health`, `Player_Life_Virus`, `Player_Life_Water`, `Quest`, `Reputation`, `Skillset`, `Holiday`, `Time_Of_Day`, `Weather_Blend_Alpha`, `Weather_Status`)
 
 **Condition\_#\_Reset** *bool*: Set back to equivalent of 0 when completed.
 
