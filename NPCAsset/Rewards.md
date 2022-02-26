@@ -143,7 +143,9 @@ Refer to [Currency](/Currency.md) documentation.
 
 **Reward\_#\_Type** *enum* (`Vehicle`)
 
-**Reward\_#\_Spawnpoint** *string*: Location to teleport the player to as a reward, using the spawnpoint name as set in the Devkit level editor. For example, `Liberator_Jet`.
+**Reward\_#\_ID** : ID of Vehicle to be given.
+
+**Reward\_#\_Spawnpoint** *string*: Location to spawn the vehicle in as a reward, using the spawnpoint name as set in the Devkit level editor. For example, `Liberator_Jet`.
 
 Localization
 ------------
