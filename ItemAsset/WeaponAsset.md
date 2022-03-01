@@ -1,7 +1,7 @@
 Weapon Assets
 =============
 
-Weapon assets function as a source of damage. The fucntional implementation of properties may differ slightly between assets.
+Weapon assets function as a source of damage. The functional implementation of properties may differ slightly between assets.
 
 This inherits the [ItemAsset](/ItemAsset/README.md) class.
 
