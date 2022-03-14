@@ -1,11 +1,11 @@
 Rewards
 =======
 
-Rewards can be granted by NPC assets, interactable objects, and item blueprints.
+Rewards can be granted by NPC assets, interactable objects, and item blueprints. The specific property prefix may differ between asset types. For example, quests may use "Rewards" while consumables use "Quest_Rewards".
 
-**Rewards**: Total number of rewards.
+**Rewards** *byte*: Total number of rewards.
 
-**Reward\_#\_Type** *enum*
+**Reward\_#\_Type** *enum* (`Flag_Bool`, `Flag_Math`, `Flag_Short`, `Flag_Short_Random`, `Achievement`, `Currency`, `Event`, `Experience`, `Item`, `Item_Random`, `Hint`, `Quest`, `Reputation`, `Teleport`, `Vehicle`)
 
 Flags
 -----
@@ -143,7 +143,9 @@ Refer to [Currency](/Currency.md) documentation.
 
 **Reward\_#\_Type** *enum* (`Vehicle`)
 
-**Reward\_#\_Spawnpoint** *string*: Location to teleport the player to as a reward, using the spawnpoint name as set in the Devkit level editor. For example, `Liberator_Jet`.
+**Reward\_#\_ID** : ID of Vehicle to be given.
+
+**Reward\_#\_Spawnpoint** *string*: Location to spawn the vehicle in as a reward, using the spawnpoint name as set in the Devkit level editor. For example, `Liberator_Jet`.
 
 Localization
 ------------
