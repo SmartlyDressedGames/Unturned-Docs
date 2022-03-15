@@ -78,7 +78,7 @@ When beginning development of 3.0, it was key to support runtime loading of cust
 
 ## Content Bundles (*.content) *DEPRECATED*
 
-This format was used by terrain, material palettes and radio songs. After the 3.21.15.0 update on 2021-04-23 these can all use master bundles instead. Old references from these assets will continue to function, but new references should use a master bundle name and relative path for the "Name" and "Path" properties.
+This format was used by terrain, material palettes, and radio songs. After the April 23, 2021 patch (version 3.21.15.0) these assets can all use master bundles instead. As of the February 25, 2022 patch (version 3.22.4.0) any remaining support for content bundles has been removed. New references should use a master bundle name and relative path for the "Name" and "Path" properties.
 
 ### Tool Usage:
 
