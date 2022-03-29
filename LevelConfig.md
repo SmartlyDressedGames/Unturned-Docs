@@ -107,8 +107,6 @@ __Has_Atmosphere__ _bool_: If false, disable stars in skybox.
 
 __Should_Verify_Objects_Hash__ _bool_: Should server verify client level files match? Disabled by default, but should be enabled on most maps. Not recommended for maps with dozens of required downloads because loading mismatch will break hash.
 
-__Can_Use_Bundles__ _bool_: Should assets in the map's Bundles directory be usable from the level editor? Was disabled for older curated maps to prevent breaking after transitioning to the workshop.
-
 __Has_Global_Electricity__ _bool_: Should all powerable items and objects have power by default?
 
 __Gravity__ _float_: Acceleration of gravity. Defaults to -9.81.
@@ -150,6 +148,8 @@ __Allow_Information__ bool
 
 Deprecated
 ----------
+
+__Can_Use_Bundles__ _bool_: Used in the past for timed curated maps to disable using their assets in the level editor which could break after moving the map from the vanilla content to the workshop.
 
 __Use_Legacy_Fog_Height__ _bool_: Should default terrain height be used for fog falloff? If false, devkit landscape tile limits are used instead. Defaults to true.
 

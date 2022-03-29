@@ -1,6 +1,6 @@
 # Asset Bundles
 
-The game loads textures, audio, meshes, prefabs, etc. from Unity __Asset Bundles__ at runtime. How these are setup and used has evolved over the years from individual *.unity3d bundles to .content bundles to .masterbundle files.
+The game loads textures, audio, meshes, prefabs, etc. from **Unity Asset Bundles** at runtime. How these are setup and used has evolved over the years from individual *.unity3d bundles to *.content bundles to *.masterbundle files.
 
 [Master Bundles](#master-bundles) should be used for essentially all new projects.
 
@@ -78,17 +78,8 @@ When beginning development of 3.0, it was key to support runtime loading of cust
 
 ## Content Bundles (*.content) *DEPRECATED*
 
-This format was used by terrain, material palettes and radio songs. After the 3.21.15.0 update on 2021-04-23 these can all use master bundles instead. Old references from these assets will continue to function, but new references should use a master bundle name and relative path for the "Name" and "Path" properties.
+This format was historically used by terrain, material palettes, and radio songs. After the April 23, 2021 patch (version 3.21.15.0) these assets can all use master bundles instead. As of the February 25, 2022 patch (version 3.22.4.0) any remaining support for content bundles has been removed. New references should use a master bundle name and relative path for the "Name" and "Path" properties.
 
-### Tool Usage:
+### Reusing Content Bundles
 
-1. Follow _Tool Setup_ instructions.
-2. Open the tool from the Window > Unturned > Content Tool menu.
-3. Select directories of assets in the Project window.
-4. In the Inspector window tag them in an asset bundle ending with ".content".
-5. Click ... to choose a destination for the content bundle file.
-6. Click Export.
-
-### Motivations:
-
-In late 2016 and early 2017 development was focused on improving the editor experience, and one aspect of that was asset bundling. Content bundles scanned a manifest of contained assets in order to allow browsing individually from the in-game editor, and the idea was to allow each content reference to be configured per-game-property. Unfortunately, this effort was far too broad - from building an interface between the game code / online subsystem code to revising the ID system to use GUIDs. In retrospect it would have been wiser to crack down on individual features which has been the approach since then.
+Although it is preferable to properly migrate older assets into master bundles, preexisting content bundles can be easily reused as a master bundle. Rename the *.content file to be *.masterbundle file instead. Then, add a corresponding MasterBundle.dat file as described in the file setup for master bundles.

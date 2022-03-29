@@ -23,6 +23,8 @@ For examples check the `Assets/Levels` directory.
 
 `Enable_Admin_Faster_Salvage_Duration` *bool*: by default players in singleplayer and admins in multiplayer have a faster salvage time.
 
+`Has_Clouds` *bool*: disables clouds in skybox when false. Defaults to true.
+
 This is an [Asset v2](AssetsV2.md) class.
 
 ## Schedulable Weather Properties
