@@ -5,7 +5,7 @@ Rewards can be granted by NPC assets, interactable objects, and item blueprints.
 
 **Rewards** *byte*: Total number of rewards.
 
-**Reward\_#\_Type** *enum* (`Flag_Bool`, `Flag_Math`, `Flag_Short`, `Flag_Short_Random`, `Achievement`, `Currency`, `Event`, `Experience`, `Item`, `Item_Random`, `Hint`, `Quest`, `Reputation`, `Teleport`, `Vehicle`)
+**Reward\_#\_Type** *enum* (`Flag_Bool`, `Flag_Math`, `Flag_Short`, `Flag_Short_Random`, `Achievement`, `Currency`, `Event`, `Experience`, `Item`, `Item_Random`, `Hint`, `Player_Spawnpoint`, `Quest`, `Reputation`, `Teleport`, `Vehicle`)
 
 Flags
 -----
@@ -120,6 +120,12 @@ Refer to [Currency](/Currency.md) documentation.
 **Reward\_#\_Text** *string*: Text to display as a hint.
 
 **Reward\_#\_Duration** *float*: Duration of the hint, in seconds. Defaults to 2 seconds.
+
+### Player Spawnpoint
+
+**Reward\_#\_Type** *enum* (`Player_Spawnpoint`)
+
+**Reward\_#\_ID** *string* Location to spawn the player, using the spawnpoint name as set in the Devkit level editor or a map location node name. For example, `Liberator_Jet`.
 
 ### Quest
 
