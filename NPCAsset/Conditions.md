@@ -7,7 +7,7 @@ Conditions can be held by NPC assets, interactable objects, and item blueprints.
 
 **Condition\_#\_Type** *enum* (`Compare_Flags`, `Flag_Bool`, `Flag_Short`, `Currency`, `Experience`, `Item`, `Kills_Animal`, `Kills_Horde`, `Kills_Object`, `Kills_Player`, `Kills_Tree`, `Kills_Resource`, `Player_Life_Food`, `Player_Life_Health`, `Player_Life_Virus`, `Player_Life_Water`, `Quest`, `Reputation`, `Skillset`, `Holiday`, `Time_Of_Day`, `Weather_Blend_Alpha`, `Weather_Status`)
 
-**Condition\_#\_Reset** *bool*: Set back to equivalent of 0 when completed.
+**Condition\_#\_Reset** *flag*: Set back to equivalent of 0 when completed.
 
 **Condition\_#\_Logic** *enum* (`Less_Than`, `Less_Than_Or_Equal_To`, `Equal`, `Not_Equal`, `Greater_Than_Or_Equal_To`, `Greater_Than`): Compare current state to target state.
 
@@ -38,7 +38,7 @@ Boolean flag condition.
 
 **Condition\_#\_Value** *bool*: Target value, as a boolean.
 
-**Condition\_#\_Allow_Unset** *bool*: Pass condition if player does not have the flag yet.
+**Condition\_#\_Allow_Unset** *flag*: Pass condition if player does not have the flag yet.
 
 ### Flag_Short
 
@@ -50,7 +50,7 @@ Short flag condition.
 
 **Condition\_#\_Value** *int*: Target value for the flag, as a 16-bit signed integer.
 
-**Condition\_#\_Allow\_Unset** *bool*: Pass condition if player does not have the flag yet.
+**Condition\_#\_Allow\_Unset** *flag*: Pass condition if player does not have the flag yet.
 
 Player
 ------
@@ -147,7 +147,7 @@ Refer to [Currency](/Currency.md) documentation.
 
 **Condition\_#\_MinRadius** *float*: Zombies must be killed at least this many meters away from the player.
 
-**Condition\_#\_Spawn** *bool*: The zombie type should be forcefully generated upon entering the area, which will then be deleted upon leaving the area.
+**Condition\_#\_Spawn** *flag*: Specified if the zombie type should be forcefully generated upon entering the area, which will then be deleted upon leaving the area.
 
 ### Player_Life_Food
 
@@ -181,7 +181,7 @@ Refer to [Currency](/Currency.md) documentation.
 
 **Condition\_#\_Status** *enum* (`Active`, `Completed`, `Ready`): Current state of the quest.
 
-**Condition\_#\_Ignore\_NPC** *bool*: Player does not need to be talking to an NPC within 20 meters for the quest to be completable and turned in.
+**Condition\_#\_Ignore\_NPC** *flag*: Player does not need to be talking to an NPC within 20 meters for the quest to be completable and turned in.
 
 ### Reputation
 
@@ -208,7 +208,7 @@ World
 
 **Condition\_#\_Type** *enum* (`Time_Of_Day`)
 
-**Condition\_#\_Second**: Second of a 24-hour clock (military time) to compare against, where 43,200 is noon and 86,400 is a full day.
+**Condition\_#\_Second** *int*: Second of a 24-hour clock (military time) to compare against, where 43,200 is noon and 86,400 is a full day.
 
 ### Weather_Blend_Alpha
 
