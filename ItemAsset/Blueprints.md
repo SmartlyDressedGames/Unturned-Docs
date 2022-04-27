@@ -11,13 +11,13 @@ Blueprints
 
 **Blueprint\_#\_Supply\_#\_Amount** *int*: Quantity of the unique supply required.
 
-**Blueprint\_#\_Supply\_#\_Critical** *bool*: The unique supply is a prerequisite to showing the blueprint listing.
+**Blueprint\_#\_Supply\_#\_Critical** *flag*: The unique supply is a prerequisite to showing the blueprint listing.
 
-**Blueprint\_#\_State\_Transfer** *bool*: Transfer current state of supplies to product.
+**Blueprint\_#\_State\_Transfer** *flag*: Transfer current state of supplies to product.
 
 **Blueprint\_#\_Tool** *int16*: ID of the unique non-consumed tool required.
 
-**Blueprint\_#\_Tool_Critical** *bool*: The unique non-consumed tool is a prerequisite to showing the blueprint listing.
+**Blueprint\_#\_Tool_Critical** *flag*: The unique non-consumed tool is a prerequisite to showing the blueprint listing.
 
 **Blueprint\_#\_Level** *int*: Skill level required.
 
