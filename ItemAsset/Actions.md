@@ -13,7 +13,7 @@ Add additional context actions; the system currently supports [blueprint](Bluepr
 
 **Action\_#\_Blueprint\_#\_Index** *int*: Index of the blueprint that action should perform.
 
-**Action\_#\_Blueprint\_#\_Link** *bool*: Action should redirect to the associated blueprint listing, rather than immediately craft the item.
+**Action\_#\_Blueprint\_#\_Link** *flag*: Action should redirect to the associated blueprint listing, rather than immediately craft the item.
 
 Button Properties
 -----------------
