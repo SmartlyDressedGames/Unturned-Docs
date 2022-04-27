@@ -56,9 +56,9 @@ Zombie Damage
 
 **Zombie_Skull_Multiplier** *float*: Multiplier on damage targeted against a zombie's head. Limb multipliers are not utilized by explosive weapons.
 
-**Stun_Zombie_Always** *bool*: Specified if a zombie should always be stunned when targeted by the weapon.
+**Stun_Zombie_Always** *flag*: Specified if a zombie should always be stunned when targeted by the weapon.
 
-**Stun_Zombie_Never** *bool*: Specified if a zombie should never be stunned when targeted by the weapon.
+**Stun_Zombie_Never** *flag*: Specified if a zombie should never be stunned when targeted by the weapon.
 
 Animal Damage
 -------------
@@ -90,4 +90,4 @@ Construct Damage
 
 **Object_Damage** *float*: Amount of damage that should be dealt to objects, prior to modifiers. Defaults to the value used by Resource_Damage.
 
-**Invulnerable** *bool*: Specified if damage should affect structures, barricades, and vehicles that are considered invulnerable to low-power weaponry. Not applicable to explosive weapons, which will always ignore invulnerability.
+**Invulnerable** *flag*: Specified if damage should affect structures, barricades, and vehicles that are considered invulnerable to low-power weaponry. Not applicable to explosive weapons, which will always ignore invulnerability.
