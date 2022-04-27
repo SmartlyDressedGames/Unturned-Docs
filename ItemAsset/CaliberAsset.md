@@ -16,7 +16,7 @@ Caliber Asset Properties
 
 **Firerate** *byte*: Amount to decrease ranged weapon's firerate value by. Decreasing by a larger value will allow the ranged weapon to fire more often.
 
-**Paintable** *bool*: Specified if the attachment should be affected by Steam Economy ranged weapon skins that include support for attachments.
+**Paintable** *flag*: Specified if the attachment should be affected by Steam Economy ranged weapon skins that include support for attachments.
 
 **Recoil_X** *float*: Multiplier on horizontal recoil.
 

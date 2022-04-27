@@ -29,7 +29,7 @@ Magazine Asset Properties
 
 **Stuck** *byte*: Amount of quality to lose when hit. When this value is greater than 0, fired projectiles can be picked back up until their quality reaches 0. Defaults to 0.
 
-**Explosive** *bool*: Specified if it should cause an area-of-effect explosion.
+**Explosive** *flag*: Specified if it should cause an area-of-effect explosion.
 
 **Range** *float*: Radius of the area-of-effect explosion.
 
@@ -59,6 +59,6 @@ Magazine Asset Properties
 
 **Impact** *uint16*: Impact effect ID. Defaults to 0.
 
-**Delete_Empty** *bool*: Specified if the magazine attachment should be deleted when it is fully depleted.
+**Delete_Empty** *flag*: Specified if the magazine attachment should be deleted when it is fully depleted.
 
 **Should_Fill_After_Detach** *bool*: Ammunition should be fully refilled after the magazine attachment is detached from a ranged weapon. Defaults to false.

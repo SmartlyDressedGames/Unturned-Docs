@@ -17,7 +17,7 @@ Item Asset Properties
 Sight Asset Properties
 ----------------------
 
-**Holographic** *bool*: Specified if sight is holographic.
+**Holographic** *flag*: Specified if sight is holographic.
 
 **Nightvision_Color_B** *uint8*: The blue color component of an RGBA color, represented as a byte. Default value for Civilian is equivalent to 102. Default value for Military is 20. Use with Vision Military and the other two color component properties to assign a custom nightvision color.
 

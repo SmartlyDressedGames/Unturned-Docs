@@ -36,7 +36,7 @@ Properties pertaining to items or vehicles that the vendor is willing to sell to
 Other Properties
 ----------------
 
-**Disable_Sorting** *bool*: Disable vendor sorting.
+**Disable_Sorting** *flag*: Disable vendor sorting.
 
 **Currency** *string*: GUID of [currency asset](/Currency.md) to use as currency instead of experience points.
 
