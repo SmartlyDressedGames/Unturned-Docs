@@ -17,4 +17,4 @@ Item Asset Properties
 Grip Asset Properties
 ---------------------
 
-**Bipod** *bool*: Specified if effects should only take place while prone.
+**Bipod** *flag*: Specified if effects should only take place while prone.
