@@ -18,7 +18,7 @@ Roots are the spawners that your spawn table will attach itself to. This is usef
 
 **Root\_#\_Spawn\_ID** *uint16*:  ID of parent spawn table.
 
-**Root\_#\_Override** *bool*: Zeroes the weight of default spawns in the parent spawn table. Useful for mods intended to replace official content, such as with total conversions.
+**Root\_#\_Override** *flag*: Zeroes the weight of default spawns in the parent spawn table. Useful for mods intended to replace official content, such as with total conversions.
 
 **Root\_#\_Weight** *int*: Weight of this table in the parent spawn table.
 
