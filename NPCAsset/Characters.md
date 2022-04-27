@@ -28,7 +28,7 @@ Clothing
 
 NPC characters can have event-specific outfits, which will only appear during the assigned seasonal event.
 
-**Has_Halloween_Outfit** *bool*: Event-specific clothing should be worn during the Halloween event.
+**Has_Halloween_Outfit** *flag*: Specified if event-specific clothing should be worn during the Halloween event.
 
 **Halloween_Shirt** *uint16*: ID of shirt to wear during the Halloween event.
 
@@ -44,7 +44,7 @@ NPC characters can have event-specific outfits, which will only appear during th
 
 **Halloween_Glasses** *uint16*: ID of glasses to wear during the Halloween event.
 
-**Has_Christmas_Outfit** *bool*: Event-specific clothing should be worn during the Festive event.
+**Has_Christmas_Outfit** *flag*: Specified if event-specific clothing should be worn during the Festive event.
 
 **Christmas_Shirt** *uint16*: ID of shirt to wear.
 
@@ -75,7 +75,7 @@ While in the Appearance menu in-game, modders can press Page Down to copy the pl
 
 **Color_Hair** *hex triplet*: Six-digit hexadecimal number representing RGB color.
 
-**Backward** *bool*: Character is left-handed.
+**Backward** *flag*: Specified if character is left-handed.
 
 Pose
 ----
