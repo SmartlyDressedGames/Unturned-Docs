@@ -8,13 +8,13 @@ This inherits the [WeaponAsset](/ItemAsset/WeaponAsset.md) class.
 Consumeable Asset Properties
 ============================
 
-**Aid** *bool*: Specified if the item can be used on other players, via the "Secondary" action.
+**Aid** *flag*: Specified if the item can be used on other players, via the "Secondary" action.
 
-**Bleeding** *bool*: Specified if the item should remove the "Bleeding" status effect. Deprecated in favor of Bleeding_Modifier.
+**Bleeding** *flag*: Specified if the item should remove the "Bleeding" status effect. Deprecated in favor of Bleeding_Modifier.
 
 **Bleeding_Modifier** *enum* (`Cut`, `Heal`, `None`): Determines the effect the consumable has in relation to the "Bleeding" status effect.
 
-**Broken** *bool*: Specified if the item should remove the "Broken Bones" status effect. Deprecated in favor of Bones_Modifier.
+**Broken** *flag*: Specified if the item should remove the "Broken Bones" status effect. Deprecated in favor of Bones_Modifier.
 
 **Bones_Modifier** *enum* (`Break`, `Heal`, `None`): Determines the effect the consumable has in relation to the "Broken Bones" status effect.
 
