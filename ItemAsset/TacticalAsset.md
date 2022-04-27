@@ -17,10 +17,10 @@ Item Asset Properties
 Tactical Asset Properties
 -------------------------
 
-**Laser** *bool*: Provides a toggleable laser.
+**Laser** *flag*: Provides a toggleable laser.
 
-**Light** *bool*: Provides a toggleable flashlight.
+**Light** *flag*: Provides a toggleable flashlight.
 
-**Melee** *bool*: Provides the ability to perform a melee attack.
+**Melee** *flag*: Provides the ability to perform a melee attack.
 
-**Rangefinder** *bool*: Provides a toggleable rangefinder.
+**Rangefinder** *flag*: Provides a toggleable rangefinder.
