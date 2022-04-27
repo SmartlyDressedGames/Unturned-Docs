@@ -17,8 +17,8 @@ Item Asset Properties
 Map Asset Properties
 --------------------
 
-**Enables_Map**: Provides access to a satellite map display.
+**Enables_Map** *flag*: Provides access to a satellite map display.
 
-**Enables_Chart**: Provides access to a chart map display.
+**Enables_Chart** *flag*: Provides access to a chart map display.
 
-**Enables_Compass**: Provides a compass HUD, and the ability to set waypoints on the map display.
+**Enables_Compass** *flag*: Provides a compass HUD, and the ability to set visible waypoints on the map display.
