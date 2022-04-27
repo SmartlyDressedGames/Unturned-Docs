@@ -111,7 +111,7 @@ Refer to [Currency](/Currency.md) documentation.
 
 **Reward\_#\_Amount** *int*: Amount of item to reward.
 
-**Reward\_#\_Auto\_Equip** *bool*: Item should be automatically equipped by the player.
+**Reward\_#\_Auto\_Equip** *flag*: Item should be automatically equipped by the player.
 
 ### Hint
 
