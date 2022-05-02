@@ -41,3 +41,5 @@ OR
 	}
 
 `Link_URL` string: optional URL to open in web browser when external link button is clicked.
+
+`Is_Loop` *bool*: whether audio source should loop. Recommend **NOT** using mp3 format for looping music.
