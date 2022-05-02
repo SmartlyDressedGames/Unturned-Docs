@@ -25,6 +25,10 @@ For examples check the `Assets/Levels` directory.
 
 `Has_Clouds` *bool*: disables clouds in skybox when false. Defaults to true.
 
+`Loading_Screen_Music` *array*: randomly selected. Refer to music properties.
+
+`Should_Animate_Background_Image` *bool*: if true, the background image moves left/right with loading progress. Defaults to false because maps have important information on the loading screen.
+
 This is an [Asset v2](AssetsV2.md) class.
 
 ## Schedulable Weather Properties
@@ -46,3 +50,9 @@ This is an [Asset v2](AssetsV2.md) class.
 `Default_Level` int: Skill level when player spawns. Note server config Spawn_With_Max_Skills takes priority.
 
 `Max_Unlockable_Level` int: Maximum skill level attainable through gameplay. Higher levels are hidden in the skills menu.
+
+## Music Properties
+
+`Loop` [Master Bundle Pointer](MasterBundlePtr.md): looping audio clip played until loading finishes.
+
+`Outro` [Master Bundle Pointer](MasterBundlePtr.md): audio clip played once loading finishes.
