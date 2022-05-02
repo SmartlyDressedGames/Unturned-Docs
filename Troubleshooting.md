@@ -5,7 +5,7 @@
 1. Right-click Unturned in your Steam Library
 2. Select Properties... > General
 3. Find the Launch Options field
-3. Type "-ui_scale 1" without quotes
+4. Type "-ui_scale 1" without quotes
 
 ## Force OpenGL
 
