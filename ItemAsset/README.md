@@ -39,6 +39,8 @@ Economy Properties
 
 **Size2_Z** *float*: Orthogonal camera size for economy icons. Defaults to -1.
 
+**Pro** *flag*: Specified if this is an economy item.
+
 **Is_Pro** *bool*: Set as an economy item. Defaults to false.
 
 **Shared\_Skin\_Lookup\_ID** *uint16*: Share skins with another item. Defaults to item ID.
