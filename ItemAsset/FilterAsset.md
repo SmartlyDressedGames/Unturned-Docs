@@ -1,7 +1,7 @@
 Filter Assets
 =============
 
-Filters can be used to replenish the quality of radiation-proof [masks](/ItemAsset/MaskAsset.md).
+Radiation filters can be used to replenish the quality of radiation-proof [masks](/ItemAsset/MaskAsset.md).
 
 This inherits the [ItemAsset](/ItemAsset/README.md) class.
 
@@ -19,4 +19,4 @@ Item Asset Properties
 Filter Asset Properties
 -----------------------
 
-Filters have no unique asset properties. Refer to parent classes for additional properties.
+Radiation filters have no unique asset properties. Refer to parent classes for additional properties.
