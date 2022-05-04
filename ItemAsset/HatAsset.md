@@ -1,5 +1,5 @@
 Hat Assets
-===========
+==========
 
 Hats can be worn by players and zombies.
 
@@ -17,6 +17,6 @@ Item Asset Properties
 **ID** *uint16*: Must be a unique identifier.
 
 Hat Asset Properties
----------------------
+--------------------
 
 Hats have no unique asset properties. Refer to parent classes for additional properties.
