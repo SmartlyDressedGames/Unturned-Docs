@@ -5,6 +5,17 @@ Shirts can be worn by players and zombies.
 
 This inherits the [BagAsset](/ItemAsset/BagAsset.md) class.
 
+Item Asset Properties
+---------------------
+
+**GUID** *32-digit hexadecimal*: Refer to [GUID](/GUID.md) documentation.
+
+**Type** *enum* (`Shirt`)
+
+**Useable** *enum* (`Clothing`)
+
+**ID** *uint16*: Must be a unique identifier.
+
 Shirt Asset Properties
 ----------------------
 
