@@ -13,7 +13,7 @@ Shirt Asset Properties
 Body Mesh Replacements
 ----------------------
 
-See [CharacterMeshReplacement.md](CharacterMeshReplacement.md) for full documentation.
+See [CharacterMeshReplacement.md](/CharacterMeshReplacement.md) for full documentation.
 
 **Has_1P_Character_Mesh_Override** *bool*: A prefab named "Character_Mesh_1P_Override_0" should be loaded. Defaults to false.
 
