@@ -12,4 +12,4 @@ Gear Asset Properties
 
 **Beard** *flag*: Specified if facial hair should be visible.
 
-**Hair_Override** *string*: Path to the model that should use the player's hair color.
+**Hair_Override** *string*: Path to the mesh that should use the player's hair color.
