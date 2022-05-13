@@ -5,7 +5,7 @@ Item assets are an [Assets v1](/AssetsV1.md) class. See [AssetBundles.md](/Asset
 
 **GUID** *32-digit hexadecimal*: Refer to [GUID](/GUID.md) documentation.
 
-**Type** *enum* ([`Arrest_End`](/ItemAsset/ArrestEndAsset.md), [`Arrest_Start`](/ItemAsset/ArrestStartAsset.md), `Backpack`, [`Barrel`](/ItemAsset/BarrelAsset.md), `Barricade`, `Beacon`, `Box`, `Charge`, [`Cloud`](/ItemAsset/CloudAsset.md), [`Compass`](/ItemAsset/MapAsset.md), `Detonator`, `Farm`, `Filter`, `Fisher`, [`Food`](/ItemAsset/FoodAsset.md), `Fuel`, `Generator`, `Glasses`, [`Grip`](/ItemAsset/GripAsset.md), `Grower`, `Gun`, `Hat`, `Key`, `Library`, [`Magazine`](/ItemAsset/MagazineAsset.md), [`Map`](/ItemAsset/MapAsset.md), `Mask`, [`Medical`](/ItemAsset/MedicalAsset.md), `Melee`, `Oil_Pump`, `Optic`, `Pants`, `Refill`, `Sentry`, `Shirt`, [`Sight`](/ItemAsset/SightAsset.md), `Storage`, `Structure`, [`Supply`](/ItemAsset/SupplyAsset.md), [`Tactical`](/ItemAsset/TacticalAsset.md), `Tank`, `Throwable`, `Tire`, `Tool`, `Trap`, `Vehicle_Repair_Tool`, `Vest`, [`Water`](/ItemAsset/WaterAsset.md))
+**Type** *enum* ([`Arrest_End`](/ItemAsset/ArrestEndAsset.md), [`Arrest_Start`](/ItemAsset/ArrestStartAsset.md), [`Backpack`](/ItemAsset/BackpackAsset.md), [`Barrel`](/ItemAsset/BarrelAsset.md), `Barricade`, `Beacon`, `Box`, `Charge`, [`Cloud`](/ItemAsset/CloudAsset.md), [`Compass`](/ItemAsset/MapAsset.md), `Detonator`, `Farm`, [`Filter`](/ItemAsset/FilterAsset.md), `Fisher`, [`Food`](/ItemAsset/FoodAsset.md), `Fuel`, `Generator`, [`Glasses`](/ItemAsset/GlassesAsset.md), [`Grip`](/ItemAsset/GripAsset.md), `Grower`, `Gun`, [`Hat`](/ItemAsset/HatAsset.md), `Key`, `Library`, [`Magazine`](/ItemAsset/MagazineAsset.md), [`Map`](/ItemAsset/MapAsset.md), [`Mask`](/ItemAsset/MaskAsset.md), [`Medical`](/ItemAsset/MedicalAsset.md), `Melee`, `Oil_Pump`, [`Optic`](/ItemAsset/OpticAsset.md), [`Pants`](/ItemAsset/PantsAsset.md), `Refill`, `Sentry`, [`Shirt`](/ItemAsset/ShirtAsset.md), [`Sight`](/ItemAsset/SightAsset.md), `Storage`, `Structure`, [`Supply`](/ItemAsset/SupplyAsset.md), [`Tactical`](/ItemAsset/TacticalAsset.md), `Tank`, `Throwable`, `Tire`, `Tool`, `Trap`, `Vehicle_Repair_Tool`, [`Vest`](/ItemAsset/VestAsset.md), [`Water`](/ItemAsset/WaterAsset.md))
 
 **Rarity** *enum* (`Common`, `Uncommon`, `Rare`, `Epic`, `Legendary`, `Mythical`): Rarity of the item, as text shown in menus and colors used for highlights. Defaults to Common rarity.
 
@@ -39,7 +39,7 @@ Economy Properties
 
 **Size2_Z** *float*: Orthogonal camera size for economy icons. Defaults to -1.
 
-**Is_Pro** *bool*: Set as an economy item. Defaults to false.
+**Pro** *flag*: Specified if this is an economy item.
 
 **Shared\_Skin\_Lookup\_ID** *uint16*: Share skins with another item. Defaults to item ID.
 

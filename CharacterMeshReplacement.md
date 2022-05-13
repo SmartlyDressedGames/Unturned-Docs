@@ -1,7 +1,7 @@
 Character Mesh Replacement
 ==========================
 
-The player's character mesh can be entirely replaced with a special shirt item. There's an example CharacterMeshReplacementTest item (ID 1522), as well as example source files in the ExampleAssets.unitypackage under the Shirts directory.
+The player's character mesh can be entirely replaced with a special [shirt item](/ItemAsset/ShirtAsset.md). There's an example CharacterMeshReplacementTest item (ID 1522), as well as example source files in the ExampleAssets.unitypackage under the Shirts directory.
 
 Two limitations are that it must be a shirt because only shirts are loaded for first person (1P) views, and the 1P model should only contain the arms because the rest of the body is not animated.
 
