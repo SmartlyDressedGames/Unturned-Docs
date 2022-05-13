@@ -51,6 +51,8 @@ This is an [Asset v2](AssetsV2.md) class.
 
 `Max_Unlockable_Level` int: Maximum skill level attainable through gameplay. Higher levels are hidden in the skills menu.
 
+`Cost_Multiplier` *float*: multiplier for XP upgrade cost.
+
 ## Music Properties
 
 `Loop` [Master Bundle Pointer](MasterBundlePtr.md): looping audio clip played until loading finishes.
