@@ -329,7 +329,7 @@ Limb-independent entity damage (e.g., Player_Damage) is also applicable.
 Clothing
 ========
 
-* Refer to [BackpackAsset.md](/ItemAsset/ArrestEndAsset.md).
+* Refer to [BackpackAsset.md](/ItemAsset/BackpackAsset.md).
 * Refer to [GlassesAsset.md](/ItemAsset/GlassesAsset.md).
 * Refer to [HatAsset.md](/ItemAsset/HatAsset.md).
 * Refer to [MaskAsset.md](/ItemAsset/MaskAsset.md).
