@@ -1,6 +1,10 @@
-**NOTE:** This documentation file has been deprecated in favor of the [ItemAsset directory](/ItemAsset).
+_**NOTICE:** This documentation file has been deprecated, and is no longer receiving updates. It has been superceded in favor of the [ItemAsset directory](/ItemAsset), which contains individual documentation files for each item asset class._
 
-__Items__ in _Unturned_ encompass anything that can be carried in a player's in-game inventory. All items share some properties, while each item type has its own unique data. All of the data applicable to each possible item type can be found below.
+_This deprecated documentation file will be progressively phased out as the new documentation sources are expanded._
+
+----
+
+__Items__ in _Unturned_ encompass anything that can be carried in a player's in-game inventory. All items share some properties, while each item type has its own unique data. Quick links are available below.
 
 - [Non-specific Data](#Non-specific-Data)
 - [Attachments](#Attachments)
@@ -27,46 +31,7 @@ __Items__ in _Unturned_ encompass anything that can be carried in a player's in-
 Non-specific Data
 =================
 
-This first set of data is universal, and is applicable to any item type. Some of this data is required in order for the item to function.
-
-__GUID__: The GUID is automatically generated for the item when the game is launched. If it is not automatically generated, then it is assumable that the content was not set up properly.
-
-__Type__: Each category of item has its own type. The type to use can be found for each specific item category below, and is used for the item's context type as viewed in the context menu.
-
-__Rarity__: `Common`, `Uncommon`, `Rare`, `Epic`, `Legendary`, `Mythical`. Defaults to common.
-
-__Useable__: This defines which class to use for the item when equipped. If unspecified it will default to None, meaning that the item cannot be equipped. Which value to use for equippable items can be found below for each item category.
-
-__Slot__: `Primary`, `Secondary`, `Any`
-
-__ID__: The item ID is used to spawn the item into the game, and is represented as an unsigned 16 bit integer (a range of 0–65535). It is recommended not to use a value less than 2,000 as those are reserved for official content. It is also recommended to avoid any ID range being used by curated content, as those are often used by modded servers and custom Workshop maps.
-
-__Size_X__: The width of the item in the inventory.
-
-__Size_Y__: The height of the item in the inventory.
-
-__Size_Z__: The size of the camera for item icons.
-
-__Size2_Z__:
-
-__Can_Use_Underwater__: `false`, `true`. Applicable to equipable items, and defaults to false for primary weapons.
-
-__Should_Drop_On_Death__: `false`, `true`. Defaults to true.
-
-__Should_Delete_At_Zero_Quality__: `false`, `true`. Applicable to usable items, and defaults to false.
-
-__Allow_Manual_Drop__: `false`, `true`. Defaults to true.
-
-__Backward__: Specified if this item should be visually held in the opposite hand.
-
-Capacity
---------
-
-__Amount__: Maximum capacity of a container.
-
-__Count_Min__: The minimum amount to generate in the container.
-
-__Count_Max__: The maximum amount to generate in the container.
+* Refer to [README.md](/ItemAsset/README.md).
 
 Quality
 -------
@@ -152,64 +117,6 @@ __Explosion__: The visual effect ID to play as the explosion.
 
 __Spawn_Explosion_On_Dedicated_Server__:
 
-Blueprints
-----------
-
-__Blueprints__: The number of blueprints available.
-
-__Blueprint\_#\_Type__: `Ammo`, `Apparel`, `Barricade`, `Furniture`, `Gear`, `Repair`, `Structure`, `Supply`, `Tool`, `Utilities`
-
-__Blueprint\_#\_Supplies__: The number of unique supplies required for the blueprint.
-
-__Blueprint\_#\_Supply\_#\_ID__: The ID of the unique supply required.
-
-__Blueprint\_#\_Supply\_#\_Amount__: The amount of the unique supply required.
-
-__Blueprint\_#\_Supply\_#\_Critical__: Specified if the unique supply is a prerequisite to showing the blueprint.
-
-__Blueprint\_#\_Tool__: The ID of the unique non-consumed tool required.
-
-__Blueprint\_#\_Tool_Critical__: Specified if the unique non-consumed tool is a prerequisite to showing the blueprint.
-
-__Blueprint\_#\_Level__: The skill level needed.
-
-__Blueprint\_#\_Skill__: `Cook`, `Craft`, `None`, `Repair`. The skill required to craft – defaults to None.
-
-__Blueprint\_#\_Product__: The ID of the product created.
-
-__Blueprint\_#\_Products__: The amount of the product created.
-
-__Blueprint\_#\_Outputs__: The number of unique products created from fulfilling the blueprint.
-
-__Blueprint\_#\_Output\_#\_ID__: The ID of the unique product created.
-
-__Blueprint\_#\_Output\_#\_Amount__: The amount of the unique product created.
-
-__Blueprint\_#\_Build__: The auditory effect ID to play.
-
-__Blueprint\_#\_Map__: Name of the map the condition applies to.
-
-__Blueprint\_#\_Conditions__: The number of required conditions.
-
-__Blueprint\_#\_Condition\_#\_Type__: `Holiday`
-
-__Blueprint\_#\_Condition\_#\_Value__: `Christmas`, `Halloween`
-
-Actions
--------
-
-__Actions__: The number of actions available.
-
-__Action\_#\_Type__: `Blueprint`
-
-__Action\_#\_Source__: ID of the item with the blueprint this action should perform.
-
-__Action\_#\_Blueprints__: The amount of the unique blueprint actions.
-
-__Action\_#\_Blueprint\_#\_Index__: ID of the specific blueprint this action should perform.
-
-__Action\_#\_Key__: `Craft_Bandage`, `Craft_Dressing`, `Craft_Rag`, `Craft_Seed`
-
 Asset Bundles and Error Handling
 --------------------------------
 
@@ -220,88 +127,11 @@ __Ignore_TexRW__: Specified if read/writeable texture errors for the item should
 Attachments
 ===========
 
-__Calibers__: The number of calibers applicable.
-
-__Caliber\_#__: ID of an applicable caliber.
-
-__Recoil_X__: Decimal amount to multiply horizontal look recoil by.
-
-__Recoil_Y__: Decimal amount to multiply vertical look recoil by.
-
-__Spread__: Decimal amount to multiply spread by.
-
-__Shake__: Decimal amount to multiply physical recoil by.
-
-__Damage__: Decimal amount to multiply damage by.
-
-__Paintable__: Specified if skins can retexture the attachment.
-
-Barrels
--------
-
-__Type__: `Barrel`
-
-__Braked__: Specified if a muzzle flash is hidden.
-
-__Silenced__: Specified if alerts are not generated.
-
-__Volume__: Amount to multiply gunfire sound volume.
-
-Grips
------
-
-__Type__: `Grip`
-
-__Bipod__: Specified if effects only take place when prone.
-
-Magazines
----------
-
-__Type__: `Magazine`
-
-__Pellets__: Number of bullet rays shot.
-
-__Tracer__: Tracer effect ID.
-
-__Impact__: Impact effect ID.
-
-__Speed__: Multiplier on reload speed.
-
-__Stuck__: Amount of quality to lose when hit. Fired projectiles can be picked back up until quality reaches 0.
-
-__Projectile_Damage_Multiplier__: Multiplier on the damage dealt by projectile weapons.
-
-__Projectile_Blast_Radius_Multiplier__: Multiplier on the blast radius of projectiles fired from projectile weapons.
-
-__Projectile_Launch_Force_Multiplier__: Multiplier on the launch force applied to projectiles fired from projectile weapons.
-
-__Should_Fill_After_Detach__: Specified if ammunition is fully refilled when reloaded, effectively allowing for infinite ammunition only limited by reload time.
-
-__Delete_Empty__: Specified if the magazine should be deleted when depleted.
-
-Limb-independent damage is also applicable.
-
-Sights
-------
-
-__Type__: `Sight`
-
-__Zoom__: Multiplicative amount of zoom.
-
-Tacticals
----------
-
-__Type__: `Tactical`
-
-__Firerate__: Amount to decrease minimum fire rate delay.
-
-__Laser__: Specified if a laser can be toggled.
-
-__Light__: Specified if a light can be toggled.
-
-__Rangefinder__: Specified if a rangefinder can be toggled.
-
-__Melee__: Specified if a melee attack can be performed.
+* Refer to [BarrelAsset.md](/ItemAsset/BarrelAsset.md).
+* Refer to [GripAsset.md](/ItemAsset/GripAsset.md).
+* Refer to [MagazineAsset.md](/ItemAsset/MagazineAsset.md).
+* Refer to [SightAsset.md](/ItemAsset/SightAsset.md).
+* Refer to [TacticalAsset.md](/ItemAsset/TacticalAsset.md).
 
 Barricades
 ==========
@@ -499,41 +329,13 @@ Limb-independent entity damage (e.g., Player_Damage) is also applicable.
 Clothing
 ========
 
-__Type__: `Backpack`, `Glasses`, `Hat`, `Mask`, `Pants`, `Shirt`, `Vest`
-
-__Useable__: `Backpack`, `Glasses`, `Hat`, `Mask`, `Pants`, `Shirt`, `Vest`
-
-__Armor__: Decimal multiplier on incoming damage.
-
-__Width__: The amount of horizontal storage space.
-
-__Height__: The amount of vertical storage space.
-
-__Hair__: Specified if hair shows up when wearing. Only applicable to hats, masks, and glasses.
-
-__Beard__: Specified if beard shows up when wearing. Only applicable to hats, masks, and glasses.
-
-__Hair_Override__: Specified if hair material should be used. Only applicable to hats, masks, and glasses.
-
-__Proof_Water__: Specified to add the waterproof property. Only applicable to backpacks and glasses. When waterproof glasses are worn, the player will not have their screen blurred while underwater. When waterproof glasses and a waterproof backpack are worn at the same time, the player will suffocate at a greatly reduced rate.
-
-__Proof_Fire__: Specified to add the fireproof property. Only applicable to shirts and pants. When fireproof pants and a fireproof shirt are worn at the same time, the player will be immune to fire damage.
-
-__Pro__: Specified if the item should be unable to spawn. Intended for cosmetics.
-
-__Visible_On_Ragdoll__: `false`, `true`. Defaults to true.
-
-Glasses
--------
-
-__Blindfold__: Specified if the player should be blinded when the glasses are worn.
-
-__Vision__: `Civilian`, `Headlamp`, `Military`
-
-Masks
------
-
-__Proof_Radiation__: Specified to add the radiation-proof property. When a radiation-proof mask is worn, the player will not be damaged by deadzones for as long as the item quality remains greater than 0%. Items with "Type Filter" can be used to restore quality to the item.
+* Refer to [BackpackAsset.md](/ItemAsset/ArrestEndAsset.md).
+* Refer to [GlassesAsset.md](/ItemAsset/GlassesAsset.md).
+* Refer to [HatAsset.md](/ItemAsset/HatAsset.md).
+* Refer to [MaskAsset.md](/ItemAsset/MaskAsset.md).
+* Refer to [PantsAsset.md](/ItemAsset/PantsAsset.md).
+* Refer to [ShirtAsset.md](/ItemAsset/ShirtAsset.md).
+* Refer to [VestAsset.md](/ItemAsset/VestAsset.md).
 
 Body Mesh Replacements
 ----------------------
@@ -550,60 +352,17 @@ __Hair_Visible__: `false`, `true`. Defaults to true.
 
 __Beard_Visible__: `false`, `true`. Defaults to true.
 
-Vests
------
-
 Consumables
 ===========
 
-Consumables in _Unturned_ encompass anything that is irreversibly consumed by the player on use, and directly affect a player's stats such as food or health.
-
-__Type__: `Food`, `Medical`, `Water`
-
-__Useable__: `Consumeable`
-
-__Aid__: Specified if the item can be used on other players via right-click.
-
-__Bleeding__: Specified if bleeding is healed. Deprecated in favor of Bleeding_Modifier.
-
-__Bleeding_Modifier__: `Cut`, `Heal`, `None`
-
-__Broken__: Specified if broken legs are healed. Deprecated in favor of Bones_Modifier.
-
-__Bones_Modifier__: `Break`, `Heal`, `None`
-
-__Health__: The number of health to restore.
-
-__Food__: The number of food to restore.
-
-__Water__: The number of water to restore.
-
-__Food_Constrains_Water__: Specified if max potential water gain should be capped by actual food gain. Applies to items where max potential water gain is less than max potential food gain.
-
-__Disinfectant__: The number of immunity to restore.
-
-__Virus__: The number of immunity to deplete.
-
-__Energy__: The number of energy to restore.
-
-__Vision__: The length of hallucinations. The length does not stack with each time eaten, but the timer is reset for equal or longer Vision values relative to the remaining hallucination time.
-
-__Oxygen__: The number of oxygen to restore or deplete.
-
-__Experience__: The number of experience to be gained or be taken away upon consumption.
-
-__Should_Delete_After_Use__: `false`, `true`. Defaults to true.
-
-__Item_Reward_Spawn_ID__: ID of an item generated upon usage of the consumable.
-
-__Min_Item_Rewards__: Minimum possible amount of items rewarded.
-
-__Max_Item_Rewards__: Maximum possible amount of item rewarded.
+* Refer to [FoodAsset.md](/ItemAsset/FoodAsset.md).
+* Refer to [MedicalAsset.md](/ItemAsset/MedicalAsset.md).
+* Refer to [WaterAsset.md](/ItemAsset/WaterAsset.md).
 
 Crafting Supplies
 =================
 
-__Type__: `Supply`
+* Refer to [SupplyAsset.md](/ItemAsset/SupplyAsset.md).
 
 Fishing Poles
 =============
@@ -633,13 +392,8 @@ __Useable__: `Grower`
 Mapping Equipment
 =================
 
-__Type__: `Map`, `Compass`
-
-__Enables_Map__: Specified if this item provides a satellite map display.
-
-__Enables_Chart__: Specified if this item provides a chart map display.
-
-__Enables_Compass__: Specified if this item provides a compass display.
+* Refer to [CompassAsset.md](/ItemAsset/CompassAsset.md).
+* Refer to [MapAsset.md](/ItemAsset/MapAsset.md).
 
 Melee Weapons
 =============
@@ -649,20 +403,12 @@ No documentation is available at this time.
 Optics
 ======
 
-__Type__: `Optic`
-
-__Useable__: `Optic`
-
-__Zoom__: Multiplicative amount of zoom.
+* Refer to [OpticAsset.md](/ItemAsset/OpticAsset.md).
 
 Parachutes
 ==========
 
-__Type__: `Cloud`
-
-__Useable__: `Cloud`
-
-__Gravity__: Decimal multiplier on the influence of gravity.
+* Refer to [CloudAsset.md](/ItemAsset/CloudAsset.md).
 
 Projectiles
 ===========
@@ -682,9 +428,7 @@ Limb-independent damage is also applicable.
 Radiation Filters
 =================
 
-__Type__: `Filter`
-
-__Useable__: `Filter`
+* Refer to [FilterAsset.md](/ItemAsset/FilterAsset.md).
 
 Ranged Weapons
 ==============
@@ -837,23 +581,8 @@ __Useable__: `Detonator`
 Restraining Devices
 ===================
 
-Catchers
---------
-
-__Type__: `Arrest_Start`
-
-__Useable__: `Arrest_Start`
-
-__Strength__: Amount of effort required to break free.
-
-Releasers
----------
-
-__Type__: `Arrest_End`
-
-__Useable__: `Arrest_End`
-
-__Recover__: ID of the restraining device that can be unlocked with this item.
+* Refer to [ArrestEndAsset.md](/ItemAsset/ArrestEndAsset.md) for releasers.
+* Refer to [ArrestStartAsset.md](/ItemAsset/ArrestStartAsset.md) for catchers.
 
 Structures
 ==========
