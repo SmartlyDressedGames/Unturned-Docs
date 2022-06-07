@@ -72,7 +72,7 @@ Other Properties
 
 **EquipablePrefab** [Master Bundle Pointer](MasterBundlePtr.md): Overrides the model spawned when this item is equipped. For example the Equipable prefab could use an animated skinned mesh component while the regular Item prefab only needs a static mesh component.
 
-**Ignore_TexRW** *bool*: Read/writeable texture errors for the asset should be hidden from the error logs. Defaults to false.
+**Ignore_TexRW** *flag*: Specified if read/writeable texture errors for the asset should be hidden from the error logs.
 
 Blueprints and Actions
 ----------------------
