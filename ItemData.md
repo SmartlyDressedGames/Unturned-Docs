@@ -392,7 +392,6 @@ __Useable__: `Grower`
 Mapping Equipment
 =================
 
-* Refer to [CompassAsset.md](/ItemAsset/CompassAsset.md).
 * Refer to [MapAsset.md](/ItemAsset/MapAsset.md).
 
 Melee Weapons
