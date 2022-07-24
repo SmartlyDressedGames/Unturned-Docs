@@ -21,6 +21,7 @@ __Windows:__
 __Linux:__
 - [How to Install SteamCMD](#How-to-Install-SteamCMD-on-Linux)
 - [How to Launch Server](#How-to-Launch-Server-on-Linux)
+- [How to Configure Server](#How-to-Configure-Server-on-Linux)
 
 How to Install SteamCMD on Windows
 ----------------------------------
@@ -99,7 +100,7 @@ How to Launch Server on Linux
 
 	_Note: running an internet server will require opening ports on your router (this is called "port forwarding")._
 
-	In this example "MyServer" is used as the ServerID for savedata and configuration purposes; you may choose to replace "MyServer" with a different name. For an example batch script, open the built-in `ExampleServer.bat` file in a text editor._
+	In this example "MyServer" is used as the ServerID for savedata and configuration purposes; you may choose to replace "MyServer" with a different name. For an example script, open the built-in `ExampleServer.sh` file in a text editor._
 
 3. You can safely close the server by executing (typing, and then pressing the "↵ Enter" key on your keyboard) the following command on the command-line interface: `shutdown`
 
@@ -166,6 +167,22 @@ To include a Workshop file on your server:
 		],
 
 4. During startup the files will be updated, and any dependencies detected. Players will have the files downloaded while connecting to the server.
+
+How to Configure Server on Linux
+--------------------------------
+
+Linux server configuration is very similar to the regular [How to Configure Server](#How-to-Configure-Server) instructions, but there may be some wrinkles.
+
+If some commands in `Commands.dat` do not seem to be having an effect, you may have to move them to the command line (the same place where you specified `+LanServer/Example` or similar). *Be aware that some commands, for example `Admin`, cannot be specified on the command line, however.* If you do not have your command line arguments saved in a file, you may wish to do so, for example by copying `ExampleServer.sh` and making the necessary changes.
+
+When specifying commands via the command line on Linux, commands and their arguments should be separated by a space. For instance, a LanServer named 'test' with the following entries in `Commands.dat`:
+
+    Map Russia
+    Cheats
+
+Would have a command line like this:
+
+    ./ServerHelper.sh -Map Russia -Cheats +LanServer/test
 
 How to Host Curated Maps
 ------------------------
