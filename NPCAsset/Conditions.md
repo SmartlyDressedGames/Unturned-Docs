@@ -203,7 +203,13 @@ World
 **Condition\_#\_Type** *enum* (`Holiday`)
 
 **Condition\_#\_Value** *enum* (`April_Fools`, `Christmas`, `Halloween`, `Max`, `None`): Target value, as the holiday.
-    
+
+### Is_Full_Moon
+
+**Condition\_#\_Type** *enum* (`Is_Full_Moon`)
+
+**Condition\_#\_Value** *bool*: If true the condition passes when the full moon is up, otherwise if false the condition passes when the full moon is **not** up.
+
 ### Time_Of_Day
 
 **Condition\_#\_Type** *enum* (`Time_Of_Day`)
