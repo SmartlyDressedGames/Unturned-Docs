@@ -29,3 +29,11 @@ This is an [Asset v2](AssetsV2.md) class.
 `IsArable` *bool*: If true, crops can be planted on this material.
 
 `HasOil` *bool*: If true, oil drills can be placed on this material. Note at the time of writing (2022-02-10) oil drills can only be placed on terrain materials.
+
+`Character_Friction_Mode` *enum* (`ImmediatelyResponsive`, `Custom`): If custom the acceleration, deceleration, and max speed properties are used. Replacement for the hardcoded ice and slippery metal plate.
+
+`Character_Acceleration_Multiplier` *float*: Default acceleration is equal to the target move speed.
+
+`Character_Deceleration_Multiplier` *float*: Default deceleration is 2m/s².
+
+`Character_Max_Speed_Multiplier` *float*: Allows speed to reach up to this multiplied by the target move speed.
