@@ -179,7 +179,7 @@ Refer to [Currency](/Currency.md) documentation.
 
 **Condition\_#\_ID** *uint16*: ID of quest to check for.
 
-**Condition\_#\_Status** *enum* (`Active`, `Completed`, `Ready`): Current state of the quest.
+**Condition\_#\_Status** *enum* (`None`, `Active`, `Ready`, `Completed`): Current state of the quest.
 
 **Condition\_#\_Ignore\_NPC** *flag*: Player does not need to be talking to an NPC within 20 meters for the quest to be completable and turned in.
 
