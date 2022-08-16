@@ -1,7 +1,7 @@
 Server Hosting
 ==============
 
-All multiplayer servers are hosted using the Unturned Dedicated Server tool. This tool is bundled alongside Unturned, and the server files can be found in the ...Steam\steamapps\common\U3DS directory. When hosting multiple servers, it is ideal to install and update the server through Valve's [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD) tool.
+All multiplayer servers are hosted using the Unturned Dedicated Server tool. This tool is bundled alongside Unturned, and the server files can be found in the `...Steam\steamapps\common\U3DS directory`. When hosting multiple servers, it is ideal to install and update the server through Valve's [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD) tool.
 
 Although SteamCMD is optional when only hosting a single server at a time, this documentation will assume that SteamCMD is being used. If you are not using SteamCMD, some of the documentation may not apply to you.
 
