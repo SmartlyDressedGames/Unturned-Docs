@@ -1,7 +1,7 @@
 Server Hosting
 ==============
 
-All multiplayer servers are hosted using the Unturned Dedicated Server tool. This tool can either be installed and updated through your Steam Library, or it can managed through Valve's [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD) tool. Using SteamCMD has several benefits, but is not necessary. If you are not using SteamCMD, some of the documentation may not apply to you.
+All multiplayer servers are hosted using the Unturned Dedicated Server tool. This tool can either be installed and updated through your Steam Library, or it can managed through Valve's [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD) tool. Using SteamCMD has several benefits, but is not strictly necessary. If you are not using SteamCMD, some of the documentation may not apply to you.
 
 This tool is bundled alongside Unturned, and the server files can be found in the `...Steam\steamapps\common\U3DS directory`. When hosting multiple servers, it is ideal to install and update the server through Valve's [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD) tool.
 
@@ -43,7 +43,7 @@ Installation on Linux varies by distribution and your admin preferences, so refe
 Continue to: [How to Install Server using SteamCMD](#How-to-Install-Server-using-SteamCMD)
 
 How to Install Server using SteamCMD
--------------------------------------------------------
+------------------------------------
 
 1. Login to Steam anonymously:
 
