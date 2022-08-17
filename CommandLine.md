@@ -61,4 +61,6 @@ Unity's built-in command-line arguments take priority over *Unturned*'s equivale
 
 **-force-glcore**: Force OpenGL.
 
+**-force-vulkan**: Force Vulkan.
+
 **-nographics**: Do not initialize the graphics device when running in batch mode.
