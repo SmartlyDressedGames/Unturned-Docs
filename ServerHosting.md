@@ -1,7 +1,7 @@
 Server Hosting
 ==============
 
-All multiplayer servers are hosted using the Unturned Dedicated Server tool. This tool can either be installed and updated through your Steam Library, or it can managed through Valve's [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD) tool. Using SteamCMD has several benefits, but is not strictly necessary. If you are not using SteamCMD, some of the documentation may not apply to you.
+All multiplayer servers are hosted using the Unturned Dedicated Server tool (sometimes abbreviated to U3DS). This tool can either be installed and updated through your Steam Library, or it can managed through Valve's [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD) tool. Using SteamCMD has several benefits, but is not strictly necessary. If you are not using SteamCMD, some of the documentation may not apply to you.
 
 __Multiplatform:__
 - [How to Configure Server](#How-to-Configure-Server)
@@ -25,7 +25,11 @@ __Linux:__
 How to Install Server without Steam CMD
 ---------------------------------------
 
-This tool is bundled alongside Unturned, and the server files can be found in the `...Steam\steamapps\common\U3DS directory`. When hosting multiple servers, it is ideal to install and update the server through Valve's [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD) tool.
+The Unturned Dedicated Server tool is bundled alongside the Unturned application, but it is considered its own application. The tool is installed and updated independently from the game itself.
+
+When using the default application filters for the Steam Library, tools are not be visible. To install the tool from your Steam Library either search for "Unturned Dedicated Server" via the search filter, or enable the "Tools" application type filter so that tools are visible. Select the "Unturned Dedicated Server" application in your Steam Library, and click the "Install" button.
+
+The tool and the server files are saved to the `...Steam\steamapps\common\U3DS directory`. When hosting multiple servers, it is ideal to install and update the Unturned Dedicated Server tool through Valve's [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD) tool, instead of managing server tool through your Steam Library.
 
 How to Install SteamCMD on Windows
 ----------------------------------
@@ -60,7 +64,7 @@ How to Install Server using SteamCMD
 
 		quit
 
-4. The server files are now in the ...SteamCMD\steamapps\common\U3DS directory.
+4. The server files are now in the `...SteamCMD\steamapps\common\U3DS` directory.
 
 Continue to: [How to Launch Server on Windows](#How-to-Launch-Server-on-Windows) or [How to Launch Server on Linux](#How-to-Launch-Server-on-Linux)
 
@@ -90,7 +94,7 @@ How to Launch Server on Windows
 
 8. When the command-line interface stops outputting new lines of text, it has finished loading (and finished generating all necessary files). You can safely close the server by executing (typing, and then pressing the "↵ Enter" key on your keyboard) the following command on the command-line interface: `shutdown`
 
-9. The batch script has created a new file directory located in ...\U3DS\Servers, called "MyServer". This directory is where all the savedata and configuration files are kept. Changing the `MyServer` ServerID (from step 5) in the batch script to a different name will allow for keeping savedata separate across multiple servers, and for running multiple servers at once.
+9. The batch script has created a new file directory located in `...\U3DS\Servers`, called "MyServer". This directory is where all the savedata and configuration files are kept. Changing the `MyServer` ServerID (from step 5) in the batch script to a different name will allow for keeping savedata separate across multiple servers, and for running multiple servers at once.
 
 10. (optional) For your server to be visible on the in-game internet server list you will need to set a [Login Token](GameServerLoginTokens.md) and configure [Port Forwarding](PortForwarding.md).
 
