@@ -29,9 +29,9 @@ The Unturned Dedicated Server tool is bundled alongside the Unturned application
 
 When using the default application filters for the Steam Library, tools are not be visible. To install the tool from your Steam Library either search for "Unturned Dedicated Server" via the search filter, or enable the "Tools" application type filter so that tools are visible. Select the "Unturned Dedicated Server" application in your Steam Library, and click the "Install" button. The server files are saved to the `...Steam\steamapps\common\U3DS directory`.
 
-Navigate to the U3DS directory
+Navigate to the U3DS directory. 
 
-When hosting multiple servers, it is ideal to manage the Unturned Dedicated Server tool through Valve's [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD) tool, instead of managing server tool through your Steam Library.
+When hosting multiple servers, it is ideal to manage the Unturned Dedicated Server tool through Valve's [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD) tool, instead of your Steam Library.
 
 How to Install SteamCMD on Windows
 ----------------------------------
