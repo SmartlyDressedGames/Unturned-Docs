@@ -27,13 +27,13 @@ __Linux:__
 How to Install Server without SteamCMD
 --------------------------------------
 
-The Unturned Dedicated Server tool is bundled alongside the Unturned application, but it is considered its own application. The tool is installed and updated independently from the game itself. There are a few issues unique to those installing the Unturned Dedicated Server tool without SteamCMD.
+The Unturned Dedicated Server tool can be installed and updated from your Steam Library. The tool is considered its own application, and is managed separately from the Unturned game itself. There are a few issues unique to those installing the Unturned Dedicated Server tool without SteamCMD, which should be considered before setting up your server.
 
-1. The Unturned game and the Unturned Dedicated Server tool cannot both be running at the same time.
+1. It is not possible to run multiple servers at once.
 
-2. It is not possible to host multiple servers at once.
+2. The tool uses the same executable name as the game, which means that if the game is closed while the server is running then Steam will think the game is still running. This can cause issues such as Steam refusing to launch the game until the server as closed.
 
-3. When using the default application filters for the Steam Library, tools are not be visible.
+With these considerations in mind, it may be preferable to install the Unturned Dedicated Server using SteamCMD instead.For those interested in installing the Unturned Dedicated Server tool without SteamCMD, navigate to your Steam Library. When using the default application filters for the Steam Library, tools (such as for launching dedicated servers) are not be visible in your Library.
 
 To install the tool from your Steam Library either search for "Unturned Dedicated Server" via the search filter, or enable the "Tools" application type filter so that tools are visible. Select the "Unturned Dedicated Server" application in your Steam Library, and click the "Install" button. The server files are saved to the `...Steam\steamapps\common\U3DS` directory.
 
