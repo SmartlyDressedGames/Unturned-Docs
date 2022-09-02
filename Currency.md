@@ -14,7 +14,7 @@ The currency asset defines how numbers are formatted, which items make up the cu
 
 __ValueFormat__: String to format numeric value into.
 
-__Entries__: Array of items in the currency. Each has an __Item__ GUID and __Value__ integer. For example these are the $10 and $20 notes in the Canadian currency:
+__Entries__: Array of items in the currency. Each has an __Item__ GUID and __Value__ integer. Optionally __Is_Visible_In_Vendor_Menu__ bool can be false to hide the item from the NPC vendor currency list. For example these are the $10 and $20 notes in the Canadian currency:
 
 	{
 		"Item"
