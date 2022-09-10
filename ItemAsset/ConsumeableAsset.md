@@ -6,7 +6,7 @@ Consumable items are irreversibly consumed by the player on use, and directly af
 This inherits the [WeaponAsset](/ItemAsset/WeaponAsset.md) class.
 
 Consumeable Asset Properties
-============================
+----------------------------
 
 **Aid** *flag*: Specified if the item can be used on other players, via the "Secondary" action.
 
