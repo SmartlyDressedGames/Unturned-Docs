@@ -4,8 +4,8 @@ Server Hosting
 All multiplayer servers are hosted using the Unturned Dedicated Server tool (sometimes abbreviated to U3DS). This tool can either be installed and updated using Valve's [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD) tool, or (not recommended) managed through your Steam Library. Using SteamCMD is ideal and has several benefits, but is not strictly necessary. If you are not using SteamCMD, some of the documentation may not apply to you.
 
 __Multiplatform:__
-- [How to Install Server without SteamCMD](#How-to-Install-Server-without-SteamCMD)
 - [How to Install Server using SteamCMD](#How-to-Install-Server-using-SteamCMD)
+- [How to Install Server without SteamCMD](#How-to-Install-Server-without-SteamCMD)
 - [How to Configure Server](#How-to-Configure-Server)
 - [How to Host Curated Maps](#How-to-Host-Curated-Maps)
 - [How to Host Over Internet](#How-to-Host-Over-Internet)
