@@ -6,7 +6,7 @@ Consumable items are irreversibly consumed by the player on use, and directly af
 This inherits the [WeaponAsset](/ItemAsset/WeaponAsset.md) class.
 
 Consumeable Asset Properties
-============================
+----------------------------
 
 **Aid** *flag*: Specified if the item can be used on other players, via the "Secondary" action.
 
@@ -53,4 +53,4 @@ Rewards
 
 Consumables can use quest rewards. A common usage is to create consumables with multiple (but still limited) uses, by placing a new item in the player's inventory after consuming the original. Alternatively, consuming a consumable may be required to complete a quest. Refer to [Rewards.md](/NPCAsset/Rewards.md) for additional documentation.
 
-Blueprint rewards are prefixed with `Quest_`. For example, `Quest_Rewards 1`.
+These rewards are prefixed with `Quest_`. For example, `Quest_Rewards 1`.
