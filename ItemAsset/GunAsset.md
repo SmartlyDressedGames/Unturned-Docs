@@ -25,8 +25,6 @@ Gun Asset Properties
 
 **Can_Aim_During_Sprint** *bool*: If true, the player can sprint while aiming down sights. Defaults to false.
 
-**Durability** *byte*: Amount of quality lost after each firing of the ranged weapon. When this value is greater than 0, the item always has a visible item quality shown. Defaults to 0.
-
 **Gunshot_Rolloff_Distance** *float*: The distance over which the gunshot audio rolls off until it is completely inaudible, in meters. Defaults to 16 when using `Action String`; defaults to 64 when using `Action Rocket`; otherwise, defaults to 512.
 
 **Range_Rangefinder** *float*: Overrides the maximum distance displayed when using the Rangefinder tactical attachment on this ranged weapon. For example, it may be useful to set this property when using `Action Rocket`, as explosive projectiles use `Range` to determine the explosion radius rather than the maximum range of the ranged weapon. Defaults to the value of the `Range` property.
