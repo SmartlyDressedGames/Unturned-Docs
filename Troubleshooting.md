@@ -7,6 +7,20 @@
 3. Find the Launch Options field
 4. Type "-ui_scale 1" without quotes
 
+## Game window is too small
+
+1. Right-click Unturned in your Steam Library
+2. Select Properties... > General
+3. Find the Launch Options field
+4. Type "-width 1920 -height 1080" without quotes, replacing 1920x1080 with your monitor resolution
+
+## Force Fullscreen
+
+1. Right-click Unturned in your Steam Library
+2. Select Properties... > General
+3. Find the Launch Options field
+4. Type "-screen-fullscreen" without quotes
+
 ## Force OpenGL
 
 1. Right-click Unturned in your Steam Library
@@ -40,7 +54,7 @@
 2. Select Properties... > Local Files
 3. Click "Verify integrity of game files..."
 
-## Crash Files
+## Windows Log Files
 
 1. Right-click Unturned in your Steam Library
 2. Select Properties... > Local Files > Browse...
@@ -49,6 +63,21 @@
 5. Return to the Unturned folder
 6. Open the Unity AppData folder
 7. Attach the Player.log file to your email
+
+## Mac Log Files
+
+1. Right-click Unturned in your Steam Library
+2. Select Properties... > Local Files > Browse...
+3. Open the Logs folder
+4. Attach the Client.log file to your email
+5. Hold Alt and click Go > Library in the Finder toolbar
+6. Open the Logs folder > Smartly Dressed Games > Unturned
+7. Attach the Player.log file to your email
+
+## Linux Log Files
+
+1. Go to ~/.config/unity3d/Smartly Dressed Games/Unturned/Player.log
+2. Attach the Player.log file to your email
 
 ## Unity Windows Crash Files
 
@@ -92,3 +121,17 @@ Disabling loading of your Steam account's Unturned file subscriptions can be hel
 2. Select Properties... > General
 3. Find the Launch Options field
 4. Type "-NoWorkshopSubscriptions" without quotes
+
+## Force Disable Gold Upgrade
+
+1. Right-click Unturned in your Steam Library
+2. Select Properties... > General
+3. Find the Launch Options field
+4. Type "-NoGoldUpgrade" without quotes
+
+## Is it possible to unlock holiday achievements at other times of year?
+
+1. Right-click Unturned in your Steam Library
+2. Select Properties... > General
+3. Find the Launch Options field
+4. Type "-Holiday=XMAS" without quotes
