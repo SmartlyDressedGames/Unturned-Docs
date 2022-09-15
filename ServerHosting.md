@@ -1,7 +1,7 @@
 Server Hosting
 ==============
 
-All multiplayer servers are hosted using the Unturned Dedicated Server tool (sometimes abbreviated to U3DS). This tool can either be installed and updated through your Steam Library, or it can managed through Valve's [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD) tool. Using SteamCMD is ideal and has several benefits, but is not strictly necessary. If you are not using SteamCMD, some of the documentation may not apply to you.
+All multiplayer servers are hosted using the Unturned Dedicated Server tool (sometimes abbreviated to U3DS). This tool can either be installed and updated using Valve's [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD) tool, or (not recommended) managed through your Steam Library. Using SteamCMD is ideal and has several benefits, but is not strictly necessary. If you are not using SteamCMD, some of the documentation may not apply to you.
 
 __Multiplatform:__
 - [How to Install Server without SteamCMD](#How-to-Install-Server-without-SteamCMD)
@@ -23,23 +23,6 @@ __Windows:__
 __Linux:__
 - [How to Install SteamCMD](#How-to-Install-SteamCMD-on-Linux)
 - [How to Launch Server](#How-to-Launch-Server-on-Linux)
-
-How to Install Server without SteamCMD
---------------------------------------
-
-The Unturned Dedicated Server tool can be installed and updated from your Steam Library. The tool is considered its own application, and is managed separately from the Unturned game itself. There are a few issues unique to those installing the Unturned Dedicated Server tool without SteamCMD, which should be considered before setting up your server.
-
-1. It is not possible to run multiple servers at once.
-
-2. The tool uses the same executable name as the game, which means that if the game is closed while the server is running then Steam will think the game is still running. This can cause issues such as Steam refusing to launch the game until the server as closed.
-
-With these considerations in mind, it may be preferable to install the Unturned Dedicated Server using SteamCMD instead.For those interested in installing the Unturned Dedicated Server tool without SteamCMD, navigate to your Steam Library. When using the default application filters for the Steam Library, tools (such as for launching dedicated servers) are not be visible in your Library.
-
-To install the tool from your Steam Library either search for "Unturned Dedicated Server" via the search filter, or enable the "Tools" application type filter so that tools are visible. Select the "Unturned Dedicated Server" application in your Steam Library, and click the "Install" button. The server files are saved to the `...Steam\steamapps\common\U3DS` directory.
-
-Navigate to the `...Steam\steamapps\common\U3DS` directory. The rest of the documentation assumes that the Unturned Dedicated Server tool was downloaded with SteamCMD, rather than through your Steam Library, so some of the documentation may differ slightly.
-
-Continue to: [How to Launch Server on Windows](#How-to-Launch-Server-on-Windows) or [How to Launch Server on Linux](#How-to-Launch-Server-on-Linux)
 
 How to Install SteamCMD on Windows
 ----------------------------------
@@ -75,6 +58,27 @@ How to Install Server using SteamCMD
 		quit
 
 4. The server files are now in the `...SteamCMD\steamapps\common\U3DS` directory.
+
+Continue to: [How to Launch Server on Windows](#How-to-Launch-Server-on-Windows) or [How to Launch Server on Linux](#How-to-Launch-Server-on-Linux)
+
+How to Install Server without SteamCMD
+--------------------------------------
+
+The Unturned Dedicated Server tool can be installed and updated from your Steam Library. The tool is considered its own application, and is managed separately from the Unturned game itself. There are a few issues unique to those installing the Unturned Dedicated Server tool without SteamCMD, which should be considered before setting up your server.
+
+1. It is not possible to run multiple servers at once.
+
+2. The tool uses the same executable name as the game, which means that if the game is closed while the server is running then Steam will think the game is still running. This can cause issues such as Steam refusing to launch the game until the server as closed.
+
+With these considerations in mind, it is recommended to install the Unturned Dedicated Server using SteamCMD instead. For those interested in installing the Unturned Dedicated Server tool without SteamCMD, navigate to your Steam Library. When using the default application filters for the Steam Library, tools (such as for launching dedicated servers) are not be visible in your Library.
+
+To install the tool from your Steam Library either search for "Unturned Dedicated Server" via the search filter, or enable the "Tools" application type filter so that tools are visible. Select the "Unturned Dedicated Server" application in your Steam Library, and click the "Install" button.
+
+To navigate to the server files install directory:
+1. Right-click Unturned Dedicated Server in your Steam Library
+2. Select Properties... > Local Files > Browse...
+
+The rest of the documentation assumes that the Unturned Dedicated Server tool was downloaded with SteamCMD, rather than through your Steam Library, so some of the documentation may differ slightly.
 
 Continue to: [How to Launch Server on Windows](#How-to-Launch-Server-on-Windows) or [How to Launch Server on Linux](#How-to-Launch-Server-on-Linux)
 
