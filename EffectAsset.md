@@ -28,6 +28,13 @@ General data
 
 **Preload** *byte*: Total number of the effect to pre-instantiate in the effect pool to reduce hitching when first used.
 
+Camera shake
+------------
+
+**CameraShake_MagnitudeDegrees** *float*: The amount of camera shake inflicted upon affected players, in degrees.
+
+**CameraShake_Radius** *float*: Players within the radius around the effect are affected by other camera shake properties.
+
 Splatters
 ---------
 
