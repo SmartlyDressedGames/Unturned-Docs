@@ -166,7 +166,7 @@ Defaults to `Player_Damage × 0.1`.
 
 ### Recoil
 
-**Recoil_Aim** *float*: Multiplier on the end value for linear interpolation on recoil when aiming down sights, when a sight attachment that has a `Zoom` value greater than 2 is attached. For example, it may be desirable for sniper rifles to use this property say that they have reduced recoil while aiming down a scope. Defaults to 1.
+**Recoil_Aim** *float*: Multiplier on the end value for linear interpolation on recoil when aiming down sights, when a sight attachment that has a `Zoom` value greater than 2 is attached. For example, it may be desirable for sniper rifles to use this property so that they have reduced recoil while aiming down a scope. Defaults to 1.
 
 **Recoil_Sprint** *float*: Multiplier on camera recoil while sprinting. Defaults to 1.25. Requires `Can_Aim_During_Sprint true`.
 
