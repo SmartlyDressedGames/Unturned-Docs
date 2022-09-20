@@ -166,7 +166,7 @@ Defaults to `Player_Damage × 0.1`.
 
 ### Recoil
 
-**Recoil_Aim** *float*: Multiplier on all recoil parameters when aiming down sights. Defaults to 1.
+**Recoil_Aim** *float*: Alpha value (0–1) for linear interpolation on recoil when aiming down sights with a scope that has a `Zoom` value greater than 2. Using a number outside of the aforementioned range results in linear extrapolation instead. Defaults to 1.
 
 **Recoil_Sprint** *float*: Multiplier on camera recoil while sprinting. Defaults to 1.25. Requires `Can_Aim_During_Sprint true`.
 
