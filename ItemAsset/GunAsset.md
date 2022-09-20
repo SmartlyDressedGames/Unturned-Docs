@@ -25,8 +25,6 @@ Gun Asset Properties
 
 **Can_Aim_During_Sprint** *bool*: If true, the player can sprint while aiming down sights. Defaults to false.
 
-**Durability** *byte*: Amount of quality lost after each firing of the ranged weapon. When this value is greater than 0, the item always has a visible item quality shown. Defaults to 0.
-
 **Gunshot_Rolloff_Distance** *float*: The distance over which the gunshot audio rolls off until it is completely inaudible, in meters. Defaults to 16 when using `Action String`; defaults to 64 when using `Action Rocket`; otherwise, defaults to 512.
 
 **Range_Rangefinder** *float*: Overrides the maximum distance displayed when using the Rangefinder tactical attachment on this ranged weapon. For example, it may be useful to set this property when using `Action Rocket`, as explosive projectiles use `Range` to determine the explosion radius rather than the maximum range of the ranged weapon. Defaults to the value of the `Range` property.
@@ -168,7 +166,7 @@ Defaults to `Player_Damage × 0.1`.
 
 ### Recoil
 
-**Recoil_Aim** *float*: Multiplier on all recoil parameters when aiming down sights. Defaults to 1.
+**Recoil_Aim** *float*: Multiplier on the end value for linear interpolation on recoil when aiming down sights, when a sight attachment that has a `Zoom` value greater than 2 is attached. For example, it may be desirable for sniper rifles to use this property so that they have reduced recoil while aiming down a scope. Defaults to 1.
 
 **Recoil_Sprint** *float*: Multiplier on camera recoil while sprinting. Defaults to 1.25. Requires `Can_Aim_During_Sprint true`.
 
