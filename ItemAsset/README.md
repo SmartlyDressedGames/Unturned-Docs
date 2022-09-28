@@ -34,6 +34,8 @@ Inventory Properties
 
 **Allow\_Manual\_Drop** *bool*: Item can be manually dropped by the player. Defaults to true.
 
+**InventoryAudio** [Master Bundle Pointer](MasterBundlePtr.md): AudioClip or OneShotAudioDefinition to play when item is picked up, moved within the inventory, and dropped.
+
 Economy Properties
 ------------------
 
