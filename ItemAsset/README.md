@@ -90,4 +90,4 @@ Localization
 
 **Name** *string*: Item name in user interfaces.
 
-**Description** *string*: Item description in user interfaces. 
+**Description** *string*: Item description in user interfaces.
