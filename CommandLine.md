@@ -12,6 +12,8 @@ Some command-line arguments are primarily intended for use with the Unturned Ded
 
 **-FallbackGizmos**: Use 3D Unity line renderer component for debug visualization rather than pixel-perfect lines. Performance with these is lower than the default, so only intended for cases where the default is unimplemented.
 
+**-FrameRateLimit=** *int*: Overrides the frame rate limit specified in the display menu. Negative values disable the limit. Useful if game is running at thousands of FPS on the loading screen and overheats.
+
 **-GameSense**: GameSense integration.
 
 **-Glazier=** *enum* (`IMGUI`): Use the legacy IMGUI rather than the default uGUI.
