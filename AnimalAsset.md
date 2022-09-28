@@ -25,6 +25,8 @@ Animal Properties
 
 **Vertical\_Attack\_Range** *float*: Maximum vertical attack range. Defaults to 2 meters.
 
+**Attack\_Interval** *float*: Minimum seconds between attacks. Defaults to one second. If the attack duration is longer than the attack interval then the attack duration is used instead.
+
 **Roars** *int*: Total number of roar sounds in Unity. A roar sound is played when the animal attacks.
 
 **Panics** *int*: Total number of panic sounds in Unity. A panic sound is played when the animal is startled.
