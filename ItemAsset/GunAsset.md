@@ -31,6 +31,8 @@ Gun Asset Properties
 
 **Turret** *flag*: Specified if the weapon should be treated as a vehicular turret. This flag affects the player's first-person viewmodel.
 
+**Aiming\_Movement\_Speed\_Multiplier** *float*: Character movement speed multiplier while the gun is aiming down sights. Defaults to 0.75 if **Can_Aim_During_Sprint** is false.
+
 ### Calibers
 
 **Attachment_Calibers** *int*: Number of unique hook attachment calibers. Cannot be used with `Caliber`.
