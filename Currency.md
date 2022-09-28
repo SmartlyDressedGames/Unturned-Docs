@@ -12,7 +12,9 @@ This is an [Asset v2](AssetsV2.md) class.
 
 The currency asset defines how numbers are formatted, which items make up the currency, and their individual values. An example can be found at Bundles/Items/Supplies/CanadianCurrency.asset.
 
-__ValueFormat__: String to format numeric value into.
+**ValueFormat** *string*: String to format numeric value into. For example "${0:N0} CAD" is the vanilla Canadian currency format.
+
+**DefaultConditionFormat** *string*: If an NPC currency condition does not specify a formatting string this is used as the default. {0} is the total value held in the player's inventory, and {1} is the condition value. For example "${0:N0}/{1:N0} CAD" is the vanilla Canadian currency format.
 
 __Entries__: Array of items in the currency. Each has an __Item__ GUID and __Value__ integer. Optionally __Is_Visible_In_Vendor_Menu__ bool can be false to hide the item from the NPC vendor currency list. For example these are the $10 and $20 notes in the Canadian currency:
 
