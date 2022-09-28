@@ -145,7 +145,7 @@ When using the `Can_Ever_Jam` flag, ranged weapons have a chance of jamming once
 
 All `Action` mechanisms other than the rocket-action mechanism utilize the ballistics projectile system. To avoid a mismatch between max range and manual ballistic range, it is recommended to only have either `Ballistic_Steps` or `Ballistic_Travel` specified – not both.
 
-**Ballistic_Steps** *byte*: Lifespan of ballistic projectiles. A higher value relative to `Ballistic_Travel` will result in less muzzle velocity. Must be a value greater than 0. Defaults to `Range ÷ Ballistic_Travel`, rounded up to the nearest integer. 
+**Ballistic_Steps** *byte*: Lifespan of ballistic projectiles. A higher value relative to `Ballistic_Travel` will result in less muzzle velocity. Must be a value greater than 0. Defaults to `Range ÷ Ballistic_Travel`, rounded up to the nearest integer.
 
 **Ballistic_Travel** *float*: Travel speed of ballistic projectiles. A higher value relative to `Ballistic_Steps` will result in more muzzle velocity. Must be a value greater than 0.1. Defaults to 10. If `Ballistic_Steps` is specified and greater than 0, and `Ballistic_Travel` is not specified, then `Ballistic_Travel` defaults to `Range ÷ Ballistic_Steps`.
 
@@ -157,7 +157,7 @@ When using `Action Rocket`, the ranged weapon utilizes the physics projectile sy
 
 **Ballistic_Force** *float*: Required Measured in Newtons. Applicable to the rocket action, and usage ignores all other advanced ballistic options. Defaults to 0.002.
 
-**Projectile_Explosion_Launch_Speed** *float*: Players caught within an area-of-effect explosion caused by the ranged weapon are launched at this speed. For example, this can be used to create velocity-related items like "rocket-jumping" mods. 
+**Projectile_Explosion_Launch_Speed** *float*: Players caught within an area-of-effect explosion caused by the ranged weapon are launched at this speed. For example, this can be used to create velocity-related items like "rocket-jumping" mods.
 Defaults to `Player_Damage × 0.1`.
 
 **Projectile_Lifespan** *float*: Lifespan of physics projectiles. Defaults to 30 seconds.
