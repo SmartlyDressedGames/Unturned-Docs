@@ -30,3 +30,5 @@ Sight Asset Properties
 **Vision** *enum* (`None`, `Military`, `Civilian`, `Headlamp`): Type of unique lighting vision effect to use. Defaults to None. Use the Military enumerator when intending to assign a custom nightvision color via the color component properties.
 
 **Zoom** *float*: Multiplicative amount of zoom. Should be set to a value greater than 1. Defaults to 1.
+
+**Zoom\_Using\_Eyes** *bool*: Whether main camera field of view should zoom without scope camera / scope overlay.
