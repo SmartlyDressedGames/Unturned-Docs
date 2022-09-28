@@ -8,6 +8,8 @@ Caliber Asset Properties
 
 **Aiming\_Movement\_Speed\_Multiplier** *float*: Character movement speed multiplier while the gun is aiming down sights.
 
+**Aiming\_Recoil\_Multiplier** *float*: Recoil magnitude multiplier while the gun is aiming down sights.
+
 **Ballistic_Damage_Multiplier** *float*: Multiplier on damage. Defaults to the value used for the Damage property.
 
 **Calibers** *uint16*: Total amount of unique calibers.
