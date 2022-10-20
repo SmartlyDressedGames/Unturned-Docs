@@ -87,7 +87,7 @@ Each curated map release is usually accompanied by a few cosmetics and skins in 
 
 **Curated Workshop Item**: Payment splits are handled by a hidden curated workshop item. Setting this up usually takes a few weeks for new contributors' bank and tax information to be processed.
 
-**Bundles**: Two or three collections of sets with four to six items each.
+**Bundles**: Two or three collections of sets with four to six items each. Bundles can either be a collection of loosely-related items, or a complete outfit. Outfit bundles should avoid having multiple items that take up the same cosmetic slot.
 
 **Mystery Boxes**: Fifteen to twenty items of rare, epic, or legendary rarity. The box can be themed, but all of the items should be usable individually – avoiding things like a set of matching shirts and pants that cannot be easily mixed with other cosmetic pieces.
 
