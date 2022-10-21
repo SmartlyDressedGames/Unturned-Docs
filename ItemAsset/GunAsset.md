@@ -39,7 +39,7 @@ Gun Asset Properties
 
 **Attachment_Caliber_#** *uint16*: ID of a caliber to check for hook attachment compatibility. Requires `Attachment_Calibers`.
 
-**Caliber** *uint16*: ID of the caliber to check for hook attachment or magazine attachment compatibility.
+**Caliber** *uint16*: ID of the caliber to check for hook attachment or magazine attachment compatibility. Cannot be used with `Attachment_Calibers` or `Magazine_Calibers`.
 
 **Magazine_Calibers** *int*: Number of unique magazine attachment calibers. Cannot be used with `Caliber`.
 
