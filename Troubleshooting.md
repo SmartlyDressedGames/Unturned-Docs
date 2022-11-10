@@ -135,3 +135,11 @@ Disabling loading of your Steam account's Unturned file subscriptions can be hel
 2. Select Properties... > General
 3. Find the Launch Options field
 4. Type "-Holiday=XMAS" without quotes
+
+## Refund Item Purchase
+
+1. Open Steam
+2. Click your account name in the upper-right > Account details
+3. Click "View purchase history"
+4. Click on the Unturned item purchase
+5. Select "I'd like to request a refund"
