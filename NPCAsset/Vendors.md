@@ -40,6 +40,8 @@ Other Properties
 
 **Currency** *string*: GUID of [currency asset](/Currency.md) to use as currency instead of experience points.
 
+**FaceOverride** *byte*: Optional index of face image to use when this vendor is opened. Face is reset to character's default when unspecified or when a new message is opened.
+
 Localization
 ------------
 
