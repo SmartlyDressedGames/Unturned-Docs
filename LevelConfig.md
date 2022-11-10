@@ -85,8 +85,6 @@ __Use_Legacy_Water__ _bool_: Should global water plane be enabled? Alternative i
 
 __Use_Vanilla_Bubbles__ _bool_: Should vanilla water bubble effects be enabled? Defaults to true.
 
-__Use_Legacy_Objects__ _bool_: Should objects be loaded from Objects.dat file? Using devkit objects is not as well supported, so safest to leave at true.
-
 __Use_Legacy_Snow_Height__ _bool_: Should travelling vertically past snow height threshold enable snow effects? Defaults to true.
 
 __Use_Legacy_Oxygen_Height__ _bool_: Should travelling vertically past a certain point deplete oxygen? Defaults to true.
@@ -152,6 +150,8 @@ Deprecated
 __Can_Use_Bundles__ _bool_: Used in the past for timed curated maps to disable using their assets in the level editor which could break after moving the map from the vanilla content to the workshop.
 
 __Use_Legacy_Fog_Height__ _bool_: Should default terrain height be used for fog falloff? If false, devkit landscape tile limits are used instead. Defaults to true.
+
+__Use_Legacy_Objects__ _bool_: Should objects be loaded from Objects.dat file? Devkit objects were moved into this file, so this option no longer has any effect.
 
 __Load_From_Resources__ _bool_: Used in the past for curated maps with assets in the vanilla Resources/Bundles/* directory. Master Bundles completely replaced this.
 
