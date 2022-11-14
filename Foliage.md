@@ -28,7 +28,4 @@ Note: maps with auto-converted terrain from the 3.22.8.0 update will already hav
 
 V1 of devkit foliage unfortunately saved small individual regions into their own files, which makes maps slow to copy, download and install. V2 fixes this by storing pointers for each region into a single file at the cost of RAM in editor.
 
-1. Run game with the `-SaveFoliageUsingV2` command-line argument.
-2. Open a foliage V1 level in the devkit editor.
-3. Resave level.
-4. Move the level's Foliage directory elsewhere as a backup just in case.
+Following the 3.22.20.0 update, maps with foliage V1 will default to saving as V2 without the `-SaveFoliageUsingV2` command-line argument. The older files are still kept in the map's Foliage directory as a backup, so they should be manually removed after conversion to free up space.
