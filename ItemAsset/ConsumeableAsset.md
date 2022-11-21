@@ -24,7 +24,7 @@ Consumeable Asset Properties
 
 **Experience** *int*: Amount of experience added or removed.
 
-**Explosion** *uint16*: ID of the explosion effect to play upon consumption.
+**Explosion** *uint16* or *GUID*: ID or GUID of the explosion effect to play upon consumption.
 
 **Food** *byte*: Amount of food restored. If the amount of food to restore is larger than the amount of water to restore, then food constrains water.
 
