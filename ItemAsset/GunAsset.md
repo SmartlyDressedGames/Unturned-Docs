@@ -59,11 +59,11 @@ In addition to the damage properties available from the the [WeaponAsset](/ItemA
 
 ### Effects
 
-**Muzzle** *uint16*: ID of the effect to play when shooting.
+**Muzzle** *uint16* or *GUID*: ID or GUID of the effect to play when shooting.
 
-**Explosion** *uint16*: ID of the effect to play upon an explosive projectile's detonation.
+**Explosion** *uint16* or *GUID*: ID or GUID of the effect to play upon an explosive projectile's detonation.
 
-**Shell** *uint16*: ID of the effect to play after shooting. Defaults to 33 when using `Action Pump` or `Action Break`; defaults to 1 when using any other action mechanism excluding `Action Rail`; otherwise, defaults to 0.
+**Shell** *uint16* or *GUID*: ID or GUID of the effect to play after shooting. Defaults to 33 when using `Action Pump` or `Action Break`; defaults to 1 when using any other action mechanism excluding `Action Rail`; otherwise, defaults to 0.
 
 ### Firing Mechanism
 
