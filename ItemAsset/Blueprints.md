@@ -23,7 +23,7 @@ Blueprints
 
 **Blueprint\_#\_Skill** *enum* (`Cook`, `Craft`, `None`, `Repair`): The skill required. If value is set to "Cook", then the player will also need to be next to a heat source (such as a lit Campfire).
 
-**Blueprint\_#\_Build** *int16*: Auditory effect ID to play upon crafting.
+**Blueprint\_#\_Build** *int16* or *GUID*: ID or GUID of auditory effect to play upon crafting.
 
 **Blueprint\_#\_Map** *string*: Name of the map that the blueprint is restricted to.
 
