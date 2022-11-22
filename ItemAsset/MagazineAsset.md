@@ -51,13 +51,13 @@ Magazine Asset Properties
 
 **Explosion_Launch_Speed** *float*: Launch speed of players caught within the area-of-effect explosion, in meters per second. Defaults to the resulting value from Player_Damage * 0.1. 
 
-**Explosion** *uint16*: Explosion effect ID. Defaults to 0.
+**Explosion** *uint16* or *GUID*: ID or GUID of explosion effect. Defaults to 0.
 
 **Spawn_Explosion_On_Dedicated_Server** *bool*: Specified to spawn the explosion effect on the server.
 
-**Tracer** *uint16*: Tracer effect ID. Defaults to 0.
+**Tracer** *uint16* or *GUID*: ID or GUID of bullet tracer effect. Defaults to 0.
 
-**Impact** *uint16*: Impact effect ID. Defaults to 0.
+**Impact** *uint16* or *GUID*: ID or GUID of effect to play on impact. Defaults to 0.
 
 **Delete_Empty** *flag*: Specified if the magazine attachment should be deleted when it is fully depleted.
 

@@ -20,7 +20,7 @@ Properties pertaining to dialogue performed by the NPC. Dialogue can utilize con
 
 **Message\_#\_Response\_#** *byte*: Index of the response to show.
 
-**Message\_#\_Prev** *uint16*: ID of dialogue to return to if there are no responses available for this message. Defaults to 0.
+**Message\_#\_Prev** *uint16* or *GUID*: ID or GUID of dialogue to return to if there are no responses available for this message. Defaults to 0.
 
 **Message\_#\_FaceOverride** *byte*: Optional index of face image to use when this message is opened. Face is reset to character's default when unspecified or when dialogue is closed.
 
@@ -35,11 +35,11 @@ Properties pertaining to dialogue available to the player. Dialogue can utilize 
 
 **Response\_#\_Message\_#** *uint16*: Index of the message to show for.
 
-**Response\_#\_Dialogue** *uint16*: ID of the dialogue to open when selected.
+**Response\_#\_Dialogue** *uint16* or *GUID*: ID or GUID of the dialogue to open when selected.
 
-**Response\_#\_Quest** *uint16*: ID of the quest to preview when selected.
+**Response\_#\_Quest** *uint16* or *GUID*: ID or GUID of the quest to preview when selected.
 
-**Response\_#\_Vendor** *uint16*: ID of the vendor to open when selected.
+**Response\_#\_Vendor** *uint16* or *GUID*: ID or GUID of the vendor to open when selected.
 
 Localization
 ------------

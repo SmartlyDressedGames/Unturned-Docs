@@ -10,7 +10,7 @@ Effects
 General data
 ------------
 
-**Blast** *uint16*: ID of effect.
+**Blast** *uint16* or *GUID*: ID or GUID of effect.
 
 **Lifetime** *float*: Duration of the effect.
 
