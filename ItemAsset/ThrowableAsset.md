@@ -21,10 +21,12 @@ Throwable Asset Properties
 
 **Explosion** *uint16* or *GUID*: ID or GUID of explosion effect to play upon detonation.
 
+**Fuse_Length** *float*: A timer, in seconds, for the fuse length. Defaults to 180 seconds. If the throwable has the `Explosive` flag or the `Flash` flag, then it defaults to 2.5 seconds instead.
 
-**Explosive** *flag*: Robotic turrets using `Mode Friendly` will target players holding a throwable that has this flag.
 
-**Flash** *flag*: Robotic turrets using `Mode Friendly` will target players holding a throwable that has this flag.
+**Explosive** *flag*: Specified if the throwable should have an area-of-effect explosion. Robotic turrets using `Mode Friendly` will target players holding a throwable that has this flag.
+
+**Flash** *flag*: Specified if the throwable should cause a flashbang effect to players within the area-of-effect. Robotic turrets using `Mode Friendly` will target players holding a throwable that has this flag.
 
 **Sticky** *flag*:
 
@@ -48,7 +50,3 @@ Explosive: Specified if the explosive component is used.
 Explode_On_Impact: Specified if the projectile immediately explodes upon impact.
 
 Sticky: Specified if the projectile sticks to objects upon impact.
-
-Fuse_Length: Timer in seconds for fuse length. Defaults to 2 seconds.
-
-**Explosion** *uint16* or *GUID*: ID or GUID of explosion effect to play upon detonation.
