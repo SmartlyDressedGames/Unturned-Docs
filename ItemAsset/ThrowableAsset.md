@@ -1,7 +1,7 @@
 Throwable Assets
 ================
 
-Throwables can be thrown by players.
+Throwables can be thrown by players. Throwables cannot be used in any safezones that disallow weapons.
 
 This inherits the [WeaponAsset](/ItemAsset/WeaponAsset.md) class.
 
