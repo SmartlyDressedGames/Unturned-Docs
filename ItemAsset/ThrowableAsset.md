@@ -22,7 +22,18 @@ Throwable Asset Properties
 **Explosion** *uint16* or *GUID*: ID or GUID of explosion effect to play upon detonation.
 
 
+**Explosive** *flag*: Robotic turrets using `Mode Friendly` will target players holding a throwable that has this flag.
+
+**Flash** *flag*: Robotic turrets using `Mode Friendly` will target players holding a throwable that has this flag.
+
+**Sticky** *flag*:
+
+**Explode_On_Impact** *flag*: Robotic turrets using `Mode Friendly` will target players holding a throwable that has this flag.
+
+
 Noting this here for now, until throwables are properly documented.
+
+Explosive: Specified if the explosive component is used.
 
 Explode_On_Impact: Specified if the projectile immediately explodes upon impact.
 
