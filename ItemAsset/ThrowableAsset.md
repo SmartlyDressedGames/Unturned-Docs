@@ -19,6 +19,9 @@ Item Asset Properties
 Throwable Asset Properties
 --------------------------
 
+**Explosion** *uint16* or *GUID*: ID or GUID of explosion effect to play upon detonation.
+
+
 Noting this here for now, until throwables are properly documented.
 
 Explode_On_Impact: Specified if the projectile immediately explodes upon impact.
