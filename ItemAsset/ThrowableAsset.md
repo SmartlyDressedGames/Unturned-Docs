@@ -22,13 +22,13 @@ Throwable Asset Properties
 **Explosion** *uint16* or *GUID*: ID or GUID of explosion effect to play upon detonation.
 
 
-**Explosive** *flag*: Robotic turrets using `Mode Friendly` will target players holding a throwable that has this flag.
+**Explosive** *flag*: Sentry assets using `Mode Friendly` will target players holding a throwable that has this flag.
 
-**Flash** *flag*: Robotic turrets using `Mode Friendly` will target players holding a throwable that has this flag.
+**Flash** *flag*: Sentry assets using `Mode Friendly` will target players holding a throwable that has this flag.
 
 **Sticky** *flag*:
 
-**Explode_On_Impact** *flag*: Robotic turrets using `Mode Friendly` will target players holding a throwable that has this flag.
+**Explode_On_Impact** *flag*: Sentry assets using `Mode Friendly` will target players holding a throwable that has this flag.
 
 
 Noting this here for now, until throwables are properly documented.
