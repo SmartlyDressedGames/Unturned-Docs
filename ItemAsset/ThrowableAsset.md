@@ -31,6 +31,16 @@ Throwable Asset Properties
 **Explode_On_Impact** *flag*: Robotic turrets using `Mode Friendly` will target players holding a throwable that has this flag.
 
 
+**Explosion_Launch_Speed** *float*: Defaults to `Player_Damage × 0.1`.
+
+**Strong_Throw_Force** *float*: Defaults to 1100.
+
+**Weak_Throw_Force** *float*: Defaults to 600.
+
+**Boost_Throw_Force_Multiplier** *float*: Defaults to 1.4.
+
+
+
 Noting this here for now, until throwables are properly documented.
 
 Explosive: Specified if the explosive component is used.
