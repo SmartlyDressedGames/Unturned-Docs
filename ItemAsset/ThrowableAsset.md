@@ -31,11 +31,10 @@ Throwable Asset Properties
 
 **Explode_On_Impact** *flag*: Specified if the throwable should immediately detonate upon impact. Robotic turrets using `Mode Friendly` will target players holding a throwable that has this flag.
 
+**Explosion_Launch_Speed** *float*: Velocity at which players are launched by area-of-effect explosions. Defaults to `Player_Damage × 0.1`.
 
-**Explosion_Launch_Speed** *float*: Defaults to `Player_Damage × 0.1`.
+**Strong_Throw_Force** *float*: The amount of force throwables are thrown with when performing a strong throw, measured in Newtons. Defaults to 1100.
 
-**Strong_Throw_Force** *float*: Defaults to 1100.
+**Weak_Throw_Force** *float*: The amount of force throwables are thrown with when performing a weak throw, measured in Newtons. Defaults to 600.
 
-**Weak_Throw_Force** *float*: Defaults to 600.
-
-**Boost_Throw_Force_Multiplier** *float*: Defaults to 1.4.
+**Boost_Throw_Force_Multiplier** *float*: A multiplier on the amount of throwing force when the player has the "Olympic" random boost. Defaults to 1.4.
