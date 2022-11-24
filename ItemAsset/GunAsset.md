@@ -39,7 +39,7 @@ Gun Asset Properties
 
 **Attachment_Caliber_#** *uint16*: ID of a caliber to check for hook attachment compatibility. Requires `Attachment_Calibers`.
 
-**Caliber** *uint16*: ID of the caliber to check for hook attachment or magazine attachment compatibility.
+**Caliber** *uint16*: ID of the caliber to check for hook attachment or magazine attachment compatibility. To configure hook attachment and magazine attachment compatibility separately, use `Attachment_Calibers` and `Magazine_Calibers` together instead.
 
 **Magazine_Calibers** *int*: Number of unique magazine attachment calibers. Cannot be used with `Caliber`.
 
@@ -157,7 +157,7 @@ All `Action` mechanisms other than the rocket-action mechanism utilize the balli
 
 When using `Action Rocket`, the ranged weapon utilizes the physics projectile system.
 
-**Ballistic_Force** *float*: Required Measured in Newtons. Applicable to the rocket action, and usage ignores all other advanced ballistic options. Defaults to 0.002.
+**Ballistic_Force** *float*: Measured in Newtons. Applicable to the rocket action, and usage ignores all other advanced ballistic options. Defaults to 0.002.
 
 **Projectile_Explosion_Launch_Speed** *float*: Players caught within an area-of-effect explosion caused by the ranged weapon are launched at this speed. For example, this can be used to create velocity-related items like "rocket-jumping" mods.
 Defaults to `Player_Damage × 0.1`.
