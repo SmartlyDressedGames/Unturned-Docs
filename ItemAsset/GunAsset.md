@@ -208,9 +208,11 @@ Defaults to `Player_Damage × 0.1`.
 
 ### Spread
 
-**Spread_Aim** *float*: The spread multiplier when aiming down sights. This is multiplied by the `Spread_Hip` value.
+**Spread_Aim** *float*: The spread multiplier when aiming down sights. This is multiplied by the `Spread_Angle_Degrees` value.
 
-**Spread_Hip** *float*: The spread multiplier when not aiming down sights.
+**Spread_Angle_Degrees** *float*: Bullet angle of deviation away from the aiming direction. For example 15 means the shot could hit up to 15 degrees away from the center of the crosshair, whereas 0 will always hit the center of the crosshair. All other spread values are multipliers for this.
+
+**Spread_Hip** *float*: Replaced by `Spread_Angle_Degrees`, but maintained for backwards compatibility. Running the game with `-ValidateAssets` logs the equivalent `Spread_Angle_Degrees` value.
 
 **Spread_Sprint** *float*: The spread multiplier when sprinting. Defaults to 1.25. Requires `Can_Aim_During_Sprint true`.
 
