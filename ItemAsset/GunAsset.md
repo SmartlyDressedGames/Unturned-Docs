@@ -25,6 +25,8 @@ Gun Asset Properties
 
 **Can_Aim_During_Sprint** *bool*: If true, the player can sprint while aiming down sights. Defaults to false.
 
+**Aim\_In\_Duration** *float*. Seconds from pressing aim input to fully aiming down sights. Old hardcoded default was 0.2 seconds.
+
 **Gunshot_Rolloff_Distance** *float*: The distance over which the gunshot audio rolls off until it is completely inaudible, in meters. Defaults to 16 when using `Action String`; defaults to 64 when using `Action Rocket`; otherwise, defaults to 512.
 
 **Range_Rangefinder** *float*: Overrides the maximum distance displayed when using the Rangefinder tactical attachment on this ranged weapon. For example, it may be useful to set this property when using `Action Rocket`, as explosive projectiles use `Range` to determine the explosion radius rather than the maximum range of the ranged weapon. Defaults to the value of the `Range` property.
@@ -54,6 +56,8 @@ In addition to the damage properties available from the the [WeaponAsset](/ItemA
 **Damage_Falloff_Multiplier** *float*: Percentage of damage to apply at maximum range. For example, a value of 0.25 with a damage of 40 means 10 damage will be dealt at maximum range. Defaults to 1.
 
 **Damage_Falloff_Range** *float*: Percentage of maximum range where damage begins decreasing according to multiplier. For example, a value of 0.3 with a range of 200 means damage begins dropping off after 60 meters. Defaults to 1.
+
+**Damage\_Falloff\_Max\_Range** *float*: Percentage of maximum range where damage finishes decreasing according to multiplier. For example, a value of 0.6 with a range of 200 means damage finishes dropping off after 120 meters. Defaults to 1.
 
 **Instakill_Headshots** *bool*: If true, performing a headshot on a player will instantly kill that player. This does not apply to zombies who have been headshot, unless the single-player world or multiplayer server's difficulty configuration has `Weapons_Use_Player_Damage` enabled. Defaults to false.
 
