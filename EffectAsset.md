@@ -28,6 +28,8 @@ General data
 
 **Preload** *byte*: Total number of the effect to pre-instantiate in the effect pool to reduce hitching when first used.
 
+**Is_Music** *bool*: Placeholder to disable music when used in an ambiance volume if music option is disabled. Once the audio settings menu is separated out there will be a volume multiplier for music.
+
 Camera shake
 ------------
 
