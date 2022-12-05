@@ -10,6 +10,8 @@ Caliber Asset Properties
 
 **Aiming\_Recoil\_Multiplier** *float*: Recoil magnitude multiplier while the gun is aiming down sights.
 
+**Aim\_Duration\_Multiplier** *float*: Multiplier for `Aim_In_Duration` value.
+
 **Ballistic_Damage_Multiplier** *float*: Multiplier on damage. Defaults to the value used for the Damage property.
 
 **Calibers** *uint16*: Total amount of unique calibers.
