@@ -101,6 +101,8 @@ Refer to [Currency](/Currency.md) documentation.
 
 **Reward\_#\_Magazine** *uint16*: Override for the magazine attachment that should be attached to the item reward.
 
+**Reward\_#\_Origin** *enum*: Can be set to Admin to spawn item at full quality.
+
 **Reward\_#\_Sight** *uint16*: Override for the sight attachment that should be attached to the item reward.
 
 **Reward\_#\_Tactical** *uint16*: Override for the tactical attachment that should be attached to the item reward.
@@ -114,6 +116,8 @@ Refer to [Currency](/Currency.md) documentation.
 **Reward\_#\_Amount** *int*: Amount of item to reward.
 
 **Reward\_#\_Auto\_Equip** *flag*: Item should be automatically equipped by the player.
+
+**Reward\_#\_Origin** *enum*: Can be set to Admin to spawn item at full quality.
 
 ### Hint
 
