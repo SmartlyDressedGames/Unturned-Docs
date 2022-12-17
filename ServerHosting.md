@@ -196,6 +196,7 @@ Curated maps are available as workshop items, so are configured in the `Workshop
 
 Alphabetically sorted list of curated map file IDs:
 
+- A6 Polaris: 2898548949
 - Athens Arena: 1454125991
 - Arid: 2683620106
 - Belgium: 1727125581
