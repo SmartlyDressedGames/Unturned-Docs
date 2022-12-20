@@ -101,7 +101,7 @@ Refer to [Currency](/Currency.md) documentation.
 
 **Reward\_#\_Magazine** *uint16*: Override for the magazine attachment that should be attached to the item reward.
 
-**Reward\_#\_Origin** *enum*: Can be set to Admin to spawn item at full quality.
+**Reward\_#\_Origin** *enum* (`World`, `Admin`, `Craft`, `Nature`): Set the item origin. For example, setting the origin to `Admin` will cause items to spawn at full quality. Defaults to `Craft`.
 
 **Reward\_#\_Sight** *uint16*: Override for the sight attachment that should be attached to the item reward.
 
@@ -117,7 +117,7 @@ Refer to [Currency](/Currency.md) documentation.
 
 **Reward\_#\_Auto\_Equip** *flag*: Item should be automatically equipped by the player.
 
-**Reward\_#\_Origin** *enum*: Can be set to Admin to spawn item at full quality.
+**Reward\_#\_Origin** *enum* (`World`, `Admin`, `Craft`, `Nature`): Set the item origin. For example, setting the origin to `Admin` will cause items to spawn at full quality. Defaults to `Craft`.
 
 ### Hint
 
