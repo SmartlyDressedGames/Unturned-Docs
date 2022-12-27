@@ -8,38 +8,38 @@ This is an [Asset v2](AssetsV2.md) class.
 Properties
 ----------
 
-`ID` *int*:
+**ID** *int*:
 
-`Overrides_Spawn_Chance` *bool*: 
+**Overrides_Spawn_Chance** *bool*: 
 
-`Crawler_Chance` *float*: 
+**Crawler_Chance** *float*: 
 
-`Sprinter_Chance` *float*: 
+**Sprinter_Chance** *float*: 
 
-`Flanker_Chance` *float*: 
+**Flanker_Chance** *float*: 
 
-`Burner_Chance` *float*: 
+**Burner_Chance** *float*: 
 
-`Acid_Chance` *float*: 
+**Acid_Chance** *float*: 
 
-`Boss_Electric_Chance` *float*: 
+**Boss_Electric_Chance** *float*: 
 
-`Boss_Wind_Chance` *float*: 
+**Boss_Wind_Chance** *float*: 
 
-`Boss_Fire_Chance` *float*: 
+**Boss_Fire_Chance** *float*: 
 
-`Spirit_Chance` *float*: 
+**Spirit_Chance** *float*: 
 
-`DL_Red_Volatile_Chance` *float*: 
+**DL_Red_Volatile_Chance** *float*: 
 
-`DL_Blue_Volatile_Chance` *float*: 
+**DL_Blue_Volatile_Chance** *float*: 
 
-`Boss_Elver_Stomper_Chance` *float*: 
+**Boss_Elver_Stomper_Chance** *float*: 
 
-`Boss_Kuwait_Chance` *float*: 
+**Boss_Kuwait_Chance** *float*: 
 
-`Mega_Stun_Threshold` *int*: 
+**Mega_Stun_Threshold** *int*: 
 
-`Normal_Stun_Threshold` *int*: 
+**Normal_Stun_Threshold** *int*: 
 
-`Allow_Horde_Beacon` *bool*: 
+**Allow_Horde_Beacon** *bool*: 
