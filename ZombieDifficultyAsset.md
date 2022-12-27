@@ -8,36 +8,38 @@ This is an [Asset v2](AssetsV2.md) class.
 Properties
 ----------
 
-Overrides_Spawn_Chance `bool`
+`ID` *int*:
 
-Crawler_Chance `float`
+`Overrides_Spawn_Chance` *bool*: 
 
-Sprinter_Chance `float`
+`Crawler_Chance` *float*: 
 
-Flanker_Chance `float`
+`Sprinter_Chance` *float*: 
 
-Burner_Chance `float`
+`Flanker_Chance` *float*: 
 
-Acid_Chance `float`
+`Burner_Chance` *float*: 
 
-Boss_Electric_Chance `float`
+`Acid_Chance` *float*: 
 
-Boss_Wind_Chance `float`
+`Boss_Electric_Chance` *float*: 
 
-Boss_Fire_Chance `float`
+`Boss_Wind_Chance` *float*: 
 
-Spirit_Chance `float`
+`Boss_Fire_Chance` *float*: 
 
-DL_Red_Volatile_Chance `float`
+`Spirit_Chance` *float*: 
 
-DL_Blue_Volatile_Chance `float`
+`DL_Red_Volatile_Chance` *float*: 
 
-Boss_Elver_Stomper_Chance `float`
+`DL_Blue_Volatile_Chance` *float*: 
 
-Boss_Kuwait_Chance `float`
+`Boss_Elver_Stomper_Chance` *float*: 
 
-Mega_Stun_Threshold `int`
+`Boss_Kuwait_Chance` *float*: 
 
-Normal_Stun_Threshold `int`
+`Mega_Stun_Threshold` *int*: 
 
-Allow_Horde_Beacon `bool`
+`Normal_Stun_Threshold` *int*: 
+
+`Allow_Horde_Beacon` *bool*: 
