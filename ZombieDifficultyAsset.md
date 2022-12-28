@@ -19,8 +19,6 @@ Unique Properties
 Gameplay Config Properties
 --------------------------
 
-**Overrides_Spawn_Chance** *bool*: Defaults to true.
-
 **Crawler_Chance** *float*: Defaults to 0. Requires `Overrides_Spawn_Chance` to be true.
 
 **Sprinter_Chance** *float*: Defaults to 0. Requires `Overrides_Spawn_Chance` to be true.
