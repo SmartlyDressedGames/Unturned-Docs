@@ -5,39 +5,44 @@ Override the difficulty settings for zombies in a navmesh. For reference, offici
 
 This is an [Asset v2](AssetsV2.md) class.
 
-Properties
-----------
+Unique Properties
+-----------------
+
+**Overrides_Spawn_Chance** *bool*: Whether or not the spawn chance for zombies in the navmesh should be overridden. Defaults to true.
+
+Gameplay Config Properties
+--------------------------
 
 **Overrides_Spawn_Chance** *bool*: Defaults to true.
 
-**Crawler_Chance** *float*: 
+**Crawler_Chance** *float*: Defaults to 0. Requires `Overrides_Spawn_Chance` to be true.
 
-**Sprinter_Chance** *float*: 
+**Sprinter_Chance** *float*: Defaults to 0. Requires `Overrides_Spawn_Chance` to be true.
 
-**Flanker_Chance** *float*: 
+**Flanker_Chance** *float*: Defaults to 0. Requires `Overrides_Spawn_Chance` to be true.
 
-**Burner_Chance** *float*: 
+**Burner_Chance** *float*: Defaults to 0. Requires `Overrides_Spawn_Chance` to be true.
 
-**Acid_Chance** *float*: 
+**Acid_Chance** *float*: Defaults to 0. Requires `Overrides_Spawn_Chance` to be true.
 
-**Boss_Electric_Chance** *float*: 
+**Boss_Electric_Chance** *float*: Defaults to 0. Requires `Overrides_Spawn_Chance` to be true.
 
-**Boss_Wind_Chance** *float*: 
+**Boss_Wind_Chance** *float*: Defaults to 0. Requires `Overrides_Spawn_Chance` to be true.
 
-**Boss_Fire_Chance** *float*: 
+**Boss_Fire_Chance** *float*: Defaults to 0. Requires `Overrides_Spawn_Chance` to be true.
 
-**Spirit_Chance** *float*: 
+**Spirit_Chance** *float*: Defaults to 0. Requires `Overrides_Spawn_Chance` to be true.
 
-**DL_Red_Volatile_Chance** *float*: 
+**DL_Red_Volatile_Chance** *float*: Defaults to 0. Requires `Overrides_Spawn_Chance` to be true.
 
-**DL_Blue_Volatile_Chance** *float*: 
+**DL_Blue_Volatile_Chance** *float*: Defaults to 0. Requires `Overrides_Spawn_Chance` to be true.
 
-**Boss_Elver_Stomper_Chance** *float*: 
+**Boss_Elver_Stomper_Chance** *float*: Defaults to 0. Requires `Overrides_Spawn_Chance` to be true.
 
-**Boss_Kuwait_Chance** *float*: 
+**Boss_Kuwait_Chance** *float*: Defaults to 0. Requires `Overrides_Spawn_Chance` to be true.
 
-**Mega_Stun_Threshold** *int*: 
+**Mega_Stun_Threshold** *int*: Damage threshold for a hit to cause a stun.
 
-**Normal_Stun_Threshold** *int*: 
+**Normal_Stun_Threshold** *int*: Damage threshold for a hit to cause a stun.
 
-**Allow_Horde_Beacon** *bool*: 
+**Allow_Horde_Beacon** *bool*: Defaults to true.
