@@ -8,9 +8,7 @@ This is an [Asset v2](AssetsV2.md) class.
 Properties
 ----------
 
-**ID** *int*:
-
-**Overrides_Spawn_Chance** *bool*: 
+**Overrides_Spawn_Chance** *bool*: Defaults to true.
 
 **Crawler_Chance** *float*: 
 
