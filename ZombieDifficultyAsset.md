@@ -10,6 +10,12 @@ Unique Properties
 
 **Overrides_Spawn_Chance** *bool*: Whether or not the spawn chance for zombies in the navmesh should be overridden. For example, you would set this to false if you *only* wanted to tweak properties not related to spawning behavior, such as damage thresholds for stuns. Defaults to true.
 
+**Mega_Stun_Threshold** *int*: Damage threshold for a hit to cause a stun.
+
+**Normal_Stun_Threshold** *int*: Damage threshold for a hit to cause a stun.
+
+**Allow_Horde_Beacon** *bool*: Defaults to true.
+
 Gameplay Config Properties
 --------------------------
 
@@ -40,9 +46,3 @@ Gameplay Config Properties
 **Boss_Elver_Stomper_Chance** *float*: Defaults to 0. Requires `Overrides_Spawn_Chance` to be true.
 
 **Boss_Kuwait_Chance** *float*: Defaults to 0. Requires `Overrides_Spawn_Chance` to be true.
-
-**Mega_Stun_Threshold** *int*: Damage threshold for a hit to cause a stun.
-
-**Normal_Stun_Threshold** *int*: Damage threshold for a hit to cause a stun.
-
-**Allow_Horde_Beacon** *bool*: Defaults to true.
