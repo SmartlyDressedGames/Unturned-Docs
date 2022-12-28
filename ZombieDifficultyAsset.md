@@ -8,7 +8,7 @@ This is an [Asset v2](AssetsV2.md) class.
 Unique Properties
 -----------------
 
-**Overrides_Spawn_Chance** *bool*: Whether or not the spawn chance for zombies in the navmesh should be overridden. Defaults to true.
+**Overrides_Spawn_Chance** *bool*: Whether or not the spawn chance for zombies in the navmesh should be overridden. For example, you would set this to false if you *only* wanted to tweak properties not related to spawning behavior, such as damage thresholds for stuns. Defaults to true.
 
 Gameplay Config Properties
 --------------------------
