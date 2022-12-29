@@ -5,8 +5,8 @@ Override the difficulty settings for zombies in a navmesh. For reference, offici
 
 This is an [Asset v2](AssetsV2.md) class.
 
-Unique Properties
------------------
+Properties Reference
+--------------------
 
 **Overrides_Spawn_Chance** *bool*: Whether or not the spawn chance for zombies in the navmesh should be overridden by the values set in this asset. For example, it may be useful to set this to `false` if you *only* wanted to tweak properties not related to spawn chances, such as the damage thresholds for stuns. Defaults to true.
 
@@ -16,8 +16,8 @@ Unique Properties
 
 **Allow_Horde_Beacon** *bool*: Whether or not Horde Beacons can be placed in the navmesh. Defaults to true.
 
-Gameplay Config Properties
---------------------------
+Spawn Chance Properties
+-----------------------
 
 **Crawler_Chance** *float*: Decimal-to-percent chance for the zombie to be a Crawler. Defaults to 0. Requires `Overrides_Spawn_Chance` to be true.
 
