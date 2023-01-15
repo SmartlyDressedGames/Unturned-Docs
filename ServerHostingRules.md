@@ -1,6 +1,9 @@
 # Server Hosting Rules
 
-Servers that violate these rules may be temporarily or permanently banned.
+Servers that violate these rules may be temporarily or permanently banned. To report a server for rule violations, or appeal a moderation decision applied to your server, you may file a ticket with SDG Support:
+
+* [Report a server for breaking rules](https://support.smartlydressedgames.com/hc/en-us/requests/new?ticket_form_id=12189991924500)
+* [Appeal a server report](https://support.smartlydressedgames.com/hc/en-us/requests/new?ticket_form_id=12189992633364)
 
 [View Moderation List](https://smartlydressedgames.com/UnturnedHostBans/index.html)
 
