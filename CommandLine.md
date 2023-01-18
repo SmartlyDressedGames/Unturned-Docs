@@ -14,6 +14,8 @@ Some command-line arguments are primarily intended for use with the Unturned Ded
 
 **+connect**: Connect to a server, in the format of `+connect <ip address>:<port>`.
 
+**-DisableLightLODs**: Disable fadeout of dynamic lights. Could be useful for high-quality screenshots.
+
 **-FullscreenMode=**: Window mode override.
 
 **-FallbackGizmos**: Use 3D Unity line renderer component for debug visualization rather than pixel-perfect lines. Performance with these is lower than the default, so only intended for cases where the default is unimplemented.
