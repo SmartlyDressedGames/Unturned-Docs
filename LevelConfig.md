@@ -103,8 +103,6 @@ __Weather_Override__ _ELevelWeatherOverride_: Can be set to rain or snow to lock
 
 __Has_Atmosphere__ _bool_: If false, disable stars in skybox.
 
-__Should_Verify_Objects_Hash__ _bool_: Should server verify client level files match? Disabled by default, but should be enabled on most maps. Not recommended for maps with dozens of required downloads because loading mismatch will break hash.
-
 __Has_Global_Electricity__ _bool_: Should all powerable items and objects have power by default?
 
 __Gravity__ _float_: Acceleration of gravity. Defaults to -9.81.
@@ -149,14 +147,16 @@ Deprecated
 
 __Can_Use_Bundles__ _bool_: Used in the past for timed curated maps to disable using their assets in the level editor which could break after moving the map from the vanilla content to the workshop.
 
-__Use_Legacy_Fog_Height__ _bool_: Should default terrain height be used for fog falloff? If false, devkit landscape tile limits are used instead. Defaults to true.
-
-__Use_Legacy_Objects__ _bool_: Should objects be loaded from Objects.dat file? Devkit objects were moved into this file, so this option no longer has any effect.
-
-__Load_From_Resources__ _bool_: Used in the past for curated maps with assets in the vanilla Resources/Bundles/* directory. Master Bundles completely replaced this.
-
-__Item__ _int_: Kept for backwards compatibility. Ignored if Associated_Stockpile_Items are set.
+__Category__ _ESingleplayerMapCategory_: Mostly automated now. Can be set to Misc to explicitly show in the miscellaneous map category.
 
 __Has_Discord_Rich_Presence__ _bool_: Only valid for official maps. If discord integration is enabled and this flag is true discord will check for a map icon configured in their partner page.
 
-__Category__ _ESingleplayerMapCategory_: Mostly automated now. Can be set to Misc to explicitly show in the miscellaneous map category.
+__Item__ _int_: Kept for backwards compatibility. Ignored if Associated_Stockpile_Items are set.
+
+__Load_From_Resources__ _bool_: Used in the past for curated maps with assets in the vanilla Resources/Bundles/* directory. Master Bundles completely replaced this.
+
+__Should_Verify_Objects_Hash__ _bool_: With the newer asset integrity checks this is obsolete because each object/tree used in the level is checked with the server, and ignored if the server is missing the asset. Trees.dat and Objects.dat can always be included because missing assets do not factor into those hashes anymore.
+
+__Use_Legacy_Fog_Height__ _bool_: Should default terrain height be used for fog falloff? If false, devkit landscape tile limits are used instead. Defaults to true.
+
+__Use_Legacy_Objects__ _bool_: Should objects be loaded from Objects.dat file? Devkit objects were moved into this file, so this option no longer has any effect.
