@@ -9,7 +9,7 @@ Built-in Layers
 - 1 TransparentFX
 - 2 Ignore Raycast
 - 4 Water: ocean and water tiles.
-- 5 UI: devkit and plugin menus using uGUI.
+- 5 UI: menus with [uGUI glazier](Glazier.md) as well as plugin custom menus.
 
 User Layers
 - 8 Logic: clickable overlays like the position, rotation and scale handles. Editor debug visuals that can be seen through walls are on this layer.
@@ -35,7 +35,7 @@ User Layers
 - 28 Structure: structure item placed in the world.
 - 29 Tire: wheel colliders. Allows wheels to mask what they collide with.
 - 30 Trap: typically trigger colliders including rocket launcher projectiles and kill volumes.
-- 31 Ground2: out-of-bounds terrain on older maps.
+- 31 Ground2: no longer used after old maps were converted to terrain tiles. Previously this was for out-of-bounds terrain. Reserved for future use.
 
 ## Layer Collision Matrix
 
