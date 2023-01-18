@@ -12,6 +12,8 @@ Clothing Asset Properties
 
 **Armor_Explosion** *float*: Multiplier on damage received from area-of-effect explosions. Defaults to the value used for Armor.
 
+**Destroy_Clothing_Colliders** *bool*: If false, colliders are not destroyed when the clothing is attached to the character. For example equipped vanilla clothes do not have any colliders, but some mods (e.g., armor with hitbox) may have relied on child colliders not being destroyed. Defaults to true.
+
 **Proof_Water** *flag*: Specified if it should exhibit the waterproof property. Only applicable to backpacks and glasses. When waterproof glasses are worn, the player will not have their screen blurred while underwater. When a waterproof backpack and waterproof glasses are worn together, the player's oxygen will deplete at a greatly reduced rate when underwater.
 
 **Proof_Fire** *flag*: Specified if it should exhibit the fireproof property. Only applicable to shirts and pants. When a fireproof shirt and fireproof pants are worn together, the player will be immune to fire damage.

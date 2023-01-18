@@ -80,6 +80,8 @@ Other Properties
 
 **Ignore_TexRW** *flag*: Specified if read/writeable texture errors for the asset should be hidden from the error logs.
 
+**Destroy_Item_Colliders** *bool*: If false, colliders are not destroyed when the Item prefab is attached to the character. For example equipped vanilla guns do not have any colliders, but some mods (e.g., riot shields) may have relied on child colliders not being destroyed. Defaults to true.
+
 Blueprints and Actions
 ----------------------
 

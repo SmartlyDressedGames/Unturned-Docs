@@ -20,6 +20,8 @@ Caliber Asset Properties
 
 **Damage** *float*: Multiplier on damage. Defaults to 1. Deprecated in favor of Ballistic_Damage_Multiplier.
 
+**Destroy_Attachment_Colliders** *bool*: If false, colliders are not destroyed when the base gun item's colliders are destroyed. Kept for compatibility if mods relied on attachments having colliders, but it is not recommended because there have been reports of low performance with some mods having complex colliders on every modded attachment in the level. Defaults to true.
+
 **Firerate** *byte*: Amount to decrease ranged weapon's firerate value by. Decreasing by a larger value will allow the ranged weapon to fire more often.
 
 **Paintable** *flag*: Specified if the attachment should be affected by Steam Economy ranged weapon skins that include support for attachments.
