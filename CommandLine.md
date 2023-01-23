@@ -22,6 +22,8 @@ Some command-line arguments are primarily intended for use with the Unturned Ded
 
 **-FarClipDistance** *float*: [16.0, 2048.0] overrides the maximum draw distance in the graphics menu. By default the lowest max draw distance is 614.4 meters which is slightly higher than the network distance of 512.0 meters. Useful for players who are willing to gain performance at a significant gameplay disadvantage.
 
+**-ForceTrustClient**: Disable authoritative movement.
+
 **-FrameRateLimit=** *int*: Overrides the frame rate limit specified in the display menu. Negative values disable the limit. Useful if game is running at thousands of FPS on the loading screen and overheats.
 
 **-GameSense**: GameSense integration.
