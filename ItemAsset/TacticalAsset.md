@@ -19,6 +19,8 @@ Tactical Asset Properties
 
 **Laser** *flag*: Provides a toggleable laser.
 
+**Laser_Color** *color*: Overrides default red color. Consists of **Laser_Color_R**, **Laser_Color_G**, **Laser_Color_B** *float* [0, 1].
+
 **Light** *flag*: Provides a toggleable flashlight.
 
 **Melee** *flag*: Provides the ability to perform a melee attack.
