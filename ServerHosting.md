@@ -42,6 +42,15 @@ Continue to: [How to Install Server using SteamCMD](#How-to-Install-Server-using
 
 How to Install Server using SteamCMD
 ------------------------------------
+0. Change Server Install Dir (Optional.)
+*suggestion reset this value to an authorized dir if install complete but can't find "ServerHelper.sh"*
+
+    	force_install_dir <path>
+
+    example:
+
+    	force_install_dir ./steamapps
+
 
 1. Login to Steam anonymously:
 
