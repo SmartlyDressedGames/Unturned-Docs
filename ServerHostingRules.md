@@ -7,11 +7,13 @@ Servers that violate these rules may be temporarily or permanently banned. To re
 
 [View Moderation List](https://smartlydressedgames.com/UnturnedHostBans/index.html)
 
-## Monetization Types
+## Recent updates
 
 **October 16, 2022 clarification:** Selling *vanilla* cosmetics, such as those available from the Stockpile or Steam Community Market, is not allowed. When offering cosmetics as a server microtransaction, the server network should should own (or have licensed) the rights to that content. Servers should not sell cosmetic content that they do not own the right to, such as vanilla cosmetics (either official, or community-contributed).
 
 **August 2, 2021 update:** Fictitious and deceptive pricing is not allowed. For example, lying that a discount is nearly expired, or pretending the price is discounted when it has never been at full price. We would strongly advise following [Steam's discounting rules](https://partner.steamgames.com/doc/marketing/discounts) to help avoid breaking any real-world laws.
+
+## Monetization Types
 
 Warnings for breaking the monetization rules first began being sent out on May 28, 2021. The monetization rules have now been in full effect since June 11, 2021.
 
@@ -19,7 +21,7 @@ Hosts are allowed to sell permanent benefits and monthly subscriptions. Consumab
 
 ## Examples
 
-This section will provide *examples* of allowed/banned monetization options. It is not an exhaustive list of every possible monetization strategy. If something is not on this list, 
+This section will provide *examples* of allowed/banned monetization options. It is not an exhaustive list of every possible monetization strategy.
 
 ### Examples of allowed monetization:
 
@@ -29,7 +31,8 @@ This section will provide *examples* of allowed/banned monetization options. It 
 - Selling **custom** cosmetics like custom skins, name tags, chat colors, etc. available permanently or for the duration of the monthly subscription.
 - Selling services or commissions, for example a modder taking commissions for new content that gets added to the server for all players.
 
-Examples of banned monetization:
+### Examples of banned monetization:
+
 - Selling in-game items like weapons, ammunition, supplies, bases, etc.
 - Selling in-game vehicles.
 - Selling experience points.
