@@ -17,7 +17,12 @@ Warnings for breaking the monetization rules first began being sent out on May 2
 
 Hosts are allowed to sell permanent benefits and monthly subscriptions. Consumable microtransactions are **not** allowed.
 
-Examples of allowed monetization:
+## Examples
+
+This section will provide *examples* of allowed/banned monetization options. It is not an exhaustive list of every possible monetization strategy. If something is not on this list, 
+
+### Examples of allowed monetization:
+
 - Accepting donations.
 - Selling permanent or monthly subscription access to play on the server(s).
 - Selling ranks, kits, unlocks, benefits, etc. available permanently or for the duration of the monthly subscription. Timers or cooldowns are fine.
@@ -34,7 +39,23 @@ Examples of banned monetization:
 
 ## Monetization Filter
 
-The "Monetization" field in each server's Config.json file defaults to "Unspecified", but can be set to "None" or "NonGameplay". If configuring this field please ensure to be truthful. "None" is for unmonetized or donation-only servers, and "NonGameplay" is for servers with purchases that do not provide a gameplay advantage. Players filtering the server list by "NonGameplay" will also see "None" servers.
+Players can filter the in-game server list by this field. It is not required to configure this field, but ideally it should be set to whichever value accurately describes your server's monetization practices. When configured, this field must be configured truthfully.
+
+### `Unspecified`
+
+The "Monetization" field in each server's Config.json file defaults to `Unspecified`. Ideally, this field should be set to whichever value accurately describes your server's monetization practices. This field should be configured truthfully, as players can filter the in-game server list by this field.
+
+### `None`
+
+Servers that are entirely unmonetized, or only offer a donation option, can use the `None` value.
+
+### `NonGameplay`
+
+Servers that only offer microtransactions that do not provide a gameplay advantage can use the `NonGameplay` value. For example, selling custom weapon skins and chat colors would qualify as not being a gameplay advantage.
+
+### `Gameplay`
+
+Servers that offer "pay-to-win" microtransactions that provide a gameplay advantage can use the `Gameplay` value. For example, selling "kits" would be a gameplay advantage.
 
 ## Online Conduct
 
