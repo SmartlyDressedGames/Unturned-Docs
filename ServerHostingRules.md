@@ -33,8 +33,8 @@ This section will provide *examples* of allowed/banned monetization options. It 
 
 ### Examples of banned monetization:
 
-- Selling in-game items like weapons, ammunition, supplies, bases, etc.
-- Selling in-game vehicles.
+- Selling in-game items like weapons, ammunition, supplies, bases, etc. that can be permanently lost, stolen, or destroyed.
+- Selling in-game vehicles that can be permanently lost, stolen, or destroyed.
 - Selling experience points.
 - Selling currency.
 - Selling ranks, kits, unlocks, benefits, etc. which stack with themselves as a loophole.
