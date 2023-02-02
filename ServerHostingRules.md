@@ -11,8 +11,6 @@ Servers that violate these rules may be temporarily or permanently banned. To re
 
 **October 16, 2022 clarification:** Selling *vanilla* cosmetics, such as those available from the Stockpile or Steam Community Market, is not allowed. When offering cosmetics as a server microtransaction, the server network should should own (or have licensed) the rights to that content. Servers should not sell cosmetic content that they do not own the right to, such as vanilla cosmetics (either official, or community-contributed).
 
-**August 2, 2021 update:** Fictitious and deceptive pricing is not allowed. For example, lying that a discount is nearly expired, or pretending the price is discounted when it has never been at full price. We would strongly advise following [Steam's discounting rules](https://partner.steamgames.com/doc/marketing/discounts) to help avoid breaking any real-world laws.
-
 ## Monetization Types
 
 Warnings for breaking the monetization rules first began being sent out on May 28, 2021. The monetization rules have now been in full effect since June 11, 2021.
@@ -54,13 +52,19 @@ Servers that are entirely unmonetized, or only offer a donation option, can use 
 
 ### `NonGameplay`
 
-Servers that only offer microtransactions that do not provide a gameplay advantage can use the `NonGameplay` value. For example, selling custom weapon skins and chat colors would qualify as not being a gameplay advantage.
+Servers that only offer microtransactions that do not provide a gameplay advantage can use the `NonGameplay` value. For example, selling custom weapon skins and chat colors would not be a gameplay advantage.
+
+### `Gameplay`
+
+Servers that offer any "pay-to-win" microtransactions (i.e., those that provide a gameplay advantage) can use the `Gameplay` value. For example, selling "kits" containing items or vehicles would be a gameplay advantage.
+
+## Deceptive Pricing
+
+Fictitious and deceptive pricing is not allowed. For example: lying that a discount is nearly expired, or pretending the price is discounted when it has never been at the listed full price. We would strongly advise following [Steam's discounting rules](https://partner.steamgames.com/doc/marketing/discounts) to help avoid breaking any real-world laws.
 
 ## Online Conduct
 
-View the Steam rules and guidelines here: https://support.steampowered.com/kb_article.php?ref=4045-USHJ-3810
-
-Repeated offenders of Steam rules and guidelines will be banned.
+Repeated offenders of [Steam's rules and guidelines](https://support.steampowered.com/kb_article.php?ref=4045-USHJ-3810) will be banned.
 
 ## Workshop File Copyright Infringement
 
