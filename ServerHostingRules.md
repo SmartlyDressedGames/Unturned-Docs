@@ -56,10 +56,6 @@ Servers that are entirely unmonetized, or only offer a donation option, can use 
 
 Servers that only offer microtransactions that do not provide a gameplay advantage can use the `NonGameplay` value. For example, selling custom weapon skins and chat colors would qualify as not being a gameplay advantage.
 
-### `Gameplay`
-
-Servers that offer "pay-to-win" microtransactions that provide a gameplay advantage can use the `Gameplay` value. For example, selling "kits" would be a gameplay advantage.
-
 ## Online Conduct
 
 View the Steam rules and guidelines here: https://support.steampowered.com/kb_article.php?ref=4045-USHJ-3810
