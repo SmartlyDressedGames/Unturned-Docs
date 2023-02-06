@@ -46,7 +46,7 @@ Players can filter the in-game server list by this field. It is not required to 
 
 The "Monetization" field in each server's Config.json file defaults to `Unspecified`. If you are unsure what to configure your server's monetization type as, then you can leave it unspecified.
 
-Servers that offer any "pay-to-win" microtransactions (i.e., those that provide a gameplay advantage), such as selling "kits" containing items or vehicles, should use this option.
+Servers that offer any "pay-to-win" microtransactions (i.e., those that provide a gameplay advantage), such as selling "kits" containing items or vehicles, should also use this option.
 
 ### `None`
 
