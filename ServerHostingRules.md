@@ -7,7 +7,7 @@ Servers that violate these rules may be temporarily or permanently banned. To re
 
 [View Moderation List](https://smartlydressedgames.com/UnturnedHostBans/index.html)
 
-## Recent updates
+## Recent changes
 
 **October 16, 2022 clarification:** Selling *vanilla* cosmetics, such as those available from the Stockpile or Steam Community Market, is not allowed. When offering cosmetics as a server microtransaction, the server network should should own (or have licensed) the rights to that content. Servers should not sell cosmetic content that they do not own the right to, such as vanilla cosmetics (either official, or community-contributed).
 
