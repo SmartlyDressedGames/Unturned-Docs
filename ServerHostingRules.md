@@ -46,6 +46,8 @@ Players can filter the in-game server list by this field. It is not required to 
 
 The "Monetization" field in each server's Config.json file defaults to `Unspecified`. If you are unsure what to configure your server's monetization type as, then you can leave it unspecified.
 
+Servers that offer any "pay-to-win" microtransactions (i.e., those that provide a gameplay advantage), such as selling "kits" containing items or vehicles, should use this option.
+
 ### `None`
 
 Servers that are entirely unmonetized, or only offer a donation option, can use the `None` value.
@@ -53,10 +55,6 @@ Servers that are entirely unmonetized, or only offer a donation option, can use 
 ### `NonGameplay`
 
 Servers that only offer microtransactions that do not provide a gameplay advantage can use the `NonGameplay` value. For example, selling custom weapon skins and chat colors would not be a gameplay advantage.
-
-### `Gameplay`
-
-Servers that offer any "pay-to-win" microtransactions (i.e., those that provide a gameplay advantage) can use the `Gameplay` value. For example, selling "kits" containing items or vehicles would be a gameplay advantage.
 
 ## Deceptive Pricing
 
