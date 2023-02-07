@@ -28,7 +28,7 @@ This section will provide *examples* of allowed/banned monetization options. It 
 - Accepting donations.
 - Selling permanent or monthly subscription access to play on the server(s).
 - Selling ranks, unlocks, benefits, etc. available permanently, or for the duration of the monthly subscription. Timers or cooldowns are fine.
-- Selling reusable kits—which are available permanently, or for the duration of the monthly subscription—containing in-game items. Timers or cooldowns are fine.
+- Selling reusable "kits"—which are available permanently, or for the duration of the monthly subscription—containing in-game items. Timers or cooldowns are fine.
 - Selling **custom** cosmetics like custom skins, name tags, chat colors, etc. available permanently or for the duration of the monthly subscription.
 - Selling services or commissions, for example a modder taking commissions for new content that gets added to the server for all players.
 
