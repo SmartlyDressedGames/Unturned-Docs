@@ -17,7 +17,7 @@ Servers that violate these rules may be temporarily or permanently banned. To re
 
 Warnings for breaking the monetization rules first began being sent out on May 28, 2021. The monetization rules have now been in full effect since June 11, 2021.
 
-Hosts are allowed to sell permanent benefits and monthly subscriptions. Consumable microtransactions are **not** allowed. A consumable microtransaction is anything that can be permanently consumed, lost, stolen, or destroyed. If something cannot be permanently lost, then it is not considered a consumable.
+Hosts are allowed to sell permanent benefits and monthly subscriptions. Consumable microtransactions are **not** allowed. A consumable microtransaction is anything that can be permanently consumed, lost, stolen, or destroyed. If it cannot be permanently lost, then it is not considered a consumable.
 
 ## Examples
 
@@ -27,14 +27,15 @@ This section will provide *examples* of allowed/banned monetization options. It 
 
 - Accepting donations.
 - Selling permanent or monthly subscription access to play on the server(s).
-- Selling ranks, kits, unlocks, benefits, etc. available permanently or for the duration of the monthly subscription. Timers or cooldowns are fine.
+- Selling ranks, unlocks, benefits, etc. available permanently, or for the duration of the monthly subscription. Timers or cooldowns are fine.
+- Selling reusable kits—which are available permanently, or for the duration of the monthly subscription—containing in-game items. Timers or cooldowns are fine.
 - Selling **custom** cosmetics like custom skins, name tags, chat colors, etc. available permanently or for the duration of the monthly subscription.
 - Selling services or commissions, for example a modder taking commissions for new content that gets added to the server for all players.
 
 ### Examples of banned monetization:
 
-- Selling in-game items like weapons, ammunition, supplies, bases, etc. that can be permanently lost, stolen, or destroyed.
-- Selling in-game vehicles that can be permanently lost, stolen, or destroyed.
+- Selling individual in-game items like weapons, ammunition, supplies, bases, etc. that can be permanently lost, stolen, or destroyed.
+- Selling individual in-game vehicles that can be permanently lost, stolen, or destroyed.
 - Selling experience points.
 - Selling currency.
 - Selling ranks, kits, unlocks, benefits, etc. which stack with themselves as a loophole.
