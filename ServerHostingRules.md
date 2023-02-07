@@ -58,7 +58,7 @@ Servers that only offer microtransactions that do not provide a gameplay advanta
 
 ### `Monetized`
 
-Servers that offer *any* "pay-to-win" microtransactions (i.e., those that provide a gameplay advantage)—such as selling "kits" containing items or vehicles—should use this option.
+Servers that offer *any* "pay-to-win" microtransactions (i.e., those that provide a gameplay advantage)—such as selling "kits" containing items or vehicles—should use the `Monetized` option.
 
 ## Deceptive Pricing
 
