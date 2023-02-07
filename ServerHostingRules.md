@@ -9,7 +9,7 @@ Servers that violate these rules may be temporarily or permanently banned. To re
 
 ## Recent changes
 
-**January 10, 2022 update:** We've revised a lot of the wording and formatting to make the monetization rules clearer with regards to what is/isn't currently allowed. For example, we've clarified on what is considered a "consumable microtransaction", created a dedicated section for deceptive pricing and discounts, and added a couple new examples. We've also added more information about the monetization filter, its purpose, and which of the four options you should use.
+**January 10, 2022 update:** We've revised a lot of the wording and formatting to make the monetization rules clearer with regards to what is/isn't currently allowed. For example, we've clarified on what is considered a "consumable microtransaction", created a dedicated section for deceptive pricing and discounts, and added a couple new examples. We've also added more information about the monetization filter, its purpose, and which of the four options your server should use.
 
 **October 16, 2022 clarification:** Selling *vanilla* cosmetics, such as those available from the Stockpile or Steam Community Market, is not allowed. When offering cosmetics as a server microtransaction, the server network should should own (or have licensed) the rights to that content. Servers should not sell cosmetic content that they do not own the right to, such as vanilla cosmetics (either official, or community-contributed).
 
