@@ -9,6 +9,8 @@ Servers that violate these rules may be temporarily or permanently banned. To re
 
 ## Recent changes
 
+**January 10, 2022 update:**
+
 **October 16, 2022 clarification:** Selling *vanilla* cosmetics, such as those available from the Stockpile or Steam Community Market, is not allowed. When offering cosmetics as a server microtransaction, the server network should should own (or have licensed) the rights to that content. Servers should not sell cosmetic content that they do not own the right to, such as vanilla cosmetics (either official, or community-contributed).
 
 ## Monetization Types
@@ -46,8 +48,6 @@ Players can filter the in-game server list by this field. It is not required to 
 
 The "Monetization" field in each server's Config.json file defaults to `Unspecified`. If you are unsure what to configure your server's monetization type as, then you can leave it unspecified.
 
-Servers that offer any "pay-to-win" microtransactions (i.e., those that provide a gameplay advantage), such as selling "kits" containing items or vehicles, should also use this option.
-
 ### `None`
 
 Servers that are entirely unmonetized, or only offer a donation option, can use the `None` value.
@@ -55,6 +55,10 @@ Servers that are entirely unmonetized, or only offer a donation option, can use 
 ### `NonGameplay`
 
 Servers that only offer microtransactions that do not provide a gameplay advantage can use the `NonGameplay` value. For example, selling custom weapon skins and chat colors would not be a gameplay advantage.
+
+### `Monetized`
+
+Servers that offer any "pay-to-win" microtransactions (i.e., those that provide a gameplay advantage), such as selling "kits" containing items or vehicles, should also use this option.
 
 ## Deceptive Pricing
 
