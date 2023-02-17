@@ -25,8 +25,7 @@ Using fewer unique materials is almost always better for performance. Combining 
 Standard (Decalable) or Standard (Specular setup) (Decalable):
 
 - Mode is Opaque
-- Texture is 128x128 or smaller with Clamp wrap mode
-- Color is white *OR* texture is unset
+- Texture is unset, or is 128x128 or smaller with Clamp wrap mode
 - All other material features are default
 
 Custom/Card: supported for the automatically generated tree skybox models.
