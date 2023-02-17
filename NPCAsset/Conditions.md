@@ -202,7 +202,7 @@ World
 
 **Condition\_#\_Type** *enum* (`Holiday`)
 
-**Condition\_#\_Value** *enum* (`April_Fools`, `Christmas`, `Halloween`, `Max`, `None`): Target value, as the holiday.
+**Condition\_#\_Value** *enum* (`April_Fools`, `Christmas`, `Halloween`, `None`, `Valentines`): Target value, as the holiday.
 
 ### Is_Full_Moon
 
