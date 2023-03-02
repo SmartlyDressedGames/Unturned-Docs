@@ -1,3 +1,6 @@
+Item Data (outdated)
+====================
+
 _**NOTICE:** This documentation file has been deprecated, and is no longer receiving updates. It has been superceded in favor of the [ItemAsset directory](/ItemAsset), which contains individual documentation files for each item asset class._
 
 _This deprecated documentation file will be progressively phased out as the new documentation sources are expanded._
@@ -7,23 +10,12 @@ _This deprecated documentation file will be progressively phased out as the new 
 __Items__ in _Unturned_ encompass anything that can be carried in a player's in-game inventory. All items share some properties, while each item type has its own unique data. Quick links are available below.
 
 - [Non-specific Data](#Non-specific-Data)
-- [Attachments](#Attachments)
 - [Barricades](#Barricades)
-- [Clothing](#Clothing)
-- [Consumables](#Consumables)
-- [Crafting Supplies](#Crafting-Supplies)
 - [Fishing Poles](#Fishing-Poles)
 - [Fuel Canisters](#Fuel-Canisters)
 - [Growth Supplements](#Growth-Supplements)
-- [Mapping Equipment](#Mapping-Equipment)
 - [Melee Weapons](#Melee-Weapons)
-- [Optics](#Optics)
-- [Parachutes](#Parachutes)
-- [Projectiles](#Projectiles)
-- [Radiation Filters](#Radiation-Filters)
-- [Ranged Weapons](#Ranged-Weapons)
 - [Remote Triggers](#Remote-Triggers)
-- [Restraining Devices](#Restraining-Devices)
 - [Structures](#Structures)
 - [Tools](#Tools)
 - [Water Canisters](#Water-Canisters)
@@ -33,89 +25,18 @@ Non-specific Data
 
 * Refer to [README.md](/ItemAsset/README.md).
 
-Quality
--------
-
-__Quality_Min__: The minimum quality to generate. Set to 10 by default.
-
-__Quality_Max__: The maximum quality to generate. Set to 90 by default.
-
-__Override_Show_Quality__:
-
 __Durability__: Either a decimal probability chance of quality loss upon action, or guaranteed loss and durability value is instead representative of the amount lost.
-
 * _Canteens_: Guaranteed quality loss occurs upon drinking. Durability value represents the amount of quality loss.
 * _Melee Weapons_: Decimal probability chance of quality loss occurs upon hitting.
 * _Ranged Weapons_: Decimal probability chance of quality loss occurs upon shooting.
 
 __Wear__: Increment to degrade quality by. Only applicable to items where durability represents a decimal probability chance of quality loss.
 
-Damage
-------
-
-Damage data can be utilized by explosive consumables, explosive throwables, traps, remote explosives, melee weapons, and ranged weapons.
-
-__Player_Damage__: Base damage dealt to player entities, prior to calculating limb modifiers, and used independently from limb modifiers for explosive and trap damage.
-
-__Player_Leg_Multiplier__: The multiplier of player_damage against player legs.
-
-__Player_Arm_Multiplier__: The multiplier of player_damage against player arms.
-
-__Player_Spine_Multiplier__: The multiplier of player_damage against player torso.
-
-__Player_Skull_Multiplier__: The multiplier of player_damage against player head.
-
-__Instakill_Headshots__: `false`, `true`. Defaults to false. If true, headshots bypass hat armor on servers with Allow_Instakill_Headshots enabled.
-
-__Player_Damage_Bleeding__: `Always`, `Default`, `Heal`, `Never`
-
-__Player_Damage_Bones__: `Always`, `Heal`, `None`
-
-__Player_Damage_Food__: Damage dealt to a player's food.
-
-__Player_Damage_Water__: Damage dealt to a player's water.
-
-__Player_Damage_Virus__: Damage dealt to a player's immunity.
-
-__Player_Damage_Hallucination__: Length of hallucinations inflicted upon a player.
-
-__Zombie_Damage__: Base damage dealt to zombie entities, prior to calculating limb modifiers, and used independently from limb modifiers for explosive and trap damage.
-
-__Zombie_Leg_Multiplier__: The multiplier of zombie_damage against zombie legs.
-
-__Zombie_Arm_Multiplier__: The multiplier of zombie_damage against zombie arms.
-
-__Zombie_Spine_Multiplier__: The multiplier of zombie_damage against zombie torso.
-
-__Zombie_Skull_Multiplier__: The multiplier of zombie_damage against zombie head.
-
-__Animal_Damage__: Base damage dealt to animal entities, prior to calculating limb modifiers, and used independently from limb modifiers for explosive and trap damage.
-
-__Animal_Leg_Multiplier__: The multiplier of animal_damage against animal limbs.
-
-__Animal_Spine_Multiplier__: The multiplier of animal_damage against animal torso.
-
-__Animal_Skull_Multiplier__: The multiplier of animal_damage against animal head.
-
-__Barricade_Damage__: Damage dealt to barricades.
-
 __Structure_Damage__: Damage dealt to structures. Multiplied by 3 in single-player.
-
-__Vehicle_Damage__: Damage dealt to vehicles.
-
-__Resource_Damage__: Damage dealt to resources.
-
-__Object_Damage__: Damage dealt to objects.
 
 __Invulnerable__: Specified if damage ignores structures, barricades, and vehicles that are considered invulnerable to low-power weaponry. Not applicable to explosive damage, which always ignores invulnerability.
 
 __Range__: For ranged and melee weapons – max distance in meters before damage is no longer possible. For explosive weapons (including magazine attachments that generate explosive projectiles) – the radius of the explosion in meters.
-
-__Explosive__: Specified if the explosive component is used.
-
-__Explosion__: The visual effect ID to play as the explosion.
-
-__Spawn_Explosion_On_Dedicated_Server__:
 
 Asset Bundles and Error Handling
 --------------------------------
@@ -123,15 +44,6 @@ Asset Bundles and Error Handling
 See [AssetBundles.md](AssetBundles.md) for full documentation regarding asset bundles.
 
 __Ignore_TexRW__: Specified if read/writeable texture errors for the item should be hidden from the error logs.
-
-Attachments
-===========
-
-* Refer to [BarrelAsset.md](/ItemAsset/BarrelAsset.md).
-* Refer to [GripAsset.md](/ItemAsset/GripAsset.md).
-* Refer to [MagazineAsset.md](/ItemAsset/MagazineAsset.md).
-* Refer to [SightAsset.md](/ItemAsset/SightAsset.md).
-* Refer to [TacticalAsset.md](/ItemAsset/TacticalAsset.md).
 
 Barricades
 ==========
@@ -326,44 +238,6 @@ __Explosion2__: Explosion effect ID for the damaging explosion.
 
 Limb-independent entity damage (e.g., Player_Damage) is also applicable.
 
-Clothing
-========
-
-* Refer to [BackpackAsset.md](/ItemAsset/BackpackAsset.md).
-* Refer to [GlassesAsset.md](/ItemAsset/GlassesAsset.md).
-* Refer to [HatAsset.md](/ItemAsset/HatAsset.md).
-* Refer to [MaskAsset.md](/ItemAsset/MaskAsset.md).
-* Refer to [PantsAsset.md](/ItemAsset/PantsAsset.md).
-* Refer to [ShirtAsset.md](/ItemAsset/ShirtAsset.md).
-* Refer to [VestAsset.md](/ItemAsset/VestAsset.md).
-
-Body Mesh Replacements
-----------------------
-
-Body mesh replacements are only applicable to shirts. See [CharacterMeshReplacement.md](CharacterMeshReplacement.md) for full documentation.
-
-__Has_1P_Character_Mesh_Override__: `false`, `true`
-
-__Character_Mesh_3P_Override_LODs__: Number of LODs.
-
-__Has_Character_Material_Override__: `false`, `true`
-
-__Hair_Visible__: `false`, `true`. Defaults to true.
-
-__Beard_Visible__: `false`, `true`. Defaults to true.
-
-Consumables
-===========
-
-* Refer to [FoodAsset.md](/ItemAsset/FoodAsset.md).
-* Refer to [MedicalAsset.md](/ItemAsset/MedicalAsset.md).
-* Refer to [WaterAsset.md](/ItemAsset/WaterAsset.md).
-
-Crafting Supplies
-=================
-
-* Refer to [SupplyAsset.md](/ItemAsset/SupplyAsset.md).
-
 Fishing Poles
 =============
 
@@ -389,186 +263,10 @@ __Type__: `Grower`
 
 __Useable__: `Grower`
 
-Mapping Equipment
-=================
-
-* Refer to [MapAsset.md](/ItemAsset/MapAsset.md).
-
 Melee Weapons
 =============
 
 No documentation is available at this time.
-
-Optics
-======
-
-* Refer to [OpticAsset.md](/ItemAsset/OpticAsset.md).
-
-Parachutes
-==========
-
-* Refer to [CloudAsset.md](/ItemAsset/CloudAsset.md).
-
-Projectiles
-===========
-
-__Type__: `Throwable`
-
-__Useable__: `Throwable`
-
-__Explode_On_Impact__: Specified if the projectile immediately explodes upon impact.
-
-__Sticky__: Specified if the projectile sticks to objects upon impact.
-
-__Fuse_Length__: Timer in seconds for fuse length. Defaults to 2 seconds.
-
-Limb-independent damage is also applicable.
-
-Radiation Filters
-=================
-
-* Refer to [FilterAsset.md](/ItemAsset/FilterAsset.md).
-
-Ranged Weapons
-==============
-
-__Type__: `Gun`
-
-__Useable__: `Gun`
-
-__Barrel__: The barrel item ID to spawn attached.
-
-__Grip__: The grip item ID to spawn attached.
-
-__Sight__: The sight item ID to spawn attached.
-
-__Tactical__: The tactical item ID to spawn attached.
-
-__Hook_Barrel__: Specified if a barrel can be manually attached.
-
-__Hook_Grip__: Specified if a grip can be manually attached.
-
-__Hook_Sight__: Specified if a sight can be manually attached.
-
-__Hook_Tactical__: Specified if a tactical can be manually attached.
-
-__Magazine__: The magazine item ID to spawn attached.
-
-__Magazine_Replacements__: Number of unique conditions with alternative default magazine attachments.
-
-__Magazine_Replacement\_#\_Map__: Name of the map the condition applies to.
-
-__Magazine_Replacement\_#\_ID__: ID of the alternative magazine attachment.
-
-__Ammo_Min__: The minimum amount of ammo to generate.
-
-__Ammo_Max__: The maximum amount of ammo to generate.
-
-__Safety__: Specified if the safety firing mode can be swapped to.
-
-__Semi__: Specified if semi-automatic firing mode can be swapped to.
-
-__Bursts__: Number of shots fired in a burst. Specified if burst firing mode can be swapped to.
-
-__Auto__: Specified if automatic firing mode can be swapped to.
-
-__Caliber__: The caliber ID to check for attachment compatibility.
-
-__Attachment_Calibers__: Number of unique attachment calibers.
-
-__Attachment_Caliber\_#__: ID of applicable caliber for hook attachments.
-
-__Magazine_Calibers__: Number of unique magazine calibers.
-
-__Magazine_Caliber\_#__: ID of applicable caliber for magazine attachments.
-
-__Firerate__: The minimum number of ticks between the firing of each bullet.
-
-__Replace__: Multiplier of the reload animation length before the magazine is respawned.
-
-__Unplace__: Multiplier of the reload animation length before the magazine is despawned.
-
-__Reload_Time__: Multiplier on reload animation length.
-
-__Action__: `Bolt`, `Break`, `Minigun`, `Pump`, `Rail`, `Rocket`, `String`, `Trigger`. Rocket action has inherently explosive projectiles, uses ballistic force instead of alternative advanced ballistics options, and has infinite firing range.
-
-__Delete_Empty_Magazines__: Specified if the attached magazine should be deleted when depleted. Deprecated in favor of Should_Delete_Empty_Magazines.
-
-__Should_Delete_Empty_Magazines__: `false`, `true`. No applicable default flag. If set to true, it will override how empty magazines are handled by the action item mode.
-
-__Spread_Aim__: The spread multiplier when aiming down sights. This is multiplied by the spread_hip value.
-
-__Spread_Hip__: The spread multiplier when not aiming down sights.
-
-__Spread_Sprint__: The spread multiplier when sprinting. Defaults to 1. Requires `Can_Aim_During_Sprint true`.
-
-__Spread_Crouch__: The spread multiplier when crouched. Defaults to 1.
-
-__Spread_Prone__: The spread multiplier when prone. Defaults to 1.
-
-__Ballistic_Force__: Measured in Newtons. Primarily applicable to the rocket action, and usage ignores all other advanced ballistic options.
-
-__Ballistic_Steps__: Defaults to (range / 10).
-
-__Ballistic_Travel__: Defaults to 10.
-
-__Ballistic_Drop__: Defaults to 0.002.
-
-__Recoil_Aim__: Multiplier on all recoil parameters when aiming down sights. Defaults to 1.
-
-__Recoil_Sprint__: Multiplier on horizontal and vertical look recoil while sprinting. Defaults to 1. Requires `Can_Aim_During_Sprint true`.
-
-__Recoil_Crouch__: Multiplier on horizontal and vertical look recoil while crouched. Defaults to 1. 
-
-__Recoil_Prone__: Multiplier on horizontal and vertical look recoil while proned. Defaults to 1. 
-
-__Recoil_Min_X__: The minimum horizontal look recoil in degrees.
-
-__Recoil_Min_Y__: The minimum vertical look recoil in degrees.
-
-__Recoil_Max_X__: The maximum horizontal look recoil in degrees.
-
-__Recoil_Max_Y__: The maximum vertical look recoil in degrees.
-
-__Recover_X__: Multiplier on degrees to be counter-animated horizontally over the next 250 milliseconds.
-
-__Recover_Y__: Multiplier on degrees to be counter-animated vertically over the next 250 milliseconds.
-
-__Shake_Min_X__: The minimum X axis physical recoil.
-
-__Shake_Max_X__: The maximum X axis physical recoil.
-
-__Shake_Min_Y__: The minimum Y axis physical recoil.
-
-__Shake_Max_Y__: The maximum Y axis physical recoil.
-
-__Shake_Min_Z__: The minimum Z axis physical recoil.
-
-__Shake_Max_Z__: The maximum Z axis physical recoil.
-
-__Muzzle__: The muzzle effect ID to play when shooting.
-
-__Shell__: The shell effect ID to play after shooting.
-
-__Turret__: Specified if the weapon should be treated as a vehicular turret.
-
-__Can_Ever_Jam__: Specified if the weapon can jam.
-
-__Jam_Quality_Threshold__: Decimal representative of the quality percentage threshold for jamming can begin to occur.
-
-__Jam_Max_Chance__: Decimal-to-percent chance for jamming to occur.
-
-__Unjam_Chamber_Anim__: Name of the animation clip to play for unjamming. Defaults to UnjamChamber.
-
-__Can_Aim_During_Sprint__: `false`, `true`. Defaults to false. If true, the player can sprint while aiming down sights.
-
-__Ammo_Per_Shot__: Numeric option for ammunition consumed per shot.
-
-__Fire_Delay_Seconds__: Numeric option for the delay between initiating attempting to fire, and the actual firing of the weapon.
-
-__Allow_Magazine_Change__: `false`, `true`. Defaults to true. If false, the magazine in the weapon cannot be reloaded, unloaded, or replaced.
-
-Damage data (explosive, limb-dependent, and limb-independent setups), durability, and wear are also applicable.
 
 Remote Triggers
 ===============
@@ -576,12 +274,6 @@ Remote Triggers
 __Type__: `Detonator`
 
 __Useable__: `Detonator`
-
-Restraining Devices
-===================
-
-* Refer to [ArrestEndAsset.md](/ItemAsset/ArrestEndAsset.md) for releasers.
-* Refer to [ArrestStartAsset.md](/ItemAsset/ArrestStartAsset.md) for catchers.
 
 Structures
 ==========
