@@ -1,4 +1,5 @@
-# Server Hosting Rules
+Server Hosting Rules
+====================
 
 Servers that violate these rules may be temporarily or permanently banned. To report a server for rule violations, or appeal a moderation decision applied to your server, you may file a ticket with SDG Support:
 
@@ -7,19 +8,22 @@ Servers that violate these rules may be temporarily or permanently banned. To re
 
 [View Moderation List](https://smartlydressedgames.com/UnturnedHostBans/index.html)
 
-## Recent changes
+Recent changes
+--------------
 
 **2023-02-15 revisions:** Many of the rules have been revised to be clearer, with regards to what is (or isn't) currently allowed. "Consumable microtransaction" is better defined, there are a couple of new examples, and deceptive pricing has its own dedicated asection. The monetization filter section also includes more information about the filter, its purpose, and which of the four options (including a newer "Monetized" option) your server should use.
 
 **2022-10-16 clarification:** Selling *vanilla* cosmetics, such as those available from the Stockpile or Steam Community Market, is not allowed. When offering cosmetics as a server microtransaction, the server network should should own (or have licensed) the rights to that content. Servers should not sell cosmetic content that they do not own the right to, such as vanilla cosmetics (either official, or community-contributed).
 
-## Monetization Types
+Monetization Types
+------------------
 
 Warnings for breaking the monetization rules first began being sent out on May 28, 2021. The monetization rules have now been in full effect since June 11, 2021.
 
 Hosts are allowed to sell permanent benefits and monthly subscriptions. Consumable microtransactions are **not** allowed. A consumable microtransaction is anything that can be permanently consumed, lost, stolen, or destroyed. If it cannot be permanently lost, then it is not considered a consumable.
 
-## Examples
+Examples
+--------
 
 This section will provide *examples* of allowed/banned monetization options. It is not an exhaustive list of every possible monetization strategy.
 
@@ -41,7 +45,8 @@ This section will provide *examples* of allowed/banned monetization options. It 
 - Selling ranks, kits, unlocks, benefits, etc. which stack with themselves as a loophole.
 - Selling copies of **vanilla** cosmetics, such as those available on the Stockpile or Steam Community Market.
 
-## Monetization Filter
+Monetization Filter
+-------------------
 
 Players can filter the in-game server list by this field. It is not required to configure this field, but ideally it should be set to whichever value accurately describes your server's monetization practices. When configured, this field must be configured truthfully.
 
@@ -61,15 +66,18 @@ Servers that only offer microtransactions that do not provide a gameplay advanta
 
 Servers that offer *any* "pay-to-win" microtransactions (i.e., those that provide a gameplay advantage)—such as selling "kits" containing items or vehicles—should use the `Monetized` option.
 
-## Deceptive Pricing
+Deceptive Pricing
+-----------------
 
 Fictitious and deceptive pricing is not allowed. For example: lying that a discount is nearly expired, or pretending the price is discounted when it has never been at the listed full price. We would strongly advise following [Steam's discounting rules](https://partner.steamgames.com/doc/marketing/discounts) to help avoid breaking any real-world laws.
 
-## Online Conduct
+Online Conduct
+--------------
 
 Repeated offenders of [Steam's rules and guidelines](https://support.steampowered.com/kb_article.php?ref=4045-USHJ-3810) will be banned.
 
-## Workshop File Copyright Infringement
+Workshop File Copyright Infringement
+------------------------------------
 
 Mod authors can submit a notice of copyright infringement here: https://steamcommunity.com/dmca/create/
 
