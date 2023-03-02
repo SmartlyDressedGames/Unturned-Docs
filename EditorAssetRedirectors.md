@@ -1,4 +1,5 @@
-# Editor Asset Redirectors
+Editor Asset Redirectors
+========================
 
 If many objects need to be replaced on a map the old object guid can be redirected to a new guid rather than manually replacing them. This works similarly to the automatic holiday object replacements, but applies while loading a map in the editor, and changes are kept when the map is saved.
 
