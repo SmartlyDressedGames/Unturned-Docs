@@ -1,4 +1,5 @@
-# Glazier
+Glazier
+=======
 
 Unity (the game engine Unturned runs on) has three different incompatible UI systems, each with different bugs:
 1. IMGUI
@@ -9,7 +10,8 @@ Unturned has a feature nicknamed **Glazier** which abstracts the underlying UI s
 
 uGUI is Unity's current recommended UI system, but unfortunately some players run into visual artifacts and flickering UI with it. In those cases enabling IMGUI is recommended.
 
-## IMGUI
+IMGUI
+-----
 
 You can opt to use Unity's legacy UI system, IMGUI, by enabling a command-line argument:
 1. Right-click Unturned in your Steam library
@@ -27,7 +29,8 @@ Cons:
 - Plugin UIs are sorted underneath the game UI i.e. plugin UI cannot overlay.
 - Rich text does not fade out in chat.
 
-## uGUI
+uGUI
+----
 
 This is Unturned's current default UI system, so opting in is not necessary.
 

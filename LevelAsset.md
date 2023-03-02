@@ -31,7 +31,8 @@ For examples check the `Assets/Levels` directory.
 
 This is an [Asset v2](AssetsV2.md) class.
 
-## Schedulable Weather Properties
+Schedulable Weather Properties
+------------------------------
 
 `Asset` [Asset Pointer](AssetPtr.md) to a [Weather Asset](WeatherAsset.md).
 
@@ -43,7 +44,8 @@ This is an [Asset v2](AssetsV2.md) class.
 
 `Max_Duration` *float*: Maximum number of in-game days before the weather event will end.
 
-## Skill Rule Properties
+Skill Rule Properties
+---------------------
 
 `Id` string: Name of skill, for example Sharpshooter.
 
@@ -53,7 +55,8 @@ This is an [Asset v2](AssetsV2.md) class.
 
 `Cost_Multiplier` *float*: multiplier for XP upgrade cost.
 
-## Music Properties
+Music Properties
+----------------
 
 `Loop` [Master Bundle Pointer](MasterBundlePtr.md): looping audio clip played until loading finishes.
 

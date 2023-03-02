@@ -1,4 +1,5 @@
-# Weather Asset
+Weather Asset
+=============
 
 Overrides the built-in snow and rain weather with custom events. This is feature is a work-in-progress.
 
@@ -6,13 +7,15 @@ Random weather can be scheduled to occur naturally on a map with the `Weather_Ty
 
 This is an [Asset v2](AssetsV2.md) class.
 
-## How to test?
+How to test?
+------------
 
 When a GUID is passed to the weather command it will start a custom weather event, and 0 can be used to end it.
 
 	/weather 819982d7a2b6453488a8c4c5d9efe67f
 
-## Properties Reference
+Properties Reference
+--------------------
 
 `Volume_Mask` [u32 Mask](Bitmask.md): only enabled while inside an ambience volume with non-zero bitwise AND result. Defaults to 0xFFFFFFFF.
 
@@ -54,7 +57,8 @@ When a GUID is passed to the weather command it will start a custom weather even
 
 `Max_Lightning_Interval` *float*: maximum seconds between lightning strikes.
 
-## Time of Day Properties
+Time of Day Properties
+----------------------
 
 Each of the four main times of day can override certain properties.
 
@@ -68,7 +72,8 @@ Each of the four main times of day can override certain properties.
 
 `Brightness_Multiplier` *float*: all ambient lighting colors are multiplied by this.
 
-## Effect Properties
+Effect Properties
+-----------------
 
 Multiple effects can be instantiated while the weather is active.
 
@@ -82,13 +87,15 @@ Multiple effects can be instantiated while the weather is active.
 
 `Rotate_Yaw_With_Wind` *bool*: should y-axis rotation match the wind direction? The built-in snow and rain rotate with wind.
 
-## Color Properties
+Color Properties
+----------------
 
 Each color can use a custom override, or a color from the level editor lighting panel. Using a level color is primarily for rain and snow backwards compatibility.
 
 `Level_Enum` *enum*: if set then the RGB specified are multiplied by this color.
 `R`, `G`, `B` *uint8*: color channel values.
 
-## NPC Conditions
+NPC Conditions
+--------------
 
 Global weather state and current weather intensity blend can be tested through NPC conditions. Refer to [Conditions.md](/NPCAsset/Conditions.md) for documentation.

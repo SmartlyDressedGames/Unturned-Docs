@@ -1,4 +1,5 @@
-# Foliage
+Foliage
+=======
 
 This is an [Asset v2](AssetsV2.md) class.
 
@@ -6,7 +7,8 @@ There are sub-types of foliage asset for different uses, most notably instanced 
 1. Different biomes or levels can use the same trees with different parameters. For example a dense forest material with less dense forest surrounding it, or using tree assets from a different map with custom configuration.
 2. Eventually the resource system should be converted into a regular objects (this will be automatic) but most objects do not need foliage parameters.
 
-## FoliageResourceInfoAsset Properties Reference
+FoliageResourceInfoAsset Properties Reference
+---------------------------------------------
 
 `Resource` [Asset Pointer](AssetPtr.md): actual tree to spawn.
 
@@ -22,7 +24,8 @@ There are sub-types of foliage asset for different uses, most notably instanced 
 
 `Max_Angle` *float*: [0, 90] degrees only spawn if surface angle is less than this value. For example a tree not growing on slopes steeper than 30 degrees.
 
-## Upgrade Devkit Foliage from V1 to V2
+Upgrade Devkit Foliage from V1 to V2
+------------------------------------
 
 Note: maps with auto-converted terrain from the 3.22.8.0 update will already have been converted to V2.
 

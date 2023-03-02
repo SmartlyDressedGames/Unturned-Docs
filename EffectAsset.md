@@ -1,5 +1,5 @@
-Effects
-=======
+Effect Assets
+=============
 
 **GUID** *32-digit hexadecimal*: Refer to [GUID](GUID.md) documentation.
 

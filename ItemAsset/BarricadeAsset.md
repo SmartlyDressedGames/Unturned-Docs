@@ -1,4 +1,5 @@
-# Barricade Assets
+Barricade Assets
+================
 
 Noting these here for now until barricade properties are documented:
 
