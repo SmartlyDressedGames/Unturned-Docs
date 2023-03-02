@@ -1,4 +1,5 @@
-# Physics Material Asset
+Physics Material Assets
+=======================
 
 Work-in-progress feature to allow custom physics effects rather than hardcoding them.
 
@@ -8,7 +9,8 @@ The `PhysicsMaterialExtensionAsset` type can be used to insert custom properties
 
 This is an [Asset v2](AssetsV2.md) class.
 
-## Properties
+Properties
+----------
 
 `UnityName` *string* or `UnityNames` *string array*: names of Unity "physic" materials to associate with this asset. Not set by extension assets. Multiple names can be specified as an array because the old built-in physics materials had several variants for special cases that should now be handled by these assets.
 
