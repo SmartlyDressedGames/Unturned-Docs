@@ -1,5 +1,5 @@
 Upgrading from Unity 2017 LTS to 2018 LTS
-=============================================
+=========================================
 
 Asset Bundles
 -------------
@@ -24,7 +24,7 @@ Workshop
 Uploads from 2018 LTS are incompatible with past versions of the game, and a warning message is shown when loading newer content in the 2017 LTS version.
 
 2017 LTS Availability
--------------------
+---------------------
 
 For archival purposes the 2017 LTS version of the game will remain in a "unity-2017" beta branch.
 
