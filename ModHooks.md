@@ -1,6 +1,8 @@
-# Mod Hooks
+Mod Hooks
+=========
 
-## Overview
+Overview
+--------
 
 Script Components can be added to Game Objects in Unity and exported in Asset Bundles _IF_ they match a script in the base game code. These intentionally exportable scripts are referred to as __Mod Hooks__. They can be imported into a Unity project from the Project.unitypackage, and added to game objects inside the Unturned components menu. Each script makes several Events available which can drive other component properties like visibility or play an animation.
 
@@ -8,7 +10,8 @@ Each script documents its purpose and members within its *.cs file.
 
 Originally proposed and coined by VitaxaRusModding in this GitHub issue: [Link](https://github.com/SmartlyDressedGames/Unturned-3.x-Community/issues/435)
 
-## Event Listeners
+Event Listeners
+---------------
 
 ### Activation Event Hook
 
@@ -62,7 +65,8 @@ Events for day, night, full moon, and weather. These events are fired on server 
 
 Events for a specific custom [Weather Asset](WeatherAsset.md). Any map can have an unlimited number of weather types and weather listeners.
 
-## Event Instigators
+Event Instigators
+-----------------
 
 ### Client Text Chat Messenger
 
@@ -80,7 +84,8 @@ The `UnityEvents.Allow_Server_Messages` and/or `UnityEvents.Allow_Server_Command
 
 Allows Unity events to spawn effect assets. When the `AuthorityOnly` field is enabled only the server will spawn effects and replicate them to clients.
 
-## Misc
+Misc
+----
 
 ### Fall Damage Override
 
