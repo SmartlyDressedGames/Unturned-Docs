@@ -1,14 +1,17 @@
-# Rocket
+Rocket
+======
 
 SDG maintains a fork of **Rocket** called the Legally Distinct Missile (or LDM) after the resignation of its original community team. Using this fork is recommended because it preserves compatibility, and has fixes for important legacy Rocket issues like multithreading exceptions and teleportation exploits.
 
-## Installation
+Installation
+------------
 
 The dedicated server includes the latest version, so an external download is not necessary:
 1. Copy the Rocket.Unturned module from the game's Extras directory.
 2. Paste it into the game's Modules directory.
 
-## Resources
+Resources
+---------
 
 Browse the source code for the maintained version: [Legally Distinct Missile Repository](https://github.com/SmartlyDressedGames/Legally-Distinct-Missile)
 
@@ -18,7 +21,8 @@ Following closure of the original forum the recommended sites for developer disc
 
 The RocketMod organization on GitHub hosts several related archived projects: [RocketMod (Abandoned)](https://github.com/RocketMod)
 
-## History
+History
+-------
 
 On the 20th of December 2019 Sven Mawby "fr34kyn01535" and Enes Sadık Özbek "Trojaner" officially ceased maintenance of Rocket. They kindly released the source code under the MIT license. [Read their full farewell statement here.](https://github.com/RocketMod/Rocket/blob/master/Farewell.md)
 
