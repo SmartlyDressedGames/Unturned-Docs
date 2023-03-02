@@ -1,5 +1,5 @@
-Spawns
-======
+Spawn Assets
+============
 
 The spawn asset type represents the weighted chances of an individual item, vehicle, or animal spawning at an any given spawn point. Create custom spawn tables that can be used on custom, curated, and official maps.
 
