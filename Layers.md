@@ -1,8 +1,10 @@
-# Layers
+Layers
+======
 
 Upfront: obviously Unturned makes poor use of Unity's Layers. This document exists as much for my personal reference as yours. My only defense is that these layers are entrenched from the earliest versions back in 2013, when I was 15 or 16.
 
-## Overview
+Overview
+--------
 
 Built-in Layers
 - 0 Default
@@ -37,7 +39,8 @@ User Layers
 - 30 Trap: typically trigger colliders including rocket launcher projectiles and kill volumes.
 - 31 Ground2: no longer used after old maps were converted to terrain tiles. Previously this was for out-of-bounds terrain. Reserved for future use.
 
-## Layer Collision Matrix
+Layer Collision Matrix
+----------------------
 
 Note that these comments do **NOT** apply to collision queries like raycasts, spherecasts, etc.
 
