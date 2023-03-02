@@ -1,5 +1,5 @@
 Grip Assets
-============
+===========
 
 Grip attachments are inventory items that can be attached to ranged weapons.
 
