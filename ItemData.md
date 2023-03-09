@@ -266,13 +266,6 @@ Melee Weapons
 
 No documentation is available at this time.
 
-Remote Triggers
-===============
-
-__Type__: `Detonator`
-
-__Useable__: `Detonator`
-
 Structures
 ==========
 
