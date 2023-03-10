@@ -43,8 +43,6 @@ Asset Bundles and Error Handling
 
 See [AssetBundles.md](AssetBundles.md) for full documentation regarding asset bundles.
 
-__Ignore_TexRW__: Specified if read/writeable texture errors for the item should be hidden from the error logs.
-
 Barricades
 ==========
 
@@ -267,13 +265,6 @@ Melee Weapons
 =============
 
 No documentation is available at this time.
-
-Remote Triggers
-===============
-
-__Type__: `Detonator`
-
-__Useable__: `Detonator`
 
 Structures
 ==========
