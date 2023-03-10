@@ -16,3 +16,17 @@ Item Asset Properties
 
 Box Asset Properties
 --------------------
+
+**Generate** *int32*: 
+
+**Destroy** *int32*: 
+
+**Drops** *int32*: 
+
+**Drop_#** *int32*: 
+
+**Item_Origin** *enum* (`Unbox`, `Unwrap`): 
+
+**Probability_Model** *enum* (`Equalized`, `Original`): 
+
+**Contains_Bonus_Items** *bool*: 
