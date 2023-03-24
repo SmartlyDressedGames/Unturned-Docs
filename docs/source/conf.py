@@ -15,9 +15,10 @@ extensions = [
     'sphinx.ext.duration',
     'sphinx.ext.doctest',
     'sphinx.ext.autodoc',
-    "sphinx.ext.autosectionlabel", # create explicit targets for all sections in the form of {path/to/page}:{title-of-section}
+    'sphinx.ext.autosectionlabel', # create explicit targets for all sections in the form of {path/to/page}:{title-of-section}
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'sphinx_rtd_theme', # "Read the Docs Sphinx Theme" https://sphinx-rtd-theme.readthedocs.io/en/stable/index.html
 ]
 
 autosectionlabel_prefix_document = True # make sure explicit target is unique

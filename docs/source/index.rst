@@ -23,63 +23,89 @@ Several older tutorial videos are gradually becoming outdated and don't represen
 * `Building Models <https://www.youtube.com/watch?v=rAZ9KEGjSUk>`_
 
 .. Below is the table-of-content tree for the website,
-   which is hidden from the page but appears in the sidebar.
+	which is hidden from the page but appears in the sidebar.
 
 .. toctree::
-   :hidden:
-   :maxdepth: 1
-   :caption: Documentation
-   
-   ItemAsset/README
-   NPCAsset/README
-   
-   AirdropAsset
-   AnimalAsset
-   Animation
-   AssetBundleCustomData
-   AssetBundles
-   AssetPtr
-   AssetsV1
-   AssetsV2
-   AssetValidation
-   Bitmask
-   CharacterMeshReplacement
-   CommandLine
-   CommandIO
-   CraftingBlacklistAsset
-   CuratedMaps
-   Currency
-   DedicatedWorkshopUpdateMonitor
-   EditorAssetRedirectors
-   EffectAsset
-   FavoriteSearches
-   Foliage
-   GameServerLoginTokens
-   GettingStarted
-   Glazier
-   GUID
-   ItemData
-   Landscape
-   Layers
-   LevelAsset
-   LevelBatching
-   LevelConfig
-   ManualObjectCulling
-   MasterBundlePtr
-   ModHooks
-   OpenMod
-   PhysicsMaterialAsset
-   PortForwarding
-   Rocket
-   RocketMod
-   ServerHosting
-   ServerHostingRules
-   ServerUpdateNotifications
-   SpawnAsset
-   StereoSongAsset
-   Troubleshooting
-   Unity2018
-   Unity2019
-   VehiclePhysicsProfile
-   WeatherAsset
-   ZombieDifficultyAsset
+	:hidden:
+	:maxdepth: 1
+	:caption: About
+	
+	about/Troubleshooting
+	about/GettingStarted
+
+.. First section has articles on assets (in general).
+	Second section lists asset types, alphabetically.
+.. toctree::
+	:hidden:
+	:maxdepth: 1
+	:caption: Asset Manual
+	
+	assets/AssetBundleCustomData
+	assets/AssetBundles
+	assets/AssetsV1
+	assets/AssetsV2
+	assets/AssetValidation
+
+	assets/AirdropAsset
+	assets/AnimalAsset
+	assets/Animation
+	assets/CharacterMeshReplacement
+	assets/CraftingBlacklistAsset
+	assets/Currency
+	assets/EffectAsset
+	assets/Foliage
+	assets/ItemAsset/index
+	assets/ItemData
+	assets/Layers
+	assets/LevelAsset
+	assets/ModHooks
+	assets/NPCAsset/index
+	assets/PhysicsMaterialAsset
+	assets/SpawnAsset
+	assets/StereoSongAsset
+	assets/Unity2018
+	assets/Unity2019
+	assets/VehiclePhysicsProfile
+	assets/WeatherAsset
+	assets/ZombieDifficultyAsset
+
+.. toctree::
+	:hidden:
+	:maxdepth: 1
+	:caption: Mapping
+	
+	mapping/CuratedMaps
+	mapping/EditorAssetRedirectors
+	mapping/FavoriteSearches
+	mapping/Landscape
+	mapping/LevelBatching
+	mapping/LevelConfig
+	mapping/ManualObjectCulling
+
+.. toctree::
+	:hidden:
+	:maxdepth: 1
+	:caption: Servers & Programming
+
+	servers/CommandIO
+	servers/CommandLine
+	servers/DedicatedWorkshopUpdateMonitor
+	servers/GameServerLoginTokens
+	servers/Glazier
+	servers/OpenMod
+	servers/PortForwarding
+	servers/Rocket
+	servers/RocketMod
+	servers/ServerHosting
+	servers/ServerHostingRules
+	servers/ServerUpdateNotifications
+
+.. toctree::
+	:hidden:
+	:maxdepth: 1
+	:caption: Data types
+	
+	data/AssetPtr
+	data/Bitmask
+	data/GUID
+	data/MasterBundlePtr

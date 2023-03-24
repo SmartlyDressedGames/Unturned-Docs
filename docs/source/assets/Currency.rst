@@ -3,7 +3,7 @@ Currency
 
 Any collection of items with different numeric values can be associated together in a **Currency** asset. NPCs can then automatically convert between the different items, and vendor menus can display information using the linked currency. This is intended to be useful beyond real-world currencies, e.g. bartering ammunition.
 
-.. figure:: images/VendorCurrency.jpg
+.. figure:: img/VendorCurrency.jpg
 	
 	P.Riso's Hot Stuff vendor.
 

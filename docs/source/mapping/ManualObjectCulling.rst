@@ -5,7 +5,7 @@ This article is intended for map developers and explains **Manual Object Culling
 
 Drawing fewer objects is usually better for performance. Culling volumes allow you to override the distance at which the contained objects are drawn where otherwise they might be drawn much further away than necessary. For example, by default the vanilla chair models are visible from quite far away in case they are placed outdoors, whereas inside an office building they only need to be seen while near the building.
 
-.. figure:: images/CullingVolumes.jpg
+.. figure:: img/CullingVolumes.jpg
 	
 	A building in Moscow with culling volumes.
 

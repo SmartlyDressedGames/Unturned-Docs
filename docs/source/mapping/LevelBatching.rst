@@ -70,7 +70,7 @@ Previewing renderers using atlas
 
 You can visualize which renderers have been included in the texture atlas by loading singleplayer with the ``-PreviewLevelBatchingTextureAtlas`` launch option:
 
-.. figure:: images/TextureAtlasPreview.jpg
+.. figure:: img/TextureAtlasPreview.jpg
 
 	Berlin with texture atlas preview enabled.
 

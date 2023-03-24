@@ -100,7 +100,7 @@ How to Launch Server on Windows
 	2. At the top of the File Explorer window, navigate to the View tab on the ribbon.
 	3. In the Show/hide section of options, ensure that the "File name extensions" box is checked.
 	
-	.. image:: images/FileNameExtensions.jpg
+	.. image:: img/FileNameExtensions.jpg
 
 	4. File extensions should now be displayed at the end of file names.
 3. Rename the "New Text Document.txt" file, and change it from a text file (.txt) to a batch script file (.bat). For example, "Tutorial.bat".
@@ -116,7 +116,7 @@ How to Launch Server on Windows
 6. Save your changes to the file, and close the file.
 7. Double-click the batch script to launch the server. A command-line interface should appear. Because this is the first time we have ran the batch file, it is going to generate a bunch of necessary server files.
 
-.. image:: images/InterfaceU3DS.jpg
+.. image:: img/InterfaceU3DS.jpg
 
 8. When the command-line interface stops outputting new lines of text, it has finished loading (and finished generating all necessary files). You can safely close the server by executing (typing, and then pressing the "↵ Enter" key on your keyboard) the following command on the command-line interface: ``shutdown``
 
