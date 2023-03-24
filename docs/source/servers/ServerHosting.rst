@@ -5,11 +5,11 @@ All multiplayer servers are hosted using the Unturned Dedicated Server tool (som
 
 **Multiplatform:**
 
-- :ref:`How to Install Server using SteamCMD <ServerHosting:How to Install Server using SteamCMD>`
-- :ref:`How to Install Server without SteamCMD <ServerHosting:How to Install Server without SteamCMD>`
-- :ref:`How to Configure Server <ServerHosting:How to Configure Server>`
-- :ref:`How to Host Curated Maps <ServerHosting:How to Host Curated Maps>`
-- :ref:`How to Host Over Internet <ServerHosting:How to Host Over Internet>`
+- :ref:`How to Install Server using SteamCMD <servers/ServerHosting:How to Install Server using SteamCMD>`
+- :ref:`How to Install Server without SteamCMD <servers/ServerHosting:How to Install Server without SteamCMD>`
+- :ref:`How to Configure Server <servers/ServerHosting:How to Configure Server>`
+- :ref:`How to Host Curated Maps <servers/ServerHosting:How to Host Curated Maps>`
+- :ref:`How to Host Over Internet <servers/ServerHosting:How to Host Over Internet>`
 - `Port Forwarding <PortForwarding.rst>`_
 - `Rocket <Rocket.rst>`_
 - `Login Tokens <GameServerLoginTokens.rst>`_
@@ -18,14 +18,14 @@ All multiplayer servers are hosted using the Unturned Dedicated Server tool (som
 
 **Windows:**
 
-- :ref:`How to Install SteamCMD <ServerHosting:How to Install SteamCMD on Windows>`
-- :ref:`How to Launch Server <ServerHosting:How to Launch Server on Windows>`
+- :ref:`How to Install SteamCMD <servers/ServerHosting:How to Install SteamCMD on Windows>`
+- :ref:`How to Launch Server <servers/ServerHosting:How to Launch Server on Windows>`
 - `Video Tutorial <https://www.youtube.com/watch?v=8axVrnSLlx4>`_
 
 **Linux:**
 
-- :ref:`How to Install SteamCMD <ServerHosting:How to Install SteamCMD on Linux>`
-- :ref:`How to Launch Server <ServerHosting:How to Launch Server on Linux>`
+- :ref:`How to Install SteamCMD <servers/ServerHosting:How to Install SteamCMD on Linux>`
+- :ref:`How to Launch Server <servers/ServerHosting:How to Launch Server on Linux>`
 
 How to Install SteamCMD on Windows
 ----------------------------------
@@ -41,7 +41,7 @@ How to Install SteamCMD on Linux
 
 Installation on Linux varies by distribution and your admin preferences, so refer to `Valve's Linux Documentation <https://developer.valvesoftware.com/wiki/SteamCMD#Linux>`_. Once downloaded, run the ``steamcmd.sh`` script.
 
-Continue to: :ref:`How to Install Server using SteamCMD <ServerHosting:How to Install Server using SteamCMD>`
+Continue to: :ref:`How to Install Server using SteamCMD <servers/ServerHosting:How to Install Server using SteamCMD>`
 
 How to Install Server using SteamCMD
 ------------------------------------
@@ -68,7 +68,7 @@ How to Install Server using SteamCMD
 
 4. The server files are now in the ``...SteamCMD\steamapps\common\U3DS`` directory.
 
-Continue to: [How to Launch Server on Windows](#How-to-Launch-Server-on-Windows) or [How to Launch Server on Linux](#How-to-Launch-Server-on-Linux)
+Continue to: :ref:`How to Launch Server on Windows <servers/ServerHosting:How to Launch Server on Windows>` or :ref:`How to Launch Server on Linux <servers/ServerHosting:How to Launch Server on Linux>`
 
 How to Install Server without SteamCMD
 --------------------------------------
@@ -89,7 +89,7 @@ To navigate to the server files install directory:
 
 The rest of the documentation assumes that the Unturned Dedicated Server tool was downloaded with SteamCMD, rather than through your Steam Library, so some of the documentation may differ slightly.
 
-Continue to: [How to Launch Server on Windows](#How-to-Launch-Server-on-Windows) or [How to Launch Server on Linux](#How-to-Launch-Server-on-Linux)
+Continue to: :ref:`How to Launch Server on Windows <servers/ServerHosting:How to Launch Server on Windows>` or :ref:`How to Launch Server on Linux <servers/ServerHosting:How to Launch Server on Linux>`
 
 How to Launch Server on Windows
 -------------------------------
@@ -122,7 +122,7 @@ How to Launch Server on Windows
 
 9. The batch script has created a new file directory located in ``...\U3DS\Servers``, called "MyServer". This directory is where all the savedata and configuration files are kept. Changing the `MyServer` ServerID (from step 5) in the batch script to a different name will allow for keeping savedata separate across multiple servers, and for running multiple servers at once.
 
-10. (optional) For your server to be visible on the in-game internet server list you will need to set a [Login Token](GameServerLoginTokens.md) and configure [Port Forwarding](PortForwarding.md).
+10. (optional) For your server to be visible on the in-game internet server list you will need to set a :ref:`Login Token <doc_servers_gslt>` and configure :ref:`Port Forwarding <doc_servers_portforward>`.
 
 How to Launch Server on Linux
 -----------------------------
@@ -140,7 +140,7 @@ How to Launch Server on Linux
 
 4. The executed command has created a new file directory located in ``.../U3DS/Servers``, called "MyServer". This directory is where all the savedata and configuration files are kept. Changing the ``MyServer`` ServerID (from step 2) in the batch script to a different name will allow for keeping savedata separate across multiple servers, and for running multiple servers at once.
 
-5. (optional) For your server to be visible on the in-game internet server list you will need to set a [Login Token](GameServerLoginTokens.md) and configure [Port Forwarding](PortForwarding.md).
+5. (optional) For your server to be visible on the in-game internet server list you will need to set a :ref:`Login Token <doc_servers_gslt>` and configure :ref:`Port Forwarding <doc_servers_portforward>`.
 
 How to Configure Server
 -----------------------
@@ -246,6 +246,6 @@ Hosting a publicly-accessible internet server requires an extra step compared to
 
 One way to think of it is that when there are multiple devices (e.g. computers and phones) connected to the LAN, the outside internet does not know which device is the Unturned server. In this case port forwarding specifies which LAN device is the host.
 
-For port ranges and other details: `Port Forwarding <PortForwarding.rst>`_
+For port ranges and other details: :ref:`Port Forwarding <doc_servers_portforward>`.
 
-Listing your server on the in-game internet server list requires a `Login Token <GameServerLoginTokens.rst>`_ to be set.
+Listing your server on the in-game internet server list requires a :ref:`Login Token <doc_servers_gslt>` to be set.

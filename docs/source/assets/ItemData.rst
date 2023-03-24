@@ -11,16 +11,6 @@ Item Data (outdated)
 
 **Items** in *Unturned* encompass anything that can be carried in a player's in-game inventory. All items share some properties, while each item type has its own unique data. Quick links are available below.
 
-- :ref:`Non-specific Data <ItemData:Non-specific Data>`
-- :ref:`Barricades <ItemData:Barricades>`
-- :ref:`Fishing Poles <ItemData:Fishing Poles>`
-- :ref:`Fuel Canisters <ItemData:Fuel Canisters>`
-- :ref:`Growth Supplements <ItemData:Growth Supplements>`
-- :ref:`Melee Weapons <ItemData:Melee Weapons>`
-- :ref:`Structures <ItemData:Structures>`
-- :ref:`Tools <ItemData:Tools>`
-- :ref:`Water Canisters <ItemData:Water Canisters>`
-
 Non-specific Data
 =================
 

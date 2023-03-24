@@ -1,3 +1,5 @@
+.. _doc_servers_gslt:
+
 Game Server Login Tokens
 ========================
 

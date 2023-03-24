@@ -1,3 +1,5 @@
+.. _doc_getting_started:
+
 Getting Started
 ===============
 

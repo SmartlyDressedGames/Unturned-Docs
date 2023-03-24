@@ -1,3 +1,5 @@
+.. _doc_assets_modhooks:
+
 Mod Hooks
 =========
 
@@ -41,7 +43,7 @@ Interactable Object Binary State Event Hook (IOBS)
 NPC Global Event Hook
 `````````````````````
 
-Event triggered when corresponding :ref:`NPC Event reward <NPCAsset/Rewards:Event>` type is triggered. For example, when any NPC Event with ID "Fireworks" is broadcast all of the components with event ID "Fireworks" will have their corresponding Unity event triggered as well, in this case perhaps to spawn a fireworks effect.
+Event triggered when corresponding :ref:`NPC Event reward <assets/NPCAsset/Rewards:Event>` type is triggered. For example, when any NPC Event with ID "Fireworks" is broadcast all of the components with event ID "Fireworks" will have their corresponding Unity event triggered as well, in this case perhaps to spawn a fireworks effect.
 
 Text Chat Event Hook
 ````````````````````

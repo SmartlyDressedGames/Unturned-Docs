@@ -1,9 +1,11 @@
+.. _doc_itemasset_weapon:
+
 Weapon Assets
 =============
 
 Weapon assets function as a source of damage. The functional implementation of properties may differ slightly between assets.
 
-This inherits the `ItemAsset <README.rst>`_ class.
+This inherits the :ref:`ItemAsset <doc_itemasset_intro>` class.
 
 Weapon Asset Properties
 =======================

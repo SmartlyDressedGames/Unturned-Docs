@@ -1,3 +1,5 @@
+.. _doc_commandline:
+
 Command-line arguments
 ======================
 

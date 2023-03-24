@@ -1,9 +1,11 @@
+.. _doc_itemasset_gun:
+
 Gun Assets
 ==========
 
 Ranged weapons can be used as a source of damage. Ranged weapons always show quality.
 
-This inherits the `WeaponAsset <WeaponAsset.rst>`_ class.
+This inherits the :ref:`WeaponAsset <doc_itemasset_weapon>` class.
 
 Item Asset Properties
 ---------------------
@@ -55,7 +57,7 @@ Calibers
 Damage
 ``````
 
-In addition to the damage properties available from the the :ref:`WeaponAsset <ItemAsset/WeaponAsset:Player Damage>` class, GunAssets have some exclusive properties.
+In addition to the damage properties available from the the :ref:`WeaponAsset <assets/ItemAsset/WeaponAsset:Player Damage>` class, GunAssets have some exclusive properties.
 
 **Damage_Falloff_Multiplier** *float*: Percentage of damage to apply at maximum range. For example, a value of 0.25 with a damage of 40 means 10 damage will be dealt at maximum range. Defaults to 1.
 
