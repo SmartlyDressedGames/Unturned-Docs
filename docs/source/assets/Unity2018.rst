@@ -1,3 +1,5 @@
+.. _doc_assets_unity2018:
+
 Upgrading from Unity 2017 LTS to 2018 LTS
 =========================================
 

@@ -1,3 +1,5 @@
+.. _doc_server_hosting_rules:
+
 Server Hosting Rules
 ====================
 

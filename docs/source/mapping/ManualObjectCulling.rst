@@ -1,3 +1,5 @@
+.. _doc_manual_object_culling:
+
 Manual Object Culling
 =====================
 

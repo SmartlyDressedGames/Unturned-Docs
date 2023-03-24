@@ -1,3 +1,5 @@
+.. _doc_assets_zombiedifficulty:
+
 Zombie Difficulty Asset
 =======================
 

@@ -1,7 +1,9 @@
+.. _doc_assets_foliage:
+
 Foliage
 =======
 
-This is an `Asset v2 <AssetsV2.rst>`_ class.
+This is an :ref:`Asset v2 <doc_assets_v2>` class.
 
 There are sub-types of foliage asset for different uses, most notably instanced meshes (grass, pebbles) and resources (trees). Unlike the older system, tree baking cannot be configured directly within the level editor yet, but there are two benefits to separating baking settings from the trees themselves:
 
@@ -11,7 +13,7 @@ There are sub-types of foliage asset for different uses, most notably instanced 
 FoliageResourceInfoAsset Properties Reference
 ---------------------------------------------
 
-``Resource`` `Asset Pointer <AssetPtr.rst>`_: actual tree to spawn.
+``Resource`` :ref:`Asset Pointer <doc_data_assetptr>`: actual tree to spawn.
 
 ``Obstruction_Radius`` *float*: spawn position is invalid if a sphere with this radius overlaps anything.
 

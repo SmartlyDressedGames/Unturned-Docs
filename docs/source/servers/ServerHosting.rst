@@ -1,3 +1,5 @@
+.. _doc_server_hosting:
+
 Server Hosting
 ==============
 

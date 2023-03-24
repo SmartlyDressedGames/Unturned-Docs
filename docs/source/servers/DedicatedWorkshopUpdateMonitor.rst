@@ -1,3 +1,5 @@
+.. _doc_servers_workshop_update_monitor:
+
 Dedicated Workshop Update Monitor
 =================================
 

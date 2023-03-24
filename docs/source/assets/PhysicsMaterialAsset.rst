@@ -1,3 +1,5 @@
+.. _doc_assets_physics_material:
+
 Physics Material Assets
 =======================
 

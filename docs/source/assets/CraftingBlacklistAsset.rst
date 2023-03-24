@@ -1,3 +1,5 @@
+.. _doc_assets_crafting_blacklist:
+
 Crafting Blacklist Asset
 ========================
 

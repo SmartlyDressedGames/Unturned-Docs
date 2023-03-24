@@ -1,3 +1,5 @@
+.. _doc_assets_animal:
+
 Animal Assets
 =============
 

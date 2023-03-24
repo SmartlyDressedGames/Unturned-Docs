@@ -1,3 +1,5 @@
+.. _doc_favorite_searches:
+
 Favorite Searches
 =================
 

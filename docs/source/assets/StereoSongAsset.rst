@@ -1,3 +1,5 @@
+.. _doc_assets_stereosong:
+
 Stereo Song Asset
 =================
 

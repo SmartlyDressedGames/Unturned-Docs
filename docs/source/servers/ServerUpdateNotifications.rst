@@ -1,3 +1,5 @@
+.. _doc_server_update_notifications:
+
 Server Update Notifications
 ===========================
 

@@ -1,3 +1,5 @@
+.. _doc_level_config:
+
 Level Config
 ============
 

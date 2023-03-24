@@ -14,7 +14,7 @@ Item Data (outdated)
 **Items** in *Unturned* encompass anything that can be carried in a player's in-game inventory. All items share some properties, while each item type has its own unique data.
 
 Non-specific Data
-=================
+-----------------
 
 * Refer to :ref:`doc_itemasset_intro` instead.
 
@@ -33,12 +33,12 @@ Non-specific Data
 **Range**: For ranged and melee weapons – max distance in meters before damage is no longer possible. For explosive weapons (including magazine attachments that generate explosive projectiles) – the radius of the explosion in meters.
 
 Asset Bundles and Error Handling
---------------------------------
+````````````````````````````````
 
 See :ref:`AssetBundles.rst <doc_asset_bundles>` for full documentation regarding asset bundles.
 
 Barricades
-==========
+----------
 
 **Type**: ``Barricade``
 
@@ -83,7 +83,7 @@ Barricades
 **Allow_Placement_On_Vehicle**: ``false``, ``true``. Defaults to false for beds and robotic turrets.
 
 Beacons
--------
+```````
 
 **Type**: ``Beacon``
 
@@ -98,7 +98,7 @@ Beacons
 **Reward_ID**: Spawn table ID for rewards.
 
 Experience Storages
--------------------
+```````````````````
 
 **Type**: ``Library``
 
@@ -111,7 +111,7 @@ Experience Storages
 **Tax**: Percent tax on deposits.
 
 Generators
-----------
+``````````
 
 **Type**: ``Generator``
 
@@ -126,7 +126,7 @@ Generators
 **Burn**: Number of seconds before one fuel unit is burned.
 
 Item Storages
--------------
+`````````````
 
 **Type**: ``Storage``
 
@@ -141,7 +141,7 @@ Item Storages
 **Display**: Stored item is visible.
 
 Liquid Storages
----------------
+```````````````
 
 **Type**: ``Tank``
 
@@ -154,7 +154,7 @@ Liquid Storages
 **Resource**: Numerical maximum capacity of liquid units that can be stored. Water units are measured in potential drinking uses.
 
 Oil Pumps
----------
+`````````
 
 **Type**: ``Oil_Pump``
 
@@ -165,7 +165,7 @@ Oil Pumps
 **Fuel_Capacity**: Numerical maximum capacity of fuel units able to be stored. 
 
 Plants
-------
+``````
 
 **Type**: ``Farm``
 
@@ -178,7 +178,7 @@ Plants
 **Grow**: ID of the item generated when harvesting a fully grown plant.
 
 Remote Explosives
------------------
+`````````````````
 
 **Type**: ``Charge``
 
@@ -193,7 +193,7 @@ Remote Explosives
 Limb-independent entity damage is also applicable.
 
 Robotic Turrets
----------------
+```````````````
 
 **Type**: ``Sentry``, ``Sentry_Freeform``
 
@@ -214,7 +214,7 @@ Robotic Turrets
 **Infinite_Quality**: Weapon quality never depletes.
 
 Traps
------
+`````
 
 **Type**: ``Trap``
 
@@ -231,7 +231,7 @@ Traps
 Limb-independent entity damage (e.g., Player_Damage) is also applicable.
 
 Fishing Poles
-=============
+-------------
 
 **Type**: ``Fisher``
 
@@ -240,7 +240,7 @@ Fishing Poles
 **Reward_ID**: ID of the spawn table to pull catchable items from.
 
 Fuel Canisters
-==============
+--------------
 
 **Type**: ``Fuel``
 
@@ -249,19 +249,19 @@ Fuel Canisters
 **Fuel**: Amount of fuel units added to target.
 
 Growth Supplements
-==================
+------------------
 
 **Type**: ``Grower``
 
 **Useable**: ``Grower``
 
 Melee Weapons
-=============
+-------------
 
 No documentation is available at this time.
 
 Structures
-==========
+----------
 
 **Type**: ``Structure``
 
@@ -278,10 +278,10 @@ Structures
 **Foliage_Cut_Radius**: Numerical value in meters for the radius in which foliage is removed from around the structure. Only applicable to floor structure types.
 
 Tools
-=====
+-----
 
 Car Jacks
----------
+`````````
 
 Car jacks launch vehicles into the air as a method of reorienting them if they were flipped over.
 
@@ -290,7 +290,7 @@ Car jacks launch vehicles into the air as a method of reorienting them if they w
 **Useable**: ``Carjack``
 
 Car Lock Picks
---------------
+``````````````
 
 Car lock picks allow players to unlock any locked vehicle, but are single-use.
 
@@ -299,7 +299,7 @@ Car lock picks allow players to unlock any locked vehicle, but are single-use.
 **Useable**: ``Carlockpick``
 
 Tire Replacements
------------------
+`````````````````
 
 Tire replacements allow for adding or removing tires from four-wheeled vehicles.
 
@@ -310,7 +310,7 @@ Tire replacements allow for adding or removing tires from four-wheeled vehicles.
 **Mode**: ``Add``, ``Remove``
 
 Vehicle Batteries
------------------
+`````````````````
 
 Vehicle batteries can be placed into vehicles, allowing them to perform activities that consume electrical energy rather than fuel. They are affected by quality.
 
@@ -319,7 +319,7 @@ Vehicle batteries can be placed into vehicles, allowing them to perform activiti
 **Useable**: ``Battery_Vehicle``
 
 Walkie-talkies
---------------
+``````````````
 
 When initiating voice chat with a walkie-talkie held, voice is transmitted through a two-way radio. An audible cue plays when initiating voice chat.
 
@@ -328,7 +328,7 @@ When initiating voice chat with a walkie-talkie held, voice is transmitted throu
 **Useable**: ``Walkie_Talkie``
 
 Water Canisters
-===============
+---------------
 
 **Type**: ``Refill``
 

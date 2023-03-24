@@ -1,3 +1,5 @@
+.. _doc_curated_maps:
+
 Curated Maps
 ============
 

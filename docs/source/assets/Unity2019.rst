@@ -1,3 +1,5 @@
+.. _doc_assets_unity2019:
+
 Upgrading from Unity 2018 LTS to 2019 LTS
 =========================================
 

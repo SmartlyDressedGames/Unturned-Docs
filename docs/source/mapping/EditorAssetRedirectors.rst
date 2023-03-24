@@ -1,3 +1,5 @@
+.. _doc_editor_asset_redirectors:
+
 Editor Asset Redirectors
 ========================
 

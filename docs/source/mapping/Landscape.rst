@@ -1,3 +1,5 @@
+.. _doc_mapping_landscape:
+
 Landscape
 =========
 
