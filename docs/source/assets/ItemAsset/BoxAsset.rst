@@ -1,14 +1,16 @@
+.. _doc_itemasset_box:
+
 Box Assets
 ==========
 
 Boxes are intended to be used as a part of the Steam Economy, rather than as in-game content. As such, none of its unique properties can be properly utilized by modders.
 
-This inherits the `ItemAsset <README.rst>`_ class.
+This inherits the :ref:`ItemAsset <doc_itemasset_intro>` class.
 
 Item Asset Properties
 ---------------------
 
-**GUID** *32-digit hexadecimal*: Refer to `GUID <GUID.rst>`_ documentation.
+**GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
 
 **Type** *enum* (``Box``)
 

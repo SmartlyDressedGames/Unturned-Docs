@@ -1,14 +1,16 @@
+.. _doc_itemasset_mask:
+
 Mask Assets
 ===========
 
 Masks can be worn by players and zombies.
 
-This inherits the `GearAsset <GearAsset.rst>`_ class.
+This inherits the :ref:`GearAsset <doc_itemasset_gear>` class.
 
 Item Asset Properties
 ---------------------
 
-**GUID** *32-digit hexadecimal*: Refer to `GUID <GUID.rst>`_ documentation.
+**GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
 
 **Type** *enum* (``Mask``)
 

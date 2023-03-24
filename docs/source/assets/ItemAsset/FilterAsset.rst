@@ -1,14 +1,16 @@
+.. _doc_itemasset_filter:
+
 Filter Assets
 =============
 
-Radiation filters can be used to replenish the quality of radiation-proof `masks <MaskAsset.rst>`_.
+Radiation filters can be used to replenish the quality of radiation-proof :ref:`masks <doc_itemasset_mask>`.
 
-This inherits the `ItemAsset <README.rst>`_ class.
+This inherits the :ref:`ItemAsset <doc_itemasset_intro>` class.
 
 Item Asset Properties
 ---------------------
 
-**GUID** *32-digit hexadecimal*: Refer to `GUID <GUID.rst>`_ documentation.
+**GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
 
 **Type** *enum* (``Filter``)
 

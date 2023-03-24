@@ -1,14 +1,16 @@
+.. _doc_itemasset_map:
+
 Map Assets
 ==========
 
 Maps and compasses provide the player with additional UI information for as long as they are in the player's inventory. They can neither be held nor equipped.
 
-This inherits the `ItemAsset <README.rst>`_ class.
+This inherits the :ref:`ItemAsset <doc_itemasset_intro>` class.
 
 Item Asset Properties
 ---------------------
 
-**GUID** *32-digit hexadecimal*: Refer to `GUID <GUID.rst>`_ documentation.
+**GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
 
 **Type** *enum* (``Map``, ``Compass``)
 

@@ -1,7 +1,9 @@
+.. _doc_data_assetptr:
+
 Asset Pointer
 =============
 
-When an asset refers to another it does so using an **Asset Pointer**. These identify the target asset by its GUID.
+When an asset refers to another it does so using an **Asset Pointer**. These identify the target asset by its :ref:`GUID <doc_data_guid>`.
 
 In \*.dat files
 ---------------

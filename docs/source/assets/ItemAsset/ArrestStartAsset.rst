@@ -1,14 +1,16 @@
+.. _doc_itemasset_arreststart:
+
 Arrest Start Assets
 ===================
 
-Catchers items are used to restrain players, and a corresponding `releaser item <ArrestEndAsset.rst>`_ can be used to unlock the restraints.
+Catchers items are used to restrain players, and a corresponding :ref:`releaser item <doc_itemasset_arrestend>` can be used to unlock the restraints.
 
-This inherits the `ItemAsset <README.rst>`_ class.
+This inherits the :ref:`ItemAsset <doc_itemasset_intro>` class.
 
 Item Asset Properties
 ---------------------
 
-**GUID** *32-digit hexadecimal*: Refer to `GUID <GUID.rst>`_ documentation.
+**GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
 
 **Type** *enum* (``Arrest_End``)
 

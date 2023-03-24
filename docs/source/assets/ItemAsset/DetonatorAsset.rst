@@ -1,14 +1,16 @@
+.. _doc_itemasset_detonator:
+
 Detonator Assets
 ================
 
 Remote triggers are inventory items that can be attached to ranged weapons.
 
-This inherits the `ItemAsset <README.rst>`_ class.
+This inherits the :ref:`ItemAsset <doc_itemasset_intro>` class.
 
 Item Asset Properties
 ---------------------
 
-**GUID** *32-digit hexadecimal*: Refer to `GUID <GUID.rst>`_ documentation.
+**GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
 
 **Type** *enum* (``Detonator``)
 
@@ -19,4 +21,4 @@ Item Asset Properties
 Detonator Asset Properties
 --------------------------
 
-Remote triggers have no unique asset properties. Refer to `item asset documentation <README.rst>`_ for additional properties.
+Remote triggers have no unique asset properties. Refer to :ref:`item asset documentation <doc_itemasset_intro>` for additional properties.

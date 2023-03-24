@@ -1,14 +1,16 @@
+.. _doc_itemasset_tactical:
+
 Tactical Assets
 ===============
 
 Tactical attachments are inventory items that can be attached to ranged weapons.
 
-This inherits the `CaliberAsset <CaliberAsset.rst>`_ class.
+This inherits the :ref:`CaliberAsset <doc_itemasset_caliber>` class.
 
 Item Asset Properties
 ---------------------
 
-**GUID** *32-digit hexadecimal*: Refer to `GUID <GUID.rst>`_ documentation.
+**GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
 
 **Type** *enum* (``Tactical``)
 

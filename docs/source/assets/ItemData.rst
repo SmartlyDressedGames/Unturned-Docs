@@ -1,3 +1,5 @@
+.. _doc_assets_itemdata:
+
 Item Data (outdated)
 ====================
 
@@ -9,12 +11,12 @@ Item Data (outdated)
 
 ----
 
-**Items** in *Unturned* encompass anything that can be carried in a player's in-game inventory. All items share some properties, while each item type has its own unique data. Quick links are available below.
+**Items** in *Unturned* encompass anything that can be carried in a player's in-game inventory. All items share some properties, while each item type has its own unique data.
 
 Non-specific Data
 =================
 
-* Refer to `README.rst <ItemAsset/README.rst>`_.
+* Refer to :ref:`doc_itemasset_intro` instead.
 
 **Durability**: Either a decimal probability chance of quality loss upon action, or guaranteed loss and durability value is instead representative of the amount lost.
 
@@ -33,7 +35,7 @@ Non-specific Data
 Asset Bundles and Error Handling
 --------------------------------
 
-See `AssetBundles.rst <AssetBundles.rst>`_ for full documentation regarding asset bundles.
+See :ref:`AssetBundles.rst <doc_asset_bundles>` for full documentation regarding asset bundles.
 
 Barricades
 ==========

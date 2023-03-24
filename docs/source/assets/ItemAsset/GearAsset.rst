@@ -1,9 +1,11 @@
+.. _doc_itemasset_gear:
+
 Gear Assets
 ===========
 
 Clothing gear can be worn by players and zombies. The inherited Hair_Visible and Beard_Visible properties default to the gear asset's corresponding Hair and Beard flag properties.
 
-This inherits the `ClothingAsset <ClothingAsset.rst>`_ class.
+This inherits the :ref:`ClothingAsset <doc_itemasset_clothing>` class.
 
 Gear Asset Properties
 ---------------------

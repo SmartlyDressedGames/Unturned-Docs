@@ -1,3 +1,5 @@
+.. _doc_itemasset_trap:
+
 Trap Assets
 ===========
 

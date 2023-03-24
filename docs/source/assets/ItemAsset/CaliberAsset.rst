@@ -1,7 +1,9 @@
+.. _doc_itemasset_caliber:
+
 Caliber Assets
 ==============
 
-This inherits the `ItemAsset <README.rst>`_ class.
+This inherits the :ref:`ItemAsset <doc_itemasset_caliber>` class.
 
 Caliber Asset Properties
 ------------------------

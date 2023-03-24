@@ -1,14 +1,16 @@
+.. _doc_itemasset_throwable:
+
 Throwable Assets
 ================
 
 Throwables can be thrown by players. Throwables cannot be used in any safezones that disallow weapons.
 
-This inherits the `WeaponAsset <WeaponAsset.rst>`_ class.
+This inherits the :ref:`WeaponAsset <doc_itemasset_weapon>` class.
 
 Item Asset Properties
 ---------------------
 
-**GUID** *32-digit hexadecimal*: Refer to `GUID <GUID.rst>`_ documentation.
+**GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
 
 **Type** *enum* (``Throwable``)
 

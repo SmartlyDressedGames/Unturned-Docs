@@ -1,9 +1,11 @@
+.. _doc_itemasset_consumeable:
+
 Consumeable Assets
 ==================
 
 Consumable items are irreversibly consumed by the player on use, and directly affect a player's stats such as food or health.
 
-This inherits the `WeaponAsset <README.rst>`_ class.
+This inherits the :ref:`WeaponAsset <doc_itemasset_weapon>` class.
 
 Consumeable Asset Properties
 ----------------------------

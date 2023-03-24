@@ -1,14 +1,16 @@
+.. _doc_itemasset_shirt:
+
 Shirt Assets
 ============
 
 Shirts can be worn by players and zombies.
 
-This inherits the `BagAsset <BagAsset.rst>`_ class.
+This inherits the :ref:`BagAsset <doc_itemasset_bag>` class.
 
 Item Asset Properties
 ---------------------
 
-**GUID** *32-digit hexadecimal*: Refer to `GUID <GUID.rst>`_ documentation.
+**GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
 
 **Type** *enum* (``Shirt``)
 

@@ -1,14 +1,16 @@
+.. _doc_itemasset_water:
+
 Water Assets
 ============
 
 Drinks are irreversibly consumed by the player on use, and directly affect a player's stats such as water or stamina.
 
-This inherits the `ConsumeableAsset <ConsumeableAsset.rst>`_ class.
+This inherits the :ref:`ConsumeableAsset <doc_itemasset_consumeable>` class.
 
 Item Asset Properties
 ---------------------
 
-**GUID** *32-digit hexadecimal*: Refer to `GUID <GUID.rst>`_ documentation.
+**GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
 
 **Type** *enum* (``Water``)
 

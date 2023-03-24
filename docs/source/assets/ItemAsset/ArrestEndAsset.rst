@@ -1,14 +1,16 @@
+.. _doc_itemasset_arrestend:
+
 Arrest End Assets
 =================
 
-Releaser items are used to remove a corresponding `catcher item <ArrestStartAsset.rst>`_ that is restraining a player.
+Releaser items are used to remove a corresponding :ref:`catcher item <doc_itemasset_arreststart>` that is restraining a player.
 
-This inherits the `ItemAsset <README.rst>`_ class.
+This inherits the :ref:`ItemAsset <doc_itemasset_intro>` class.
 
 Item Asset Properties
 ---------------------
 
-**GUID** *32-digit hexadecimal*: Refer to `GUID <../GUID.rst>`_ documentation.
+**GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
 
 **Type** *enum* (``Arrest_End``)
 

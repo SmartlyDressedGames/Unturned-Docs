@@ -1,3 +1,5 @@
+.. _doc_data_masterbundleptr:
+
 Master Bundle Pointer
 =====================
 

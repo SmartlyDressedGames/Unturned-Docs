@@ -1,3 +1,5 @@
+.. _doc_itemasset_placeable:
+
 Placeable Assets
 ================
 
@@ -11,4 +13,4 @@ Not ideal to be adding this so late in development, but at least it is a step in
 
 **Max_Items_Dropped_On_Destroy** *int*: Maximum number of items to drop when destroyed.
 
-**Item_Dropped_On_Destroy** `Asset Pointer <AssetPtr.rst>`_: Spawn table for items dropped when destroyed.
+**Item_Dropped_On_Destroy** :ref:`Asset Pointer <doc_data_assetptr>`: Spawn table for items dropped when destroyed.

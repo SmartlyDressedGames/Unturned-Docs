@@ -1,9 +1,11 @@
+.. _doc_assets_v1:
+
 Assets v1
 =========
 
 Unturned **assets** associate game data with Unity asset bundles. They are stored in ``.dat`` files. When scanning a folder for assets the game looks for a ``.dat`` file with the same name as the folder, or an ``Asset.dat`` file.
 
-Newer features use `Assets v2 <AssetsV2.rst>`_, but it is unlikely that older features will be ported.
+Newer features use :ref:`Assets v2 <doc_assets_v2>`, but it is unlikely that older features will be ported.
 
 File Format
 -----------
@@ -32,7 +34,7 @@ Game Data
 
 ``ID`` *int*: 16-bit identifier. Unfortunately this id must be unique within each category of assets (vehicles, items, animals, etc). Objects are the exception from this legacy restriction because they have been upgraded to fully use GUIDs.
 
-``GUID`` *string*: Refer to `GUID <GUID.rst>`_ documentation. Several newer features refer to v1 assets by their GUID. If left empty the game will prepend a GUID during startup.
+``GUID`` *string*: Refer to :ref:`GUID <doc_data_guid>` documentation. Several newer features refer to v1 assets by their GUID. If left empty the game will prepend a GUID during startup.
 
 Unity Asset Bundles
 -------------------
@@ -50,4 +52,4 @@ Each Unturned asset is associated with a Unity asset bundle. If there is a maste
 Localization
 ------------
 
-Each asset looks for a localization `.dat` file in the same directory based on the current language. For example: ``English.dat`` or ``French.dat``.
+Each asset looks for a localization ``.dat`` file in the same directory based on the current language. For example: ``English.dat`` or ``French.dat``.

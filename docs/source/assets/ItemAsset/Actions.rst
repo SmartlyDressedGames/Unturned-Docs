@@ -1,7 +1,9 @@
+.. _doc_itemasset_actions:
+
 Actions
 =======
 
-Add additional context actions; the system currently supports `blueprint <Blueprints.rst>`_ actions. The game will automatically add various actions such as repairing and salvaging items, refilling magazines, stripping attachments, and crafting seeds.
+Add additional context actions; the system currently supports :ref:`blueprint <doc_itemasset_blueprints>` actions. The game will automatically add various actions such as repairing and salvaging items, refilling magazines, stripping attachments, and crafting seeds.
 
 **Actions** *int*: Total number of context actions.
 

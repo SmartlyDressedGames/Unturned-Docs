@@ -1,3 +1,5 @@
+.. _doc_asset_validation:
+
 Asset Validation
 ================
 

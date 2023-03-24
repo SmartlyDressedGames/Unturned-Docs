@@ -1,14 +1,16 @@
+.. _doc_itemasset_food:
+
 Food Assets
 ===========
 
 Food is irreversibly consumed by the player on use, and directly affect a player's stats such as food or health.
 
-This inherits the `ItemAsset <README.rst>`_ class.
+This inherits the :ref:`ConsumeableAsset <doc_itemasset_consumeable>` class.
 
 Item Asset Properties
 ---------------------
 
-**GUID** *32-digit hexadecimal*: Refer to `GUID <GUID.rst>`_ documentation.
+**GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
 
 **Type** *enum* (``Food``)
 

@@ -7,7 +7,7 @@ Item assets are an `Assets v1 <../AssetsV1.rst>`_ class. See `AssetBundles.rst <
 
 **GUID** *32-digit hexadecimal*: Refer to `GUID <../GUID.rst>`_ documentation.
 
-**Type** *enum* (```Arrest_End`` <ArrestEndAsset.rst>`_ ```Arrest_Start`` <ArrestStartAsset.rst>`_ ```Backpack`` <BackpackAsset.rst>`_ ```Barrel`` <BarrelAsset.rst>`_ `Barricade`, `Beacon`, ```Box`` <BoxAsset.rst>`_ `Charge`, ```Cloud`` <CloudAsset.rst>`_ ```Compass`` <MapAsset.rst>`_ ```Detonator`` <DetonatorAsset.rst>`_ `Farm`, ```Filter`` <FilterAsset.rst>`_ `Fisher`, ```Food`` <FoodAsset.rst>`_ `Fuel`, `Generator`, ```Glasses`` <GlassesAsset.rst>`_ ```Grip`` <GripAsset.rst>`_ `Grower`, ```Gun`` <GunAsset.rst>`_ ```Hat`` <HatAsset.rst>`_ ```Key`` <KeyAsset.rst>`_ `Library`, ```Magazine`` <MagazineAsset.rst>`_ ```Map`` <MapAsset.rst>`_ ```Mask`` <MaskAsset.rst>`_ ```Medical`` <MedicalAsset.rst>`_ `Melee`, `Oil_Pump`, ```Optic`` <OpticAsset.rst>`_ ```Pants`` <PantsAsset.rst>`_ `Refill`, `Sentry`, ```Shirt`` <ShirtAsset.rst>`_ ```Sight`` <SightAsset.rst>`_ `Storage`, `Structure`, ```Supply`` <SupplyAsset.rst>`_ ```Tactical`` <TacticalAsset.rst>`_ `Tank`, ```Throwable`` <ThrowableAsset.rst>`_ `Tire`, `Tool`, `Trap`, `Vehicle_Repair_Tool`, ```Vest`` <VestAsset.rst>`_ ```Water`` <WaterAsset.rst>`_)
+**Type** *enum* (``Arrest_End``, ``Arrest_Start``, ``Backpack``, ``Barrel``, ``Barricade``, ``Beacon``, ``Box``, ``Charge``, ``Cloud``, ``Compass``, ``Detonator``, ``Farm``, ``Filter``, ``Fisher``, ``Food``, ``Fuel``, ``Generator``, ``Glasses``, ``Grip``, ``Grower``, ``Gun``, ``Hat``, ``Key``, ``Library``, ``Magazine``, ``Map``, ``Mask``, ``Medical``, ``Melee``, ``Oil_Pump``, ``Optic``, ``Pants``, ``Refill``, ``Sentry``, ``Shirt``, ``Sight``, ``Storage``, ``Structure``, ``Supply``, ``Tactical``, ``Tank``, ``Throwable``, ``Tire``, ``Tool``, ``Trap``, ``Vehicle_Repair_Tool``, ``Vest``, ``Water``)
 
 **Rarity** *enum* (``Common``, ``Uncommon``, ``Rare``, ``Epic``, ``Legendary``, ``Mythical``): Rarity of the item, as text shown in menus and colors used for highlights. Defaults to Common rarity.
 
@@ -36,7 +36,7 @@ Inventory Properties
 
 **Allow\_Manual\_Drop** *bool*: Item can be manually dropped by the player. Defaults to true.
 
-**InventoryAudio** `Master Bundle Pointer <../MasterBundlePtr.rst>`_: AudioClip or OneShotAudioDefinition to play when item is picked up, moved within the inventory, and dropped.
+**InventoryAudio** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: AudioClip or OneShotAudioDefinition to play when item is picked up, moved within the inventory, and dropped.
 
 **Procedurally\_Animate\_Inertia** *bool*: Whether viewmodel should accumulate angular velocity from animations. Useful for low-quality older animations, but should probably be disabled for high-quality newer animations.
 
@@ -78,7 +78,7 @@ Other Properties
 
 **Bypass\_Hash\_Verification** *bool*: Disable hash verification check, and allow for mismatched files. Defaults to false.
 
-**EquipablePrefab** `Master Bundle Pointer <../MasterBundlePtr.rst>`_: Overrides the model spawned when this item is equipped. For example the Equipable prefab could use an animated skinned mesh component while the regular Item prefab only needs a static mesh component.
+**EquipablePrefab** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: Overrides the model spawned when this item is equipped. For example the Equipable prefab could use an animated skinned mesh component while the regular Item prefab only needs a static mesh component.
 
 **Ignore_TexRW** *flag*: Specified if read/writeable texture errors for the asset should be hidden from the error logs.
 
@@ -87,7 +87,7 @@ Other Properties
 Blueprints and Actions
 ----------------------
 
-Items can have crafting blueprints and context menu actions. Refer to `Blueprints.rst <Blueprints.rst>`_ and `Actions.rst <Actions.rst>`_ for documentation.
+Items can have crafting blueprints and context menu actions. Refer to :ref:`Blueprints.rst <doc_itemasset_blueprints>` and :ref:`Actions.rst <doc_itemasset_actions>` for documentation.
 
 Localization
 ------------
