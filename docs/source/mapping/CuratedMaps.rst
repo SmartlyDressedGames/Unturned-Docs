@@ -1,4 +1,4 @@
-.. _doc_curated_maps:
+.. _doc_mapping_curated:
 
 Curated Maps
 ============

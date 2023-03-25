@@ -53,6 +53,6 @@ Consumeable Asset Properties
 Rewards
 -------
 
-Consumables can use quest rewards. A common usage is to create consumables with multiple (but still limited) uses, by placing a new item in the player's inventory after consuming the original. Alternatively, consuming a consumable may be required to complete a quest. Refer to `Rewards.rst <Rewards.rst>`_ for additional documentation.
+Consumables can use quest rewards. A common usage is to create consumables with multiple (but still limited) uses, by placing a new item in the player's inventory after consuming the original. Alternatively, consuming a consumable may be required to complete a quest. Refer to :ref:`Rewards <doc_npcasset_rewards>` documentation for additional documentation.
 
 These rewards are prefixed with ``Quest_``. For example, ``Quest_Rewards 1``.

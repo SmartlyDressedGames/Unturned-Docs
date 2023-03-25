@@ -3,9 +3,9 @@
 Introduction to Items
 =====================
 
-Item assets are an `Assets v1 <../AssetsV1.rst>`_ class. See `AssetBundles.rst <../AssetBundles.rst>`_ for full documentation regarding asset bundles.
+Item assets are an :ref:`Assets v1 <doc_assets_v1>` class. Refer to `Asset Bundles <doc_asset_bundles>` for the full documentation regarding asset bundles.
 
-**GUID** *32-digit hexadecimal*: Refer to `GUID <../GUID.rst>`_ documentation.
+**GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
 
 **Type** *enum* (``Arrest_End``, ``Arrest_Start``, ``Backpack``, ``Barrel``, ``Barricade``, ``Beacon``, ``Box``, ``Charge``, ``Cloud``, ``Compass``, ``Detonator``, ``Farm``, ``Filter``, ``Fisher``, ``Food``, ``Fuel``, ``Generator``, ``Glasses``, ``Grip``, ``Grower``, ``Gun``, ``Hat``, ``Key``, ``Library``, ``Magazine``, ``Map``, ``Mask``, ``Medical``, ``Melee``, ``Oil_Pump``, ``Optic``, ``Pants``, ``Refill``, ``Sentry``, ``Shirt``, ``Sight``, ``Storage``, ``Structure``, ``Supply``, ``Tactical``, ``Tank``, ``Throwable``, ``Tire``, ``Tool``, ``Trap``, ``Vehicle_Repair_Tool``, ``Vest``, ``Water``)
 
@@ -87,7 +87,7 @@ Other Properties
 Blueprints and Actions
 ----------------------
 
-Items can have crafting blueprints and context menu actions. Refer to :ref:`Blueprints.rst <doc_itemasset_blueprints>` and :ref:`Actions.rst <doc_itemasset_actions>` for documentation.
+Items can have crafting blueprints and context menu actions. Refer to :ref:`Blueprints <doc_itemasset_blueprints>` and :ref:`Actions <doc_itemasset_actions>` for documentation.
 
 Localization
 ------------

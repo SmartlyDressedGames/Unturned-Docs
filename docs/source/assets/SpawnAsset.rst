@@ -5,7 +5,7 @@ Spawn Assets
 
 The spawn asset type represents the weighted chances of an individual item, vehicle, or animal spawning at an any given spawn point. Create custom spawn tables that can be used on custom, curated, and official maps.
 
-**GUID** *32-digit hexadecimal*: Refer to `GUID <GUID.rst>`_ documentation.
+**GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
 
 **Type** *enum* (``Spawn``)
 

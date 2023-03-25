@@ -3,23 +3,23 @@
 Level Asset
 ===========
 
-Each map can be associated with a **Level Asset**. These assets contain gameplay information not necessary for the main menus. Refer to `Level Config <LevelConfig.rst>`_ for information on linking a level asset to a map.
+Each map can be associated with a **Level Asset**. These assets contain gameplay information not necessary for the main menus. Refer to :ref:`Level Config <doc_mapping_config>` for information on linking a level asset to a map.
 
 For examples check the ``Assets/Levels`` directory.
 
-``Dropship`` `Master Bundle Pointer <MasterBundlePtr.rst>`_: Overrides the model seen flying over the map when a care package is dropped.
+``Dropship`` :ref:`Asset Pointer <doc_data_masterbundleptr>`: Overrides the model seen flying over the map when a care package is dropped.
 
-``Airdrop`` `Asset Pointer <AssetPtr.rst>`_: Asset pointer to an `Airdrop Asset <AirdropAsset.rst>`_. Overrides the falling care package model.
+``Airdrop`` :ref:`Asset Pointer <doc_data_assetptr>`: Asset pointer to an :ref:`Airdrop Asset <doc_assets_airdrop>`. Overrides the falling care package model.
 
-``Crafting_Blacklists`` array of `Asset Pointers <AssetPtr.rst>`_: Asset pointers to `Crafting Blacklist(s) <CraftingBlacklistAsset.rst>`_. Prevents specific items or blueprints from being used while crafting in the level.
+``Crafting_Blacklists`` array of :ref:`Asset Pointers <doc_data_assetptr>`: Asset pointers to :ref:`Crafting Blacklist(s) <doc_assets_craftingblacklist>`. Prevents specific items or blueprints from being used while crafting in the level.
 
 ``Min_Stealth_Radius`` *float*: Player stealth skill level cannot reduce minimum detection distance below this value.
 
 ``Weather_Types`` *array*: Determines which weather can occur naturally. Refer to schedulable weather properties. If weather is using legacy weather the default rain and snow will be included.
 
-``Perpetual_Weather_Asset`` `Asset Pointer <AssetPtr.rst>`_: Asset pointer to a `Weather Asset <WeatherAsset.rst>`_. Overrides weather scheduling.
+``Perpetual_Weather_Asset`` :ref:`Asset Pointer <doc_data_assetptr>`: Asset pointer to a :ref:`Weather Asset <doc_assets_weather>`. Overrides weather scheduling.
 
-``Global_Weather_Mask`` `u32 Mask <Bitmask.rst>`_: Fallback weather mask while player is not inside an ambience volume. Defaults to 0xFFFFFFFF.
+``Global_Weather_Mask`` :ref:`u32 Mask <doc_data_bitmask>`: Fallback weather mask while player is not inside an ambience volume. Defaults to 0xFFFFFFFF.
 
 ``Skills`` *array*: Overrides skill default and max levels. Refer to skill rule properties.
 
@@ -31,12 +31,12 @@ For examples check the ``Assets/Levels`` directory.
 
 ``Should_Animate_Background_Image`` *bool*: If true, the background image moves left/right with loading progress. Defaults to false because maps have important information on the loading screen.
 
-This is an `Asset v2 <AssetsV2.rst>`_ class.
+This is an :ref:`Asset v2 <doc_assets_v2>` class.
 
 Schedulable Weather Properties
 ------------------------------
 
-`Asset` `Asset Pointer <AssetPtr.rst>`_: Points to a `Weather Asset <WeatherAsset.rst>`_.
+`Asset` :ref:`Asset Pointer <doc_data_assetptr>`: Points to a :ref:`Weather Asset <doc_assets_weather>`.
 
 `Min_Frequency` *float*: When chosen to be the next scheduled weather event, minimum number of in-game days before it will start.
 
@@ -60,6 +60,6 @@ Skill Rule Properties
 Music Properties
 ----------------
 
-``Loop`` `Master Bundle Pointer <MasterBundlePtr.rst>`_: looping audio clip played until loading finishes.
+``Loop`` :ref:`Asset Pointer <doc_data_masterbundleptr>`: looping audio clip played until loading finishes.
 
-``Outro`` `Master Bundle Pointer <MasterBundlePtr.rst>`_: audio clip played once loading finishes.
+``Outro`` :ref:`Asset Pointer <doc_data_masterbundleptr>`: audio clip played once loading finishes.

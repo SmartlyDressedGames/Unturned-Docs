@@ -1,4 +1,4 @@
-.. _doc_manual_object_culling:
+.. _doc_mapping_culling:
 
 Manual Object Culling
 =====================

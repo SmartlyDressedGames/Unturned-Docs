@@ -1,7 +1,9 @@
+.. _doc_npcasset_vendors:
+
 Vendors
 =======
 
-**GUID** *32-digit hexadecimal*: Refer to `GUID </GUID.rst>`_ documentation.
+**GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
 
 **Type** *enum* (``Vendor``)
 
@@ -10,7 +12,7 @@ Vendors
 Buying
 ------
 
-Properties pertaining to items that the vendor is willing to buy from players. Vendors can set conditions for the items they are buying. These conditions are prefixed with ``Buying_#_``. For example, ``Buying_0_Conditions 1``. Refer to `Conditions.rst <Conditions.rst>`_ and `Rewards.rst <Rewards.rst>`_ for additional documentation.
+Properties pertaining to items that the vendor is willing to buy from players. Vendors can set conditions for the items they are buying. These conditions are prefixed with ``Buying_#_``. For example, ``Buying_0_Conditions 1``. For more information, refer to the documentation for :ref:`Conditions <doc_npcasset_conditions>` and :ref:`Rewards <doc_npcasset_rewards>` respectively.
 
 **Buying** *byte*: Total number items being bought by the vendor.
 
@@ -21,7 +23,7 @@ Properties pertaining to items that the vendor is willing to buy from players. V
 Selling
 -------
 
-Properties pertaining to items or vehicles that the vendor is willing to sell to players. Vendors can set conditions for the items/vehicles they are selling. These conditions are prefixed with ``Selling_#_``. For example, ``Selling_0_Conditions 1``. Refer to `Conditions.rst <Conditions.rst>`_ and `Rewards.rst <Rewards.rst>`_ for additional documentation.
+Properties pertaining to items or vehicles that the vendor is willing to sell to players. Vendors can set conditions for the items/vehicles they are selling. These conditions are prefixed with ``Selling_#_``. For example, ``Selling_0_Conditions 1``. For more information, refer to the documentation for :ref:`Conditions <doc_npcasset_conditions>` and :ref:`Rewards <doc_npcasset_rewards>` respectively.
 
 **Selling** *byte*: Total number of items/vehicles being sold by the vendor.
 

@@ -35,7 +35,7 @@ Non-specific Data
 Asset Bundles and Error Handling
 ````````````````````````````````
 
-See :ref:`AssetBundles.rst <doc_asset_bundles>` for full documentation regarding asset bundles.
+See :ref:`Asset Bundles <doc_asset_bundles>` for full documentation regarding asset bundles.
 
 Barricades
 ----------

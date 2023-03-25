@@ -16,7 +16,7 @@ Some command-line arguments are primarily intended for use with the Unturned Ded
 
 **+connect**: Connect to a server, in the format of ``+connect <ip address>:<port>``.
 
-**-DisableCullingVolumes**: Disable object culling distance overrides. Please refer to `Manual Object Culling <ManualObjectCulling.rst>`_ for more details.
+**-DisableCullingVolumes**: Disable object culling distance overrides. Please refer to :ref:`Manual Object Culling <doc_mapping_culling>` for more details.
 
 **-DisableLightLODs**: Disable fadeout of dynamic lights. Could be useful for high-quality screenshots.
 
@@ -46,7 +46,7 @@ Some command-line arguments are primarily intended for use with the Unturned Ded
 
 **-LogAssemblyResolve**: Log when the resolution of an assembly fails. Useful when working with non-Rocket plugins.
 
-**-LogLevelBatchingTextureAtlasExclusions**: Please refer to `Level Batching <LevelBatching.rst>`_ for more details.
+**-LogLevelBatchingTextureAtlasExclusions**: Please refer to :ref:`Level Batching <doc_mapping_batching>` for more details.
 
 **-NetTransport=** *enum* (``SteamNetworking``, ``SteamNetworkingSockets``): SteamNetworkingSockets was used to enable the `ISteamNetworkingSockets <https://partner.steamgames.com/doc/api/ISteamNetworkingSockets>`_ networking API, but this has since become default. SteamNetworking can be used to revert to the older, deprecated `ISteamNetworking <https://partner.steamgames.com/doc/api/ISteamNetworking>`_ networking API.
 
@@ -60,7 +60,7 @@ Some command-line arguments are primarily intended for use with the Unturned Ded
 
 **-OfflineOnly**: Disables requests to the internet. For LAN servers, it skips the Steam backend connection and uses locally-cached Workshop items.
 
-**-PreviewLevelBatchingTextureAtlas**: Please refer to `Level Batching <LevelBatching.rst>`_ for more details.
+**-PreviewLevelBatchingTextureAtlas**: Please refer to :ref:`Level Batching <doc_mapping_batching>` for more details.
 
 **-RazerChroma**: Enable Razer Chroma integration on compatible devices.
 
@@ -70,11 +70,11 @@ Some command-line arguments are primarily intended for use with the Unturned Ded
 
 **-ui_scale**: UI scale override. A common usage is to set UI scale back to its default scaling, with ``-ui_scale 1``.
 
-**-UseLevelBatching** *bool*: Overrides whether level batching can be enabled. Per-level support for level batching is still required. For example ``-UseLevelBatching=false`` disables it. Please refer to `Level Batching <LevelBatching.rst>`_ for more details.
+**-UseLevelBatching** *bool*: Overrides whether level batching can be enabled. Per-level support for level batching is still required. For example ``-UseLevelBatching=false`` disables it. Please refer to :ref:`Level Batching <doc_mapping_batching>` for more details.
 
-**-ValidateAssets**: Perform `additional health checks <AssetValidation.rst>`_ on assets during start-up.
+**-ValidateAssets**: Perform :ref:`additional health checks <doc_asset_validation>` on assets during start-up.
 
-**-ValidateLevelBatchingUVs**: Please refer to `Level Batching <LevelBatching.rst>`_ for more details.
+**-ValidateLevelBatchingUVs**: Please refer to :ref:`Level Batching <doc_mapping_batching>` for more details.
 
 **-w** *int*: Alias of ``-width``.
 

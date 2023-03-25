@@ -12,11 +12,11 @@ All multiplayer servers are hosted using the Unturned Dedicated Server tool (som
 - :ref:`How to Configure Server <servers/ServerHosting:How to Configure Server>`
 - :ref:`How to Host Curated Maps <servers/ServerHosting:How to Host Curated Maps>`
 - :ref:`How to Host Over Internet <servers/ServerHosting:How to Host Over Internet>`
-- `Port Forwarding <PortForwarding.rst>`_
-- `Rocket <Rocket.rst>`_
-- `Login Tokens <GameServerLoginTokens.rst>`_
-- `Update Notifications <ServerUpdateNotifications.rst>`_
-- `Rules and Guidelines <ServerHostingRules.rst>`_
+- :ref:`Port Forwarding <doc_servers_portforward>`
+- :ref:`Rocket <doc_servers_rocket>`
+- :ref:`Login Tokens <doc_servers_gslt>`
+- :ref:`Update Notifications <doc_server_update_notifications>`
+- :ref:`Rules and Guidelines <doc_server_hosting_rules>`
 
 **Windows:**
 
@@ -244,7 +244,7 @@ Alphabetically sorted list of curated map file IDs:
 How to Host Over Internet
 -------------------------
 
-Hosting a publicly-accessible internet server requires an extra step compared to a LAN server. When on a home network `Port Forwarding <PortForwarding.rst>`_ is required in order to direct traffic to the host computer.
+Hosting a publicly-accessible internet server requires an extra step compared to a LAN server. When on a home network :ref:`Port Forwarding <doc_servers_portforward>` is required in order to direct traffic to the host computer.
 
 One way to think of it is that when there are multiple devices (e.g. computers and phones) connected to the LAN, the outside internet does not know which device is the Unturned server. In this case port forwarding specifies which LAN device is the host.
 

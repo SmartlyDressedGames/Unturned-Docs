@@ -1,7 +1,9 @@
+.. _doc_npcasset_quests:
+
 Quests
 ======
 
-**GUID** *32-digit hexadecimal*: Refer to `GUID </GUID.rst>`_ documentation.
+**GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
 
 **Type** *enum* (``Quest``)
 
@@ -10,7 +12,7 @@ Quests
 Conditions and Rewards
 ----------------------
 
-Quests can be turned in when conditions are met, and players can receive rewards for turning quests in. Refer to `Conditions.rst <Conditions.rst>`_ and `Rewards.rst <Rewards.rst>`_ for additional documentation.
+Quests can be turned in when conditions are met, and players can receive rewards for turning quests in. For more information, refer to the documentation for :ref:`Conditions <doc_npcasset_conditions>` and :ref:`Rewards <doc_npcasset_rewards>` respectively.
 
 Localization
 ------------

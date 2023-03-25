@@ -1,11 +1,11 @@
-.. _doc_assets_crafting_blacklist:
+.. _doc_assets_craftingblacklist:
 
 Crafting Blacklist Asset
 ========================
 
 Prevents specific items or blueprints from being used while crafting. They are hidden from the item quick actions menu and recipe list.
 
-``Input_Items`` array of Item `Asset Pointers <AssetPtr.rst>`_: Any blueprints consuming these items are cannot be crafted.
+``Input_Items`` array of Item :ref:`Asset Pointers <doc_data_assetptr>`: Any blueprints consuming these items are cannot be crafted.
 
 .. code-block:: cs
 	
@@ -20,9 +20,9 @@ Prevents specific items or blueprints from being used while crafting. They are h
 		"### another GUID number ###"
 	]
 
-``Output_Items`` array of Item `Asset Pointers <AssetPtr.rst>`_: Any blueprints generating these items cannot be crafted.
+``Output_Items`` array of Item :ref:`Asset Pointers <doc_data_assetptr>`: Any blueprints generating these items cannot be crafted.
 
-``Blueprints`` array: Prevent specific individual blueprints from being crafted. Each entry has an ``Item`` `Asset Pointer <AssetPtr.rst>`_ and ``Blueprint`` index. For example to prevent the Chef Hat from being salvaged:
+``Blueprints`` array: Prevent specific individual blueprints from being crafted. Each entry has an ``Item`` :ref:`Asset Pointer <doc_data_assetptr>` and ``Blueprint`` index. For example to prevent the Chef Hat from being salvaged:
 
 .. code-block:: cs
 	
@@ -34,4 +34,4 @@ Prevents specific items or blueprints from being used while crafting. They are h
 		}
 	]
 
-This is an `Asset v2 <AssetsV2.rst>`_ class.
+This is an :ref:`Asset v2 <doc_assets_v2>` class.

@@ -12,7 +12,7 @@ Any collection of items with different numeric values can be associated together
 Asset Setup
 -----------
 
-This is an `Asset v2 <AssetsV2.rst>`_ class.
+This is an :ref:`Asset v2 <doc_assets_v2>` class.
 
 The currency asset defines how numbers are formatted, which items make up the currency, and their individual values. An example can be found at Bundles/Items/Supplies/CanadianCurrency.asset.
 
@@ -44,7 +44,7 @@ To link a vendor with a currency set the vendor asset's **Currency** to the curr
 NPC Logic
 ---------
 
-Conditions can use the **Currency** type to require different total amounts in the player's inventory. Rewards can use the **Currency** type as well to grant amounts. Refer to `Conditions.rst <NPCAsset/Conditions.rst>`_ and `Rewards.rst <NPCAsset/Rewards.rst>`_ for documentation.
+Conditions can use the **Currency** type to require different total amounts in the player's inventory. Rewards can use the **Currency** type as well to grant amounts. Refer to :ref:`Conditions <doc_npcasset_conditions>` documentation and :ref:`Rewards <doc_npcasset_rewards>` documentation for documentation.
 
 Testing
 -------

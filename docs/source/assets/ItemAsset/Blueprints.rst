@@ -47,6 +47,6 @@ Product properties are used for blueprints where only one unique item is outputt
 Conditions
 ----------
 
-Blueprints can use quest conditions and rewards. A common usage is to make it so a blueprint is only available during a seasonal event. Refer to `Conditions.rst <Conditions.rst>`_ and `Rewards.rst <Rewards.rst>`_ for additional documentation.
+Blueprints can use quest conditions and rewards. A common usage is to make it so a blueprint is only available during a seasonal event. For more information, refer to the documentation for :ref:`Conditions <doc_npcasset_conditions>` and :ref:`Rewards <doc_npcasset_rewards>` respectively.
 
 Blueprint conditions and rewards are prefixed with ``Blueprint_#_``. For example, ``Blueprint_0_Condition_0_Type Holiday``.

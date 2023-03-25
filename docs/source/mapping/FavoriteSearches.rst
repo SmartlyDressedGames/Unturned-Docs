@@ -1,4 +1,4 @@
-.. _doc_favorite_searches:
+.. _doc_mapping_searches:
 
 Favorite Searches
 =================

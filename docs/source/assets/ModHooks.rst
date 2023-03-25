@@ -78,7 +78,7 @@ Events for day, night, full moon, and weather. These events are fired on server 
 Custom Weather Event Hook
 `````````````````````````
 
-Events for a specific custom `Weather Asset <WeatherAsset.rst>`_. Any map can have an unlimited number of weather types and weather listeners.
+Events for a specific custom :ref:`Weather Asset <doc_assets_weather>`. Any map can have an unlimited number of weather types and weather listeners.
 
 Event Instigators
 -----------------

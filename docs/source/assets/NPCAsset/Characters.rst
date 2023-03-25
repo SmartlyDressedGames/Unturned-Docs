@@ -1,7 +1,9 @@
+.. _doc_npcasset_characters:
+
 NPC Character
 =============
 
-**GUID** *32-digit hexadecimal*: Refer to `GUID </GUID.rst>`_ documentation.
+**GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
 
 **Type** *enum* (``NPC``)
 

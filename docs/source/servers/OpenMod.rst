@@ -3,7 +3,7 @@
 OpenMod
 =======
 
-`OpenMod <https://github.com/openmod/openmod>`_ is a spiritual successor to `Rocket <Rocket.rst>`_ developed by one of Rocket's original maintainers. It has its own plugin framework, but supports compatibility with existing Rocket plugins by integrating with RocketMod and LDM.
+`OpenMod <https://github.com/openmod/openmod>`_ is a spiritual successor to `Rocket <doc_servers_rocket>` developed by one of Rocket's original maintainers. It has its own plugin framework, but supports compatibility with existing Rocket plugins by integrating with RocketMod and LDM.
 
 Installation
 ------------

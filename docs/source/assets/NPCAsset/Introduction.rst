@@ -1,3 +1,5 @@
+.. _doc_npcasset_intro:
+
 Introduction to NPCs
 ====================
 

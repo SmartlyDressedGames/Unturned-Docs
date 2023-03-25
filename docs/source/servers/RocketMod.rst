@@ -3,4 +3,4 @@
 RocketMod
 =========
 
-The contents of this article have been moved to :ref:`Rocket.rst <doc_servers_rocket>`.
+The contents of this article have been moved to :ref:`Rocket <doc_servers_rocket>`.

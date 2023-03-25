@@ -1,4 +1,4 @@
-.. _doc_level_batching:
+.. _doc_mapping_batching:
 
 Level Batching
 ==============

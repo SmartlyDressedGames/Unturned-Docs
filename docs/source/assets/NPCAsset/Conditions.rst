@@ -1,3 +1,5 @@
+.. _doc_npcasset_conditions:
+
 Conditions
 ==========
 
@@ -61,7 +63,7 @@ Player
 Currency
 ````````
 
-Refer to `Currency </Currency.rst>`_ documentation.
+Refer to :ref:`Currency <doc_assets_currency>` documentation.
 
 **Condition\_#\_Type** *enum* (``Currency``)
 

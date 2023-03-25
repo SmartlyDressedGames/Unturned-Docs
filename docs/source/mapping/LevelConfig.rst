@@ -1,4 +1,4 @@
-.. _doc_level_config:
+.. _doc_mapping_config:
 
 Level Config
 ============

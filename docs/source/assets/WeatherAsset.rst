@@ -7,7 +7,7 @@ Overrides the built-in snow and rain weather with custom events. This is feature
 
 Random weather can be scheduled to occur naturally on a map with the `Weather_Types` property of the [Level Asset](LevelAsset.md).
 
-This is an `Asset v2 <AssetsV2.rst>`_ class.
+This is an :ref:`Asset v2 <doc_assets_v2>` class.
 
 How to test?
 ------------
@@ -21,7 +21,7 @@ When a GUID is passed to the weather command it will start a custom weather even
 Properties Reference
 --------------------
 
-``Volume_Mask`` `u32 Mask <Bitmask.rst>`_: only enabled while inside an ambience volume with non-zero bitwise AND result. Defaults to 0xFFFFFFFF.
+``Volume_Mask`` :ref:`u32 Mask <doc_data_bitmask>`: only enabled while inside an ambience volume with non-zero bitwise AND result. Defaults to 0xFFFFFFFF.
 
 ``Fade_In_Duration`` *float*: seconds between weather event starting and reaching full intensity.
 
@@ -81,7 +81,7 @@ Effect Properties
 
 Multiple effects can be instantiated while the weather is active.
 
-``Prefab`` `Master Bundle Pointer <MasterBundlePtr.rst>`_: game object with a particle system. PlayOnAwake should be disabled. For effects tied to the view it may be helpful to change the culling mode to Always Simulate.
+``Prefab`` :ref:`Asset Pointer <doc_data_masterbundleptr>`: game object with a particle system. PlayOnAwake should be disabled. For effects tied to the view it may be helpful to change the culling mode to Always Simulate.
 
 ``Emission_Exponent`` *float*: power applied to weather intensity multiplied by default constant rate over time.
 
@@ -102,4 +102,4 @@ Each color can use a custom override, or a color from the level editor lighting 
 NPC Conditions
 --------------
 
-Global weather state and current weather intensity blend can be tested through NPC conditions. Refer to `Conditions.rst <NPCAsset/Conditions.rst>`_ for documentation.
+Global weather state and current weather intensity blend can be tested through NPC conditions. Refer to :ref:`Conditions <doc_npcasset_conditions>` documentation for documentation.

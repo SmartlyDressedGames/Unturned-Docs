@@ -38,7 +38,7 @@ Header
 
 Each asset has a ``Metadata`` section for preparing to load.
 
-``GUID`` *string*: Refer to `GUID <GUID.rst>`_ documentation.
+``GUID`` *string*: Refer to :ref:`GUID <doc_data_guid>` documentation.
 
 ``Type`` *string*: Fully qualified name of any class in any module.
 

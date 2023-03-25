@@ -5,7 +5,7 @@ Stereo Song Asset
 
 Defines a music track that can be played on the in-game stereo item. (Or any custom music player item for that matter.) For an example refer to ``Unturned_Theme.asset`` in the Songs folder.
 
-This is an `Asset v2 <AssetsV2.rst>`_ class.
+This is an :ref:`Asset v2 <doc_assets_v2>` class.
 
 Asset Properties Reference
 --------------------------
@@ -30,7 +30,7 @@ OR
 		"Token" "Stereo_Songs.Unturned_Theme.Title"
 	}
 
-``Song`` `Master Bundle Pointer <MasterBundlePtr.rst>`_: audio clip to play. Can either be a newer master bundle pointer or an older content pointer. Examples:
+``Song`` :ref:`Asset Pointer <doc_data_masterbundleptr>`: audio clip to play. Can either be a newer master bundle pointer or an older content pointer. Examples:
 
 .. code-block:: cs
 	
