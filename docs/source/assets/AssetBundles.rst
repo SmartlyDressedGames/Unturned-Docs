@@ -8,7 +8,7 @@ The game loads textures, audio, meshes, prefabs, etc. from **Unity Asset Bundles
 \*.content bundles to
 \*.masterbundle files.
 
-:ref:`Master Bundles <assets/AssetBundles:Master Bundles>` should be used for essentially all new projects.
+:ref:`Master Bundles <doc_asset_bundles:master_bundles>` should be used for essentially all new projects.
 
 Tool Setup
 ----------
@@ -19,6 +19,8 @@ Prior to using any of these tools they must be imported into a Unity project
 1. Find the Unturned installation directory.
 3. Navigate to the Bundles/Sources directory.
 4. Import the Project.unitypackage.
+
+.. _doc_asset_bundles:master_bundles:
 
 Master Bundles
 --------------

@@ -9,9 +9,12 @@ Entering "fv:xyz" in the search bar loads xyz.txt from the game folder, and will
 
 For example this matches anything with "fire" in the name or Road Line Cap #1:
 
+
+.. code-block:: text
+	
 	// Fire related props
 	Fire
-
+	
 	// Specific road prop
 	Cap #1 Road Line
 

@@ -23,13 +23,13 @@ One key component of sharing a curated map, trending popular workshop item, or s
 
 In-game the description supports the following BBCode tags:
 
-* [b]
-* [i]
-* [list]
-* [*]
-* [h1]
-* [img]
-* [url]
+* ``[b]``
+* ``[i]``
+* ``[list]``
+* ``[*]``
+* ``[h1]``
+* ``[img]``
+* ``[url]``
 
 Ideally descriptions are kept succinct, so separate discussion topics might be a better place for long sections like ID lists.
 
@@ -44,7 +44,7 @@ The primary focus of this article at the time of posting is to begin laying out 
 
 **Map Variety**: New maps should feel noticeably different in order to be a candidate for curation. This is a subjective rule, and is covered by factors like interesting progression, new items, new environments, new architecture styles, new buildings, etc.
 
-**Asset Validation**: Running the game with the [-ValidateAssets](ValidateAssets.md) command-line flag should not produce any warnings or errors.
+**Asset Validation**: Running the game with the :ref:`-ValidateAssets <doc_asset_validation>` command-line flag should not produce any warnings or errors.
 
 **English Text**: Having an English-speaking member of the mod team is recommended, and `MoltonMontro <mailto:moltonmontro@smartlydressedgames.com>`_ has offered to help with English-related questions. Most importantly in this regard is proper punctuation and grammar: while native English speakers can easily read incorrect punctuation, it is very helpful for non-native readers. Ironically this paragraph probably has some punctuation errors.
 

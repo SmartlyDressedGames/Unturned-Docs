@@ -18,6 +18,8 @@ Weapon Asset Properties
 
 **Wear** *byte*: Increment to degrade quality by. Defaults to 1.
 
+.. _doc_itemasset_weapon:player_damage:
+
 Player Damage
 -------------
 

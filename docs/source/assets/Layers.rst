@@ -14,7 +14,7 @@ Built-in Layers
 - 1 TransparentFX
 - 2 Ignore Raycast
 - 4 Water: ocean and water tiles.
-- 5 UI: menus with `uGUI glazier <doc_glazier>` as well as plugin custom menus.
+- 5 UI: menus with :ref:`uGUI glazier <doc_glazier>` as well as plugin custom menus.
 
 User Layers
 

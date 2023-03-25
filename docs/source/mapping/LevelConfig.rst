@@ -51,13 +51,13 @@ Arena Mode
 General
 -------
 
-__Asset__: Object with GUID of [Level Asset](LevelAsset.md) to instantiate on this map. For example:
+**Asset**: Object with GUID of :ref:`Level Asset <doc_assets_level>` to instantiate on this map. For example:
 
 .. code-block:: json
 
 	"Asset": { "GUID": "12dc9fdbe9974022afd21158ad54b76a" }
 
-__Trains__: Array of train vehicles to spawn. Only one of each train asset can exist at a given time because the vehicle ID is used to match saved trains to tracks. Road index can be seen by selecting a road in the level editor. Placement is normalized between the start and end of the track length. For example:
+**Trains**: Array of train vehicles to spawn. Only one of each train asset can exist at a given time because the vehicle ID is used to match saved trains to tracks. Road index can be seen by selecting a road in the level editor. Placement is normalized between the start and end of the track length. For example:
 
 .. code-block:: json
 
@@ -71,7 +71,7 @@ __Trains__: Array of train vehicles to spawn. Only one of each train asset can e
 		}
 	]
 
-__Mode_Config_Overrides__: Pairs of server config properties and values to override them. For example:
+**Mode_Config_Overrides**: Pairs of server config properties and values to override them. For example:
 
 .. code-block:: json
 
@@ -123,7 +123,7 @@ __Mode_Config_Overrides__: Pairs of server config properties and values to overr
 
 **Prevent_Building_Near_Spawnpoint_Radius** *float*: Closest distance players can build to spawn points. Useful to override for close-quarters maps. Defaults to 16.
 
-**Spawn_Loadouts**: Array of items to grant when spawning in any mode. Refer to Arena_Loadouts.
+**Spawn_Loadouts**: Array of items to grant when spawning in any mode. Refer to ``Arena_Loadouts``.
 
 **Allow_Holiday_Redirects** *bool*: Whether certain assets like objects, trees and landscapes should load alternative versions during holiday events.
 
@@ -142,9 +142,9 @@ Disable various elements of the heads-up display.
 
 **PlayerUI_StaminaVisible** *bool*
 
-**PlayerUI_OxygenVisible** *_bool_*
+**PlayerUI_OxygenVisible** *bool*
 
-**PlayerUI_GunVisible** *_bool_*
+**PlayerUI_GunVisible** *bool*
 
 **Allow_Crafting** *bool*
 
@@ -161,7 +161,7 @@ Deprecated
 
 **Has_Discord_Rich_Presence** *bool*: Only valid for official maps. If discord integration is enabled and this flag is true discord will check for a map icon configured in their partner page.
 
-**Item** *int*: Kept for backwards compatibility. Ignored if Associated_Stockpile_Items are set.
+**Item** *int*: Kept for backwards compatibility. Ignored if ``Associated_Stockpile_Items`` are set.
 
 **Load_From_Resources** *bool*: Used in the past for curated maps with assets in the vanilla Resources/Bundles/* directory. Master Bundles completely replaced this.
 

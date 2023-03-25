@@ -3,7 +3,7 @@
 Asset Validation
 ================
 
-During startup the game runs fast basic health checks on assets while loading, but there are a variety of slower tests available. These can be enabled with the **-ValidateAssets** command-line flag. Errors are logged to the Client.log file, as well as to the Asset Errors menu.
+During startup the game runs fast basic health checks on assets while loading, but there are a variety of slower tests available. These can be enabled with the ``-ValidateAssets`` command-line flag. Errors are logged to the Client.log file, as well as to the Asset Errors menu.
 
 **Navmesh Readable**: Object navmeshes should have the CPU Readable flag enabled in Unity. This is required for Recast to be able to generate the level navmesh.
 

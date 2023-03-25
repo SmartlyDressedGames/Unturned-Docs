@@ -248,7 +248,7 @@ The weather blend alpha condition compares the current intensity to a target val
 
 **Condition\_#\_GUID** *string*: GUID of weather required.
 
-**Condition\_#\_Value** *float* [``0``, ``1``]: Target value, as the weather intensity blend.
+**Condition\_#\_Value** *float* [0, 1]: Target value, as the weather intensity blend.
 
 Weather_Status
 ``````````````

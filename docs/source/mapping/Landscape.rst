@@ -26,4 +26,4 @@ Upgrade Legacy Terrain to Landscape
 3. Assign materials in the same order as in the original map editor. For example, if dirt is top of the list in the legacy editor then assign dirt to material slot #0.
 4. Click upgrade and wait for the data to transfer. This may take a while.
 5. Save the level.
-6. Change ``Use_Legacy_Ground`` to false in the `Level Config <LevelConfig.md>`_ file.
+6. Change ``Use_Legacy_Ground`` to false in the :ref:`Level Config <doc_mapping_config>` file.

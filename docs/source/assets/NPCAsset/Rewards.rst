@@ -79,12 +79,14 @@ Refer to [Currency](/Currency.md) documentation.
 
 **Reward\_#\_Value** *int*: Amount of currency to reward.
 
+.. _doc_npcasset_rewards:event:
+
 Event
 `````
 
 **Reward\_#\_Type** *enum* (``Event``)
 
-**Reward\_#\_ID** *string*: ID of event to broadcast. This can be used by c# plugins with the ``NPCEventManager`` class, or Unity events with the :ref:`NPC Global Event component <assets/ModHooks:NPC Global Event Hook>`. For example, when an event with ID "Fireworks" is broadcast all of the components with event ID "Fireworks" will have their corresponding Unity event triggered as well, in this case perhaps to spawn a fireworks effect.
+**Reward\_#\_ID** *string*: ID of event to broadcast. This can be used by c# plugins with the ``NPCEventManager`` class, or Unity events with the :ref:`NPC Global Event component <doc_assets_modhooks:npc_global_event_hook>`. For example, when an event with ID "Fireworks" is broadcast all of the components with event ID "Fireworks" will have their corresponding Unity event triggered as well, in this case perhaps to spawn a fireworks effect.
 
 Experience
 ``````````

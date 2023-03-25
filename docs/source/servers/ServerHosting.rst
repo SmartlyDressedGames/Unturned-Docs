@@ -9,9 +9,9 @@ All multiplayer servers are hosted using the Unturned Dedicated Server tool (som
 
 - :ref:`How to Install Server using SteamCMD <servers/ServerHosting:How to Install Server using SteamCMD>`
 - :ref:`How to Install Server without SteamCMD <servers/ServerHosting:How to Install Server without SteamCMD>`
-- :ref:`How to Configure Server <servers/ServerHosting:How to Configure Server>`
-- :ref:`How to Host Curated Maps <servers/ServerHosting:How to Host Curated Maps>`
-- :ref:`How to Host Over Internet <servers/ServerHosting:How to Host Over Internet>`
+- :ref:`How to Configure Server <doc_server_hosting:configure_server>`
+- :ref:`How to Host Curated Maps <doc_server_hosting:host_curated_maps>`
+- :ref:`How to Host Over Internet <doc_server_hosting:host_over_internet>`
 - :ref:`Port Forwarding <doc_servers_portforward>`
 - :ref:`Rocket <doc_servers_rocket>`
 - :ref:`Login Tokens <doc_servers_gslt>`
@@ -20,14 +20,16 @@ All multiplayer servers are hosted using the Unturned Dedicated Server tool (som
 
 **Windows:**
 
-- :ref:`How to Install SteamCMD <servers/ServerHosting:How to Install SteamCMD on Windows>`
-- :ref:`How to Launch Server <servers/ServerHosting:How to Launch Server on Windows>`
+- :ref:`How to Install SteamCMD <doc_server_hosting:install_steamcmd_windows>`
+- :ref:`How to Launch Server <doc_server_hosting:launch_server_windows>`
 - `Video Tutorial <https://www.youtube.com/watch?v=8axVrnSLlx4>`_
 
 **Linux:**
 
-- :ref:`How to Install SteamCMD <servers/ServerHosting:How to Install SteamCMD on Linux>`
-- :ref:`How to Launch Server <servers/ServerHosting:How to Launch Server on Linux>`
+- :ref:`How to Install SteamCMD <doc_server_hosting:install_steamcmd_linux>`
+- :ref:`How to Launch Server <doc_server_hosting:launch_server_linux>`
+
+.. _doc_server_hosting:install_steamcmd_windows:
 
 How to Install SteamCMD on Windows
 ----------------------------------
@@ -38,12 +40,16 @@ How to Install SteamCMD on Windows
 
 Continue to: `How to Install Server using SteamCMD <How-to-Install-Server-using-SteamCMD>`_
 
+.. _doc_server_hosting:install_steamcmd_linux:
+
 How to Install SteamCMD on Linux
 --------------------------------
 
 Installation on Linux varies by distribution and your admin preferences, so refer to `Valve's Linux Documentation <https://developer.valvesoftware.com/wiki/SteamCMD#Linux>`_. Once downloaded, run the ``steamcmd.sh`` script.
 
-Continue to: :ref:`How to Install Server using SteamCMD <servers/ServerHosting:How to Install Server using SteamCMD>`
+Continue to: :ref:`How to Install Server using SteamCMD <doc_server_hosting:install_with_steamcmd>`
+
+.. _doc_server_hosting:install_with_steamcmd:
 
 How to Install Server using SteamCMD
 ------------------------------------
@@ -70,7 +76,9 @@ How to Install Server using SteamCMD
 
 4. The server files are now in the ``...SteamCMD\steamapps\common\U3DS`` directory.
 
-Continue to: :ref:`How to Launch Server on Windows <servers/ServerHosting:How to Launch Server on Windows>` or :ref:`How to Launch Server on Linux <servers/ServerHosting:How to Launch Server on Linux>`
+Continue to: :ref:`How to Launch Server on Windows <doc_server_hosting:launch_server_windows>` or :ref:`How to Launch Server on Linux <doc_server_hosting:launch_server_linux>`
+
+.. _doc_server_hosting:install_without_steamcmd:
 
 How to Install Server without SteamCMD
 --------------------------------------
@@ -91,7 +99,9 @@ To navigate to the server files install directory:
 
 The rest of the documentation assumes that the Unturned Dedicated Server tool was downloaded with SteamCMD, rather than through your Steam Library, so some of the documentation may differ slightly.
 
-Continue to: :ref:`How to Launch Server on Windows <servers/ServerHosting:How to Launch Server on Windows>` or :ref:`How to Launch Server on Linux <servers/ServerHosting:How to Launch Server on Linux>`
+Continue to: :ref:`How to Launch Server on Windows <doc_server_hosting:launch_server_windows>` or :ref:`How to Launch Server on Linux <doc_server_hosting:launch_server_linux>`
+
+.. _doc_server_hosting:launch_server_windows:
 
 How to Launch Server on Windows
 -------------------------------
@@ -126,6 +136,8 @@ How to Launch Server on Windows
 
 10. (optional) For your server to be visible on the in-game internet server list you will need to set a :ref:`Login Token <doc_servers_gslt>` and configure :ref:`Port Forwarding <doc_servers_portforward>`.
 
+.. _doc_server_hosting:launch_server_linux:
+
 How to Launch Server on Linux
 -----------------------------
 
@@ -143,6 +155,8 @@ How to Launch Server on Linux
 4. The executed command has created a new file directory located in ``.../U3DS/Servers``, called "MyServer". This directory is where all the savedata and configuration files are kept. Changing the ``MyServer`` ServerID (from step 2) in the batch script to a different name will allow for keeping savedata separate across multiple servers, and for running multiple servers at once.
 
 5. (optional) For your server to be visible on the in-game internet server list you will need to set a :ref:`Login Token <doc_servers_gslt>` and configure :ref:`Port Forwarding <doc_servers_portforward>`.
+
+.. _doc_server_hosting:configure_server:
 
 How to Configure Server
 -----------------------
@@ -214,6 +228,8 @@ Multiple file IDs should be separated by commas:
 
 4. During startup the files will be updated, and any dependencies detected. Players will have the files downloaded while connecting to the server.
 
+.. _doc_server_hosting:host_curated_maps:
+
 How to Host Curated Maps
 ````````````````````````
 
@@ -240,6 +256,8 @@ Alphabetically sorted list of curated map file IDs:
 - Ireland: 1411633953
 - Kuwait: 2483365750
 - Rio de Janeiro: 1821848824
+
+.. _doc_server_hosting:host_over_internet:
 
 How to Host Over Internet
 -------------------------
