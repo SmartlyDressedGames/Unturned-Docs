@@ -7,7 +7,7 @@ Each map can be associated with a **Level Asset**. These assets contain gameplay
 
 For examples check the ``Assets/Levels`` directory.
 
-``Dropship`` :ref:`Asset Pointer <doc_data_masterbundleptr>`: Overrides the model seen flying over the map when a care package is dropped.
+``Dropship`` :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: Overrides the model seen flying over the map when a care package is dropped.
 
 ``Airdrop`` :ref:`Asset Pointer <doc_data_assetptr>`: Asset pointer to an :ref:`Airdrop Asset <doc_assets_airdrop>`. Overrides the falling care package model.
 
@@ -60,6 +60,6 @@ Skill Rule Properties
 Music Properties
 ----------------
 
-``Loop`` :ref:`Asset Pointer <doc_data_masterbundleptr>`: looping audio clip played until loading finishes.
+``Loop`` :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: looping audio clip played until loading finishes.
 
-``Outro`` :ref:`Asset Pointer <doc_data_masterbundleptr>`: audio clip played once loading finishes.
+``Outro`` :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: audio clip played once loading finishes.

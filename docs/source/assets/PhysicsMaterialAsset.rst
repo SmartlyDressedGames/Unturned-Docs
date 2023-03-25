@@ -20,7 +20,7 @@ Properties
 
 ``Base``  :ref:`Asset Pointer <doc_data_assetptr>`: Points to a physics material asset to extend. Properties from the extension asset will be appended to the base asset.
 
-``AudioDefs`` *dictionary*: pairs of key/name and :ref:`Asset Pointer <doc_data_masterbundleptr>` to OneShotAudioDefinition. For example the ``ParticleSystemCollisionAudio`` component ``MaterialPropertyName`` is referring to these keys. Official properties include:
+``AudioDefs`` *dictionary*: pairs of key/name and :ref:`Master Bundle Pointer <doc_data_masterbundleptr>` to OneShotAudioDefinition. For example the ``ParticleSystemCollisionAudio`` component ``MaterialPropertyName`` is referring to these keys. Official properties include:
 
 - BulletCasingBounce: used by vanilla non-shotgun particle collision audio.
 - BulletImpact: fired bullet hitting surface.

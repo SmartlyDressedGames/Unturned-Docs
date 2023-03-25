@@ -40,7 +40,7 @@ Other Properties
 
 **Disable_Sorting** *flag*: Disable vendor sorting.
 
-**Currency** *string*: GUID of [currency asset](/Currency.md) to use as currency instead of experience points.
+**Currency** *string*: GUID of the :ref:`currency asset <doc_assets_currency>` to use as currency instead of experience points.
 
 **FaceOverride** *byte*: Optional index of face image to use when this vendor is opened. Face is reset to character's default when unspecified or when a new message is opened.
 

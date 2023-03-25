@@ -5,7 +5,7 @@ Weather Asset
 
 Overrides the built-in snow and rain weather with custom events. This is feature is a work-in-progress.
 
-Random weather can be scheduled to occur naturally on a map with the `Weather_Types` property of the [Level Asset](LevelAsset.md).
+Random weather can be scheduled to occur naturally on a map with the `Weather_Types` property of the `Level Asset <doc_assets_level>`.
 
 This is an :ref:`Asset v2 <doc_assets_v2>` class.
 
@@ -27,7 +27,7 @@ Properties Reference
 
 ``Fade_Out_Duration`` *float*: seconds between weather event ending and reaching zero intensity.
 
-``Ambient_Audio_Clip`` [Master Bundle Pointer](MasterBundlePtr.md): audio clip to play globally. Volume matches intensity.
+``Ambient_Audio_Clip`` :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: audio clip to play globally. Volume matches intensity.
 
 ``Override_Fog`` *bool*: should fog configured in the lighting be overridden?
 
@@ -81,7 +81,7 @@ Effect Properties
 
 Multiple effects can be instantiated while the weather is active.
 
-``Prefab`` :ref:`Asset Pointer <doc_data_masterbundleptr>`: game object with a particle system. PlayOnAwake should be disabled. For effects tied to the view it may be helpful to change the culling mode to Always Simulate.
+``Prefab`` :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: game object with a particle system. PlayOnAwake should be disabled. For effects tied to the view it may be helpful to change the culling mode to Always Simulate.
 
 ``Emission_Exponent`` *float*: power applied to weather intensity multiplied by default constant rate over time.
 

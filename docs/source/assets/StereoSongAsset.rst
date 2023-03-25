@@ -30,7 +30,7 @@ OR
 		"Token" "Stereo_Songs.Unturned_Theme.Title"
 	}
 
-``Song`` :ref:`Asset Pointer <doc_data_masterbundleptr>`: audio clip to play. Can either be a newer master bundle pointer or an older content pointer. Examples:
+``Song`` :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: audio clip to play. Can either be a newer master bundle pointer or an older content pointer. Examples:
 
 .. code-block:: cs
 	

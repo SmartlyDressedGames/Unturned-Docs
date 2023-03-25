@@ -71,7 +71,7 @@ Achievement
 Currency
 ````````
 
-Refer to [Currency](/Currency.md) documentation.
+Refer to :ref:`Currency <doc_assets_currency>` documentation.
 
 **Reward\_#\_Type** *enum* (``Currency``)
 
