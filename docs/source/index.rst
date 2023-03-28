@@ -30,9 +30,9 @@ Several older tutorial videos are gradually becoming outdated and don't represen
 	:maxdepth: 1
 	:caption: About
 	
-	about/Troubleshooting
-	about/CommandLine
-	about/GettingStarted
+	about/troubleshooting
+	about/command-line
+	about/getting-started
 
 .. First section has articles on assets (in general).
 	Second section lists asset types, alphabetically.
@@ -41,71 +41,71 @@ Several older tutorial videos are gradually becoming outdated and don't represen
 	:maxdepth: 1
 	:caption: Asset Manual
 	
-	assets/AssetBundleCustomData
-	assets/AssetBundles
-	assets/AssetsV1
-	assets/AssetsV2
-	assets/AssetValidation
-
-	assets/AirdropAsset
-	assets/AnimalAsset
-	assets/Animation
-	assets/CharacterMeshReplacement
-	assets/CraftingBlacklistAsset
-	assets/Currency
-	assets/EffectAsset
-	assets/Foliage
-	assets/ItemAsset/index
-	assets/ItemData
-	assets/Layers
-	assets/LevelAsset
-	assets/ModHooks
-	assets/NPCAsset/index
-	assets/PhysicsMaterialAsset
-	assets/SpawnAsset
-	assets/StereoSongAsset
-	assets/Unity2018
-	assets/Unity2019
-	assets/VehiclePhysicsProfile
-	assets/WeatherAsset
-	assets/ZombieDifficultyAsset
+	assets/asset-bundle-custom-data
+	assets/asset-bundles
+	assets/assets-v1
+	assets/assets-v2
+	assets/asset-validation
+	
+	assets/airdrop-asset
+	assets/animal-asset
+	assets/animation
+	assets/character-mesh-replacement
+	assets/crafting-blacklist-asset
+	assets/currency-asset
+	assets/effect-asset
+	assets/foliage-asset
+	assets/item-asset/index
+	assets/item-data
+	assets/layers
+	assets/level-asset
+	assets/mod-hooks
+	assets/npc-asset/index
+	assets/physics-material-asset
+	assets/spawn-asset
+	assets/stereo-song-asset
+	assets/unity-2018
+	assets/unity-2019
+	assets/vehicle-physics-profile-asset
+	assets/weather-asset
+	assets/zombie-difficulty-asset
 
 .. toctree::
 	:hidden:
 	:maxdepth: 1
 	:caption: Mapping
 	
-	mapping/CuratedMaps
-	mapping/EditorAssetRedirectors
-	mapping/FavoriteSearches
-	mapping/Landscape
-	mapping/LevelBatching
-	mapping/LevelConfig
-	mapping/ManualObjectCulling
+	mapping/curated-maps
+	mapping/editor-asset-redirectors
+	mapping/favorite-searches
+	mapping/landscape
+	mapping/level-batching
+	mapping/level-config
+	mapping/manual-object-culling
 
 .. toctree::
 	:hidden:
 	:maxdepth: 1
 	:caption: Servers & Programming
-
-	servers/CommandIO
-	servers/DedicatedWorkshopUpdateMonitor
-	servers/GameServerLoginTokens
-	servers/Glazier
-	servers/OpenMod
-	servers/PortForwarding
-	servers/Rocket
-	servers/RocketMod
-	servers/ServerHosting
-	servers/ServerHostingRules
-	servers/ServerUpdateNotifications
+	
+	servers/command-io
+	servers/dedicated-workshop-update-monitor
+	servers/game-server-login-tokens
+	servers/glazier
+	servers/openmod
+	servers/port-forwarding
+	servers/rocket
+	servers/rocketmod
+	servers/server-hosting
+	servers/server-hosting-rules
+	servers/server-update-notifications
 
 .. toctree::
 	:hidden:
 	:maxdepth: 1
 	:caption: Data types
 	
-	data/AssetPtr
-	data/Bitmask
-	data/GUID
-	data/MasterBundlePtr
+	data/asset-ptr
+	data/bitmask
+	data/guid
+	data/master-bundle-ptr
