@@ -3,7 +3,7 @@
 Animation
 =========
 
-Unturned's (3.0) character rig is terrible. Using existing animations is recommended for your sanity. Unturned II's (4.0) rig is significantly more user friendly.
+Unturned's character rig is terrible – so using existing animations is recommended for your sanity.
 
 Export
 ------

@@ -95,7 +95,6 @@ Several older tutorial videos are gradually becoming outdated and don't represen
 	servers/openmod
 	servers/port-forwarding
 	servers/rocket
-	servers/rocketmod
 	servers/server-hosting
 	servers/server-hosting-rules
 	servers/server-update-notifications

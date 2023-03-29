@@ -21,6 +21,10 @@ Upgrading terrain from the legacy editor to the devkit editor is not necessarily
 Upgrade Legacy Terrain to Landscape
 -----------------------------------
 
+.. note::
+	
+	The devkit editor was removed in version 3.22.19.0.
+
 1. Level should have only one Landscape instance spawned from the Type Browser.
 2. Open the Ground Upgrade Wizard.
 3. Assign materials in the same order as in the original map editor. For example, if dirt is top of the list in the legacy editor then assign dirt to material slot #0.

@@ -209,7 +209,8 @@ Reputation
 
 **Condition\_#\_Value** *int*: Target value, in terms of reputation.
 
-### Skillset
+Skillset
+````````
 
 **Condition\_#\_Type** *enum* (``Skillset``)
 

@@ -36,15 +36,15 @@ This is an :ref:`Asset v2 <doc_assets_v2>` class.
 Schedulable Weather Properties
 ------------------------------
 
-`Asset` :ref:`Asset Pointer <doc_data_assetptr>`: Points to a :ref:`Weather Asset <doc_assets_weather>`.
+``Asset`` :ref:`Asset Pointer <doc_data_assetptr>`: Points to a :ref:`Weather Asset <doc_assets_weather>`.
 
-`Min_Frequency` *float*: When chosen to be the next scheduled weather event, minimum number of in-game days before it will start.
+``Min_Frequency`` *float*: When chosen to be the next scheduled weather event, minimum number of in-game days before it will start.
 
-`Max_Frequency` *float*: When chosen to be the next scheduled weather event, maximum number of in-game days before it will start.
+``Max_Frequency`` *float*: When chosen to be the next scheduled weather event, maximum number of in-game days before it will start.
 
-`Min_Duration` *float*: Minimum number of in-game days before the weather event will end.
+``Min_Duration`` *float*: Minimum number of in-game days before the weather event will end.
 
-`Max_Duration` *float*: Maximum number of in-game days before the weather event will end.
+``Max_Duration`` *float*: Maximum number of in-game days before the weather event will end.
 
 Skill Rule Properties
 ---------------------

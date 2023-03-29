@@ -30,8 +30,10 @@ FoliageResourceInfoAsset Properties Reference
 Upgrade Devkit Foliage from V1 to V2
 ------------------------------------
 
-Note: maps with auto-converted terrain from the 3.22.8.0 update will already have been converted to V2.
+.. note::
+	
+	Maps with auto-converted terrain from the 3.22.8.0 update will have already been converted to V2.
 
-V1 of devkit foliage unfortunately saved small individual regions into their own files, which makes maps slow to copy, download and install. V2 fixes this by storing pointers for each region into a single file at the cost of RAM in editor.
+V1 of devkit foliage saved each small, individual region into their own files, which made maps slow to copy, download, and install. V2 fixes this by storing pointers for each region into a single file, at the cost of RAM in the map editor.
 
-Following the 3.22.20.0 update, maps with foliage V1 will default to saving as V2 without the ``-SaveFoliageUsingV2`` command-line argument. The older files are still kept in the map's Foliage directory as a backup, so they should be manually removed after conversion to free up space.
+Following the 3.22.20.0 update, maps using v1 foliage will automatically update to v2 the next time they are saved, without needing to use the ``-SaveFoliageUsingV2`` command-line argument. The older v1 foliage files are still kept in the map's Foliage directory as a backup. These v1 files can be manually removed after having converted to v2, in order to free up space.

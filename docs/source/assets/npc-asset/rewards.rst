@@ -142,7 +142,8 @@ Hint
 
 **Reward\_#\_Duration** *float*: Duration of the hint, in seconds. Defaults to 2 seconds.
 
-### Player Spawnpoint
+Player Spawnpoint
+`````````````````
 
 **Reward\_#\_Type** *enum* (``Player_Spawnpoint``)
 
