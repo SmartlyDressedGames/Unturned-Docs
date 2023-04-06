@@ -1,4 +1,14 @@
+# Read the Docs configuration file
+# See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
+
+# These fields are in the order they are mentioned in the RTD docs.
+
 version: 2
+
+# Enabling PDF and EPUB builds, for offline use
+formats:
+  - pdf
+  - epub
 
 build:
   os: "ubuntu-20.04"
@@ -8,7 +18,3 @@ build:
 sphinx:
   fail_on_warning: true # Make warnings more visible by forcing build to fail
 
-# Enabling PDF and EPUB builds, for offline use
-formats:
-  - pdf
-  - epub
