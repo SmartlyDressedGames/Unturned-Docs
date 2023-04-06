@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = "U3 Docs"
+project = "Unturned"
 copyright = '2023, Smartly Dressed Games'
 author = 'Smartly Dressed Games'
 
