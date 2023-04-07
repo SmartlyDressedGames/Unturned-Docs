@@ -1,3 +1,7 @@
+**NOTICE:** *You are not reading the most up-to-date documentation. This file is old, and may not reflect the current modding or server capabilities. The latest documentation can be found at [Unturned Documentation](https://docs.smartlydressedgames.com/).*
+
+*This file may be removed in the future. It does not have a more up-to-date equivalent, because it regards a since-removed feature.*
+
 Landscape
 =========
 
