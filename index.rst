@@ -29,8 +29,7 @@ Several older tutorial videos are gradually becoming outdated and don't represen
 	:hidden:
 	:maxdepth: 1
 	:caption: About
-	
-	about/troubleshooting
+
 	about/command-line
 	about/getting-started
 
