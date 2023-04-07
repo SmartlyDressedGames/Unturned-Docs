@@ -73,11 +73,10 @@ Several older tutorial videos are gradually becoming outdated and don't represen
 	:hidden:
 	:maxdepth: 1
 	:caption: Mapping
-	
+
 	mapping/curated-maps
 	mapping/editor-asset-redirectors
 	mapping/favorite-searches
-	mapping/landscape
 	mapping/level-batching
 	mapping/level-config
 	mapping/manual-object-culling
