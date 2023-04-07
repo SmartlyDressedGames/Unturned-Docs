@@ -40,7 +40,5 @@ html_theme_options = {
     'collapse_navigation': True,
 }
 
-html_show_sphinx = False # hide "Created using Sphinx" from the HTML footer
-
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
