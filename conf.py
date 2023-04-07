@@ -35,6 +35,7 @@ templates_path = ['_templates']
 
 html_theme = 'sphinx_rtd_theme'
 
+# RTD theme options are documented here: https://sphinx-rtd-theme.readthedocs.io/en/stable/configuring.html
 html_theme_options = {
     # Toc options
     'collapse_navigation': True,
