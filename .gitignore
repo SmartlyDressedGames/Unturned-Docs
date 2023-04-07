@@ -1,5 +1,5 @@
 # Sphinx output folder as specified in Makefile and make.bat
-/build
+/_build
 
 # Temporary Visual Studio Code config files
 /.vscode
