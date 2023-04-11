@@ -3,9 +3,12 @@
 Placeable Assets
 ================
 
-Temporarily noting this here, until placeable assets are properly documented.
+Placeables are able to be placed by players.
 
-Not ideal to be adding this so late in development, but at least it is a step in the right direction because barricade/structure have a lot in common.
+This inherits the :ref:`ItemAsset <doc_item_asset_intro>` class.
+
+Placeable Asset Properties
+--------------------------
 
 **SalvageItem** :ref:`Asset Pointer <doc_data_assetptr>`: Item added when picking up below 100% health. Defaults to a random item used in the placeable's blueprints.
 

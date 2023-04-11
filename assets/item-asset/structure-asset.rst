@@ -3,7 +3,15 @@
 Structure Assets
 ================
 
-Temporarily noting this here, until structure assets are properly documented.
+.. attention::
+	Structure assets are not properly documented yet. Some of the information here may be slightly outdated, and most properties are undocumented.
+
+Structures can be placed by players. Some structure pieces require another structure piece in order to be placed.
+
+This inherits the :ref:`PlaceableAsset <doc_item_asset_placeable>` class.
+
+Structure Asset Properties
+--------------------------
 
 **Explosion** *uint16* or *GUID*: ID or GUID of effect to play when destroyed.
 
