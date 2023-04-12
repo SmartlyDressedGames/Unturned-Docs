@@ -49,9 +49,9 @@ Magazine Asset Properties
 
 **Resource_Damage** *float*: Damage dealt to resources caught in the area-of-effect explosion.
 
-**Object_Damage** *float*: Damage dealt to zombies caught in the area-of-effect explosion. Defaults to the value used by Resource_Damage.
+**Object_Damage** *float*: Damage dealt to zombies caught in the area-of-effect explosion. Defaults to the value used by ``Resource_Damage``.
 
-**Explosion_Launch_Speed** *float*: Launch speed of players caught within the area-of-effect explosion, in meters per second. Defaults to the resulting value from Player_Damage * 0.1. 
+**Explosion_Launch_Speed** *float*: Launch speed of players caught within the area-of-effect explosion, in meters per second. Defaults to the resulting value from ``Player_Damage * 0.1``. 
 
 **Explosion** *uint16* or *GUID*: ID or GUID of explosion effect. Defaults to 0.
 
