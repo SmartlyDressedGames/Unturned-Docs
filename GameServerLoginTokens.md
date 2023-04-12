@@ -6,6 +6,7 @@ Game Server Login Tokens
 ========================
 
 Beginning in version 3.20.4.0 Unturned dedicated servers can be authenticated using a **Game Server Login Token** or **GSLT**. After version 3.21.31.0 anonymous servers (without GSLT) are hidden from the internet server list.
+After version 3.22.20.0 GSLT is required for direct connection (Internet servers only LAN servers work without).
 
 Creating GSLTs
 --------------
