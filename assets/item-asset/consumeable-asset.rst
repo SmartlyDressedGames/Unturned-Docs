@@ -20,6 +20,8 @@ Consumeable Asset Properties
 
 **Bones_Modifier** *enum* (``Break``, ``Heal``, ``None``): Determines the effect the consumable has in relation to the "Broken Bones" status effect.
 
+**ConsumeAudioClip** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: AudioClip to play when the consumeable is used.
+
 **Disinfectant** *byte*: Amount of immunity restored.
 
 **Energy** *byte*: Amount of stamina restored.
