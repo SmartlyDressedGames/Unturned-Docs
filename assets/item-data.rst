@@ -4,10 +4,10 @@ Item Data (outdated)
 ====================
 
 .. warning::
-  
-  This documentation file has been deprecated, and is no longer receiving updates. It has been superceded in favor of the `item-asset directory <item-asset>`_, which contains individual documentation files for each item asset class.
-  
-  This deprecated documentation file will be progressively phased out as the new documentation sources are expanded.
+	
+	This documentation file has been deprecated, and is no longer receiving updates. It has been superceded in favor of the `item-asset directory <item-asset>`_, which contains individual documentation files for each item asset class.
+	
+	This deprecated documentation file will be progressively phased out as the new documentation sources are expanded.
 
 ----
 
@@ -40,90 +40,7 @@ See :ref:`Asset Bundles <doc_asset_bundles>` for full documentation regarding as
 Barricades
 ----------
 
-**Type**: ``Barricade``
-
-**Useable**: ``Barricade``
-
-**Build**: ``Barrel_Rain``, ``Barricade``, ``Bed``, ``Cage``, ``Campfire``, ``Claim``, ``Clock``, ``Door``, ``Fortification``, ``Freeform``, ``Gate``, ``Glass``, ``Hatch``, ``Ladder``, ``Mannequin``, ``Note``, ``Oven``, ``Oxygenator``, ``Safezone``, ``Shutter``, ``Sign``, ``Sign_Wall``, ``Spot``, ``Stereo``, ``Torch``, ``Vehicle``
-
-**Health**: Amount of health.
-
-**Range**: Distance away the barricade can be placed from the player.
-
-**Radius**:
-
-**Offset**: Inherent distance above the point to place.
-
-**Locked**: Usability/interactivity access restricted to owner.
-
-**Explosion**: Destruction effect ID.
-
-**Salvage_Duration_Multiplier**: Multiplier on salvage duration.
-
-**Unpickupable**: Cannot be salvaged.
-
-**Unrepairable**: Cannot be repaired.
-
-**Unsalvageable**: If damaged, salvaging yields no partial ingredients.
-
-**Unsaveable**: Cannot be saved by the game.
-
-**Vulnerable**: Specified if the barricade can be destroyed by low-power weaponry.
-
-**Proof_Explosion**: Specified in immune to explosion damage.
-
-**Armor_Tier**: ``High``. Doubles health value.
-
-**Use_Water_Height_Transparent_Sort**:
-
-**Should_Close_When_Outside_Range**: ``true``. Defaults to false. Only applicable to interactive barricades that generate a UI element, such as item storages and signs.
-
-**Allow_Collision_While_Animating**: Allows animated interactables (e.g., doors) to perform collision movement upon players.
-
-**Allow_Placement_On_Vehicle**: ``false``, ``true``. Defaults to false for beds and robotic turrets.
-
-Beacons
-```````
-
-**Type**: ``Beacon``
-
-**Useable**: ``Barricade``
-
-**Build**: ``Beacon``
-
-**Wave**: Number of zombies that must be killed.
-
-**Rewards**: Number of rewards spawned.
-
-**Reward_ID**: Spawn table ID for rewards.
-
-Experience Storages
-```````````````````
-
-**Type**: ``Library``
-
-**Useable**: ``Barricade``
-
-**Build**: ``Library``
-
-**Capacity**: Numerical maximum capacity of experience able to be stored.
-
-**Tax**: Percent tax on deposits.
-
-Generators
-``````````
-
-**Type**: ``Generator``
-
-**Useable**: ``Barricade``
-
-**Build**: ``Generator``
-
-**Capacity**: Numerical maximum capacity of fuel units able to be stored.
-
-**Wirerange**: Radius range in meters (representative of a sphere) for how large of an area is considered powered.
-
-**Burn**: Number of seconds before one fuel unit is burned.
+**Build**: ``Barrel_Rain``, ``Bed``, ``Cage``, ``Campfire``, ``Claim``, ``Clock``, ``Door``, ``Fortification``, ``Freeform``, ``Gate``, ``Glass``, ``Hatch``, ``Ladder``, ``Mannequin``, ``Note``, ``Oven``, ``Oxygenator``, ``Safezone``, ``Shutter``, ``Sign``, ``Sign_Wall``, ``Spot``, ``Stereo``, ``Torch``, ``Vehicle``
 
 Item Storages
 `````````````
@@ -139,6 +56,8 @@ Item Storages
 **Storage_Y**: Vertical storage space.
 
 **Display**: Stored item is visible.
+
+**Should_Close_When_Outside_Range**: ``true``. Defaults to false. Only applicable to interactive barricades that generate a UI element, such as item storages and signs.
 
 Liquid Storages
 ```````````````
@@ -254,11 +173,6 @@ Growth Supplements
 **Type**: ``Grower``
 
 **Useable**: ``Grower``
-
-Melee Weapons
--------------
-
-No documentation is available at this time.
 
 Structures
 ----------

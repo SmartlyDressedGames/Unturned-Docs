@@ -7,15 +7,16 @@
 	:maxdepth: 1
 	
 	introduction
-	
+	blueprints
 	actions
+	
 	arrest-end-asset
 	arrest-start-asset
 	backpack-asset
 	bag-asset
 	barrel-asset
 	barricade-asset
-	blueprints
+	beacon-asset
 	box-asset
 	caliber-asset
 	charge-asset
@@ -28,15 +29,18 @@
 	food-asset
 	fuel-asset
 	gear-asset
+	generator-asset
 	glasses-asset
 	grip-asset
 	gun-asset
 	hat-asset
 	key-asset
+	library-asset
 	magazine-asset
 	map-asset
 	mask-asset
 	medical-asset
+	oil-pump-asset
 	optic-asset
 	pants-asset
 	placeable-asset
