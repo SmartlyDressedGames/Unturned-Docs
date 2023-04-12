@@ -23,24 +23,24 @@ Item Asset Properties
 Charge Asset Properties
 -----------------------
 
-**Animal_Damage** *float*: 
+**Animal_Damage** *float*: Damage dealt to animals caught within the area-of-effect explosion.
 
-**Barricade_Damage** *float*: 
+**Barricade_Damage** *float*: Damage dealt to barricades caught within the area-of-effect explosion.
 
 **Explosion_2** *uint16* or *GUID*: ID or GUID of effect to play upon detonation.
 
-**Explosion_Launch_Speed** *float*: 
+**Explosion_Launch_Speed** *float*: Launch speed of players caught within the area-of-effect explosion, in meters per second. Defaults to the value of ``Player_Damage * 0.1``.
 
-**Object_Damage** *float*: 
+**Object_Damage** *float*: Damage dealt to objects caught within the area-of-effect explosion. Defaults to the value of ``Resource_Damage``.
 
-**Player_Damage** *float*: 
+**Player_Damage** *float*: Damage dealt to players caught within the area-of-effect explosion.
 
-**Resource_Damage** *float*: 
+**Resource_Damage** *float*: Damage dealt to resources caught within the area-of-effect explosion.
 
-**Structure_Damage** *float*: 
+**Structure_Damage** *float*: Damage dealt to structures caught within the area-of-effect explosion.
 
-**Vehicle_Damage** *float*: 
+**Vehicle_Damage** *float*: Damage dealt to vehicles caught within the area-of-effect explosion.
 
-**Range2** *float*: 
+**Range2** *float*: Radius of the damaging, area-of-effect explosion.
 
-**Zombie_Damage** *float*: 
+**Zombie_Damage** *float*: Damage dealt to zombies caught within the area-of-effect explosion.
