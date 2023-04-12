@@ -3,7 +3,7 @@
 Detonator Assets
 ================
 
-Remote triggers are inventory items that can be attached to ranged weapons.
+Remote triggers can be used to detonate :ref:`remote explosives <doc_item_asset_charge>`.
 
 This inherits the :ref:`ItemAsset <doc_item_asset_intro>` class.
 
