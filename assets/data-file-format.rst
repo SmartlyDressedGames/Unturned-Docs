@@ -122,6 +122,46 @@ Whereas this comment will not be excluded from the value:
 
 	key value // this is not treated as a comment because the value is not in quotes
 
+Vector3
+-------
+
+3D vectors can be parsed as a single value from 3 floats optionally surrounded by parenthesis, or from a dictionary with X, Y, and Z keys.
+
+For example these are all valid 3D vectors:
+
+.. code-block:: text
+
+	Position 1, 2, 3
+	Offset (4, 5, 6)
+	Scale
+	{
+		X 7
+		Y 8
+		Z 9
+	}
+
+Certain older properties support the newer format while also supporting separate _X, _Y, and _Z keys, namely: ``LOD_Center``, ``LOD_Size``, ``Explosion_Min_Force``, ``Explosion_Max_Force``, and ``Center_Of_Mass``.
+
+Color
+-----
+
+Colors can be parsed as a single hexidecimal value with optional '#' in front, or from a dictionary with R, G, and B keys.
+
+For example these are all valid colors:
+
+.. code-block:: text
+
+	SkyColor 0000ff
+	GroundColor #00ff00
+	FogColor
+	{
+		R 255
+		G 0
+		B 0
+	}
+
+Certain older properties support the newer format while also supporting separate _R, _G, and _B keys, namely: ``Nightvision_Color``.
+
 History
 -------
 
