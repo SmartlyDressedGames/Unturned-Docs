@@ -7,15 +7,13 @@ This asset exists to tune vehicle physics in bulk without rebuilding asset bundl
 
 One of the goals introducing profiles is to improve the handling of vanilla wheeled vehicles. Feel free to experiment with the default profile, and propose changes to it.
 
-This is an :ref:`Asset v2 <doc_assets_v2>` class.
-
 How to test?
 ------------
 
 In 3.19.18.0 the **reload** command was introduced which can be used to reload specific assets or directories of assets while playing. Simply reload the physics profile and then respawn a vehicle. For example to reload the default profile:
 
 .. code-block:: bash
-	
+
 	/reload 6b91a94f01b6472eaca31d9420ec2367
 
 How are vehicles assigned a profile?
@@ -27,6 +25,8 @@ If a profile is not set, and the vehicle prefab's root rigidbody has a mass of 1
 
 Asset Properties Reference
 --------------------------
+
+``Type`` *string*: ``SDG.Unturned.VehiclePhysicsProfileAsset``
 
 **Root_Mass**: If set, overrides vehicle rigidbody's mass.
 

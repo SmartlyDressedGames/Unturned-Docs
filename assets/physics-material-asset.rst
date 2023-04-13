@@ -9,10 +9,10 @@ The ``PhysicsMaterialAsset`` type associates gameplay properties and effects wit
 
 The ``PhysicsMaterialExtensionAsset`` type can be used to insert custom properties into built-in physics materials. For example if a custom laser gun should leave burn marks on the hit surface rather than bullet holes, an extension asset can set the `Base` property to a built-in physics material to add custom effects.
 
-This is an :ref:`Asset v2 <doc_assets_v2>` class.
-
 Properties
 ----------
+
+``Type`` *string*: ``SDG.Unturned.PhysicsMaterialAsset`` or ``SDG.Unturned.PhysicsMaterialExtensionAsset``
 
 ``UnityName`` *string* or ``UnityNames`` *string array*: Names of Unity "physic" materials to associate with this asset. Not set by extension assets. Multiple names can be specified as an array because the old built-in physics materials had several variants for special cases that should now be handled by these assets.
 

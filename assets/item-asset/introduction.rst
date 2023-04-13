@@ -3,7 +3,7 @@
 Introduction to Items
 =====================
 
-Item assets are an :ref:`Assets v1 <doc_assets_v1>` class. Refer to `Asset Bundles <doc_asset_bundles>` for the full documentation regarding asset bundles.
+Please refer to :ref:`Asset Definitions <doc_asset_definitions>` and :ref:`Asset Bundles <doc_asset_bundles>` for the full documentation regarding assets and asset bundles.
 
 **GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
 

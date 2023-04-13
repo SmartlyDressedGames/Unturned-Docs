@@ -7,6 +7,8 @@ Each map can be associated with a **Level Asset**. These assets contain gameplay
 
 For examples check the ``Assets/Levels`` directory.
 
+``Type`` *string*: ``SDG.Unturned.LevelAsset``
+
 ``Dropship`` :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: Overrides the model seen flying over the map when a care package is dropped.
 
 ``Airdrop`` :ref:`Asset Pointer <doc_data_assetptr>`: Asset pointer to an :ref:`Airdrop Asset <doc_assets_airdrop>`. Overrides the falling care package model.
@@ -30,8 +32,6 @@ For examples check the ``Assets/Levels`` directory.
 ``Loading_Screen_Music`` *array*: Randomly selected. Refer to music properties.
 
 ``Should_Animate_Background_Image`` *bool*: If true, the background image moves left/right with loading progress. Defaults to false because maps have important information on the loading screen.
-
-This is an :ref:`Asset v2 <doc_assets_v2>` class.
 
 Schedulable Weather Properties
 ------------------------------

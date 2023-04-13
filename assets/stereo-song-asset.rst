@@ -5,15 +5,15 @@ Stereo Song Assets
 
 Defines a music track that can be played on the in-game stereo item. (Or any custom music player item for that matter.) For an example refer to ``Unturned_Theme.asset`` in the Songs folder.
 
-This is an :ref:`Asset v2 <doc_assets_v2>` class.
-
 Asset Properties Reference
 --------------------------
+
+``Type`` *string*: ``SDG.Unturned.StereoSongAsset``
 
 ``Title`` string: display text to show in the music player menu. If a localization .dat file is present the ``Name`` key will be used, or a translation reference can be used. Examples:
 
 .. code-block:: cs
-	
+
 	"Title" "My song"
 
 OR
@@ -23,7 +23,7 @@ OR
 OR
 
 .. code-block:: cs
-	
+
 	"Title"
 	{
 		"Namespace" "SDG"
@@ -33,7 +33,7 @@ OR
 ``Song`` :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: audio clip to play. Can either be a newer master bundle pointer or an older content pointer. Examples:
 
 .. code-block:: cs
-	
+
 	"Song"
 	{
 		"MasterBundle" "core.masterbundle"
@@ -43,7 +43,7 @@ OR
 OR
 
 .. code-block:: cs
-	
+
 	"Song"
 	{
 		"Name" "core.content"

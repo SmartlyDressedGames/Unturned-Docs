@@ -7,19 +7,19 @@ Overrides the built-in snow and rain weather with custom events. This is feature
 
 Random weather can be scheduled to occur naturally on a map with the `Weather_Types` property of the `Level Asset <doc_assets_level>`.
 
-This is an :ref:`Asset v2 <doc_assets_v2>` class.
-
 How to test?
 ------------
 
 When a GUID is passed to the weather command it will start a custom weather event, and 0 can be used to end it.
 
 .. code-block:: bash
-	
+
 	/weather 819982d7a2b6453488a8c4c5d9efe67f
 
 Properties Reference
 --------------------
+
+``Type`` *string*: ``SDG.Unturned.WeatherAsset``
 
 ``Volume_Mask`` :ref:`u32 Mask <doc_data_bitmask>`: only enabled while inside an ambience volume with non-zero bitwise AND result. Defaults to 0xFFFFFFFF.
 

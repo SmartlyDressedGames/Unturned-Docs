@@ -3,8 +3,6 @@
 Foliage Assets
 ==============
 
-This is an :ref:`Asset v2 <doc_assets_v2>` class.
-
 There are sub-types of foliage asset for different uses, most notably instanced meshes (grass, pebbles) and resources (trees). Unlike the older system, tree baking cannot be configured directly within the level editor yet, but there are two benefits to separating baking settings from the trees themselves:
 
 1. Different biomes or levels can use the same trees with different parameters. For example a dense forest material with less dense forest surrounding it, or using tree assets from a different map with custom configuration.
@@ -12,6 +10,8 @@ There are sub-types of foliage asset for different uses, most notably instanced 
 
 FoliageResourceInfoAsset Properties Reference
 ---------------------------------------------
+
+``Type`` *string*: ``SDG.Unturned.FoliageResourceInfoAsset``
 
 ``Resource`` :ref:`Asset Pointer <doc_data_assetptr>`: actual tree to spawn.
 
@@ -31,7 +31,7 @@ Upgrade Devkit Foliage from V1 to V2
 ------------------------------------
 
 .. note::
-	
+
 	Maps with auto-converted terrain from the 3.22.8.0 update will have already been converted to V2.
 
 V1 of devkit foliage saved each small, individual region into their own files, which made maps slow to copy, download, and install. V2 fixes this by storing pointers for each region into a single file, at the cost of RAM in the map editor.

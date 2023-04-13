@@ -5,10 +5,10 @@ Zombie Difficulty Assets
 
 Override the difficulty settings for zombies in a navmesh. For reference, official ZombieDifficulty.asset files can be found at ``...\Steam\steamapps\common\Unturned\Bundles\Assets\Zombie_Difficulty``.
 
-This is an :ref:`Asset v2 <doc_assets_v2>` class.
-
 Properties Reference
 --------------------
+
+``Type`` *string*: ``SDG.Unturned.ZombieDifficultyAsset``
 
 **Overrides_Spawn_Chance** *bool*: Whether or not the spawn chance for zombies in the navmesh should be overridden by the values set in this asset. For example, it may be useful to set this to ``false`` if you *only* wanted to tweak properties not related to spawn chances, such as the damage thresholds for stuns. Defaults to true.
 
