@@ -39,13 +39,14 @@ Several older tutorial videos are gradually becoming outdated and don't represen
 	:hidden:
 	:maxdepth: 1
 	:caption: Asset Manual
-	
+
 	assets/asset-bundle-custom-data
 	assets/asset-bundles
+	assets/data-file-format
 	assets/assets-v1
 	assets/assets-v2
 	assets/asset-validation
-	
+
 	assets/airdrop-asset
 	assets/animal-asset
 	assets/animation
