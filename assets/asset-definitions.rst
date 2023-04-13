@@ -65,13 +65,13 @@ Unity Asset Bundles
 
 Each Unturned asset is associated with a Unity asset bundle. If there is a master bundle in the file hierarchy that takes priority, otherwise a ``.unity3d`` bundle with the same name as the `.dat` file is used. There are several keys available to control the asset bundle:
 
-`Asset_Bundle_Version` *int*: Indicates which version of Unity this ``.unity3d`` bundle was built for. When Unturned upgrades Unity versions it tries to maintain backwards compatibility based on this number. 1 is Unity 5.5, 2 is 2017.4 LTS and 3 is 2018.4 LTS.
+``Asset_Bundle_Version`` *int*: Indicates which version of Unity this ``.unity3d`` bundle was built for. When Unturned upgrades Unity versions it tries to maintain backwards compatibility based on this number. 1 is Unity 5.5, 2 is 2017.4 LTS and 3 is 2018.4 LTS.
 
-`Master_Bundle_Override` *string*: Name of a master bundle to use rather than the ``.unity3d`` bundle or master bundle found in the hierarchy.
+``Master_Bundle_Override`` *string*: Name of a master bundle to use rather than the ``.unity3d`` bundle or master bundle found in the hierarchy.
 
-`Exclude_From_Master_Bundle` *string*: If this key exists the asset will look for a ``.unity3d`` bundle instead of the hierarchy.
+``Exclude_From_Master_Bundle`` *string*: If this key exists the asset will look for a ``.unity3d`` bundle instead of the hierarchy.
 
-`Bundle_Override_Path` *string*: Path within the master bundle to load rather than this asset's file path.
+``Bundle_Override_Path`` *string*: Path within the master bundle to load rather than this asset's file path.
 
 Localization
 ------------
