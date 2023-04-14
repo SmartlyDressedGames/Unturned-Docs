@@ -11,27 +11,27 @@ There are sub-types of foliage asset for different uses, most notably instanced 
 FoliageResourceInfoAsset Properties Reference
 ---------------------------------------------
 
-``Type`` *string*: ``SDG.Unturned.FoliageResourceInfoAsset``
+**Type** *string*: ``SDG.Unturned.FoliageResourceInfoAsset``
 
-``Resource`` :ref:`Asset Pointer <doc_data_assetptr>`: actual tree to spawn.
+**Resource** :ref:`Asset Pointer <doc_data_assetptr>`: actual tree to spawn.
 
-``Obstruction_Radius`` *float*: spawn position is invalid if a sphere with this radius overlaps anything.
+**Obstruction_Radius** *float*: spawn position is invalid if a sphere with this radius overlaps anything.
 
-``Density`` *float*: this value is poorly named. One tree will try to spawn per this many square meters. For example a value of 4 will spawn approximately once per 2m x 2m area.
+**Density** *float*: this value is poorly named. One tree will try to spawn per this many square meters. For example a value of 4 will spawn approximately once per 2m x 2m area.
 
-``Min_Weight`` *float*: [0, 1] only spawn if landscape material weight is greater than this value.
+**Min_Weight** *float*: [0, 1] only spawn if landscape material weight is greater than this value.
 
-``Max_Weight`` *float*: [0, 1] only spawn if landscape material weight is less than this value.
+**Max_Weight** *float*: [0, 1] only spawn if landscape material weight is less than this value.
 
-``Min_Angle`` *float*: [0, 90] degrees only spawn if surface angle is greater than this value. For example a boulder only spawning on slopes steeper than 45 degrees.
+**Min_Angle** *float*: [0, 90] degrees only spawn if surface angle is greater than this value. For example a boulder only spawning on slopes steeper than 45 degrees.
 
-``Max_Angle`` *float*: [0, 90] degrees only spawn if surface angle is less than this value. For example a tree not growing on slopes steeper than 30 degrees.
+**Max_Angle** *float*: [0, 90] degrees only spawn if surface angle is less than this value. For example a tree not growing on slopes steeper than 30 degrees.
 
 Upgrade Devkit Foliage from V1 to V2
 ------------------------------------
 
 .. note::
-
+	
 	Maps with auto-converted terrain from the 3.22.8.0 update will have already been converted to V2.
 
 V1 of devkit foliage saved each small, individual region into their own files, which made maps slow to copy, download, and install. V2 fixes this by storing pointers for each region into a single file, at the cost of RAM in the map editor.

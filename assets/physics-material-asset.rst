@@ -12,15 +12,15 @@ The ``PhysicsMaterialExtensionAsset`` type can be used to insert custom properti
 Properties
 ----------
 
-``Type`` *string*: ``SDG.Unturned.PhysicsMaterialAsset`` or ``SDG.Unturned.PhysicsMaterialExtensionAsset``
+**Type** *string*: ``SDG.Unturned.PhysicsMaterialAsset`` or ``SDG.Unturned.PhysicsMaterialExtensionAsset``
 
-``UnityName`` *string* or ``UnityNames`` *string array*: Names of Unity "physic" materials to associate with this asset. Not set by extension assets. Multiple names can be specified as an array because the old built-in physics materials had several variants for special cases that should now be handled by these assets.
+**UnityName** *string* or ``UnityNames`` *string array*: Names of Unity "physic" materials to associate with this asset. Not set by extension assets. Multiple names can be specified as an array because the old built-in physics materials had several variants for special cases that should now be handled by these assets.
 
-``Fallback`` :ref:`Asset Pointer <doc_data_assetptr>`: Points to a different physics material asset. Fallbacks are used when a property is not set. For example the snow physics material does not have a bullet casing bounce audio clip, so the gravel fallback is used instead.
+**Fallback** :ref:`Asset Pointer <doc_data_assetptr>`: Points to a different physics material asset. Fallbacks are used when a property is not set. For example the snow physics material does not have a bullet casing bounce audio clip, so the gravel fallback is used instead.
 
-``Base``  :ref:`Asset Pointer <doc_data_assetptr>`: Points to a physics material asset to extend. Properties from the extension asset will be appended to the base asset.
+**Base**  :ref:`Asset Pointer <doc_data_assetptr>`: Points to a physics material asset to extend. Properties from the extension asset will be appended to the base asset.
 
-``AudioDefs`` *dictionary*: pairs of key/name and :ref:`Master Bundle Pointer <doc_data_masterbundleptr>` to OneShotAudioDefinition. For example the ``ParticleSystemCollisionAudio`` component ``MaterialPropertyName`` is referring to these keys. Official properties include:
+**AudioDefs** *dictionary*: pairs of key/name and :ref:`Master Bundle Pointer <doc_data_masterbundleptr>` to OneShotAudioDefinition. For example the ``ParticleSystemCollisionAudio`` component ``MaterialPropertyName`` is referring to these keys. Official properties include:
 
 - BulletCasingBounce: used by vanilla non-shotgun particle collision audio.
 - BulletImpact: fired bullet hitting surface.
@@ -31,14 +31,14 @@ Properties
 - MeleeImpact: melee attack hitting surface.
 - ShotgunShellBounce: used by vanilla shotgun particle collision audio.
 
-``IsArable`` *bool*: If true, crops can be planted on this material.
+**IsArable** *bool*: If true, crops can be planted on this material.
 
-``HasOil`` *bool*: If true, oil drills can be placed on this material. Note at the time of writing (2022-02-10) oil drills can only be placed on terrain materials.
+**HasOil** *bool*: If true, oil drills can be placed on this material. Note at the time of writing (2022-02-10) oil drills can only be placed on terrain materials.
 
-``Character_Friction_Mode`` *enum* (``ImmediatelyResponsive``, ``Custom``): If custom the acceleration, deceleration, and max speed properties are used. Replacement for the hardcoded ice and slippery metal plate.
+**Character_Friction_Mode** *enum* (``ImmediatelyResponsive``, ``Custom``): If custom the acceleration, deceleration, and max speed properties are used. Replacement for the hardcoded ice and slippery metal plate.
 
-``Character_Acceleration_Multiplier`` *float*: Default acceleration is equal to the target move speed.
+**Character_Acceleration_Multiplier** *float*: Default acceleration is equal to the target move speed.
 
-``Character_Deceleration_Multiplier`` *float*: Default deceleration is 2m/s².
+**Character_Deceleration_Multiplier** *float*: Default deceleration is 2m/s².
 
 ``Character_Max_Speed_Multiplier`` *float*: Allows speed to reach up to this multiplied by the target move speed.

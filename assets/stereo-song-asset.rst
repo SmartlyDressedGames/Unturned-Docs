@@ -8,32 +8,32 @@ Defines a music track that can be played on the in-game stereo item. (Or any cus
 Asset Properties Reference
 --------------------------
 
-``Type`` *string*: ``SDG.Unturned.StereoSongAsset``
+**Type** *string*: ``SDG.Unturned.StereoSongAsset``
 
-``Title`` string: display text to show in the music player menu. If a localization .dat file is present the ``Name`` key will be used, or a translation reference can be used. Examples:
+**Title** string: display text to show in the music player menu. If a localization .dat file is present the ``Name`` key will be used, or a translation reference can be used. Examples:
 
 .. code-block:: cs
-
+	
 	"Title" "My song"
 
 OR
 
-``Name`` in {Language}.dat file
+**Name** in {Language}.dat file
 
 OR
 
 .. code-block:: cs
-
+	
 	"Title"
 	{
 		"Namespace" "SDG"
 		"Token" "Stereo_Songs.Unturned_Theme.Title"
 	}
 
-``Song`` :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: audio clip to play. Can either be a newer master bundle pointer or an older content pointer. Examples:
+**Song** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: audio clip to play. Can either be a newer master bundle pointer or an older content pointer. Examples:
 
 .. code-block:: cs
-
+	
 	"Song"
 	{
 		"MasterBundle" "core.masterbundle"
@@ -43,13 +43,13 @@ OR
 OR
 
 .. code-block:: cs
-
+	
 	"Song"
 	{
 		"Name" "core.content"
 		"Path" "assets/resources/bundles/songs/unturned_theme.mp3"
 	}
 
-``Link_URL`` string: optional URL to open in web browser when external link button is clicked.
+**Link_URL** *string*: Optional URL to open in web browser when external link button is clicked.
 
-``Is_Loop`` *bool*: whether audio source should loop. Recommend **NOT** using .mp3 format for looping music.
+**Is_Loop** *bool*: Whether audio source should loop. Recommend **NOT** using .mp3 format for looping music.

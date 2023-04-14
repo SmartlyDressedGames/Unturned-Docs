@@ -6,7 +6,7 @@ Currency Assets
 Any collection of items with different numeric values can be associated together in a **Currency** asset. NPCs can then automatically convert between the different items, and vendor menus can display information using the linked currency. This is intended to be useful beyond real-world currencies, e.g. bartering ammunition.
 
 .. figure:: img/VendorCurrency.jpg
-
+	
 	P.Riso's Hot Stuff vendor.
 
 Asset Setup
@@ -14,7 +14,7 @@ Asset Setup
 
 The currency asset defines how numbers are formatted, which items make up the currency, and their individual values. An example can be found at Bundles/Items/Supplies/CanadianCurrency.asset.
 
-``Type`` *string*: ``SDG.Unturned.CurrencyAsset``
+**Type** *string*: ``SDG.Unturned.CurrencyAsset``
 
 **ValueFormat** *string*: String to format numeric value into. For example "${0:N0} CAD" is the vanilla Canadian currency format.
 
@@ -23,7 +23,7 @@ The currency asset defines how numbers are formatted, which items make up the cu
 **Entries**: Array of items in the currency. Each has an **Item** GUID and **Value** integer. Optionally **Is_Visible_In_Vendor_Menu** bool can be false to hide the item from the NPC vendor currency list. For example these are the $10 and $20 notes in the Canadian currency:
 
 .. code-block:: cs
-
+	
 	{
 		"Item"
 		{
@@ -52,5 +52,5 @@ Testing
 The built-in "give" command accepts currency GUIDs as an alternative to item IDs. For example the following grants $1,000 CAD to the local player:
 
 .. code-block:: bash
-
+	
 	/give 5150ca8f765d4a68bfe54912146da410/1000
