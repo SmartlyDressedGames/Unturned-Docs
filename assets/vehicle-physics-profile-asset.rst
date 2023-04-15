@@ -26,7 +26,7 @@ If a profile is not set, and the vehicle prefab's root rigidbody has a mass of 1
 Asset Properties Reference
 --------------------------
 
-``Type`` *string*: ``SDG.Unturned.VehiclePhysicsProfileAsset``
+**Type** *string*: ``SDG.Unturned.VehiclePhysicsProfileAsset``
 
 **Root_Mass**: If set, overrides vehicle rigidbody's mass.
 
@@ -52,15 +52,15 @@ Asset Properties Reference
 
 **Wheel_Friction_Sideways** and **Wheel_Friction_Forward**:
 
-* *Extremum_Slip*: If set, overrides friction curve extremum slip.
+* **Extremum_Slip**: If set, overrides friction curve extremum slip.
 
-* *Extremum_Value*: If set, overrides friction curve extremum value.
+* **Extremum_Value**: If set, overrides friction curve extremum value.
 
-* *Asymptote_Slip*: If set, overrides friction curve asymptote slip.
+* **Asymptote_Slip**: If set, overrides friction curve asymptote slip.
 
-* *Asymptote_Value*: If set, overrides friction curve asymptote value.
+* **Asymptote_Value**: If set, overrides friction curve asymptote value.
 
-* *Stiffness*: If set, overrides friction curve stiffness. Multiplies the extremum and asymptote values. Sideways default is 1.0 and forward default is 2.0.
+* **Stiffness**: If set, overrides friction curve stiffness. Multiplies the extremum and asymptote values. Sideways default is 1.0 and forward default is 2.0.
 
 **Motor_Torque_Multiplier**: Multiplies wheel collider motor torque which is usually driven by vehicle speed.
 

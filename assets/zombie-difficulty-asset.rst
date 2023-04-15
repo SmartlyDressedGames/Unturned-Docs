@@ -8,7 +8,7 @@ Override the difficulty settings for zombies in a navmesh. For reference, offici
 Properties Reference
 --------------------
 
-``Type`` *string*: ``SDG.Unturned.ZombieDifficultyAsset``
+**Type** *string*: ``SDG.Unturned.ZombieDifficultyAsset``
 
 **Overrides_Spawn_Chance** *bool*: Whether or not the spawn chance for zombies in the navmesh should be overridden by the values set in this asset. For example, it may be useful to set this to ``false`` if you *only* wanted to tweak properties not related to spawn chances, such as the damage thresholds for stuns. Defaults to true.
 
