@@ -4,10 +4,14 @@ Command-line arguments
 ======================
 
 You can add command-line arguments within Steam:
-1. Right-click Unturned in your Steam Library
-2. Select Properties... > General
-3. Find the Launch Options field
-4. Type options separated by spaces. For example "-FallbackGizmos -Width=1920 -Height=1080" will enable the FallbackGizmos flag, set Width to 1920 and set Height to 1080.
+
+#. Right-click Unturned in your Steam Library
+
+#. Select Properties... > General
+
+#. Find the Launch Options field
+
+#. Type options separated by spaces. For example "-FallbackGizmos -Width=1920 -Height=1080" will enable the FallbackGizmos flag, set Width to 1920 and set Height to 1080.
 
 Game options
 ------------
