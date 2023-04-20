@@ -21,7 +21,7 @@ Tactical Asset Properties
 
 **Laser** *flag*: Provides a toggleable laser.
 
-**Laser_Color** *color*: Overrides default red color. Consists of **Laser_Color_R**, **Laser_Color_G**, **Laser_Color_B** *float* [0, 1].
+**Laser_Color** :ref:`color <doc_data_file_format>`: Overrides the default red color. When using the legacy color parsing, the ``_R``, ``_G``, and ``_B`` keys are floats within the range of [0, 1].
 
 **Light** *flag*: Provides a toggleable flashlight.
 
