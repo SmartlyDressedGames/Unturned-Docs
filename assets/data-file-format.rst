@@ -42,7 +42,7 @@ For example: item assets check for the ``Pro`` flag marking them is a Steam econ
 Objects / Dictionaries
 ----------------------
 
-Each series of key-value pairs is a dictionary. (sometimes called an object) The top level of the file is treated as a dictionary, and child dictionaries can be added with ``{ }`` curly braces. Adding ``{`` on the line after a key opens a dictionary, and the matching ``}`` closes it.
+Each series of key-value pairs is a dictionary (sometimes called an object). The top level of the file is treated as a dictionary, and child dictionaries can be added with ``{ }`` curly braces. Adding ``{`` on the line after a key opens a dictionary, and the matching ``}`` closes it.
 
 In this example ``object1`` is a child dictionary in the root dictionary, and ``object2`` is a grand-child:
 
@@ -145,12 +145,12 @@ Certain older properties support the newer format while also supporting separate
 Color
 -----
 
-Colors can be parsed as a single hexidecimal value with optional '#' in front, or from a dictionary with R, G, and B keys.
+Colors can be parsed as a single hexidecimal value with optional "#" in front, or from a dictionary with R, G, and B keys.
 
 For example these are all valid colors:
 
 .. code-block:: text
-
+	
 	SkyColor 0000ff
 	GroundColor #00ff00
 	FogColor
@@ -160,9 +160,17 @@ For example these are all valid colors:
 		B 0
 	}
 
-Certain older properties support the newer format while also supporting separate _R, _G, and _B keys, namely: ``Nightvision_Color``.
+Certain older properties support the newer format while also supporting separate ``_R``, ``_G``, and ``_B`` keys, namely: ``Laser_Color``, and ``Nightvision_Color``.
+
+For example, this would be also be valid for any older property that supports the legacy format:
+
+.. code-block:: text
+	
+	Laser_Color_R 0.5
+	Laser_Color_G 1
+	Laser_Color_B 0
 
 History
 -------
 
-Prior to the 3.23.6.0 update there were two sets of custom Unturned syntax: "v1" for ``.dat`` files and "v2" for ``.asset`` files. v1 only supported key-value pairs, whereas v2 introduced dictionaries, lists, and required keys/values to be quoted. This is why ``{`` and ``[`` must be on a new line. (existing v1 assets may have ``{`` or ``[`` as the first character of a value)
+Prior to the 3.23.6.0 update there were two sets of custom Unturned syntax: "v1" for ``.dat`` files and "v2" for ``.asset`` files. v1 only supported key-value pairs, whereas v2 introduced dictionaries, lists, and required keys/values to be quoted. This is why ``{`` and ``[`` must be on a new line. (Existing v1 assets may have ``{`` or ``[`` as the first character of a value.)

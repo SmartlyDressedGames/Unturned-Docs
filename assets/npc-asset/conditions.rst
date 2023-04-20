@@ -214,7 +214,7 @@ Skillset
 
 **Condition\_#\_Type** *enum* (``Skillset``)
 
-**Condition\_#\_Value** *enum* (`Army`, `Camp`, `Chef`, `Farm`, `Fire`, `Fish`, `Medic`,	`None`, `Police`, `Thief`, `Work`): Target value, as the skillset.
+**Condition\_#\_Value** *enum* (``Army``, ``Camp``, ``Chef``, ``Farm``, ``Fire``, ``Fish``, ``Medic``, ``None``, ``Police``, ``Thief``, ``Work``): Target value, as the skillset. For example, this condition could be used to offer unique questlines, dialogue, or blueprints depending on the player's chosen skillset.
 
 World
 -----

@@ -39,13 +39,13 @@ Player Damage
 
 **Player_Damage_Bones** *enum* (``Always``, ``Heal``, ``None``): Determines the effect the weapon has in relation to the "Broken Bones" status effect. Defaults to the "None" enumerator.
 
-**Player_Damage_Food**: Amount of degradation dealt to a targeted player's food.
+**Player_Damage_Food** *float*: Amount of degradation dealt to a targeted player's food.
 
-**Player_Damage_Water**: Amount of degradation dealt to a targeted player's water.
+**Player_Damage_Water** *float*: Amount of degradation dealt to a targeted player's water.
 
-**Player_Damage_Virus**: Amount of degradation dealt to a targeted player's immunity.
+**Player_Damage_Virus** *float*: Amount of degradation dealt to a targeted player's immunity.
 
-**Player_Damage_Hallucination**: Length of hallucinations inflicted onto a targeted player, in seconds.
+**Player_Damage_Hallucination** *float*: Length of hallucinations inflicted onto a targeted player, in seconds.
 
 Zombie Damage
 `````````````
