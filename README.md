@@ -5,6 +5,11 @@ These are the source files for *Unturned*'s modding documentation.
 
 The built documentation is hosted by [Read the Docs](https://readthedocs.org/) here: https://docs.smartlydressedgames.com/
 
+Offline Downloads
+-----------------
+
+PDF and Epub versions of the documentation can be [downloaded](https://readthedocs.org/projects/unturned/downloads/) for offline use.
+
 Contributing
 ------------
 
@@ -25,6 +30,8 @@ Most documentation files are formatted similarly. Some important notes:
 - When asset properties are listed, they should generally follow a `**Name** *data type*: Description` format. Depending on the data type, it may be hyperlinked instead of italicized, or may also include required values if there is one.
 
 - Content block directives can be used to add notes, warnings, tips, and other admonitions.
+
+- Internal links should use the :ref: command.
 
 Building the Docs
 -----------------
