@@ -46,6 +46,6 @@ Properties pertaining to dialogue available to the player. Dialogue can utilize 
 Localization
 ------------
 
-**Message\_#\_Page\_#**: Text shown for the corresponding message page.
+**Message\_#\_Page\_#** :ref:`doc_data_richtext`: Text shown for the corresponding message page.
 
-**Response\_#**: Text shown for the corresponding response option.
+**Response\_#** :ref:`doc_data_richtext`: Text shown for the corresponding response option.

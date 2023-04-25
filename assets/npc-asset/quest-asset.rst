@@ -19,4 +19,4 @@ Localization
 
 **Name** *string*: Quest name in user interfaces.
 
-**Description** *string*: Quest description in user interfaces.
+**Description** :ref:`doc_data_richtext`: Quest description in user interfaces.

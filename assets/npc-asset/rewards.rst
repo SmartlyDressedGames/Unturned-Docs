@@ -138,7 +138,7 @@ Hint
 
 **Reward\_#\_Type** *enum* (``Hint``)
 
-**Reward\_#\_Text** *string*: Text to display as a hint.
+**Reward\_#\_Text** :ref:`doc_data_richtext`: Text to display as a hint.
 
 **Reward\_#\_Duration** *float*: Duration of the hint, in seconds. Defaults to 2 seconds.
 

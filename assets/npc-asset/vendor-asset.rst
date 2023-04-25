@@ -49,4 +49,4 @@ Localization
 
 **Name** *string*: Vendor name in user interfaces.
 
-**Description** *string*: Vendor description in user interfaces. 
+**Description** :ref:`doc_data_richtext`: Vendor description in user interfaces.
