@@ -116,3 +116,4 @@ Anyone can contribute towards the *Unturned* modding documentation! To submit an
 	data/bitmask
 	data/guid
 	data/master-bundle-ptr
+	data/rich-text
