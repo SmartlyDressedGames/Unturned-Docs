@@ -167,7 +167,7 @@ All ``Action`` mechanisms other than the rocket-action mechanism utilize the bal
 
 **Ballistic_Travel** *float*: Travel speed of ballistic projectiles. A higher value relative to ``Ballistic_Steps`` will result in more muzzle velocity. Must be a value greater than 0.1. Defaults to 10. If ``Ballistic_Steps`` is specified and greater than 0, and ``Ballistic_Travel`` is not specified, then ``Ballistic_Travel`` defaults to ``Range ÷ Ballistic_Steps``.
 
-**Ballistic_Drop** *float*: Rate of projectile drop of ballistic projectiles. A higher value will result in more projectile drop. To disable projectile drop completely, set to 0. Defaults to 0.002.
+.. deprecated:: 3.23.7.0 **Ballistic_Drop** *float*: Rate of projectile drop of ballistic projectiles. A higher value will result in more projectile drop. To disable projectile drop completely, set to 0. Defaults to 0.002.
 
 Projectiles (Physics System)
 ````````````````````````````

@@ -19,7 +19,7 @@ Item Asset Properties
 Barrel Asset Properties
 -----------------------
 
-**Ballistic_Drop** *float*: Multiplier on ballistic drop. Defaults to 1.
+**Ballistic_Drop** *float*: Gravity acceleration multiplier for bullets in flight. Defaults to 1.
 
 **Braked** *flag*: Specified if a muzzle flash should be hidden.
 
