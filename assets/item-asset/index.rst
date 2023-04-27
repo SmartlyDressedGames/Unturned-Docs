@@ -32,6 +32,7 @@
 	generator-asset
 	glasses-asset
 	grip-asset
+	grower-asset
 	gun-asset
 	hat-asset
 	key-asset
