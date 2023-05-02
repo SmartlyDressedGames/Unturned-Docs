@@ -167,7 +167,7 @@ All ``Action`` mechanisms other than the rocket-action mechanism utilize the bal
 
 **Ballistic_Travel** *float*: Travel speed of ballistic projectiles. A higher value relative to ``Ballistic_Steps`` will result in more muzzle velocity. Must be a value greater than 0.1. Defaults to 10. If ``Ballistic_Steps`` is specified and greater than 0, and ``Ballistic_Travel`` is not specified, then ``Ballistic_Travel`` defaults to ``Range ÷ Ballistic_Steps``.
 
-.. deprecated:: 3.23.7.0 **Ballistic_Drop** *float*: Rate of projectile drop of ballistic projectiles. A higher value will result in more projectile drop. To disable projectile drop completely, set to 0. Defaults to 0.002.
+.. deprecated:: 3.23.7.0 **Ballistic_Drop** *float*: Removed and no longer has any effect.
 
 Projectiles (Physics System)
 ````````````````````````````
@@ -188,8 +188,6 @@ Recoil
 
 **Aiming\_Recoil\_Multiplier** *float*: Recoil magnitude multiplier while the gun is aiming down sights.
 
-**Recoil_Aim** *float*: Multiplier on the end value for linear interpolation on recoil when aiming down sights, when a sight attachment that has a ``Zoom`` value greater than 2 is attached. For example, it may be desirable for sniper rifles to use this property so that they have reduced recoil while aiming down a scope. Defaults to 1.
-
 **Recoil_Sprint** *float*: Multiplier on camera recoil while sprinting. Defaults to 1.25. Requires ``Can_Aim_During_Sprint true``.
 
 **Recoil_Crouch** *float*: Multiplier on camera recoil while crouched. Defaults to 0.85.
@@ -208,7 +206,7 @@ Recoil
 
 **Recover_Y** *float*: Multiplier on camera degrees to be counter-animated vertically over the next 250 milliseconds.
 
-**Use_Recoil_Aim** *bool*: Specifying a boolean value has no effect, as it will always be overridden based on the value of ``Recoil_Aim``. When a ``Recoil_Aim`` value is specified, defaults to true. When a ``Recoil_Aim`` value is not specified, defaults to false.
+.. deprecated:: 3.23.7.0 **Recoil_Aim** *float*: Removed and no longer has any effect.
 
 Shake
 `````
