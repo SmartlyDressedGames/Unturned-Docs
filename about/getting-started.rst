@@ -9,7 +9,7 @@ Once Unity is installed a project can be created to house custom content. At thi
 
 1. Inside Unity open the Assets > Import Package > Custom Package... wizard.
 1. Find the Unturned installation directory.
-3. Navigate to the Bundles/Sources directory.
+3. Navigate to the Extras/Sources directory.
 4. Import the Project.unitypackage, and optionally the ExampleAssets.unitypackage.
 
 Project.unitypackage

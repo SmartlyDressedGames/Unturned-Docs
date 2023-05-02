@@ -13,7 +13,7 @@ Some of the slower asset checks like finding missing meshes have been made optio
 Unity Packages
 --------------
 
-All example content has been updated for 2018 LTS, and now has a consistent export process to ensure the contents are kept valid. What were once individual packages (e.g. All_Shaders.unitypackage) have been merged into a single ExampleAssets.unitypackage in the Bundles/Sources/Examples directory.
+All example content has been updated for 2018 LTS, and now has a consistent export process to ensure the contents are kept valid. What were once individual packages (e.g. All_Shaders.unitypackage) have been merged into a single ExampleAssets.unitypackage in the Extras/Sources/Examples directory.
 
 Logging / Server Console
 ------------------------
