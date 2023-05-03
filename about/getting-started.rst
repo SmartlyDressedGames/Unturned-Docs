@@ -7,15 +7,15 @@ Installing the Unity Editor is required for exporting custom content into the ga
 
 Once Unity is installed a project can be created to house custom content. At this point it is recommended to import Unturned's provided source packages:
 
-1. Inside Unity open the Assets > Import Package > Custom Package... wizard.
-1. Find the Unturned installation directory.
-3. Navigate to the Extras/Sources directory.
-4. Import the Project.unitypackage, and optionally the ExampleAssets.unitypackage.
+#. Inside Unity open the Assets > Import Package > Custom Package... wizard.
+#. Find the Unturned installation directory.
+#. Navigate to the Extras/Sources directory.
+#. Import the Project.unitypackage, and optionally the ExampleAssets.unitypackage.
 
 Project.unitypackage
 --------------------
 
-This package contains the barebones required to export custom content:
+This package contains the bare-bones required to export custom content:
 
 - :ref:`Asset Bundling Tools <doc_asset_bundles>`
 - Default Project Settings

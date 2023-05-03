@@ -82,7 +82,7 @@ Explicit depictions of drugs, alcohol, and other substances is not allowed. Alth
 Inappropriate content
 `````````````````````
 
-The depicition of sexual content, or explicit references regarding sexual content, are prohibited in all forms.
+The depiction of sexual content, or explicit references regarding sexual content, are prohibited in all forms.
 
 Stockpile Preparation
 ---------------------
