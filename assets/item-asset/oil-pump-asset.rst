@@ -23,4 +23,4 @@ Item Asset Properties
 Oil Pump Asset Properties
 -------------------------
 
-**Capacity** *uint16*: Maximum units of fuel that can be stored in the oil pump. Defaults to 0.
+**Fuel_Capacity** *uint16*: Maximum units of fuel that can be stored in the oil pump. Defaults to 0.
