@@ -9,8 +9,6 @@ Item Data (outdated)
 	
 	This deprecated documentation file will be progressively phased out as the new documentation sources are expanded.
 
-----
-
 **Items** in *Unturned* encompass anything that can be carried in a player's in-game inventory. All items share some properties, while each item type has its own unique data.
 
 Non-specific Data
@@ -20,9 +18,9 @@ Non-specific Data
 
 **Durability**: Either a decimal probability chance of quality loss upon action, or guaranteed loss and durability value is instead representative of the amount lost.
 
-* *Canteens*: Guaranteed quality loss occurs upon drinking. Durability value represents the amount of quality loss.
-* *Melee Weapons*: Decimal probability chance of quality loss occurs upon hitting.
-* *Ranged Weapons*: Decimal probability chance of quality loss occurs upon shooting.
+- *Canteens*: Guaranteed quality loss occurs upon drinking. Durability value represents the amount of quality loss.
+- *Melee Weapons*: Decimal probability chance of quality loss occurs upon hitting.
+- *Ranged Weapons*: Decimal probability chance of quality loss occurs upon shooting.
 
 **Wear**: Increment to degrade quality by. Only applicable to items where durability represents a decimal probability chance of quality loss.
 
@@ -59,58 +57,6 @@ Item Storages
 
 **Should_Close_When_Outside_Range**: ``true``. Defaults to false. Only applicable to interactive barricades that generate a UI element, such as item storages and signs.
 
-Liquid Storages
-```````````````
-
-**Type**: ``Tank``
-
-**Useable**: ``Barricade``
-
-**Build**: ``Tank``
-
-**Source**: ``Fuel``, ``Water``
-
-**Resource**: Numerical maximum capacity of liquid units that can be stored. Water units are measured in potential drinking uses.
-
-Oil Pumps
-`````````
-
-**Type**: ``Oil_Pump``
-
-**Useable**: ``Barricade``
-
-**Build**: ``Oil``
-
-**Fuel_Capacity**: Numerical maximum capacity of fuel units able to be stored. 
-
-Plants
-``````
-
-**Type**: ``Farm``
-
-**Useable**: ``Barricade``
-
-**Build**: ``Farm``
-
-**Growth**: Number of seconds required to fully grow.
-
-**Grow**: ID of the item generated when harvesting a fully grown plant.
-
-Remote Explosives
-`````````````````
-
-**Type**: ``Charge``
-
-**Useable**: ``Barricade``
-
-**Build**: ``Charge``
-
-**Range2**: Meter radius of range for explosive damage.
-
-**Explosion2**: Explosion effect ID for the damaging explosion.
-
-Limb-independent entity damage is also applicable.
-
 Robotic Turrets
 ```````````````
 
@@ -132,23 +78,6 @@ Robotic Turrets
 
 **Infinite_Quality**: Weapon quality never depletes.
 
-Traps
-`````
-
-**Type**: ``Trap``
-
-**Useable**: ``Barricade``
-
-**Build**: ``Spike``, ``Wire``
-
-**Damage_Tires**: Specified if tires can be popped when ran over by a vehicle.
-
-**Range2**: Meter radius of range for explosive damage.
-
-**Explosion2**: Explosion effect ID for the damaging explosion.
-
-Limb-independent entity damage (e.g., Player_Damage) is also applicable.
-
 Fishing Poles
 -------------
 
@@ -157,22 +86,6 @@ Fishing Poles
 **Useable**: ``Fisher``
 
 **Reward_ID**: ID of the spawn table to pull catchable items from.
-
-Fuel Canisters
---------------
-
-**Type**: ``Fuel``
-
-**Useable**: ``Fuel``
-
-**Fuel**: Amount of fuel units added to target.
-
-Growth Supplements
-------------------
-
-**Type**: ``Grower``
-
-**Useable**: ``Grower``
 
 Structures
 ----------
@@ -240,12 +153,3 @@ When initiating voice chat with a walkie-talkie held, voice is transmitted throu
 **Type**: ``Tool``
 
 **Useable**: ``Walkie_Talkie``
-
-Water Canisters
----------------
-
-**Type**: ``Refill``
-
-**Useable**: ``Refill``
-
-**Water**: The number of water to restore.

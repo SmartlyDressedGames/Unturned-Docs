@@ -27,7 +27,7 @@ Charge Asset Properties
 
 **Barricade_Damage** *float*: Damage dealt to barricades caught within the area-of-effect explosion.
 
-**Explosion_2** *uint16* or *GUID*: ID or GUID of effect to play upon detonation.
+**Explosion2** *uint16* or *GUID*: ID or GUID of effect to play upon detonation.
 
 **Explosion_Launch_Speed** *float*: Launch speed of players caught within the area-of-effect explosion, in meters per second. Defaults to the value of ``Player_Damage * 0.1``.
 

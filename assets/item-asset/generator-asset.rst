@@ -3,7 +3,7 @@
 Generator Assets
 ================
 
-Generators are a placeable power sources.
+Generators are a placeable power sources. Players can deposit fuel into generators with a :ref:`fuel canister <doc_item_asset_fuel>`.
 
 This inherits the :ref:`BarricadeAsset <doc_item_asset_barricade>` class.
 

@@ -45,12 +45,14 @@
 	optic-asset
 	pants-asset
 	placeable-asset
+	refill-asset
 	sentry-asset
 	shirt-asset
 	sight-asset
 	structure-asset
 	supply-asset
 	tactical-asset
+	tank-asset
 	throwable-asset
 	trap-asset
 	vest-asset
