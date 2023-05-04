@@ -145,7 +145,7 @@ Certain older properties support the newer format while also supporting separate
 Color
 -----
 
-Colors can be parsed as a single hexidecimal value with optional "#" in front, or from a dictionary with R, G, and B keys.
+Colors can be parsed as a single hexadecimal value with optional "#" in front, or from a dictionary with R, G, and B keys.
 
 For example these are all valid colors:
 

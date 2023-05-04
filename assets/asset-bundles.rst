@@ -15,10 +15,10 @@ Tool Setup
 
 Prior to using any of these tools they must be imported into a Unity project
 
-1. Inside Unity open the Assets > Import Package > Custom Package... wizard.
-1. Find the Unturned installation directory.
-3. Navigate to the Extras/Sources directory.
-4. Import the Project.unitypackage.
+#. Inside Unity open the Assets > Import Package > Custom Package... wizard.
+#. Find the Unturned installation directory.
+#. Navigate to the Extras/Sources directory.
+#. Import the Project.unitypackage.
 
 .. _doc_asset_bundles:master_bundles:
 

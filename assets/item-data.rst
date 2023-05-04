@@ -5,7 +5,7 @@ Item Data (outdated)
 
 .. warning::
 	
-	This documentation file has been deprecated, and is no longer receiving updates. It has been superceded in favor of the `item-asset directory <item-asset>`_, which contains individual documentation files for each item asset class.
+	This documentation file has been deprecated, and is no longer receiving updates. It has been superseded in favor of the `item-asset directory <item-asset>`_, which contains individual documentation files for each item asset class.
 	
 	This deprecated documentation file will be progressively phased out as the new documentation sources are expanded.
 
