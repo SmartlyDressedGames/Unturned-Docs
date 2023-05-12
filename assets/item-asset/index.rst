@@ -26,6 +26,7 @@
 	detonator-asset
 	farm-asset
 	filter-asset
+	fisher-asset
 	food-asset
 	fuel-asset
 	gear-asset
