@@ -55,6 +55,7 @@ Anyone can contribute towards the *Unturned* modding documentation! To submit an
 	assets/asset-definitions
 	assets/data-file-format
 	assets/asset-validation
+	assets/curated-items
 
 	assets/airdrop-asset
 	assets/animal-asset
