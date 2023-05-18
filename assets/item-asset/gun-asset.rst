@@ -167,6 +167,8 @@ All ``Action`` mechanisms other than the rocket-action mechanism utilize the bal
 
 **Ballistic_Travel** *float*: Travel speed of ballistic projectiles. A higher value relative to ``Ballistic_Steps`` will result in more muzzle velocity. Must be a value greater than 0.1. Defaults to 10. If ``Ballistic_Steps`` is specified and greater than 0, and ``Ballistic_Travel`` is not specified, then ``Ballistic_Travel`` defaults to ``Range ÷ Ballistic_Steps``.
 
+**Bullet_Gravity_Multiplier** *float*: Multiplier for gravity's acceleration. This multiplier defaults to 4 because (as of 2023-05-18) Unturned's maximum engagement distance is rather short, but the default will be raised in the future if/when network improvements are made. It can be set to 1 for more realistic bullet drop. Gravity defaults to 9.81 m/s², or can be configured in the :ref:`doc_mapping_config`.
+
 .. deprecated:: 3.23.7.0 **Ballistic_Drop** *float*: Removed and no longer has any effect.
 
 Projectiles (Physics System)
