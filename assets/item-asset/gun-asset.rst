@@ -169,7 +169,7 @@ All ``Action`` mechanisms other than the rocket-action mechanism utilize the bal
 
 **Bullet_Gravity_Multiplier** *float*: Multiplier for gravity's acceleration. This multiplier defaults to 4 because (as of 2023-05-18) Unturned's maximum engagement distance is rather short, but the default will be raised in the future if/when network improvements are made. It can be set to 1 for more realistic bullet drop. Gravity defaults to 9.81 m/s², or can be configured in the :ref:`doc_mapping_config`.
 
-.. deprecated:: 3.23.7.0 **Ballistic_Drop** *float*: Removed and no longer has any effect.
+.. deprecated:: 3.23.7.0 **Ballistic_Drop** *float*: Replaced by ``Bullet_Gravity_Multiplier``. Existing values are automatically converted if Bullet_Gravity_Multiplier is not specified. The conversion is logged during :ref:`doc_asset_validation`.
 
 Projectiles (Physics System)
 ````````````````````````````
