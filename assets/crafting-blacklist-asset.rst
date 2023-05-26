@@ -7,7 +7,7 @@ Prevents specific items or blueprints from being used while crafting. They are h
 
 **Type** *string*: ``SDG.Unturned.CraftingBlacklistAsset``
 
-**Input_Items** array of Item :ref:`Asset Pointers <doc_data_assetptr>`: Any blueprints consuming these items are cannot be crafted.
+**Input_Items** array of Item :ref:`Asset Pointers <doc_data_assetptr>`: Any blueprints consuming these items cannot be crafted.
 
 .. code-block:: text
 
@@ -24,7 +24,7 @@ Prevents specific items or blueprints from being used while crafting. They are h
 
 **Output_Items** array of Item :ref:`Asset Pointers <doc_data_assetptr>`: Any blueprints generating these items cannot be crafted.
 
-**Blueprints** array: Prevent specific individual blueprints from being crafted. Each entry has an ``Item`` :ref:`Asset Pointer <doc_data_assetptr>` and ``Blueprint`` index. For example to prevent the Chef Hat from being salvaged:
+**Blueprints** array: Prevent specific individual blueprints from being crafted. Each entry has an ``Item`` :ref:`Asset Pointer <doc_data_assetptr>` and ``Blueprint`` index. For example, to prevent the Chef Hat from being salvaged:
 
 .. code-block:: text
 
