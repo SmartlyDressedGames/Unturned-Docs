@@ -29,6 +29,8 @@ Blueprints
 
 **Blueprint\_#\_Map** *string*: Name of the map that the blueprint is restricted to.
 
+**Blueprint_#_Searchable** *bool*: If true, blueprint can be visible in search results without the required items. Defaults to true. Useful to hide debug blueprints that are not acquirable through gameplay.
+
 Product Properties
 ------------------
 
