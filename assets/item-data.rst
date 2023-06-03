@@ -38,8 +38,6 @@ See :ref:`Asset Bundles <doc_asset_bundles>` for full documentation regarding as
 Barricades
 ----------
 
-**Build**: ``Barrel_Rain``, ``Bed``, ``Cage``, ``Campfire``, ``Claim``, ``Clock``, ``Door``, ``Fortification``, ``Freeform``, ``Gate``, ``Glass``, ``Hatch``, ``Ladder``, ``Mannequin``, ``Note``, ``Oven``, ``Oxygenator``, ``Safezone``, ``Shutter``, ``Sign``, ``Sign_Wall``, ``Spot``, ``Stereo``, ``Torch``, ``Vehicle``
-
 Item Storages
 `````````````
 
@@ -77,15 +75,6 @@ Robotic Turrets
 **Infinite_Ammo**: ammunition never depletes.
 
 **Infinite_Quality**: Weapon quality never depletes.
-
-Fishing Poles
--------------
-
-**Type**: ``Fisher``
-
-**Useable**: ``Fisher``
-
-**Reward_ID**: ID of the spawn table to pull catchable items from.
 
 Structures
 ----------

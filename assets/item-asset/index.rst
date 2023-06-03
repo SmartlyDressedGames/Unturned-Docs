@@ -55,7 +55,10 @@
 	tactical-asset
 	tank-asset
 	throwable-asset
+	tire-asset
+	tool-asset
 	trap-asset
+	vehicle-repair-tool-asset
 	vest-asset
 	water-asset
 	weapon-asset
