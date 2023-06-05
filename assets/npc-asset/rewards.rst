@@ -9,6 +9,8 @@ Rewards can be granted by NPC assets, interactable objects, and item blueprints.
 
 **Reward\_#\_Type** *enum* (``Flag_Bool``, ``Flag_Math``, ``Flag_Short``, ``Flag_Short_Random``, ``Achievement``, ``Currency``, ``Event``, ``Experience``, ``Item``, ``Item_Random``, ``Hint``, ``Player_Spawnpoint``, ``Quest``, ``Reputation``, ``Teleport``, ``Vehicle``)
 
+**Reward\_#\_GrantDelaySeconds** *float*: If set, the reward will be queued for the specified number of seconds before being granted to the player. When the player dies any pending rewards are cancelled. Defaults to -1.
+
 Flags
 -----
 
