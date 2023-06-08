@@ -118,3 +118,7 @@ Anyone can contribute towards the *Unturned* modding documentation! To submit an
 	data/guid
 	data/master-bundle-ptr
 	data/rich-text
+	
+	data/playerspotlightconfig
+	data/enpcholiday
+	

@@ -27,17 +27,4 @@ Glasses Asset Properties
 
 **Nightvision_Fog_Intensity** *float*: Intensity of fog while nightvision is active. Default value for ``Vision Civilian`` is 0.5. Default value for ``Vision Military`` is 0.25.
 
-**Vision** *enum* (``None``, ``Military``, ``Civilian``, ``Headlamp``): Type of unique lighting vision effect to use. Defaults to "None", which has no vision effect. Use the "Military" enumerator to use its default nightvision configuration, or when intending to assign a custom nightvision color via the color component properties. Use "Civilian" to use its default nightvision configuration. Use "Headlamp" to enable a toggleable light source, and enable the default configuration of SpotLight dictionary.
-
-SpotLight Dictionary
-````````````````````
-
-**SpotLight_Enabled** *bool*: When true, this item should have a toggleable light source. Defaults to true.
-
-**SpotLight_Range** *float*: Range of the light source's beam, in meters. Defaults to 64.
-
-**SpotLight_Angle** *float*: Angle of the light source's beam in degrees. Defaults to 90.
-
-**SpotLight_Intensity** *float*: Intensity of the light source's beam. Defaults to 1.3.
-
-**SpotLight_Color** :ref:`color <doc_data_file_format>`: Color of the light source's beam. Defaults to #f5df93.
+**Vision** *enum* (``None``, ``Military``, ``Civilian``, ``Headlamp``): Type of unique lighting vision effect to use. Defaults to "None", which has no vision effect. Use the "Military" enumerator to use its default nightvision configuration, or when intending to assign a custom nightvision color via the color component properties. Use "Civilian" to use its default nightvision configuration. Use "Headlamp" to enable a toggleable light source, and allows for using :ref:`PlayerSpotLightConfig <doc_data_playerspotlightconfig>` properties.

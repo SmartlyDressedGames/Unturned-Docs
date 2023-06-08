@@ -224,7 +224,7 @@ Holiday
 
 **Condition\_#\_Type** *enum* (``Holiday``)
 
-**Condition\_#\_Value** *enum* (``April_Fools``, ``Christmas``, ``Halloween``, ``None``, ``PrideMonth``, ``Valentines``): Target value, as the holiday.
+**Condition\_#\_Value** *enum* (:ref:`ENPCHoliday <doc_data_enpcholiday>`): Target value, as the holiday.
 
 Is_Full_Moon
 ````````````
