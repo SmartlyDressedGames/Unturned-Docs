@@ -27,4 +27,4 @@ Glasses Asset Properties
 
 **Nightvision_Fog_Intensity** *float*: Intensity of fog while nightvision is active. Default value for ``Vision Civilian`` is 0.5. Default value for ``Vision Military`` is 0.25.
 
-**Vision** *enum* (``None``, ``Military``, ``Civilian``, ``Headlamp``): Type of unique lighting vision effect to use. Defaults to "None". Use the "Military" enumerator when intending to assign a custom nightvision color via the color component properties.
+**Vision** *enum* (``None``, ``Military``, ``Civilian``, ``Headlamp``): Type of unique lighting vision effect to use. Defaults to "None", which has no vision effect. Use the "Military" enumerator to use its default nightvision configuration, or when intending to assign a custom nightvision color via the color component properties. Use "Civilian" to use its default nightvision configuration. Use "Headlamp" to enable a toggleable light source, and allows for using :ref:`PlayerSpotLightConfig <doc_data_playerspotlightconfig>` properties.

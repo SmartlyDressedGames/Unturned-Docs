@@ -23,7 +23,7 @@ Tactical Asset Properties
 
 **Laser_Color** :ref:`color <doc_data_file_format>`: Overrides the default red color. When using the legacy color parsing, the ``_R``, ``_G``, and ``_B`` keys are floats within the range of [0, 1].
 
-**Light** *flag*: Provides a toggleable flashlight.
+**Light** *flag*: Provides a toggleable flashlight, and allows for using :ref:`PlayerSpotLightConfig <doc_data_playerspotlightconfig>` properties.
 
 **Melee** *flag*: Provides the ability to perform a melee attack.
 
