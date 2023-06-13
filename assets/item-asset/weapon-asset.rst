@@ -35,9 +35,9 @@ Player Damage
 
 **Player_Skull_Multiplier** *float*: Multiplier on damage targeted against a player's head. Limb multipliers are not utilized by explosive weapons.
 
-**Player_Damage_Bleeding** *enum* (``Always``, ``Default``, ``Heal``, ``Never``): Determines the effect the weapon has in relation to the "Bleeding" status effect. Defaults to "Default" enumerator.
+**Player_Damage_Bleeding** *enum* (``Always``, ``Default``, ``Heal``, ``Never``): Determines the effect the weapon has in relation to the "Bleeding" status effect. When using "Always", the Bleeding status effect will always be applied on hit. When using "Default", the Bleeding status effect will only be applied if the necessary damage threshold is met. When using "Heal", anyone hit by the weapon will have their Bleeding status effect removed. When using "Never", the Bleeding status effect is never applied by this weapon. Defaults to "Default" enumerator.
 
-**Player_Damage_Bones** *enum* (``Always``, ``Heal``, ``None``): Determines the effect the weapon has in relation to the "Broken Bones" status effect. Defaults to the "None" enumerator.
+**Player_Damage_Bones** *enum* (``Always``, ``Heal``, ``None``): Determines the effect the weapon has in relation to the "Broken Bones" status effect. When using "Always", the Broken Bones status effect will always be applied on hit. When using "Heal", anyone hit by the weapon will have their Broken Bones status effect removed. When using "Never", the Broken Bones status effect is never applied by this weapon. Defaults to the "None" enumerator.
 
 **Player_Damage_Food** *float*: Amount of degradation dealt to a targeted player's food.
 
