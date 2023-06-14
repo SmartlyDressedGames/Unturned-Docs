@@ -97,6 +97,12 @@ Pose
 
 **Pose** *enum* (``Asleep``, ``Crouch``, ``Passive``, ``Prone``, ``Rest``, ``Sit``, ``Stand``, ``Surrender``, ``Under_Arrest``): Idle animation.
 
+**Pose_Head_Offset** *float*: Offset of the NPC's head from their body, in meters. Positive numbers offset it forward, while negative numbers offset it backward. Defaults to 0.1.
+
+**Pose_Lean** *float*: How far the NPC leans left or right, as a number from -1 to 1. Positive numbers learn to the NPC's left, while negative numbers lean to the NPC's right. Defaults to 0.
+
+**Pose_Pitch** *float*: How far the NPC leans forward or backward, in degrees. Numbers greater than 90 lean forward, while numbers less than 90 lean backward. Defaults to 90.
+
 Conditions
 ----------
 
