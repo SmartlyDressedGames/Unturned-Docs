@@ -9,6 +9,8 @@ NPC Character Assets
 
 **ID** *uint16*: Must be a unique identifier.
 
+**PlayerKnowsNameFlagID** *uint16*: If non-zero, NPC name is shown as ??? until bool flag is true. For example if set to 20 the NPC name is ??? until a Flag_Bool reward with ID 20 is set to true.
+
 Clothing
 --------
 
