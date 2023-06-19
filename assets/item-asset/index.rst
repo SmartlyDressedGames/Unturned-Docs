@@ -50,6 +50,7 @@
 	sentry-asset
 	shirt-asset
 	sight-asset
+	storage-asset
 	structure-asset
 	supply-asset
 	tactical-asset
