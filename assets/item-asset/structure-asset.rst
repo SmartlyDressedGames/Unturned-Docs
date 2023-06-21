@@ -41,6 +41,8 @@ Structure Asset Properties
 
 **PlacementAudioClip** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: AudioClip to play when the structure is placed.
 
+**PlacementPreviewPrefab** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: Overrides the placement preview model spawned when this item is held.
+
 **Proof_Explosion** *flag*: Immune to area-of-effect explosive damage.
 
 **Range** *float*: In meters, the maximum distance away the structure can be placed from the player.
@@ -51,7 +53,7 @@ Structure Asset Properties
 
 **Unpickupable** *flag*: Disables the ability to pick up a placed structure.
 
-**Unrepairable** *flag*: Cannot be repaired by a MeleeAsset with the "Repair" flag. For example, the `Blowtorch <https://wiki.smartlydressedgames.com/wiki/Blowtorch>`_ would not be able to repair this structure.
+**Unrepairable** *flag*: Cannot be repaired by a :ref:`MeleeAsset <doc_item_asset_melee>` with the ``Repair`` flag. For example, the `Blowtorch <https://wiki.smartlydressedgames.com/wiki/Blowtorch>`_ would not be able to repair this structure.
 
 **Unsalvageable** *flag*: Salvaging a damaged structure yields no partial resources.
 

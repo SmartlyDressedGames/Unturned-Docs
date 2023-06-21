@@ -16,7 +16,7 @@ Item Asset Properties
 
 **Useable** *enum* (``Barricade``)
 
-**Build** *enum* (``Sentry``)
+**Build** *enum* (``Sentry``, ``Sentry_Freeform``)
 
 **ID** *uint16*: Must be a unique identifier.
 
