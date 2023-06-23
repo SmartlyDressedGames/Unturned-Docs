@@ -16,7 +16,7 @@ Item Asset Properties
 
 **Useable** *enum* (``Barricade``)
 
-**Build** *enum* (``Storage``)
+**Build** *enum* (``Storage``, ``Storage_Wall``)
 
 **ID** *uint16*: Must be a unique identifier.
 

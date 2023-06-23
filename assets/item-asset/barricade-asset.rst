@@ -53,6 +53,8 @@ Barricade Asset Properties
 
 **PlacementAudioClip** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: AudioClip to play when the barricade is placed.
 
+**PlacementPreviewPrefab** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: Overrides the placement preview model spawned when this item is held.
+
 **Proof_Explosion** *flag*: Immune to area-of-effect explosive damage.
 
 **Radius** *float*: In meters, the radius around the barricade the must be clear in order for it to be placeable.
@@ -63,7 +65,7 @@ Barricade Asset Properties
 
 **Unpickupable** *flag*: Disables the ability to pick up a placed barricade. For example, the `Horde Beacon <https://wiki.smartlydressedgames.com/wiki/Horde_Beacon>`_ uses this flag.
 
-**Unrepairable** *flag*: Cannot be repaired by a MeleeAsset with the "Repair" flag. For example, the `Blowtorch <https://wiki.smartlydressedgames.com/wiki/Blowtorch>`_ would not be able to repair this barricade.
+**Unrepairable** *flag*: Cannot be repaired by a :ref:`MeleeAsset <doc_item_asset_melee>` with the ``Repair`` flag. For example, the `Blowtorch <https://wiki.smartlydressedgames.com/wiki/Blowtorch>`_ would not be able to repair this barricade.
 
 **Unsalvageable** *flag*: Salvaging a damaged barricade yields no partial resources. For example, `small glass plates <https://wiki.smartlydressedgames.com/wiki/Small_Glass_Plate>`_ use this flag.
 

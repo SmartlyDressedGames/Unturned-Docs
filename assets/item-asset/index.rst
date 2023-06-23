@@ -42,6 +42,7 @@
 	map-asset
 	mask-asset
 	medical-asset
+	melee-asset
 	oil-pump-asset
 	optic-asset
 	pants-asset

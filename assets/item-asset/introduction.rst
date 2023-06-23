@@ -44,6 +44,8 @@ Inventory Properties
 
 **Equipable\_Movement\_Speed\_Multiplier** *float*: Multiplies character movement speed while equipped in hands (not while wearing). If a gun is equipped then any gun attachment multipliers are combined as well.
 
+**EquipAudioClip** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: AudioClip to play when equipping.
+
 Economy Properties
 ------------------
 
@@ -80,11 +82,11 @@ Other Properties
 
 **Bypass\_Hash\_Verification** *bool*: Disable hash verification check, and allow for mismatched files. Defaults to false.
 
-**EquipablePrefab** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: Overrides the model spawned when this item is equipped. For example the Equipable prefab could use an animated skinned mesh component while the regular Item prefab only needs a static mesh component.
+**Destroy_Item_Colliders** *bool*: If false, colliders are not destroyed when the Item prefab is attached to the character. For example equipped vanilla guns do not have any colliders, but some mods (e.g., riot shields) may have relied on child colliders not being destroyed. Defaults to true.
+
+**EquipablePrefab** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: Overrides the model spawned when this item is equipped. For example, the Equipable prefab could use an animated skinned mesh component while the regular Item prefab only needs a static mesh component.
 
 **Ignore_TexRW** *flag*: Specified if read/writeable texture errors for the asset should be hidden from the error logs.
-
-**Destroy_Item_Colliders** *bool*: If false, colliders are not destroyed when the Item prefab is attached to the character. For example equipped vanilla guns do not have any colliders, but some mods (e.g., riot shields) may have relied on child colliders not being destroyed. Defaults to true.
 
 Blueprints and Actions
 ----------------------

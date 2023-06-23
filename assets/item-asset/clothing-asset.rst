@@ -31,3 +31,5 @@ Clothing Asset Properties
 **Beard_Visible** *bool*: Facial hair should be visible. Defaults to true.
 
 **Visible_On_Ragdoll** *bool*: Should be visible on ragdolls. Defaults to true.
+
+**WearAudio** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: AudioClip or OneShotAudioDefinition to play upon wearing.

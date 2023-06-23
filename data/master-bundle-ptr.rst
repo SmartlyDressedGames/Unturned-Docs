@@ -28,3 +28,9 @@ If the asset default master bundle should be used then the path can be specified
 .. code-block:: cs
 	
 	"MyMasterBundlePtr" "path/to/file.extension"
+
+Alternatively, the name of a master bundle can be prefixed to the inline path:
+
+.. code-block:: cs
+	
+	"MyMasterBundlePtr" "core.masterbundle:path/to/file.extension"
