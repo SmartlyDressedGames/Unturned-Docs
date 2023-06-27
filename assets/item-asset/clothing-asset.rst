@@ -22,6 +22,8 @@ Clothing Asset Properties
 
 **Proof_Radiation** *flag*: Specified if it should exhibit the radiation-proof property. Only applicable to pants, shirts, and masks. When a radiation-proof mask is worn, the player will not be damaged by standard deadzones. When radiation-proof pants, a radiation-proof shirt, and a radiation-proof mask are worn together, the player will not be damaged by full-suit deadzones. The protection only lasts for as long as the radiation-proof mask's item quality remains greater than 0%. The mask's quality will deplete over time while inside of a deadzone. :ref:`Radiation filters <doc_item_asset_filter>` can be used to replenish a radiation-proof mask's quality.
 
+**Skin_Override** *string*: Optional name of a renderer that should use the player's skin material. For example, to create a miniature version of the player sitting on their shoulder.
+
 **Mirror_Left_Handed_Model** *bool*: Clothing should be mirrored when the player is left-handed. Only applicable to vests, backpacks, masks, glasses, and hats. Defaults to true.
 
 **Movement_Speed_Multiplier** *float*: Multiplier on movement speed. Defaults to 1.
