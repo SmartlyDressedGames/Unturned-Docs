@@ -5,6 +5,8 @@ Game Server Login Tokens
 
 Beginning in version 3.20.4.0 Unturned dedicated servers can be authenticated using a **Game Server Login Token** or **GSLT**. After version 3.21.31.0 anonymous servers (without GSLT) are hidden from the internet server list.
 
+An additional benefit of using GSLTs is the automatic transfer of favorites and history if the server address changes. This should happen within approximately 24 hours. (Verified `here <https://github.com/SmartlyDressedGames/Unturned-3.x-Community/issues/3980>`_ and `here <https://forums.alliedmods.net/showthread.php?p=2529549#post2529549>`_, thanks to CyberAndrii and joeymisfit)
+
 Creating GSLTs
 --------------
 
