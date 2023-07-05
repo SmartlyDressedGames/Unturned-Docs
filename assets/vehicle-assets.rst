@@ -51,7 +51,7 @@ Driving Properties
 
 **Wheel_Collider_Mass_Override** *float*: Overrides mass set on tire collider in Unity with provided value.
 
-SqrDelta *float*: Defaults to ``Speed_Max`` * ``0.125`` with ``Engine`` type ``Helicopter``. With ``Engine`` types ``Car``, ``Plane``, ``Boat``, ``Train`` it defaults to ``Speed_Max`` * ``0.1``
+**SqrDelta** *float*: Defaults to ``Speed_Max`` * ``0.125`` with ``Engine`` type ``Helicopter``. With ``Engine`` types ``Car``, ``Plane``, ``Boat``, and ``Train`` it defaults to ``Speed_Max`` * ``0.1``
 
 Damage Properties
 ---------------------
@@ -98,7 +98,7 @@ Fuel Properties
 
 **Fuel_Max** *UInt16*: Maxiumum amount of fuel the vehicle can spawn with. Defaults to ``0.0``.
 
-**Fuel_Burn_Rate** *float*: The rate the fuel burns at. Defaults to ``2.05`` for the ``Engine`` type ``Car``, ``4.2`` for other types.
+**Fuel_Burn_Rate** *float*: The rate the fuel burns at. Defaults to ``2.05`` for the ``Engine`` type ``Car``, ``4.2`` for ``Engine`` types ``Car``, ``Plane``, ``Boat``, and ``Train``.
 
 Health Properties
 ---------------------
@@ -154,9 +154,9 @@ Turret Properties
 Train Properties
 ---------------------
 
-**Train_Track_Offset** *float*: Offsets the train track by provided value. Defaults to ``0.0`` 
+**Train_Track_Offset** *float*: Offsets the train track on the ? axis by provided value. Defaults to ``0.0``
 
-**Train_Wheel_Offset** *float*: Offsets the train wheels by provided value. Defaults to ``0.0`` 
+**Train_Wheel_Offset** *float*: Offsets the train wheels on the ? axis by provided value. Defaults to ``0.0``
 
 **Train_Car_Length** *float*: Specifies how many train cars there are. Defaults to ``0.0`` 
 
@@ -176,7 +176,7 @@ Miscellanious Properties
 
 **Pitch_Idle** *float*: Changes the pitch of the engine audio at idle. If your audio clip is named Engine_Large it defaults to 0.625. If your audio clip is named Engine_Small it defaults to 0.75.
 
-**Pitch_Drive** *float*: Changes the pitch of the engine audio while driving. If ``Engine`` type is ``Helicopter`` it defaults to ``0.03``. If ``Engine`` type is ``Blimp`` it defaults to ``0.1``. On ``Engine`` types ``Car``, ``Plane``, ``Boat``, ``Train`` it defaults to ``0.025`` for audio clips named "Engine_Large", and 0.025 for audio clips named "Engine_Small"
+**Pitch_Drive** *float*: Changes the pitch of the engine audio while driving. If ``Engine`` type is ``Helicopter`` it defaults to ``0.03``. If ``Engine`` type is ``Blimp`` it defaults to ``0.1``. On ``Engine`` types ``Car``, ``Plane``, ``Boat``, and ``Train`` it defaults to ``0.025`` for audio clips named "Engine_Large", and 0.025 for audio clips named "Engine_Small"
 
 **Exit** *float*: Exit distance from vehicle. Defaults to ``2.0``
 
