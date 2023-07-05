@@ -96,8 +96,9 @@ Anyone can contribute towards the *Unturned* modding documentation! To submit an
 	:hidden:
 	:maxdepth: 1
 	:caption: Servers & Programming
-	
+
 	servers/command-io
+	servers/debugging-exceptions
 	servers/dedicated-workshop-update-monitor
 	servers/game-server-login-tokens
 	servers/glazier
