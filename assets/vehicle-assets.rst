@@ -21,7 +21,7 @@ Driving Properties
 
 **Speed_Min** *float* Minimum speed of the vehicle. Defaults to ``0.0``.
 
-**Speed_Max** *float* Maximum speed of the vehicle. Provided value gets multiplied by 1.25 if the Engine type is ``Train``. Defaults to ``0.0``
+**Speed_Max** *float* Maximum speed of the vehicle. Provided value gets multiplied by 1.25 if the ``Engine`` type is ``Train``. Defaults to ``0.0``
 
 **Steer_Min** *float* Minimum steering of the vehicle. Defaults to ``0.0``.
 
@@ -37,7 +37,7 @@ Driving Properties
   
 **Brake** *float* Determines the amount of brakin force applied to the vehicle
 
-Override_Center_Of_Mass *bool*
+**Override_Center_Of_Mass** *bool*
 
 **Center_Of_Mass_x** *float*
 
@@ -45,13 +45,13 @@ Override_Center_Of_Mass *bool*
 
 **Center_Of_Mass_z** *float* 
 
-**Override_Center_Of_Mass** Defaults to ``3``.
+**Override_Center_Of_Mass** *bool* Defaults to ``false``.
 
 **Sleds** *flag* Used for having sliding wheels on planes and other types of vehicles where this effect is desired.
 
-**Traction** *flag*
+**Traction** *flag* Changes the wheels physics for ice and off-road.
 
-Wheel_Collider_Mass_Override *float* Overrides mass set on tire collider in Unity with provided value.
+**Wheel_Collider_Mass_Override** *float* Overrides mass set on tire collider in Unity with provided value.
 
 Damage Properties
 ---------------------
@@ -73,7 +73,7 @@ Battery Properties
 
 **Cannot_Spawn_With_Battery** *flag* If present the vehicle will not spawn with a battery.
 
-**Battery_Spawn_Charge_Multiplier** *float* Multiplies the battery charge of the vehicle with provided number. Defaults to ``1.0`` unless **Battery_Spawn_Charge_Multiplier** is present, in which case it defaults to ``0.0``.
+**Battery_Spawn_Charge_Multiplier** *float* Multiplies the battery charge of the vehicle with provided number. Defaults to ``1.0`` unless ``Battery_Spawn_Charge_Multiplier`` is present, in which case it defaults to ``0.0``.
 
 **Battery_Burn_Rate** *float* Rate of the battery consumption. Defaults to ``20.0``.
 
@@ -92,13 +92,13 @@ Battery Properties
 Fuel Properties
 ---------------------
 
-**Fuel** *UInt16* Maxiumum amount of fuel the vehicle can store. Defaults to ``0``.
+**Fuel** *UInt16* Maxiumum amount of fuel the vehicle can store. Defaults to ``0.0``.
 
-**Fuel_Min** *UInt16* Minimum amount of fuel the vehicle can spawn with. Defaults to ``0``.
+**Fuel_Min** *UInt16* Minimum amount of fuel the vehicle can spawn with. Defaults to ``0.0``.
 
-**Fuel_Max** *UInt16* Maxiumum amount of fuel the vehicle can spawn with. Defaults to ``0``.
+**Fuel_Max** *UInt16* Maxiumum amount of fuel the vehicle can spawn with. Defaults to ``0.0``.
 
-**Fuel_Burn_Rate** *float* The rate the fuel burns at. Defaults to ``2.05`` for the engine type ``Car``, ``4.2`` for other types.
+**Fuel_Burn_Rate** *float* The rate the fuel burns at. Defaults to ``2.05`` for the ``Engine`` type ``Car``, ``4.2`` for other types.
 
 Health Properties
 ---------------------
@@ -126,9 +126,9 @@ Explosion Properties
 
 **Explosion_Max_Force_Z** *float* Maximum amount of force applied to the vehicle on the Z axis when the vehicle explodes. Defaults to ``0.0``.
 
-**ShouldExplosionCauseDamage** *bool* If true the explosion caused by the vehicle will deal damage. Defaults to ``true``
+**ShouldExplosionCauseDamage** *bool* If ``true`` the explosion caused by the vehicle will deal damage. Defaults to ``true``
 
-**ShouldExplosionBurnMaterials** *bool* If true the materials of the Model_X gameobjects in unity will turn black when the vehicle explodes. Defaults to ``true``
+**ShouldExplosionBurnMaterials** *bool* If ``true`` the materials of the Model_X gameobjects in unity will turn black when the vehicle explodes. Defaults to ``true``
 
 
 Turret Properties
@@ -148,7 +148,7 @@ Turret Properties
 
 **Turret_X_Pitch_Max** *float* Determines how low the pitch of the turret can go
 
-**Turret_X_Ignore_Aim_Camera** *flag* Used for having the turret control view be viewed from the seated perspective (instead of the ``Aim`` Gameobject).
+**Turret_X_Ignore_Aim_Camera** *flag* Used for having the turret control view be viewed from the seated perspective (instead of the ``Aim`` gameobject).
 
 **Turret_X_Aim_Offset** *float* Offsets the Aim on the Y axis.
 
@@ -178,13 +178,13 @@ Miscellanious Properties
 
 **Pitch_Idle** *float* Changes the pitch of the engine audio at idle. If your audio clip is named Engine_Large it defaults to 0.625. If your audio clip is named Engine_Small it defaults to 0.75.
 
-**Pitch_Drive** *float* Changes the pitch of the engine audio while driving. If your Engine type is Helicopter it defaults to 0.03. If your Engine type is Blimp it defaults to 0.1. If your Engine type is Blimp it defaults to 0.1. On every other Engine type it defaults to 0.025 for audio clips named "Engine_Large" and 0.025 for audio clips named "Engine_Small"
+**Pitch_Drive** *float* Changes the pitch of the engine audio while driving. If ``Engine`` type is ``Helicopter`` it defaults to ``0.03``. If ``Engine`` type is ``Blimp`` it defaults to ``0.1``. On ``Engine`` types ``Car``, ``Plane``, ``Boat``, ``Train`` it defaults to ``0.025`` for audio clips named "Engine_Large", and 0.025 for audio clips named "Engine_Small"
 
-**Exit** *float* Exit distance from vehicle. Defaults to ``2``
+**Exit** *float* Exit distance from vehicle. Defaults to ``2.0``
 
 **Cam_Follow_Distance** *float* Camera distance from player while in vehicle. Defaults to 5.5 unless Cam_Follow_Distance is present, in which case it defaults to ``0.0``.
 
-**Bumper_Multiplier** *float* Multiplies bumper damage by provided amount. Defaults to ``1``.
+**Bumper_Multiplier** *float* Multiplies bumper damage by provided amount. Defaults to ``1.0``.
 
 **Can_Be_Locked** *flag* Specifies wether or not the vehicle can be locked.
 
@@ -198,21 +198,19 @@ Miscellanious Properties
 
 **Drops_Max** *UInt8* Maximum amount of items to spawn when the vehicle is destroyed. Defaults to ``7``.
 
-**Tire_ID** *ID* of the item thats used to attach a tire. Defaults to ``1451``.
-
 **Num_Steering_Tires** *Int32* Steers tires 1 through n; with n being the number of tire models. If ``Crawler`` is present the value defaults to ``0``. Defaults to 2 with ``Engine`` type ``Car``. Useful for vehicles where more than 2 wheels steer
 
-**Steering_Tire** ???
+**Steering_Tire_X** *Int32* X being the tire you want to steer (2 and 3 (usually for 4 steering Tires) on seperate lines) and ``Int32`` being the Wheel_``Y`` you want to steer in unity.
 
 **Battery_Powered** *flag* If present the vehicle will be powered by the battery. Useful on electric vehicles.
 
 **Supports_Mobile_Buildables** *flag* Specifies wether or not you can place barricades on the vehicle.
 
-**Should_Spawn_Seat_Capsules** *bool* If true, capsule colliders get attached to the Seat to prevent players from clipping into the ground. Should be used on vehicles with no roof.
+**Should_Spawn_Seat_Capsules** *bool* If ``true``, capsule colliders get attached to the Seat to prevent players from clipping into the ground. Should be used on vehicles with no roof.
 
 **Bypass_Hash_Verification** *flag* Bypasses hash-based file verification.
 
-**Can_Repair_While_Seated** *bool* If true allows passengers of the vehicle to repair the vehicle.
+**Can_Repair_While_Seated** *bool* If ``true`` allows passengers of the vehicle to repair the vehicle.
 
 **Valid_Speed_Up** *float* Defaults to 12.5 with ``Engine`` type ``Car``, 3.25 with ``Engine`` type ``Boat``, and 100 with other types.
 
@@ -224,15 +222,7 @@ Miscellanious Properties
 
 **Has_Clip_Prefab** *bool* Should be ``false``.
 
-**Shared_Skin_Lookup_ID** *UInt16* funky skin stuff. Defaults to ``0``. 
-
-**Shared_Skin_Name** *string* funky skin stuff
-
-**Size2_Z** *float* some icon stuff i think?
-
-**Zip** *flag* ???
-
-
+**Zip** *flag* Handlebar related property. Used on vanilla Quad, Snowmobile, Dirtbike, and Jetski.
 
 **Reclined** *flag* Alternative reclined sitting animation for driver.
 
@@ -240,3 +230,12 @@ Miscellanious Properties
 
 **Crawler** *flag* If present the wheel models will not turn when steering.
 
+
+Skin Properties
+---------------------
+
+**Shared_Skin_Lookup_ID** *UInt16* ID of the vehicle that the skin applies to. Defaults to the vehicles ``ID``.
+
+**Shared_Skin_Name** *string* funky skin stuff
+
+**Size2_Z** *float* Controls orthogonal camera size for vehicle skin icons. Defaults to ``0.0``.
