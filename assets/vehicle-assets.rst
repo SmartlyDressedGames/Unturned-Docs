@@ -37,21 +37,21 @@ Driving Properties
   
 **Brake** *float* Determines the amount of brakin force applied to the vehicle
 
-**Override_Center_Of_Mass** *bool*
+**Override_Center_Of_Mass** *bool* If ``true`` overrides center of mass with the values from ``Center_Of_Mass_x, y, z``. Alternative to moving ``Cog`` or ``Center`` gameobjects. Defaults to ``false``.
 
-**Center_Of_Mass_x** *float*
+**Center_Of_Mass_X** *float* Overrides center of mass on the X axis to the provided value. Needs ``Override_Center_Of_Mass`` ``True`` to work.
 
-**Center_Of_Mass_y** *float*
+**Center_Of_Mass_Y** *float* Overrides center of mass on the Y axis to the provided value. Needs ``Override_Center_Of_Mass`` ``True`` to work.
 
-**Center_Of_Mass_z** *float* 
-
-**Override_Center_Of_Mass** *bool* Defaults to ``false``.
+**Center_Of_Mass_Z** *float*  Overrides center of mass on the Z axis to the provided value. Needs ``Override_Center_Of_Mass`` ``True`` to work.
 
 **Sleds** *flag* Used for having sliding wheels on planes and other types of vehicles where this effect is desired.
 
 **Traction** *flag* Changes the wheels physics for ice and off-road.
 
 **Wheel_Collider_Mass_Override** *float* Overrides mass set on tire collider in Unity with provided value.
+
+SqrDelta *float* Defaults to ``Speed_Max`` * ``0.125`` with ``Engine`` type ``Helicopter``. With ``Engine`` types ``Car``, ``Plane``, ``Boat``, ``Train`` it defaults to ``Speed_Max`` * ``0.1``
 
 Damage Properties
 ---------------------
@@ -130,7 +130,6 @@ Explosion Properties
 
 **ShouldExplosionBurnMaterials** *bool* If ``true`` the materials of the Model_X gameobjects in unity will turn black when the vehicle explodes. Defaults to ``true``
 
-
 Turret Properties
 ---------------------
 
@@ -152,15 +151,14 @@ Turret Properties
 
 **Turret_X_Aim_Offset** *float* Offsets the Aim on the Y axis.
 
-
 Train Properties
 ---------------------
 
-**Train_Track_Offset** *float* Defaults to ``0.0``
+**Train_Track_Offset** *float* Offsets the train track by provided value. Defaults to ``0.0`` 
 
-**Train_Wheel_Offset** *float* Defaults to ``0.0``
+**Train_Wheel_Offset** *float* Offsets the train wheels by provided value. Defaults to ``0.0`` 
 
-**Train_Car_Length** *float* Defaults to ``0.0``
+**Train_Car_Length** *float* Specifies how many train cars there are. Defaults to ``0.0`` 
 
 Bicycle Properties
 ---------------------
@@ -169,7 +167,7 @@ Bicycle Properties
 
 **Bicycle_Anim_Speed** *float* The speed at which the bicycle pedals spin.
 
-**Stamina_Boost** *float* The speed that
+**Stamina_Boost** *float* ???
 
 **Stamina_Powered** *flag* If present the vehicle will get a speed boost when shift is pressed.
 
@@ -182,7 +180,7 @@ Miscellanious Properties
 
 **Exit** *float* Exit distance from vehicle. Defaults to ``2.0``
 
-**Cam_Follow_Distance** *float* Camera distance from player while in vehicle. Defaults to 5.5 unless Cam_Follow_Distance is present, in which case it defaults to ``0.0``.
+**Cam_Follow_Distance** *float* Camera distance from player while in vehicle. Defaults to ``5.5`` unless Cam_Follow_Distance is present, in which case it defaults to ``0.0``.
 
 **Bumper_Multiplier** *float* Multiplies bumper damage by provided amount. Defaults to ``1.0``.
 
@@ -216,11 +214,11 @@ Miscellanious Properties
 
 **Valid_Speed_Down** *float* Defaults to 25 with ``Engine`` type ``Car`` and ``Boat``, and 100 with other types.
 
-**Valid_Speed_Horizontal** *float* Value gets multiplied with PlayerInput.RATE = 0.08 (???)
+**Valid_Speed_Horizontal** *float* Value gets multiplied with (PlayerInput.RATE =) 0.08 (idk what this does).
 
 **Bypass_ID_Limit** *flag* Used for bypassing the ID limit set by vanilla vehicles (``ID`` < 200).
 
-**Has_Clip_Prefab** *bool* Should be ``false``.
+**Has_Clip_Prefab** *bool* Should be ``false``. Use ``true`` if you have a Clip Prefab for your vehicle but is not recommended.
 
 **Zip** *flag* Handlebar related property. Used on vanilla Quad, Snowmobile, Dirtbike, and Jetski.
 
@@ -234,8 +232,8 @@ Miscellanious Properties
 Skin Properties
 ---------------------
 
-**Shared_Skin_Lookup_ID** *UInt16* ID of the vehicle that the skin applies to. Defaults to the vehicles ``ID``.
+**Shared_Skin_Lookup_ID** *UInt16* ID of the vehicle that the skin applies to. Defaults to the vehicles ``ID``. Defaults to ``0``.
 
-**Shared_Skin_Name** *string* funky skin stuff
+**Shared_Skin_Name** *string* Name of
 
 **Size2_Z** *float* Controls orthogonal camera size for vehicle skin icons. Defaults to ``0.0``.
