@@ -1,8 +1,8 @@
 Vehicle Assets
-==============
+=====================
 
 Vehicle Asset Properties
----------------------
+---------------------------
 
 **GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
 
@@ -87,16 +87,16 @@ Battery Properties
   
 **BatteryMode_Sirens** *enum*: (``Charge``, ``Burn``, ``None``): controls how the battery should behave when the siren is activated.
 
-**Can_Steal_Battery** *bool*: Specifies wether or not the battery can be stolen from the vehicle.
+**Can_Steal_Battery** *bool*: Specifies whether or not the battery can be stolen from the vehicle.
 
 Fuel Properties
 ---------------------
 
-**Fuel** *UInt16*: Maxiumum amount of fuel the vehicle can store. Defaults to ``0.0``.
+**Fuel** *UInt16*: Maximum amount of fuel the vehicle can store. Defaults to ``0.0``.
 
 **Fuel_Min** *UInt16*: Minimum amount of fuel the vehicle can spawn with. Defaults to ``0.0``.
 
-**Fuel_Max** *UInt16*: Maxiumum amount of fuel the vehicle can spawn with. Defaults to ``0.0``.
+**Fuel_Max** *UInt16*: Maximum amount of fuel the vehicle can spawn with. Defaults to ``0.0``.
 
 **Fuel_Burn_Rate** *float*: The rate the fuel burns at. Defaults to ``2.05`` for the ``Engine`` type ``Car``, ``4.2`` for ``Engine`` types ``Car``, ``Plane``, ``Boat``, and ``Train``.
 
@@ -110,7 +110,7 @@ Health Properties
 **Health_Max** *UInt16*: Maximum health that the vehicle can spawn with. Defaults to ``0``.
 
 Explosion Properties
----------------------
+----------------------
 
 **Explosion** *ID/GUID*: of the effect to use when destroyed.
 
@@ -171,8 +171,8 @@ Bicycle Properties
 
 **Stamina_Powered** *flag*: If present the vehicle will get a speed boost when shift is pressed.
 
-Miscellanious Properties
----------------------
+Miscellaneous Properties
+-------------------------
 
 **Pitch_Idle** *float*: Changes the pitch of the engine audio at idle. If your audio clip is named Engine_Large it defaults to 0.625. If your audio clip is named Engine_Small it defaults to 0.75.
 
@@ -184,7 +184,7 @@ Miscellanious Properties
 
 **Bumper_Multiplier** *float*: Multiplies bumper damage by provided amount. Defaults to ``1.0``.
 
-**Can_Be_Locked** *flag*: Specifies wether or not the vehicle can be locked.
+**Can_Be_Locked** *flag*: Specifies whether or not the vehicle can be locked.
 
 **Trunk_Storage_X** *UInt8*: Width of vehicle inventory. Defaults to ``0``.
 
@@ -202,7 +202,7 @@ Miscellanious Properties
 
 **Battery_Powered** *flag*: If present the vehicle will be powered by the battery. Useful on electric vehicles.
 
-**Supports_Mobile_Buildables** *flag*: Specifies wether or not you can place barricades on the vehicle.
+**Supports_Mobile_Buildables** *flag*: Specifies whether or not you can place barricades on the vehicle.
 
 **Should_Spawn_Seat_Capsules** *bool*: If ``true``, capsule colliders get attached to the Seat to prevent players from clipping into the ground. Should be used on vehicles with no roof.
 
