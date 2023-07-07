@@ -241,6 +241,7 @@ Alphabetically sorted list of curated map file IDs:
 - Athens Arena: 1454125991
 - Arid: 2683620106
 - Belgium: 1727125581
+- Buak: 3000549606
 - Bunker Arena: 1257784170
 - California: 1905768396
 - Canyon Arena: 1850209768
