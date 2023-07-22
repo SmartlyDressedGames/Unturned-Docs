@@ -50,6 +50,8 @@ Some command-line arguments are primarily intended for use with the Unturned Ded
 
 **-LogAssemblyResolve**: Log when the resolution of an assembly fails. Useful when working with non-Rocket plugins.
 
+**-LogBadMessages**: Log when the game ignores a network message, including from whom. This is only recommended if trying to narrow down whether a connection is trying to waste time on the game thread by potentially exploiting something. By default the server automatically disconnects clients that are sending invalid messages, whereas the instances logged by this option could potentially be false positives.
+
 **-LogLevelBatchingTextureAtlasExclusions**: Please refer to :ref:`Level Batching <doc_mapping_batching>` for more details.
 
 **-NetTransport=** *enum* (``SteamNetworking``, ``SteamNetworkingSockets``): SteamNetworkingSockets was used to enable the `ISteamNetworkingSockets <https://partner.steamgames.com/doc/api/ISteamNetworkingSockets>`_ networking API, but this has since become default. SteamNetworking can be used to revert to the older, deprecated `ISteamNetworking <https://partner.steamgames.com/doc/api/ISteamNetworking>`_ networking API.
