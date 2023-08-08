@@ -76,6 +76,7 @@ Anyone can contribute towards the *Unturned* modding documentation! To submit an
 	assets/stereo-song-asset
 	assets/unity-2018
 	assets/unity-2019
+	assets/vehicle-asset
 	assets/vehicle-physics-profile-asset
 	assets/weather-asset
 	assets/zombie-difficulty-asset
@@ -96,7 +97,7 @@ Anyone can contribute towards the *Unturned* modding documentation! To submit an
 	:hidden:
 	:maxdepth: 1
 	:caption: Servers & Programming
-
+	
 	servers/command-io
 	servers/debugging-exceptions
 	servers/dedicated-workshop-update-monitor
@@ -121,5 +122,5 @@ Anyone can contribute towards the *Unturned* modding documentation! To submit an
 	data/rich-text
 	
 	data/playerspotlightconfig
+	data/ebatterymode
 	data/enpcholiday
-	
