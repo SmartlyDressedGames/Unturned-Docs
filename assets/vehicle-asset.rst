@@ -38,7 +38,6 @@ Vehicle Properties
 ID the Spawntable to spawn when the vehicle is destroyed. Defaults to ``962``.
 
 **Drops_Min** *uint8*: Minimum amount of item drops to spawn when the vehicle is destroyed. Defaults to 3.
- Defaults to ``3``.
 
 **Drops_Max** *uint8*: Maximum amount of item drops to spawn when the vehicle is destroyed. Defaults to 7.
 
