@@ -35,7 +35,6 @@ Vehicle Properties
 **Crawler** *flag*: Disables the ``Wheel_#`` GameObjects from turning when steering by setting the default value of ``Num_Steering_Tires`` to 0. This property has no effect if ``Num_Steering_Tires`` has been manually set.
 
 **Drops_Table_ID** *uint16*: ID of the item spawn table to use when the vehicle is destroyed. Defaults to 962.
-ID the Spawntable to spawn when the vehicle is destroyed. Defaults to ``962``.
 
 **Drops_Min** *uint8*: Minimum amount of item drops to spawn when the vehicle is destroyed. Defaults to 3.
 
