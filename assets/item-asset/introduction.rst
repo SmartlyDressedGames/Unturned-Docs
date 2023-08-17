@@ -88,6 +88,8 @@ Other Properties
 
 **Ignore_TexRW** *flag*: Specified if read/writeable texture errors for the asset should be hidden from the error logs.
 
+**Left_Handed_Characters_Mirror_Equipable** *bool*: If false, the equipped item model is mirrored to counteract the mirrored character. Defaults to true.
+
 Blueprints and Actions
 ----------------------
 
