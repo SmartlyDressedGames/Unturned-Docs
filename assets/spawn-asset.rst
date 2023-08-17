@@ -24,6 +24,8 @@ Roots are the spawners that your spawn table will attach itself to. This is usef
 
 **Root\_#\_Weight** *int*: Weight of this table in the parent spawn table.
 
+**Root\_#\_GUID** :ref:`GUID <doc_data_guid>`: Unique GUID of parent spawn table. Used if ``Spawn_ID`` is unset or zero.
+
 Tables
 ------
 
@@ -36,3 +38,5 @@ Tables are the assets spawned from the spawner, referenced by ID. These could be
 **Table\_#\_Asset_ID** *uint16*: ID of asset to spawn.
 
 **Table\_#\_Weight** *int*: Weight of this child in the table.
+
+**Table\_#\_GUID** :ref:`GUID <doc_data_guid>`: Unique GUID of an asset to spawn or a spawn table to recursively spawn a child from. Used if ``Spawn_ID`` and ``Asset_ID`` are both unset or zero.
