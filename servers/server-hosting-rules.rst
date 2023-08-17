@@ -13,6 +13,8 @@ Servers that violate these rules may be temporarily or permanently banned. To re
 Recent changes
 --------------
 
+**2023-08-17:** Added reasoning behind flagging servers using an anycast proxy.
+
 **2023-02-15 revisions:** Many of the rules have been revised to be clearer, with regards to what is (or isn't) currently allowed. "Consumable microtransaction" is better defined, there are a couple of new examples, and deceptive pricing has its own dedicated a section. The monetization filter section also includes more information about the filter, its purpose, and which of the four options (including a newer "Monetized" option) your server should use.
 
 **2022-10-16 clarification:** Selling *vanilla* cosmetics, such as those available from the Stockpile or Steam Community Market, is not allowed. When offering cosmetics as a server microtransaction, the server network should should own (or have licensed) the rights to that content. Servers should not sell cosmetic content that they do not own the right to, such as vanilla cosmetics (either official, or community-contributed).
@@ -83,6 +85,17 @@ Online Conduct
 --------------
 
 Repeated offenders of `Steam's rules and guidelines <https://support.steampowered.com/kb_article.php?ref=4045-USHJ-3810>`_ will be banned.
+
+Anycast Proxies
+---------------
+
+If you use an anycast proxy, please consider `submitting a support request here <https://support.smartlydressedgames.com/hc/en-us/requests/new>`_ to ensure it is flagged correctly. Otherwise, players will almost certainly report the server.
+
+Anycast proxies are a great protection mechanism, but they significantly affect the ping reported in the server browser. For example, a server hosted in Australia may have a ping of 40ms for players in the region but a ping of 300ms for players in Europe. Using an anycast proxy, in this case, would report a much lower ping (e.g., ~30ms) to players around the globe and incorrectly sort the server among those with the lowest ping.
+
+This is frustrating for players looking for low-latency servers, as they may join one with a low ping only to find it is much higher in-game. Servers using an anycast proxy are flagged to sort like they have a higher ping to avoid this problem. It was implemented as a direct response to complaints from players.
+
+Servers using a regular proxy with ping similar to the actual in-game ping are not flagged. Only proxies with a significant ping difference are flagged.
 
 Workshop File Copyright Infringement
 ------------------------------------
