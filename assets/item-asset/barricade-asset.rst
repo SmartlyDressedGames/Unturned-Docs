@@ -16,7 +16,7 @@ Item Asset Properties
 
 **Useable** *enum* (``Barricade``)
 
-**Build** *enum* (``Barrel_Rain``, ``Barricade``, ``Beacon``, ``Bed``, ``Cage``, ``Campfire``, ``Charge``, ``Claim``, ``Clock``, ``Door``, ``Farm``, ``Fortification``, ``Freeform``, ``Gate``, ``Generator``, ``Glass``, ``Hatch``, ``Ladder``, ``Library``, ``Mannequin``, ``Note``, ``Oil``, ``Oven``, ``Oxygenator``, ``Safezone``, ``Sentry_Freeform``, ``Sentry``, ``Shutter``, ``Sign_Wall``, ``Sign``, ``Spike``, ``Spot``, ``Stereo``, ``Storage_Wall``, ``Storage``, ``Tank``, ``Torch``, ``Vehicle``, ``Wire``): Some values may not function properly without using a child class instead. When intending to use a child class, refer to that class's documentation instead for the proper enumerator to use.
+**Build** *enum* (``Barrel_Rain``, ``Barricade``, ``Barricade_Wall``, ``Beacon``, ``Bed``, ``Cage``, ``Campfire``, ``Charge``, ``Claim``, ``Clock``, ``Door``, ``Farm``, ``Fortification``, ``Freeform``, ``Gate``, ``Generator``, ``Glass``, ``Hatch``, ``Ladder``, ``Library``, ``Mannequin``, ``Note``, ``Oil``, ``Oven``, ``Oxygenator``, ``Safezone``, ``Sentry_Freeform``, ``Sentry``, ``Shutter``, ``Sign_Wall``, ``Sign``, ``Spike``, ``Spot``, ``Stereo``, ``Storage_Wall``, ``Storage``, ``Tank``, ``Torch``, ``Vehicle``, ``Wire``): Some values may not function properly without using a child class instead. When intending to use a child class, refer to that class's documentation instead for the proper enumerator to use.
 
 **ID** *uint16*: Must be a unique identifier.
 
