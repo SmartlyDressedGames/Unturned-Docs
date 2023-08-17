@@ -38,6 +38,12 @@ Building the Docs
 
 The documentation is written in [reStructuredText](https://www.writethedocs.org/guide/writing/reStructuredText/) and parsed/built using [Sphinx](https://github.com/sphinx-doc/sphinx).
 
+Building requires the *Read the Docs* theme. To install it, run this command in the repository directory:
+
+`py -m pip install -r requirements.txt`
+
+*py runs the python interpreter. -m is short for -module and specifies the pip package installer module. -r is short for --requirement and specifies a file with a list of package names to install.*
+
 With Python and Sphinx installed run `make html` in the root folder to create the site locally at `/_build/html/index.html`.
 
 Editing using [Visual Studio Code](https://code.visualstudio.com/) with the [reStructuredText Extension](https://docs.restructuredtext.net/) is recommended.
