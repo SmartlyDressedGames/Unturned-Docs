@@ -13,6 +13,8 @@ Conditions can be held by NPC assets, interactable objects, and item blueprints.
 
 **Condition\_#\_Logic** *enum* (``Less_Than``, ``Less_Than_Or_Equal_To``, ``Equal``, ``Not_Equal``, ``Greater_Than_Or_Equal_To``, ``Greater_Than``): Compare current state to target state.
 
+**Condition\_#\_UI_Requirements** *string*: Comma-separated condition indices. If set, only show this condition in the UI when the conditions with these indices are met. For example, a condition with "1, 2" will only be shown when conditions 1 and 2 have been completed.
+
 Flags
 -----
 
