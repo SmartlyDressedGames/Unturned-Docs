@@ -90,6 +90,8 @@ Other Properties
 
 **Left_Handed_Characters_Mirror_Equipable** *bool*: If false, the equipped item model is mirrored to counteract the mirrored character. Defaults to true.
 
+**Instantiated_Item_Name_Override** *string*: Name to use when instantiating item prefab. By default, the legacy 16-bit asset ID is used. Since Unity's built-in Animation component references GameObjects by name, this property can help share animations between items.
+
 Blueprints and Actions
 ----------------------
 
