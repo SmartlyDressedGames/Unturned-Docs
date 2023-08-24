@@ -3,7 +3,7 @@
 Introduction to Items
 =====================
 
-Please refer to :ref:`Asset Definitions <doc_asset_definitions>` and :ref:`Asset Bundles <doc_asset_bundles>` for the full documentation regarding assets and asset bundles.
+Items in *Unturned* encompass anything that can be carried in a player's in-game inventory. All items will share certain properties, but each item type may have its own unique properties as well. Please refer to :ref:`Asset Definitions <doc_asset_definitions>` and :ref:`Asset Bundles <doc_asset_bundles>` for the full documentation regarding assets and asset bundles.
 
 **GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
 
@@ -26,23 +26,23 @@ Inventory Properties
 
 **Size_Z** *float*: Orthogonal camera size for item icons. Defaults to -1.
 
-**Use\_Auto\_Icon\_Measurements** *bool*: Automatically calculate axis-aligned item icon camera size from bounds. Defaults to true.
+**Use_Auto_Icon_Measurements** *bool*: Automatically calculate axis-aligned item icon camera size from bounds. Defaults to true.
 
-**Can\_Player\_Equip** *bool*: Item can be equipped by the player. If the Useable property has been set, then defaults to true. Otherwise, defaults to false.
+**Can_Player_Equip** *bool*: Item can be equipped by the player. If the Useable property has been set, then defaults to true. Otherwise, defaults to false.
 
-**Can\_Use\_Underwater** *bool*: Item can be used while underwater. If the Slot property has not been set to Primary, then defaults to true. Otherwise, defaults to false.
+**Can_Use_Underwater** *bool*: Item can be used while underwater. If the Slot property has not been set to Primary, then defaults to true. Otherwise, defaults to false.
 
-**Should\_Drop\_On\_Death** *bool*: Item should be dropped on death. Defaults to true.
+**Should_Drop_On_Death** *bool*: Item should be dropped on death. Defaults to true.
 
-**Allow\_Manual\_Drop** *bool*: Item can be manually dropped by the player. Defaults to true.
+**Allow_Manual_Drop** *bool*: Item can be manually dropped by the player. Defaults to true.
 
 **InspectAudioDef** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: AudioClip or OneShotAudioDefinition to play when item is inspected.
 
 **InventoryAudio** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: AudioClip or OneShotAudioDefinition to play when item is picked up, moved within the inventory, and dropped. Default value is dependent on the child asset.
 
-**Procedurally\_Animate\_Inertia** *bool*: Whether viewmodel should accumulate angular velocity from animations. Useful for low-quality older animations, but should probably be disabled for high-quality newer animations.
+**Procedurally_Animate_Inertia** *bool*: Whether viewmodel should accumulate angular velocity from animations. Useful for low-quality older animations, but should probably be disabled for high-quality newer animations.
 
-**Equipable\_Movement\_Speed\_Multiplier** *float*: Multiplies character movement speed while equipped in hands (not while wearing). If a gun is equipped then any gun attachment multipliers are combined as well.
+**Equipable_Movement_Speed_Multiplier** *float*: Multiplies character movement speed while equipped in hands (not while wearing). If a gun is equipped then any gun attachment multipliers are combined as well.
 
 **EquipAudioClip** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: AudioClip to play when equipping.
 
@@ -53,7 +53,7 @@ Economy Properties
 
 **Pro** *flag*: Specified if this is an economy item.
 
-**Shared\_Skin\_Lookup\_ID** *uint16*: Share skins with another item. Defaults to item ID.
+**Shared_Skin_Lookup_ID** *uint16*: Share skins with another item. Defaults to item ID.
 
 Container Properties
 --------------------
@@ -71,16 +71,16 @@ Quality Properties
 
 **Quality_Max** *byte*: Maximum quality to generate. Defaults to 90.
 
-**Should\_Delete\_At\_Zero\_Quality** *bool*: Item should be deleted when at 0% quality. Defaults to false.
+**Should_Delete_At_Zero_Quality** *bool*: Item should be deleted when at 0% quality. Defaults to false.
 
-**Override\_Show\_Quality** *bool*: Override to forcefully show item quality. Defaults to false.
+**Override_Show_Quality** *bool*: Override to forcefully show item quality. Defaults to false.
 
 Other Properties
 ----------------
 
 **Backward** *bool*: Set the item to be held in the non-dominant hand. Defaults to false.
 
-**Bypass\_Hash\_Verification** *bool*: Disable hash verification check, and allow for mismatched files. Defaults to false.
+**Bypass_Hash_Verification** *bool*: Disable hash verification check, and allow for mismatched files. Defaults to false.
 
 **Destroy_Item_Colliders** *bool*: If false, colliders are not destroyed when the Item prefab is attached to the character. For example equipped vanilla guns do not have any colliders, but some mods (e.g., riot shields) may have relied on child colliders not being destroyed. Defaults to true.
 

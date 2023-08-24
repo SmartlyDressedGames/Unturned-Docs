@@ -66,11 +66,11 @@ Anyone can contribute towards the *Unturned* modding documentation! To submit an
 	assets/effect-asset
 	assets/foliage-asset
 	assets/item-asset/index
-	assets/item-data
 	assets/layers
 	assets/level-asset
 	assets/mod-hooks
 	assets/npc-asset/index
+	assets/outfit-asset
 	assets/physics-material-asset
 	assets/spawn-asset
 	assets/stereo-song-asset
