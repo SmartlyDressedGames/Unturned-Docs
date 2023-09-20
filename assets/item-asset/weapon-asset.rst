@@ -39,13 +39,13 @@ Player Damage
 
 **Player_Damage_Bones** *enum* (``Always``, ``Heal``, ``None``): Determines the effect the weapon has in relation to the "Broken Bones" status effect. When using "Always", the Broken Bones status effect will always be applied on hit. When using "Heal", anyone hit by the weapon will have their Broken Bones status effect removed. When using "Never", the Broken Bones status effect is never applied by this weapon. Defaults to the "None" enumerator.
 
-**Player_Damage_Food** *float*: Amount of degradation dealt to a targeted player's food.
+**Player_Damage_Food** *float*: Amount of degradation dealt to a targeted player's food. Positive values are beneficial (increasing food level), and negative values are detrimental (decreasing food level). Negative values are blocked in the same situations damage is blocked (e.g., in safezones or shortly after respawns).
 
-**Player_Damage_Water** *float*: Amount of degradation dealt to a targeted player's water.
+**Player_Damage_Water** *float*: Amount of degradation dealt to a targeted player's water. Positive values are beneficial (increasing water level), and negative values are detrimental (decreasing water level). Negative values are blocked in the same situations damage is blocked (e.g., in safezones or shortly after respawns).
 
-**Player_Damage_Virus** *float*: Amount of degradation dealt to a targeted player's immunity.
+**Player_Damage_Virus** *float*: Amount of degradation dealt to a targeted player's immunity. Positive values are beneficial (increasing immunity level), and negative values are detrimental (decreasing immunity level). Negative values are blocked in the same situations damage is blocked (e.g., in safezones or shortly after respawns).
 
-**Player_Damage_Hallucination** *float*: Length of hallucinations inflicted onto a targeted player, in seconds.
+**Player_Damage_Hallucination** *float*: Length of hallucinations inflicted onto a targeted player, in seconds. Positive values are detrimental (increasing hallucination duration), and negative values are beneficial (decreasing hallucination duration). Positive values are blocked in the same situations damage is blocked (e.g., in safezones or shortly after respawns).
 
 Zombie Damage
 `````````````
