@@ -149,7 +149,9 @@ Player Spawnpoint
 
 **Reward\_#\_Type** *enum* (``Player_Spawnpoint``)
 
-**Reward\_#\_ID** *string* Location to spawn the player, using the spawnpoint name as set in the Devkit level editor or a map location node name. For example, ``Liberator_Jet``.
+**Reward\_#\_ID** *string* Override the player's default spawn location, using the spawnpoint name set in the Devkit level editor or a map location node name. For example, ``Liberator_Jet``. Saved and loaded between sessions. If empty, the override is removed and the default spawns are used. The ``SetNpcSpawnId`` admin command is useful for testing this.
+
+.. hint:: On the Buak map, the player can talk with Kira to claim a room in the Factory using this reward type.
 
 Quest
 `````
