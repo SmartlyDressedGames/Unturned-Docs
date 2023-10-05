@@ -37,6 +37,10 @@ Farm Asset Properties
 
 **Ignore_Soil_Restrictions** *bool*: If false, only allow placement on Soil Materials. If true, allow placement anywhere. Default to false.
 
+**Rain_Affects_Growth** *bool*: If true, the plant will fully finish growing after rainy weather. Defaults to true.
+
+**Harvest_Rewards**: NPC reward list granted when harvesting the grown plant. For more information, please refer to the :ref:`Rewards <doc_npc_asset_rewards>` documentation.
+
 .. tip::
 	
 	The ``Health`` property from the parent ItemAsset class can be configured to allow for harvesting a crop multiple times. A plant can be harvested a number of items equal to ``Health / 2``. For example, a plant with 10 health can be harvested up to 5 times.
