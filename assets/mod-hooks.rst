@@ -106,6 +106,11 @@ Effect Spawner
 
 Allows Unity events to spawn effect assets. When the ``AuthorityOnly`` field is enabled only the server will spawn effects and replicate them to clients.
 
+NPC Global Event Messenger
+``````````````````````````
+
+Allows Unity events to broadcast Event NPC rewards. The ``NPC Global Event Hook`` can then listen for these events.
+
 Misc
 ----
 
