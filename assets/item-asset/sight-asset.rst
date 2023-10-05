@@ -33,6 +33,8 @@ Sight Asset Properties
 
 **Zoom** *float*: Multiplicative amount of zoom. Should be set to a value greater than 1. Defaults to 1.
 
+**ThirdPerson_Zoom** *float*: Zoom factor in third-person perspective. Should be set to a value greater than 1. Defaults to 1.25.
+
 **Zoom\_Using\_Eyes** *bool*: Whether main camera field of view should zoom without scope camera / scope overlay.
 
 Distance Marker Properties
