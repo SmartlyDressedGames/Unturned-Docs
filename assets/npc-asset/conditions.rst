@@ -155,7 +155,7 @@ Kills_Zombie
 
 **Condition\_#\_Zombie** *enum* (``Acid``, ``Boss_All``, ``Boss_Electric``, ``Boss_Elver_Stomper``, ``Boss_Fire``, ``Boss_Magma``, ``Boss_Nuclear``, ``Boss_Spirit``, ``Boss_Wind``, ``Burner``, ``Crawler``, ``DL_Blue_Volatile``, ``DL_Red_Volatile``, ``Flanker_Friendly``, ``Flanker_Stalk``, ``Mega``, ``None``, ``Normal``, ``Spirit``, ``Sprinter``): Type of zombie required.
 
-**Condition\_#\_Spawn\_Quantity** *int*: Number of zombies to spawn.
+**Condition\_#\_Spawn\_Quantity** *int*: Number of zombies to spawn. Defaults to 1.
 
 **Condition\_#\_Nav** *byte*: Index of the navmesh that zombies should be killed in, seen as visible in the level editor.
 
