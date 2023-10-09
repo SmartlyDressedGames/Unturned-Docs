@@ -5,7 +5,7 @@ Weather Assets
 
 Overrides the built-in snow and rain weather with custom events. This is feature is a work-in-progress.
 
-Random weather can be scheduled to occur naturally on a map with the `Weather_Types` property of the `Level Asset <doc_assets_level>`.
+Random weather can be scheduled to occur naturally on a map with the ``Weather_Types`` property of the :ref:`Level Asset <doc_assets_level>`.
 
 How to test?
 ------------

@@ -3,6 +3,8 @@
 Server Hosting Rules
 ====================
 
+Server hosts are able to customize their server in order to offer a tailored gameplay experience to their players. This often includes adding new features, disabling vanilla content, or using custom rulesets. However, all servers must adhere to the rules outlined below.
+
 Servers that violate these rules may be temporarily or permanently banned. To report a server for rule violations, or appeal a moderation decision applied to your server, you may file a ticket with SDG Support:
 
 * `Report a server for breaking rules <https://support.smartlydressedgames.com/hc/en-us/requests/new?ticket_form_id=12189991924500>`_
@@ -12,6 +14,8 @@ Servers that violate these rules may be temporarily or permanently banned. To re
 
 Recent changes
 --------------
+
+**2023-10-02:** Clarified on how subscriptions interact with currency.
 
 **2023-08-17:** Added reasoning behind flagging servers using an anycast proxy.
 
@@ -26,8 +30,8 @@ Warnings for breaking the monetization rules first began being sent out on May 2
 
 Hosts are allowed to sell permanent benefits and monthly subscriptions. Consumable microtransactions are **not** allowed. A consumable microtransaction is anything that can be permanently consumed, lost, stolen, or destroyed. If it cannot be permanently lost, then it is not considered a consumable.
 
-Examples
---------
+Monetization Examples
+---------------------
 
 This section will provide *examples* of allowed/banned monetization options. It is not an exhaustive list of every possible monetization strategy.
 
@@ -47,7 +51,7 @@ Examples of banned monetization:
 - Selling individual in-game items like weapons, ammunition, supplies, bases, etc. that can be permanently lost, stolen, or destroyed.
 - Selling individual in-game vehicles that can be permanently lost, stolen, or destroyed.
 - Selling experience points.
-- Selling currency.
+- Selling currency. (As servers are allowed to have subscriptions, currency subscriptions are permitted so long as there is no more than 3 of these currency subscriptions available.)
 - Selling ranks, kits, unlocks, benefits, etc. which stack with themselves as a loophole.
 - Selling copies of **vanilla** cosmetics, such as those available on the Stockpile or Steam Community Market.
 
@@ -84,7 +88,7 @@ Fictitious and deceptive pricing is not allowed. For example: lying that a disco
 Online Conduct
 --------------
 
-Repeated offenders of `Steam's rules and guidelines <https://support.steampowered.com/kb_article.php?ref=4045-USHJ-3810>`_ will be banned.
+Repeated offenders of servers violating the `Steam's Online Conduct rules <https://store.steampowered.com/online_conduct>`_ will be banned.
 
 Anycast Proxies
 ---------------
