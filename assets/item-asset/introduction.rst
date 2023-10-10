@@ -92,6 +92,8 @@ Other Properties
 
 **Instantiated_Item_Name_Override** *string*: Name to use when instantiating item prefab. By default, the legacy 16-bit asset ID is used. Since Unity's built-in Animation component references GameObjects by name, this property can help share animations between items.
 
+**Use_Auto_Stat_Descriptions** *bool*: If true, properties like damage, storage, health, etc. are appended to the description. Defaults to true.
+
 Blueprints and Actions
 ----------------------
 
