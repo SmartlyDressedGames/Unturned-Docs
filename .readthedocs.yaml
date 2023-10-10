@@ -18,3 +18,6 @@ build:
 sphinx:
   fail_on_warning: true # Make warnings more visible by forcing build to fail
 
+python:
+  install:
+    - requirements: "requirements.txt"
