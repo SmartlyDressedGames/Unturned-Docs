@@ -3,7 +3,7 @@
 Glazier
 =======
 
-Unity (the game engine Unturned runs on) has three different incompatible UI systems, each with different bugs:
+Unity (the game engine Unturned runs on) has three different incompatible UI systems:
 
 1. IMGUI
 2. uGUI
@@ -12,6 +12,15 @@ Unity (the game engine Unturned runs on) has three different incompatible UI sys
 Unturned has a feature nicknamed **Glazier** which abstracts the underlying UI system, allowing IMGUI, uGUI, or UIToolkit to be used.
 
 uGUI is Unity's current recommended UI system, but unfortunately some players run into visual artifacts and flickering UI with it. In those cases enabling IMGUI is recommended.
+
+Context
+-------
+
+At its 2014 release into Early Access, Unturned used IMGUI, as it was Unity's only built-in UI system. For performance reasons, automatic layout was turned off in favor of manually specifying the position and size of UI elements.
+
+uGUI support was introduced in late 2020 for players running into issues with IMGUI. Unfortunately, IMGUI support needed to be kept for players facing different problems. Knowing that Unity was working on UIToolkit as a potential replacement, automatic layout was held off until an abstraction ideally supporting all three could be implemented.
+
+Upon updating to Unity 2021 LTS, runtime UIToolkit became available, and it could be integrated as a mostly functional Glazier option. With UIToolkit supported, automatic layout started being added to the game in the form of stats in item descriptions, multi-line text chat, and an updated main menu news feed.
 
 IMGUI
 -----
