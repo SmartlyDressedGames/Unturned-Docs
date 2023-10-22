@@ -78,11 +78,11 @@ Animal Damage
 Construct Damage
 ````````````````
 
-**BladeID** *byte*: Weapon can damage any resources that have a matching BladeID. Deprecated in favor of BladeIDs and BladeID\_#.
+**BladeID** *byte*: Weapon can damage any resources or objects that have a matching BladeID. Deprecated in favor of BladeIDs and BladeID\_#.
 
 **BladeIDs** *int*: Total number of unique BladeID\_# values.
 
-**BladeID_#** *byte*: Weapon can damage any resources that have a matching BladeID\_# value.
+**BladeID_#** *byte*: Weapon can damage any resources or objects that have a matching BladeID\_# value.
 
 **Barricade_Damage** *float*: Amount of damage that should be dealt to barricades, prior to modifiers.
 
