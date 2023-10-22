@@ -46,7 +46,7 @@ Object Properties
 
 **Refill** *flag*: Water can be siphoned from this object. Deprecated in favor of ``Interactability Water``.
 
-***Snowshoe** *flag*: This object should not leave a footprint when baking materials.
+**Snowshoe** *flag*: This object should not leave a footprint when baking materials.
 
 **Soft** *flag*: Vehicles should not take damage when colliding with this object.
 
@@ -72,22 +72,30 @@ Interior Culling
 
 **LOD_Bias** *float*: Multiplier on the threshold distance for interior culling. Requires that ``LOD`` has been set.
 
-**LOD_Center_X** float: Offset for the culling volume's local position, on the 𝘟-axis.
+**LOD_Center_X** float: Offset for the culling volume's local position, on the 𝘟-axis. Requires that ``LOD`` has been set.
 
-**LOD_Center_Y** float: Offset for the culling volume's local position, on the 𝘠-axis.
+**LOD_Center_Y** float: Offset for the culling volume's local position, on the 𝘠-axis. Requires that ``LOD`` has been set.
 
-**LOD_Center_Z** float: Offset for the culling volume's local position, on the 𝘡-axis.
+**LOD_Center_Z** float: Offset for the culling volume's local position, on the 𝘡-axis. Requires that ``LOD`` has been set.
 
-**LOD_Size_X** float: Offset for the culling volume's size, on the 𝘟-axis.
+**LOD_Size_X** float: Offset for the culling volume's size, on the 𝘟-axis. Requires that ``LOD`` has been set.
 
-**LOD_Size_Y** float: Offset for the culling volume's size, on the 𝘠-axis.
+**LOD_Size_Y** float: Offset for the culling volume's size, on the 𝘠-axis. Requires that ``LOD`` has been set.
 
-**LOD_Size_Z** float: Offset for the culling volume's size, on the 𝘡-axis.
+**LOD_Size_Z** float: Offset for the culling volume's size, on the 𝘡-axis. Requires that ``LOD`` has been set.
 
 Interactables
 `````````````
 
-**Interactability** *enum* (``None``, ``Binary_State``, ``Dropper``, ``Note``, ``Water``, ``Fuel``, ``Rubble``, ``NPC``, ``Quest``): All ``Interactability_`` properties will require that this property has been set. The enumerator selected for this property will affect which properties can be used, how these properties will function when used, and how this object will behave in-game. ``Binary_State`` objects will change between their two states when interacted with – such as an open or closed door. ``Dropper`` objects can spawn items when interacted with. ``Note`` objects can display lines of text when interacted with. ``Water`` objects can be siphoned for water, and ``Fuel`` objects can be siphoned for fuel. ``Rubble`` objects are destructible. ``NPC`` objects can provide access to dialogue, quests, and vendors. ``Quest`` objects can be interacted with, and have no additional functionality unlike other options. Defaults to the ``NPC`` enumerator when using ``Type NPC``, otherwise this property will default to ``None``.
+**Interactability** *enum* (``None``, ``Binary_State``, ``Dropper``, ``Note``, ``Water``, ``Fuel``, ``Rubble``, ``NPC``, ``Quest``): All ``Interactability_`` properties will require that this property has been set. The enumerator selected for this property will affect which properties can be used, how these properties will function when used, and how this object will behave in-game. Defaults to the ``NPC`` enumerator when using ``Type NPC``, otherwise this property will default to ``None``.
+
+- ``Binary_State`` objects will change between their two states when interacted with – such as an open or closed door.
+- ``Dropper`` objects can spawn items when interacted with.
+- ``Note`` objects can display lines of text when interacted with.
+- ``Water`` objects can be siphoned for water, and ``Fuel`` objects can be siphoned for fuel.
+- ``Rubble`` objects are destructible.
+- ``NPC`` objects can provide access to dialogue, quests, and vendors.
+- ``Quest`` objects can be interacted with, but unlike other options they have no additional functionality.
 
 **Interactability_Blade_ID** *byte*: When using ``Interactability Rubble``, weapons are unable to damage this object unless they have a matching ``BladeID_#`` value. Defaults to 0.
 
@@ -171,7 +179,7 @@ Conditions and Rewards
 
 :ref:`Conditions <doc_npc_asset_conditions>` can be used to control the visibility of an object. For example, if an object should only be visible after a certain quest has been completed. These properties do not have a unique prefix, and instead use the standard ``Conditions`` and ``Condition_#`` property names.
 
-Conditions and :ref:`rewards <doc_npc_asset_rewards>` can also be tied to the interactibility of an object. An object could become interactable during a quest, and then trigger rewards (such as completing the quest) once it has been interacted with. These properties are prefixed with "Interactability_". For example, ``Interactability_Conditions`` and ``Interactability_Reward_#``.
+Conditions and :ref:`rewards <doc_npc_asset_rewards>` can also be tied to the interactability of an object. An object could become interactable during a quest, and then trigger rewards (such as completing the quest) once it has been interacted with. These properties are prefixed with ``Interactability_``. For example, ``Interactability_Conditions`` and ``Interactability_Reward_#``.
 
 Localization
 ------------

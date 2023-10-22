@@ -40,6 +40,8 @@ Resource Properties
 
 **No_Debris** *flag*: This resource does not have debris that should appear when it has been destroyed.
 
+**Radius** *float*: The radius to check when baking, in meters.
+
 **Reset** *float*: Delay before respawning, in seconds.
 
 **Reward_ID** *uint16*: ID of an item :ref:`spawn table <doc_assets_spawn>` to use for rewards. Defaults to 0.

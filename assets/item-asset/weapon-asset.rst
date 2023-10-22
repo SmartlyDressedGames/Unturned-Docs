@@ -94,4 +94,4 @@ Construct Damage
 
 **Object_Damage** *float*: Amount of damage that should be dealt to objects, prior to modifiers. Defaults to the value used by Resource_Damage.
 
-**Invulnerable** *flag*: Specified if damage should affect structures, barricades, and vehicles that are considered invulnerable to low-power weaponry. Not applicable to explosive weapons, which will always ignore invulnerability.
+**Invulnerable** *flag*: Specified if damage should affect objects, structures, barricades, and vehicles that are considered invulnerable to low-power weaponry. Not applicable to explosive weapons, which will always ignore invulnerability.
