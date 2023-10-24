@@ -12,7 +12,7 @@ Resource Assets
 Resource Properties
 -------------------
 
-**Auto_Skybox** *flag*: A skybox GameObject should automatically be made for this resource.
+**Auto_Skybox** *flag*: Generate and assign a material and texture to the resource's Skybox prefab. The mesh should have custom normals to match the lighting. For example, vanilla pine trees have upward normals, whereas spherical trees have outward normals.
 
 **BladeID** *byte*: Weapons are unable to damage this resource unless they have a matching ``BladeID_#`` value. Defaults to 0.
 
@@ -40,8 +40,6 @@ Resource Properties
 
 **No_Debris** *flag*: This resource does not have debris that should appear when it has been destroyed.
 
-**Radius** *float*: The radius to check when baking, in meters.
-
 **Reset** *float*: Delay before respawning, in seconds.
 
 **Reward_ID** *uint16*: ID of an item :ref:`spawn table <doc_assets_spawn>` to use for rewards. Defaults to 0.
@@ -52,7 +50,7 @@ Resource Properties
 
 **Reward_XP** *uint32*: Amount of experience to reward when the resource is destroyed.
 
-**Scale** *float*: The resource's scale will be multiplied by a random number between 1 and this value. This value is always parsed as its absolute (positive) value.
+**Scale** *float*: The value of this property is always parsed as its absolute (positive) value. An object's scale is a random number between 1.1 and the result of ``1.1 + (Scale * 2)``.
 
 **SpeedTree** *flag*: This resource should be considered a SpeedTree when using higher graphical settings.
 

@@ -93,9 +93,14 @@ Interactables
 - ``Dropper`` objects can spawn items when interacted with.
 - ``Note`` objects can display lines of text when interacted with.
 - ``Water`` objects can be siphoned for water, and ``Fuel`` objects can be siphoned for fuel.
-- ``Rubble`` objects are destructible.
+- ``Rubble`` objects are destructible. It is preferable to use ``Rubble Destroy`` instead of ``Interactability Rubble``.
 - ``NPC`` objects can provide access to dialogue, quests, and vendors.
 - ``Quest`` objects can be interacted with, but unlike other options they have no additional functionality.
+
+.. note::
+
+	Although ``Interactability`` properties can be used to create a destructible object, it is preferable to use ``Rubble`` properties as they are more specific. This allows for creating destructible objects that are also interactable.
+
 
 **Interactability_Blade_ID** *byte*: When using ``Interactability Rubble``, weapons are unable to damage this object unless they have a matching ``BladeID_#`` value. Defaults to 0.
 
@@ -108,8 +113,6 @@ Interactables
 **Interactability_Editor** *enum* (``None``, ``Toggle``): Determines how this interactable object should appear in the level editor. If this is set to ``Toggle``, then the object's alternative state will be shown. Defaults to ``None``.
 
 **Interactability_Effect** :ref:`doc_data_guid` or *uint16*: GUID or legacy ID of an :ref:`EffectAsset <doc_assets_effect>` to play when interacted with. When using ``Interactability Rubble``, this is effect is played when a section of the object is destroyed.
-
-**Interactability_Emission** *flag*: This object emits light when interacted with.
 
 **Interactability_Finale** :ref:`doc_data_guid` or *uint16*: GUID or legacy ID of an :ref:`EffectAsset <doc_assets_effect>` to play when all sections of the object using ``Interactability Rubble`` are destroyed. If this property is used, then all of the dead object's sections will also be hidden when fully destroyed.
 
@@ -146,33 +149,33 @@ Interactables
 Rubble
 ``````
 
-**Rubble** *enum* (``None``, ``Destroy``): The destruction mode that should be used, although the only functional option for this is ``Destroy``. All ``Rubble_`` properties require that this property has been set. Deprecated in favor of ``Interactability Rubble``.
+**Rubble** *enum* (``None``, ``Destroy``): The destruction mode that should be used, although the only functional option for this is ``Destroy``. All ``Rubble_`` properties require that this property has been set.
 
-**Rubble_Blade_ID** *byte*: Weapons are unable to damage this object unless they have a matching ``BladeID_#`` value. Defaults to 0. Deprecated in favor of ``Interactability_Blade_ID``.
+**Rubble_Blade_ID** *byte*: Weapons are unable to damage this object unless they have a matching ``BladeID_#`` value. Defaults to 0.
 
 **Rubble_Editor** *enum* (``Alive``, ``Dead``): Determines how this destructible object should appear in the level editor. If this is set to ``Dead``, the fully destroyed state of the object will be shown. Defaults to ``Alive``.
 
-**Rubble_Effect** :ref:`doc_data_guid` or *uint16*: GUID or legacy ID of an :ref:`EffectAsset <doc_assets_effect>` to play when a section of an object using ``Rubble`` is destroyed. Deprecated in favor of ``Interactability_Effect``.
+**Rubble_Effect** :ref:`doc_data_guid` or *uint16*: GUID or legacy ID of an :ref:`EffectAsset <doc_assets_effect>` to play when a section of the destructible object is destroyed.
 
-**Rubble_Finale** :ref:`doc_data_guid` or *uint16*: GUID or legacy ID of an :ref:`EffectAsset <doc_assets_effect>` to play when all sections of the object using ``Rubble`` are destroyed. If this property is used, then all of the dead object's sections will also be hidden when fully destroyed. Deprecated in favor of ``Interactability_Finale``.
+**Rubble_Finale** :ref:`doc_data_guid` or *uint16*: GUID or legacy ID of an :ref:`EffectAsset <doc_assets_effect>` to play when all sections of the destructible object are destroyed. If this property is used, then all of the dead object's sections will also be hidden when fully destroyed.
 
-**Rubble_Health** *uint16*: Total amount of health each section of the object has. Defaults to 0. Deprecated in favor of ``Interactability_Health``.
+**Rubble_Health** *uint16*: Total amount of health each section of the object has. Defaults to 0.
 
-**Rubble_Invulnerable** *flag*: This resource cannot be damaged by lower-power :ref:`doc_item_asset_weapon` that do not have the ``Invulnerable`` flag. Deprecated in favor of ``Interactability_Invulnerable``.
+**Rubble_Invulnerable** *flag*: This resource cannot be damaged by lower-power :ref:`doc_item_asset_weapon` that do not have the ``Invulnerable`` flag.
 
-**Rubble_Proof_Explosion** *flag*: Immune to area-of-effect explosive damage. Deprecated in favor of ``Interactability_Proof_Explosion``.
+**Rubble_Proof_Explosion** *flag*: Immune to area-of-effect explosive damage.
 
-**Rubble_Reset** *float*: Delay before a destroyed object respawns, in seconds. Deprecated in favor of ``Interactability_Reset``.
+**Rubble_Reset** *float*: Delay before a destroyed object respawns, in seconds.
 
-**Rubble_Reward_ID** *uint16*: ID of an item :ref:`spawn table <doc_assets_spawn>` to use for rewards. Defaults to 0. Deprecated in favor of ``Interactability_Reward_ID``.
+**Rubble_Reward_ID** *uint16*: ID of an item :ref:`spawn table <doc_assets_spawn>` to use for rewards. Defaults to 0.
 
-**Rubble_Rewards_Min** *byte*: Minimum amount of item drops to reward. Defaults to 1. Deprecated in favor of ``Interactability_Rewards_Min``.
+**Rubble_Rewards_Min** *byte*: Minimum amount of item drops to reward. Defaults to 1.
 
-**Rubble_Rewards_Max** *byte*: Maximum amount of item drops to reward. Defaults to 1. Deprecated in favor of ``Interactability_Rewards_Max``.
+**Rubble_Rewards_Max** *byte*: Maximum amount of item drops to reward. Defaults to 1.
 
-**Rubble_Reward_Probability** *float*: Probability of receiving a reward, as a decimal-to-percent chance. Defaults to 1. Deprecated in favor of ``Interactability_Reward_Probability``.
+**Rubble_Reward_Probability** *float*: Probability of receiving a reward, as a decimal-to-percent chance. Defaults to 1.
 
-**Rubble_Reward_XP** *uint32*: Amount of experience to reward when the object using ``Rubble`` is destroyed. Deprecated in favor of ``Interactability_Reward_XP``.
+**Rubble_Reward_XP** *uint32*: Amount of experience to reward when the destructible object is destroyed.
 
 Conditions and Rewards
 ``````````````````````
