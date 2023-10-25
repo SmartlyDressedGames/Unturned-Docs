@@ -68,10 +68,13 @@ Anyone can contribute towards the *Unturned* modding documentation! To submit an
 	assets/item-asset/index
 	assets/layers
 	assets/level-asset
+	assets/material-palette-asset
 	assets/mod-hooks
 	assets/npc-asset/index
+	assets/object-asset
 	assets/outfit-asset
 	assets/physics-material-asset
+	assets/resource-asset
 	assets/spawn-asset
 	assets/stereo-song-asset
 	assets/unity-2018
@@ -86,6 +89,7 @@ Anyone can contribute towards the *Unturned* modding documentation! To submit an
 	:maxdepth: 1
 	:caption: Mapping
 
+	mapping/charts
 	mapping/curated-maps
 	mapping/editor-asset-redirectors
 	mapping/favorite-searches
@@ -124,3 +128,4 @@ Anyone can contribute towards the *Unturned* modding documentation! To submit an
 	data/playerspotlightconfig
 	data/ebatterymode
 	data/enpcholiday
+	data/eobjectchart
