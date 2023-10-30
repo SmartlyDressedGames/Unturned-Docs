@@ -3,6 +3,17 @@ Unturned Documentation
 
 This repository exists to document `Unturned <https://store.steampowered.com/app/304930>`_'s modding features going forward. Originally map and asset documentation was created through Steam Guides. The main guide with links to related guides can be found here: `Workshop: Creating, Publishing & Updating <https://steamcommunity.com/sharedfiles/filedetails/?id=460136012>`_.
 
+Upcoming Features
+-----------------
+
+You can find modding features under consideration on this Trello board: `Unturned Roadmap <https://trello.com/b/gpe4zlW3/unturned-roadmap>`_
+
+The cards on the board aren't ordered in any particular way. i.e., they do not dictate the order of updates.
+
+Miscellaneous requests and tasks that pop up take priority over the roadmap, so it may go a while between progress updates. For example, work for curated maps often takes priority.
+
+Several high-priority ideas that don't yet have a solid plan, like car physics improvements or a crafting revamp, aren't listed on the board.
+
 Video Tutorials
 ---------------
 
