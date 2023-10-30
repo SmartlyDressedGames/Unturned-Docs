@@ -12,9 +12,24 @@ Requirements
 
 Some additional preparation is needed compared with regular gameplay items:
 
+#. Following the style rules
 #. Organizing your Unity project
 #. Exporting a Unity package
 #. Specifying Mythical effect placement
+
+Style Rules
+-----------
+
+There are several rules for cosmetic items to help promote consistency with the Unturned's art style, seeing as they will be integrated directly into the game:
+
+#. Please avoid super high-contrast colors. They can be painful to look at, especially when used in harsh lighting. Most of the official content has medium-intensity colors.
+#. Following this, please don't go darker than #1e1e1e or brighter than #f0f0f0. Both extremes of brightness won't play nicely with lighting.
+#. Flat forest/snow/desert/urban camouflages are reserved for in-game items like the ghillie suit. You are, however, allowed to incorporate patterned camouflage into your cosmetics.
+#. Corners of models should not be beveled. Most objects should follow the ninety-degree edges. There isn't a limit on vertex/triangle/polygon count because anything matching the art style will naturally have a reasonable number.
+#. Edges of clothing should have a slightly darker border one pixel wide. If you wear one of the official in-game items, you can see, for example, that the cuffs and waist of shirts have these.
+#. Only use copyrighted content, trademarks, and intellectual property that belong to you.
+
+More rules may be added in the future if necessary.
 
 Unity Project Organization
 --------------------------
