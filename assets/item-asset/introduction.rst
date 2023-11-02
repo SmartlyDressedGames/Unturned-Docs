@@ -17,8 +17,20 @@ Items in *Unturned* encompass anything that can be carried in a player's in-game
 
 **ID** *uint16*: Must be a unique identifier.
 
+Unity Setup / GameObject
+------------------------
+
+A gameobject called "Item" tagged and layered with 4 and 13 respectively. There should be a box collider component with minimum dimensions (0.2, 0.2, 0.2). Any renderers can be attached to the root or with LODs as Model_#. Parent a transform called "Icon" to it. This is used to draw an icon with an orthographic camera. To test the position of your icon attach a temporary Camera and adjust its Size value. This value should be assigned to Size_Z in the data.
+
+If you would like a sound to play when the item is equipped include an audioclip called "Equip".
+
+For any equippable items a gameobject with an Animation component must be attached. Every item should have an Equip animation at least, any others required will be mentioned in the per-item documentation. If you would like your item to be inspectable it needs an Inspect animation.
+
+File Setup / Data
+-----------------
+
 Inventory Properties
---------------------
+````````````````````
 
 **Size_X** *byte*: Width in inventory, in slots. Defaults to 1.
 
@@ -46,8 +58,8 @@ Inventory Properties
 
 **EquipAudioClip** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: AudioClip to play when equipping.
 
-Economy Properties
-------------------
+Economy
+```````
 
 **Size2_Z** *float*: Orthogonal camera size for economy icons. Defaults to -1.
 
@@ -55,8 +67,8 @@ Economy Properties
 
 **Shared_Skin_Lookup_ID** *uint16*: Share skins with another item. Defaults to item ID.
 
-Container Properties
---------------------
+Container
+`````````
 
 **Amount** *byte*: Maximum capacity for container-like items, such as ammunition boxes. Defaults to 1.
 
@@ -64,8 +76,8 @@ Container Properties
 
 **Count_Max** *byte*: Maximum amount to generate, for container-like items. Defaults to 1.
 
-Quality Properties
-------------------
+Quality
+```````
 
 **Quality_Min** *byte*: Minimum quality to generate. Defaults to 10.
 
@@ -75,8 +87,8 @@ Quality Properties
 
 **Override_Show_Quality** *bool*: Override to forcefully show item quality. Defaults to false.
 
-Other Properties
-----------------
+Miscellaneous
+`````````````
 
 **Backward** *bool*: Set the item to be held in the non-dominant hand. Defaults to false.
 
@@ -95,7 +107,7 @@ Other Properties
 **Use_Auto_Stat_Descriptions** *bool*: If true, properties like damage, storage, health, etc. are appended to the description. Defaults to true.
 
 Blueprints and Actions
-----------------------
+``````````````````````
 
 Items can have crafting blueprints and context menu actions. Refer to :ref:`Blueprints <doc_item_asset_blueprints>` and :ref:`Actions <doc_item_asset_actions>` for documentation.
 
