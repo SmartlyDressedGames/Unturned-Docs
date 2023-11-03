@@ -10,6 +10,10 @@ This inherits the :ref:`WeaponAsset <doc_item_asset_weapon>` class.
 Unity Setup / GameObject
 ------------------------
 
+.. figure:: /assets/img/UnityExampleGun.png
+	
+	An example of a gun being set up in the Unity editor.
+
 The item gameobject needs transforms called "Sight", "Grip", "Barrel", "Magazine", "Tactical" and "Eject". Shells/casings are emitter from "Eject" along the Z axis. Sights, grips, barrels and magazines are aligned along the Y axis with Z up. Tacticals are aligned along the Y axis with the X axis up.
 
 Audioclips called "Shoot", "Reload" and "Hammer". An "Aim" audioclip can be included as well.
