@@ -7,7 +7,7 @@ Conditions can be held by NPC assets, interactable objects, and item blueprints.
 
 **Conditions** *byte*: Total number of conditions.
 
-**Condition\_#\_Type** *enum* (``Compare_Flags``, ``Flag_Bool``, ``Flag_Short``, ``Currency``, ``Experience``, ``Item``, ``Kills_Animal``, ``Kills_Horde``, ``Kills_Object``, ``Kills_Player``, ``Kills_Tree``, ``Kills_Resource``, ``Player_Life_Food``, ``Player_Life_Health``, ``Player_Life_Virus``, ``Player_Life_Water``, ``Quest``, ``Reputation``, ``Skillset``, ``Holiday``, ``Time_Of_Day``, ``Weather_Blend_Alpha``, ``Weather_Status``)
+**Condition\_#\_Type** *enum* (``Compare_Flags``, ``Date_Counter``, ``Flag_Bool``, ``Flag_Short``, ``Currency``, ``Experience``, ``Item``, ``Kills_Animal``, ``Kills_Horde``, ``Kills_Object``, ``Kills_Player``, ``Kills_Tree``, ``Kills_Resource``, ``Player_Life_Food``, ``Player_Life_Health``, ``Player_Life_Virus``, ``Player_Life_Water``, ``Quest``, ``Reputation``, ``Skillset``, ``Holiday``, ``Time_Of_Day``, ``Weather_Blend_Alpha``, ``Weather_Status``)
 
 **Condition\_#\_Reset** *flag*: Set back to equivalent of 0 when completed.
 
@@ -32,6 +32,19 @@ Compare left-hand flag A, to right-hand flag B.
 **Condition\_#\_B\_ID** *uint16*: Right-hand flag ID.
 
 **Condition\_#\_Allow\_B\_Unset** *bool*: Pass condition if player does not have the flag yet.
+
+Date_Counter
+````````````
+
+Every in-game morning, the world's "date counter" is incremented. In a fresh save it starts at zero. This condition takes the remainder of the date counter divided by ``Divisor`` and compares it with ``Value`` according to ``Logic``.
+
+For example, an in-game event can be configured to occur every 4th and 5th day by setting ``Divisor`` to 5, ``Value`` to 3, and ``Logic`` to ``Greater_Than_Or_Equal_To``.
+
+**Condition\_#\_Type** *enum* (``Date_Counter``)
+
+**Condition\_#\_Value** *int64*: Number to compare the remainder with.
+
+**Condition\_#\_Divisor** *int64*: Number to divide the world date counter by.
 
 Flag_Bool
 `````````
