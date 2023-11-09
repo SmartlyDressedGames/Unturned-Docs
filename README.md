@@ -31,7 +31,9 @@ Most documentation files are formatted similarly. Some important notes:
 
 - Content block directives can be used to add notes, warnings, tips, and other admonitions.
 
-- Internal links should use the :ref: command.
+- Internal links should use the `:ref:` command.
+
+- Images from the Unity editor should crop out any unnecessary information. This usually includes the Title Bar (which includes details such as the Unity version, project name, and window buttons), and the Toolbar.
 
 Building the Docs
 -----------------
