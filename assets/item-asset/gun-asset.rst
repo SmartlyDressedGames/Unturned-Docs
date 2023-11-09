@@ -58,6 +58,8 @@ The "Hammer" animation is played under certain conditions where it would make se
 
 The "Scope" animation is played when firing a single-shot weapon while scoped. For example, a bolt-action rifle or pump-action shotgun.
 
+If a gun is configured to use the gun jamming feature, the "UnjamChamber" animation will play when a jam occurs.
+
 Audio Clips
 ```````````
 
@@ -66,6 +68,8 @@ In addition to the Audio Clips that can be included for equippable items, guns h
 If an Audio Clip named "Shoot" is included, it will play after the gun is fired. Including Audio Clips named "Reload" and "Hammer" will cause audio to play after reloading and hammering the gun, respectively.
 
 An "Aim" Audio Clip can be included to have audio play after aiming down sights. For example, a longbow might want to have an the sound of the bow being drawn play. Miniguns can also include an Audio Clip named "Minigun" to have audio play while revving the minigun.
+
+If a gun is configured to use the gun jamming feature, the "ChamberJammed" Audio Clip will play when a jam occurs.
 
 File Setup
 ----------
