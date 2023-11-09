@@ -7,8 +7,8 @@ Ranged weapons can be used as a source of damage. Ranged weapons always show qua
 
 This inherits the :ref:`WeaponAsset <doc_item_asset_weapon>` class.
 
-Unity Setup
------------
+Unity Asset Bundle Contents
+---------------------------
 
 .. figure:: /assets/img/UnityExampleGun.png
 	
@@ -71,8 +71,8 @@ An "Aim" Audio Clip can be included to have audio play after aiming down sights.
 
 If a gun is configured to use the gun jamming feature, the "ChamberJammed" Audio Clip will play when a jam occurs.
 
-File Setup
-----------
+Game Data File
+--------------
 
 Item Asset Properties
 `````````````````````

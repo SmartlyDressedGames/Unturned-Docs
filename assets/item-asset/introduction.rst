@@ -5,8 +5,8 @@ Introduction to Items
 
 Items in *Unturned* encompass anything that can be carried in a player's in-game inventory. All items will share certain properties, but each item type may have its own unique properties as well. Please refer to :ref:`Asset Definitions <doc_asset_definitions>` and :ref:`Asset Bundles <doc_asset_bundles>` for the full documentation regarding assets and asset bundles.
 
-Unity Setup
------------
+Unity Asset Bundle Contents
+---------------------------
 
 .. figure:: /assets/img/UnityExampleItem.png
 	
@@ -17,30 +17,34 @@ To get started, create a new folder for your custom item. The name of this folde
 Item (Prefab)
 `````````````
 
-Inside this folder, create a new Prefab named "Item". This should be tagged as 4: Item, and layered as 13: Item.
+Inside this folder, create a new Prefab named "Item". This should be tagged as 4: Item, and layered as 13: Item. Open the "Item" Prefab.
 
-Open the "Item" Prefab, and attach a Box Collider component to the root GameObject. It should have a minimum dimension of (0.2, 0.2, 0.2).
+Items can have multiple colliders including different types, but just attaching a Box Collider component to the root GameObject will usually suffice. It is recommended to use a minimum dimension of (0.2, 0.2, 0.2), because the large colliders are less likely to fall through a thin surface in a single physics tick.
 
 If your item only has one LOD, you can attach Mesh Filter and Mesh Renderer components directly to the root GameObject. Configure these components as desired.
 
 It is recommended to have multiple LODs for your item, so that less needs to be rendered when the item is far away. If your item should have multiple LODs, attach a LOD Group component to the root GameObject. Create a child GameObject for each LOD, named "Model_#" (e.g., "Model_0", "Model_1"). Attach the Mesh Filter and Mesh Renderer components to each one. Configure these components as desired.
 
-Add a new child GameObject named "Icon" to the root GameObject. This will be used to draw an icon with an orthographic camera. To test the position of your icon, temporarily attach a Camera component with its Projection property set to "Orthographic". When satisfied with its position, delete the Camera component.
+Add a new child GameObject named "Icon" to the root GameObject. This will be used to draw an icon with an orthographic camera. By default, the game will automatically calculate the position and size of the camera – so the only thing that needs to be configured is its orientation. To test the orientation of your icon, temporarily attach a Camera component with its Projection property set to "Orthographic". When satisified, delete the Camera component.
 
 Animations (Prefab)
 ```````````````````
 
-For equippable items, create a new Prefab in your custom item's folder named "Animations". This should be tagged as 0: Logic and layered as 8: Logic.
+For equippable items, a Prefab named "Animations" is required. The Prefab and the animations included can either be created from scratch, or they can be duplicated from the provided Unity packages.
 
-Add an Animation component to the root GameObject of the "Animations" Prefab. Every equippable item should have an animation named "Equip". If your weapon should be inspectable, it should also have an "Inspect" animation.
+If you have installed the ExampleAssets.unitypackage we provide, you can find the vanilla animations for most item types in the game. Prefabs can be found along the ``CoreMasterBundle/Items`` path, while the raw animation files can be found along ``Game/Sources/Animations``.
+
+To create the Prefab from scratch instead, add a new Prefab named "Animations" in your custom item's folder. Add an Animation component to the root GameObject of the "Animations" Prefab.
+
+Every equippable item should have an animation named "Equip". If your weapon should be inspectable, it should also have an "Inspect" animation.
 
 Equip (Audio Clip)
 ``````````````````
 
 To have a sound play when the item is equipped, include an Audio Clip named "Equip" in your custom item's folder.
 
-File Setup
-----------
+Game Data File
+--------------
 
 **GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
 
