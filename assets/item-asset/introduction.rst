@@ -5,17 +5,42 @@ Introduction to Items
 
 Items in *Unturned* encompass anything that can be carried in a player's in-game inventory. All items will share certain properties, but each item type may have its own unique properties as well. Please refer to :ref:`Asset Definitions <doc_asset_definitions>` and :ref:`Asset Bundles <doc_asset_bundles>` for the full documentation regarding assets and asset bundles.
 
-Unity Setup / GameObject
-------------------------
+Unity Setup
+-----------
 
-A gameobject called "Item" tagged and layered with 4 and 13 respectively. There should be a box collider component with minimum dimensions (0.2, 0.2, 0.2). Any renderers can be attached to the root or with LODs as Model_#. Parent a transform called "Icon" to it. This is used to draw an icon with an orthographic camera. To test the position of your icon attach a temporary Camera and adjust its Size value. This value should be assigned to Size_Z in the data.
+.. figure:: /assets/img/UnityExampleItem.png
+	
+	An example of an item being set up in the Unity editor.
 
-If you would like a sound to play when the item is equipped include an audioclip called "Equip".
+To get started, create a new folder for your custom item. The name of this folder will be relevant when further configuring your item after it has been exported from Unity.
 
-For any equippable items a gameobject with an Animation component must be attached. Every item should have an Equip animation at least, any others required will be mentioned in the per-item documentation. If you would like your item to be inspectable it needs an Inspect animation.
+Item (Prefab)
+`````````````
 
-File Setup / Data
------------------
+Inside this folder, create a new Prefab named "Item". This should be tagged as 4: Item, and layered as 13: Item.
+
+Open the "Item" Prefab, and attach a Box Collider component to the root GameObject. It should have a minimum dimension of (0.2, 0.2, 0.2).
+
+If your item only has one LOD, you can attach Mesh Filter and Mesh Renderer components directly to the root GameObject. Configure these components as desired.
+
+It is recommended to have multiple LODs for your item, so that less needs to be rendered when the item is far away. If your item should have multiple LODs, attach a LOD Group component to the root GameObject. Create a child GameObject for each LOD, named "Model_#" (e.g., "Model_0", "Model_1"). Attach the Mesh Filter and Mesh Renderer components to each one. Configure these components as desired.
+
+Add a new child GameObject named "Icon" to the root GameObject. This will be used to draw an icon with an orthographic camera. To test the position of your icon, temporarily attach a Camera component with its Projection property set to "Orthographic". When satisfied with its position, delete the Camera component.
+
+Animations (Prefab)
+```````````````````
+
+For equippable items, create a new Prefab in your custom item's folder named "Animations". This should be tagged as 0: Logic and layered as 8: Logic.
+
+Add an Animation component to the root GameObject of the "Animations" Prefab. Every equippable item should have an animation named "Equip". If your weapon should be inspectable, it should also have an "Inspect" animation.
+
+Equip (Audio Clip)
+``````````````````
+
+To have a sound play when the item is equipped, include an Audio Clip named "Equip" in your custom item's folder.
+
+File Setup
+----------
 
 **GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
 
@@ -36,7 +61,7 @@ Inventory Properties
 
 **Size_Y** *byte*: Height in inventory, in slots. Defaults to 1.
 
-**Size_Z** *float*: Orthogonal camera size for item icons. Defaults to -1.
+**Size_Z** *float*: Manually specify orthogonal camera size for item icons. This directly corresponds to the value of a Camera component's Size property in Unity. Defaults to -1.
 
 **Use_Auto_Icon_Measurements** *bool*: Automatically calculate axis-aligned item icon camera size from bounds. Defaults to true.
 

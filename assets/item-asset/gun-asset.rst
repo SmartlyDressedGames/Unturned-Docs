@@ -7,21 +7,68 @@ Ranged weapons can be used as a source of damage. Ranged weapons always show qua
 
 This inherits the :ref:`WeaponAsset <doc_item_asset_weapon>` class.
 
-Unity Setup / GameObject
-------------------------
+Unity Setup
+-----------
 
 .. figure:: /assets/img/UnityExampleGun.png
 	
 	An example of a gun being set up in the Unity editor.
 
-The item gameobject needs transforms called "Sight", "Grip", "Barrel", "Magazine", "Tactical" and "Eject". Shells/casings are emitter from "Eject" along the Z axis. Sights, grips, barrels and magazines are aligned along the Y axis with Z up. Tacticals are aligned along the Y axis with the X axis up.
+To get started, either follow the steps to begin creating a custom item from the :ref:`introduction <doc_item_asset_intro>`, or duplicate the contents of a prepackaged example asset.
 
-Audioclips called "Shoot", "Reload" and "Hammer". An "Aim" audioclip can be included as well.
+Item (Prefab)
+`````````````
 
-Animations called "Aim_Start", "Aim_Stop", "Attach_Start", "Attach_Stop", "Equip", "Hammer", "Reload", "Scope", "Sprint_Start" and "Sprint_Stop". The "Scope" animation is played when firing a single shot weapon while scoped.
+Open the "Item" Prefab, and add six child GameObjects named "Barrel", "Grip", "Sight", "Tactical", "Magazine", and "Eject". Most custom guns will want to have these six child GameObjects, although they are not strictly required.
 
-File Setup / Data
------------------
+The "Barrel", "Grip", "Sight", "Tactical", and "Magazine" GameObjects will determine the location of attachments on your gun. The "Sight" GameObject also determines where the camera will be positioned when aiming down sights. Shells are emitted from the "Eject" GameObject.
+
+If an "View" GameObject is added, the camera will use its position when aiming down sights whenever a sight attachment has not been attached to the gun.
+
+Additional Setup for Bows
+:::::::::::::::::::::::::
+
+.. figure:: /assets/img/UnityExampleCrossbow.png
+	
+	An example of a crossbow being set up in the Unity editor.
+
+Bows require additional GameObjects to simulate the drawing of the bowstring. Note that bowstrings are only simulated from the first-person perspective.
+
+Add a new child GameObject named "Rope", and set its state to inactive. The "Rope" GameObject should include a Line Renderer component. Vanilla bowstrings use a custom Material named "Rope" with the Unlit-Rope Shader, but this is not required.
+
+Add two child GameObjects named "Left" and "Right". These GameObjects will determine the end points of the bowstring. If a third GameObject named "Rest" is included, it will be used as the middle point of the bowstring when aiming down sights.
+
+Including a fourth GameObject named "Nock" will allow the bow to be fired without aiming down sights. Additionally, the "Rest" GameObject will act as a middle point when not aiming down sights, and the "Nock" GameObject will act as a middle point while aiming down sights.
+
+Additional Setup for Economy Items
+::::::::::::::::::::::::::::::::::
+
+There are several child GameObjects that can be added related to skins. Custom items are ineligible to receive skins, so there is usually no reason to add these to the Prefab.
+
+If an item has an "Icon2" GameObject included, its position and orientation will be used when generating icons of skins on this item. A GameObject named "Stat_Tracker" determines the location where stat trackers will appear on the gun, while a GameObject named "Effect" will determine the position of mythical effects on the gun.
+
+Animations (Prefab)
+```````````````````
+
+In addition to animations used by any equippable item, guns have an additional set of animations that they can use.
+
+Adding animations named "Aim_Start" and "Aim_Stop" will cause an animation to be played whenever the player starts or stops aiming down sights. Animations named "Attach_Start" and "Attach_Stop" will play when an attachment is attached or unattached to the gun. The "Sprint_Start" and "Sprint_Stop" animations play when the player starts and stops sprinting. The "Reload" animation is played when reloading the gun.
+
+The "Hammer" animation is played under certain conditions where it would make sense to manually eject a cartridge from the gun. For example: after reloading an gun that had an empty magazine, or after firing a bolt-action rifle.
+
+The "Scope" animation is played when firing a single-shot weapon while scoped. For example, a bolt-action rifle or pump-action shotgun.
+
+Audio Clips
+```````````
+
+In addition to the Audio Clips that can be included for equippable items, guns have an additional set of audio clips they can use.
+
+If an Audio Clip named "Shoot" is included, it will play after the gun is fired. Including Audio Clips named "Reload" and "Hammer" will cause audio to play after reloading and hammering the gun, respectively.
+
+An "Aim" Audio Clip can be included to have audio play after aiming down sights. For example, a longbow might want to have an the sound of the bow being drawn play. Miniguns can also include an Audio Clip named "Minigun" to have audio play while revving the minigun.
+
+File Setup
+----------
 
 Item Asset Properties
 `````````````````````
@@ -95,7 +142,7 @@ Effects
 Firing Mechanism
 ::::::::::::::::
 
-**Action** *enum* (``Bolt``, ``Break``, ``Minigun``, ``Pump``, ``Rail``, ``Rocket``, ``String``, ``Trigger``): The rocket-action mechanism has inherently explosive projectiles, uses physics projectiles instead of ballistic projectiles, and has infinite firing range.
+**Action** *enum* (``Bolt``, ``Break``, ``Minigun``, ``Pump``, ``Rail``, ``Rocket``, ``String``, ``Trigger``): The rocket-action mechanism has inherently explosive projectiles, uses physics projectiles instead of ballistic projectiles, and has infinite firing range. By default, a ranged weapon using the string-action mechanism can only be fired while aiming down sights.
 
 **Auto** *flag*: Specified if the automatic firing mode should be available.
 
