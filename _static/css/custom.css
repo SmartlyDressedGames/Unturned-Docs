@@ -1,0 +1,5 @@
+/* Wrap table contents for large screens only. */
+@media screen and (min-width: 769px) {
+	.wy-table-responsive { overflow: visible; }
+	.wy-table-responsive table td { white-space: normal; }
+}
