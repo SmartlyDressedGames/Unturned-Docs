@@ -7,8 +7,75 @@ Ranged weapons can be used as a source of damage. Ranged weapons always show qua
 
 This inherits the :ref:`WeaponAsset <doc_item_asset_weapon>` class.
 
+Unity Asset Bundle Contents
+---------------------------
+
+.. figure:: /assets/img/UnityExampleGun.png
+	
+	An example of a gun being set up in the Unity editor.
+
+To get started, either follow the steps to begin creating a custom item from the :ref:`introduction <doc_item_asset_intro>`, or duplicate the contents of a prepackaged example asset.
+
+Item (Prefab)
+`````````````
+
+Open the "Item" Prefab, and add six child GameObjects named "Barrel", "Grip", "Sight", "Tactical", "Magazine", and "Eject". Most custom guns will want to have these six child GameObjects, although they are not strictly required.
+
+The "Barrel", "Grip", "Sight", "Tactical", and "Magazine" GameObjects will determine the location of attachments on your gun. The "Sight" GameObject also determines where the camera will be positioned when aiming down sights. Shells are emitted from the "Eject" GameObject.
+
+If an "View" GameObject is added, the camera will use its position when aiming down sights whenever a sight attachment has not been attached to the gun.
+
+Additional Setup for Bows
+:::::::::::::::::::::::::
+
+.. figure:: /assets/img/UnityExampleCrossbow.png
+	
+	An example of a crossbow being set up in the Unity editor.
+
+Bows require additional GameObjects to simulate the drawing of the bowstring. Note that bowstrings are only simulated from the first-person perspective.
+
+Add a new child GameObject named "Rope", and set its state to inactive. The "Rope" GameObject should include a Line Renderer component. Vanilla bowstrings use a custom Material named "Rope" with the Unlit-Rope Shader, but this is not required.
+
+Add two child GameObjects named "Left" and "Right". These GameObjects will determine the end points of the bowstring. If a third GameObject named "Rest" is included, it will be used as the middle point of the bowstring when aiming down sights.
+
+Including a fourth GameObject named "Nock" will allow the bow to be fired without aiming down sights. Additionally, the "Rest" GameObject will act as a middle point when not aiming down sights, and the "Nock" GameObject will act as a middle point while aiming down sights.
+
+Additional Setup for Economy Items
+::::::::::::::::::::::::::::::::::
+
+There are several child GameObjects that can be added related to skins. Custom items are ineligible to receive skins, so there is usually no reason to add these to the Prefab.
+
+If an item has an "Icon2" GameObject included, its position and orientation will be used when generating icons of skins on this item. A GameObject named "Stat_Tracker" determines the location where stat trackers will appear on the gun, while a GameObject named "Effect" will determine the position of mythical effects on the gun.
+
+Animations (Prefab)
+```````````````````
+
+In addition to animations used by any equippable item, guns have an additional set of animations that they can use.
+
+Adding animations named "Aim_Start" and "Aim_Stop" will cause an animation to be played whenever the player starts or stops aiming down sights. Animations named "Attach_Start" and "Attach_Stop" will play when an attachment is attached or unattached to the gun. The "Sprint_Start" and "Sprint_Stop" animations play when the player starts and stops sprinting. The "Reload" animation is played when reloading the gun.
+
+The "Hammer" animation is played under certain conditions where it would make sense to manually eject a cartridge from the gun. For example: after reloading an gun that had an empty magazine, or after firing a bolt-action rifle.
+
+The "Scope" animation is played when firing a single-shot weapon while scoped. For example, a bolt-action rifle or pump-action shotgun.
+
+If a gun is configured to use the gun jamming feature, the "UnjamChamber" animation will play when a jam occurs.
+
+Audio Clips
+```````````
+
+In addition to the Audio Clips that can be included for equippable items, guns have an additional set of audio clips they can use.
+
+If an Audio Clip named "Shoot" is included, it will play after the gun is fired. Including Audio Clips named "Reload" and "Hammer" will cause audio to play after reloading and hammering the gun, respectively.
+
+An "Aim" Audio Clip can be included to have audio play after aiming down sights. For example, a longbow might want to have an the sound of the bow being drawn play. Miniguns can also include an Audio Clip named "Minigun" to have audio play while revving the minigun.
+
+If a gun is configured to use the gun jamming feature, the "ChamberJammed" Audio Clip will play when a jam occurs.
+
+Game Data File
+--------------
+
 Item Asset Properties
----------------------
+`````````````````````
 
 **GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
 
@@ -21,7 +88,7 @@ Item Asset Properties
 **ID** *uint16*: Must be a unique identifier.
 
 Gun Asset Properties
---------------------
+````````````````````
 
 **Alert_Radius** *float*: The radius where zombies and animals should be alerted when firing ranged weapons, measured in meters. Defaults to 48 meters.
 
@@ -40,7 +107,7 @@ Gun Asset Properties
 **Aiming\_Movement\_Speed\_Multiplier** *float*: Character movement speed multiplier while the gun is aiming down sights. Defaults to 0.75 if **Can_Aim_During_Sprint** is false.
 
 Calibers
-````````
+::::::::
 
 **Attachment_Calibers** *int*: Number of unique hook attachment calibers. Cannot be used with ``Caliber``.
 
@@ -55,7 +122,7 @@ Calibers
 **Requires_NonZero_Attachment_Caliber** *bool*: If true, attachments must specify at least one non-zero caliber. For example, this can be used to make vanilla attachments incompatible with the ranged weapon. Defaults to false.
 
 Damage
-``````
+::::::
 
 In addition to the damage properties available from the the :ref:`WeaponAsset <doc_item_asset_weapon:player_damage>` class, GunAssets have some exclusive properties.
 
@@ -68,7 +135,7 @@ In addition to the damage properties available from the the :ref:`WeaponAsset <d
 **Instakill_Headshots** *bool*: If true, performing a headshot on a player will instantly kill that player. This does not apply to zombies who have been headshot, unless the single-player world or multiplayer server's difficulty configuration has ``Weapons_Use_Player_Damage`` enabled. Defaults to false.
 
 Effects
-```````
+:::::::
 
 **Muzzle** *uint16* or *GUID*: ID or GUID of the effect to play when shooting.
 
@@ -77,9 +144,9 @@ Effects
 **Shell** *uint16* or *GUID*: ID or GUID of the effect to play after shooting. Defaults to 33 when using ``Action Pump`` or ``Action Break``; defaults to 1 when using any other action mechanism excluding ``Action Rail``; otherwise, defaults to 0.
 
 Firing Mechanism
-````````````````
+::::::::::::::::
 
-**Action** *enum* (``Bolt``, ``Break``, ``Minigun``, ``Pump``, ``Rail``, ``Rocket``, ``String``, ``Trigger``): The rocket-action mechanism has inherently explosive projectiles, uses physics projectiles instead of ballistic projectiles, and has infinite firing range.
+**Action** *enum* (``Bolt``, ``Break``, ``Minigun``, ``Pump``, ``Rail``, ``Rocket``, ``String``, ``Trigger``): The rocket-action mechanism has inherently explosive projectiles, uses physics projectiles instead of ballistic projectiles, and has infinite firing range. By default, a ranged weapon using the string-action mechanism can only be fired while aiming down sights.
 
 **Auto** *flag*: Specified if the automatic firing mode should be available.
 
@@ -94,7 +161,7 @@ Firing Mechanism
 **Semi** *flag*: Specified if semi-automatic firing mode should be available.
 
 Hooks Attachments
-`````````````````
+:::::::::::::::::
 
 **Barrel** *uint16*: ID of the barrel attachment that should be attached by default. Defaults to 0.
 
@@ -113,7 +180,7 @@ Hooks Attachments
 **Hook_Tactical** *flag*: Specified if the ranged weapon should have a tactical attachment slot.
 
 Jamming
-```````
+:::::::
 
 When using the ``Can_Ever_Jam`` flag, ranged weapons have a chance of jamming once their quality drops below a specified threshold. From the initial threshold to 0%, the chance of jamming on each shot is blended between 0% and a specified max chance. The "ChamberJammed" AudioClip is played when a jam occurs, as well as the animation "UnjamChamber" if present. For an example, the Cobra_Jam (ID 1521) is included in the game files.
 
@@ -126,7 +193,7 @@ When using the ``Can_Ever_Jam`` flag, ranged weapons have a chance of jamming on
 **Unjam_Chamber_Anim**: Name of the animation clip to play for unjamming. Defaults to ``UnjamChamber``. Requires ``Can_Ever_Jam``.
 
 Magazine Attachments
-````````````````````
+::::::::::::::::::::
 
 **Allow_Magazine_Change** *bool*: If false, the magazine in the weapon cannot be unloaded (unplaced), replaced, or reloaded. This is similar to the "Hook\_" properties available for determining valid hook attachment slots. Defaults to true.
 
@@ -159,7 +226,7 @@ Magazine Attachments
 **Unplace** *float*: Multiplier of the reload animation length before the magazine is despawned.
 
 Projectiles (Ballistics System)
-```````````````````````````````
+:::::::::::::::::::::::::::::::
 
 All ``Action`` mechanisms other than the rocket-action mechanism utilize the ballistics projectile system. To avoid a mismatch between max range and manual ballistic range, it is recommended to only have either ``Ballistic_Steps`` or ``Ballistic_Travel`` specified – not both.
 
@@ -172,7 +239,7 @@ All ``Action`` mechanisms other than the rocket-action mechanism utilize the bal
 .. deprecated:: 3.23.7.0 **Ballistic_Drop** *float*: Replaced by ``Bullet_Gravity_Multiplier``. Existing values are automatically converted if Bullet_Gravity_Multiplier is not specified. The conversion is logged during :ref:`doc_asset_validation`.
 
 Projectiles (Physics System)
-````````````````````````````
+::::::::::::::::::::::::::::
 
 When using ``Action Rocket``, the ranged weapon utilizes the physics projectile system.
 
@@ -186,7 +253,7 @@ Defaults to ``Player_Damage × 0.1``.
 **Projectile_Penetrate_Buildables** *flag*: Specified if area-of-effect explosions caused by ``Action Rocket`` physics projectiles should penetrate through buildables.
 
 Recoil
-``````
+::::::
 
 **Aiming\_Recoil\_Multiplier** *float*: Recoil magnitude multiplier while the gun is aiming down sights.
 
@@ -211,7 +278,7 @@ Recoil
 .. deprecated:: 3.23.7.0 **Recoil_Aim** *float*: Removed and no longer has any effect.
 
 Shake
-`````
+:::::
 
 **Shake_Min_X** *float*: The minimum 𝘟-axis model shake.
 
@@ -226,7 +293,7 @@ Shake
 **Shake_Max_Z** *float*: The maximum 𝘡-axis model shake.
 
 Spread
-``````
+::::::
 
 **Spread_Aim** *float*: The spread multiplier when aiming down sights. This is multiplied by the ``Spread_Angle_Degrees`` value.
 
@@ -241,7 +308,7 @@ Spread
 **Spread_Prone** *float*: The spread multiplier when prone. Defaults to 0.7.
 
 Rewards
--------
+```````
 
 Gun assets can use quest rewards. For example, every time the ranged weapon is fired an item could be spawned in the player's inventory. Alternatively, shooting the ranged weapon may be required to complete a quest. For more information, refer to the :ref:`Rewards <doc_npc_asset_rewards>` documentation.
 

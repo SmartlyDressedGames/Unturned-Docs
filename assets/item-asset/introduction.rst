@@ -5,6 +5,47 @@ Introduction to Items
 
 Items in *Unturned* encompass anything that can be carried in a player's in-game inventory. All items will share certain properties, but each item type may have its own unique properties as well. Please refer to :ref:`Asset Definitions <doc_asset_definitions>` and :ref:`Asset Bundles <doc_asset_bundles>` for the full documentation regarding assets and asset bundles.
 
+Unity Asset Bundle Contents
+---------------------------
+
+.. figure:: /assets/img/UnityExampleItem.png
+	
+	An example of an item being set up in the Unity editor.
+
+To get started, create a new folder for your custom item. The name of this folder will be relevant when further configuring your item after it has been exported from Unity.
+
+Item (Prefab)
+`````````````
+
+Inside this folder, create a new Prefab named "Item". This should be tagged as 4: Item, and layered as 13: Item. Open the "Item" Prefab.
+
+Items can have multiple colliders including different types, but just attaching a Box Collider component to the root GameObject will usually suffice. It is recommended to use a minimum dimension of (0.2, 0.2, 0.2), because the large colliders are less likely to fall through a thin surface in a single physics tick.
+
+If your item only has one LOD, you can attach Mesh Filter and Mesh Renderer components directly to the root GameObject. Configure these components as desired.
+
+It is recommended to have multiple LODs for your item, so that less needs to be rendered when the item is far away. If your item should have multiple LODs, attach a LOD Group component to the root GameObject. Create a child GameObject for each LOD, named "Model_#" (e.g., "Model_0", "Model_1"). Attach the Mesh Filter and Mesh Renderer components to each one. Configure these components as desired.
+
+Add a new child GameObject named "Icon" to the root GameObject. This will be used to draw an icon with an orthographic camera. By default, the game will automatically calculate the position and size of the camera – so the only thing that needs to be configured is its orientation. To test the orientation of your icon, temporarily attach a Camera component with its Projection property set to "Orthographic". When satisified, delete the Camera component.
+
+Animations (Prefab)
+```````````````````
+
+For equippable items, a Prefab named "Animations" is required. The Prefab and the animations included can either be created from scratch, or they can be duplicated from the provided Unity packages.
+
+If you have installed the ExampleAssets.unitypackage we provide, you can find the vanilla animations for most item types in the game. Prefabs can be found along the ``CoreMasterBundle/Items`` path, while the raw animation files can be found along ``Game/Sources/Animations``.
+
+To create the Prefab from scratch instead, add a new Prefab named "Animations" in your custom item's folder. Add an Animation component to the root GameObject of the "Animations" Prefab.
+
+Every equippable item should have an animation named "Equip". If your weapon should be inspectable, it should also have an "Inspect" animation.
+
+Equip (Audio Clip)
+``````````````````
+
+To have a sound play when the item is equipped, include an Audio Clip named "Equip" in your custom item's folder.
+
+Game Data File
+--------------
+
 **GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
 
 **Type** *enum* (``Arrest_End``, ``Arrest_Start``, ``Backpack``, ``Barrel``, ``Barricade``, ``Beacon``, ``Box``, ``Charge``, ``Cloud``, ``Compass``, ``Detonator``, ``Farm``, ``Filter``, ``Fisher``, ``Food``, ``Fuel``, ``Generator``, ``Glasses``, ``Grip``, ``Grower``, ``Gun``, ``Hat``, ``Key``, ``Library``, ``Magazine``, ``Map``, ``Mask``, ``Medical``, ``Melee``, ``Oil_Pump``, ``Optic``, ``Pants``, ``Refill``, ``Sentry``, ``Shirt``, ``Sight``, ``Storage``, ``Structure``, ``Supply``, ``Tactical``, ``Tank``, ``Throwable``, ``Tire``, ``Tool``, ``Trap``, ``Vehicle_Repair_Tool``, ``Vest``, ``Water``)
@@ -18,13 +59,13 @@ Items in *Unturned* encompass anything that can be carried in a player's in-game
 **ID** *uint16*: Must be a unique identifier.
 
 Inventory Properties
---------------------
+````````````````````
 
 **Size_X** *byte*: Width in inventory, in slots. Defaults to 1.
 
 **Size_Y** *byte*: Height in inventory, in slots. Defaults to 1.
 
-**Size_Z** *float*: Orthogonal camera size for item icons. Defaults to -1.
+**Size_Z** *float*: Manually specify orthogonal camera size for item icons. This directly corresponds to the value of a Camera component's Size property in Unity. Defaults to -1.
 
 **Use_Auto_Icon_Measurements** *bool*: Automatically calculate axis-aligned item icon camera size from bounds. Defaults to true.
 
@@ -46,8 +87,8 @@ Inventory Properties
 
 **EquipAudioClip** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: AudioClip to play when equipping.
 
-Economy Properties
-------------------
+Economy
+```````
 
 **Size2_Z** *float*: Orthogonal camera size for economy icons. Defaults to -1.
 
@@ -55,8 +96,8 @@ Economy Properties
 
 **Shared_Skin_Lookup_ID** *uint16*: Share skins with another item. Defaults to item ID.
 
-Container Properties
---------------------
+Container
+`````````
 
 **Amount** *byte*: Maximum capacity for container-like items, such as ammunition boxes. Defaults to 1.
 
@@ -64,8 +105,8 @@ Container Properties
 
 **Count_Max** *byte*: Maximum amount to generate, for container-like items. Defaults to 1.
 
-Quality Properties
-------------------
+Quality
+```````
 
 **Quality_Min** *byte*: Minimum quality to generate. Defaults to 10.
 
@@ -75,8 +116,8 @@ Quality Properties
 
 **Override_Show_Quality** *bool*: Override to forcefully show item quality. Defaults to false.
 
-Other Properties
-----------------
+Miscellaneous
+`````````````
 
 **Backward** *bool*: Set the item to be held in the non-dominant hand. Defaults to false.
 
@@ -95,7 +136,7 @@ Other Properties
 **Use_Auto_Stat_Descriptions** *bool*: If true, properties like damage, storage, health, etc. are appended to the description. Defaults to true.
 
 Blueprints and Actions
-----------------------
+``````````````````````
 
 Items can have crafting blueprints and context menu actions. Refer to :ref:`Blueprints <doc_item_asset_blueprints>` and :ref:`Actions <doc_item_asset_actions>` for documentation.
 
