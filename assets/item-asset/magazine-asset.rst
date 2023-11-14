@@ -67,5 +67,4 @@ Magazine Asset Properties
 
 Test commit. :)
 
-
-Test commit. :)
+Test commit. :(
