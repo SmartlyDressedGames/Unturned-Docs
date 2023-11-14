@@ -64,3 +64,5 @@ Magazine Asset Properties
 **Delete_Empty** *flag*: Specified if the magazine attachment should be deleted when it is fully depleted.
 
 **Should_Fill_After_Detach** *bool*: Ammunition should be fully refilled after the magazine attachment is detached from a ranged weapon. Defaults to false.
+
+Test commit.
