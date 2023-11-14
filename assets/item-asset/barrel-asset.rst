@@ -7,8 +7,11 @@ Barrel attachments are inventory items that can be attached to ranged weapons.
 
 This inherits the :ref:`CaliberAsset <doc_item_asset_caliber>` class.
 
+Game Data File
+--------------
+
 Item Asset Properties
----------------------
+`````````````````````
 
 **GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
 
@@ -17,16 +20,70 @@ Item Asset Properties
 **ID** *uint16*: Must be a unique identifier.
 
 Barrel Asset Properties
------------------------
+```````````````````````
 
-**Ballistic_Drop** *float*: Gravity acceleration multiplier for bullets in flight. Defaults to 1.
+.. list-table::
+   :widths: 40 40 20
+   :header-rows: 0
 
-**Braked** *flag*: Specified if a muzzle flash should be hidden.
+   * - **Ballistic_Drop**
+     - *float*
+     - ``1``
+   * - **Braked**
+     - *flag*
+     - n/a
+   * - **Durability**
+     - *byte*
+     - ``0``
+   * - **Gunshot_Rolloff_Distance_Multiplier**
+     - *float*
+     - See description
+   * - **Silenced**
+     - *flag*
+     - n/a
+   * - **Volume**
+     - *float*
+     - ``1``
 
-**Durability** *byte*: Amount of quality lost after each firing of the ranged weapon. When this value is greater than 0, the item always has a visible item quality shown. Defaults to 0.
+Property Descriptions
+`````````````````````
 
-**Gunshot_Rolloff_Distance_Multiplier** *float*: Multiplier on gunshot rolloff distance. Defaults to 0.5 if Silenced, otherwise to 1.
+Ballistic_Drop *float* = ``1``
+::::::::::::::::::::::::::::::::
 
-**Silenced** *flag*: Specified if alerts should not be generated.
+Gravity acceleration multiplier for bullets in flight.
 
-**Volume** *float*: Multiplier on gunfire sound volume.
+----
+
+Braked *flag*
+::::::::::::::::::::::::
+
+Muzzle flash should be hidden.
+
+----
+
+Durability *byte* = ``0``
+::::::::::::::::::::::::::::
+
+Amount of quality lost after each firing of the ranged weapon. When this value is greater than 0, the item always has a visible item quality shown.
+
+----
+
+Gunshot_Rolloff_Distance_Multiplier *float* = See description
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Multiplier on gunshot rolloff distance. Defaults to ``0.5`` if ``Silenced``, otherwise to ``1``.
+
+----
+
+Silenced *flag*
+::::::::::::::::
+
+Alerts should not be generated.
+
+----
+
+Volume *float* = ``1``
+::::::::::::::::::::::::
+
+Multiplier on gunfire sound volume.

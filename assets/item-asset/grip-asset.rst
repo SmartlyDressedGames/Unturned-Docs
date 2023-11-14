@@ -7,8 +7,11 @@ Grip attachments are inventory items that can be attached to ranged weapons.
 
 This inherits the :ref:`CaliberAsset <doc_item_asset_caliber>` class.
 
+Game Data File
+--------------
+
 Item Asset Properties
----------------------
+`````````````````````
 
 **GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
 
@@ -17,6 +20,20 @@ Item Asset Properties
 **ID** *uint16*: Must be a unique identifier.
 
 Grip Asset Properties
----------------------
+`````````````````````
 
-**Bipod** *flag*: Specified if effects should only take place while prone.
+.. list-table::
+   :widths: 40 40 20
+   :header-rows: 0
+
+   * - **Bipod**
+     - *flag*
+     - n/a
+
+Property Descriptions
+`````````````````````
+
+Bipod *flag*
+::::::::::::
+
+Stat-changing properties should only take place while prone.
