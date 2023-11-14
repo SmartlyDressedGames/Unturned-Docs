@@ -7,8 +7,11 @@ Tactical attachments are inventory items that can be attached to ranged weapons.
 
 This inherits the :ref:`CaliberAsset <doc_item_asset_caliber>` class.
 
+Game Data File
+--------------
+
 Item Asset Properties
----------------------
+`````````````````````
 
 **GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
 
@@ -17,14 +20,52 @@ Item Asset Properties
 **ID** *uint16*: Must be a unique identifier.
 
 Tactical Asset Properties
--------------------------
+`````````````````````````
 
-**Laser** *flag*: Provides a toggleable laser.
+.. list-table::
+   :widths: 40 40 20
+   :header-rows: 0
 
-**Laser_Color** :ref:`color <doc_data_file_format>`: Overrides the default red color. When using the legacy color parsing, the ``_R``, ``_G``, and ``_B`` keys are floats within the range of [0, 1].
+   * - **Laser**
+     - *flag*
+     - n/a
+   * - **Laser_Color**
+     - :ref:`color <doc_data_file_format>`
+     - ``#FF0000``
+   * - **Light**
+     - *flag*
+     - n/a
+   * - **Melee**
+     - *flag*
+     - n/a
+   * - **Rangefinder**
+     - *flag*
+     - n/a
 
-**Light** *flag*: Provides a toggleable flashlight, and allows for using :ref:`PlayerSpotLightConfig <doc_data_playerspotlightconfig>` properties.
+Property Descriptions
+`````````````````````
 
-**Melee** *flag*: Provides the ability to perform a melee attack.
+Laser *flag*
+::::::::::::
 
-**Rangefinder** *flag*: Provides a toggleable rangefinder.
+Provides a toggleable laser.
+
+Laser_Color :ref:`color <doc_data_file_format>` = ``#FF0000``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Overrides the default red color. When using the legacy color parsing, the ``_R``, ``_G``, and ``_B`` keys are floats within the range of [0, 1].
+
+Light *flag*
+::::::::::::
+
+Provides a toggleable flashlight, and allows for using :ref:`PlayerSpotLightConfig <doc_data_playerspotlightconfig>` properties.
+
+Melee *flag*
+::::::::::::
+
+Provides the ability to perform a melee attack.
+
+Rangefinder *flag*
+::::::::::::::::::
+
+Provides a toggleable rangefinder.

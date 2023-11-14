@@ -8,7 +8,7 @@ Items in *Unturned* encompass anything that can be carried in a player's in-game
 Game Data File
 --------------
 
-.. list-table:: Game Data File Properties
+.. list-table::
    :widths: 30 10 10 50
    :header-rows: 0
 
@@ -40,7 +40,7 @@ Game Data File
 Inventory Properties
 ````````````````````
 
-.. list-table:: Game Data File Properties
+.. list-table::
    :widths: 30 10 10 50
    :header-rows: 0
 
@@ -100,7 +100,7 @@ Inventory Properties
 Economy
 ```````
 
-.. list-table:: Game Data File Properties
+.. list-table::
    :widths: 30 10 10 50
    :header-rows: 0
 
@@ -120,7 +120,7 @@ Economy
 Container
 `````````
 
-.. list-table:: Game Data File Properties
+.. list-table::
    :widths: 30 10 10 50
    :header-rows: 0
 
@@ -140,7 +140,7 @@ Container
 Quality
 ```````
 
-.. list-table:: Game Data File Properties
+.. list-table::
    :widths: 30 10 10 50
    :header-rows: 0
 
@@ -164,7 +164,7 @@ Quality
 Miscellaneous
 `````````````
 
-.. list-table:: Miscellaneous Properties
+.. list-table::
    :widths: 30 10 10 50
    :header-rows: 0
 
