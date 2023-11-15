@@ -7,7 +7,7 @@ Rewards can be granted by NPC assets, interactable objects, and item blueprints.
 
 **Rewards** *byte*: Total number of rewards.
 
-**Reward\_#\_Type** *enum* (``Flag_Bool``, ``Flag_Math``, ``Flag_Short``, ``Flag_Short_Random``, ``Achievement``, ``Currency``, ``Event``, ``Experience``, ``Item``, ``Item_Random``, ``Hint``, ``Player_Life_Health``, ``Player_Spawnpoint``, ``Quest``, ``Reputation``, ``Teleport``, ``Vehicle``)
+**Reward\_#\_Type** *enum* (``Flag_Bool``, ``Flag_Math``, ``Flag_Short``, ``Flag_Short_Random``, ``Achievement``, ``Currency``, ``Event``, ``Experience``, ``Item``, ``Item_Random``, ``Hint``, ``Player_Life_Food``, ``Player_Life_Health``, ``Player_Life_Virus``, ``Player_Life_Water``, ``Player_Spawnpoint``, ``Quest``, ``Reputation``, ``Teleport``, ``Vehicle``)
 
 **Reward\_#\_GrantDelaySeconds** *float*: If set, the reward will be queued for the specified number of seconds before being granted to the player. When the player dies any pending rewards are cancelled. Defaults to -1.
 
@@ -144,12 +144,33 @@ Hint
 
 **Reward\_#\_Duration** *float*: Duration of the hint, in seconds. Defaults to 2 seconds.
 
+Player Life Food
+````````````````
+
+**Reward_#_Type** *enum* (``Player_Life_Food``)
+
+**Reward_#_Value** *int*: Amount of food to add. Can be negative to decrease food.
+
 Player Life Health
 ``````````````````
 
 **Reward_#_Type** *enum* (``Player_Life_Health``)
 
 **Reward_#_Value** *int*: Amount of health to add. Can be negative to decrease health.
+
+Player Life Virus
+`````````````````
+
+**Reward_#_Type** *enum* (``Player_Life_Virus``)
+
+**Reward_#_Value** *int*: Amount of virus to add. Can be negative to decrease virus level.
+
+Player Life Water
+`````````````````
+
+**Reward_#_Type** *enum* (``Player_Life_Water``)
+
+**Reward_#_Value** *int*: Amount of water to add. Can be negative to decrease water.
 
 Player Spawnpoint
 `````````````````

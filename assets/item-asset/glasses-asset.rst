@@ -23,6 +23,8 @@ Glasses Asset Properties
 
 **Blindfold** *flag*: Specified if glasses should blacken the player's screen.
 
+**Nightvision_Allowed_In_ThirdPerson** *bool*: If true, nightvision works in third-person, not just first-person. Defaults to false for backwards compatibility. Vanilla nightvision has this set to true.
+
 **Nightvision_Color** :ref:`color <doc_data_file_format>`: Overrides the default color when using ``Vision Military``. When using the legacy color parsing, the ``_R``, ``_G``, and ``_B`` keys are unsigned bytes. The default value for ``Vision Civilian`` is equivalent to #666666. The default value for ``Vision Military`` is equivalent to #507814.
 
 **Nightvision_Fog_Intensity** *float*: Intensity of fog while nightvision is active. Default value for ``Vision Civilian`` is 0.5. Default value for ``Vision Military`` is 0.25.
