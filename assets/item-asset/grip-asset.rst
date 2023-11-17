@@ -24,16 +24,21 @@ Grip Asset Properties
 
 .. list-table::
    :widths: 40 40 20
-   :header-rows: 0
-
-   * - **Bipod**
-     - *flag*
+   :header-rows: 1
+   
+   * - Property Name
+     - Type
+     - Default Value
+   * - :ref:`Bipod <doc_item_asset_grip_property_bipod>`
+     - :ref:`flag <doc_data_flag>`
      - n/a
 
 Property Descriptions
 `````````````````````
 
-Bipod *flag*
-::::::::::::
+.. _doc_item_asset_grip_property_bipod:
+
+Bipod :ref:`flag <doc_data_flag>`
+::::::::::::::::::::::::::::::::::::::::::
 
 Stat-changing properties should only take place while prone.

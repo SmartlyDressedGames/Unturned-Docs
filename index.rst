@@ -129,14 +129,18 @@ Anyone can contribute towards the *Unturned* modding documentation! To submit an
 	:hidden:
 	:maxdepth: 1
 	:caption: Data types
+
+	data/built-in-types
 	
 	data/asset-ptr
 	data/bitmask
+	data/flag
 	data/guid
 	data/master-bundle-ptr
 	data/rich-text
 	
 	data/playerspotlightconfig
 	data/ebatterymode
+	data/elightingvision
 	data/enpcholiday
 	data/eobjectchart

@@ -8,198 +8,381 @@ Items in *Unturned* encompass anything that can be carried in a player's in-game
 Game Data File
 --------------
 
-.. list-table::
-   :widths: 30 10 10 50
-   :header-rows: 0
+Properties
+``````````
 
+.. list-table::
+   :widths: 40 40 20
+   :header-rows: 1
+   
+   * - Property Name
+     - Type
+     - Default Value
    * - **GUID**
      - *32-digit hexadecimal*
      - empty
-     - Refer to :ref:`GUID <doc_data_guid>` documentation.
    * - **Type**
      - *enum* (``Arrest_End``, ``Arrest_Start``, ``Backpack``, ``Barrel``, ``Barricade``, ``Beacon``, ``Box``, ``Charge``, ``Cloud``, ``Compass``, ``Detonator``, ``Farm``, ``Filter``, ``Fisher``, ``Food``, ``Fuel``, ``Generator``, ``Glasses``, ``Grip``, ``Grower``, ``Gun``, ``Hat``, ``Key``, ``Library``, ``Magazine``, ``Map``, ``Mask``, ``Medical``, ``Melee``, ``Oil_Pump``, ``Optic``, ``Pants``, ``Refill``, ``Sentry``, ``Shirt``, ``Sight``, ``Storage``, ``Structure``, ``Supply``, ``Tactical``, ``Tank``, ``Throwable``, ``Tire``, ``Tool``, ``Trap``, ``Vehicle_Repair_Tool``, ``Vest``, ``Water``)
      - empty
-     - Item's class.
    * - **Rarity**
      - *enum* (``Common``, ``Uncommon``, ``Rare``, ``Epic``, ``Legendary``, ``Mythical``)
      - ``Common``
-     - Rarity of the item, as text shown in menus and colors used for highlights.
    * - **Useable**
      - *enum*
      - ``None``
-     - Class for how to treat equippable items.
    * - **Slot**
      - *enum* (``Any``, ``None``, ``Primary``, ``Secondary``, ``Tertiary``)
      - ``None``
-     - Which equipped item slot the item is valid to be equippable in. ``Primary`` restricts the item to the primary slot, and prevents the use of hotkeying. ``Secondary`` restricts the item to the primary or secondary slots, and prevents the use of hotkeying. ``Any`` has no restrictions on slots or hotkeying.
    * - **ID**
      - *uint16*
      - ``0``
-     - Must be a unique identifier. 
-
-Inventory Properties
-````````````````````
-
-.. list-table::
-   :widths: 30 10 10 50
-   :header-rows: 0
-
    * - **Size_X**
      - *byte*
      - ``1``
-     - Width in inventory, in slots.
    * - **Size_Y**
      - *byte*
      - ``1``
-     - Height in inventory, in slots.
    * - **Size_Z**
      - *float*
      - ``-1``
-     - Manually specify orthogonal camera size for item icons. This directly corresponds to the value of a Camera component's Size property in Unity.
    * - **Use_Auto_Icon_Measurements**
      - *bool*
      - ``true``
-     - Automatically calculate axis-aligned item icon camera size from bounds.
    * - **Can_Player_Equip**
      - *bool*
      - See description
-     - Item can be equipped by the player. If the ``Useable`` property has been set, then defaults to ``true``. Otherwise, defaults to ``false``.
    * - **Can_Use_Underwater**
      - *bool*
      - See description
-     - Item can be used while underwater. If the ``Slot`` property has not been set to ``Primary``, then defaults to ``true``. Otherwise, defaults to ``false``.
    * - **Should_Drop_On_Death**
      - *bool*
      - ``true``
-     - Item should be dropped on death.
    * - **Allow_Manual_Drop**
      - *bool*
      - ``true``
-     - Item can be manually dropped by the player.
    * - **InspectAudioDef**
      - :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`
      - empty
-     - AudioClip or OneShotAudioDefinition to play when item is inspected.
    * - **InventoryAudio**
      - :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`
      - See description
-     - AudioClip or OneShotAudioDefinition to play when item is picked up, moved within the inventory, and dropped. Default value is dependent on the child asset.
    * - **Procedurally_Animate_Inertia**
      - *bool*
      - ``true``
-     - Whether viewmodel should accumulate angular velocity from animations. Useful for low-quality older animations, but should probably be disabled for high-quality newer animations.
    * - **Equipable_Movement_Speed_Multiplier**
      - *float*
      - ``1``
-     - Multiplies character movement speed while equipped in the player's hands. If a gun is equipped, then any gun attachment multipliers are combined as well.
    * - **EquipAudioClip**
      - :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`
      - ``Equip``
-     - AudioClip to play when equipping.
-
-Economy
-```````
-
-.. list-table::
-   :widths: 30 10 10 50
-   :header-rows: 0
-
    * - **Size2_Z**
      - *float*
      - ``-1``
-     - Orthogonal camera size for economy icons.
    * - **Pro**
      - *flag*
      - n/a
-     - Specified if this is an economy item.
    * - **Shared_Skin_Lookup_ID**
      - *uint16*
      - See description
-     - Share skins with another item. Defaults to item's ``ID``.
-
-Container
-`````````
-
-.. list-table::
-   :widths: 30 10 10 50
-   :header-rows: 0
-
    * - **Amount**
      - *byte*
      - ``1``
-     - Maximum capacity for container-like items, such as ammunition boxes.
    * - **Count_Min**
      - *byte*
      - ``1``
-     - Minimum amount to generate, for container-like items.
    * - **Count_Max**
      - *byte*
      - ``1``
-     - Maximum amount to generate, for container-like items.
-
-Quality
-```````
-
-.. list-table::
-   :widths: 30 10 10 50
-   :header-rows: 0
-
    * - **Quality_Min**
      - *byte*
      - ``10``
-     - Minimum quality to generate.
    * - **Quality_Max**
      - *byte*
      - ``90``
-     - Maximum quality to generate.
    * - **Should_Delete_At_Zero_Quality**
      - *bool*
      - ``false``
-     - Item should be deleted when at 0% quality.
    * - **Override_Show_Quality**
      - *bool*
      - ``false``
-     - Override to forcefully show item quality.
-
-Miscellaneous
-`````````````
-
-.. list-table::
-   :widths: 30 10 10 50
-   :header-rows: 0
-
    * - **Backward**
      - *bool*
      - ``false``
-     - Set the item to be held in the non-dominant hand.
    * - **Bypass_Hash_Verification**
      - *bool*
      - ``false``
-     - Disable hash verification check, and allow for mismatched files.
    * - **Destroy_Item_Colliders**
      - *bool*
      - ``true``
-     - If false, colliders are not destroyed when the "Item" Prefab is attached to the character. For example equipped vanilla guns do not have any colliders, but some mods (e.g., riot shields) may have relied on child colliders not being destroyed.
    * - **EquipablePrefab**
      - :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`
      - empty
-     - Overrides the model spawned when this item is equipped. For example, the "Equipable" Prefab could use an animated skinned mesh component while the regular "Item" Prefab only needs a static mesh component.
    * - **Ignore_TexRW**
      - *flag*
      - n/a
-     - Specified if read/writeable texture errors for the asset should be hidden from the error logs.
    * - **Left_Handed_Characters_Mirror_Equipable**
      - *bool*
      - ``true``
-     - If false, the equipped item model is mirrored to counteract the mirrored character.
    * - **Instantiated_Item_Name_Override**
      - *string*
      - See description
-     - Name to use when instantiating "Item" Prefab. By default, the legacy 16-bit asset ID is used. Since Unity's built-in Animation component references GameObjects by name, this property can help share animations between items.
    * - **Use_Auto_Stat_Descriptions**
      - *bool*
      - ``true``
-     - If true, properties like damage, storage, health, etc. are appended to the description.
+
+Property Descriptions
+`````````````````````
+
+GUID *32-digit hexadecimal* empty
+:::::::::::::::::::::::::::::::::
+
+Refer to :ref:`GUID <doc_data_guid>` documentation.
+
+Type *enum* (``Arrest_End``, ``Arrest_Start``, ``Backpack``, ``Barrel``, ``Barricade``, ``Beacon``, ``Box``, ``Charge``, ``Cloud``, ``Compass``, ``Detonator``, ``Farm``, ``Filter``, ``Fisher``, ``Food``, ``Fuel``, ``Generator``, ``Glasses``, ``Grip``, ``Grower``, ``Gun``, ``Hat``, ``Key``, ``Library``, ``Magazine``, ``Map``, ``Mask``, ``Medical``, ``Melee``, ``Oil_Pump``, ``Optic``, ``Pants``, ``Refill``, ``Sentry``, ``Shirt``, ``Sight``, ``Storage``, ``Structure``, ``Supply``, ``Tactical``, ``Tank``, ``Throwable``, ``Tire``, ``Tool``, ``Trap``, ``Vehicle_Repair_Tool``, ``Vest``, ``Water``) empty
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Designates the item's class.
+
+----
+
+Rarity *enum* (``Common``, ``Uncommon``, ``Rare``, ``Epic``, ``Legendary``, ``Mythical``) ``Common``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Rarity of the item, as text shown in menus and colors used for highlights.
+
+----
+
+Useable *EUseableType* ``None``
+:::::::::::::::::::::::::::::::
+
+Class for how to treat equippable items.
+
+Slot *enum* (``Any``, ``None``, ``Primary``, ``Secondary``, ``Tertiary``) ``None``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Which equipped item slot the item is valid to be equippable in. ``Primary`` restricts the item to the primary slot, and prevents the use of hotkeying. ``Secondary`` restricts the item to the primary or secondary slots, and prevents the use of hotkeying. ``Any`` has no restrictions on slots or hotkeying.
+
+----
+
+ID *uint16* ``0``
+:::::::::::::::::
+
+Must be a unique identifier.
+
+----
+
+Size_X *byte* ``1``
+:::::::::::::::::::
+
+Width in inventory, in slots.
+
+----
+
+Size_Y *byte* ``1``
+:::::::::::::::::::
+
+Height in inventory, in slots.
+
+----
+
+Size_Z *float* ``-1``
+:::::::::::::::::::::
+
+Manually specify orthogonal camera size for item icons. This directly corresponds to the value of a Camera component's Size property in Unity.
+
+----
+
+Use_Auto_Icon_Measurements *bool* ``true``
+::::::::::::::::::::::::::::::::::::::::::
+
+Automatically calculate axis-aligned item icon camera size from bounds.
+
+----
+
+Can_Player_Equip *bool* See description
+:::::::::::::::::::::::::::::::::::::::
+
+Item can be equipped by the player. If the ``Useable`` property has been set, then defaults to ``true``. Otherwise, defaults to ``false``.
+
+----
+
+Can_Use_Underwater *bool* See description
+:::::::::::::::::::::::::::::::::::::::::
+
+Item can be used while underwater. If the ``Slot`` property has not been set to ``Primary``, then defaults to ``true``. Otherwise, defaults to ``false``.
+
+----
+
+Should_Drop_On_Death *bool* ``true``
+::::::::::::::::::::::::::::::::::::
+
+Item should be dropped on death.
+
+----
+
+Allow_Manual_Drop *bool* ``true``
+:::::::::::::::::::::::::::::::::
+
+Item can be manually dropped by the player.
+
+----
+
+InspectAudioDef :ref:`Master Bundle Pointer <doc_data_masterbundleptr>` empty
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+AudioClip or OneShotAudioDefinition to play when item is inspected.
+
+----
+
+InventoryAudio :ref:`Master Bundle Pointer <doc_data_masterbundleptr>` See description
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+AudioClip or OneShotAudioDefinition to play when item is picked up, moved within the inventory, and dropped. Default value is dependent on the child asset.
+
+----
+
+Procedurally_Animate_Inertia *bool* ``true``
+::::::::::::::::::::::::::::::::::::::::::::
+
+Whether viewmodel should accumulate angular velocity from animations. Useful for low-quality older animations, but should probably be disabled for high-quality newer animations.
+
+----
+
+Equipable_Movement_Speed_Multiplier *float* ``1``
+:::::::::::::::::::::::::::::::::::::::::::::::::
+
+Multiplies character movement speed while equipped in the player's hands. If a gun is equipped, then any gun attachment multipliers are combined as well.
+
+----
+
+EquipAudioClip :ref:`Master Bundle Pointer <doc_data_masterbundleptr>` ``Equip``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+AudioClip to play when equipping.
+
+**Size2_Z** *float* ``-1``
+::::::::::::::::::::::::::
+
+Orthogonal camera size for economy icons.
+
+----
+
+**Pro** *flag*
+::::::::::::::
+
+Specified if this is an economy item.
+
+----
+
+**Shared_Skin_Lookup_ID** *uint16* See description
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Share skins with another item. Defaults to item's ``ID``.
+
+----
+
+**Amount** *byte* ``1``
+::::::::::::::::::::::::::
+
+Maximum capacity for container-like items, such as ammunition boxes.
+
+----
+
+**Count_Min** *byte* ``1``
+:::::::::::::::::::::::::::
+
+Minimum amount to generate, for container-like items.
+
+----
+
+**Count_Max** *byte* ``1``
+::::::::::::::::::::::::::
+
+Maximum amount to generate, for container-like items.
+
+----
+
+**Quality_Min** *byte* ``10``
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Minimum quality to generate.
+
+----
+
+**Quality_Max** *byte* ``90``
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Maximum quality to generate.
+
+----
+
+**Should_Delete_At_Zero_Quality** *bool* ``false``
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Item should be deleted when at 0% quality.
+
+----
+
+**Override_Show_Quality** *bool* ``false``
+::::::::::::::::::::::::::::::::::::::::::
+
+Override to forcefully show item quality.
+
+----
+
+**Backward** *bool* ``false``
+:::::::::::::::::::::::::::::
+
+Set the item to be held in the non-dominant hand.
+
+----
+
+**Bypass_Hash_Verification** *bool* ``false``
+:::::::::::::::::::::::::::::::::::::::::::::::::
+
+Disable hash verification check, and allow for mismatched files.
+
+----
+
+**Destroy_Item_Colliders** *bool* ``true``
+::::::::::::::::::::::::::::::::::::::::::::
+
+If false, colliders are not destroyed when the "Item" Prefab is attached to the character. For example equipped vanilla guns do not have any colliders, but some mods (e.g., riot shields) may have relied on child colliders not being destroyed.
+
+----
+
+**EquipablePrefab** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>` empty
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Overrides the model spawned when this item is equipped. For example, the "Equipable" Prefab could use an animated skinned mesh component while the regular "Item" Prefab only needs a static mesh component.
+
+----
+
+**Ignore_TexRW** *flag* n/a
+::::::::::::::::::::::::::::
+
+Specified if read/writeable texture errors for the asset should be hidden from the error logs.
+
+----
+
+**Left_Handed_Characters_Mirror_Equipable** *bool* ``true``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If false, the equipped item model is mirrored to counteract the mirrored character.
+
+----
+
+**Instantiated_Item_Name_Override** *string* See description
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Name to use when instantiating "Item" Prefab. By default, the legacy 16-bit asset ID is used. Since Unity's built-in Animation component references GameObjects by name, this property can help share animations between items.
+
+----
+
+**Use_Auto_Stat_Descriptions** *bool* ``true``
+::::::::::::::::::::::::::::::::::::::::::::::
+
+If true, properties like damage, storage, health, etc. are appended to the description.
 
 Blueprints and Actions
 ``````````````````````

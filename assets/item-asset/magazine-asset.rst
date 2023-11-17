@@ -17,83 +17,86 @@ Item Asset Properties
 
 **Type** *enum* (``Magazine``)
 
-**ID** *uint16*: Must be a unique identifier.
+**ID** :ref:`uint16 <doc_data_builtin_types>`: Must be a unique identifier.
 
 Magazine Asset Properties
 `````````````````````````
 
 .. list-table::
    :widths: 40 40 20
-   :header-rows: 0
-
+   :header-rows: 1
+   
+   * - Property Name
+     - Type
+     - Default Value
    * - :ref:`Pellets <doc_item_asset_magazine_property_pellets>`
-     - *byte*
+     - :ref:`byte <doc_data_builtin_types>`
      - ``1``
    * - :ref:`Projectile_Damage_Multiplier <doc_item_asset_magazine_property_projectile_damage_multiplier>`
-     - *float*
+     - :ref:`float <doc_data_builtin_types>`
      - ``1``
    * - :ref:`Projectile_Blast_Radius_Multiplier <doc_item_asset_magazine_property_projectile_projectile_blast_radius_multiplier>`
-     - *float*
+     - :ref:`float <doc_data_builtin_types>`
      - ``1``
    * - :ref:`Projectile_Launch_Force_Multiplier <doc_item_asset_magazine_property_projectile_projectile_launch_force_multiplier>`
-     - *float*
+     - :ref:`float <doc_data_builtin_types>`
      - ``1``
    * - :ref:`Speed <doc_item_asset_magazine_property_projectile_speed>`
-     - *float*
+     - :ref:`float <doc_data_builtin_types>`
      - ``1``
    * - :ref:`Stuck <doc_item_asset_magazine_property_projectile_stuck>`
-     - *byte*
+     - :ref:`byte <doc_data_builtin_types>`
      - ``0``
    * - :ref:`Explosive <doc_item_asset_magazine_property_projectile_explosive>`
-     - *flag*
+     - :ref:`flag <doc_data_flag>`
      - n/a
    * - :ref:`Range <doc_item_asset_magazine_property_projectile_range>`
-     - *float*
+     - :ref:`float <doc_data_builtin_types>`
      - ``0``
    * - :ref:`Player_Damage <doc_item_asset_magazine_property_projectile_player_damage>`
-     - *float*
+     - :ref:`float <doc_data_builtin_types>`
      - ``0``
    * - :ref:`Zombie_Damage <doc_item_asset_magazine_property_projectile_zombie_damage>`
-     - *float*
+     - :ref:`float <doc_data_builtin_types>`
      - ``0``
    * - :ref:`Animal_Damage <doc_item_asset_magazine_property_projectile_animal_damage>`
-     - *float*
+     - :ref:`float <doc_data_builtin_types>`
      - ``0``
    * - :ref:`Barricade_Damage <doc_item_asset_magazine_property_projectile_barricade_damage>`
-     - *float*
+     - :ref:`float <doc_data_builtin_types>`
      - ``0``
    * - :ref:`Structure_Damage <doc_item_asset_magazine_property_projectile_structure_damage>`
-     - *float*
+     - :ref:`float <doc_data_builtin_types>`
      - ``0``
    * - :ref:`Vehicle_Damage <doc_item_asset_magazine_property_projectile_vehicle_damage>`
-     - *float*
+     - :ref:`float <doc_data_builtin_types>`
      - ``0``
    * - :ref:`Resource_Damage <doc_item_asset_magazine_property_projectile_resource_damage>`
-     - *float*
+     - :ref:`float <doc_data_builtin_types>`
      - ``0``
    * - :ref:`Object_Damage <doc_item_asset_magazine_property_projectile_object_damage>`
-     - *float*
+     - :ref:`float <doc_data_builtin_types>`
      - See description
    * - :ref:`Explosion_Launch_Speed <doc_item_asset_magazine_property_projectile_explosion_launch_speed>`
-     - *float*
+     - :ref:`float <doc_data_builtin_types>`
      - See description
    * - :ref:`Explosion <doc_item_asset_magazine_property_projectile_explosion>`
-     - :ref:`doc_data_guid` or *uint16*
+     - :ref:`doc_data_guid` or :ref:`uint16 <doc_data_builtin_types>`
      - ``0``
    * - :ref:`Spawn_Explosion_On_Dedicated_Server <doc_item_asset_magazine_property_projectile_spawn_explosion_on_dedicated_server>`
-     - *flag*
+     - :ref:`flag <doc_data_flag>`
      - n/a
    * - :ref:`Tracer <doc_item_asset_magazine_property_projectile_tracer>`
-     - :ref:`doc_data_guid` or *uint16*
+     - :ref:`doc_data_guid` or :ref:`uint16 <doc_data_builtin_types>`
      - ``0``
    * - :ref:`Impact <doc_item_asset_magazine_property_projectile_impact>`
-     - :ref:`doc_data_guid` or *uint16*
+     - :ref:`doc_data_guid` or :ref:`uint16 <doc_data_builtin_types>`
      - ``0``
    * - :ref:`Delete_Empty <doc_item_asset_magazine_property_projectile_delete_empty>`
-     - *flag*
+     - :ref:`flag <doc_data_flag>`
      - n/a
    * - :ref:`Should_Fill_After_Detach <doc_item_asset_magazine_property_projectile_should_fill_after_detach>`
-     - *bool*
+     - :ref:`bool <doc_data_builtin_types>`
      - ``false``
 
 Property Descriptions
@@ -101,161 +104,205 @@ Property Descriptions
 
 .. _doc_item_asset_magazine_property_pellets:
 
-Pellets *byte* = ``1``
-::::::::::::::::::::::::::::
+Pellets :ref:`byte <doc_data_builtin_types>` ``1``
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Number of bullet rays shot.
 
+----
+
 .. _doc_item_asset_magazine_property_projectile_damage_multiplier:
 
-Projectile_Damage_Multiplier *float* = ``1``
-::::::::::::::::::::::::::::::::::::::::::::::
+Projectile_Damage_Multiplier :ref:`float <doc_data_builtin_types>` ``1``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Multiplier on the damage dealt by projectile weapons.
 
+----
+
 .. _doc_item_asset_magazine_property_projectile_projectile_blast_radius_multiplier:
 
-Projectile_Blast_Radius_Multiplier *float* = ``1``
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Projectile_Blast_Radius_Multiplier :ref:`float <doc_data_builtin_types>` ``1``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Multiplier on the blast radius of projectiles fired from projectile weapons.
 
+----
+
 .. _doc_item_asset_magazine_property_projectile_projectile_launch_force_multiplier:
 
-Projectile_Launch_Force_Multiplier *float* = ``1``
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Projectile_Launch_Force_Multiplier :ref:`float <doc_data_builtin_types>` ``1``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Multiplier on the launch force applied to projectiles fired from projectile weapons.
 
+----
+
 .. _doc_item_asset_magazine_property_projectile_speed:
 
-Speed *float* = ``1``
-::::::::::::::::::::::::::::
+Speed :ref:`float <doc_data_builtin_types>` ``1``
+:::::::::::::::::::::::::::::::::::::::::::::::::
 
 Multiplier on reload speed.
 
+----
+
 .. _doc_item_asset_magazine_property_projectile_stuck:
 
-Stuck *byte* = ``0``
-::::::::::::::::::::::::::::
+Stuck :ref:`byte <doc_data_builtin_types>` ``0``
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 Amount of quality to lose when hit. When this value is greater than 0, fired projectiles can be picked back up until their quality reaches 0.
 
+----
+
 .. _doc_item_asset_magazine_property_projectile_explosive:
 
-Explosive *flag*
-::::::::::::::::::::::::::::
+Explosive :ref:`flag <doc_data_flag>`
+:::::::::::::::::::::::::::::::::::::
 
 Specified if it should cause an area-of-effect explosion.
 
+----
+
 .. _doc_item_asset_magazine_property_projectile_range:
 
-Range *float* = ``0``
-::::::::::::::::::::::::::::
+Range :ref:`float <doc_data_builtin_types>` ``0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Radius of the area-of-effect explosion.
 
+----
+
 .. _doc_item_asset_magazine_property_projectile_player_damage:
 
-Player_Damage *float* = ``0``
-:::::::::::::::::::::::::::::
+Player_Damage :ref:`float <doc_data_builtin_types>` ``0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Damage dealt to players caught in the area-of-effect explosion.
 
+----
+
 .. _doc_item_asset_magazine_property_projectile_zombie_damage:
 
-Zombie_Damage *float* = ``0``
-:::::::::::::::::::::::::::::
+Zombie_Damage :ref:`float <doc_data_builtin_types>` ``0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Damage dealt to zombies caught in the area-of-effect explosion.
 
+----
+
 .. _doc_item_asset_magazine_property_projectile_animal_damage:
 
-Animal_Damage *float* = ``0``
-:::::::::::::::::::::::::::::
+Animal_Damage :ref:`float <doc_data_builtin_types>` ``0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Damage dealt to animals caught in the area-of-effect explosion.
 
+----
+
 .. _doc_item_asset_magazine_property_projectile_barricade_damage:
 
-Barricade_Damage *float* = ``0``
-::::::::::::::::::::::::::::::::::
+Barricade_Damage :ref:`float <doc_data_builtin_types>` ``0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Damage dealt to barricades caught in the area-of-effect explosion.
 
+----
+
 .. _doc_item_asset_magazine_property_projectile_structure_damage:
 
-Structure_Damage *float* = ``0``
-::::::::::::::::::::::::::::::::::
+Structure_Damage :ref:`float <doc_data_builtin_types>` ``0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Damage dealt to structures caught in the area-of-effect explosion.
 
+----
+
 .. _doc_item_asset_magazine_property_projectile_vehicle_damage:
 
-Vehicle_Damage *float* = ``0``
-::::::::::::::::::::::::::::::::::
+Vehicle_Damage :ref:`float <doc_data_builtin_types>` ``0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Damage dealt to vehicles caught in the area-of-effect explosion.
 
+----
+
 .. _doc_item_asset_magazine_property_projectile_resource_damage:
 
-Resource_Damage *float* = ``0``
-::::::::::::::::::::::::::::::::::
+Resource_Damage :ref:`float <doc_data_builtin_types>` ``0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Damage dealt to resources caught in the area-of-effect explosion.
 
+----
+
 .. _doc_item_asset_magazine_property_projectile_object_damage:
 
-Object_Damage *float* = See description
-:::::::::::::::::::::::::::::::::::::::
+Object_Damage :ref:`float <doc_data_builtin_types>` See description
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Damage dealt to objects caught in the area-of-effect explosion. Defaults to the value used by ``Resource_Damage``.
 
+----
+
 .. _doc_item_asset_magazine_property_projectile_explosion_launch_speed:
 
-Explosion_Launch_Speed *float* = See description
-::::::::::::::::::::::::::::::::::::::::::::::::
+Explosion_Launch_Speed :ref:`float <doc_data_builtin_types>` See description
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Launch speed of players caught within the area-of-effect explosion, in meters per second. Defaults to the resulting value from ``Player_Damage * 0.1``.
 
+----
+
 .. _doc_item_asset_magazine_property_projectile_explosion:
 
-Explosion :ref:`doc_data_guid` or *uint16* = ``0``
-::::::::::::::::::::::::::::::::::::::::::::::::::
+Explosion :ref:`doc_data_guid` or :ref:`uint16 <doc_data_builtin_types>` ``0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 GUID or legacy ID of explosion effect.
 
+----
+
 .. _doc_item_asset_magazine_property_projectile_spawn_explosion_on_dedicated_server:
 
-Spawn_Explosion_On_Dedicated_Server *flag*
-::::::::::::::::::::::::::::::::::::::::::
+Spawn_Explosion_On_Dedicated_Server :ref:`flag <doc_data_flag>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Specified to spawn the explosion effect on the server.
 
+----
+
 .. _doc_item_asset_magazine_property_projectile_tracer:
 
-Tracer :ref:`doc_data_guid` or *uint16* = ``0``
-:::::::::::::::::::::::::::::::::::::::::::::::
+Tracer :ref:`doc_data_guid` or :ref:`uint16 <doc_data_builtin_types>` ``0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 GUID or legacy ID of bullet tracer effect.
 
+----
+
 .. _doc_item_asset_magazine_property_projectile_impact:
 
-Impact :ref:`doc_data_guid` or *uint16* = ``0``
-:::::::::::::::::::::::::::::::::::::::::::::::
+Impact :ref:`doc_data_guid` or :ref:`uint16 <doc_data_builtin_types>` ``0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 GUID or legacy ID of effect to play on impact.
 
+----
+
 .. _doc_item_asset_magazine_property_projectile_delete_empty:
 
-Delete_Empty *flag*
+Delete_Empty :ref:`flag <doc_data_flag>`
 :::::::::::::::::::::::::::::::::::::::::::::
 
 Specified if the magazine attachment should be deleted when it is fully depleted.
 
+----
+
 .. _doc_item_asset_magazine_property_projectile_should_fill_after_detach:
 
-Should_Fill_After_Detach *bool* = ``false``
-:::::::::::::::::::::::::::::::::::::::::::
+Should_Fill_After_Detach :ref:`bool <doc_data_builtin_types>` ``false``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Ammunition should be fully refilled after the magazine attachment is detached from a ranged weapon.

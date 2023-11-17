@@ -24,48 +24,69 @@ Tactical Asset Properties
 
 .. list-table::
    :widths: 40 40 20
-   :header-rows: 0
-
-   * - **Laser**
-     - *flag*
+   :header-rows: 1
+   
+   * - Property Name
+     - Type
+     - Default Value
+   * - :ref:`Laser <doc_item_asset_tactical_property_laser>`
+     - :ref:`flag <doc_data_flag>`
      - n/a
-   * - **Laser_Color**
+   * - :ref:`Laser_Color <doc_item_asset_tactical_property_laser_color>`
      - :ref:`color <doc_data_file_format>`
      - ``#FF0000``
-   * - **Light**
-     - *flag*
+   * - :ref:`Light <doc_item_asset_tactical_property_light>`
+     - :ref:`flag <doc_data_builtin_types>`
      - n/a
-   * - **Melee**
-     - *flag*
+   * - :ref:`Melee <doc_item_asset_tactical_property_melee>`
+     - :ref:`flag <doc_data_flag>`
      - n/a
-   * - **Rangefinder**
-     - *flag*
+   * - :ref:`Rangefinder <doc_item_asset_tactical_property_rangefinder>`
+     - :ref:`flag <doc_data_flag>`
      - n/a
 
 Property Descriptions
 `````````````````````
 
-Laser *flag*
-::::::::::::
+.. _doc_item_asset_tactical_property_laser:
+
+Laser :ref:`flag <doc_data_flag>`
+::::::::::::::::::::::::::::::::::::::::::
 
 Provides a toggleable laser.
 
-Laser_Color :ref:`color <doc_data_file_format>` = ``#FF0000``
+----
+
+.. _doc_item_asset_tactical_property_laser_color:
+
+Laser_Color :ref:`color <doc_data_file_format>` ``#FF0000``
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Overrides the default red color. When using the legacy color parsing, the ``_R``, ``_G``, and ``_B`` keys are floats within the range of [0, 1].
 
-Light *flag*
-::::::::::::
+----
+
+.. _doc_item_asset_tactical_property_light:
+
+Light :ref:`flag <doc_data_flag>`
+::::::::::::::::::::::::::::::::::::::::::
 
 Provides a toggleable flashlight, and allows for using :ref:`PlayerSpotLightConfig <doc_data_playerspotlightconfig>` properties.
 
-Melee *flag*
-::::::::::::
+----
+
+.. _doc_item_asset_tactical_property_melee:
+
+Melee :ref:`flag <doc_data_flag>`
+::::::::::::::::::::::::::::::::::::::::::
 
 Provides the ability to perform a melee attack.
 
-Rangefinder *flag*
-::::::::::::::::::
+----
+
+.. _doc_item_asset_tactical_property_rangefinder:
+
+Rangefinder :ref:`flag <doc_data_flag>`
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 Provides a toggleable rangefinder.
