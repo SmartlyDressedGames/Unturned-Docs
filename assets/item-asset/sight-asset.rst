@@ -19,9 +19,9 @@ Item Asset Properties
 Sight Asset Properties
 ----------------------
 
-**DistanceMarkers**: list of dictionaries. Please refer to Distance Marker Properties below.
+**DistanceMarkers** *list of DistanceMarker*: This property is a list of :ref:`DistanceMarker dictionaries <doc_item_asset_sight:distancemarker_dictionary>`. It can be used to add visible (and accurate) distance markers to the scope that account for the weapon's bullet drop.
 
-**Holographic** *flag*: Specified if sight is holographic.
+**Holographic** *flag*: This sight should be holographic.
 
 **Nightvision_Color** :ref:`color <doc_data_file_format>`: Overrides the default color when using ``Vision Military``. When using the legacy color parsing, the ``_R``, ``_G``, and ``_B`` keys are unsigned bytes. The default value for ``Vision Civilian`` is equivalent to #666666. The default value for ``Vision Military`` is equivalent to #507814.
 
@@ -35,10 +35,12 @@ Sight Asset Properties
 
 **ThirdPerson_Zoom** *float*: Zoom factor in third-person perspective. Should be set to a value greater than 1. Defaults to 1.25.
 
-**Zoom\_Using\_Eyes** *bool*: Whether main camera field of view should zoom without scope camera / scope overlay.
+**Zoom_Using_Eyes** *bool*: Whether main camera field of view should zoom without scope camera / scope overlay.
 
-Distance Marker Properties
---------------------------
+.. _doc_item_asset_sight:distancemarker_dictionary:
+
+DistanceMarker Properties
+-------------------------
 
 .. note:: Display-related properties like **LineOffset** and **LineWidth** are a 0-1 percentage of the scope size to keep them consistent between 2D and 3D. For example 0.25 is 25%.
 
@@ -46,10 +48,10 @@ Distance Marker Properties
 
 **LineOffset** *float*: Distance between center line and start of horizontal line marker.
 
-**LineWidth** *float*: Length of horizontal line marker. Defaults to 0.05.
+**LineWidth** *float*: Length of horizontal line marker. Defaults to ``0.05``.
 
-**Side** *enum* (``Left`` or ``Right``): Direction the horizontal line and text expand in. Defaults to Right.
+**Side** *enum* (``Left``, ``Right``): Direction the horizontal line and text expand in. Defaults to ``Right``.
 
-**HasLabel** *bool*: If true, a label with **Distance** text is shown next to the horizontal line marker. Defaults to true.
+**HasLabel** *bool*: If true, a label with ``Distance`` text is shown next to the horizontal line marker. Defaults to ``true``.
 
-**Color** :ref:`color <doc_data_file_format>`: Horizontal line and text color. Defaults to black.
+**Color** :ref:`color <doc_data_file_format>`: Horizontal line and text color. Defaults to ``black``.

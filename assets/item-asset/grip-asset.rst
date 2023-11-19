@@ -19,4 +19,4 @@ Item Asset Properties
 Grip Asset Properties
 ---------------------
 
-**Bipod** *flag*: Specified if effects should only take place while prone.
+**Bipod** *flag*: Stat-changing properties from this grip attachment should only take effect while prone.
