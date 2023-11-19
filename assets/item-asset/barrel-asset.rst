@@ -19,8 +19,8 @@ Item Asset Properties
 
 **ID** *uint16*: Must be a unique identifier.
 
-Barrel Asset Properties
-```````````````````````
+Properties
+``````````
 
 .. list-table::
    :widths: 40 40 20
@@ -34,16 +34,16 @@ Barrel Asset Properties
      - ``1``
    * - :ref:`Braked <doc_item_asset_barrel_property_braked>`
      - :ref:`flag <doc_data_flag>`
-     - n/a
+     -
    * - :ref:`Durability <doc_item_asset_barrel_property_durability>`
      - :ref:`byte <doc_data_builtin_types>`
      - ``0``
    * - :ref:`Gunshot_Rolloff_Distance_Multiplier <doc_item_asset_barrel_property_gunshot_rolloff_distance_multiplier>`
      - :ref:`float <doc_data_builtin_types>`
-     - See description
+     -
    * - :ref:`Silenced <doc_item_asset_barrel_property_silenced>`
      - :ref:`flag <doc_data_flag>`
-     - n/a
+     -
    * - :ref:`Volume <doc_item_asset_barrel_property_volume>`
      - :ref:`float <doc_data_builtin_types>`
      - ``1``
@@ -80,8 +80,8 @@ Amount of quality lost after each firing of the ranged weapon. When this value i
 
 .. _doc_item_asset_barrel_property_gunshot_rolloff_distance_multiplier:
 
-Gunshot_Rolloff_Distance_Multiplier :ref:`float <doc_data_builtin_types>` See description
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Gunshot_Rolloff_Distance_Multiplier :ref:`float <doc_data_builtin_types>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Multiplier on gunshot rolloff distance. Defaults to ``0.5`` if ``Silenced``, otherwise to ``1``.
 

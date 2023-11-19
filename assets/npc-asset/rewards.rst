@@ -7,9 +7,9 @@ Rewards can be granted by NPC assets, interactable objects, and item blueprints.
 
 **Rewards** *byte*: Total number of rewards.
 
-**Reward\_#\_Type** *enum* (``Flag_Bool``, ``Flag_Math``, ``Flag_Short``, ``Flag_Short_Random``, ``Achievement``, ``Currency``, ``Event``, ``Experience``, ``Item``, ``Item_Random``, ``Hint``, ``Player_Life_Food``, ``Player_Life_Health``, ``Player_Life_Virus``, ``Player_Life_Water``, ``Player_Spawnpoint``, ``Quest``, ``Reputation``, ``Teleport``, ``Vehicle``)
+**Reward_#_Type** *enum* (``Flag_Bool``, ``Flag_Math``, ``Flag_Short``, ``Flag_Short_Random``, ``Achievement``, ``Currency``, ``Event``, ``Experience``, ``Item``, ``Item_Random``, ``Hint``, ``Player_Life_Food``, ``Player_Life_Health``, ``Player_Life_Virus``, ``Player_Life_Water``, ``Player_Spawnpoint``, ``Quest``, ``Reputation``, ``Teleport``, ``Vehicle``)
 
-**Reward\_#\_GrantDelaySeconds** *float*: If set, the reward will be queued for the specified number of seconds before being granted to the player. When the player dies any pending rewards are cancelled. Defaults to -1.
+**Reward_#_GrantDelaySeconds** *float*: If set, the reward will be queued for the specified number of seconds before being granted to the player. When the player dies any pending rewards are cancelled. Defaults to -1.
 
 Flags
 -----
@@ -17,11 +17,11 @@ Flags
 Flag_Bool
 `````````
 
-**Reward\_#\_Type** *enum* (``Flag_Bool``)
+**Reward_#_Type** *enum* (``Flag_Bool``)
 
-**Reward\_#\_ID** *uint16*: ID of flag to set.
+**Reward_#_ID** *uint16*: ID of flag to set.
 
-**Reward\_#\_Value** *bool*: Set flag to boolean value, of either "True" or "False".
+**Reward_#_Value** *bool*: Set flag to Boolean value, of either "True" or "False".
 
 Flag_Math
 `````````

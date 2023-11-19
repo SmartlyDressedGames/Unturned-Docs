@@ -19,8 +19,8 @@ Item Asset Properties
 
 **ID** *uint16*: Must be a unique identifier.
 
-Grip Asset Properties
-`````````````````````
+Properties
+``````````
 
 .. list-table::
    :widths: 40 40 20

@@ -19,8 +19,8 @@ Item Asset Properties
 
 **ID** :ref:`uint16 <doc_data_builtin_types>`: Must be a unique identifier.
 
-Magazine Asset Properties
-`````````````````````````
+Properties
+``````````
 
 .. list-table::
    :widths: 40 40 20
