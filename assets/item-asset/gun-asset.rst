@@ -23,7 +23,9 @@ Open the "Item" Prefab, and add six child GameObjects named "Barrel", "Grip", "S
 
 The "Barrel", "Grip", "Sight", "Tactical", and "Magazine" GameObjects will determine the location of attachments on your gun. The "Sight" GameObject also determines where the camera will be positioned when aiming down sights. Shells are emitted from the "Eject" GameObject.
 
-If an "View" GameObject is added, the camera will use its position when aiming down sights whenever a sight attachment has not been attached to the gun.
+If an "View" GameObject is added, the camera will use its position when aiming down sights if a sight attachment has not been attached to the gun.
+
+When a gun can accept more than one type of magazine caliber, it may be desirable to have the position of the magazine attachment depend on its caliber ID. Add a child to the "Magazine" GameObject, named "Caliber_#". For example, adding "Caliber_1" would cause magazine attachments using caliber ID 1 to use that position instead of the "Magazine" GameObject's position.
 
 Additional Setup for Bows
 :::::::::::::::::::::::::
