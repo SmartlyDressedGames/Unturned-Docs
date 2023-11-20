@@ -25,6 +25,6 @@ Tactical Asset Properties
 
 **Light** *flag*: Provides a toggleable flashlight, and allows for using :ref:`PlayerSpotLightConfig <doc_data_playerspotlightconfig>` properties.
 
-**Melee** *flag*: Provides the ability to perform a melee attack.
+**Melee** *flag*: Provides the ability to perform a melee attack, dealing 40 damage. This damage value is not configurable.
 
 **Rangefinder** *flag*: Provides a toggleable rangefinder.

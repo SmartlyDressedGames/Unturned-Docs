@@ -16,9 +16,9 @@ Properties pertaining to items that the vendor is willing to buy from players. V
 
 **Buying** *byte*: Total number items being bought by the vendor.
 
-**Buying\_#\_ID** *uint16*: ID of item to buy from the player.
+**Buying_#_ID** *uint16*: ID of item to buy from the player.
 
-**Buying\_#\_Cost** *uint32*: Amount of currency to pay the player. Defaults to experience points as the currency, unless the Currency property has been set.
+**Buying_#_Cost** *uint32*: Amount of currency to pay the player. Defaults to experience points as the currency, unless the Currency property has been set.
 
 Selling
 -------
@@ -27,13 +27,13 @@ Properties pertaining to items or vehicles that the vendor is willing to sell to
 
 **Selling** *byte*: Total number of items/vehicles being sold by the vendor.
 
-**Selling\_#\_Type** *enum* (``Item``, ``Vehicle``): Type of asset being sold.
+**Selling_#_Type** *enum* (``Item``, ``Vehicle``): Type of asset being sold.
 
-**Selling\_#\_ID** *uint16*: ID of item/vehicle to sell to the player.
+**Selling_#_ID** *uint16*: ID of item/vehicle to sell to the player.
 
-**Selling\_#\_Cost** *uint32*: Amount of currency to pay the vendor. Defaults to experience points as the currency, unless the Currency property has been set.
+**Selling_#_Cost** *uint32*: Amount of currency to pay the vendor. Defaults to experience points as the currency, unless the Currency property has been set.
 
-**Selling\_#\_Spawnpoint** *string*: Location to spawn the purchased vehicle, using the spawnpoint name as set in the Devkit level editor. For example, ``Liberator_Jet``.
+**Selling_#_Spawnpoint** *string*: Location to spawn the purchased vehicle, using the spawnpoint name as set in the Devkit level editor. For example, ``Liberator_Jet``.
 
 Other Properties
 ----------------

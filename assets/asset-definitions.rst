@@ -21,7 +21,7 @@ Each asset has a common ``GUID`` and ``Type`` header:
 	``Type`` and ``GUID`` can either be specified in the root dictionary (default), or in a ``Metadata`` sub-dictionary. For example this is valid as well:
 
 	.. code-block:: text
-
+		
 		Metadata
 		{
 			GUID 7e4b847061b64272b42ea8869fd053c7
@@ -63,7 +63,7 @@ Is equivalent to:
 Unity Asset Bundles
 -------------------
 
-Each Unturned asset is associated with a Unity asset bundle. If there is a master bundle in the file hierarchy that takes priority, otherwise a ``.unity3d`` bundle with the same name as the `.dat` file is used. There are several keys available to control the asset bundle:
+Each Unturned asset is associated with a Unity asset bundle. If there is a master bundle in the file hierarchy that takes priority, otherwise a ``.unity3d`` bundle with the same name as the ``.dat`` file is used. There are several keys available to control the asset bundle:
 
 **Asset_Bundle_Version** *int*: Indicates which version of Unity this ``.unity3d`` bundle was built for. When Unturned upgrades Unity versions it tries to maintain backwards compatibility based on this number. 1 is Unity 5.5, 2 is 2017.4 LTS and 3 is 2018.4 LTS.
 
