@@ -92,10 +92,10 @@ ESide Enumeration
 `````````````````
 
 .. list-table::
-   :widths: 40 60
+   :widths: 25 75
    :header-rows: 1
    
-   * - Enumerator
+   * - Named Value
      - Description
    * - ``Left``
      - Marking extends to the left from the center.
@@ -125,26 +125,26 @@ This sight should be holographic.
 
 .. _doc_item_asset_sight_property_nightvision_color:
 
-Nightvision_Color :ref:`color <doc_data_file_format>` See description
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Nightvision_Color :ref:`color <doc_data_file_format>` (See description)
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Overrides the default color when using ``Vision Military``. When using the legacy color parsing, the ``_R``, ``_G``, and ``_B`` keys are unsigned bytes. The default value for ``Vision Civilian`` is equivalent to ``#666666``. The default value for ``Vision Military`` is equivalent to ``#507814``.
+Overrides the default color when using ``Vision Military``. This property supports using legacy color parsing.
 
 ----
 
 .. _doc_item_asset_sight_property_nightvision_fog_intensity:
 
-Nightvision_Fog_Intensity :ref:`float <doc_data_builtin_types>` See description
+Nightvision_Fog_Intensity :ref:`float <doc_data_builtin_types>` (See description)
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Intensity of fog while nightvision is active. Default value for ``Vision Civilian`` is ``0.5``. Default value for ``Vision Military`` is ``0.25``.
+Intensity of fog while nightvision is active.
 
 ----
 
 .. _doc_item_asset_sight_property_offset_scope_overlay_by_one_texel:
 
 Offset_Scope_Overlay_By_One_Texel :ref:`bool <doc_data_builtin_types>` ``false``
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 If ``true``, 2D scope texture will be scaled up slightly to center the pixel that would otherwise be left of center. For example when enabled with a 512x512 texture the pixel at 255x255 will be centered on the display.
 
@@ -155,11 +155,7 @@ If ``true``, 2D scope texture will be scaled up slightly to center the pixel tha
 Vision :ref:`ELightingVision <doc_data_elightingvision>` ``None``
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Type of unique lighting vision effect to use. Use the "Military" enumerator when intending to assign a custom nightvision color via the color component properties.
-
-.. important::
-
-  This uses the ELightingVision enum, but would need a note about ``Headlamp`` not having any functionality with this asset.
+Type of unique lighting vision effect to use. Use the ``Military`` enumerator when intending to assign a custom nightvision color via the ``Nightvision_Color`` property. The ``Headlamp`` enumerator is not supported by this property.
 
 ----
 

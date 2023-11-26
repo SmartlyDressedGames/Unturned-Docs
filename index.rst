@@ -128,19 +128,17 @@ Anyone can contribute towards the *Unturned* modding documentation! To submit an
 .. toctree::
 	:hidden:
 	:maxdepth: 1
-	:caption: Data types
+	:caption: Data Types
 
 	data/built-in-types
 	
 	data/asset-ptr
 	data/bitmask
+	data/color
+	data/enum/index
 	data/flag
 	data/guid
 	data/master-bundle-ptr
 	data/rich-text
-	
-	data/playerspotlightconfig
-	data/ebatterymode
-	data/elightingvision
-	data/enpcholiday
-	data/eobjectchart
+	data/struct/index
+	data/vector3

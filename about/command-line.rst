@@ -1,7 +1,7 @@
 .. _doc_commandline:
 
-Command-line arguments
-======================
+Launch Options
+==============
 
 You can add command-line arguments within Steam:
 
@@ -36,7 +36,7 @@ Some command-line arguments are primarily intended for use with the Unturned Ded
 
 **-GameSense**: GameSense integration.
 
-**-Glazier=** *enum* (``IMGUI``): Use the legacy IMGUI rather than the default uGUI.
+**-Glazier=** *enum* (``IMGUI``, ``UIToolkit``): Use the legacy IMGUI rather than the default uGUI.
 
 **-h** *int*: Alias of ``-height``.
 

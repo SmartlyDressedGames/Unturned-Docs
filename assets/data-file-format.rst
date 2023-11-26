@@ -27,17 +27,7 @@ The only reason to quote a value is to enable comments on the same line. Quotati
 
 	Keys are case-insensitive. i.e., ``Use_Cool_Option true`` and ``UsE_cOoL_oPtIoN true`` are identical. Keys should be unique within their dictionary.
 
-Flags
------
-
-Some older asset types look for the presence of a particular key, not its value. These are referred to as flags. Their value can be left empty.
-
-For example: item assets check for the ``Pro`` flag marking them is a Steam economy item.
-
-.. code-block:: text
-
-	Flag1
-	Flag2
+Acceptable values for a key will depend on their data type. Most—but not all—properties will use one of the :ref:`C# built-in types <doc_data_builtin_types>`.
 
 Objects / Dictionaries
 ----------------------
@@ -106,7 +96,7 @@ Lists can also contain dictionaries as seen in this example:
 Comments
 --------
 
-Lines starting with ``//`` are comments. (excluded from parsing) Comments can also be added to the end of a line if the value is quoted.
+Lines starting with ``//`` are comments, which means they are excluded from parsing. Comments can be useful for adding helpful, explanatory notes inside an asset. Comments can also be added to the end of a line if the value is quoted.
 
 For example these comments are valid:
 
@@ -122,55 +112,9 @@ Whereas this comment will not be excluded from the value:
 
 	key value // this is not treated as a comment because the value is not in quotes
 
-Vector3
--------
-
-3D vectors can be parsed as a single value from 3 floats optionally surrounded by parenthesis, or from a dictionary with X, Y, and Z keys.
-
-For example these are all valid 3D vectors:
-
-.. code-block:: text
-
-	Position 1, 2, 3
-	Offset (4, 5, 6)
-	Scale
-	{
-		X 7
-		Y 8
-		Z 9
-	}
-
-Certain older properties support the newer format while also supporting separate _X, _Y, and _Z keys, namely: ``LOD_Center``, ``LOD_Size``, ``Explosion_Min_Force``, ``Explosion_Max_Force``, and ``Center_Of_Mass``.
-
-Color
------
-
-Colors can be parsed as a single hexadecimal value with optional "#" in front, or from a dictionary with R, G, and B keys.
-
-For example these are all valid colors:
-
-.. code-block:: text
-	
-	SkyColor 0000ff
-	GroundColor #00ff00
-	FogColor
-	{
-		R 255
-		G 0
-		B 0
-	}
-
-Certain older properties support the newer format while also supporting separate ``_R``, ``_G``, and ``_B`` keys, namely: ``Laser_Color``, and ``Nightvision_Color``.
-
-For example, this would be also be valid for any older property that supports the legacy format:
-
-.. code-block:: text
-	
-	Laser_Color_R 0.5
-	Laser_Color_G 1
-	Laser_Color_B 0
-
 History
 -------
 
-Prior to the 3.23.6.0 update there were two sets of custom Unturned syntax: "v1" for ``.dat`` files and "v2" for ``.asset`` files. v1 only supported key-value pairs, whereas v2 introduced dictionaries, lists, and required keys/values to be quoted. This is why ``{`` and ``[`` must be on a new line. (Existing v1 assets may have ``{`` or ``[`` as the first character of a value.)
+Prior to the 3.23.6.0 update there were two sets of custom Unturned syntax: "v1" for ``.dat`` files, and "v2" for ``.asset`` files. Assets using v1 syntax only supported key-value pairs, whereas v2 introduced dictionaries, lists, and required keys/values to be quoted.
+
+This is why ``{`` and ``[`` must be on a new line, as existing v1 assets may have ``{`` or ``[`` as the first character of a value.

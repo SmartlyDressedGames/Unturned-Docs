@@ -23,10 +23,10 @@ Glasses Asset Properties
 
 **Blindfold** *flag*: Specified if glasses should blacken the player's screen.
 
-**Nightvision_Allowed_In_ThirdPerson** *bool*: If true, nightvision works in third-person, not just first-person. Defaults to false for backwards compatibility. Vanilla nightvision has this set to true.
+**Nightvision_Allowed_In_ThirdPerson** *bool*: If ``true``, nightvision works in third-person, not just first-person. Defaults to ``false`` for backwards compatibility. Vanilla nightvision has this set to true.
 
-**Nightvision_Color** :ref:`color <doc_data_file_format>`: Overrides the default color when using ``Vision Military``. When using the legacy color parsing, the ``_R``, ``_G``, and ``_B`` keys are unsigned bytes. The default value for ``Vision Civilian`` is equivalent to #666666. The default value for ``Vision Military`` is equivalent to #507814.
+**Nightvision_Color** :ref:`color <doc_data_file_format>`: Overrides the default color when using ``Vision Military``. This property supports using legacy color parsing.
 
-**Nightvision_Fog_Intensity** *float*: Intensity of fog while nightvision is active. Default value for ``Vision Civilian`` is 0.5. Default value for ``Vision Military`` is 0.25.
+**Nightvision_Fog_Intensity** *float*: Intensity of fog while nightvision is active.
 
-**Vision** *enum* (``None``, ``Military``, ``Civilian``, ``Headlamp``): Type of unique lighting vision effect to use. Defaults to "None", which has no vision effect. Use the "Military" enumerator to use its default nightvision configuration, or when intending to assign a custom nightvision color via the color component properties. Use "Civilian" to use its default nightvision configuration. Use "Headlamp" to enable a toggleable light source, and allows for using :ref:`PlayerSpotLightConfig <doc_data_playerspotlightconfig>` properties.
+**Vision** *enum* (``None``, ``Military``, ``Civilian``, ``Headlamp``): Type of unique lighting vision effect to use. Defaults to ``None``. When intending to assign a custom nightvision color via the ``Nightvision_Color`` property, it is recommended to use the ``Military`` enumerator.
