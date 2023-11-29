@@ -17,41 +17,45 @@ The following table lists the C# built-in types, along with common aliases and d
      - Boolean
      - ``true`` or ``false``
      - ``false``
-   * - sbyte
-     - int8
+   * - int8
+     - sbyte
      - ``-128`` to ``127``
      - ``0``
-   * - byte
-     - uint8
+   * - uint8
+     - byte
      - ``0`` to ``255``
      - ``0``
-   * - float
-     - single
-     - precision up to seven digits
-     - ``0``
-   * - int
-     - int32
-     - ``-2147483648`` to ``2147483647``
-     - ``0``
-   * - uint
-     - uint32
-     - ``0`` to ``4294967295``
-     - ``0``
-   * - long
-     - int64
-     - ``-9223372036854775808`` to ``9223372036854775807``
-     - ``0``
-   * - ulong
-     - uint64
-     - ``0`` to ``18446744073709551615``
-     - ``0``
-   * - short
-     - int16
+   * - int16
+     - short
      - ``-32768`` to ``32767``
      - ``0``
-   * - ushort
-     - uint16
+   * - uint16
+     - ushort
      - ``0`` to ``65535``
+     - ``0``
+   * - float32
+     - float, single
+     - precision up to seven digits
+     - ``0``
+   * - int32
+     - int
+     - ``-2147483648`` to ``2147483647``
+     - ``0``
+   * - uint32
+     - uint
+     - ``0`` to ``4294967295``
+     - ``0``
+   * - float64
+     - double
+     - precision up to fifteen digits
+     - ``0``
+   * - int64
+     - long
+     - ``-9223372036854775808`` to ``9223372036854775807``
+     - ``0``
+   * - uint64
+     - ulong
+     - ``0`` to ``18446744073709551615``
      - ``0``
    * - string
      - 
