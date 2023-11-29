@@ -17,11 +17,11 @@ The following table lists the C# built-in types, along with common aliases and d
      - Boolean
      - ``true`` or ``false``
      - ``false``
-   * - byte
-     - uint8
+   * - sbyte
+     - int8
      - ``-128`` to ``127``
      - ``0``
-   * - sbyte
+   * - byte
      - uint8
      - ``0`` to ``255``
      - ``0``
