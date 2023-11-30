@@ -10,10 +10,7 @@ In \*.asset files
 
 ``MasterBundle``: File name of the asset bundle exported from Unity. Should match the ``Asset_Bundle_Name`` configured in the ``MasterBundle.dat`` file.
 
-``AssetPath``: File path of the Unity asset e.g. \*.prefab,
-\*.mat,
-\*.png,
-\*.ogg, etc. Relative to the ``Asset_Prefix`` path configured in the ``MasterBundle.dat`` file.
+``AssetPath``: File path of the Unity asset (e.g., \*.prefab, \*.mat, \*.png, or \*.ogg files). This path is relative to the ``Asset_Prefix`` path configured in the ``MasterBundle.dat`` file.
 
 .. code-block:: cs
 	
@@ -23,7 +20,7 @@ In \*.asset files
 		"AssetPath" "path/to/file.extension"
 	}
 
-If the asset default master bundle should be used then the path can be specified inline:
+If the asset default master bundle should be used, then the path can be specified inline:
 
 .. code-block:: cs
 	

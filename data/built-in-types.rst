@@ -3,7 +3,7 @@
 C# Built-in Types
 =================
 
-The following table lists the C# built-in types, along with common aliases and default values:
+The following table lists the **C# built-in types**, along with common aliases and default values:
 
 .. list-table::
    :widths: 20 20 40 20
