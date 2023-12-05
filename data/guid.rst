@@ -3,7 +3,7 @@
 GUID
 ====
 
-Globally Unique Identifiers (**GUIDs**) are 32 hexadecimal digits used to identify assets. They are preferable to file names because the files can be moved without redirectors.
+Globally Unique Identifiers (**GUIDs**) are 32-digit hexadecimal values used to identify assets. They are preferable to file names because the files can be moved without redirectors.
 
 A useful tool for manually generating GUIDs is `guidgenerator.com <https://www.guidgenerator.com/>`_. Note that if the GUID property is omitted from an :ref:`asset definition <doc_asset_definitions>` file, then the game will automatically assign a random GUID during a successful load.
 
