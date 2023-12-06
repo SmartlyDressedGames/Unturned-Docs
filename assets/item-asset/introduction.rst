@@ -46,99 +46,531 @@ To have a sound play when the item is equipped, include an Audio Clip named "Equ
 Game Data File
 --------------
 
-**GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
+The ``GUID``, ``Type``, and ``ID`` properties are required by all item assets. Most item assets will *usually* want (or need) to include the ``Rarity``, ``Useable``, ``Slot``, ``Size_X``, and ``Size_Y`` properties as well, with only a few excepions.
 
-**Type** *enum* (``Arrest_End``, ``Arrest_Start``, ``Backpack``, ``Barrel``, ``Barricade``, ``Beacon``, ``Box``, ``Charge``, ``Cloud``, ``Compass``, ``Detonator``, ``Farm``, ``Filter``, ``Fisher``, ``Food``, ``Fuel``, ``Generator``, ``Glasses``, ``Grip``, ``Grower``, ``Gun``, ``Hat``, ``Key``, ``Library``, ``Magazine``, ``Map``, ``Mask``, ``Medical``, ``Melee``, ``Oil_Pump``, ``Optic``, ``Pants``, ``Refill``, ``Sentry``, ``Shirt``, ``Sight``, ``Storage``, ``Structure``, ``Supply``, ``Tactical``, ``Tank``, ``Throwable``, ``Tire``, ``Tool``, ``Trap``, ``Vehicle_Repair_Tool``, ``Vest``, ``Water``): Designates the item's class.
+Properties
+``````````
 
-**Rarity** *enum* (``Common``, ``Uncommon``, ``Rare``, ``Epic``, ``Legendary``, ``Mythical``): Rarity of the item, as text shown in menus and colors used for highlights. Defaults to Common rarity.
+.. list-table::
+   :widths: 40 40 20
+   :header-rows: 1
+   
+   * - Property Name
+     - Type
+     - Default Value
+   * - :ref:`Allow_Manual_Drop <doc_item_asset_intro:allow_manual_drop>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``true``
+   * - :ref:`Amount <doc_item_asset_intro:amount>`
+     - :ref:`uint8 <doc_data_builtin_types>`
+     - ``1``
+   * - :ref:`Backward <doc_item_asset_intro:backward>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``false``
+   * - :ref:`Bypass_Hash_Verification <doc_item_asset_intro:bypass_hash_verification>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``false``
+   * - :ref:`Can_Player_Equip <doc_item_asset_intro:can_player_equip>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - See description
+   * - :ref:`Can_Use_Underwater <doc_item_asset_intro:can_use_underwater>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - See description
+   * - :ref:`Count_Max <doc_item_asset_intro:count_max>`
+     - :ref:`uint8 <doc_data_builtin_types>`
+     - ``1``
+   * - :ref:`Count_Min <doc_item_asset_intro:count_min>`
+     - :ref:`uint8 <doc_data_builtin_types>`
+     - ``1``
+   * - :ref:`Destroy_Item_Colliders <doc_item_asset_intro:destroy_item_colliders>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``true``
+   * - :ref:`Equipable_Movement_Speed_Multiplier <doc_item_asset_intro:equipable_movement_speed_multiplier>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``1``
+   * - :ref:`EquipablePrefab <doc_item_asset_intro:equipableprefab>`
+     - :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`
+     - 
+   * - :ref:`EquipAudioClip <doc_item_asset_intro:equipaudioclip>`
+     - :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`
+     - ``Equip``
+   * - :ref:`GUID <doc_item_asset_intro:guid>`
+     - :ref:`doc_data_guid`
+     - 
+   * - :ref:`ID <doc_item_asset_intro:id>`
+     - :ref:`uint16 <doc_data_builtin_types>`
+     - ``0``
+   * - :ref:`Ignore_TexRW <doc_item_asset_intro:ignore_texrw>`
+     - :ref:`flag <doc_data_flag>`
+     - 
+   * - :ref:`InspectAudioDef <doc_item_asset_intro:inspectaudiodef>`
+     - :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`
+     - 
+   * - :ref:`Instantiated_Item_Name_Override <doc_item_asset_intro:instantiated_item_name_override>`
+     - :ref:`string <doc_data_builtin_types>`
+     - See description
+   * - :ref:`InventoryAudio <doc_item_asset_intro:inventoryaudio>`
+     - :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`
+     - See description
+   * - :ref:`Left_Handed_Characters_Mirror_Equipable <doc_item_asset_intro:left_handed_characters_mirror_equipable>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``true``
+   * - :ref:`Override_Show_Quality <doc_item_asset_intro:override_show_quality>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``false``
+   * - :ref:`Pro <doc_item_asset_intro:pro>`
+     - :ref:`flag <doc_data_flag>`
+     - 
+   * - :ref:`Procedurally_Animate_Inertia <doc_item_asset_intro:procedurally_animate_inertia>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``true``
+   * - :ref:`Quality_Max <doc_item_asset_intro:quality_max>`
+     - :ref:`uint8 <doc_data_builtin_types>`
+     - ``90``
+   * - :ref:`Quality_Min <doc_item_asset_intro:quality_min>`
+     - :ref:`uint8 <doc_data_builtin_types>`
+     - ``10``
+   * - :ref:`Rarity <doc_item_asset_intro:rarity>`
+     - :ref:`doc_data_eitemrarity`
+     - ``Common``
+   * - :ref:`Shared_Skin_Lookup_ID <doc_item_asset_intro:shared_skin_lookup_id>`
+     - :ref:`uint16 <doc_data_builtin_types>`
+     - See description
+   * - :ref:`Should_Delete_At_Zero_Quality <doc_item_asset_intro:should_delete_at_zero_quality>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``false``
+   * - :ref:`Should_Drop_On_Death <doc_item_asset_intro:should_drop_on_death>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``true``
+   * - :ref:`Size_X <doc_item_asset_intro:size_x>`
+     - :ref:`uint8 <doc_data_builtin_types>`
+     - ``1``
+   * - :ref:`Size_Y <doc_item_asset_intro:size_y>`
+     - :ref:`uint8 <doc_data_builtin_types>`
+     - ``1``
+   * - :ref:`Size_Z <doc_item_asset_intro:size_z>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``-1``
+   * - :ref:`Size2_Z <doc_item_asset_intro:size2_z>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``-1``
+   * - :ref:`Slot <doc_item_asset_intro:slot>`
+     - :ref:`doc_data_eslottype`
+     - ``None``
+   * - :ref:`Type <doc_item_asset_intro:type>`
+     - :ref:`doc_data_eitemtype`
+     - 
+   * - :ref:`Use_Auto_Icon_Measurements <doc_item_asset_intro:use_auto_icon_measurements>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``true``
+   * - :ref:`Use_Auto_Stat_Descriptions <doc_item_asset_intro:use_auto_stat_descriptions>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``true``
+   * - :ref:`Useable <doc_item_asset_intro:useable>`
+     - :ref:`EUseableType <doc_item_asset_intro:euseabletype>`
+     - ``None``
 
-**Useable** *enum*: Class for how to treat equippable items. Defaults to None.
+.. _doc_item_asset_intro:euseabletype:
 
-**Slot** *enum* (``Any``, ``None``, ``Primary``, ``Secondary``, ``Tertiary``): Which equipped item slot the item is valid to be equippable in. Primary restricts the item to the primary slot, and prevents the use of hotkeying. Secondary restricts the item to the primary or secondary slots, and prevents the use of hotkeying. Any has no restrictions on slots or hotkeying. Defaults to None.
+EUseableType Enumeration
+````````````````````````
 
-**ID** *uint16*: Must be a unique identifier.
+.. list-table::
+   :widths: 25 75
+   :header-rows: 1
+   
+   * - Named Value
+     - Description
+   * - ``None``
+     - Does not correspond to any useable type.
+   * - ``Clothing``
+     - Corresponds to the "Clothing" useable type.
+   * - ``Gun``
+     - Corresponds to the "Gun" useable type.
+   * - ``Consumeable``
+     - Corresponds to the "Consumeable" useable type.
+   * - ``Melee``
+     - Corresponds to the "Melee" useable type.
+   * - ``Fuel``
+     - Corresponds to the "Fuel" useable type.
+   * - ``Carjack``
+     - Corresponds to the "Carjack" useable type.
+   * - ``Barricade``
+     - Corresponds to the "Barricade" useable type.
+   * - ``Structure``
+     - Corresponds to the "Structure" useable type.
+   * - ``Throwable``
+     - Corresponds to the "Throwable" useable type.
+   * - ``Grower``
+     - Corresponds to the "Grower" useable type.
+   * - ``Optic``
+     - Corresponds to the "Optic" useable type.
+   * - ``Refill``
+     - Corresponds to the "Refill" useable type.
+   * - ``Fisher``
+     - Corresponds to the "Fisher" useable type.
+   * - ``Cloud``
+     - Corresponds to the "Cloud" useable type.
+   * - ``Arrest_Start``
+     - Corresponds to the "Arrest_Start" useable type.
+   * - ``Arrest_End``
+     - Corresponds to the "Arrest_End" useable type.
+   * - ``Detonator``
+     - Corresponds to the "Detonator" useable type.
+   * - ``Filter``
+     - Corresponds to the "Filter" useable type.
+   * - ``Carlockpick``
+     - Corresponds to the "Carlockpick" useable type.
 
-Inventory Properties
-````````````````````
+Property Descriptions
+`````````````````````
 
-**Size_X** *byte*: Width in inventory, in slots. Defaults to 1.
+.. _doc_item_asset_intro:allow_manual_drop:
 
-**Size_Y** *byte*: Height in inventory, in slots. Defaults to 1.
+Allow_Manual_Drop :ref:`bool <doc_data_builtin_types>` ``true``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-**Size_Z** *float*: Manually specify orthogonal camera size for item icons. This directly corresponds to the value of a Camera component's Size property in Unity. Defaults to -1.
+Item can be manually dropped by the player.
 
-**Use_Auto_Icon_Measurements** *bool*: Automatically calculate axis-aligned item icon camera size from bounds. Defaults to true.
+----
 
-**Can_Player_Equip** *bool*: Item can be equipped by the player. If the Useable property has been set, then defaults to true. Otherwise, defaults to false.
+.. _doc_item_asset_intro:amount:
 
-**Can_Use_Underwater** *bool*: Item can be used while underwater. If the Slot property has not been set to Primary, then defaults to true. Otherwise, defaults to false.
+Amount :ref:`uint8 <doc_data_builtin_types>` ``1``
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
-**Should_Drop_On_Death** *bool*: Item should be dropped on death. Defaults to true.
+Maximum capacity for container-like items, such as ammunition boxes. Typically used with ``Count_Min`` and ``Count_Max``.
 
-**Allow_Manual_Drop** *bool*: Item can be manually dropped by the player. Defaults to true.
+----
 
-**InspectAudioDef** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: AudioClip or OneShotAudioDefinition to play when item is inspected.
+.. _doc_item_asset_intro:backward:
 
-**InventoryAudio** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: AudioClip or OneShotAudioDefinition to play when item is picked up, moved within the inventory, and dropped. Default value is dependent on the child asset.
+Backward :ref:`bool <doc_data_builtin_types>` ``false``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-**Procedurally_Animate_Inertia** *bool*: Whether viewmodel should accumulate angular velocity from animations. Useful for low-quality older animations, but should probably be disabled for high-quality newer animations.
+Set the item to be held in the character's non-dominant hand.
 
-**Equipable_Movement_Speed_Multiplier** *float*: Multiplies character movement speed while equipped in the player's hands. If a gun is equipped, then any gun attachment multipliers are combined as well.
+----
 
-**EquipAudioClip** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: AudioClip to play when equipping.
+.. _doc_item_asset_intro:bypass_hash_verification:
 
-Economy
-```````
+Bypass_Hash_Verification :ref:`bool <doc_data_builtin_types>` ``false``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-**Size2_Z** *float*: Orthogonal camera size for economy icons. Defaults to -1.
+Disable hash verification check, and allow for mismatched files.
 
-**Pro** *flag*: Specified if this is an economy item.
+----
 
-**Shared_Skin_Lookup_ID** *uint16*: Share skins with another item. Defaults to item ID.
+.. _doc_item_asset_intro:can_player_equip:
 
-Container
-`````````
+Can_Player_Equip :ref:`bool <doc_data_builtin_types>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-**Amount** *byte*: Maximum capacity for container-like items, such as ammunition boxes. Defaults to 1.
+Item can be equipped by the player. If the ``Useable`` property has been set, then this defaults to ``true``. Otherwise, this defaults to ``false``.
 
-**Count_Min** *byte*: Minimum amount to generate, for container-like items. Defaults to 1.
+----
 
-**Count_Max** *byte*: Maximum amount to generate, for container-like items. Defaults to 1.
+.. _doc_item_asset_intro:can_use_underwater:
 
-Quality
-```````
+Can_Use_Underwater :ref:`bool <doc_data_builtin_types>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-**Quality_Min** *byte*: Minimum quality to generate. Defaults to 10.
+Item can be used while underwater. If the ``Slot`` property has *not* been set to ``Primary``, then this defaults to ``true``. Otherwise, this defaults to ``false``.
 
-**Quality_Max** *byte*: Maximum quality to generate. Defaults to 90.
+----
 
-**Should_Delete_At_Zero_Quality** *bool*: Item should be deleted when at 0% quality. Defaults to false.
+.. _doc_item_asset_intro:count_max:
 
-**Override_Show_Quality** *bool*: Override to forcefully show item quality. Defaults to false.
+Count_Min :ref:`uint8 <doc_data_builtin_types>` ``1``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Miscellaneous
-`````````````
+Minimum amount to generate, for container-like items. Typically used with ``Count_Max`` and ``Amount``.
 
-**Backward** *bool*: Set the item to be held in the non-dominant hand. Defaults to false.
+----
 
-**Bypass_Hash_Verification** *bool*: Disable hash verification check, and allow for mismatched files. Defaults to false.
+.. _doc_item_asset_intro:count_min:
 
-**Destroy_Item_Colliders** *bool*: If false, colliders are not destroyed when the "Item" Prefab is attached to the character. For example: equipped vanilla guns do not have any colliders, but some mods (e.g., riot shields) may have relied on child colliders not being destroyed. Defaults to true.
+Count_Max :ref:`uint8 <doc_data_builtin_types>` ``1``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-**EquipablePrefab** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: Overrides the model spawned when this item is equipped. For example, the "Equipable" Prefab could use an animated skinned mesh component while the regular "Item" Prefab only needs a static mesh component.
+Maximum amount to generate, for container-like items. Typically used with ``Count_Min`` and ``Amount``.
 
-**Ignore_TexRW** *flag*: Specified if read/writeable texture errors for the asset should be hidden from the error logs.
+----
 
-**Left_Handed_Characters_Mirror_Equipable** *bool*: If false, the equipped item model is mirrored to counteract the mirrored character. Defaults to true.
+.. _doc_item_asset_intro:destroy_item_colliders:
 
-**Instantiated_Item_Name_Override** *string*: Name to use when instantiating "Item" Prefab. By default, the legacy 16-bit asset ID is used. Since Unity's built-in Animation component references GameObjects by name, this property can help share animations between items.
+Destroy_Item_Colliders :ref:`bool <doc_data_builtin_types>` ``true``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-**Use_Auto_Stat_Descriptions** *bool*: If true, properties like damage, storage, health, etc. are appended to the description. Defaults to true.
+If ``false``, colliders are not destroyed when the "Item" Prefab is attached to the character. For example equipped vanilla guns do not have any colliders, but some mods (e.g., riot shields) may have relied on child colliders not being destroyed.
+
+----
+
+.. _doc_item_asset_intro:equipable_movement_speed_multiplier:
+
+Equipable_Movement_Speed_Multiplier :ref:`float32 <doc_data_builtin_types>` ``1``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Multiplies character movement speed while equipped in the player's hands. If a gun is equipped, then any gun attachment multipliers are combined as well.
+
+----
+
+.. _doc_item_asset_intro:equipableprefab:
+
+EquipablePrefab :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Overrides the model spawned when this item is equipped. For example, the "Equipable" Prefab could use an animated skinned mesh component while the regular "Item" Prefab only needs a static mesh component.
+
+----
+
+.. _doc_item_asset_intro:equipaudioclip:
+
+EquipAudioClip :ref:`Master Bundle Pointer <doc_data_masterbundleptr>` ``Equip``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+AudioClip to play when equipping.
+
+----
+
+.. _doc_item_asset_intro:guid:
+
+GUID :ref:`doc_data_guid`
+:::::::::::::::::::::::::
+
+Refer to :ref:`GUID <doc_data_guid>` documentation. Item assets are required to have this property.
+
+----
+
+.. _doc_item_asset_intro:id:
+
+ID :ref:`uint16 <doc_data_builtin_types>` ``0``
+:::::::::::::::::::::::::::::::::::::::::::::::
+
+Must be a unique identifier. Item assets are required to have this property.
+
+----
+
+.. _doc_item_asset_intro:ignore_texrw:
+
+Ignore_TexRW :ref:`flag <doc_data_flag>`
+::::::::::::::::::::::::::::::::::::::::
+
+Read/writeable texture errors regarding this asset should be hidden from the error logs.
+
+----
+
+.. _doc_item_asset_intro:inspectaudiodef:
+
+InspectAudioDef :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+AudioClip or OneShotAudioDefinition to play when item is inspected.
+
+----
+
+.. _doc_item_asset_intro:instantiated_item_name_override:
+
+Instantiated_Item_Name_Override :ref:`string <doc_data_builtin_types>`
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Name to use when instantiating "Item" Prefab. By default, the value of ``ID`` is used. Since Unity's built-in Animation component references GameObjects by name, this property can help share animations between items.
+
+----
+
+.. _doc_item_asset_intro:inventoryaudio:
+
+InventoryAudio :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+AudioClip or OneShotAudioDefinition to play when item is picked up, moved within the inventory, and dropped. Default value is dependent on the child asset.
+
+----
+
+.. _doc_item_asset_intro:left_handed_characters_mirror_equipable:
+
+Left_Handed_Characters_Mirror_Equipable :ref:`bool <doc_data_builtin_types>` ``true``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If ``false``, the equipped item model is mirrored to counteract the mirrored character.
+
+----
+
+.. _doc_item_asset_intro:override_show_quality:
+
+
+Override_Show_Quality :ref:`bool <doc_data_builtin_types>` ``false``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Override to forcefully show item quality.
+
+----
+
+.. _doc_item_asset_intro:pro:
+
+Pro :ref:`flag <doc_data_flag>`
+:::::::::::::::::::::::::::::::
+
+This is a Steam Economy item.
+
+----
+
+.. _doc_item_asset_intro:procedurally_animate_inertia:
+
+
+Procedurally_Animate_Inertia :ref:`bool <doc_data_builtin_types>` ``true``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Whether viewmodel should accumulate angular velocity from animations. Useful for low-quality older animations, but should probably be disabled for high-quality newer animations.
+
+----
+
+.. _doc_item_asset_intro:quality_max:
+
+
+Quality_Max :ref:`uint8 <doc_data_builtin_types>` ``90``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Maximum quality to generate.  Typically used with ``Quality_Min``.
+
+----
+
+.. _doc_item_asset_intro:quality_min:
+
+
+Quality_Min :ref:`uint8 <doc_data_builtin_types>` ``10``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Minimum quality to generate.  Typically used with ``Quality_Max``.
+
+----
+
+.. _doc_item_asset_intro:rarity:
+
+
+Rarity :ref:`doc_data_eitemrarity` ``Common``
+:::::::::::::::::::::::::::::::::::::::::::::
+
+Rarity of the item, as text shown in menus and colors used for highlights.
+
+----
+
+.. _doc_item_asset_intro:shared_skin_lookup_id:
+
+Shared_Skin_Lookup_ID :ref:`uint16 <doc_data_builtin_types>`
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Share skins with another item. Defaults to item's ``ID``.
+
+----
+
+.. _doc_item_asset_intro:should_delete_at_zero_quality:
+
+Should_Delete_At_Zero_Quality :ref:`bool <doc_data_builtin_types>` ``false``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Item should be deleted when at 0% quality.
+
+----
+
+.. _doc_item_asset_intro:should_drop_on_death:
+
+Should_Drop_On_Death :ref:`bool <doc_data_builtin_types>` ``true``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Item should be dropped on death.
+
+----
+
+.. _doc_item_asset_intro:size_x:
+
+Size_X :ref:`uint8 <doc_data_builtin_types>` ``1``
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+In slots, the total width of the inventory space (i.e., the number of columns).
+
+----
+
+.. _doc_item_asset_intro:size_y:
+
+Size_Y :ref:`uint8 <doc_data_builtin_types>` ``1``
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+In slots, the total height of the inventory space (i.e., the number of rows).
+
+----
+
+.. _doc_item_asset_intro:size_z:
+
+Size_Z :ref:`float32 <doc_data_builtin_types>` ``-1``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Manually specify orthogonal camera size for item icons. This directly corresponds to the value of a Camera component's Size property in Unity.
+
+----
+
+.. _doc_item_asset_intro:size2_z:
+
+Size2_Z :ref:`float32 <doc_data_builtin_types>` ``-1``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Orthogonal camera size for economy icons.
+
+----
+
+.. _doc_item_asset_intro:slot:
+
+Slot :ref:`doc_data_eslottype` ``None``
+:::::::::::::::::::::::::::::::::::::::
+
+Which equipped item slot an item is valid to be equippable in. This is only relevant if your property has configured the ``Useable`` property.
+
+- ``None`` restricts the useable item to hotkeys.
+- ``Primary`` restricts the useable item to the primary slot.
+- ``Secondary`` restricts the useable item to the primary or secondary slots.
+- ``Tertiary`` is not implemented by this asset.
+- ``Any`` has no restrictions on slots or hotkeying.
+
+----
+
+.. _doc_item_asset_intro:type:
+
+Type :ref:`doc_data_eitemtype`
+::::::::::::::::::::::::::::::
+
+Designates the item's class. Item assets are required to have this property.
+
+----
+
+.. _doc_item_asset_intro:use_auto_icon_measurements:
+
+Use_Auto_Icon_Measurements :ref:`bool <doc_data_builtin_types>` ``true``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Automatically calculate axis-aligned item icon camera size from bounds.
+
+----
+
+.. _doc_item_asset_intro:use_auto_stat_descriptions:
+
+Use_Auto_Stat_Descriptions :ref:`bool <doc_data_builtin_types>` ``true``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If true, properties like damage, storage, health, etc. are appended to the description.
+
+----
+
+.. _doc_item_asset_intro:useable:
+
+Useable :ref:`doc_item_asset_intro:euseabletype` ``None``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Class for how to treat equippable items. This is often used with the ``Slot`` property, which determines which item slots an item is equippable in.
 
 Blueprints and Actions
 ``````````````````````
 
-Items can have crafting blueprints and context menu actions. Refer to :ref:`Blueprints <doc_item_asset_blueprints>` and :ref:`Actions <doc_item_asset_actions>` for documentation.
+In addition to the properties already described, item assets can utilize properties for :ref:`crafting blueprints <doc_item_asset_blueprints>` and :ref:`context menu actions <doc_item_asset_actions>`.
 
 Localization
 ------------
