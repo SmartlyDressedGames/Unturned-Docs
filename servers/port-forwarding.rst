@@ -3,7 +3,9 @@
 Port Forwarding
 ===============
 
-When hosting a server on a home network **port forwarding** or :ref:`tunneling <doc_servers_port_forwarding:tunneling>` is required in order to direct traffic to the host computer. One way to think of it is that when there are multiple devices (e.g. computers and phones) connected to the LAN, the outside internet does not know which device is the Unturned server. In this case port forwarding specifies which LAN device is the host.
+.. note:: After the 3.23.14.0 update, port forwarding is no longer necessary to make a server accessible over the Internet. It's only required if you want players to be able to join directly by IP and/or domain name.
+
+When hosting a server on a home network **port forwarding** is required in order to direct traffic to the host computer. One way to think of it is that when there are multiple devices (e.g. computers and phones) connected to the LAN, the outside Internet does not know which device is the Unturned server. In this case port forwarding specifies which LAN device is the host.
 
 Two pieces of information: the port range and local device address are required prior to port forwarding, and are described in detail below.
 
@@ -54,19 +56,3 @@ In general the steps are along the lines of:
 8. Set destination internal IP to the local host address.
 
 9. Save the new rule.
-
-.. _doc_servers_port_forwarding:tunneling:
-
-Tunneling
----------
-
-Alternatively, rather than port forwarding, it is possible to use third party service like `playit.gg <https://playit.gg/about>`_ to tunnel connections to the server. Unturned is unaffiliated with playit.gg. Their service is free and supported by the purchase of custom domains / dedicated IPs. They submitted these instructions:
-
-To create a tunnel for Unturned using playit.gg:
-
-1. Create a custom tunnel with port type ``TCP+UDP``
-2. For port count, enter ``2``
-3. Leave everything else as the default and create the tunnel
-4. Find the assigned port for your tunnel
-5. Update your server's ``Commands.dat`` file and set ``Port <assigned port>`` (replace ``<assigned port>``)
-6. Connect using your playit address (``something-random.at.ply.gg:<assigned port>``)

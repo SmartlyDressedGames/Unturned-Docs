@@ -118,10 +118,8 @@ How to Launch Server on Windows
 3. Rename the "New Text Document.txt" file, and change it from a text file (.txt) to a batch script file (.bat). For example, "Tutorial.bat".
 4. Right-click on the batch script (``Tutorial.bat``) and select Edit. This will open the batch file in your default text editor, although any text editor (e.g., Notepad, WordPad, Notepad++) can be used.
 5. Add the script that will start your server when the batch script is ran.
-	* For an internet server, copy-and-paste the following text into the file: ``start "" "%~dp0ServerHelper.bat" +InternetServer/MyServer``
+	* For an Internet server, copy-and-paste the following text into the file: ``start "" "%~dp0ServerHelper.bat" +InternetServer/MyServer``
 	* For a LAN server, copy-and-paste the following text into the file: ``start "" "%~dp0ServerHelper.bat" +LanServer/MyServer``
-
-	*Note: running an internet server will require opening ports on your router (this is called "port forwarding").*
 
 	In this example "MyServer" is used as the ServerID for savedata and configuration purposes; you may choose to replace "MyServer" with a different name. For an example batch script, open the built-in ``ExampleServer.bat`` file in a text editor.
 
@@ -134,7 +132,7 @@ How to Launch Server on Windows
 
 9. The batch script has created a new file directory located in ``...\U3DS\Servers``, called "MyServer". This directory is where all the savedata and configuration files are kept. Changing the `MyServer` ServerID (from step 5) in the batch script to a different name will allow for keeping savedata separate across multiple servers, and for running multiple servers at once.
 
-10. (optional) For your server to be visible on the in-game internet server list you will need to set a :ref:`Login Token <doc_servers_gslt>` and configure :ref:`Port Forwarding <doc_servers_port_forward>`.
+10. (optional) For your server to be visible on the in-game Internet server list you will need to set a :ref:`Login Token <doc_servers_gslt>` and configure :ref:`Port Forwarding <doc_servers_port_forward>`.
 
 .. _doc_server_hosting:launch_server_linux:
 
@@ -143,10 +141,8 @@ How to Launch Server on Linux
 
 1. Navigate to the ``.../SteamCMD/steamapps/common\U3DS`` directory.
 2. To create our server, we need to execute a command.
-	* For an internet server run the following command: ``./ServerHelper.sh +InternetServer/MyServer``
+	* For an Internet server run the following command: ``./ServerHelper.sh +InternetServer/MyServer``
 	* For a LAN server run the following command: ``./ServerHelper.sh +LanServer/MyServer``
-
-	*Note: running an internet server will require opening ports on your router (this is called "port forwarding").*
 
 	In this example "MyServer" is used as the ServerID for savedata and configuration purposes; you may choose to replace "MyServer" with a different name. For an example script, open the built-in ``ExampleServer.sh`` file in a text editor.
 
@@ -154,7 +150,7 @@ How to Launch Server on Linux
 
 4. The executed command has created a new file directory located in ``.../U3DS/Servers``, called "MyServer". This directory is where all the savedata and configuration files are kept. Changing the ``MyServer`` ServerID (from step 2) in the batch script to a different name will allow for keeping savedata separate across multiple servers, and for running multiple servers at once.
 
-5. (optional) For your server to be visible on the in-game internet server list you will need to set a :ref:`Login Token <doc_servers_gslt>` and configure :ref:`Port Forwarding <doc_servers_port_forward>`.
+5. (optional) For your server to be visible on the in-game Internet server list you will need to set a :ref:`Login Token <doc_servers_gslt>` and configure :ref:`Port Forwarding <doc_servers_port_forward>`.
 
 .. _doc_server_hosting:configure_server:
 
@@ -263,10 +259,8 @@ Alphabetically sorted list of curated map file IDs:
 How to Host Over Internet
 -------------------------
 
-Hosting a publicly-accessible internet server requires an extra step compared to a LAN server. When on a home network :ref:`Port Forwarding <doc_servers_port_forward>` is required in order to direct traffic to the host computer.
+By default, your friends can join your server using its Server Code in the Connect menu.
 
-One way to think of it is that when there are multiple devices (e.g. computers and phones) connected to the LAN, the outside internet does not know which device is the Unturned server. In this case port forwarding specifies which LAN device is the host.
+.. note:: Without a :ref:`Login Token <doc_servers_gslt>` the Server Code will change each time your server restarts.
 
-For port ranges and other details: :ref:`Port Forwarding <doc_servers_port_forward>`.
-
-Listing your server on the in-game internet server list requires a :ref:`Login Token <doc_servers_gslt>` to be set.
+For your server to be visible on the in-game Internet server list you will need to set a :ref:`Login Token <doc_servers_gslt>` and configure :ref:`Port Forwarding <doc_servers_port_forward>`.
