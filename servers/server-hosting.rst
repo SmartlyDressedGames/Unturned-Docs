@@ -59,13 +59,13 @@ How to Install Server using SteamCMD
 1. Login to Steam anonymously:
 
 .. code-block:: bash
-	
+
 	login anonymous
 
 2. Download the server:
 
 .. code-block:: bash
-	
+
 	app_update 1110390
 
 *Note: this command can also be used to update the server.*
@@ -73,7 +73,7 @@ How to Install Server using SteamCMD
 3. Close SteamCMD:
 
 .. code-block:: bash
-	
+
 	quit
 
 4. The server files are now in the ``...SteamCMD\steamapps\common\U3DS`` directory.
@@ -113,7 +113,7 @@ How to Launch Server on Windows
 	1. **If the file name does not display the ``.txt`` file extension, then you need to enable the viewing of "File name extensions".**
 	2. At the top of the File Explorer window, navigate to the View tab on the ribbon.
 	3. In the Show/hide section of options, ensure that the "File name extensions" box is checked.
-	
+
 	.. image:: img/FileNameExtensions.jpg
 
 	4. File extensions should now be displayed at the end of file names.
@@ -134,7 +134,7 @@ How to Launch Server on Windows
 
 9. The batch script has created a new file directory located in ``...\U3DS\Servers``, called "MyServer". This directory is where all the savedata and configuration files are kept. Changing the `MyServer` ServerID (from step 5) in the batch script to a different name will allow for keeping savedata separate across multiple servers, and for running multiple servers at once.
 
-10. (optional) For your server to be visible on the in-game Internet server list you will need to set a :ref:`Login Token <doc_servers_gslt>` and configure :ref:`Port Forwarding <doc_servers_port_forward>`.
+10. (optional) For your server to be visible on the in-game Internet server list you will need to set a :ref:`Login Token <doc_servers_gslt>` and configure :ref:`Fake IP <doc_servers_fake_ip>` or :ref:`Port Forwarding <doc_servers_port_forward>`.
 
 .. _doc_server_hosting:launch_server_linux:
 
@@ -152,7 +152,7 @@ How to Launch Server on Linux
 
 4. The executed command has created a new file directory located in ``.../U3DS/Servers``, called "MyServer". This directory is where all the savedata and configuration files are kept. Changing the ``MyServer`` ServerID (from step 2) in the batch script to a different name will allow for keeping savedata separate across multiple servers, and for running multiple servers at once.
 
-5. (optional) For your server to be visible on the in-game Internet server list you will need to set a :ref:`Login Token <doc_servers_gslt>` and configure :ref:`Port Forwarding <doc_servers_port_forward>`.
+5. (optional) For your server to be visible on the in-game Internet server list you will need to set a :ref:`Login Token <doc_servers_gslt>` and configure :ref:`Fake IP <doc_servers_fake_ip>` or :ref:`Port Forwarding <doc_servers_port_forward>`.
 
 .. _doc_server_hosting:configure_server:
 
@@ -173,7 +173,7 @@ Common useful commands are:
 Examples:
 
 .. code-block:: c#
-	
+
 	Map PEI
 	Map Washington
 	Map Russia
@@ -183,7 +183,7 @@ Examples:
 Examples:
 
 .. code-block:: c#
-	
+
 		Port 27015
 		Port 27017
 
@@ -201,14 +201,14 @@ To include a Workshop file on your server:
 2. Copy the file ID from the end of the URL.
 
 .. code-block:: c#
-	
+
 	URL: https://steamcommunity.com/sharedfiles/filedetails/?id=1753134636
 	ID: 1753134636
 
 3. Insert the file ID into the File_IDs list:
 
 .. code-block:: c#
-	
+
 	"File_IDs":
 	[
 		1753134636
@@ -217,7 +217,7 @@ To include a Workshop file on your server:
 Multiple file IDs should be separated by commas:
 
 .. code-block:: c#
-	
+
 	"File_IDs":
 	[
 		1753134636,
@@ -261,8 +261,11 @@ Alphabetically sorted list of curated map file IDs:
 How to Host Over Internet
 -------------------------
 
-By default, your friends can join your server using its :ref:`Server Code <doc_servers_server_codes>` in the Connect menu without :ref:`port forwarding <doc_servers_port_forward>`.
+By default, your friends can join your server over the Internet using its :ref:`Server Code <doc_servers_server_codes>` in the Connect menu without port forwarding.
+
+For your server to be visible on the in-game Internet server list you will need to:
+
+#. Set a :ref:`Login Token <doc_servers_gslt>`.
+#. Configure :ref:`Fake IP <doc_servers_fake_ip>` or :ref:`Port Forwarding <doc_servers_port_forward>`.
 
 .. note:: Without a :ref:`Login Token <doc_servers_gslt>` the Server Code will change each time your server restarts.
-
-For your server to be visible on the in-game Internet server list you will need to set a :ref:`Login Token <doc_servers_gslt>` and configure :ref:`Port Forwarding <doc_servers_port_forward>`.
