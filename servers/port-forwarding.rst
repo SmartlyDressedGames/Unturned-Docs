@@ -3,7 +3,7 @@
 Port Forwarding
 ===============
 
-.. note:: After the 3.23.14.0 update, port forwarding is no longer necessary to make a server accessible over the Internet. It's only required if you want players to be able to join directly by IP and/or domain name.
+.. note:: After the 3.23.14.0 update, port forwarding is no longer necessary to make a server accessible over the Internet. It's only required if you want players to be able to join directly by IP and/or domain name. For more information on the new alternatives to port forwarding, please refer to :ref:`Server Codes <doc_servers_server_codes>` and :ref:`Fake IP <doc_servers_fake_ip>`.
 
 When hosting a server on a home network **port forwarding** is required in order to direct traffic to the host computer. One way to think of it is that when there are multiple devices (e.g. computers and phones) connected to the LAN, the outside Internet does not know which device is the Unturned server. In this case port forwarding specifies which LAN device is the host.
 

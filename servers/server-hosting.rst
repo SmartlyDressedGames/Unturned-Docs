@@ -17,6 +17,8 @@ All multiplayer servers are hosted using the Unturned Dedicated Server tool (som
 - :ref:`Login Tokens <doc_servers_gslt>`
 - :ref:`Update Notifications <doc_server_update_notifications>`
 - :ref:`Rules and Guidelines <doc_server_hosting_rules>`
+- :ref:`Server Codes <doc_servers_server_codes>`
+- :ref:`Fake IP <doc_servers_fake_ip>`
 
 **Windows:**
 
@@ -259,7 +261,7 @@ Alphabetically sorted list of curated map file IDs:
 How to Host Over Internet
 -------------------------
 
-By default, your friends can join your server using its Server Code in the Connect menu.
+By default, your friends can join your server using its :ref:`Server Code <doc_servers_server_codes>` in the Connect menu without :ref:`port forwarding <doc_servers_port_forward>`.
 
 .. note:: Without a :ref:`Login Token <doc_servers_gslt>` the Server Code will change each time your server restarts.
 

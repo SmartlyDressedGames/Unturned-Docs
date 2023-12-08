@@ -112,15 +112,17 @@ Anyone can contribute towards the *Unturned* modding documentation! To submit an
 	:hidden:
 	:maxdepth: 1
 	:caption: Servers & Programming
-	
+
 	servers/command-io
 	servers/debugging-exceptions
 	servers/dedicated-workshop-update-monitor
+	servers/fake-ip
 	servers/game-server-login-tokens
 	servers/glazier
 	servers/openmod
 	servers/port-forwarding
 	servers/rocket
+	servers/server-codes
 	servers/server-hosting
 	servers/server-hosting-rules
 	servers/server-update-notifications
