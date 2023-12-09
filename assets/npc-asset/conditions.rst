@@ -215,6 +215,8 @@ Quest
 
 **Condition\_#\_Status** *enum* (``None``, ``Active``, ``Ready``, ``Completed``): Current state of the quest.
 
+**Condition\_#\_Logic** *enum* (``Equal``, ``Not_Equal``): Compare current state to target state.
+
 **Condition\_#\_Ignore\_NPC** *flag*: Player does not need to be talking to an NPC within 20 meters for the quest to be completable and turned in.
 
 Reputation
