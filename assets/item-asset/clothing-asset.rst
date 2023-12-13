@@ -16,6 +16,10 @@ Clothing Asset Properties
 
 **Destroy_Clothing_Colliders** *bool*: If false, colliders are not destroyed when the clothing is attached to the character. For example equipped vanilla clothes do not have any colliders, but some mods (e.g., armor with hitbox) may have relied on child colliders not being destroyed. Defaults to true.
 
+**Falling_Damage_Multiplier** *float*: Multiplier on damage received from falling. Defaults to 1.
+
+**Prevents_Falling_Broken_Bones** *bool*: If true on any worn clothing item, bones never break when falling. Defaults to false.
+
 **Priority_Over_Cosmetic** *bool*: If set, overrides the default cosmetic override behavior. By default, night vision goggles and headlamps take priority over cosmetics in the same slot. If true, the in-game item is shown rather than a cosmetic in the same slot.
 
 **Proof_Water** *flag*: Specified if it should exhibit the waterproof property. Only applicable to backpacks and glasses. When waterproof glasses are worn, the player will not have their screen blurred while underwater. When a waterproof backpack and waterproof glasses are worn together, the player's oxygen will deplete at a greatly reduced rate when underwater.
