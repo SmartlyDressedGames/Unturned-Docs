@@ -178,6 +178,8 @@ Battery
 
 **Cannot_Spawn_With_Battery** *flag*: The vehicle does not spawn with a vehicle battery.
 
+**Default_Battery** *guid*: Battery item given to the player when a specific battery hasn't been manually installed yet. Defaults to the vanilla car battery (098b13be34a7411db7736b7f866ada69).
+
 Stamina
 ```````
 
