@@ -7,6 +7,9 @@
 	:maxdepth: 1
 	
 	ebatterymode
+	eitemrarity
+	eitemtype
 	elightingvision
 	enpcholiday
 	eobjectchart
+	eslottype
