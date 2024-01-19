@@ -340,6 +340,10 @@ GUID :ref:`doc_data_guid`
 
 Refer to :ref:`GUID <doc_data_guid>` documentation. Item assets are required to have this property.
 
+.. tip::
+
+  If the GUID property has been omitted from the asset file, then the game will automatically attempt to assign a random (and unique) GUID during a successful load.
+
 ----
 
 .. _doc_item_asset_intro:id:

@@ -72,7 +72,7 @@ Intensity of the light source's beam.
 
 .. _doc_data_playerspotlightconfig:spotlight_color:
 
-SpotLight_Color :ref:`color <doc_data_file_format>` ``#f5df93``
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+SpotLight_Color :ref:`color <doc_data_color>` ``#f5df93``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Color of the light source's beam.
