@@ -7,24 +7,96 @@ Tactical attachments are inventory items that can be attached to ranged weapons.
 
 This inherits the :ref:`CaliberAsset <doc_item_asset_caliber>` class.
 
-Item Asset Properties
----------------------
+Game Data File
+--------------
 
-**GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
+Tactical attachments inherit properties from the CaliberAsset class, which in turn inherits properties from the ItemAsset class. Properties that are required to be included are listed in the table below.
 
-**Type** *enum* (``Tactical``)
+.. list-table::
+   :widths: 30 40 30
+   :header-rows: 1
+   
+   * - Class
+     - Property Name
+     - Required Value
+   * - :ref:`ItemAsset <doc_item_asset_intro>`
+     - :ref:`GUID <doc_item_asset_intro:guid>`
+     - 
+   * - :ref:`ItemAsset <doc_item_asset_intro>`
+     - :ref:`ID <doc_item_asset_intro:id>`
+     - 
+   * - :ref:`ItemAsset <doc_item_asset_intro>`
+     - :ref:`Type <doc_item_asset_intro:type>`
+     - ``Tactical``
 
-**ID** *uint16*: Must be a unique identifier.
+Properties
+``````````
 
-Tactical Asset Properties
--------------------------
+.. list-table::
+   :widths: 40 40 20
+   :header-rows: 1
+   
+   * - Property Name
+     - Type
+     - Default Value
+   * - :ref:`Laser <doc_item_asset_tactical:laser>`
+     - :ref:`flag <doc_data_flag>`
+     - 
+   * - :ref:`Laser_Color <doc_item_asset_tactical:laser_color>`
+     - :ref:`color <doc_data_color>`
+     - ``#FF0000``
+   * - :ref:`Light <doc_item_asset_tactical:light>`
+     - :ref:`flag <doc_data_builtin_types>`
+     - 
+   * - :ref:`Melee <doc_item_asset_tactical:melee>`
+     - :ref:`flag <doc_data_flag>`
+     - 
+   * - :ref:`Rangefinder <doc_item_asset_tactical:rangefinder>`
+     - :ref:`flag <doc_data_flag>`
+     - 
 
-**Laser** *flag*: Provides a toggleable laser.
+Property Descriptions
+`````````````````````
 
-**Laser_Color** :ref:`color <doc_data_file_format>`: Overrides the default red color. When using the legacy color parsing, the ``_R``, ``_G``, and ``_B`` keys are floats within the range of [0, 1].
+.. _doc_item_asset_tactical:laser:
 
-**Light** *flag*: Provides a toggleable flashlight, and allows for using :ref:`PlayerSpotLightConfig <doc_data_playerspotlightconfig>` properties.
+Laser :ref:`flag <doc_data_flag>`
+:::::::::::::::::::::::::::::::::
 
-**Melee** *flag*: Provides the ability to perform a melee attack, dealing 40 damage. This damage value is not configurable.
+Provides a toggleable laser.
 
-**Rangefinder** *flag*: Provides a toggleable rangefinder.
+----
+
+.. _doc_item_asset_tactical:laser_color:
+
+Laser_Color :ref:`color <doc_data_color>` ``#FF0000``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Override the default red color with the specified value. This property supports using legacy color parsing.
+
+----
+
+.. _doc_item_asset_tactical:light:
+
+Light :ref:`flag <doc_data_flag>`
+:::::::::::::::::::::::::::::::::
+
+Provides a toggleable flashlight, and allows for using :ref:`PlayerSpotLightConfig <doc_data_playerspotlightconfig>` properties.
+
+----
+
+.. _doc_item_asset_tactical:melee:
+
+Melee :ref:`flag <doc_data_flag>`
+:::::::::::::::::::::::::::::::::
+
+Provides the ability to perform a melee attack. This attack does 40 damage, and is not configurable.
+
+----
+
+.. _doc_item_asset_tactical:rangefinder:
+
+Rangefinder :ref:`flag <doc_data_flag>`
+:::::::::::::::::::::::::::::::::::::::
+
+Provides a toggleable rangefinder.
