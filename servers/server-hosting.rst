@@ -194,7 +194,7 @@ Examples:
 
 Game rules, listing display, and many other options are available in the ``Config.json`` file. Game options mirror the in-game Play > Singleplayer > Config menu. This file deserves further documentation, but is not officially documented yet.
 
-Steam Workshop add-ons (e.g., maps, items, vehicles) are setup in the ``WorkshopDownloadConfig.json`` file.
+Steam Workshop add-ons (e.g., maps, items, vehicles, collections) are setup in the ``WorkshopDownloadConfig.json`` file.
 To include a Workshop file on your server:
 
 1. Browse to its web page, for example: `Hawaii <https://steamcommunity.com/sharedfiles/filedetails/?id=1753134636>`_
