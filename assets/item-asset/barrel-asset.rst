@@ -40,22 +40,22 @@ Properties
      - Type
      - Default Value
    * - :ref:`Ballistic_Drop <doc_item_asset_barrel:ballistic_drop>`
-     - :ref:`float <doc_data_builtin_types>`
+     - :ref:`float32 <doc_data_builtin_types>`
      - ``1``
    * - :ref:`Braked <doc_item_asset_barrel:braked>`
      - :ref:`flag <doc_data_flag>`
      - 
    * - :ref:`Durability <doc_item_asset_barrel:durability>`
-     - :ref:`byte <doc_data_builtin_types>`
+     - :ref:`uint8 <doc_data_builtin_types>`
      - ``0``
    * - :ref:`Gunshot_Rolloff_Distance_Multiplier <doc_item_asset_barrel:gunshot_rolloff_distance_multiplier>`
-     - :ref:`float <doc_data_builtin_types>`
+     - :ref:`float32 <doc_data_builtin_types>`
      - See description
    * - :ref:`Silenced <doc_item_asset_barrel:silenced>`
      - :ref:`flag <doc_data_flag>`
      - 
    * - :ref:`Volume <doc_item_asset_barrel:volume>`
-     - :ref:`float <doc_data_builtin_types>`
+     - :ref:`float32 <doc_data_builtin_types>`
      - ``1``
 
 Property Descriptions
@@ -63,8 +63,8 @@ Property Descriptions
 
 .. _doc_item_asset_barrel:ballistic_drop:
 
-Ballistic_Drop :ref:`float <doc_data_builtin_types>` ``1``
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Ballistic_Drop :ref:`float32 <doc_data_builtin_types>` ``1``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Gravity acceleration multiplier for bullets in flight.
 
@@ -81,8 +81,8 @@ Muzzle flash should be hidden.
 
 .. _doc_item_asset_barrel:durability:
 
-Durability :ref:`byte <doc_data_builtin_types>` ``0``
-:::::::::::::::::::::::::::::::::::::::::::::::::::::
+Durability :ref:`uint8 <doc_data_builtin_types>` ``0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Amount of quality lost after each firing of the ranged weapon. When this value is greater than ``0``, the item always has a visible item quality shown.
 
@@ -90,8 +90,8 @@ Amount of quality lost after each firing of the ranged weapon. When this value i
 
 .. _doc_item_asset_barrel:gunshot_rolloff_distance_multiplier:
 
-Gunshot_Rolloff_Distance_Multiplier :ref:`float <doc_data_builtin_types>`
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Gunshot_Rolloff_Distance_Multiplier :ref:`float32 <doc_data_builtin_types>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Multiplier on gunshot rolloff distance. Defaults to ``0.5`` if ``Silenced``, otherwise to ``1``.
 
@@ -108,7 +108,7 @@ Alerts should not be generated when firing.
 
 .. _doc_item_asset_barrel:volume:
 
-Volume :ref:`float <doc_data_builtin_types>` ``1``
-::::::::::::::::::::::::::::::::::::::::::::::::::
+Volume :ref:`float32 <doc_data_builtin_types>` ``1``
+::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Multiplier on gunfire sound volume. This is often used alongside with ``Silenced``, but doing so is not required.
