@@ -49,7 +49,7 @@ Properties
      - :ref:`color <doc_data_file_format>`
      - See description
    * - :ref:`Nightvision_Fog_Intensity <doc_item_asset_sight:nightvision_fog_intensity>`
-     - :ref:`float <doc_data_builtin_types>`
+     - :ref:`float32 <doc_data_builtin_types>`
      - See description
    * - :ref:`Offset_Scope_Overlay_By_One_Texel <doc_item_asset_sight:offset_scope_overlay_by_one_texel>`
      - :ref:`bool <doc_data_builtin_types>`
@@ -58,10 +58,10 @@ Properties
      - :ref:`ELightingVision <doc_data_elightingvision>`
      - ``None``
    * - :ref:`Zoom <doc_item_asset_sight:zoom>`
-     - :ref:`float <doc_data_builtin_types>`
+     - :ref:`float32 <doc_data_builtin_types>`
      - ``1``
    * - :ref:`ThirdPerson_Zoom <doc_item_asset_sight:thirdperson_zoom>`
-     - :ref:`float <doc_data_builtin_types>`
+     - :ref:`float32 <doc_data_builtin_types>`
      - ``1.25``
    * - :ref:`Zoom_Using_Eyes <doc_item_asset_sight:zoom_using_eyes>`
      - :ref:`bool <doc_data_builtin_types>`
@@ -80,13 +80,13 @@ DistanceMarker Dictionary
      - Type
      - Default Value
    * - :ref:`Distance <doc_item_asset_sight:distancemarker_distance>`
-     - :ref:`float <doc_data_builtin_types>`
+     - :ref:`float32 <doc_data_builtin_types>`
      - ``0``
    * - :ref:`LineOffset <doc_item_asset_sight:distancemarker_lineoffset>`
-     - :ref:`float <doc_data_builtin_types>`
+     - :ref:`float32 <doc_data_builtin_types>`
      - ``0``
    * - :ref:`LineWidth <doc_item_asset_sight:distancemarker_linewidth>`
-     - :ref:`float <doc_data_builtin_types>`
+     - :ref:`float32 <doc_data_builtin_types>`
      - ``0.05``
    * - :ref:`Side <doc_item_asset_sight:distancemarker_side>`
      - :ref:`ESide <doc_item_asset_sight:eside_enumeration>`
@@ -146,8 +146,8 @@ Override the default nightvision color. To configure this property, the ``Vision
 
 .. _doc_item_asset_sight:nightvision_fog_intensity:
 
-Nightvision_Fog_Intensity :ref:`float <doc_data_builtin_types>`
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Nightvision_Fog_Intensity :ref:`float32 <doc_data_builtin_types>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Configure the intensity of fog while nightvision is active. When this property has not been configured, the default fog intensity will depend on the value of the :ref:`Vision <doc_item_asset_sight:vision>` property.
 
@@ -173,8 +173,8 @@ Set a unique lighting vision effect to use. The value of this property may effec
 
 .. _doc_item_asset_sight:zoom:
 
-Zoom :ref:`float <doc_data_builtin_types>` ``1``
-::::::::::::::::::::::::::::::::::::::::::::::::
+Zoom :ref:`float32 <doc_data_builtin_types>` ``1``
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Multiplicative amount of zoom. This value must be equal to or greater than ``1``.
 
@@ -182,8 +182,8 @@ Multiplicative amount of zoom. This value must be equal to or greater than ``1``
 
 .. _doc_item_asset_sight:thirdperson_zoom:
 
-ThirdPerson_Zoom :ref:`float <doc_data_builtin_types>` ``1.25``
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ThirdPerson_Zoom :ref:`float32 <doc_data_builtin_types>` ``1.25``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Zoom factor while in the third-person perspective. This value must be equal to or greater than ``1``.
 
@@ -203,8 +203,8 @@ DistanceMarker Dictionary Descriptions
 
 .. _doc_item_asset_sight:distancemarker_distance:
 
-Distance :ref:`float <doc_data_builtin_types>` ``0``
-::::::::::::::::::::::::::::::::::::::::::::::::::::
+Distance :ref:`float32 <doc_data_builtin_types>` ``0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Meters between the player and a hypothethical target.
 
@@ -212,8 +212,8 @@ Meters between the player and a hypothethical target.
 
 .. _doc_item_asset_sight:distancemarker_lineoffset:
 
-LineOffset :ref:`float <doc_data_builtin_types>` ``0``
-::::::::::::::::::::::::::::::::::::::::::::::::::::::
+LineOffset :ref:`float32 <doc_data_builtin_types>` ``0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Distance between center line and start of horizontal line marker.
 
@@ -223,8 +223,8 @@ Display-related properties like ``LineOffset`` are a percentage (represented as 
 
 .. _doc_item_asset_sight:distancemarker_linewidth:
 
-LineWidth :ref:`float <doc_data_builtin_types>` ``0.05``
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+LineWidth :ref:`float32 <doc_data_builtin_types>` ``0.05``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Length of horizontal line marker.
 
