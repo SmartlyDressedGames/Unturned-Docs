@@ -42,6 +42,11 @@ Interactable Object Binary State Event Hook (IOBS)
 
 (IOBS for short) are any prop placed from the level editor which can have F pressed on them to open, close, turn on/off, etc. This hook can be added to any GameObject within an IOBS to trigger events during state changes, and even control the IOBS from client and server side.
 
+Interactable Object Quest Event Hook
+````````````````````````````````````
+
+This hook can be added to any GameObject within a Dropper, Note, or Quest Interactable Object. Its event is triggered when the corresponding interactable is successfully used. Note that the event is only triggered on the authority side (i.e., the server or singleplayer) and not on the client.
+
 .. _doc_assets_mod_hooks:npc_global_event_hook:
 
 NPC Global Event Hook
