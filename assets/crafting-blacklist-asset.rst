@@ -10,8 +10,8 @@ Prevents specific items or blueprints from being used while crafting. They are h
 **Input_Items** array of Item :ref:`Asset Pointers <doc_data_assetptr>`: Any blueprints consuming these items cannot be crafted. For example (blacklisted items are highlighted):
 
 .. code-block:: cpp
-  :linenos:
-  :emphasize-lines: 4, 7-10, 13-16
+	:linenos:
+	:emphasize-lines: 4, 7-10, 13-16
 
 	Input_Items
 	[
