@@ -1,50 +1,8 @@
-Unturned Documentation
-======================
-
-This repository exists to document `Unturned <https://store.steampowered.com/app/304930>`_'s modding features going forward. Originally map and asset documentation was created through Steam Guides. The main guide with links to related guides can be found here: `Workshop: Creating, Publishing & Updating <https://steamcommunity.com/sharedfiles/filedetails/?id=460136012>`_.
-
-Upcoming Features
------------------
-
-You can find modding features under consideration on this Trello board: `Unturned Roadmap <https://trello.com/b/gpe4zlW3/unturned-roadmap>`_
-
-The cards on the board aren't ordered in any particular way. i.e., they do not dictate the order of updates.
-
-Miscellaneous requests and tasks that pop up take priority over the roadmap, so it may go a while between progress updates. For example, work for curated maps often takes priority.
-
-Several high-priority ideas that don't yet have a solid plan, like car physics improvements or a crafting revamp, aren't listed on the board.
-
-Video Tutorials
----------------
-
-`How to host a Dedicated Server on Windows <https://www.youtube.com/watch?v=8axVrnSLlx4>`_
-
-Several older tutorial videos are gradually becoming outdated and don't represent the current development direction, but are listed here for completeness:
-
-- `Uploading Skins to the Curated Workshop <https://www.youtube.com/watch?v=rF4YvEuxse8>`_
-
-- `Creating Custom Songs <https://www.youtube.com/watch?v=wXpk7o9Dr4k>`_
-
-- `Quick Overview of First Version of Foliage Upgrade <https://www.youtube.com/watch?v=VVt2bRcAWv4>`_
-
-- `Devkit 101 + Landscapes Overview <https://www.youtube.com/watch?v=fkljCH419ug>`_
-
-- `Spawn Tables <https://www.youtube.com/watch?v=7Aiz7utMx8g>`_
-
-- `Building Models <https://www.youtube.com/watch?v=rAZ9KEGjSUk>`_
-
-Offline Downloads
------------------
-
-PDF and Epub versions of the documentation can be `downloaded <https://readthedocs.org/projects/unturned/downloads/>`_ for offline use.
-
-Contributing
-------------
-
-Anyone can contribute towards the *Unturned* modding documentation! To submit an issue, visit the `GitHub repository <https://github.com/SmartlyDressedGames/Unturned-Docs>`_. See the `README <https://github.com/SmartlyDressedGames/Unturned-Docs#readme>`_ for more details on how to contribute.
-
 .. Below is the table-of-content tree for the website,
 	which is hidden from the page but appears in the sidebar.
+	...
+	The toctree is located at the top of this file, so that
+	chapters are generated properly for the offline downloads.
 
 .. toctree::
 	:hidden:
@@ -144,3 +102,48 @@ Anyone can contribute towards the *Unturned* modding documentation! To submit an
 	data/rich-text
 	data/struct/index
 	data/vector3
+
+Unturned Documentation
+======================
+
+This repository exists to document `Unturned <https://store.steampowered.com/app/304930>`_'s modding features going forward. Originally map and asset documentation was created through Steam Guides. The main guide with links to related guides can be found here: `Workshop: Creating, Publishing & Updating <https://steamcommunity.com/sharedfiles/filedetails/?id=460136012>`_.
+
+Upcoming Features
+-----------------
+
+You can find modding features under consideration on this Trello board: `Unturned Roadmap <https://trello.com/b/gpe4zlW3/unturned-roadmap>`_
+
+The cards on the board aren't ordered in any particular way. i.e., they do not dictate the order of updates.
+
+Miscellaneous requests and tasks that pop up take priority over the roadmap, so it may go a while between progress updates. For example, work for curated maps often takes priority.
+
+Several high-priority ideas that don't yet have a solid plan, like car physics improvements or a crafting revamp, aren't listed on the board.
+
+Video Tutorials
+---------------
+
+`How to host a Dedicated Server on Windows <https://www.youtube.com/watch?v=8axVrnSLlx4>`_
+
+Several older tutorial videos are gradually becoming outdated and don't represent the current development direction, but are listed here for completeness:
+
+- `Uploading Skins to the Curated Workshop <https://www.youtube.com/watch?v=rF4YvEuxse8>`_
+
+- `Creating Custom Songs <https://www.youtube.com/watch?v=wXpk7o9Dr4k>`_
+
+- `Quick Overview of First Version of Foliage Upgrade <https://www.youtube.com/watch?v=VVt2bRcAWv4>`_
+
+- `Devkit 101 + Landscapes Overview <https://www.youtube.com/watch?v=fkljCH419ug>`_
+
+- `Spawn Tables <https://www.youtube.com/watch?v=7Aiz7utMx8g>`_
+
+- `Building Models <https://www.youtube.com/watch?v=rAZ9KEGjSUk>`_
+
+Offline Downloads
+-----------------
+
+PDF and Epub versions of the documentation can be `downloaded <https://readthedocs.org/projects/unturned/downloads/>`_ for offline use.
+
+Contributing
+------------
+
+Anyone can contribute towards the *Unturned* modding documentation! To submit an issue, visit the `GitHub repository <https://github.com/SmartlyDressedGames/Unturned-Docs>`_. See the `README <https://github.com/SmartlyDressedGames/Unturned-Docs#readme>`_ for more details on how to contribute.
