@@ -7,19 +7,28 @@ Prevents specific items or blueprints from being used while crafting. They are h
 
 **Type** *string*: ``SDG.Unturned.CraftingBlacklistAsset``
 
-**Input_Items** array of Item :ref:`Asset Pointers <doc_data_assetptr>`: Any blueprints consuming these items cannot be crafted.
+**Input_Items** array of Item :ref:`Asset Pointers <doc_data_assetptr>`: Any blueprints consuming these items cannot be crafted. For example (blacklisted items are highlighted):
 
-.. code-block:: text
+.. code-block:: cpp
+	:linenos:
+	:emphasize-lines: 4, 7-10, 13-16
 
 	Input_Items
 	[
-		### this is a GUID number ###
-		### guid ###
+		// Orange Hoodie
+		"GUID" "67c76cdf16024bf68b6e5d14d4c617ab"
+		
+		// Individual items can also be enclosed in brackets { }
 		{
-			// eaglefire
+			// Eaglefire
 			GUID b03d581a5c1a490f995f8deba57b0f17
 		}
-		### another GUID number ###
+		
+		// Jeans
+		dab78cc4d66645bfb8169be7c15cf876
+		55c69817a31448b685c7f788ec7d2d0c
+		bdae9d26ca704d729b2b0f34812d2a36
+		67a6ec52e4b24ffd89f75ceee0eb5179
 	]
 
 **Output_Items** array of Item :ref:`Asset Pointers <doc_data_assetptr>`: Any blueprints generating these items cannot be crafted.
@@ -36,4 +45,4 @@ Prevents specific items or blueprints from being used while crafting. They are h
 		}
 	]
 
-**Allow_Core_Blueprints** *bool*: Defaults to true. If false, blueprints from the vanilla/built-in items are not allowed.
+**Allow_Core_Blueprints** *bool*: Defaults to ``true``. If ``false``, blueprints from the vanilla/built-in items are not allowed.
