@@ -13,7 +13,7 @@ Prevents specific items or blueprints from being used while crafting. They are h
   :linenos:
   :emphasize-lines: 4, 7-10, 13-16
 
-	"Input_Items"
+	Input_Items
 	[
 		// Orange Hoodie
 		"GUID" "67c76cdf16024bf68b6e5d14d4c617ab"
@@ -23,7 +23,7 @@ Prevents specific items or blueprints from being used while crafting. They are h
 			// Eaglefire
 			GUID b03d581a5c1a490f995f8deba57b0f17
 		}
-
+		
 		// Jeans
 		dab78cc4d66645bfb8169be7c15cf876
 		55c69817a31448b685c7f788ec7d2d0c
