@@ -45,4 +45,4 @@ Prevents specific items or blueprints from being used while crafting. They are h
 		}
 	]
 
-**Allow_Core_Blueprints** *bool*: Defaults to true. If false, blueprints from the vanilla/built-in items are not allowed.
+**Allow_Core_Blueprints** *bool*: Defaults to ``true``. If ``false``, blueprints from the vanilla/built-in items are not allowed.
