@@ -1,6 +1,6 @@
 .. _doc_commandline:
 
-Command-line arguments
+Command-line Arguments
 ======================
 
 You can add command-line arguments within Steam:
@@ -54,6 +54,8 @@ Some command-line arguments are primarily intended for use with the Unturned Ded
 
 **-LogLevelBatchingTextureAtlasExclusions**: Please refer to :ref:`Level Batching <doc_mapping_batching>` for more details.
 
+**-LogSpawnTablesAfterLoadingLevel**: Log all spawn chances.
+
 **-NetTransport=** *enum* (``SteamNetworking``, ``SteamNetworkingSockets``): SteamNetworkingSockets was used to enable the `ISteamNetworkingSockets <https://partner.steamgames.com/doc/api/ISteamNetworkingSockets>`_ networking API, but this has since become default. SteamNetworking can be used to revert to the older, deprecated `ISteamNetworking <https://partner.steamgames.com/doc/api/ISteamNetworking>`_ networking API.
 
 **-NoDefaultLog**: Disables log file creation unless a plugin calls setLogFilePath.
@@ -73,6 +75,8 @@ Some command-line arguments are primarily intended for use with the Unturned Ded
 **-RefreshRate=**: Monitor refresh rate override.
 
 **-SkipAssets**: Disable loading asset bundles and Workshop content. This is useful for quickly iterating on serverside code.
+
+**-TimeOverlay**: Show seconds since startup under FPS in the upper-left corner.
 
 **-ui_scale**: UI scale override. A common usage is to set UI scale back to its default scaling, with ``-ui_scale 1``.
 
