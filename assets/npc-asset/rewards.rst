@@ -116,7 +116,7 @@ Item
 
 **Reward_#_Magazine** *uint16*: Override for the magazine attachment that should be attached to the item reward.
 
-**Reward_#_Origin** *enum* (``World``, ``Admin``, ``Craft``, ``Nature``): Set the item origin. For example, setting the origin to ``Admin`` will cause items to spawn at full quality. Defaults to `Craft`.
+**Reward_#_Origin** :ref:`doc_data_eitemorigin`: Set the item origin. For example, setting the origin to ``Admin`` will cause items to spawn at full quality. Defaults to `Craft`.
 
 **Reward_#_Sight** *uint16*: Override for the sight attachment that should be attached to the item reward.
 
@@ -133,7 +133,7 @@ Item_Random
 
 **Reward_#_Auto_Equip** *flag*: Item should be automatically equipped by the player.
 
-**Reward_#_Origin** *enum* (``World``, ``Admin``, ``Craft``, ``Nature``): Set the item origin. For example, setting the origin to ``Admin`` will cause items to spawn at full quality. Defaults to `Craft`.
+**Reward_#_Origin** :ref:`doc_data_eitemorigin`: Set the item origin. For example, setting the origin to ``Admin`` will cause items to spawn at full quality. Defaults to `Craft`.
 
 Hint
 ````

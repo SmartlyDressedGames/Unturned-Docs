@@ -5,11 +5,6 @@
 
 .. toctree::
 	:maxdepth: 1
+	:glob:
 	
-	ebatterymode
-	eitemrarity
-	eitemtype
-	elightingvision
-	enpcholiday
-	eobjectchart
-	eslottype
+	*
