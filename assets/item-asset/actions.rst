@@ -143,7 +143,7 @@ Type of action to perform. Currently, only the ``Blueprint`` action type exists.
 
 .. _doc_item_asset_actions:actions:
 
-Actions :ref:`int <doc_data_builtin_types>` ``1``
+Actions :ref:`int <doc_data_builtin_types>` ``0``
 :::::::::::::::::::::::::::::::::::::::::::::::::
 
 Total number of context actions.
