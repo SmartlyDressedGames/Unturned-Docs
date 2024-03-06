@@ -3,9 +3,7 @@
 Gun Assets
 ==========
 
-Ranged weapons can be used as a source of damage. Ranged weapons always show quality.
-
-This inherits the :ref:`WeaponAsset <doc_item_asset_weapon>` class.
+The ItemGunAsset class is used for ranged weapons (or "guns"), which can be used by players to deal damage. Some examples of vanilla ranged weapons include the `Eaglefire <https://wiki.smartlydressedgames.com/wiki/Eaglefire>`_ and `Crossbow <https://wiki.smartlydressedgames.com/wiki/Crossbow>`_.
 
 Unity Asset Bundle Contents
 ---------------------------
@@ -76,241 +74,1263 @@ If a gun is configured to use the gun jamming feature, the "ChamberJammed" Audio
 Game Data File
 --------------
 
-Item Asset Properties
+Ranged weapons inherit properties from the :ref:`ItemWeaponAsset <doc_item_asset_weapon>` class. Any properties from parent classes that are required—or highly recommended—are listed in the table below.
+
+.. list-table::
+   :widths: 30 40 30
+   :header-rows: 1
+   
+   * - Class
+     - Property Name
+     - Required Value
+   * - :ref:`ItemAsset <doc_item_asset_intro>`
+     - :ref:`GUID <doc_item_asset_intro:guid>`
+     - 
+   * - :ref:`ItemAsset <doc_item_asset_intro>`
+     - :ref:`ID <doc_item_asset_intro:id>`
+     - 
+   * - :ref:`ItemAsset <doc_item_asset_intro>`
+     - :ref:`Slot <doc_item_asset_intro:slot>`
+     - 
+   * - :ref:`ItemAsset <doc_item_asset_intro>`
+     - :ref:`Type <doc_item_asset_intro:type>`
+     - ``Gun``
+   * - :ref:`ItemAsset <doc_item_asset_intro>`
+     - :ref:`Useable <doc_item_asset_intro:useable>`
+     - ``Gun``
+   * - :ref:`WeaponAsset <doc_item_asset_intro>`
+     - :ref:`Range <doc_item_asset_weapon:range>`
+     - 
+
+Additionally, all ranged weapons require that the ``Action`` property has been configured. Note that ranged weapons will always show a quality value.
+
+Properties
+``````````
+
+Ranged weapons have a significant number of properties. To make navigating these easier, they have been categorized into one of several property tables. Many of these tables contain similar properties that are often used together.
+
+.. list-table:: Uncategorized
+   :widths: 40 40 20
+   :header-rows: 1
+   
+   * - Property Name
+     - Type
+     - Default Value
+   * - :ref:`Aim_In_Duration <doc_item_asset_gun:aim_in_duration>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0.2``
+   * - :ref:`Aiming_Movement_Speed_Multiplier <doc_item_asset_gun:aiming_movement_speed_multiplier>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - See description
+   * - :ref:`Alert_Radius <doc_item_asset_gun:alert_radius>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``48``
+   * - :ref:`Can_Aim_During_Sprint <doc_item_asset_gun:can_aim_during_sprint>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``false``
+   * - :ref:`Gunshot_Rolloff_Distance <doc_item_asset_gun:gunshot_rolloff_distance>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - See description
+   * - :ref:`Range_Rangefinder <doc_item_asset_gun:range_rangefinder>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - See description
+   * - :ref:`Scale_Aim_Animation_Speed <doc_item_asset_gun:scale_aim_animation_speed>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``true``
+
+.. list-table:: Calibers
+   :widths: 40 40 20
+   :header-rows: 1
+   
+   * - Property Name
+     - Type
+     - Default Value
+   * - :ref:`Attachment_Caliber_# <doc_item_asset_gun:attachment_caliber_#>`
+     - :ref:`uint16 <doc_data_builtin_types>`
+     - See description
+   * - :ref:`Attachment_Calibers <doc_item_asset_gun:attachment_calibers>`
+     - :ref:`int32 <doc_data_builtin_types>`
+     - See description
+   * - :ref:`Caliber <doc_item_asset_gun:caliber>`
+     - :ref:`uint16 <doc_data_builtin_types>`
+     - ``0``
+   * - :ref:`Magazine_Caliber_# <doc_item_asset_gun:magazine_caliber_#>`
+     - :ref:`uint16 <doc_data_builtin_types>`
+     - See description
+   * - :ref:`Magazine_Calibers <doc_item_asset_gun:magazine_calibers>`
+     - :ref:`int32 <doc_data_builtin_types>`
+     - See description
+   * - :ref:`Requires_NonZero_Attachment_Caliber <doc_item_asset_gun:requires_nonzero_attachment_caliber>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``false``
+
+.. list-table:: Damage
+   :widths: 40 40 20
+   :header-rows: 1
+   
+   * - Property Name
+     - Type
+     - Default Value
+   * - :ref:`Damage_Falloff_Max_Range <doc_item_asset_gun:damage_falloff_max_range>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``1``
+   * - :ref:`Damage_Falloff_Multiplier <doc_item_asset_gun:damage_falloff_multiplier>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``1``
+   * - :ref:`Damage_Falloff_Range <doc_item_asset_gun:damage_falloff_range>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``1``
+   * - :ref:`Instakill_Headshots <doc_item_asset_gun:instakill_headshots>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``false``
+
+.. list-table:: Effects
+   :widths: 40 40 20
+   :header-rows: 1
+   
+   * - Property Name
+     - Type
+     - Default Value
+   * - :ref:`Explosion <doc_item_asset_gun:explosion>`
+     - :ref:`doc_data_guid` or :ref:`uint16 <doc_data_builtin_types>`
+     - ``0``
+   * - :ref:`Muzzle <doc_item_asset_gun:muzzle>`
+     - :ref:`doc_data_guid` or :ref:`uint16 <doc_data_builtin_types>`
+     - ``0``
+   * - :ref:`Shell <doc_item_asset_gun:shell>`
+     - :ref:`doc_data_guid` or :ref:`uint16 <doc_data_builtin_types>`
+     - See description
+
+.. list-table:: Firing Mechanism
+   :widths: 40 40 20
+   :header-rows: 1
+   
+   * - Property Name
+     - Type
+     - Default Value
+   * - :ref:`Action <doc_item_asset_gun:action>`
+     - :ref:`EAction <doc_item_asset_gun:eaction>`
+     - 
+   * - :ref:`Auto <doc_item_asset_gun:auto>`
+     - :ref:`flag <doc_data_flag>`
+     - 
+   * - :ref:`Bursts <doc_item_asset_gun:bursts>`
+     - :ref:`int32 <doc_data_builtin_types>`
+     - ``0``
+   * - :ref:`Fire_Delay_Seconds <doc_item_asset_gun:fire_delay_seconds>`
+     - :ref:`int32 <doc_data_builtin_types>`
+     - ``0``
+   * - :ref:`Firerate <doc_item_asset_gun:firerate>`
+     - :ref:`uint8 <doc_data_builtin_types>`
+     - ``0``
+   * - :ref:`Safety <doc_item_asset_gun:safety>`
+     -  :ref:`flag <doc_data_flag>`
+     - 
+   * - :ref:`Semi <doc_item_asset_gun:semi>`
+     -  :ref:`flag <doc_data_flag>`
+     - 
+
+.. list-table:: Hook Attachments
+   :widths: 40 40 20
+   :header-rows: 1
+   
+   * - Property Name
+     - Type
+     - Default Value
+   * - :ref:`Barrel <doc_item_asset_gun:barrel>`
+     - :ref:`uint16 <doc_data_builtin_types>`
+     - ``0``
+   * - :ref:`Grip <doc_item_asset_gun:grip>`
+     - :ref:`uint16 <doc_data_builtin_types>`
+     - ``0``
+   * - :ref:`Sight <doc_item_asset_gun:sight>`
+     - :ref:`uint16 <doc_data_builtin_types>`
+     - ``0``
+   * - :ref:`Tactical <doc_item_asset_gun:tactical>`
+     - :ref:`uint16 <doc_data_builtin_types>`
+     - ``0``
+   * - :ref:`Hook_Barrel <doc_item_asset_gun:hook_barrel>`
+     - :ref:`flag <doc_data_flag>`
+     - 
+   * - :ref:`Hook_Grip <doc_item_asset_gun:hook_grip>`
+     - :ref:`flag <doc_data_flag>`
+     - 
+   * - :ref:`Hook_Sight <doc_item_asset_gun:hook_sight>`
+     - :ref:`flag <doc_data_flag>`
+     - 
+   * - :ref:`Hook_Tactical <doc_item_asset_gun:hook_tactical>`
+     - :ref:`flag <doc_data_flag>`
+     - 
+
+.. list-table:: Jamming
+   :widths: 40 40 20
+   :header-rows: 1
+   
+   * - Property Name
+     - Type
+     - Default Value
+   * - :ref:`Can_Ever_Jam <doc_item_asset_gun:can_ever_jam>`
+     - :ref:`flag <doc_data_flag>`
+     - 
+   * - :ref:`Jam_Quality_Threshold <doc_item_asset_gun:jam_quality_threshold>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0.4``
+   * - :ref:`Jam_Max_Chance <doc_item_asset_gun:jam_max_chance>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0.1``
+   * - :ref:`Unjam_Chamber_Anim <doc_item_asset_gun:unjam_chamber_anim>`
+     - :ref:`string <doc_data_builtin_types>`
+     - ``UnjamChamber``
+
+.. list-table:: Magazine Attachments
+   :widths: 40 40 20
+   :header-rows: 1
+   
+   * - Property Name
+     - Type
+     - Default Value
+   * - :ref:`Allow_Magazine_Change <doc_item_asset_gun:allow_magazine_change>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``true``
+   * - :ref:`Ammo_Max <doc_item_asset_gun:ammo_max>`
+     - :ref:`uint8 <doc_data_builtin_types>`
+     - ``0``
+   * - :ref:`Ammo_Min <doc_item_asset_gun:ammo_min>`
+     - :ref:`uint8 <doc_data_builtin_types>`
+     - ``0``
+   * - :ref:`Ammo_Per_Shot <doc_item_asset_gun:ammo_per_shot>`
+     - :ref:`uint8 <doc_data_builtin_types>`
+     - ``1``
+   * - :ref:`Delete_Empty_Magazines <doc_item_asset_gun:delete_empty_magazines>`
+     - :ref:`flag <doc_data_flag>`
+     - *deprecated*
+   * - :ref:`Hammer_Time <doc_item_asset_gun:hammer_time>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``1``
+   * - :ref:`Infinite_Ammo <doc_item_asset_gun:infinite_ammo>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``false``
+   * - :ref:`Magazine <doc_item_asset_gun:magazine>`
+     - :ref:`uint16 <doc_data_builtin_types>`
+     - ``0``
+   * - :ref:`Magazine_Replacement_#_ID <doc_item_asset_gun:magazine_replacement_#_id>`
+     - :ref:`uint16 <doc_data_builtin_types>`
+     - ``0``
+   * - :ref:`Magazine_Replacement_#_Map <doc_item_asset_gun:magazine_replacement_#_map>`
+     - :ref:`string <doc_data_builtin_types>`
+     - 
+   * - :ref:`Magazine_Replacements <doc_item_asset_gun:magazine_replacements>`
+     - :ref:`int32 <doc_data_builtin_types>`
+     - ``0``
+   * - :ref:`Reload_Time <doc_item_asset_gun:reload_time>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``1``
+   * - :ref:`Replace <doc_item_asset_gun:replace>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``1``
+   * - :ref:`Should_Delete_Empty_Magazines <doc_item_asset_gun:should_delete_empty_magazines>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - See description
+   * - :ref:`Unplace <doc_item_asset_gun:unplace>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0``
+
+.. list-table:: Projectiles (Ballistic System)
+   :widths: 40 40 20
+   :header-rows: 1
+   
+   * - Property Name
+     - Type
+     - Default Value
+   * - :ref:`Ballistic_Drop <doc_item_asset_gun:ballistic_drop>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - *deprecated*
+   * - :ref:`Ballistic_Steps <doc_item_asset_gun:ballistic_steps>`
+     - :ref:`uint8 <doc_data_builtin_types>`
+     - See description
+   * - :ref:`Ballistic_Travel <doc_item_asset_gun:ballistic_travel>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - See description
+   * - :ref:`Bullet_Gravity_Multiplier <doc_item_asset_gun:bullet_gravity_multiplier>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``4``
+
+.. list-table:: Projectiles (Physics System)
+   :widths: 40 40 20
+   :header-rows: 1
+   
+   * - Property Name
+     - Type
+     - Default Value
+   * - :ref:`Ballistic_Force <doc_item_asset_gun:ballistic_force>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0.002``
+   * - :ref:`Projectile_Explosion_Launch_Speed <doc_item_asset_gun:projectile_explosion_launch_speed>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - See description
+   * - :ref:`Projectile_Lifespan <doc_item_asset_gun:projectile_lifespan>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``30``
+   * - :ref:`Projectile_Penetrate_Buildables <doc_item_asset_gun:projectile_penetrate_buildables>`
+     - :ref:`flag <doc_data_builtin_types>`
+     - 
+
+.. list-table:: Recoil
+   :widths: 40 40 20
+   :header-rows: 1
+   
+   * - Property Name
+     - Type
+     - Default Value
+   * - :ref:`Aiming_Recoil_Multiplier <doc_item_asset_gun:aiming_recoil_multiplier>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``1``
+   * - :ref:`Recoil_Crouch <doc_item_asset_gun:recoil_crouch>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0.85``
+   * - :ref:`Recoil_Max_X <doc_item_asset_gun:recoil_max_x>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0``
+   * - :ref:`Recoil_Max_Y <doc_item_asset_gun:recoil_max_y>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0``
+   * - :ref:`Recoil_Min_X <doc_item_asset_gun:recoil_min_x>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0``
+   * - :ref:`Recoil_Min_Y <doc_item_asset_gun:recoil_min_y>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0``
+   * - :ref:`Recoil_Prone <doc_item_asset_gun:recoil_prone>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0.7``
+   * - :ref:`Recoil_Sprint <doc_item_asset_gun:recoil_sprint>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``1.25``
+   * - :ref:`Recover_X <doc_item_asset_gun:recover_x>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0``
+   * - :ref:`Recover_Y <doc_item_asset_gun:recover_y>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0``
+
+.. list-table:: Shake
+   :widths: 40 40 20
+   :header-rows: 1
+   
+   * - Property Name
+     - Type
+     - Default Value
+   * - :ref:`Shake_Max_X <doc_item_asset_gun:shake_max_x>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0``
+   * - :ref:`Shake_Min_X <doc_item_asset_gun:shake_min_x>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0``
+   * - :ref:`Shake_Max_Y <doc_item_asset_gun:shake_max_y>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0``
+   * - :ref:`Shake_Min_Y <doc_item_asset_gun:shake_min_y>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0``
+   * - :ref:`Shake_Max_Z <doc_item_asset_gun:shake_max_z>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0``
+   * - :ref:`Shake_Min_Z <doc_item_asset_gun:shake_min_z>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0``
+
+.. list-table:: Spread
+   :widths: 40 40 20
+   :header-rows: 1
+   
+   * - Property Name
+     - Type
+     - Default Value
+   * - :ref:`Spread_Aim <doc_item_asset_gun:spread_aim>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0``
+   * - :ref:`Spread_Angle_Degrees <doc_item_asset_gun:spread_angle_degrees>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0``
+   * - :ref:`Spread_Crouch <doc_item_asset_gun:spread_crouch>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0.85``
+   * - :ref:`Spread_Hip <doc_item_asset_gun:spread_hip>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - *deprecated*
+   * - :ref:`Spread_Prone <doc_item_asset_gun:spread_prone>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0.7``
+   * - :ref:`Spread_Sprint <doc_item_asset_gun:spread_sprint>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``1.25``
+
+.. _doc_item_asset_gun:eaction:
+
+EAction Enumeration
+```````````````````
+
+.. list-table::
+   :widths: 25 75
+   :header-rows: 1
+   
+   * - Named Value
+     - Description
+   * - ``Trigger``
+     - Corresponds to the "Trigger" action. Uses the ballistic projectile system.
+   * - ``Bolt``
+     - Corresponds to the "Bolt" action. Uses the ballistic projectile system.
+   * - ``Pump``
+     - Corresponds to the "Pump" action. Uses the ballistic projectile system.
+   * - ``Rail``
+     - Corresponds to the "Rail" action. Uses the ballistic projectile system.
+   * - ``String``
+     - Corresponds to the "String" action. Uses the ballistic projectile system.
+   * - ``Break``
+     - Corresponds to the "Break" action. Uses the ballistic projectile system.
+   * - ``Rocket``
+     - Corresponds to the "Rocket" action. Uses the physics projectile system.
+   * - ``Minigun``
+     - Corresponds to the "Minigun" action. Uses the ballistic projectile system.
+
+Property Descriptions
 `````````````````````
 
-**GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
+.. _doc_item_asset_gun:action:
 
-**Type** *enum* (``Gun``)
+Action :ref:`EAction <doc_item_asset_gun:eaction>`
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
-**Useable** *enum* (``Gun``)
+The value of this property determines how the weapon functions when used, including whether it uses *ballistic projectiles*, or *physics projectiles*. Different properties are available to the weapon depending on the value of this property.
 
-**Slot** *enum* (``Primary``, ``Secondary``, ``Tertiary``, ``Any``)
+Although most action mechanisms utilize ballistic projectiles, the ``Rocket`` action mechanism uses physics projectiles instead. Additionally, any projectiles from these weapons (e.g., the `Rocket Launcher <https://wiki.smartlydressedgames.com/wiki/Rocket_Launcher>`_) are explosive.
 
-**ID** *uint16*: Must be a unique identifier.
+To fire a weapon with the  ``String`` action mechanism, a player must be aiming down sights – unless a "Nock" GameObject has been added during its Unity setup.
 
-Gun Asset Properties
-````````````````````
+----
 
-**Alert_Radius** *float*: Radius where zombies and animals should be alerted when firing ranged weapons, measured in meters. Defaults to 48 meters.
+.. _doc_item_asset_gun:aim_in_duration:
 
-**Can_Aim_During_Sprint** *bool*: If true, the player can sprint while aiming down sights. Defaults to false.
+Aim_In_Duration :ref:`float32 <doc_data_builtin_types>` ``0.2``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-**Aim_In_Duration** *float*. How long it takes to fully aim down sights, in seconds. Defaults to 0.2 seconds.
+How long it takes to fully aim down sights, in seconds.
 
-**Aiming_Movement_Speed_Multiplier** *float*: Multiplier on the player's movement speed while aiming down sights. Defaults to ``0.75`` when ``Can_Aim_During_Sprint false``. Otherwise, defaults to ``1``.
+----
 
-**Gunshot_Rolloff_Distance** *float*: Distance over which the gunshot audio rolls off until it is completely inaudible, in meters. Defaults to ``16`` when using ``Action String``; defaults to ``64`` when using ``Action Rocket``; otherwise, defaults to ``512``.
+.. _doc_item_asset_gun:aiming_movement_speed_multiplier:
 
-**Range_Rangefinder** *float*: Overrides the maximum distance displayed when using a Rangefinder tactical attachment on this weapon. For example, it may be useful to set this property when using ``Action Rocket``, as explosive projectiles use ``Range`` to determine the explosion radius rather than the maximum range of the weapon. Defaults to the value of the ``Range`` property.
+Aiming_Movement_Speed_Multiplier :ref:`float32 <doc_data_builtin_types>`
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-**Scale_Aim_Animation_Speed** *bool*: If true, the length of the "Aim_Start" and "Aim_Stop" animations are scaled to match ``Aim_In_Duration`` (with modifiers). Defaults to true.
+Multiplier on the player's movement speed while aiming down sights. Defaults to ``0.75`` when ``Can_Aim_During_Sprint`` is ``false``. Otherwise, defaults to ``1``.
 
-**Turret** *flag*: This weapon should be treated as a vehicular turret. This flag will affect the player's first-person viewmodel.
+----
 
-Calibers
-::::::::
+.. _doc_item_asset_gun:aiming_recoil_multiplier:
 
-**Attachment_Calibers** *int*: Total number of unique hook attachment calibers. Cannot be used with ``Caliber``.
+Aiming_Recoil_Multiplier :ref:`float32 <doc_data_builtin_types>` ``1``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-**Attachment_Caliber_#** *uint16*: ID of a caliber to check for hook attachment compatibility. Requires ``Attachment_Calibers``.
+Multiplier on recoil magnitude while aiming down sights.
 
-**Caliber** *uint16*: ID of the caliber to check for hook attachment and magazine attachment compatibility. To configure hook attachment and magazine attachment compatibility separately, use the ``Attachment_Calibers`` and ``Magazine_Calibers`` properties instead.
+----
 
-**Magazine_Calibers** *int*: Total number of unique magazine attachment calibers. Cannot be used with ``Caliber``.
+.. _doc_item_asset_gun:alert_radius:
 
-**Magazine_Caliber_#** *uint16*: ID of a caliber to check for magazine attachment compatibility. Requires ``Magazine_Calibers``.
+Alert_Radius :ref:`float32 <doc_data_builtin_types>` ``48``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-**Requires_NonZero_Attachment_Caliber** *bool*: If true, attachments must specify at least one non-zero caliber. For example, this can be used to make vanilla attachments incompatible with this weapon. Defaults to false.
+The radius of the alert generated by ranged weapons when they are fired. Zombies or animals caught within this radius are alerted. This radius is measured in meters.
 
-Damage
-::::::
+----
 
-In addition to the damage properties available from the the :ref:`WeaponAsset <doc_item_asset_weapon:player_damage>` class, GunAssets have some exclusive properties.
+.. _doc_item_asset_gun:allow_magazine_change:
 
-**Damage_Falloff_Multiplier** *float*: Percentage of damage to apply at maximum range. For example, a falloff multiplier value of ``0.25`` with a damage value of ``40`` means 10 damage will be dealt at maximum range. Defaults to 1.
+Allow_Magazine_Change :ref:`bool <doc_data_builtin_types>` ``true``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-**Damage_Falloff_Range** *float*: Percentage of maximum range where damage begins decreasing. For example, a falloff range value of ``0.3`` with a range value of ``200`` means damage begins dropping off after 60 meters. Defaults to 1.
+When ``false``, the magazine cannot be removed, replaced, or reloaded. This functions similar to a few other properties, such as ``Hook_Barrel`` or ``Hook_Grip`` when determing valid hook attachment slots.
 
-**Damage_Falloff_Max_Range** *float*: Percentage of maximum range where damage stops decreasing. For example, a max falloff range value of ``0.6`` with a range of ``200`` means damage stops dropping off after 120 meters. Defaults to 1.
+----
 
-**Instakill_Headshots** *bool*: If true, performing a headshot on a player will instantly kill that player. This does not apply to zombies who have been headshot, unless the single-player world or multiplayer server's difficulty configuration has the ``Weapons_Use_Player_Damage`` setting enabled. Defaults to false.
+.. _doc_item_asset_gun:ammo_max:
 
-Effects
-:::::::
+Ammo_Max :ref:`uint8 <doc_data_builtin_types>` ``0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-**Explosion** :ref:`GUID <doc_data_guid>` or *uint16*: GUID or legacy ID of the effect to play upon an explosive projectile's detonation.
+Maximum amount of ammo to randomly generate in the magazine attachment that was attached to the weapon by default.
 
-**Muzzle** :ref:`GUID <doc_data_guid>` or *uint16*: GUID or legacy ID of the effect to play after shooting, emitted from the gun's "Barrel" GameObject.
+----
 
-**Shell** :ref:`GUID <doc_data_guid>` or *uint16*: GUID or legacy ID of the effect to play after shooting, emitted from the gun's "Eject" GameObject. Defaults to ``33`` when using either ``Action Pump`` or ``Action Break``; defaults to ``1`` when using any other ``Action`` except for ``Action Rail``; otherwise, defaults to ``0``.
+.. _doc_item_asset_gun:ammo_min:
 
-Firing Mechanism
-::::::::::::::::
+Ammo_Min :ref:`uint8 <doc_data_builtin_types>` ``0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-**Action** *enum* (``Bolt``, ``Break``, ``Minigun``, ``Pump``, ``Rail``, ``Rocket``, ``String``, ``Trigger``): The rocket-action mechanism has inherently explosive projectiles, uses physics projectiles instead of ballistic projectiles, and has infinite firing range. By default, a ranged weapon using the string-action mechanism can only be fired while aiming down sights.
+Minimum amount of ammo to randomly generate in the magazine attachment that was attached to the weapon by default.
 
-**Auto** *flag*: An automatic firing mode should be available.
+----
 
-**Bursts** *int*: Number of shots to fire when using the burst firing mode. When a value greater than ``0`` is provided, the burst firing mode is available.
+.. _doc_item_asset_gun:ammo_per_shot:
 
-**Fire_Delay_Seconds** *int*: Delay before the weapon is actually fired, in seconds.
+Ammo_Per_Shot :ref:`uint8 <doc_data_builtin_types>` ``1``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-**Firerate** *byte*: Affects the minimum number of ticks between the firing of each bullet. The actual rate of fire is equal to ``50 ÷ (Firerate + 1)``, in rounds per second. Defaults to 0.
+Number of ammunition consumed per shot. For example, a value of ``3`` would consume three ammo every time the weapon is fired, while a value of ``0`` would allow for the weapon to have infinite ammo.
 
-**Safety** *flag*: A safety firing mode should be available.
+----
 
-**Semi** *flag*: A semi-automatic firing mode should be available.
+.. _doc_item_asset_gun:attachment_caliber_#:
 
-Hooks Attachments
-:::::::::::::::::
+Attachment_Caliber_# :ref:`uint16 <doc_data_builtin_types>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-**Barrel** *uint16*: Legacy ID of the barrel attachment that should be attached by default. Defaults to 0.
+Legacy ID of a caliber to check for hook attachment compatibility. This property is used in conjunction with ``Attachment_Calibers``, which determines how many instances of this property should be read by the game.
 
-**Grip** *uint16*: Legacy ID of the grip attachment that should be attached by default. Defaults to 0.
+When this property is unset, it will default to ``0``. When the ``Attachment_Calibers`` property is not greater than ``0``, this property will default to the value of any ``Magazine_Caliber_#`` properties.
 
-**Sight** *uint16*: Legacy ID of the sight attachment that should be attached by default. Defaults to 0.
+For example, a valid configuration for a ranged weapon's calibers could be:
 
-**Tactical** *uint16*: Legacy ID of the tactical attachment that should be attached by default. Defaults to 0.
+.. code-block:: text
 
-**Hook_Barrel** *flag*: Specified if the ranged weapon should have a barrel attachment slot.
+  Attachment_Calibers 2
+  Attachment_Caliber_0 1
+  Attachment_Caliber_1 9
 
-**Hook_Grip** *flag*: Specified if the ranged weapon should have a grip attachment slot.
+  Magazine_Calibers 3
+  Magazine_Caliber_0 1
+  Magazine_Caliber_1 4
+  Magazine_Caliber_2 9
 
-**Hook_Sight** *flag*: Specified if the ranged weapon should have a sight attachment slot.
+This would allow the ranged weapon to use hook attachments with caliber IDs of 1 or 9, and to use magazine attachments with caliber IDs of 1, 4, or 9.
 
-**Hook_Tactical** *flag*: Specified if the ranged weapon should have a tactical attachment slot.
+----
 
-Jamming
-:::::::
+.. _doc_item_asset_gun:attachment_calibers:
 
-When using the ``Can_Ever_Jam`` flag, ranged weapons have a chance of jamming once their quality drops below a specified threshold. From the initial threshold to 0%, the chance of jamming on each shot is blended between 0% and a specified max chance. The "ChamberJammed" AudioClip is played when a jam occurs, as well as the animation "UnjamChamber" if present. For an example, the Cobra_Jam (ID 1521) is included in the game files.
+Attachment_Calibers :ref:`int32 <doc_data_builtin_types>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-**Can_Ever_Jam** *flag*: Specified if the weapon can jam.
+Set the length of the array containing the calibers for hook attachment compatibility. This property is used in conjunction with the ``Attachment_Caliber_#`` property, and the value of ``Attachment_Calibers`` should be equal to the number of instances of ``Attachment_Caliber_#``.
 
-**Jam_Quality_Threshold** *float*: Decimal representative of the quality percentage threshold for jamming can begin to occur. Requires ``Can_Ever_Jam``. Defaults to 0.4.
+When this property is not greater than ``0`` – it will default to the value of ``Magazine_Calibers``, and the ``Attachment_Caliber_#`` property can no longer be customized.
 
-**Jam_Max_Chance** *float*: Decimal-to-percent chance for jamming to occur. Requires ``Can_Ever_Jam``. Defaults to 0.1.
+To use this property, ``Magazine_Calibers`` must be configured.
 
-**Unjam_Chamber_Anim**: Name of the animation clip to play for unjamming. Requires ``Can_Ever_Jam``. Defaults to ``UnjamChamber``.
+----
 
-Magazine Attachments
-::::::::::::::::::::
+.. _doc_item_asset_gun:auto:
 
-**Allow_Magazine_Change** *bool*: If false, the magazine in the weapon cannot be unloaded (unplaced), replaced, or reloaded. This is similar to the "Hook\_" properties available for determining valid hook attachment slots. Defaults to true.
+Auto :ref:`flag <doc_data_flag>`
+::::::::::::::::::::::::::::::::
 
-**Ammo_Max** *byte*: Maximum for the random amount of ammo to generate in the magazine attachment that is attached by default. Defaults to 0.
+The weapon has an automatic firing mode.
 
-**Ammo_Min** *byte*: Minimum for the random amount of ammo to generate in the magazine attachment that is attached by default. Defaults to 0.
+----
 
-**Ammo_Per_Shot** *byte*: Number of ammunition consumed per shot. Defaults to 1.
+.. _doc_item_asset_gun:ballistic_drop:
 
-**Delete_Empty_Magazines** *flag*: Specified if the attached magazine should be deleted when depleted. Deprecated in favor of ``Should_Delete_Empty_Magazines``.
+Ballistic_Drop :ref:`float32 <doc_data_builtin_types>`
+::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-**Hammer_Time** *float*: Multiplier on the time it takes to finish pulling back the hammer on the ranged weapon after firing. Only values greater than or equal to ``1`` have an effect.
+.. deprecated:: 3.23.7.0
+   Use ``Bullet_Gravity_Multiplier`` instead.
 
-**Infinite_Ammo** *bool*: If true, ammunition is not depleted from the attached magazine attachment. Effectively, this allows for infinite ammo so long as there is a magazine attachment equipped with at least one round in it. Defaults to false.
+Existing values are automatically converted if ``Bullet_Gravity_Multiplier`` has not been configured. The conversion is logged during :ref:`doc_asset_validation`.
 
-**Magazine** *uint16*: Legacy ID of the magazine attachment that should be attached by default. Defaults to 0.
+----
 
-**Magazine_Replacements** *int*: Total number of unique conditions with alternative default magazine attachments.
+.. _doc_item_asset_gun:ballistic_force:
 
-**Magazine_Replacement_#_Map** *string*: Name of the map the ``Magazine_Replacements`` condition applies to.
+Ballistic_Force :ref:`float32 <doc_data_builtin_types>` ``0.002``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-**Magazine_Replacement_#_ID** *uint16*: Legacy ID of the alternative magazine attachment that should be used when on the map specified by ``Magazine_Replacement_#_Map``.
+The amount of force that should be applied to the *physics projectile*, measured in Newtons. It may be helpful to read Unity's `Rigidbody.AddForce documentation <https://docs.unity3d.com/ScriptReference/Rigidbody.AddForce.html>`_ to better understand physics projectiles.
 
-**Reload_Time** *float*: Multiplier on time it takes to finish reloading the ranged weapon. Only values greater than or equal to ``1`` have an effect.
+Properties used by physics projectiles (such as ``Ballistic_Force``) cannot be used alongside properties intended for ballistic projectiles (such as ``Ballistic_Travel`` or ``Bullet_Gravity_Multiplier``).
 
-**Replace** *float*: Multiplier of the reload animation length before the magazine is respawned. Must be greater than or equal to ``0.01``. Defaults to 1.
+----
 
-**Should_Delete_Empty_Magazines** *bool*: Overrides how empty magazines are handled by the action item mode. When set to ``true``, empty magazine attachments are deleted when completely emptied. The default behavior depends on the ``Action`` used by the ranged weapon. Defaults to ``true`` when using one of the following ``Action`` enumerators: ``Break``, ``Pump``, ``Rail``, ``Rocket``, or ``String``. Otherwise, defaults to ``false``.
+.. _doc_item_asset_gun:ballistic_steps:
 
-**Unplace** *float*: Multiplier of the reload animation length before the magazine is despawned.
+Ballistic_Steps :ref:`uint8 <doc_data_builtin_types>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Projectiles (Ballistics System)
-:::::::::::::::::::::::::::::::
+Lifespan of *ballistic projectiles*. A higher value relative to ``Ballistic_Travel`` will result in less muzzle velocity. Must be a value greater than ``0``.
 
-All ``Action`` mechanisms other than the rocket-action mechanism utilize the ballistics projectile system. To avoid a mismatch between max range and manual ballistic range, it is recommended to only have either ``Ballistic_Steps`` or ``Ballistic_Travel`` specified – not both.
+Defaults to ``Range ÷ Ballistic_Travel``, rounded up to the nearest integer.
 
-**Ballistic_Steps** *byte*: Lifespan of ballistic projectiles. A higher value relative to ``Ballistic_Travel`` will result in less muzzle velocity. Must be a value greater than ``0``. Defaults to ``Range ÷ Ballistic_Travel``, rounded up to the nearest integer.
+To avoid a mismatch between the weapon's max range and its manual ballistic range, it is recommend to only configure ``Ballistic_Steps`` or ``Ballistic_Travel`` (or neither) – no both.
 
-**Ballistic_Travel** *float*: Travel speed of ballistic projectiles. A higher value relative to ``Ballistic_Steps`` will result in more muzzle velocity. Must be a value greater than ``0.1``. Defaults to ``10``. If ``Ballistic_Steps`` is specified and greater than ``0``, and ``Ballistic_Travel`` is not specified, then ``Ballistic_Travel`` defaults to ``Range ÷ Ballistic_Steps``.
+----
 
-**Bullet_Gravity_Multiplier** *float*: Multiplier for gravity's acceleration. This multiplier defaults to ``4`` because *Unturned*'s maximum engagement distance is rather short, but may be raised in the future if/when network improvements are made to the game. It can be set to ``1`` for more realistic bullet drop. Gravity defaults to 9.81 m/s², or can be configured in the :ref:`doc_mapping_config`.
+.. _doc_item_asset_gun:ballistic_travel:
 
-.. deprecated:: 3.23.7.0 **Ballistic_Drop** *float*: Replaced by ``Bullet_Gravity_Multiplier``. Existing values are automatically converted if Bullet_Gravity_Multiplier is not specified. The conversion is logged during :ref:`doc_asset_validation`.
+Ballistic_Travel :ref:`float32 <doc_data_builtin_types>`
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Projectiles (Physics System)
-::::::::::::::::::::::::::::
+Travel speed of *ballistic projectiles*. A higher value relative to ``Ballistic_Steps`` will result in more muzzle velocity. Must be a value greater than ``0.1``.
 
-When using ``Action Rocket``, the ranged weapon utilizes the physics projectile system.
+Defaults to ``10``. If ``Ballistic_Steps`` is specified and greater than ``0``, and ``Ballistic_Travel`` is not specified, then ``Ballistic_Travel`` defaults to ``Range ÷ Ballistic_Steps``.
 
-**Ballistic_Force** *float*: How much force should be applied to the projectile, measured in Newtons. Applicable to the rocket action, and usage ignores all other advanced ballistic options. Defaults to 0.002.
+To avoid a mismatch between the weapon's max range and its manual ballistic range, it is recommend to only configure ``Ballistic_Travel`` or ``Ballistic_Steps`` (or neither) – no both.
 
-**Projectile_Explosion_Launch_Speed** *float*: Players caught within an area-of-effect explosion caused by the ranged weapon are launched at this speed. For example, this can be used to create velocity-related items like "rocket-jumping" mods. Defaults to ``Player_Damage × 0.1``.
+----
 
-**Projectile_Lifespan** *float*: Lifespan of physics projectiles. Defaults to 30 seconds.
+.. _doc_item_asset_gun:barrel:
 
-**Projectile_Penetrate_Buildables** *flag*: Area-of-effect explosions caused by ``Action Rocket`` physics projectiles should penetrate through buildables.
+Barrel :ref:`uint16 <doc_data_builtin_types>` ``0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Recoil
-::::::
+Legacy ID of a barrel attachment that should be attached by default. The ``Hook_Barrel`` flag is not required to use this property.
 
-**Aiming_Recoil_Multiplier** *float*: Recoil magnitude multiplier while the gun is aiming down sights.
+----
 
-**Recoil_Sprint** *float*: Multiplier on camera recoil while sprinting. Defaults to 1.25. Requires ``Can_Aim_During_Sprint true``.
+.. _doc_item_asset_gun:bullet_gravity_multiplier:
 
-**Recoil_Crouch** *float*: Multiplier on camera recoil while crouched. Defaults to 0.85.
+Bullet_Gravity_Multiplier :ref:`float32 <doc_data_builtin_types>` ``4``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-**Recoil_Prone** *float*: Multiplier on camera recoil while prone. Defaults to 0.7.
+Multiplier for gravity's acceleration. This property is available to *ballistic projectile* weapons. Setting this value to ``1`` allows for more realistic bullet drop.
 
-**Recoil_Min_X** *float*: Minimum horizontal camera recoil in degrees.
+.. note:: This defaults to ``4`` because *Unturned*'s maximum engagement distance is rather short, but this distance may be raised in the future if/when network improvements are made to the game. Gravity defaults to 9.81 m/s², or can be configured in the :ref:`doc_mapping_config`.
 
-**Recoil_Min_Y** *float*: Minimum vertical camera recoil in degrees.
+----
 
-**Recoil_Max_X** *float*: Maximum horizontal camera recoil in degrees.
+.. _doc_item_asset_gun:bursts:
 
-**Recoil_Max_Y** *float*: Maximum vertical camera recoil in degrees.
+Bursts :ref:`int32 <doc_data_builtin_types>` ``0``
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
-**Recover_X** *float*: Multiplier on camera degrees to be counter-animated horizontally over the next 250 milliseconds.
+When a value greater than ``0`` is provided, the weapon has a burst firing mode. A number of shots equal to this value is fired when using this mode.
 
-**Recover_Y** *float*: Multiplier on camera degrees to be counter-animated vertically over the next 250 milliseconds.
+----
 
-.. deprecated:: 3.23.7.0 **Recoil_Aim** *float*: Removed, and no longer has any effect.
+.. _doc_item_asset_gun:caliber:
 
-Shake
-:::::
+Caliber :ref:`uint16 <doc_data_builtin_types>` ``0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-**Shake_Min_X** *float*: Minimum 𝘟-axis model shake.
+Legacy ID of the caliber to check for hook attachment and magazine attachment compatibility. To add compatibility for multiple calibers, or to configure hook attachment and magazine attachment compatibility separately, use the ``Magazine_Calibers`` and ``Attachment_Calibers`` properties instead.
 
-**Shake_Max_X** *float*: Maximum 𝘟-axis model shake.
+----
 
-**Shake_Min_Y** *float*: Minimum 𝘠-axis model shake.
+.. _doc_item_asset_gun:can_aim_during_sprint:
 
-**Shake_Max_Y** *float*: Maximum 𝘠-axis model shake.
+Can_Aim_During_Sprint :ref:`bool <doc_data_builtin_types>` ``false``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-**Shake_Min_Z** *float*: Minimum 𝘡-axis model shake.
+When ``true``, the player can sprint while aiming down sights.
 
-**Shake_Max_Z** *float*: Maximum 𝘡-axis model shake.
+----
 
-Spread
-::::::
+.. _doc_item_asset_gun:can_ever_jam:
 
-**Spread_Aim** *float*: Spread multiplier when aiming down sights. This is multiplied by the ``Spread_Angle_Degrees`` value. Defaults to ``0``.
+Can_Ever_Jam :ref:`flag <doc_data_flag>`
+::::::::::::::::::::::::::::::::::::::::
 
-**Spread_Angle_Degrees** *float*: Bullet angle of deviation away from the aiming direction. For example, ``15`` means the shot could hit up to 15 degrees away from the center of the crosshair, whereas ``0`` will always hit the center of the crosshair. All other spread values are multipliers for this. Defaults to ``0``.
+When this flag is included, the weapon can jam. Weapons have a chance of jamming once their quality drops below a certain threshold. Starting from the initial threshold, the chance of jamming on each shot is blended between between 0% and a specified max chance.
 
-**Spread_Hip** *float*: Replaced by ``Spread_Angle_Degrees``, but maintained for backwards compatibility. Running the game with ``-ValidateAssets`` logs the equivalent ``Spread_Angle_Degrees`` value.
+The "ChamberJammed" Audio Clip is played when a jam occurs, as well as the animation "UnjamChamber" if present.
 
-**Spread_Sprint** *float*: Spread multiplier when sprinting. Requires ``Can_Aim_During_Sprint true``. Defaults to 1.25.
+For an example, refer to ``.../Guns/Cobra_Jam/Cobra_Jam.dat`` in the game files.
 
-**Spread_Crouch** *float*: The spread multiplier when crouched. Defaults to 0.85.
+----
 
-**Spread_Prone** *float*: The spread multiplier when prone. Defaults to 0.7.
+.. _doc_item_asset_gun:damage_falloff_max_range:
 
-Rewards
-```````
+Damage_Falloff_Max_Range :ref:`float32 <doc_data_builtin_types>` ``1``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Percentage of maximum range where damage stops decreasing. For example, a max falloff range value of ``0.6`` with a range of ``200`` means damage stops dropping off after 120 meters.
+
+----
+
+.. _doc_item_asset_gun:damage_falloff_multiplier:
+
+Damage_Falloff_Multiplier :ref:`float32 <doc_data_builtin_types>` ``1``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Percentage of damage to apply at maximum range. For example, a falloff multiplier value of ``0.25`` with a damage value of ``40`` means 10 damage will be dealt at maximum range.
+
+----
+
+.. _doc_item_asset_gun:damage_falloff_range:
+
+Damage_Falloff_Range :ref:`float32 <doc_data_builtin_types>` ``1``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Percentage of maximum range where damage begins decreasing. For example, a falloff range value of ``0.3`` with a range value of ``200`` means damage begins dropping off after 60 meters.
+
+----
+
+.. _doc_item_asset_gun:delete_empty_magazines:
+
+Delete_Empty_Magazines :ref:`flag <doc_data_flag>`
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+.. deprecated:: 3.30.3.0
+   Use ``Should_Delete_Empty_Magazines`` instead.
+
+When this flag is included, the attached magazine attachment is deleted when fully depleted.
+
+----
+
+.. _doc_item_asset_gun:explosion:
+
+Explosion :ref:`doc_data_guid` or :ref:`uint16 <doc_data_builtin_types>`
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+GUID or legacy ID of the effect that should be used for explosions caused by ``Action Rocket`` projectiles.
+
+----
+
+.. _doc_item_asset_gun:fire_delay_seconds:
+
+Fire_Delay_Seconds :ref:`int32 <doc_data_builtin_types>` ``0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Delay before the weapon is actually fired, in seconds.
+
+----
+
+.. _doc_item_asset_gun:firerate:
+
+Firerate :ref:`uint8 <doc_data_builtin_types>` ``0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+The value of this property affects the minimum number of ticks between the firing of consecutive shots. A higher ``Firerate`` value will cause the weapon to have a slower rate of a fire. The weapon's rate of fire can be calculated with ``50 ÷ (Firerate + 1)``, as the rounds per second.
+
+----
+
+.. _doc_item_asset_gun:grip:
+
+Grip :ref:`uint16 <doc_data_builtin_types>` ``0``
+:::::::::::::::::::::::::::::::::::::::::::::::::
+
+Legacy ID of a grip attachment that should be attached by default. The ``Hook_Grip`` flag is not required to use this property.
+
+----
+
+.. _doc_item_asset_gun:gunshot_rolloff_distance:
+
+Gunshot_Rolloff_Distance :ref:`float32 <doc_data_builtin_types>`
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Distance over which the gunshot audio rolls off until it is completely inaudible, in meters. Defaults to ``16`` when using ``Action String``; defaults to ``64`` when using ``Action Rocket``; otherwise, defaults to ``512``.
+
+----
+
+.. _doc_item_asset_gun:hammer_time:
+
+Hammer_Time :ref:`float32 <doc_data_builtin_types>` ``1``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Multiplier on the time it takes to pull back the hammer a ranged weapon after firing. This does not affect the actual animation speed, but the cooldown before the player can perform other actions (such as shooting) again. Values less than ``1`` have no effect.
+
+----
+
+.. _doc_item_asset_gun:hook_barrel:
+
+Hook_Barrel :ref:`flag <doc_data_builtin_types>`
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+When this flag is included, the ranged weapon has a barrel attachment slot.
+
+----
+
+.. _doc_item_asset_gun:hook_grip:
+
+Hook_Grip :ref:`flag <doc_data_builtin_types>`
+::::::::::::::::::::::::::::::::::::::::::::::
+
+When this flag is included, the ranged weapon has a grip attachment slot.
+
+----
+
+.. _doc_item_asset_gun:hook_sight:
+
+Hook_Sight :ref:`flag <doc_data_builtin_types>`
+:::::::::::::::::::::::::::::::::::::::::::::::
+
+When this flag is included, the ranged weapon has a sight attachment slot.
+
+----
+
+.. _doc_item_asset_gun:hook_tactical:
+
+Hook_Tactical :ref:`flag <doc_data_builtin_types>`
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+When this flag is included, the ranged weapon has a tactical attachment slot.
+
+----
+
+.. _doc_item_asset_gun:infinite_ammo:
+
+Infinite_Ammo :ref:`bool <doc_data_builtin_types>` ``false``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+When ``true``, ammunition is not depleted from the magazine attachment. This allows for the weapon to have infinite ammo, so long as a magazine attachment with a number of rounds remaining equal to ``Ammo_Per_Shot`` is attached.
+
+----
+
+.. _doc_item_asset_gun:instakill_headshots:
+
+Instakill_Headshots :ref:`bool <doc_data_builtin_types>` ``false``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If ``true``, a player that is headshot with this weapon is instantly killed. This does not affect zombies, unless the world's difficulty configuration has the ``Weapons_Use_Player_Damage`` setting enabled.
+
+----
+
+.. _doc_item_asset_gun:jam_max_chance:
+
+Jam_Max_Chance :ref:`float32 <doc_data_builtin_types>` ``0.1``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Decimal-to-percent chance for jamming to occur. This property requires ``Can_Ever_Jam``.
+
+----
+
+.. _doc_item_asset_gun:jam_quality_threshold:
+
+Jam_Quality_Threshold :ref:`float32 <doc_data_builtin_types>` ``0.4``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+The maximum threshold for when jamming can occur. This value is a decimal-to-percent representation of the item's quality value. For example, a threshold of ``0.4`` allows jamming to start occuring at 40% item quality. This property requires ``Can_Ever_Jam``.
+
+----
+
+.. _doc_item_asset_gun:magazine:
+
+Magazine :ref:`uint16 <doc_data_builtin_types>` ``0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Legacy ID of a magazine attachment that should be attached by default.
+
+----
+
+.. _doc_item_asset_gun:magazine_caliber_#:
+
+Magazine_Caliber_# :ref:`uint16 <doc_data_builtin_types>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Legacy ID of a caliber to check for magazine attachment compatibility. This property is used in conjunction with ``Magazine_Calibers``, which determines how many instances of this property should be read by the game.
+
+When this property is unset, it will default to ``0``. When the ``Magazine_Calibers`` property is not greater than ``0``, this property will default to the value of ``Caliber``.
+
+----
+
+.. _doc_item_asset_gun:magazine_calibers:
+
+Magazine_Calibers :ref:`int32 <doc_data_builtin_types>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Set the length of the array containing the calibers for magazine attachment compatibility. This property is used in conjunction with the ``Magazine_Caliber_#`` property, and the value of ``Magazine_Calibers`` should be equal to the number of instances of ``Magazine_Caliber_#``.
+
+When this property is not greater than ``0`` – it will default to ``1``, and the ``Magazine_Caliber_#`` property can no longer be customized.
+
+This property is often used alongside ``Attachment_Calibers``, but this is optional.
+
+----
+
+.. _doc_item_asset_gun:magazine_replacement_#_id:
+
+Magazine_Replacement_#_ID :ref:`uint16 <doc_data_builtin_types>` ``0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Legacy ID of a magazine attachment that should be used as an alternative default when certain condition(s) are met. This property is used in conjunction with ``Magazine_Replacements``, which determines how many instances of this property should be read by the game.
+
+----
+
+.. _doc_item_asset_gun:magazine_replacement_#_map:
+
+Magazine_Replacement_#_Map :ref:`string <doc_data_builtin_types>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This value should be the name of a map. When the weapon spawns on this map, this condition has been met. This property requires ``Magazine_Replacement_#_ID``.
+
+----
+
+.. _doc_item_asset_gun:magazine_replacements:
+
+Magazine_Replacements :ref:`int <doc_data_builtin_types>` ``0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+``Magazine_Replacements`` and its related properties are used to add alternative magazine attachments that should be used as the weapon's default when certain condition(s) are met.
+
+This value sets the length of the array containing any alternative default magazine attachments. This property is used in conjunction with the ``Magazine_Replacement_#_ID`` property, and the value of ``Magazine_Replacements`` should be equal to the number of instances of ``Magazine_Replacement_#_ID``.
+
+----
+
+.. _doc_item_asset_gun:muzzle:
+
+Muzzle :ref:`doc_data_guid` or :ref:`uint16 <doc_data_builtin_types>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+GUID or legacy ID of the effect to play after shooting. This is emitted from the ranged weapon's "Barrel" GameObject.
+
+----
+
+.. _doc_item_asset_gun:projectile_explosion_launch_speed:
+
+Projectile_Explosion_Launch_Speed :ref:`float32 <doc_data_builtin_types>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Players caught within the area-of-effect explosion caused by a *physics projectile* weapon are launched at this speed. For example, this can be used to create velocity-related items like "rocket-jumping" mods. Defaults to ``Player_Damage × 0.1``.
+
+----
+
+.. _doc_item_asset_gun:projectile_lifespan:
+
+Projectile_Lifespan :ref:`float32 <doc_data_builtin_types>` ``30``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Lifespan of *physics projectiles*, in seconds. After this much time elapses, the projectile despawns.
+
+----
+
+.. _doc_item_asset_gun:projectile_penetrate_buildables:
+
+Projectile_Penetrate_Buildables :ref:`flag <doc_data_builtin_types>`
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+The area-of-effect explosions caused by *physics projectiles* penetrate through buildables when this flag is set.
+
+----
+
+.. _doc_item_asset_gun:range_rangefinder:
+
+Range_Rangefinder :ref:`float32 <doc_data_builtin_types>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Overrides the maximum distance displayed when using a "Rangefinder" tactical attachment on this weapon. For example, it may be useful to set this property when using ``Action Rocket``, as explosive projectiles use ``Range`` to determine the explosion radius rather than the maximum range of the weapon. Defaults to the value of the ``Range`` property.
+
+----
+
+.. _doc_item_asset_gun:recoil_crouch:
+
+Recoil_Crouch :ref:`float32 <doc_data_builtin_types>` ``0.85``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Multiplier on camera recoil while crouched.
+
+----
+
+.. _doc_item_asset_gun:recoil_max_x:
+
+Recoil_Max_X :ref:`float32 <doc_data_builtin_types>` ``0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Maximum horizontal camera recoil in degrees. This property is used in conjunction with ``Recoil_Min_Y``.
+
+----
+
+.. _doc_item_asset_gun:recoil_max_y:
+
+Recoil_Max_Y :ref:`float32 <doc_data_builtin_types>` ``0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Maximum vertical camera recoil in degrees. This property is used in conjunction with ``Recoil_Min_X``.
+
+----
+
+.. _doc_item_asset_gun:recoil_min_x:
+
+Recoil_Min_X :ref:`float32 <doc_data_builtin_types>` ``0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Minimum horizontal camera recoil in degrees. This property is used in conjunction with ``Recoil_Max_X``.
+
+----
+
+.. _doc_item_asset_gun:recoil_min_y:
+
+Recoil_Min_Y :ref:`float32 <doc_data_builtin_types>` ``0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Minimum vertical camera recoil in degrees. This property is used in conjunction with ``Recoil_Max_Y``.
+
+----
+
+.. _doc_item_asset_gun:recoil_prone:
+
+Recoil_Prone :ref:`float32 <doc_data_builtin_types>` ``0.7``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Multiplier on camera recoil while prone.
+
+----
+
+.. _doc_item_asset_gun:recoil_sprint:
+
+Recoil_Sprint :ref:`float32 <doc_data_builtin_types>` ``1.25``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Multiplier on camera recoil while sprinting. This property is not relevant unless ``Can_Aim_During_Sprint`` has been set to ``true``.
+
+----
+
+.. _doc_item_asset_gun:recover_x:
+
+Recover_X :ref:`float32 <doc_data_builtin_types>` ``0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Multiplier on camera degrees to be counter-animated horizontally over the next 250 milliseconds.
+
+----
+
+.. _doc_item_asset_gun:recover_y:
+
+Recover_Y :ref:`float32 <doc_data_builtin_types>` ``0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Multiplier on camera degrees to be counter-animated vertically over the next 250 milliseconds.
+
+----
+
+.. _doc_item_asset_gun:reload_time:
+
+Reload_Time :ref:`float32 <doc_data_builtin_types>` ``1``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Multiplier on time it takes to finish reloading the ranged weapon. This does not affect the actual animation speed, but the cooldown before the player can perform other actions (such as shooting) again. Values less than ``1`` have no effect.
+
+----
+
+.. _doc_item_asset_gun:replace:
+
+Replace :ref:`float32 <doc_data_builtin_types>` ``1``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Multiplier of the reload animation length before the magazine is respawned. This does not affect the actual animation speed, but the cooldown before the player can perform other actions (such as shooting) again. Values less than ``0.01`` have no effect.
+
+----
+
+.. _doc_item_asset_gun:requires_nonzero_attachment_caliber:
+
+Requires_NonZero_Attachment_Caliber :ref:`bool <doc_data_builtin_types>` ``false``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If ``true``, attachments must specify at least one non-zero (``0``) caliber ID to be compatible. For example, this can be used to make most vanilla attachments (like the Tactical Laser, Dot Sight, and Vertical Grip) incompatible with this weapon.
+
+----
+
+.. _doc_item_asset_gun:safety:
+
+Safety :ref:`flag <doc_data_flag>`
+::::::::::::::::::::::::::::::::::
+
+The weapon has a safety firing mode.
+
+----
+
+.. _doc_item_asset_gun:scale_aim_animation_speed:
+
+Scale_Aim_Animation_Speed :ref:`bool <doc_data_builtin_types>` ``true``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+When true, the length of the "Aim_Start" and "Aim_Stop" animations are scaled to match ``Aim_In_Duration`` (with modifiers).
+
+----
+
+.. _doc_item_asset_gun:semi:
+
+Semi :ref:`flag <doc_data_flag>`
+::::::::::::::::::::::::::::::::
+
+The weapon has a semi-automatic firing mode.
+
+----
+
+.. _doc_item_asset_gun:shake_max_x:
+
+Shake_Max_X :ref:`float32 <doc_data_builtin_types>` ``0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Maximum 𝘟-axis model shake caused from firing the weapon.
+
+----
+
+.. _doc_item_asset_gun:shake_min_x:
+
+Shake_Min_X :ref:`float32 <doc_data_builtin_types>` ``0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Minimum 𝘟-axis model shake caused from firing the weapon.
+
+----
+
+.. _doc_item_asset_gun:shake_max_y:
+
+Shake_Max_Y :ref:`float32 <doc_data_builtin_types>` ``0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Maximum 𝘠-axis model shake caused from firing the weapon.
+
+----
+
+.. _doc_item_asset_gun:shake_min_y:
+
+Shake_Min_Y :ref:`float32 <doc_data_builtin_types>` ``0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Minimum 𝘠-axis model shake caused from firing the weapon.
+
+----
+
+.. _doc_item_asset_gun:shake_max_z:
+
+Shake_Max_Z :ref:`float32 <doc_data_builtin_types>` ``0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Maximum 𝘡-axis model shake caused from firing the weapon.
+
+----
+
+.. _doc_item_asset_gun:shake_min_z:
+
+Shake_Min_Z :ref:`float32 <doc_data_builtin_types>` ``0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Minimum 𝘡-axis model shake caused from firing the weapon.
+
+----
+
+.. _doc_item_asset_gun:shell:
+
+Shell :ref:`doc_data_guid` or :ref:`uint16 <doc_data_builtin_types>`
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+GUID or legacy ID of the effect to play after shooting, emitted from the ranged weapon's "Eject" GameObject. Defaults to ``33`` when using either ``Action Pump`` or ``Action Break``; defaults to ``1`` when using any other ``Action`` key-value pair except for ``Action Rail``; otherwise, defaults to ``0``.
+
+----
+
+.. _doc_item_asset_gun:should_delete_empty_magazines:
+
+Should_Delete_Empty_Magazines :ref:`bool <doc_data_builtin_types>`
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Overrides how empty magazines are handled by the action item mode. When set to ``true``, empty magazine attachments are deleted when completely emptied. The default behavior depends on the configuration of the ``Action`` property.
+
+Defaults to ``true`` when using one of the following ``Action`` enumerators: ``Break``, ``Pump``, ``Rail``, ``Rocket``, or ``String``. Otherwise, defaults to ``false``.
+
+----
+
+.. _doc_item_asset_gun:sight:
+
+Sight :ref:`uint16 <doc_data_builtin_types>` ``0``
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Legacy ID of a sight attachment that should be attached by default. The ``Hook_Sight`` flag is not required to use this property.
+
+----
+
+.. _doc_item_asset_gun:spread_aim:
+
+Spread_Aim :ref:`float32 <doc_data_builtin_types>` ``0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Multiplier on the bullet spread while aiming down sights. This is multiplied by the ``Spread_Angle_Degrees`` value.
+
+----
+
+.. _doc_item_asset_gun:spread_angle_degrees:
+
+Spread_Angle_Degrees :ref:`float32 <doc_data_builtin_types>` ``0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Bullet angle of deviation away from the aiming direction. For example, ``15`` means the shot could hit up to 15 degrees away from the center of the crosshair, whereas ``0`` will always hit the center of the crosshair. All other spread values are multipliers for this.
+
+----
+
+.. _doc_item_asset_gun:spread_crouch:
+
+Spread_Crouch :ref:`float32 <doc_data_builtin_types>` ``0.85``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Multiplier on the bullet spread while crouched.
+
+----
+
+.. _doc_item_asset_gun:spread_hip:
+
+Spread_Hip :ref:`float32 <doc_data_builtin_types>`
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+.. deprecated:: 3.22.20.0
+   Use ``Spread_Angle_Degrees`` instead.
+
+Maintained for backwards compatibility. Running the game with the ``-ValidateAssets`` :ref:`launch option <doc_commandline>` will log the equivalent ``Spread_Angle_Degrees`` value.
+
+----
+
+.. _doc_item_asset_gun:spread_prone:
+
+Spread_Prone :ref:`float32 <doc_data_builtin_types>` ``0.7``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Multiplier on the bullet spread while prone.
+
+----
+
+.. _doc_item_asset_gun:spread_sprint:
+
+Spread_Sprint :ref:`float32 <doc_data_builtin_types>` ``1.25``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Multiplier on the bullet spread while sprinting.
+
+----
+
+.. _doc_item_asset_gun:tactical:
+
+Tactical :ref:`uint16 <doc_data_builtin_types>` ``0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Legacy ID of a tactical attachment that should be attached by default. The ``Hook_Tactical`` flag is not required to use this property.
+
+----
+
+.. _doc_item_asset_gun:turret:
+
+Turret :ref:`flag <doc_data_flag>`
+:::::::::::::::::::::::::::::::::::::::::::
+
+This weapon should be treated as a vehicular turret. This flag affects the player's first-person viewmodel while the weapon is held.
+
+----
+
+.. _doc_item_asset_gun:unjam_chamber_anim:
+
+Unjam_Chamber_Anim :ref:`string <doc_data_builtin_types>` ``UnjamChamber``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Name of an animation clip to play when unjamming the weapon. This property requires ``Can_Ever_Jam``.
+
+----
+
+.. _doc_item_asset_gun:unplace:
+
+Unplace :ref:`float32 <doc_data_builtin_types>` ``0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Multiplier of the reload animation length before the magazine is despawned. This does not affect the actual animation speed, but the cooldown before the player can perform other actions (such as shooting) again.
+
+NPC Rewards
+-----------
 
 Gun assets can use quest rewards. For example, every time the ranged weapon is fired an item could be spawned in the player's inventory. Alternatively, shooting the ranged weapon may be required to complete a quest. For more information, refer to the :ref:`Rewards <doc_npc_asset_rewards>` documentation.
 
 These rewards are prefixed with ``Shoot_Quest_``. For example, ``Shoot_Quest_Rewards 1``.
+
+Understanding Projectile Systems
+--------------------------------
+
+All ranged weapons utilize one of two projectile systems: the *ballistic projectile system*, or the *physics projectile system*. This is determined based on the :ref:`Action <doc_item_asset_gun:action>` the weapon has been configured to use, although most weapons use the ballistic projectile system.
+
+Ballistic projectiles use a deterministic simulation. Their travel time, bullet drop, and other characteristics can be configured with properties such as :ref:`Ballistic_Travel <doc_item_asset_gun:ballistic_travel>` and :ref:`Bullet_Gravity_Multiplier <doc_item_asset_gun:bullet_gravity_multiplier>`. When the ballistics game mechanic is disabled, these weapons function as hitscan instead.
+
+Physics projectiles use Unity's physics simulation. Unlike ballistic projectiles, these are not deterministic. Additionally, physics projectiles cause area-of-effect explosions upon impact. The characteristics of physics projectiles can be configured with properties such as :ref:`Ballistic_Force <doc_item_asset_gun:ballistic_force>` and :ref:`Projectile_Explosion_Launch_Speed <doc_item_asset_gun:projectile_explosion_launch_speed>`.
