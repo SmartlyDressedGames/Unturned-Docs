@@ -54,9 +54,7 @@ In addition to animations used by any equippable item, guns have an additional s
 
 Adding animations named "Aim_Start" and "Aim_Stop" will cause an animation to be played whenever the player starts or stops aiming down sights. Animations named "Attach_Start" and "Attach_Stop" will play when an attachment is attached or unattached to the gun. The "Sprint_Start" and "Sprint_Stop" animations play when the player starts and stops sprinting. The "Reload" animation is played when reloading the gun.
 
-The "Hammer" animation is played under certain conditions where it would make sense to manually eject a cartridge from the gun. For example: after reloading an gun that had an empty magazine, or after firing a bolt-action rifle.
-
-The "Scope" animation is played when firing a single-shot weapon while scoped. For example, a bolt-action rifle or pump-action shotgun.
+The "Hammer" animation is played under certain conditions where it would make sense to manually eject a cartridge from the gun. For example: after reloading an gun that had an empty magazine, or after firing a single-shot weapon (such as a bolt-action rifle or pump-action shotgun).
 
 If a gun is configured to use the gun jamming feature, the "UnjamChamber" animation will play when a jam occurs.
 
