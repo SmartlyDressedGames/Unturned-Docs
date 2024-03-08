@@ -3,22 +3,53 @@
 Arrest Start Assets
 ===================
 
-Catchers items are used to restrain players, and a corresponding :ref:`releaser item <doc_item_asset_arrest_end>` can be used to unlock the restraints.
+The ItemArrestStartAsset class is used for "catcher" items, which can restrain a player. Its sister item, the ":ref:`releaser <doc_item_asset_arrest_start>`", can be used to unlock restraints. Some examples of vanilla catchers include the `Handcuffs <https://wiki.smartlydressedgames.com/wiki/Handcuffs>`_ and `Cable Tie <https://wiki.smartlydressedgames.com/wiki/Cable_Tie>`_.
 
-This inherits the :ref:`ItemAsset <doc_item_asset_intro>` class.
+Game Data File
+--------------
 
-Item Asset Properties
----------------------
+Catchers inherit properties from the :ref:`ItemAsset <doc_item_asset_intro>` class. Any properties from parent classes that are required are listed in the table below.
 
-**GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
+.. list-table::
+   :widths: 30 40 30
+   :header-rows: 1
+   
+   * - Class
+     - Property Name
+     - Required Value
+   * - :ref:`ItemAsset <doc_item_asset_intro>`
+     - :ref:`GUID <doc_item_asset_intro:guid>`
+     - 
+   * - :ref:`ItemAsset <doc_item_asset_intro>`
+     - :ref:`ID <doc_item_asset_intro:id>`
+     - 
+   * - :ref:`ItemAsset <doc_item_asset_intro>`
+     - :ref:`Type <doc_item_asset_intro:type>`
+     - ``Arrest_Start``
+   * - :ref:`ItemAsset <doc_item_asset_intro>`
+     - :ref:`Useable <doc_item_asset_intro:useable>`
+     - ``Arrest_Start``
 
-**Type** *enum* (``Arrest_End``)
+Properties
+``````````
 
-**Useable** *enum* (``Arrest_End``)
+.. list-table::
+   :widths: 40 40 20
+   :header-rows: 1
+   
+   * - Property Name
+     - Type
+     - Default Value
+   * - :ref:`Strength <doc_item_asset_arrest_start:strength>`
+     - :ref:`uint16 <doc_data_builtin_types>`
+     - ``0``
 
-**ID** *uint16*: Must be a unique identifier.
+Property Descriptions
+`````````````````````
 
-Arrest Start Asset Properties
------------------------------
+.. _doc_item_asset_arrest_start:strength:
 
-**Strength** *uint16*: Number of times a player must lean in order to break free.
+Strength :ref:`uint16 <doc_data_builtin_types>` ``0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Number of times a player must lean in order to break free from their restraints.
