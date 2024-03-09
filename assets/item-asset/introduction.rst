@@ -70,6 +70,9 @@ Properties
    * - :ref:`Bypass_Hash_Verification <doc_item_asset_intro:bypass_hash_verification>`
      - :ref:`bool <doc_data_builtin_types>`
      - ``false``
+   * - :ref:`Bypass_ID_Limit <doc_item_asset_intro:bypass_id_limit>`
+     - :ref:`flag <doc_data_flag>`
+     - 
    * - :ref:`Can_Player_Equip <doc_item_asset_intro:can_player_equip>`
      - :ref:`bool <doc_data_builtin_types>`
      - See description
@@ -258,6 +261,15 @@ Bypass_Hash_Verification :ref:`bool <doc_data_builtin_types>` ``false``
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Disable hash verification check, and allow for mismatched files.
+
+----
+
+.. _doc_item_asset_intro:bypass_id_limit:
+
+Bypass_ID_Limit :ref:`flag <doc_data_flag>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Allows for using an ``ID`` value within the range reserved for official content.
 
 ----
 
