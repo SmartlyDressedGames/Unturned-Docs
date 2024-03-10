@@ -267,7 +267,7 @@ Disable hash verification check, and allow for mismatched files.
 .. _doc_item_asset_intro:bypass_id_limit:
 
 Bypass_ID_Limit :ref:`flag <doc_data_flag>`
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::
 
 Allows for using an ``ID`` value within the range reserved for official content.
 
