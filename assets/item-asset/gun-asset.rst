@@ -96,7 +96,7 @@ Ranged weapons inherit properties from the :ref:`ItemWeaponAsset <doc_item_asset
    * - :ref:`ItemAsset <doc_item_asset_intro>`
      - :ref:`Useable <doc_item_asset_intro:useable>`
      - ``Gun``
-   * - :ref:`WeaponAsset <doc_item_asset_intro>`
+   * - :ref:`ItemWeaponAsset <doc_item_asset_intro>`
      - :ref:`Range <doc_item_asset_weapon:range>`
      - 
 
