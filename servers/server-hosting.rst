@@ -56,27 +56,27 @@ Continue to: :ref:`How to Install Server using SteamCMD <doc_server_hosting:inst
 How to Install Server using SteamCMD
 ------------------------------------
 
-1. Login to Steam anonymously:
+1. Login to Steam anonymously.
 
 .. code-block:: bash
 
 	login anonymous
 
-2. Download the server:
+2. Download the Unturned Dedicated Server application.
 
 .. code-block:: bash
 
 	app_update 1110390
+	
+.. tip:: This command can also be used to update the server
 
-*Note: this command can also be used to update the server.*
-
-3. Close SteamCMD:
-
+3. Close SteamCMD.
+	
 .. code-block:: bash
 
 	quit
 
-4. The server files are now in the ``...SteamCMD\steamapps\common\U3DS`` directory.
+4. Server files have been installed in the default `app install directory <https://developer.valvesoftware.com/wiki/SteamCMD#Downloading_an_App>`_, which is ``./steamapps/common/U3DS/``.
 
 Continue to: :ref:`How to Launch Server on Windows <doc_server_hosting:launch_server_windows>` or :ref:`How to Launch Server on Linux <doc_server_hosting:launch_server_linux>`
 
@@ -96,8 +96,8 @@ With these considerations in mind, it is recommended to install the Unturned Ded
 To install the tool from your Steam Library either search for "Unturned Dedicated Server" via the search filter, or enable the "Tools" application type filter so that tools are visible. Select the "Unturned Dedicated Server" application in your Steam Library, and click the "Install" button.
 
 To navigate to the server files install directory:
-1. Right-click Unturned Dedicated Server in your Steam Library
-2. Select Properties... > Local Files > Browse...
+#. Right-click Unturned Dedicated Server in your Steam Library
+#. Select Properties... > Local Files > Browse...
 
 The rest of the documentation assumes that the Unturned Dedicated Server tool was downloaded with SteamCMD, rather than through your Steam Library, so some of the documentation may differ slightly.
 
@@ -109,23 +109,34 @@ How to Launch Server on Windows
 -------------------------------
 
 1. Navigate to the ``...\SteamCMD\steamapps\common\U3DS`` directory.
+
 2. Create a new text file by right-clicking an empty space within the U3DS directory, and selecting New > Text Document. This will create a new text file called "New Text Document.txt".
-	1. **If the file name does not display the ``.txt`` file extension, then you need to enable the viewing of "File name extensions".**
-	2. At the top of the File Explorer window, navigate to the View tab on the ribbon.
-	3. In the Show/hide section of options, ensure that the "File name extensions" box is checked.
+
+   1. **If the file name does not display the** ``.txt`` **file extension, then you need to enable the viewing of "File name extensions".**
+
+   2. At the top of the File Explorer window, navigate to the View tab on the ribbon.
+
+
+   3. In the Show/hide section of options, ensure that the "File name extensions" box is checked.
 
 	.. image:: img/FileNameExtensions.jpg
 
-	4. File extensions should now be displayed at the end of file names.
-3. Rename the "New Text Document.txt" file, and change it from a text file (.txt) to a batch script file (.bat). For example, "Tutorial.bat".
-4. Right-click on the batch script (``Tutorial.bat``) and select Edit. This will open the batch file in your default text editor, although any text editor (e.g., Notepad, WordPad, Notepad++) can be used.
-5. Add the script that will start your server when the batch script is ran.
-	* For an Internet server, copy-and-paste the following text into the file: ``start "" "%~dp0ServerHelper.bat" +InternetServer/MyServer``
-	* For a LAN server, copy-and-paste the following text into the file: ``start "" "%~dp0ServerHelper.bat" +LanServer/MyServer``
+   4. File extensions should now be displayed at the end of file names.
 
-	In this example "MyServer" is used as the ServerID for savedata and configuration purposes; you may choose to replace "MyServer" with a different name. For an example batch script, open the built-in ``ExampleServer.bat`` file in a text editor.
+3. Rename the "New Text Document.txt" file, and change it from a text file (.txt) to a batch script file (.bat). For example, "Tutorial.bat".
+
+4. Right-click on the batch script (``Tutorial.bat``) and select Edit. This will open the batch file in your default text editor, although any text editor (e.g., Notepad, WordPad, Notepad++) can be used.
+
+5. Add the script that will start your server when the batch script is ran.
+
+   a. For an Internet server, copy-and-paste the following text into the file: ``start "" "%~dp0ServerHelper.bat" +InternetServer/MyServer``
+	
+   b. For a LAN server, copy-and-paste the following text into the file: ``start "" "%~dp0ServerHelper.bat" +LanServer/MyServer``
+
+   In this example "MyServer" is used as the ServerID for savedata and configuration purposes; you may choose to replace "MyServer" with a different name. For an example batch script, open the built-in ``ExampleServer.bat`` file in a text editor.
 
 6. Save your changes to the file, and close the file.
+
 7. Double-click the batch script to launch the server. A command-line interface should appear. Because this is the first time we have ran the batch file, it is going to generate a bunch of necessary server files.
 
 .. image:: img/InterfaceU3DS.jpg
@@ -142,12 +153,14 @@ How to Launch Server on Linux
 -----------------------------
 
 1. Navigate to the ``.../SteamCMD/steamapps/common\U3DS`` directory.
+
 2. To create our server, we need to execute a command.
-	* For an Internet server run the following command: ``./ServerHelper.sh +InternetServer/MyServer``
-	* For a LAN server run the following command: ``./ServerHelper.sh +LanServer/MyServer``
 
-	In this example "MyServer" is used as the ServerID for savedata and configuration purposes; you may choose to replace "MyServer" with a different name. For an example script, open the built-in ``ExampleServer.sh`` file in a text editor.
+   a. For an Internet server run the following command: ``./ServerHelper.sh +InternetServer/MyServer``
 
+   b. For a LAN server run the following command: ``./ServerHelper.sh +LanServer/MyServer``
+
+   In this example "MyServer" is used as the ServerID for savedata and configuration purposes; you may choose to replace "MyServer" with a different name. For an example script, open the built-in ``ExampleServer.sh`` file in a text editor.
 3. You can safely close the server by executing (typing, and then pressing the "↵ Enter" key on your keyboard) the following command on the command-line interface: ``shutdown``
 
 4. The executed command has created a new file directory located in ``.../U3DS/Servers``, called "MyServer". This directory is where all the savedata and configuration files are kept. Changing the ``MyServer`` ServerID (from step 2) in the batch script to a different name will allow for keeping savedata separate across multiple servers, and for running multiple servers at once.
@@ -161,8 +174,8 @@ How to Configure Server
 
 Each individual ServerID has its own savedata and configuration.
 
-1. Determine the ServerID. This is the name after the +InternetServer/ or +LanServer/ command.
-2. Navigate to U3DS > Servers > ServerID.
+#. Determine the ServerID. This is the name after the +InternetServer/ or +LanServer/ command.
+#. Navigate to U3DS > Servers > ServerID.
 
 Launch commands are setup in the Server > ``Commands.dat`` file. Each line should have one command.
 
