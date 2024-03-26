@@ -9,7 +9,7 @@ Prevents specific items or blueprints from being used while crafting. They are h
 
 **Input_Items** array of Item :ref:`Asset Pointers <doc_data_assetptr>`: Any blueprints consuming these items cannot be crafted. For example (blacklisted items are highlighted):
 
-.. code-block:: cpp
+.. code-block:: unturned
 	:linenos:
 	:emphasize-lines: 4, 7-10, 13-16
 
@@ -35,7 +35,7 @@ Prevents specific items or blueprints from being used while crafting. They are h
 
 **Blueprints** array: Prevent specific individual blueprints from being crafted. Each entry has an ``Item`` :ref:`Asset Pointer <doc_data_assetptr>` and ``Blueprint`` index. For example, to prevent the Chef Hat from being salvaged:
 
-.. code-block:: text
+.. code-block:: unturned
 
 	Blueprints
 	[
