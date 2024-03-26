@@ -590,7 +590,7 @@ When this property is unset, it will default to ``0``. When the ``Attachment_Cal
 
 For example, a valid configuration for a ranged weapon's calibers could be:
 
-.. code-block:: text
+.. code-block:: unturned
 
   Attachment_Calibers 2
   Attachment_Caliber_0 1

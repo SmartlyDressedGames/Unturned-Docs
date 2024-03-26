@@ -1,16 +1,20 @@
 # Configuration file for the Sphinx documentation builder.
+#
+# https://www.sphinx-doc.org/en/master/usage/configuration.html
+
+import sys, os
 
 # -- Project information
 
 project = "Unturned"
-copyright = '2023, Smartly Dressed Games'
-author = 'Smartly Dressed Games'
+copyright = "2023, Smartly Dressed Games"
+author = "Smartly Dressed Games"
 
-release = '0.1'
-version = '0.1.0'
+release = "0.1"
+version = "0.1.0"
 
 # -- General configuration
-
+sys.path.append(os.path.abspath("_extensions")) # also find extensions within this directory
 extensions = [
     'sphinx.ext.duration',
     'sphinx.ext.doctest',
@@ -20,6 +24,8 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinxext.opengraph', # OpenGraph support (e.g., URLs posted onto our Discourse forum will appear as OneBox embeds)
     'sphinx_rtd_theme', # "Read the Docs Sphinx Theme" https://sphinx-rtd-theme.readthedocs.io/en/stable/index.html
+    # -- Locally-installed modules
+    'unturned_lexer',
 ]
 
 autosectionlabel_prefix_document = True # make sure explicit target is unique
