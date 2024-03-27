@@ -13,4 +13,5 @@
 	dialogue-asset
 	quest-asset
 	rewards
+	rewards-list-asset
 	vendor-asset
