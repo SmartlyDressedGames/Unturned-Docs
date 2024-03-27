@@ -178,6 +178,8 @@ Kills_Zombie
 
 **Condition\_#\_Spawn** *flag*: Specified if the zombie type should be forcefully generated upon entering the area, which will then be deleted upon leaving the area.
 
+**Condition\_#\_LevelTableOverride** *int*: Unique ID of a zombie type shown in the level editor. If set, the zombie spawned will use that type. Defaults to -1.
+
 Player_Life_Food
 ````````````````
 
