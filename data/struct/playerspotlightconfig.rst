@@ -28,7 +28,7 @@ Properties
      - :ref:`float32 <doc_data_builtin_types>`
      - ``1.3``
    * - :ref:`SpotLight_Color <doc_data_playerspotlightconfig:spotlight_color>`
-     - :ref:`color <doc_data_file_format>`
+     - :ref:`color <doc_data_color>`
      - ``#f5df93``
 
 Property Descriptions

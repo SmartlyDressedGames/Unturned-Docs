@@ -46,7 +46,7 @@ Properties
      - :ref:`flag <doc_data_flag>`
      - 
    * - :ref:`Nightvision_Color <doc_item_asset_sight:nightvision_color>`
-     - :ref:`color <doc_data_file_format>`
+     - :ref:`color <doc_data_color>`
      - See description
    * - :ref:`Nightvision_Fog_Intensity <doc_item_asset_sight:nightvision_fog_intensity>`
      - :ref:`float32 <doc_data_builtin_types>`
@@ -95,7 +95,7 @@ DistanceMarker Dictionary
      - :ref:`bool <doc_data_builtin_types>`
      - ``true``
    * - :ref:`Color <doc_item_asset_sight:distancemarker_color>`
-     - :ref:`color <doc_data_file_format>`
+     - :ref:`color <doc_data_color>`
      - ``black``
 
 .. _doc_item_asset_sight:eside_enumeration:
@@ -252,7 +252,7 @@ If true, a label with ``Distance`` text is shown next to the horizontal line mar
 
 .. _doc_item_asset_sight:distancemarker_color:
 
-Color :ref:`color <doc_data_file_format>` ``black``
-:::::::::::::::::::::::::::::::::::::::::::::::::::
+Color :ref:`color <doc_data_color>` ``black``
+:::::::::::::::::::::::::::::::::::::::::::::
 
 Override the color of the horizontal line and text.

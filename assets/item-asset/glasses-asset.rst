@@ -25,7 +25,7 @@ Glasses Asset Properties
 
 **Nightvision_Allowed_In_ThirdPerson** *bool*: If ``true``, nightvision works in third-person, not just first-person. Defaults to ``false`` for backwards compatibility. Vanilla nightvision has this set to true.
 
-**Nightvision_Color** :ref:`color <doc_data_file_format>`: Overrides the default color when using ``Vision Military``. This property supports using legacy color parsing.
+**Nightvision_Color** :ref:`color <doc_data_color>`: Overrides the default color when using ``Vision Military``. This property supports using legacy color parsing.
 
 **Nightvision_Fog_Intensity** *float*: Intensity of fog while nightvision is active.
 
