@@ -1,11 +1,11 @@
-.. _doc_npc_asset_reward_list:
+.. _doc_npc_asset_rewards_list:
 
 Rewards List Assets
 ===================
 
 **GUID** *32-digit hexadecimal*: Refer to :ref:`GUID <doc_data_guid>` documentation.
 
-**Type** *enum* (``RewardList``)
+**Type** *enum* (``RewardsList``)
 
 The `Rewards_List_Asset` NPC reward type can either grant a rewards list asset directly, or a :ref:`Spawn Table Asset <doc_assets_spawn>` which resolves to the final asset. This could be used, for example, to randomly select one of several rewards list assets which then grants the player a gun along with related ammo items.
 

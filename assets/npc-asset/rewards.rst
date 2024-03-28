@@ -204,12 +204,12 @@ Reputation
 
 **Reward_#_Value** *int*: Amount of reputation to reward.
 
-Rewards_List_Asset
+Rewards List Asset
 ``````````````````
 
 **Reward_#_Type** *enum* (``Rewards_List_Asset``)
 
-**Reward_#_GUID** :ref:`Asset Pointer <doc_data_assetptr>`: :ref:`Reward List<doc_npc_asset_reward_list>` to grant directly, or :ref:`Spawn Table <doc_assets_spawn>` to resolve into one.
+**Reward_#_GUID** :ref:`Asset Pointer <doc_data_assetptr>`: :ref:`Rewards List<doc_npc_asset_rewards_list>` to grant directly, or :ref:`Spawn Table <doc_assets_spawn>` to resolve into one.
 
 Teleport
 ````````
