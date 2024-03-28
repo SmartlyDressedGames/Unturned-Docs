@@ -7,7 +7,7 @@ Rewards can be granted by NPC assets, interactable objects, and item blueprints.
 
 **Rewards** *byte*: Total number of rewards.
 
-**Reward_#_Type** *enum* (``Flag_Bool``, ``Flag_Math``, ``Flag_Short``, ``Flag_Short_Random``, ``Achievement``, ``Currency``, ``Event``, ``Experience``, ``Item``, ``Item_Random``, ``Hint``, ``Player_Life_Food``, ``Player_Life_Health``, ``Player_Life_Virus``, ``Player_Life_Water``, ``Player_Spawnpoint``, ``Quest``, ``Reputation``, ``Rewards_List_Asset``, ``Teleport``, ``Vehicle``)
+**Reward_#_Type** *enum* (``Flag_Bool``, ``Flag_Math``, ``Flag_Short``, ``Flag_Short_Random``, ``Achievement``, ``Currency``, ``Cutscene_Mode``, ``Event``, ``Experience``, ``Item``, ``Item_Random``, ``Hint``, ``Player_Life_Food``, ``Player_Life_Health``, ``Player_Life_Virus``, ``Player_Life_Water``, ``Player_Spawnpoint``, ``Quest``, ``Reputation``, ``Rewards_List_Asset``, ``Teleport``, ``Vehicle``)
 
 **Reward_#_GrantDelaySeconds** *float*: If set, the reward will be queued for the specified number of seconds before being granted to the player. When the player dies any pending rewards are cancelled. Defaults to -1.
 
@@ -80,6 +80,15 @@ Refer to :ref:`Currency <doc_assets_currency>` documentation.
 **Reward_#_GUID** *string*: GUID of currency asset.
 
 **Reward_#_Value** *int*: Amount of currency to reward.
+
+Cutscene Mode
+`````````````
+
+Not as exciting as it sounds. While active, the first-person viewmodel is hidden and certain item actions like shooting are disabled. It's saved/loaded, but resets on death.
+
+**Reward_#_Type** *enum* (``Cutscene_Mode``)
+
+**Reward_#_Value** *bool*: Whether cutscene mode should currently be active.
 
 .. _doc_npc_asset_rewards:event:
 
