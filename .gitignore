@@ -3,3 +3,6 @@
 
 # Temporary Visual Studio Code config files
 /.vscode
+
+# Generated Python files, e.g., in the _extensions directory
+__pycache__/
