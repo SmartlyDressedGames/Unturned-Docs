@@ -1,22 +1,24 @@
-.. _doc_commandline:
+.. _doc_launch_options:
 
-Command-line Arguments
-======================
+Launch Options
+==============
 
-You can add command-line arguments within Steam:
+Launch options can be added to *Unturned* to change certain game settings before running the game. This allows for recovering from certain problems (such as an unwanted resolution or UI scale), troubleshooting a wide range of issues, or toggling settings not available from in-game.
 
-#. Right-click Unturned in your Steam Library
+This article lists the launch options available for *Unturned*. You can `add launch options <https://help.steampowered.com/en/faqs/view/7D01-D2DD-D75E-2955>`_ through your Steam Library.
 
-#. Select Properties... > General
+#. Right-click **Unturned** in your Steam Library.
 
-#. Find the Launch Options field
+#. Select the **Properties...** button.
 
-#. Type options separated by spaces. For example "-FallbackGizmos -Width=1920 -Height=1080" will enable the FallbackGizmos flag, set Width to 1920 and set Height to 1080.
+#. On the **General** tan, find the **Launch Options** field near the bottom.
 
-Game options
+#. Type options separated by spaces. For example, ``-TimeOverlay -Width=1920 -Height=1080`` will enable the TimeOverlay flag, set Width to 1920, and set Height to 1080.
+
+Game Options
 ------------
 
-Some command-line arguments are primarily intended for use with the Unturned Dedicated Server app.
+Some of the launch options are primarily intended for use with the Unturned Dedicated Server tool.
 
 **+connect**: Connect to a server, in the format of ``+connect <ip address>:<port>``.
 
@@ -36,7 +38,7 @@ Some command-line arguments are primarily intended for use with the Unturned Ded
 
 **-GameSense**: GameSense integration.
 
-**-Glazier=** *enum* (``IMGUI``): Use the legacy IMGUI rather than the default uGUI.
+**-Glazier=** *enum* (``IMGUI``, ``UIToolkit``): Use a different UI system instead of the default uGUI. Accepted values are ``IMGUI`` (legacy) and ``UIToolkit`` (experimental). For more information, refer to: :ref:`doc_glazier`.
 
 **-h** *int*: Alias of ``-height``.
 
@@ -90,7 +92,7 @@ Some command-line arguments are primarily intended for use with the Unturned Ded
 
 **-width** *int*: Override in-game resolution width.
 
-Unity options
+Unity Options
 -------------
 
 Unity's built-in command-line arguments take priority over *Unturned*'s equivalents. Some of the more relevant Unity arguments are mentioned below, but the rest can be found in the `Unity User Manual <https://docs.unity3d.com/2019.4/Documentation/Manual/PlayerCommandLineArguments.html>`_.
