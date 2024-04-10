@@ -1,0 +1,15 @@
+/**
+ * Custom tweaks to the Read the Docs theme.
+ */
+
+/* Wrap table contents for large screens. */
+/* COMMENTED OUT -- Reconsidering best way to implement wrapping for tables.
+ * Maybe this should only apply to a custom table class (a la, .wrapping)
+ * Additionally, maybe tables should always be forced to full body width
+
+@media screen and (min-width: 769px) {
+	.wy-table-responsive { overflow: visible; }
+	.wy-table-responsive table td { white-space: normal; }
+}
+
+*/
