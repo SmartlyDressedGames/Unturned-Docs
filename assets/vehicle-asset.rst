@@ -24,11 +24,11 @@ Vehicle Properties
 
 **Bypass_ID_Limit** *flag*: Allows for using an ``ID`` value within the range reserved for official content.
 
-**Cam_Driver_Offset** *float*: The vertical offset for the driver's first-person camera, in meters.
+**Cam_Driver_Offset** *float*: The vertical offset for the driver's first-person camera, in meters. This is additive with the value of ``Cam_Passenger_Offset``.
 
 **Cam_Follow_Distance** *float*: The distance behind the player the third-person camera should be placed at, in meters. Defaults to 5.5.
 
-**Cam_Passenger_Offset** *float*: The vertical offset for a passenger's first-person camera, in meters.
+**Cam_Passenger_Offset** *float*: The vertical offset for any passenger's (including the driver's) first-person camera, in meters.
 
 **Can_Be_Locked** *bool*: Whether or not the vehicle can be locked a player. Defaults to true.
 
