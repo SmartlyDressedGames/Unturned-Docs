@@ -8,7 +8,7 @@ To get started with creating mods for *Unturned*, certain tools need to be downl
 Installing Unturned
 -------------------
 
-*Unturned* must be downloaded in order to create and upload mods. The game can be downloaded from `Steam <https://store.steampowered.com/app/304930/>`_. If you are using SteamCMD, its app ID is ``304930``.
+*Unturned* must be downloaded in order to create and upload mods. The game can be downloaded from `Steam <https://store.steampowered.com/app/304930/>`_.
 
 Not only do the game files include tools necessary for creating custom content, but the game's official assets can also be used as an example when creating your own items, objects, or other assets.
 
@@ -63,7 +63,7 @@ Text editors
 
 A text editor (e.g., Notepad) or a code editor (e.g., Notepad++ or Visual Studio Code) is required to write the game data files used by assets. Code editors often include other useful tools, such as being able to search-and-replace content across multiple files at once.
 
-We *do not* recommend using a word processor, as these can add unwanted characters when not used properly.
+We *do not* recommend using a word processor (e.g., Microsoft Word, LibreOffice, or WordPad). Such programs are not intended intended for writing plain text files, and it is easy to accidentally add unwanted characters when not used properly.
 
 If you are unsure what you should use, Notepad comes installed on all Windows systems by default, and lacks any additional tools or features that (while helpful) may be confusing for an inexperienced user.
 
