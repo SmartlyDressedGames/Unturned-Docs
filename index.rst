@@ -9,8 +9,8 @@
 	:maxdepth: 1
 	:caption: About
 
-	about/command-line
 	about/getting-started
+	about/launch-options
 
 .. First section has articles on assets (in general).
 	Second section lists asset types, alphabetically.
@@ -106,18 +106,16 @@
 Unturned Documentation
 ======================
 
-This repository exists to document `Unturned <https://store.steampowered.com/app/304930>`_'s modding features going forward. Originally map and asset documentation was created through Steam Guides. The main guide with links to related guides can be found here: `Workshop: Creating, Publishing & Updating <https://steamcommunity.com/sharedfiles/filedetails/?id=460136012>`_.
+Welcome to the official documentation for `Unturned <https://store.steampowered.com/app/304930>`_'s modding and server hosting features! To navigate, use the table of contents in the sidebar or the search function in the top-left corner.
+
+A lot of our older documentation was scattered between YouTube videos and Steam Guides. The main Steam Guide with links to related guides can be found here: `Workshop: Creating, Publishing & Updating <https://steamcommunity.com/sharedfiles/filedetails/?id=460136012>`_. Note that most of these older guides are outdated.
 
 Upcoming Features
 -----------------
 
-You can find modding features under consideration on this Trello board: `Unturned Roadmap <https://trello.com/b/gpe4zlW3/unturned-roadmap>`_
+You can find modding features under consideration on this Trello board: `Unturned Roadmap <https://trello.com/b/gpe4zlW3/unturned-roadmap>`_. The cards on the board aren't ordered in any particular way. i.e., they do not dictate the order of updates.
 
-The cards on the board aren't ordered in any particular way. i.e., they do not dictate the order of updates.
-
-Miscellaneous requests and tasks that pop up take priority over the roadmap, so it may go a while between progress updates. For example, work for curated maps often takes priority.
-
-Several high-priority ideas that don't yet have a solid plan, like car physics improvements or a crafting revamp, aren't listed on the board.
+Miscellaneous requests and tasks that may pop up take priority over the roadmap, so it may go a while between progress updates. For example, work for curated maps often takes priority. Several high-priority ideas that don't yet have a solid plan, like a crafting revamp, aren't listed on the board.
 
 Video Tutorials
 ---------------
