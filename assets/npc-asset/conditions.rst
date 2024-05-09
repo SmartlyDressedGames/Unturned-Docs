@@ -7,7 +7,7 @@ Conditions can be held by NPC assets, interactable objects, and item blueprints.
 
 **Conditions** *byte*: Total number of conditions.
 
-**Condition\_#\_Type** *enum* (``Compare_Flags``, ``Date_Counter``, ``Flag_Bool``, ``Flag_Short``, ``Currency``, ``Experience``, ``Item``, ``Kills_Animal``, ``Kills_Horde``, ``Kills_Object``, ``Kills_Player``, ``Kills_Tree``, ``Kills_Resource``, ``Player_Life_Food``, ``Player_Life_Health``, ``Player_Life_Virus``, ``Player_Life_Water``, ``Quest``, ``Reputation``, ``Skillset``, ``Holiday``, ``Time_Of_Day``, ``Weather_Blend_Alpha``, ``Weather_Status``)
+**Condition\_#\_Type** *enum* (``Compare_Flags``, ``Date_Counter``, ``Flag_Bool``, ``Flag_Short``, ``Currency``, ``Experience``, ``Item``, ``Kills_Animal``, ``Kills_Horde``, ``Kills_Object``, ``Kills_Player``, ``Kills_Tree``, ``Kills_Resource``, ``Player_Life_Food``, ``Player_Life_Health``, ``Player_Life_Stamina``, ``Player_Life_Virus``, ``Player_Life_Water``, ``Quest``, ``Reputation``, ``Skillset``, ``Holiday``, ``Time_Of_Day``, ``Weather_Blend_Alpha``, ``Weather_Status``)
 
 **Condition\_#\_Reset** *flag*: Set back to equivalent of 0 when completed.
 
@@ -193,6 +193,13 @@ Player_Life_Health
 **Condition\_#\_Type** *enum* (``Player_Life_Health``)
 
 **Condition\_#\_Value** *int*: Target value, in terms of the player's current health.
+
+Player_Life_Stamina
+```````````````````
+
+**Condition\_#\_Type** *enum* (``Player_Life_Stamina``)
+
+**Condition\_#\_Value** *int*: Target value, in terms of the player's current stamina/energy.
 
 Player_Life_Virus
 `````````````````
