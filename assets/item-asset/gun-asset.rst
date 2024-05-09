@@ -9,7 +9,7 @@ Unity Asset Bundle Contents
 ---------------------------
 
 .. figure:: /assets/img/UnityExampleGun.png
-	
+
 	An example of a gun being set up in the Unity editor.
 
 To get started, either follow the steps to begin creating a custom item from the :ref:`introduction <doc_item_asset_intro>`, or duplicate the contents of a prepackaged example asset.
@@ -29,7 +29,7 @@ Additional Setup for Bows
 :::::::::::::::::::::::::
 
 .. figure:: /assets/img/UnityExampleCrossbow.png
-	
+
 	An example of a crossbow being set up in the Unity editor.
 
 Bows require additional GameObjects to simulate the drawing of the bowstring. Note that bowstrings are only simulated from the first-person perspective.
@@ -77,19 +77,19 @@ Ranged weapons inherit properties from the :ref:`ItemWeaponAsset <doc_item_asset
 .. list-table::
    :widths: 30 40 30
    :header-rows: 1
-   
+
    * - Class
      - Property Name
      - Required Value
    * - :ref:`ItemAsset <doc_item_asset_intro>`
      - :ref:`GUID <doc_item_asset_intro:guid>`
-     - 
+     -
    * - :ref:`ItemAsset <doc_item_asset_intro>`
      - :ref:`ID <doc_item_asset_intro:id>`
-     - 
+     -
    * - :ref:`ItemAsset <doc_item_asset_intro>`
      - :ref:`Slot <doc_item_asset_intro:slot>`
-     - 
+     -
    * - :ref:`ItemAsset <doc_item_asset_intro>`
      - :ref:`Type <doc_item_asset_intro:type>`
      - ``Gun``
@@ -98,7 +98,7 @@ Ranged weapons inherit properties from the :ref:`ItemWeaponAsset <doc_item_asset
      - ``Gun``
    * - :ref:`ItemWeaponAsset <doc_item_asset_intro>`
      - :ref:`Range <doc_item_asset_weapon:range>`
-     - 
+     -
 
 Additionally, all ranged weapons require that the ``Action`` property has been configured. Note that ranged weapons will always show a quality value.
 
@@ -110,7 +110,7 @@ Ranged weapons have a significant number of properties. To make navigating these
 .. list-table:: Uncategorized
    :widths: 40 40 20
    :header-rows: 1
-   
+
    * - Property Name
      - Type
      - Default Value
@@ -139,7 +139,7 @@ Ranged weapons have a significant number of properties. To make navigating these
 .. list-table:: Calibers
    :widths: 40 40 20
    :header-rows: 1
-   
+
    * - Property Name
      - Type
      - Default Value
@@ -165,7 +165,7 @@ Ranged weapons have a significant number of properties. To make navigating these
 .. list-table:: Damage
    :widths: 40 40 20
    :header-rows: 1
-   
+
    * - Property Name
      - Type
      - Default Value
@@ -185,7 +185,7 @@ Ranged weapons have a significant number of properties. To make navigating these
 .. list-table:: Effects
    :widths: 40 40 20
    :header-rows: 1
-   
+
    * - Property Name
      - Type
      - Default Value
@@ -202,16 +202,16 @@ Ranged weapons have a significant number of properties. To make navigating these
 .. list-table:: Firing Mechanism
    :widths: 40 40 20
    :header-rows: 1
-   
+
    * - Property Name
      - Type
      - Default Value
    * - :ref:`Action <doc_item_asset_gun:action>`
      - :ref:`EAction <doc_item_asset_gun:eaction>`
-     - 
+     -
    * - :ref:`Auto <doc_item_asset_gun:auto>`
      - :ref:`flag <doc_data_flag>`
-     - 
+     -
    * - :ref:`Bursts <doc_item_asset_gun:bursts>`
      - :ref:`int32 <doc_data_builtin_types>`
      - ``0``
@@ -223,15 +223,15 @@ Ranged weapons have a significant number of properties. To make navigating these
      - ``0``
    * - :ref:`Safety <doc_item_asset_gun:safety>`
      -  :ref:`flag <doc_data_flag>`
-     - 
+     -
    * - :ref:`Semi <doc_item_asset_gun:semi>`
      -  :ref:`flag <doc_data_flag>`
-     - 
+     -
 
 .. list-table:: Hook Attachments
    :widths: 40 40 20
    :header-rows: 1
-   
+
    * - Property Name
      - Type
      - Default Value
@@ -249,27 +249,27 @@ Ranged weapons have a significant number of properties. To make navigating these
      - ``0``
    * - :ref:`Hook_Barrel <doc_item_asset_gun:hook_barrel>`
      - :ref:`flag <doc_data_flag>`
-     - 
+     -
    * - :ref:`Hook_Grip <doc_item_asset_gun:hook_grip>`
      - :ref:`flag <doc_data_flag>`
-     - 
+     -
    * - :ref:`Hook_Sight <doc_item_asset_gun:hook_sight>`
      - :ref:`flag <doc_data_flag>`
-     - 
+     -
    * - :ref:`Hook_Tactical <doc_item_asset_gun:hook_tactical>`
      - :ref:`flag <doc_data_flag>`
-     - 
+     -
 
 .. list-table:: Jamming
    :widths: 40 40 20
    :header-rows: 1
-   
+
    * - Property Name
      - Type
      - Default Value
    * - :ref:`Can_Ever_Jam <doc_item_asset_gun:can_ever_jam>`
      - :ref:`flag <doc_data_flag>`
-     - 
+     -
    * - :ref:`Jam_Quality_Threshold <doc_item_asset_gun:jam_quality_threshold>`
      - :ref:`float32 <doc_data_builtin_types>`
      - ``0.4``
@@ -283,7 +283,7 @@ Ranged weapons have a significant number of properties. To make navigating these
 .. list-table:: Magazine Attachments
    :widths: 40 40 20
    :header-rows: 1
-   
+
    * - Property Name
      - Type
      - Default Value
@@ -316,7 +316,7 @@ Ranged weapons have a significant number of properties. To make navigating these
      - ``0``
    * - :ref:`Magazine_Replacement_#_Map <doc_item_asset_gun:magazine_replacement_#_map>`
      - :ref:`string <doc_data_builtin_types>`
-     - 
+     -
    * - :ref:`Magazine_Replacements <doc_item_asset_gun:magazine_replacements>`
      - :ref:`int32 <doc_data_builtin_types>`
      - ``0``
@@ -336,7 +336,7 @@ Ranged weapons have a significant number of properties. To make navigating these
 .. list-table:: Projectiles (Ballistic System)
    :widths: 40 40 20
    :header-rows: 1
-   
+
    * - Property Name
      - Type
      - Default Value
@@ -356,7 +356,7 @@ Ranged weapons have a significant number of properties. To make navigating these
 .. list-table:: Projectiles (Physics System)
    :widths: 40 40 20
    :header-rows: 1
-   
+
    * - Property Name
      - Type
      - Default Value
@@ -371,12 +371,12 @@ Ranged weapons have a significant number of properties. To make navigating these
      - ``30``
    * - :ref:`Projectile_Penetrate_Buildables <doc_item_asset_gun:projectile_penetrate_buildables>`
      - :ref:`flag <doc_data_builtin_types>`
-     - 
+     -
 
 .. list-table:: Recoil
    :widths: 40 40 20
    :header-rows: 1
-   
+
    * - Property Name
      - Type
      - Default Value
@@ -417,7 +417,7 @@ Ranged weapons have a significant number of properties. To make navigating these
 .. list-table:: Shake
    :widths: 40 40 20
    :header-rows: 1
-   
+
    * - Property Name
      - Type
      - Default Value
@@ -443,7 +443,7 @@ Ranged weapons have a significant number of properties. To make navigating these
 .. list-table:: Spread
    :widths: 40 40 20
    :header-rows: 1
-   
+
    * - Property Name
      - Type
      - Default Value
@@ -477,7 +477,7 @@ EAction Enumeration
 .. list-table::
    :widths: 25 75
    :header-rows: 1
-   
+
    * - Named Value
      - Description
    * - ``Trigger``
