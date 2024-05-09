@@ -78,6 +78,8 @@ Some of the launch options are primarily intended for use with the Unturned Dedi
 
 **-SkipAssets**: Disable loading asset bundles and Workshop content. This is useful for quickly iterating on serverside code.
 
+**-ScrollViewSensitivity** *float*: Multiplier for uGUI scroll view distance travelled when rolling the mouse wheel.
+
 **-TimeOverlay**: Show seconds since startup under FPS in the upper-left corner.
 
 **-ui_scale**: UI scale override. A common usage is to set UI scale back to its default scaling, with ``-ui_scale 1``.
