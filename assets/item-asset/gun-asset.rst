@@ -404,6 +404,9 @@ Ranged weapons have a significant number of properties. To make navigating these
    * - :ref:`Recoil_Sprint <doc_item_asset_gun:recoil_sprint>`
      - :ref:`float32 <doc_data_builtin_types>`
      - ``1.25``
+   * - :ref:`Recoil_Swimming <doc_item_asset_gun:recoil_swimming>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``1.1``
    * - :ref:`Recover_X <doc_item_asset_gun:recover_x>`
      - :ref:`float32 <doc_data_builtin_types>`
      - ``0``
@@ -462,6 +465,9 @@ Ranged weapons have a significant number of properties. To make navigating these
    * - :ref:`Spread_Sprint <doc_item_asset_gun:spread_sprint>`
      - :ref:`float32 <doc_data_builtin_types>`
      - ``1.25``
+   * - :ref:`Spread_Swimming <doc_item_asset_gun:spread_swimming>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``1.1``
 
 .. _doc_item_asset_gun:eaction:
 
@@ -1071,6 +1077,15 @@ Multiplier on camera recoil while sprinting. This property is not relevant unles
 
 ----
 
+.. _doc_item_asset_gun:recoil_swimming:
+
+Recoil_Swimming :ref:`float32 <doc_data_builtin_types>` ``1.1``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Multiplier on camera recoil while swimming.
+
+----
+
 .. _doc_item_asset_gun:recover_x:
 
 Recover_X :ref:`float32 <doc_data_builtin_types>` ``0``
@@ -1280,6 +1295,15 @@ Spread_Sprint :ref:`float32 <doc_data_builtin_types>` ``1.25``
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Multiplier on the bullet spread while sprinting.
+
+----
+
+.. _doc_item_asset_gun:spread_swimming:
+
+Spread_Swimming :ref:`float32 <doc_data_builtin_types>` ``1.1``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Multiplier on the bullet spread while swimming.
 
 ----
 
