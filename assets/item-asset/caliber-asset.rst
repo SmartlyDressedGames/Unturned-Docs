@@ -8,7 +8,7 @@ The ItemCaliberAsset class is a base class that other classes are derived from. 
 Game Data File
 --------------
 
-The ItemCaliberAsset class inherits properties from the :ref:`ItemAsset <doc_item_asset_caliber>` class.
+The ItemCaliberAsset class inherits properties from the :ref:`ItemAsset <doc_item_asset_intro>` class.
 
 Properties
 ``````````

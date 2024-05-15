@@ -3,7 +3,7 @@
 Arrest End Assets
 =================
 
-The ItemArrestEndAsset class is used for "releaser" items, which can remove a corresponding ":ref:`catcher <doc_item_asset_arrest_start>`" item that is restraining a player. An example of a vanilla releaser is the `Handcuffs Key <https://wiki.smartlydressedgames.com/wiki/Handcuffs_Key>`_.
+The ItemArrestEndAsset class is used for "releaser" items, which can remove a corresponding ":ref:`catcher <doc_item_asset_arrest_start>`" item that is restraining a player. An example of a vanilla releaser is the `Handcuffs Key <https://unturned.wiki.gg/wiki/Handcuffs_Key>`_.
 
 Game Data File
 --------------

@@ -23,7 +23,7 @@ Item Asset Properties
 Farm Asset Properties
 ---------------------
 
-**Affected_By_Agriculture_Skill** *bool*: If true, the amount of crops acquired when harvesting the plant is affected by the `Agriculture skill <https://wiki.smartlydressedgames.com/wiki/Skills>`_. Defaults to true.
+**Affected_By_Agriculture_Skill** *bool*: If true, the amount of crops acquired when harvesting the plant is affected by the `Agriculture skill <https://unturned.wiki.gg/wiki/Skills>`_. Defaults to true.
 
 **Allow_Fertilizer** *bool*: If true, allows the player to use fertilizer to fully grow the plant. Defaults to true.
 

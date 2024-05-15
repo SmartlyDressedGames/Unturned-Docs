@@ -31,7 +31,7 @@ Barricade Asset Properties
 
 **Allow_Placement_On_Vehicle** *bool*: If true, this barricade can be placed on vehicles. Defaults to true, except when using ``Build Bed``, ``Build Sentry``, or ``Build Sentry_Freeform``.
 
-**Armor_Tier** *enum* (``Low``, ``High``): Barricade armor can either be low-tier or high-tier. Defaults to low-tier, except when the barricade's name contains the word "Metal". By default, barricades with low-tier armor take 100% of the damage they receive, while barricades with high-tier armor take 50% of the damage they receive. These multipliers can be configured in the `gameplay config <https://wiki.smartlydressedgames.com/wiki/Gameplay_config>`_.
+**Armor_Tier** *enum* (``Low``, ``High``): Barricade armor can either be low-tier or high-tier. Defaults to low-tier, except when the barricade's name contains the word "Metal". By default, barricades with low-tier armor take 100% of the damage they receive, while barricades with high-tier armor take 50% of the damage they receive. These multipliers can be configured in the `gameplay config <https://unturned.wiki.gg/wiki/Gameplay_config>`_.
 
 **Bypass_Claim** *flag*: Can be placed inside someone else's claimed area.
 
@@ -63,11 +63,11 @@ Barricade Asset Properties
 
 **Salvage_Duration_Multiplier** *float*: Multiplier on how long it takes to salvage this barricade. Setting this to a larger number will cause salvaging to take longer. Defaults to 1.
 
-**Unpickupable** *flag*: Disables the ability to pick up a placed barricade. For example, the `Horde Beacon <https://wiki.smartlydressedgames.com/wiki/Horde_Beacon>`_ uses this flag.
+**Unpickupable** *flag*: Disables the ability to pick up a placed barricade. For example, the `Horde Beacon <https://unturned.wiki.gg/wiki/Horde_Beacon>`_ uses this flag.
 
-**Unrepairable** *flag*: Cannot be repaired by a :ref:`MeleeAsset <doc_item_asset_melee>` with the ``Repair`` flag. For example, the `Blowtorch <https://wiki.smartlydressedgames.com/wiki/Blowtorch>`_ would not be able to repair this barricade.
+**Unrepairable** *flag*: Cannot be repaired by a :ref:`MeleeAsset <doc_item_asset_melee>` with the ``Repair`` flag. For example, the `Blowtorch <https://unturned.wiki.gg/wiki/Blowtorch>`_ would not be able to repair this barricade.
 
-**Unsalvageable** *flag*: Salvaging a damaged barricade yields no partial resources. For example, `small glass plates <https://wiki.smartlydressedgames.com/wiki/Small_Glass_Plate>`_ use this flag.
+**Unsalvageable** *flag*: Salvaging a damaged barricade yields no partial resources. For example, `small glass plates <https://unturned.wiki.gg/wiki/Small_Glass_Plate>`_ use this flag.
 
 **Unsaveable** *flag*: This barricade is excluded from being saved. For example, carepackages use this flag.
 
