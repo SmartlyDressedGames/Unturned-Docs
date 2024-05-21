@@ -3,13 +3,45 @@
 Bag Assets
 ==========
 
-Clothing bags can be worn by players and zombies.
+The ItemBagAsset class is a base class that other classes are derived from. It is unusable on its own.
 
-This inherits the :ref:`ClothingAsset <doc_item_asset_clothing>` class.
+Game Data File
+--------------
 
-Bag Asset Properties
---------------------
+The ItemBagAsset class inherits properties from the :ref:`ItemClothingAsset <doc_item_asset_clothing>` class.
 
-**Width** *byte*: Number of columns (horizontal storage space). Defaults to 0.
+Properties
+``````````
 
-**Height** *byte*: Number of rows (vertical storage space). Defaults to 0.
+.. list-table::
+   :widths: 40 40 20
+   :header-rows: 1
+   
+   * - Property Name
+     - Type
+     - Default Value
+   * - :ref:`Height <doc_item_asset_bag:height>`
+     - :ref:`uint8 <doc_data_builtin_types>`
+     - ``0``
+   * - :ref:`Width <doc_item_asset_bag:width>`
+     - :ref:`uint8 <doc_data_builtin_types>`
+     - ``0``
+
+Property Descriptions
+`````````````````````
+
+.. _doc_item_asset_bag:height:
+
+Height :ref:`uint8 <doc_data_builtin_types>` ``0``
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Number of rows (vertical storage space).
+
+----
+
+.. _doc_item_asset_bag:width:
+
+Width :ref:`uint8 <doc_data_builtin_types>` ``0``
+:::::::::::::::::::::::::::::::::::::::::::::::::
+
+Number of columns (horizontal storage space).
