@@ -79,7 +79,7 @@ Property Descriptions
 Armor :ref:`float32 <doc_data_builtin_types>` ``1``
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Multiplier on damage received.
+Multiplier on damage received to the covered body part(s). The affected body part(s) will differ depending on the child class.
 
 ----
 
