@@ -128,7 +128,7 @@ Health
 
 **Child_Explosion_Armor_Multiplier** *float*: Multiplier on the damage taken by barricades and other buildables placed on the vehicle, by explosions. Defaults to 0.2.
 
-**Environment_Invulnerable** *flag*: The vehicle cannot be damaged by animals, zombies, or boulders thrown by mega zombies.
+**Environment_Invulnerable** *flag*: This vehicle cannot be damaged by animals, zombie melee attacks, or boulders thrown by mega zombies. Zombies and animals will still pursue the vehicle, and attempt to attack any passengers directly. Other damage sources can still damage the vehicle.
 
 **Explosions_Invulnerable** *flag*: The vehicle cannot be damaged by explosions.
 
