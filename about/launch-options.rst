@@ -54,6 +54,8 @@ Some of the launch options are primarily intended for use with the Unturned Dedi
 
 **-LogBadMessages**: Log when the game ignores a network message, including from whom. This is only recommended if trying to narrow down whether a connection is trying to waste time on the game thread by potentially exploiting something. By default the server automatically disconnects clients that are sending invalid messages, whereas the instances logged by this option could potentially be false positives.
 
+**-LogGunSpreadConversion**: Log automatic change of older gun assets' Spread_Hip property to Spread_Angle_Degrees. Useful when manually updating older guns to the new property.
+
 **-LogLevelBatchingTextureAtlasExclusions**: Please refer to :ref:`Level Batching <doc_mapping_batching>` for more details.
 
 **-LogSpawnTablesAfterLoadingLevel**: Log all spawn chances.
