@@ -64,7 +64,7 @@ Vehicle Properties
 
 **Steering_Tire_#** *int32*: Set a ``Wheel_#`` GameObject as a steering tire, which will visibly turn when steering. By default, a number of steering tires equal to the value of ``Num_Steering_Tires`` will be automatically set. These will start at ``Steering_Tire_0 0`` (corresponding to ``Wheel_0``), and increment upwards.
 
-**Supports_Mobile_Buildables** *flag*: Barricades and other buildables cannot be placed on this vehicle.
+**Supports_Mobile_Buildables** *flag*: Certain barricades cannot be placed on vehicles by default, or if the barricade's `Allow_Placement_On_Vehicle` is set to `false`. This flag bypasses those per-barricade restrictions, allowing them to be placed on the vehicle.
 
 **Tire_ID** *uint16*: ID of the item that should given when a tire is manually removed with a :ref:`ToolAsset <doc_item_asset_tire>` that has ``Mode Remove``, and can also be manually attached to the vehicle if the specified item ID is for a :ref:`ToolAsset <doc_item_asset_tire>` with ``Mode Add``. Defaults to 1451.
 
