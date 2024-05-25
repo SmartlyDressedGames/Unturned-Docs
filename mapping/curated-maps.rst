@@ -97,4 +97,4 @@ Each curated map release is usually accompanied by a few cosmetics and skins in 
 
 **Mystery Boxes**: Fifteen to twenty items of rare, epic, or legendary rarity. The box can be themed, but all of the items should be usable individually – avoiding things like a set of matching shirts and pants that cannot be easily mixed with other cosmetic pieces.
 
-**Playtime Drops**: Ten to twenty items of uncommon rarity. Unlike mystery box contents, it is far more appropriate for playtime drops to have matching sets and simple recolors.
+**Craftable Items**: Ten to twenty items of uncommon rarity. Unlike mystery box contents, it is far more appropriate for craftable items to have matching sets and simple recolors. They are typically available for ten Crafting Materials in the two weeks following a map's release.
