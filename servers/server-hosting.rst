@@ -19,6 +19,7 @@ All multiplayer servers are hosted using the Unturned Dedicated Server tool (som
 - :ref:`Rules and Guidelines <doc_server_hosting_rules>`
 - :ref:`Server Codes <doc_servers_server_codes>`
 - :ref:`Fake IP <doc_servers_fake_ip>`
+- :ref:`Bookmark Host <doc_servers_bookmark_host>`
 
 **Windows:**
 

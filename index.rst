@@ -71,6 +71,7 @@
 	:maxdepth: 1
 	:caption: Servers & Programming
 
+	servers/bookmark-host
 	servers/command-io
 	servers/debugging-exceptions
 	servers/dedicated-workshop-update-monitor
