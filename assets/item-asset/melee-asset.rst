@@ -16,7 +16,7 @@ Item Asset Properties
 
 **Useable** *enum* (``Melee``)
 
-**Slot** *enum* (``Primary``, ``Secondary``, ``Tertiary``, ``Any``)
+**Slot** :ref:`ESlotType <doc_data_eslottype>` (``None``, ``Primary``, ``Secondary``, ``Any``): Most melee weapons, including vanilla items, use ``Secondary``. This allows the weapon to be used from either the character's primary or secondary slot.
 
 **ID** *uint16*: Must be a unique identifier.
 
