@@ -7,7 +7,7 @@ Work-in-progress feature to allow custom physics effects rather than hardcoding 
 
 The ``PhysicsMaterialAsset`` type associates gameplay properties and effects with custom Unity "physic" materials. For example if none of the built-in physics materials has appropriate effects for the surface of Mars, a custom Unity physics material named "MarsDirt" could be created. Then a physics material asset with ``UnityName`` set to "MarsDirt" and ``Fallback`` of 33650ff924b34f8d9c5a0fd97418cd3e (built-in gravel) could add custom effects for the Martian surfaces.
 
-The ``PhysicsMaterialExtensionAsset`` type can be used to insert custom properties into built-in physics materials. For example if a custom laser gun should leave burn marks on the hit surface rather than bullet holes, an extension asset can set the `Base` property to a built-in physics material to add custom effects.
+The ``PhysicsMaterialExtensionAsset`` type can be used to insert custom properties into built-in physics materials. For example if a custom laser gun should leave burn marks on the hit surface rather than bullet holes, an extension asset can set the ``Base`` property to a built-in physics material to add custom effects.
 
 Properties
 ----------

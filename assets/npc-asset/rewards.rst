@@ -30,9 +30,9 @@ Flag_Math
 
 **Reward_#_A_ID** *uint16*: ID of flag to apply math to.
 
-**Reward_#_B_ID** *uint16*: ID of flag containing value to be applied mathematically. If not specified then `B_Value` is used instead.
+**Reward_#_B_ID** *uint16*: ID of flag containing value to be applied mathematically. If not specified then ``B_Value`` is used instead.
 
-**Reward_#_B_Value** *int16*: default value to be applied mathematically if flag B has not been set on the player or if `B_ID` is zero.
+**Reward_#_B_Value** *int16*: default value to be applied mathematically if flag B has not been set on the player or if ``B_ID`` is zero.
 
 **Reward_#_Operation** *enum* (``Addition``, ``Assign``, ``Division``, ``Modulo``, ``Multiplication``, ``Subtraction``): For example, using the Addition operation would set A to the value of A + B.
 
@@ -125,7 +125,7 @@ Item
 
 **Reward_#_Magazine** *uint16*: Override for the magazine attachment that should be attached to the item reward.
 
-**Reward_#_Origin** :ref:`doc_data_eitemorigin`: Set the item origin. For example, setting the origin to ``Admin`` will cause items to spawn at full quality. Defaults to `Craft`.
+**Reward_#_Origin** :ref:`doc_data_eitemorigin`: Set the item origin. For example, setting the origin to ``Admin`` will cause items to spawn at full quality. Defaults to ``Craft``.
 
 **Reward_#_Sight** *uint16*: Override for the sight attachment that should be attached to the item reward.
 
@@ -142,7 +142,7 @@ Item_Random
 
 **Reward_#_Auto_Equip** *flag*: Item should be automatically equipped by the player.
 
-**Reward_#_Origin** :ref:`doc_data_eitemorigin`: Set the item origin. For example, setting the origin to ``Admin`` will cause items to spawn at full quality. Defaults to `Craft`.
+**Reward_#_Origin** :ref:`doc_data_eitemorigin`: Set the item origin. For example, setting the origin to ``Admin`` will cause items to spawn at full quality. Defaults to ``Craft``.
 
 Hint
 ````

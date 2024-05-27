@@ -144,7 +144,7 @@ How to Launch Server on Windows
 
 8. When the command-line interface stops outputting new lines of text, it has finished loading (and finished generating all necessary files). You can safely close the server by executing (typing, and then pressing the "↵ Enter" key on your keyboard) the following command on the command-line interface: ``shutdown``
 
-9. The batch script has created a new file directory located in ``...\U3DS\Servers``, called "MyServer". This directory is where all the savedata and configuration files are kept. Changing the `MyServer` ServerID (from step 5) in the batch script to a different name will allow for keeping savedata separate across multiple servers, and for running multiple servers at once.
+9. The batch script has created a new file directory located in ``...\U3DS\Servers``, called "MyServer". This directory is where all the savedata and configuration files are kept. Changing the ``MyServer`` ServerID (from step 5) in the batch script to a different name will allow for keeping savedata separate across multiple servers, and for running multiple servers at once.
 
 10. (optional) For your server to be visible on the in-game Internet server list you will need to set a :ref:`Login Token <doc_servers_gslt>` and configure :ref:`Fake IP <doc_servers_fake_ip>` or :ref:`Port Forwarding <doc_servers_port_forward>`.
 
