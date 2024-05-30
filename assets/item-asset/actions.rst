@@ -33,8 +33,8 @@ Properties
      - :ref:`string <doc_data_builtin_types>`
      - 
    * - :ref:`Action_#_Source <doc_item_asset_actions:action_source>`
-     - :ref:`uint8 <doc_data_builtin_types>`
-     - ``uint16``
+     - :ref:`uint16 <doc_data_builtin_types>`
+     - See description
    * - :ref:`Action_#_Text <doc_item_asset_actions:action_text>`
      - :ref:`string <doc_data_builtin_types>`
      - 
@@ -107,8 +107,8 @@ This property cannot be used in combination with ``Action_#_Text`` or ``Action_#
 
 .. _doc_item_asset_actions:action_source:
 
-Action_#_Source :ref:`uint16 <doc_data_builtin_types>` ``0``
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Action_#_Source :ref:`uint16 <doc_data_builtin_types>`
+::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ID of the item to source actions from. Default source is the current item.
 
