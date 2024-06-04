@@ -54,10 +54,13 @@ Properties
 .. list-table::
    :widths: 40 40 20
    :header-rows: 1
-   
+
    * - Property Name
      - Type
      - Default Value
+   * - :ref:`Add_Default_Actions <doc_item_asset_intro:add_default_actions>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - See description
    * - :ref:`Allow_Manual_Drop <doc_item_asset_intro:allow_manual_drop>`
      - :ref:`bool <doc_data_builtin_types>`
      - ``true``
@@ -227,6 +230,15 @@ EUseableType Enumeration
 
 Property Descriptions
 `````````````````````
+
+.. _doc_item_asset_intro:add_default_actions:
+
+Add_Default_Actions :ref:`bool <doc_data_builtin_types>`
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If true, actions are automatically created for refill ammo, repair, and salvage blueprints. Defaults to true if no ``Actions`` are specified.
+
+----
 
 .. _doc_item_asset_intro:allow_manual_drop:
 
