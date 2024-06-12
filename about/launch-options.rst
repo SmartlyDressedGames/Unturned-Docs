@@ -11,7 +11,7 @@ This article lists the launch options available for *Unturned*. You can `add lau
 
 #. Select the **Properties...** button.
 
-#. On the **General** tan, find the **Launch Options** field near the bottom.
+#. On the **General** tab, find the **Launch Options** field near the bottom.
 
 #. Type options separated by spaces. For example, ``-TimeOverlay -Width=1920 -Height=1080`` will enable the TimeOverlay flag, set Width to 1920, and set Height to 1080.
 
