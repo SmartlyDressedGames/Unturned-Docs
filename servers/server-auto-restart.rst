@@ -59,3 +59,42 @@ These options are most useful in conjunction with a script that updates and rest
 
     rem Return to the "loop" label to update and restart the server.
     goto loop
+
+Here's a similar example for Linux, tested on Ubuntu. Note that the U3DS install path may be different depending how steamcmd was installed and whether ``+force_install_dir`` was specified, but typically one of these locations:
+
+1. ``~/.steam/steam/steamapps/common/U3DS``
+2. ``~/Steam/steamapps/common/U3DS``
+
+As such, it may be helpful to create a symbolic link to the U3DS directory:
+
+``ln -s ~/.steam/steam/steamapps/common/U3DS ~/U3DS``
+
+OR
+
+``ln -s ~/Steam/steamapps/common/U3DS ~/U3DS``
+
+This example script assumes the symbolic link exists at ``~/U3DS``.
+
+1. Save script as ``MyServer.sh`` in your home directory (e.g., ``nano ~/MyServer.sh``):
+
+.. code-block:: sh
+	:linenos:
+
+	#! /usr/bin/bash
+	while true; do
+		echo Updating...
+		steamcmd +login anonymous +app_update 1110390 -validate +quit
+
+		echo Finished update! Launching server...
+		cd ~/U3DS
+		source ServerHelper.sh +InternetServer/MyServer
+
+		echo Server has exited. Restarting after timeout...
+		echo Press Ctrl+C during this timeout to cancel restart.
+		read -t 10
+	done
+
+2. Open a screen to run the server in with ``screen -S MyServer``.
+3. Run script with ``bash MyServer.sh``.
+4. If everything's working OK, press ``Ctrl + A`` then ``D`` to detach, leaving the script running.
+5. You can re-attach to the screen with ``screen -r MyServer``.
