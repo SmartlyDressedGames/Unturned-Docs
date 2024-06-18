@@ -20,6 +20,12 @@ Vehicle Properties
 
 **Bicycle_Anim_Speed** *float*: Multiplier on the speed of the bicycling animation.
 
+**Buildable_Placement_Rule** *enum* (``None``, ``AlwaysAllow``, ``Block``): Overrides how barricades can be attached to the vehicle. Defaults to ``None``, i.e., no override.
+
+  - ``None``: Vehicle does not override placement. This means, by default, that barricades can be placed on the vehicle unless the barricade sets ``Allow_Placement_On_Vehicle`` to false. (e.g., beds and sentry guns) Note that gameplay config ``Bypass_Buildable_Mobility``, if true, takes priority.
+  - ``AlwaysAllow``: Vehicle allows any barricade to be placed on it, regardless of the barricade's ``Allow_Placement_On_Vehicle`` setting. The legacy option for this was the ``Supports_Mobile_Buildables`` flag. Vanilla trains originally used this option, but it was exploited to move beds into tunnel walls.
+  - ``Block``: Vehicle prevents any barricade from being placed on it. Note that gameplay config ``Bypass_Buildable_Mobility``, if true, takes priority.
+
 **Bypass_Hash_Verification** *flag*: Disable hash verification check, and allow for mismatched files.
 
 **Bypass_ID_Limit** *flag*: Allows for using an ``ID`` value within the range reserved for official content.
@@ -63,8 +69,6 @@ Vehicle Properties
 **Should_Spawn_Seat_Capsules** *bool*: If true, capsule colliders will be attached to the ``Seat`` GameObject in order to prevent players from clipping into the ground. This is useful for vehicles that do not have a roof. Defaults to false.
 
 **Steering_Tire_#** *int32*: Set a ``Wheel_#`` GameObject as a steering tire, which will visibly turn when steering. By default, a number of steering tires equal to the value of ``Num_Steering_Tires`` will be automatically set. These will start at ``Steering_Tire_0 0`` (corresponding to ``Wheel_0``), and increment upwards.
-
-**Supports_Mobile_Buildables** *flag*: Certain barricades cannot be placed on vehicles by default, or if the barricade's ``Allow_Placement_On_Vehicle`` is set to ``false``. This flag bypasses those per-barricade restrictions, allowing them to be placed on the vehicle.
 
 **Tire_ID** *uint16*: ID of the item that should given when a tire is manually removed with a :ref:`ToolAsset <doc_item_asset_tire>` that has ``Mode Remove``, and can also be manually attached to the vehicle if the specified item ID is for a :ref:`ToolAsset <doc_item_asset_tire>` with ``Mode Add``. Defaults to 1451.
 

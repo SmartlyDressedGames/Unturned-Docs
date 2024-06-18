@@ -15,6 +15,8 @@ Servers that violate these rules may be temporarily or permanently banned. To re
 Recent changes
 --------------
 
+**2024-06-03:** Scaled back the degree to which the server list is moderated. The previous level was untenable especially when considering anyone can freely create an unlimited number of servers, and the moderation system is duct-taped on top of the otherwise unmoderated Steam server list.
+
 **2023-10-02:** Clarified on how subscriptions interact with currency.
 
 **2023-08-17:** Added reasoning behind flagging servers using an anycast proxy.
@@ -26,34 +28,7 @@ Recent changes
 Monetization Types
 ------------------
 
-Warnings for breaking the monetization rules first began being sent out on May 28, 2021. The monetization rules have now been in full effect since June 11, 2021.
-
-Hosts are allowed to sell permanent benefits and monthly subscriptions. Consumable microtransactions are **not** allowed. A consumable microtransaction is anything that can be permanently consumed, lost, stolen, or destroyed. If it cannot be permanently lost, then it is not considered a consumable.
-
-Monetization Examples
----------------------
-
-This section will provide *examples* of allowed/banned monetization options. It is not an exhaustive list of every possible monetization strategy.
-
-Examples of allowed monetization:
-`````````````````````````````````
-
-- Accepting donations.
-- Selling permanent or monthly subscription access to play on the server(s).
-- Selling ranks, unlocks, benefits, etc. available permanently, or for the duration of the monthly subscription. Timers or cooldowns are fine.
-- Selling reusable "kits"—which are reusable permanently, or for the duration of the monthly subscription—containing in-game items. Timers or cooldowns are fine.
-- Selling **custom** cosmetics like custom skins, name tags, chat colors, etc. available permanently or for the duration of the monthly subscription.
-- Selling services or commissions, for example a modder taking commissions for new content that gets added to the server for all players.
-
-Examples of banned monetization:
-````````````````````````````````
-
-- Selling individual in-game items like weapons, ammunition, supplies, bases, etc. that can be permanently lost, stolen, or destroyed.
-- Selling individual in-game vehicles that can be permanently lost, stolen, or destroyed.
-- Selling experience points.
-- Selling currency. (As servers are allowed to have subscriptions, currency subscriptions are permitted so long as there is no more than 3 of these currency subscriptions available.)
-- Selling ranks, kits, unlocks, benefits, etc. which stack with themselves as a loophole.
-- Selling copies of **vanilla** cosmetics, such as those available on the Stockpile or Steam Community Market.
+Hosts are not allowed to sell access to **vanilla** premium content. This includes the Gold Upgrade benefits as well as cosmetics and/or skins, such as those available on the Stockpile or Steam Community Market.
 
 Monetization Filter
 -------------------
@@ -80,15 +55,15 @@ Servers that only offer microtransactions that do not provide a gameplay advanta
 
 Servers that offer *any* "pay-to-win" microtransactions (i.e., those that provide a gameplay advantage)—such as selling "kits" containing items or vehicles—should use the ``Monetized`` option.
 
-Deceptive Pricing
------------------
-
-Fictitious and deceptive pricing is not allowed. For example: lying that a discount is nearly expired, or pretending the price is discounted when it has never been at the listed full price. We would strongly advise following `Steam's discounting rules <https://partner.steamgames.com/doc/marketing/discounts>`_ to help avoid breaking any real-world laws.
-
 Online Conduct
 --------------
 
 Repeated offenders of servers violating the `Steam's Online Conduct rules <https://store.steampowered.com/online_conduct>`_ will be banned.
+
+Roleplaying Current Events
+--------------------------
+
+Simulating gameplay of current real-world tragedies is **not** allowed. For example, ongoing conflicts (such as the Russo-Ukrainian War, or Israeli-Palestinian conflict) or natural disasters.
 
 Anycast Proxies
 ---------------
@@ -106,4 +81,20 @@ Workshop File Copyright Infringement
 
 Mod authors can submit a notice of copyright infringement here: https://steamcommunity.com/dmca/create/
 
-If you have submitted a notice of copyright infringement against a server host, please notify Smartly Dressed Games by email as well. We will keep a record of the server's workshop file usage. If there is a pattern of copyright infringement we will ban the server.
+FAQ (Frequently Asked Questions)
+--------------------------------
+
+Can I report servers for admin abuse or pay-to-win features?
+````````````````````````````````````````````````````````````
+
+This is not reportable. Unfortunately, the best option is to play on a different server, or to :ref:`host your own multiplayer server <doc_server_hosting>` for you and your friends. Moderating individual community servers is not tenable at our current small scale with current tools, but may be revisited if/when it becomes feasible.
+
+How can my server mitigate Denial of Service (DoS) attacks?
+```````````````````````````````````````````````````````````
+
+If your server is receiving DoS attacks, the :ref:`doc_servers_fake_ip` feature is a great way to protect against this behavior. It routes traffic through Steam's relay network, shielding your server's IP, and potentially reducing network latency for players.
+
+How can I prevent people from re-uploading my Workshop files?
+`````````````````````````````````````````````````````````````
+
+Including an :ref:`doc_asset_bundle_custom_data` in your asset bundle, with the owner to your Workshop file ID, will prevent it from being loaded when copied into other Workshop files. As a last resort, if your content has been reuploaded to Steam by another user with your permission, you may consider submitting a `notice of copyright infringement <https://steamcommunity.com/dmca/create/>`_. Notices of copyright infringement are reviewed by Valve's copyright agent, and should only be submitted if you understand the legal information on their submission page.

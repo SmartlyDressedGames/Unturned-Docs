@@ -81,6 +81,7 @@
 	servers/openmod
 	servers/port-forwarding
 	servers/rocket
+	servers/server-auto-restart
 	servers/server-codes
 	servers/server-hosting
 	servers/server-hosting-rules
