@@ -96,6 +96,23 @@ Vehicle Properties
 
 **Zip** *flag*: Player character should use a handlebar idle animation.
 
+Paint
+`````
+
+.. _doc_assets_vehicle:paintablesections:
+
+**PaintableSections** :ref:`list of PaintableSection dictionaries <doc_assets_vehicle:paintablesection_dictionary>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If set, the vehicle can be painted with a :ref:`Vehicle Paint Tool <doc_item_asset_vehicle_paint_tool>`. Each section's material's ``_PaintColor`` property is set to the vehicle's paint color.
+
+.. _doc_assets_vehicle:defaultpaintcolors:
+
+**DefaultPaintColors** :ref:`list of colors <doc_data_color>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+List of random colors to pick from when spawning a new vehicle. Can be overridden by a :ref:`Vehicle Redirector<doc_asset_vehicle_redirector>`'s :ref:`LoadPaintColor <doc_asset_vehicle_redirector:loadpaintcolor>` and :ref:`LoadPaintColor <doc_asset_vehicle_redirector:spawnpaintcolor>` properties.
+
 Handling
 ````````
 
@@ -267,3 +284,41 @@ Localization
 ------------
 
 **Name** *string*: Vehicle name in user interfaces.
+
+.. _doc_assets_vehicle:paintablesection_dictionary:
+
+PaintableSection Dictionary
+```````````````````````````
+
+.. list-table::
+   :widths: 40 40 20
+   :header-rows: 1
+
+   * - Property Name
+     - Type
+     - Default Value
+   * - :ref:`Path <doc_assets_vehicle:paintablesection_path>`
+     - :ref:`string <doc_data_builtin_types>`
+     - N/A
+   * - :ref:`MaterialIndex <doc_assets_vehicle:paintablesection_materialindex>`
+     - :ref:`int32 <doc_data_builtin_types>`
+     - ``0``
+
+PaintableSection Dictionary Descriptions
+````````````````````````````````````````
+
+.. _doc_assets_vehicle:paintablesection_path:
+
+Path :ref:`string <doc_data_builtin_types>`
+:::::::::::::::::::::::::::::::::::::::::::
+
+Scene hierarchy path to a Renderer component relative to the vehicle's root transform.
+
+----
+
+.. _doc_assets_vehicle:paintablesection_materialindex:
+
+MaterialIndex :ref:`int32 <doc_data_builtin_types>` ``0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Index into Renderer component's Materials list. For example, 0 is the 1st material, 1 is the 2nd material, etc.
