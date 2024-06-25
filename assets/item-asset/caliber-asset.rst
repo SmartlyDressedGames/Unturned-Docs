@@ -50,6 +50,9 @@ Properties
    * - :ref:`Instantiated_Attachment_Name_Override <doc_item_asset_caliber:instantiated_attachment_name_override>`
      - :ref:`string <doc_data_builtin_types>`
      - See description
+   * - :ref:`Invulnerable <doc_item_asset_caliber:invulnerable>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``false``
    * - :ref:`Paintable <doc_item_asset_caliber:paintable>`
      - :ref:`flag <doc_data_flag>`
      -
@@ -168,6 +171,15 @@ Instantiated_Attachment_Name_Override :ref:`string <doc_data_builtin_types>`
 Name to use when instantiating attachment prefab. By default, the value of ``GUID`` is used. Since Unity's built-in Animation component references GameObjects by name, this property can help share animations between items.
 
 For example, a magazine attachment with GUID ``dbfb1d0d11ca438e9dffb95f76e61274`` will instantiate Magazine.prefab as (Gun)/Magazine/dbfb1d0d11ca438e9dffb95f76e61274 by default. With ``Instantiated_Attachment_Name_Override`` set to "Example" it would instead spawn as (Gun)/Magazine/Example.
+
+----
+
+.. _doc_item_asset_caliber:invulnerable:
+
+Invulnerable :ref:`bool <doc_data_builtin_types>` ``false``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If true, gun can damage entities with Invulnerable tag.
 
 ----
 
