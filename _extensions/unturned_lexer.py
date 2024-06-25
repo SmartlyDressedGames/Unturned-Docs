@@ -12,7 +12,7 @@ from pygments.token import *
 
 class UnturnedLexer(RegexLexer):
     name = 'UnturnedDat'
-    aliases = ['unturned']
+    aliases = ['unturneddat', 'unturnedasset']
     filenames = ['*.asset', '*.dat']
 
     tokens = {
@@ -33,4 +33,5 @@ class UnturnedLexer(RegexLexer):
     }
 
 def setup(sphinx):
-    sphinx.add_lexer("unturned", UnturnedLexer)
+    sphinx.add_lexer("unturneddat", UnturnedLexer)
+    sphinx.add_lexer("unturnedasset", UnturnedLexer)
