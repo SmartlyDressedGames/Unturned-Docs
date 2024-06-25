@@ -51,6 +51,7 @@
 	assets/unity-2019
 	assets/vehicle-asset
 	assets/vehicle-physics-profile-asset
+	assets/vehicle-redirector-asset
 	assets/weather-asset
 	assets/zombie-difficulty-asset
 
