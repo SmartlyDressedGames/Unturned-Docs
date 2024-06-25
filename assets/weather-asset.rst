@@ -12,7 +12,7 @@ How to test?
 
 When a GUID is passed to the weather command it will start a custom weather event, and 0 can be used to end it.
 
-.. code-block:: bash
+.. code-block:: shell
 	
 	/weather 819982d7a2b6453488a8c4c5d9efe67f
 

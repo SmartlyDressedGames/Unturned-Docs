@@ -12,7 +12,7 @@ In \*.asset files
 
 ``AssetPath``: File path of the Unity asset (e.g., \*.prefab, \*.mat, \*.png, or \*.ogg files). This path is relative to the ``Asset_Prefix`` path configured in the ``MasterBundle.dat`` file.
 
-.. code-block:: cs
+.. code-block:: unturnedasset
 	
 	"MyMasterBundlePtr"
 	{
@@ -22,12 +22,12 @@ In \*.asset files
 
 If the asset default master bundle should be used, then the path can be specified inline:
 
-.. code-block:: cs
+.. code-block:: unturnedasset
 	
 	"MyMasterBundlePtr" "path/to/file.extension"
 
 Alternatively, the name of a master bundle can be prefixed to the inline path:
 
-.. code-block:: cs
+.. code-block:: unturnedasset
 	
 	"MyMasterBundlePtr" "core.masterbundle:path/to/file.extension"

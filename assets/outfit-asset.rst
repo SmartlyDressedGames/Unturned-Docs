@@ -17,7 +17,7 @@ Outfit Properties
 
 **Items** *array* of :ref:`Asset Pointers <doc_data_assetptr>`: Asset pointers to clothing item(s). These clothing items will be worn together in any preview images generated of this outfit. For example:
 
-.. code-block:: cs
+.. code-block:: unturnedasset
 	
 	"Asset"
 	{

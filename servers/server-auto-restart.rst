@@ -77,7 +77,7 @@ This example script assumes the symbolic link exists at ``~/U3DS``.
 
 1. Save script as ``MyServer.sh`` in your home directory (e.g., ``nano ~/MyServer.sh``):
 
-.. code-block:: sh
+.. code-block:: shell
 	:linenos:
 
 	#! /usr/bin/bash
