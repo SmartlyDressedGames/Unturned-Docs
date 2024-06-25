@@ -150,6 +150,13 @@ Handling
 
 **Wheel_Collider_Mass_Override** *float*: Override the mass of the vehicle's Wheel Collider components. This allows for quickly modifying the mass of the wheel colliders without needing to rebundle the asset in Unity. If a vehicle has realistic mass, then it may be helpful to set this value to something exceptionally high (e.g., 500). Defaults to ``null``.
 
+.. _doc_assets_vehicle:wheelconfigurations:
+
+**WheelConfigurations** :ref:`list of WheelConfiguration dictionaries <doc_assets_vehicle:wheelconfiguration_dictionary>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Controls WheelCollider components and their corresponding visual models. When converting older vehicles, enable the ``-LogVehicleWheelConfigurations`` command-line flag to output an equivalent wheel configuration.
+
 Health
 ``````
 
@@ -322,3 +329,94 @@ MaterialIndex :ref:`int32 <doc_data_builtin_types>` ``0``
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Index into Renderer component's Materials list. For example, 0 is the 1st material, 1 is the 2nd material, etc.
+
+.. _doc_assets_vehicle:wheelconfiguration_dictionary:
+
+WheelConfiguration Dictionary
+`````````````````````````````
+
+.. list-table::
+   :widths: 40 40 20
+   :header-rows: 1
+
+   * - Property Name
+     - Type
+     - Default Value
+   * - :ref:`WheelColliderPath <doc_assets_vehicle:wheelconfiguration_wheelcolliderpath>`
+     - :ref:`string <doc_data_builtin_types>`
+     -
+   * - :ref:`IsColliderSteered <doc_assets_vehicle:wheelconfiguration_iscollidersteered>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``false``
+   * - :ref:`IsColliderPowered <doc_assets_vehicle:wheelconfiguration_iscolliderpowered>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``false``
+   * - :ref:`ModelPath <doc_assets_vehicle:wheelconfiguration_modelpath>`
+     - :ref:`string <doc_data_builtin_types>`
+     -
+   * - :ref:`IsModelSteered <doc_assets_vehicle:wheelconfiguration_ismodelsteered>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``false``
+   * - :ref:`ModelUseColliderPose <doc_assets_vehicle:wheelconfiguration_modelusecolliderpose>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``false``
+
+WheelConfiguration Dictionary Descriptions
+``````````````````````````````````````````
+
+.. _doc_assets_vehicle:wheelconfiguration_wheelcolliderpath:
+
+WheelColliderPath :ref:`string <doc_data_builtin_types>`
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Scene hierarchy path of a WheelCollider component relative to the vehicle's root transform.
+
+----
+
+.. _doc_assets_vehicle:wheelconfiguration_iscollidersteered:
+
+IsColliderSteered :ref:`bool <doc_data_builtin_types>` ``false``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If true, collider's steering angle responds to player input.
+
+----
+
+.. _doc_assets_vehicle:wheelconfiguration_iscolliderpowered:
+
+IsColliderPowered :ref:`bool <doc_data_builtin_types>` ``false``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If true, collider is connected to the engine and responds to player's acceleration input.
+
+----
+
+.. _doc_assets_vehicle:wheelconfiguration_modelpath:
+
+ModelPath :ref:`string <doc_data_builtin_types>`
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+Scene hierarchy path of visual representation of wheel relative to the vehicle's root transform.
+
+----
+
+.. _doc_assets_vehicle:wheelconfiguration_ismodelsteered:
+
+IsModelSteered :ref:`bool <doc_data_builtin_types>` ``false``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If true, model is rotated according to steering input.
+
+Only kept for backwards compatibility. Prior to wheel configurations, only certain WheelColliders actually received steering input, while multiple models would appear to steer. For example, the APC's front 4 wheels appeared to rotate but only the front 2 actually affected physics.
+
+----
+
+.. _doc_assets_vehicle:wheelconfiguration_modelusecolliderpose:
+
+ModelUseColliderPose :ref:`bool <doc_data_builtin_types>` ``false``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If true, model ignores ``IsModelSteered`` and instead uses the wheel collider state (or an approximation when not simulating).
+
+Prior to wheel configurations, some high-fidely modded cars used a separate set of physics constraints to animate the wheel models as if they had suspension. Constraint setups like this should be completely superseded by the ``ModelUseColliderPose`` property. The constraints were awful for performance because physics for every purely-visual wheel were simulated on every client, and even then they didn't actually match the real wheel state.
+
