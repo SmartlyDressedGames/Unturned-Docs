@@ -68,10 +68,6 @@ Vehicle Properties
 
 .. deprecated:: 3.23.4.0
 
-**Pitch_Drive** *float*: Multiplier on the pitch of the engine audio while driving. Defaults to 0.03 when using ``Engine Helicopter``, or to 0.1 when using ``Engine Blimp``. For other ``Engine`` enumerators, it defaults to 0.025 if the audio clip is named "Engine_Large", or to 0.075 if the audio clip is named "Engine_Small".
-
-**Pitch_Idle** *float*: Multiplier on the pitch of the engine audio while idle. Defaults to 0.625 if the audio clip is named "Engine_Large, or to 0.75 if the audio clip is named "Engine_Small".
-
 **Reclined** *flag*: Player character should use a reclined idle animation.
 
 **Should_Spawn_Seat_Capsules** *bool*: If true, capsule colliders will be attached to the ``Seat`` GameObject in order to prevent players from clipping into the ground. This is useful for vehicles that do not have a roof. Defaults to false.
@@ -205,6 +201,7 @@ Engine RPM will never exceed this value regardless of whether wheel RPM * gear r
 .. _doc_assets_vehicle:enginerpm_increaserate:
 
 **EngineRPM_IncreaseRate** :ref:`float32 <doc_data_builtin_types>` ``10000.0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 How quickly engine RPM can increase in RPM/s. For example, 1000 will take 2 seconds to go from 2000 to 4000 RPM.
 
@@ -215,6 +212,7 @@ How quickly engine RPM can increase in RPM/s. For example, 1000 will take 2 seco
 .. _doc_assets_vehicle:enginerpm_decreaserate:
 
 **EngineRPM_DecreaseRate** :ref:`float32 <doc_data_builtin_types>` ``10000.0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 How quickly engine RPM can decrease in RPM/s. For example, 1000 will take 2 seconds to go from 4000 to 2000 RPM.
 
@@ -225,6 +223,7 @@ How quickly engine RPM can decrease in RPM/s. For example, 1000 will take 2 seco
 .. _doc_assets_vehicle:enginemaxtorque:
 
 **EngineMaxTorque** :ref:`float32 <doc_data_builtin_types>` ``1.0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Multiplier for the amount of torque provided to the wheels. Understanding how engine RPM is translated to wheel torque is crucial for tuning the physics:
 
@@ -236,6 +235,31 @@ Multiplier for the amount of torque provided to the wheels. Understanding how en
 6. If reversing, torque is multiplied by :ref:`ReverseGearRatio <doc_assets_vehicle:reversegearratio>`.
 7. Otherwise, torque is multiplied by the active :ref:`ForwardGearRatio <doc_assets_vehicle:forwardgearratios>`.
 8. Each :ref:`Powered Wheel <doc_assets_vehicle:wheelconfiguration_iscolliderpowered>` gets an equal share of the torque. To clarify, the per-wheel torque is equal to the engine output torque divided by the number of powered wheels.
+
+Engine Sound
+````````````
+
+**Pitch_Drive** *float*: Multiplier on the pitch of the engine audio while driving. Defaults to 0.03 when using ``Engine Helicopter``, or to 0.1 when using ``Engine Blimp``. For other ``Engine`` enumerators, it defaults to 0.025 if the audio clip is named "Engine_Large", or to 0.075 if the audio clip is named "Engine_Small".
+
+----
+
+**Pitch_Idle** *float*: Multiplier on the pitch of the engine audio while idle. Defaults to 0.625 if the audio clip is named "Engine_Large, or to 0.75 if the audio clip is named "Engine_Small".
+
+----
+
+.. _doc_assets_vehicle:enginesound_type:
+
+**EngineSound_Type** :ref:`enum <doc_data_builtin_types>` ``Legacy`` or ``EngineRPMSimple``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Defaults to ``Legacy``. In that mode, ``Pitch_Idle`` and ``Pitch_Drive`` are used to control engine audio pitch.
+
+----
+
+**EngineSound** **dictionary**
+::::::::::::::::::::::::::::::
+
+When :ref:`EngineSound_Type <doc_assets_vehicle:enginesound_type>` is set to ``EngineRPMSimple`` this should be set to a :ref:`EngineRPMSimple Dictionary <doc_assets_vehicle:enginesound_enginerpmsimple_dictionary>`.
 
 Handling
 ````````
@@ -544,3 +568,64 @@ If true, model ignores ``IsModelSteered`` and instead uses the wheel collider st
 
 Prior to wheel configurations, some high-fidely modded cars used a separate set of physics constraints to animate the wheel models as if they had suspension. Constraint setups like this should be completely superseded by the ``ModelUseColliderPose`` property. The constraints were awful for performance because physics for every purely-visual wheel were simulated on every client, and even then they didn't actually match the real wheel state.
 
+.. _doc_assets_vehicle:enginesound_enginerpmsimple_dictionary:
+
+EngineRPMSimple Dictionary
+```````````````````````````
+
+.. list-table::
+   :widths: 40 40 20
+   :header-rows: 1
+
+   * - Property Name
+     - Type
+     - Default Value
+   * - :ref:`IdlePitch <doc_assets_vehicle:enginesound_enginerpmsimple_idlepitch>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0.0``
+   * - :ref:`IdleVolume <doc_assets_vehicle:enginesound_enginerpmsimple_idlevolume>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0.0``
+   * - :ref:`MaxPitch <doc_assets_vehicle:enginesound_enginerpmsimple_maxpitch>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0.0``
+   * - :ref:`MaxVolume <doc_assets_vehicle:enginesound_enginerpmsimple_maxvolume>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0.0``
+
+EngineRPMSimple Dictionary Descriptions
+````````````````````````````````````````
+
+.. _doc_assets_vehicle:enginesound_enginerpmsimple_idlepitch:
+
+IdlePitch :ref:`float32 <doc_data_builtin_types>` ``0.0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+AudioSource pitch when engine RPM is at :ref:`Idle RPM <doc_assets_vehicle:engineidlerpm>`.
+
+----
+
+.. _doc_assets_vehicle:enginesound_enginerpmsimple_idlevolume:
+
+IdleVolume :ref:`float32 <doc_data_builtin_types>` ``0.0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+AudioSource volume when engine RPM is at :ref:`Idle RPM <doc_assets_vehicle:engineidlerpm>`.
+
+----
+
+.. _doc_assets_vehicle:enginesound_enginerpmsimple_maxpitch:
+
+MaxPitch :ref:`float32 <doc_data_builtin_types>` ``0.0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+AudioSource pitch when engine RPM is at :ref:`Max RPM <doc_assets_vehicle:enginemaxrpm>`.
+
+----
+
+.. _doc_assets_vehicle:enginesound_enginerpmsimple_maxvolume:
+
+MaxVolume :ref:`float32 <doc_data_builtin_types>` ``0.0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+AudioSource volume when engine RPM is at :ref:`Max RPM <doc_assets_vehicle:enginemaxrpm>`.
