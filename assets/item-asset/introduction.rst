@@ -142,6 +142,9 @@ Properties
    * - :ref:`Shared_Skin_Lookup_ID <doc_item_asset_intro:shared_skin_lookup_id>`
      - :ref:`uint16 <doc_data_builtin_types>`
      - See description
+   * - :ref:`Shared_Skin_Apply_Visuals <doc_item_asset_intro:shared_skin_apply_visuals>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``true``
    * - :ref:`Should_Delete_At_Zero_Quality <doc_item_asset_intro:should_delete_at_zero_quality>`
      - :ref:`bool <doc_data_builtin_types>`
      - ``false``
@@ -491,6 +494,15 @@ Shared_Skin_Lookup_ID :ref:`uint16 <doc_data_builtin_types>`
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Share skins with another item. Defaults to item's ``ID``.
+
+----
+
+.. _doc_item_asset_intro:shared_skin_apply_visuals:
+
+Shared_Skin_Apply_Visuals :ref:`bool <doc_data_builtin_types>` ``true``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If false, skin material and mesh are not applied when ``Shared_Skin_Lookup_ID`` is set. For example, a custom axe can transfer the kill counter and ragdoll effect from a vanilla item's skin without also transferring the material and mesh.
 
 ----
 
