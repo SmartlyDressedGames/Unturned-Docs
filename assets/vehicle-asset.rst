@@ -294,6 +294,8 @@ Handling
 
 **Steer_Max** *float*: The angle to turn when moving quickly. This value is multiplied by 0.75.
 
+**Steering_Angle_Turn_Speed** *float*: How quickly wheels can turn to meet player input, measured in degrees per second.
+
 **Traction** *flag*: Tires should have traction in snowy positions.
 
 **Wheel_Collider_Mass_Override** *float*: Override the mass of the vehicle's Wheel Collider components. This allows for quickly modifying the mass of the wheel colliders without needing to rebundle the asset in Unity. If a vehicle has realistic mass, then it may be helpful to set this value to something exceptionally high (e.g., 500). Defaults to ``null``.
