@@ -59,13 +59,13 @@ How to Install Server using SteamCMD
 
 1. Login to Steam anonymously.
 
-.. code-block:: bash
+.. code-block:: shell
 
 	login anonymous
 
-2. Download the Unturned Dedicated Server application.
+1. Download the Unturned Dedicated Server application.
 
-.. code-block:: bash
+.. code-block:: shell
 
 	app_update 1110390
 	
@@ -73,7 +73,7 @@ How to Install Server using SteamCMD
 
 3. Close SteamCMD.
 	
-.. code-block:: bash
+.. code-block:: shell
 
 	quit
 
@@ -186,7 +186,7 @@ Common useful commands are:
 
 Examples:
 
-.. code-block:: c#
+.. code-block:: unturneddat
 
 	Map PEI
 	Map Washington
@@ -196,7 +196,7 @@ Examples:
 
 Examples:
 
-.. code-block:: c#
+.. code-block:: unturneddat
 
 		Port 27015
 		Port 27017
@@ -214,14 +214,14 @@ To include a Workshop file on your server:
 1. Browse to its web page, for example: `Hawaii <https://steamcommunity.com/sharedfiles/filedetails/?id=1753134636>`_
 2. Copy the file ID from the end of the URL.
 
-.. code-block:: c#
+.. code-block:: text
 
 	URL: https://steamcommunity.com/sharedfiles/filedetails/?id=1753134636
 	ID: 1753134636
 
 3. Insert the file ID into the File_IDs list:
 
-.. code-block:: c#
+.. code-block:: json
 
 	"File_IDs":
 	[
@@ -230,7 +230,7 @@ To include a Workshop file on your server:
 
 Multiple file IDs should be separated by commas:
 
-.. code-block:: c#
+.. code-block:: json
 
 	"File_IDs":
 	[

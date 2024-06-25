@@ -10,7 +10,7 @@ In \*.dat files
 
 Note that the GUID here is not wrapped in quotes because Unturned \*.dat files are treated as pairs of strings.
 
-.. code-block::
+.. code-block:: unturneddat
 	
 	MyAssetPtr ################################
 
@@ -19,7 +19,7 @@ In \*.asset files
 
 Two formats are supported in these files. The inline style was added later so you will see the older style used in many official assets.
 
-.. code-block:: cs
+.. code-block:: unturnedasset
 	
 	"MyAssetPtr" "################################"
 	"MyAssetPtr" { "GUID" "################################" }

@@ -262,7 +262,7 @@ Time_Of_Day
 
 **Condition_#_Type** *enum* (``Time_Of_Day``)
 
-**Condition_#_Second** *int*: Second of a 24-hour clock (military time) to compare against. For example: ``0`` is midnight (the start of a day), ``43200`` is noon (12 o'clock), and ``86400`` is midnight (the end of a day). This condition respects the map's configured "Bias" values, as well as the day/night cycle length of the world. As a visual reference, the `Clock <https://unturned.wiki.gg/wiki/Clock>`_ item can be used.
+**Condition_#_Second** *int*: Second of a 24-hour clock (military time) to compare against. For example: ``0`` is midnight (the start of a day), ``43200`` is noon (12 o'clock), and ``86400`` is midnight (the end of a day). This condition respects the map's configured "Bias" values, as well as the day/night cycle length of the world. As a visual reference, the `Clock <https://unturned.wiki/wiki/Clock>`_ item can be used.
 
 Weather_Blend_Alpha
 ```````````````````

@@ -16,7 +16,7 @@ This comes with an obvious downside: when zooming in on most buildings it is rea
 Editing volumes
 ---------------
 
-You can enable the **Preview Culling** checkbox to hide all objects inside culling volumes. This is useful to find any objects that are not included when they should be. For example, while working on this update I realized the volumes in the vanilla cargo ships did not extend low enough to catch some of the furniture in the crew quarters. 
+You can enable the **Preview Culling** checkbox to hide all objects inside culling volumes. This is useful to find any objects that are not included when they should be. For example, while working on this update I realized the volumes in the vanilla cargo ships did not extend low enough to catch some of the furniture in the crew quarters.
 
 Objects inside volumes are found when loading the level. While working in the editor you can click **Refresh Objects** to re-find all objects/volumes on the map.
 
@@ -27,7 +27,7 @@ Excluding specific objects
 
 If you know your asset should never be managed by culling volumes you can add this line to the .dat file:
 
-.. code-block:: c#
+.. code-block:: unturneddat
 	
 	Exclude_From_Culling_Volumes true
 

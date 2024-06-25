@@ -27,7 +27,7 @@ Trap Asset Properties
 
 **Barricade_Damage** *float*: Damage dealt to barricades caught within the area-of-effect explosion.
 
-**Broken** *flag*: Players who trigger the trap will be inflicted with the `Broken Bones <https://unturned.wiki.gg/wiki/Broken_Bones>`_ status effect.
+**Broken** *flag*: Players who trigger the trap will be inflicted with the `Broken Bones <https://unturned.wiki/wiki/Broken_Bones>`_ status effect.
 
 **Damage_Tires** *flag*: This trap can pop the tires of vehicles that drive over it.
 

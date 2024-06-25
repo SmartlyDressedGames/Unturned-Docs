@@ -22,7 +22,7 @@ The currency asset defines how numbers are formatted, which items make up the cu
 
 **Entries**: Array of items in the currency. Each has an **Item** GUID and **Value** integer. Optionally **Is_Visible_In_Vendor_Menu** bool can be false to hide the item from the NPC vendor currency list. For example these are the $10 and $20 notes in the Canadian currency:
 
-.. code-block:: cs
+.. code-block:: unturnedasset
 	
 	{
 		"Item"
@@ -51,6 +51,6 @@ Testing
 
 The built-in "give" command accepts currency GUIDs as an alternative to item IDs. For example the following grants $1,000 CAD to the local player:
 
-.. code-block:: bash
+.. code-block:: shell
 	
 	/give 5150ca8f765d4a68bfe54912146da410/1000

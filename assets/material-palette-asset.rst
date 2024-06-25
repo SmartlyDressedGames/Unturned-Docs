@@ -17,7 +17,7 @@ Material Palette Properties
 
 **Materials** *array* of :ref:`Master Bundle Pointer <doc_data_masterbundleptr>` *dictionaries*: Each dictionary in the list should point to a material bundled in Unity.
 
-.. code-block:: cs
+.. code-block:: unturnedasset
 	
 	"Asset"
 	{

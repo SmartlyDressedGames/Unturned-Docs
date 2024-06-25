@@ -197,7 +197,7 @@ When this flag is included, this clothing item is considered waterproof. When wa
 Skin_Override :ref:`string <doc_data_builtin_types>`
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Optional name of a renderer that should use the player's skin material. For example, the `Conflicting Conscience <https://unturned.wiki.gg/wiki/Conflicting_Conscience>`_ cosmetic adds miniature versions of the player sitting on their shoulder. 
+Optional name of a renderer that should use the player's skin material. For example, the `Conflicting Conscience <https://unturned.wiki/wiki/Conflicting_Conscience>`_ cosmetic adds miniature versions of the player sitting on their shoulder. 
 
 ----
 

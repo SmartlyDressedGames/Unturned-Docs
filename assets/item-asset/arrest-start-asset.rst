@@ -3,7 +3,7 @@
 Arrest Start Assets
 ===================
 
-The ItemArrestStartAsset class is used for "catcher" items, which can restrain a player. Its sister item, the ":ref:`releaser <doc_item_asset_arrest_start>`", can be used to unlock restraints. Some examples of vanilla catchers include the `Handcuffs <https://unturned.wiki.gg/wiki/Handcuffs>`_ and `Cable Tie <https://unturned.wiki.gg/wiki/Cable_Tie>`_.
+The ItemArrestStartAsset class is used for "catcher" items, which can restrain a player. Its sister item, the ":ref:`releaser <doc_item_asset_arrest_start>`", can be used to unlock restraints. Some examples of vanilla catchers include the `Handcuffs <https://unturned.wiki/wiki/Handcuffs>`_ and `Cable Tie <https://unturned.wiki/wiki/Cable_Tie>`_.
 
 Game Data File
 --------------

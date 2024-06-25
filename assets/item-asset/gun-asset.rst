@@ -3,7 +3,7 @@
 Gun Assets
 ==========
 
-The ItemGunAsset class is used for ranged weapons (or "guns"), which can be used by players to deal damage. Some examples of vanilla ranged weapons include the `Eaglefire <https://unturned.wiki.gg/wiki/Eaglefire>`_ and `Crossbow <https://unturned.wiki.gg/wiki/Crossbow>`_.
+The ItemGunAsset class is used for ranged weapons (or "guns"), which can be used by players to deal damage. Some examples of vanilla ranged weapons include the `Eaglefire <https://unturned.wiki/wiki/Eaglefire>`_ and `Crossbow <https://unturned.wiki/wiki/Crossbow>`_.
 
 Unity Asset Bundle Contents
 ---------------------------
@@ -507,7 +507,7 @@ Action :ref:`EAction <doc_item_asset_gun:eaction>`
 
 The value of this property determines how the weapon functions when used, including whether it uses *ballistic projectiles*, or *physics projectiles*. Different properties are available to the weapon depending on the value of this property.
 
-Although most action mechanisms utilize ballistic projectiles, the ``Rocket`` action mechanism uses physics projectiles instead. Additionally, any projectiles from these weapons (e.g., the `Rocket Launcher <https://unturned.wiki.gg/wiki/Rocket_Launcher>`_) are explosive.
+Although most action mechanisms utilize ballistic projectiles, the ``Rocket`` action mechanism uses physics projectiles instead. Additionally, any projectiles from these weapons (e.g., the `Rocket Launcher <https://unturned.wiki/wiki/Rocket_Launcher>`_) are explosive.
 
 To fire a weapon with the  ``String`` action mechanism, a player must be aiming down sights – unless a "Nock" GameObject has been added during its Unity setup.
 
@@ -596,7 +596,7 @@ When this property is unset, it will default to ``0``. When the ``Attachment_Cal
 
 For example, a valid configuration for a ranged weapon's calibers could be:
 
-.. code-block:: unturned
+.. code-block:: unturnedasset
 
   Attachment_Calibers 2
   Attachment_Caliber_0 1

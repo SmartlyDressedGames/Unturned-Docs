@@ -25,7 +25,7 @@ Item Asset Properties
 Structure Asset Properties
 --------------------------
 
-**Armor_Tier** *enum* (``Low``, ``High``): Armor is a multiplier on damage received. A structure's armor tier can either be low-tier or high-tier. By default, structures with low-tier armor take 100% of the damage they receive, while structures with high-tier armor take 50% of the damage they receive. These multipliers can be configured in the `gameplay config <https://unturned.wiki.gg/wiki/Gameplay_config>`_. Defaults to low-tier, except when the structure's name contains the word "Metal" or "Brick".
+**Armor_Tier** *enum* (``Low``, ``High``): Armor is a multiplier on damage received. A structure's armor tier can either be low-tier or high-tier. By default, structures with low-tier armor take 100% of the damage they receive, while structures with high-tier armor take 50% of the damage they receive. These multipliers can be configured in the `gameplay config <https://unturned.wiki/wiki/Gameplay_config>`_. Defaults to low-tier, except when the structure's name contains the word "Metal" or "Brick".
 
 **Can_Be_Damaged** *bool*: If true, this structure can be damaged. Defaults to true.
 
@@ -53,7 +53,7 @@ Structure Asset Properties
 
 **Unpickupable** *flag*: Disables the ability to pick up a placed structure.
 
-**Unrepairable** *flag*: Cannot be repaired by a :ref:`MeleeAsset <doc_item_asset_melee>` with the ``Repair`` flag. For example, the `Blowtorch <https://unturned.wiki.gg/wiki/Blowtorch>`_ would not be able to repair this structure.
+**Unrepairable** *flag*: Cannot be repaired by a :ref:`MeleeAsset <doc_item_asset_melee>` with the ``Repair`` flag. For example, the `Blowtorch <https://unturned.wiki/wiki/Blowtorch>`_ would not be able to repair this structure.
 
 **Unsalvageable** *flag*: Salvaging a damaged structure yields no partial resources.
 

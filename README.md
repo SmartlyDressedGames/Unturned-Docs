@@ -27,13 +27,17 @@ The online documentation pages are generated from .rst (reStructuredText) files.
 
 Most documentation files are formatted similarly. Some important notes:
 
-- When asset properties are listed, they should generally follow a `**Name** *data type*: Description` format. Depending on the data type, it may be hyperlinked instead of italicized, or may also include required values if there is one.
-
 - Content block directives can be used to add notes, warnings, tips, and other admonitions.
 
-- Internal links should use the `:ref:` command.
+- Internal links should use the `:ref:` command, usually pointing towards a custom anchor.
+
+- Properties in the asset manual pages use one of two formats. Older pages follow a `**Name** *data type*: Description` format. Depending on the data type, it may be hyperlinked instead, or may include required (or possible) values. Newer pages follow a table-based format. These formats should not be mixed on the same page, but continuing to use the legacy format on pages that have not been converted yet is acceptable.
 
 - Images from the Unity editor should crop out any unnecessary information. This usually includes the Title Bar (which includes details such as the Unity version, project name, and window buttons), and the Toolbar.
+
+- The `code-block` directive can be used to display example code with syntax highlighting. Common languages include `cs`, `json`, `text`, `shell`, `bat`, and `unturneddat` (alias: `unturnedasset`).
+
+- Including links to our Unturned Wiki can be helpful. These should use the `https://unturned.wiki/` shortlink instead of `https://unturned.wiki.gg/`. Wiki articles linked to from the Unturned Documentation should have the "[Category:Pages linked from Unturned Documentation](https://unturned.wiki/wiki/Category:Pages_linked_from_Unturned_Documentation)" hidden tracking category added to them.
 
 Building the Docs
 -----------------

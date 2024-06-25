@@ -12,7 +12,7 @@ Asset Properties Reference
 
 **Title** string: display text to show in the music player menu. If a localization .dat file is present the ``Name`` key will be used, or a translation reference can be used. Examples:
 
-.. code-block:: cs
+.. code-block:: unturnedasset
 	
 	"Title" "My song"
 
@@ -22,7 +22,7 @@ OR
 
 OR
 
-.. code-block:: cs
+.. code-block:: unturnedasset
 	
 	"Title"
 	{
@@ -32,7 +32,7 @@ OR
 
 **Song** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: audio clip to play. Can either be a newer master bundle pointer or an older content pointer. Examples:
 
-.. code-block:: cs
+.. code-block:: unturnedasset
 	
 	"Song"
 	{
@@ -42,7 +42,7 @@ OR
 
 OR
 
-.. code-block:: cs
+.. code-block:: unturnedasset
 	
 	"Song"
 	{

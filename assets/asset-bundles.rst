@@ -34,7 +34,7 @@ Master bundles can be loaded from any directory the game loads \*.dat files from
 
 MasterBundle.dat can set the following keys:
 
-.. code-block:: cs
+.. code-block:: unturneddat
 	
 	// Name of asset bundle file in the same directory as MasterBundle.dat.
 	Asset_Bundle_Name core.masterbundle
@@ -48,7 +48,7 @@ MasterBundle.dat can set the following keys:
 
 Individual asset \*.dats can set the following keys:
 
-.. code-block:: cs
+.. code-block:: unturneddat
 	
 	// Name of master bundle to load files from.
 	Master_Bundle_Override core.masterbundle
