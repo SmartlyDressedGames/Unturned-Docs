@@ -38,7 +38,11 @@ Vehicle Properties
 
 **Can_Be_Locked** *bool*: Whether or not the vehicle can be locked a player. Defaults to true.
 
-**Crawler** *flag*: Disables the ``Wheel_#`` GameObjects from turning when steering by setting the default value of ``Num_Steering_Tires`` to 0. This property has no effect if ``Num_Steering_Tires`` has been manually set.
+**Crawler** *flag*: *deprecated* Disables the ``Wheel_#`` GameObjects from turning when steering by setting the default value of ``Num_Steering_Tires`` to 0. This property has no effect if ``Num_Steering_Tires`` has been manually set.
+
+.. note:: Replaced by the ``WheelConfigurations`` propery.
+
+.. deprecated:: 3.23.4.0
 
 **Drops_Table_ID** *uint16*: ID of the item spawn table to use when the vehicle is destroyed. Defaults to 962.
 
@@ -58,7 +62,11 @@ Vehicle Properties
 
 **LockMouse** *flag*: First-person camera movement is locked while driving. This is useful for ``Engine Plane`` and ``Engine Helicopter``, as a player's mouse movement while in first-person can be used to steer the vehicle.
 
-**Num_Steering_Tires** *int32*: Total number of tires that should turn when steering. Defaults to 2 when using ``Engine Car``, to 1 when using any other ``Engine`` enumerator, or to 0 if the ``Crawler`` property has been set.
+**Num_Steering_Tires** *int32*: *deprecated* Total number of tires that should turn when steering. Defaults to 2 when using ``Engine Car``, to 1 when using any other ``Engine`` enumerator, or to 0 if the ``Crawler`` property has been set.
+
+.. note:: Replaced by the ``WheelConfigurations`` propery.
+
+.. deprecated:: 3.23.4.0
 
 **Pitch_Drive** *float*: Multiplier on the pitch of the engine audio while driving. Defaults to 0.03 when using ``Engine Helicopter``, or to 0.1 when using ``Engine Blimp``. For other ``Engine`` enumerators, it defaults to 0.025 if the audio clip is named "Engine_Large", or to 0.075 if the audio clip is named "Engine_Small".
 
@@ -68,7 +76,11 @@ Vehicle Properties
 
 **Should_Spawn_Seat_Capsules** *bool*: If true, capsule colliders will be attached to the ``Seat`` GameObject in order to prevent players from clipping into the ground. This is useful for vehicles that do not have a roof. Defaults to false.
 
-**Steering_Tire_#** *int32*: Set a ``Wheel_#`` GameObject as a steering tire, which will visibly turn when steering. By default, a number of steering tires equal to the value of ``Num_Steering_Tires`` will be automatically set. These will start at ``Steering_Tire_0 0`` (corresponding to ``Wheel_0``), and increment upwards.
+**Steering_Tire_#** *int32*: *deprecated* Set a ``Wheel_#`` GameObject as a steering tire, which will visibly turn when steering. By default, a number of steering tires equal to the value of ``Num_Steering_Tires`` will be automatically set. These will start at ``Steering_Tire_0 0`` (corresponding to ``Wheel_0``), and increment upwards.
+
+.. note:: Replaced by the ``WheelConfigurations`` propery.
+
+.. deprecated:: 3.23.4.0
 
 **Tire_ID** *uint16*: ID of the item that should given when a tire is manually removed with a :ref:`ToolAsset <doc_item_asset_tire>` that has ``Mode Remove``, and can also be manually attached to the vehicle if the specified item ID is for a :ref:`ToolAsset <doc_item_asset_tire>` with ``Mode Add``. Defaults to 1451.
 
@@ -141,7 +153,7 @@ Health
 **Health_Min** *uint16*: Maximum possible health to spawn with. Defaults to 0.
 
 **Health_Max** *uint16*: Minimum possible health to spawn with. Defaults to 0.
-  
+
 **Invulnerable** *flag*: The vehicle cannot be damaged by lower-power :ref:`doc_item_asset_weapon` that do not have the ``Invulnerable`` flag.
 
 **Passenger_Explosion_Armor** *float*: Multiplier on the damage taken by players sitting in the vehicle, by explosions. Defaults to 1.
