@@ -398,6 +398,9 @@ Ranged weapons have a significant number of properties. To make navigating these
    * - :ref:`Recoil_Min_Y <doc_item_asset_gun:recoil_min_y>`
      - :ref:`float32 <doc_data_builtin_types>`
      - ``0``
+   * - :ref:`Recoil_Midair <doc_item_asset_gun:recoil_midair>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``1.0``
    * - :ref:`Recoil_Prone <doc_item_asset_gun:recoil_prone>`
      - :ref:`float32 <doc_data_builtin_types>`
      - ``0.7``
@@ -459,6 +462,9 @@ Ranged weapons have a significant number of properties. To make navigating these
    * - :ref:`Spread_Hip <doc_item_asset_gun:spread_hip>`
      - :ref:`float32 <doc_data_builtin_types>`
      - *deprecated*
+   * - :ref:`Spread_Midair <doc_item_asset_gun:spread_midair>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``1.5``
    * - :ref:`Spread_Prone <doc_item_asset_gun:spread_prone>`
      - :ref:`float32 <doc_data_builtin_types>`
      - ``0.7``
@@ -1059,6 +1065,15 @@ Minimum vertical camera recoil in degrees. This property is used in conjunction 
 
 ----
 
+.. _doc_item_asset_gun:recoil_midair:
+
+Recoil_Midair :ref:`float32 <doc_data_builtin_types>` ``1.0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Multiplier on camera recoil while jumping and/or falling.
+
+----
+
 .. _doc_item_asset_gun:recoil_prone:
 
 Recoil_Prone :ref:`float32 <doc_data_builtin_types>` ``0.7``
@@ -1277,6 +1292,15 @@ Spread_Hip :ref:`float32 <doc_data_builtin_types>`
    Use ``Spread_Angle_Degrees`` instead.
 
 Maintained for backwards compatibility. Running the game with the ``-ValidateAssets`` :ref:`launch option <doc_launch_options>` will log the equivalent ``Spread_Angle_Degrees`` value.
+
+----
+
+.. _doc_item_asset_gun:spread_midair:
+
+Spread_Midair :ref:`float32 <doc_data_builtin_types>` ``1.5``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Multiplier on the bullet spread while jumping and/or falling.
 
 ----
 
