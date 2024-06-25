@@ -280,6 +280,10 @@ Handling
 
 **Lift** *float*: The amount of upwards lift force to apply, when using ``Engine Plane``.
 
+**Carjack_Force_Multiplier** *float*: Multiplier for force applied when using a carjack item on this vehicle. Necessary for carjacks to work on vehicles with higher mass.
+
+**Engine_Force_Multiplier** *float*: Multiplier for otherwise not-yet-configurable plane/heli/boat/etc forces. Necessary for carjacks to work on vehicles with higher mass.
+
 **Override_Center_Of_Mass** *bool*: If true, override the vehicle's center of mass with the values from the ``Center_Of_Mass_#`` Vector3 properties. This allows for modifying a vehicle's center of gravity without needing to move the ``Cog`` GameObject in Unity.
 
 **Physics_Profile** :ref:`GUID <doc_data_guid>`: GUID of a :ref:`VehiclePhysicsProfileAsset <doc_assets_vehicle_physics_profile>` to use. Using a vehicle physics profile is optional. Defaults to ``47258d0dcad14cb8be26e24c1ef3449e`` when using ``Engine Boat``, to ``6b91a94f01b6472eaca31d9420ec2367`` when using ``Engine Car``, to ``bb9f9f0204c4462ca7d976b87d1336d4`` when using ``Engine Helicopter``, or to ``93a47d6d40454335b4784e803628ac54`` when using ``Engine Plane``.
