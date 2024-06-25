@@ -25,6 +25,8 @@ For examples check the ``Assets/Levels`` directory.
 
 **Skills** *array*: Overrides skill default and max levels. Refer to skill rule properties.
 
+**TerrainColors** *array*: Specifies which colors are too similar to terrain colors. Please refer to Terrain Color Properties below.
+
 **Enable_Admin_Faster_Salvage_Duration** *bool*: By default, players in singleplayer and admins in multiplayer have a faster salvage time.
 
 **Has_Clouds** *bool*: Disables clouds in skybox when false. Defaults to true.
@@ -56,6 +58,17 @@ Skill Rule Properties
 **Max_Unlockable_Level** *int*: Maximum skill level attainable through gameplay. Higher levels are hidden in the skills menu.
 
 **Cost_Multiplier** *float*: multiplier for XP upgrade cost.
+
+Terrain Color Properties
+------------------------
+
+**Color** :ref:`color <doc_data_color>`: Actual base color/albedo of terrain material.
+
+**HueThreshold** :ref:`float32 <doc_data_builtin_types>`: 0 to 1. If difference between hues is greater than this value the colors are not too similar.
+
+**SaturationThreshold** :ref:`float32 <doc_data_builtin_types>`: 0 to 1. If difference between saturations is greater than this value the colors are not too similar.
+
+**ValueThreshold** :ref:`float32 <doc_data_builtin_types>`: 0 to 1. If difference between values is greater than this the colors are not too similar.
 
 Music Properties
 ----------------
