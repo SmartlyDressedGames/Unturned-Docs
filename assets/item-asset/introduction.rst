@@ -67,9 +67,6 @@ Properties
    * - :ref:`Amount <doc_item_asset_intro:amount>`
      - :ref:`uint8 <doc_data_builtin_types>`
      - ``1``
-   * - :ref:`Backward <doc_item_asset_intro:backward>`
-     - :ref:`bool <doc_data_builtin_types>`
-     - ``false``
    * - :ref:`Bypass_Hash_Verification <doc_item_asset_intro:bypass_hash_verification>`
      - :ref:`bool <doc_data_builtin_types>`
      - ``false``
@@ -94,9 +91,12 @@ Properties
    * - :ref:`Equipable_Movement_Speed_Multiplier <doc_item_asset_intro:equipable_movement_speed_multiplier>`
      - :ref:`float32 <doc_data_builtin_types>`
      - ``1``
+   * - :ref:`EquipableModelParent <doc_item_asset_intro:equipablemodelparent>`
+     - :ref:`enum <doc_data_builtin_types>`
+     - See description
    * - :ref:`EquipablePrefab <doc_item_asset_intro:equipableprefab>`
      - :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`
-     - 
+     -
    * - :ref:`EquipAudioClip <doc_item_asset_intro:equipaudioclip>`
      - :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`
      - ``Equip``
@@ -258,15 +258,6 @@ Maximum capacity for container-like items, such as ammunition boxes. Typically u
 
 ----
 
-.. _doc_item_asset_intro:backward:
-
-Backward :ref:`bool <doc_data_builtin_types>` ``false``
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-Set the item to be held in the character's non-dominant hand.
-
-----
-
 .. _doc_item_asset_intro:bypass_hash_verification:
 
 Bypass_Hash_Verification :ref:`bool <doc_data_builtin_types>` ``false``
@@ -336,6 +327,17 @@ Equipable_Movement_Speed_Multiplier :ref:`float32 <doc_data_builtin_types>` ``1`
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Multiplies character movement speed while equipped in the player's hands. If a gun is equipped, then any gun attachment multipliers are combined as well.
+
+----
+
+.. _doc_item_asset_intro:equipablemodelparent:
+
+EquipableModelParent ``RightHook``, ``LeftHook`` or ``Spine``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Overrides which transform to attach item to when equipped by the player. Spine may be a better interpolation space for items with animations moving the model between hands.
+
+The deprecated ``Backward`` flag sets ``EquipableModelParent`` to ``LeftHook``.
 
 ----
 
