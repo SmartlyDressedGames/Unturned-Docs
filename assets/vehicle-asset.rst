@@ -113,6 +113,130 @@ If set, the vehicle can be painted with a :ref:`Vehicle Paint Tool <doc_item_ass
 
 List of random colors to pick from when spawning a new vehicle. Can be overridden by a :ref:`Vehicle Redirector<doc_asset_vehicle_redirector>`'s :ref:`LoadPaintColor <doc_asset_vehicle_redirector:loadpaintcolor>` and :ref:`LoadPaintColor <doc_asset_vehicle_redirector:spawnpaintcolor>` properties.
 
+Engine RPM and Gears
+````````````````````
+
+Cars can opt-in to a somewhat more realistic drive model with an automatic gearbox and engine RPM using these properties.
+
+.. _doc_assets_vehicle:forwardgearratios:
+
+**ForwardGearRatios** :ref:`list of float32 <doc_data_builtin_types>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Ratio between engine RPM and wheel RPM in a given gear. For example, if the wheel RPM is 6 and the gear ratio is 5 then the engine RPM is 30.
+
+.. note::
+
+	When converting vanilla cars to gear ratios, the approach I used was to calculate the gear ratio for a desired speed and engine RPM.
+	Suppose you're targeting 80 kph with a wheel radius of 0.6 m:
+
+		1. Convert 80 kph to m/s, in this case, 22.2 m/s.
+		2. Calculate wheel circumference with 2 * pi * r, in this case 3.77 m.
+		3. Calculate how far the vehicle would travel in a minute. 22.2 m/s * 60 s/min is 1,333.2 m/min.
+		4. Divide the distance per minute by the circumference to get the wheel RPM of 353.6776.
+
+	Supposedly (I'm still learning as I go) engines work most efficiently around the upper-middle of their RPM range. For example, 3500 RPM for an engine with 1000 idle RPM and 6000 max RPM. Using 3500 as our target engine RPM we can divide it by the wheel RPM to get a good starting point for the gear ratio tuning: 9.89
+
+----
+
+.. _doc_assets_vehicle:reversegearratio:
+
+**ReverseGearRatio** :ref:`float32 <doc_data_builtin_types>` ``1.0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Gear ratio to use when reversing. Please refer to :ref:`ForwardGearRatios <doc_assets_vehicle:forwardgearratios>` for more details on gear ratios.
+
+----
+
+.. _doc_assets_vehicle:gearshift_downthresholdrpm:
+
+**GearShift_DownThresholdRPM** :ref:`float32 <doc_data_builtin_types>` ``1500.0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+When engine RPM is below this value and a lower gear is available the car will shift gears down.
+
+----
+
+.. _doc_assets_vehicle:gearshift_upthresholdrpm:
+
+**GearShift_UpThresholdRPM** :ref:`float32 <doc_data_builtin_types>` ``5500.0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+When engine RPM is above this value and a higher gear is available the car will shift gears up.
+
+----
+
+.. _doc_assets_vehicle:gearshift_duration:
+
+**GearShift_Duration** :ref:`float32 <doc_data_builtin_types>` ``0.5``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+How long it takes to shift gears, measured in seconds. Wheels do not provide any torque for this duration.
+
+----
+
+.. _doc_assets_vehicle:gearshift_interval:
+
+**GearShift_Interval** :ref:`float32 <doc_data_builtin_types>` ``1.0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+How long to wait since the last gear change before shifting gears, measured in seconds. It can take a moment for the engine RPM to adjust after a gear change, so without a delay the RPM would still exceed the threshold.
+
+----
+
+.. _doc_assets_vehicle:engineidlerpm:
+
+**EngineIdleRPM** :ref:`float32 <doc_data_builtin_types>` ``1000.0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Engine RPM will never drop below this value regardless of whether wheel RPM * gear ratio is lower. Otherwise, the engine wouldn't be able to start the wheels rolling from zero.
+
+----
+
+.. _doc_assets_vehicle:enginemaxrpm:
+
+**EngineMaxRPM** :ref:`float32 <doc_data_builtin_types>` ``7000.0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Engine RPM will never exceed this value regardless of whether wheel RPM * gear ratio is higher. It should be kept to a reasonable value because the normalized engine RPM is used in a variety of places like sampling the torque curve and network replication.
+
+----
+
+.. _doc_assets_vehicle:enginerpm_increaserate:
+
+**EngineRPM_IncreaseRate** :ref:`float32 <doc_data_builtin_types>` ``10000.0``
+
+How quickly engine RPM can increase in RPM/s. For example, 1000 will take 2 seconds to go from 2000 to 4000 RPM.
+
+.. note:: Originally, I thought this might come in handy, but in practice tuning the torque and gear ratios worked better. Kept in case it comes in useful for somebody.
+
+----
+
+.. _doc_assets_vehicle:enginerpm_decreaserate:
+
+**EngineRPM_DecreaseRate** :ref:`float32 <doc_data_builtin_types>` ``10000.0``
+
+How quickly engine RPM can decrease in RPM/s. For example, 1000 will take 2 seconds to go from 4000 to 2000 RPM.
+
+.. note:: Originally, I thought this might come in handy, but in practice tuning the torque and gear ratios worked better. Kept in case it comes in useful for somebody.
+
+----
+
+.. _doc_assets_vehicle:enginemaxtorque:
+
+**EngineMaxTorque** :ref:`float32 <doc_data_builtin_types>` ``1.0``
+
+Multiplier for the amount of torque provided to the wheels. Understanding how engine RPM is translated to wheel torque is crucial for tuning the physics:
+
+1. Engine RPM is normalized into a 0 to 1 range according to :ref:`EngineIdleRPM <doc_assets_vehicle:engineidlerpm>` and :ref:`EngineMaxRPM <doc_assets_vehicle:enginemaxrpm>`. For example, an Engine RPM of 2000 with Idle RPM of 1000 and Max RPM of 5000 would be 0.25.
+2. Vehicle root needs an ``EngineCurvesComponent`` attached. This allows you to map normalized engine RPM to a normalized torque multiplier. Typically, the multiplier should be closest to 1 in the middle range (e.g., 0.3 to 0.8) and drop off toward 0 and 1.
+3. Torque curve is sampled using the normalized engine RPM.
+4. Sampled torque is multiplied by ``EngineMaxTorque``.
+5. If changing gears, torque is zero.
+6. If reversing, torque is multiplied by :ref:`ReverseGearRatio <doc_assets_vehicle:reversegearratio>`.
+7. Otherwise, torque is multiplied by the active :ref:`ForwardGearRatio <doc_assets_vehicle:forwardgearratios>`.
+8. Each :ref:`Powered Wheel <doc_assets_vehicle:wheelconfiguration_iscolliderpowered>` gets an equal share of the torque. To clarify, the per-wheel torque is equal to the engine output torque divided by the number of powered wheels.
+
 Handling
 ````````
 
