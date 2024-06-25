@@ -43,6 +43,7 @@
 	assets/object-asset
 	assets/outfit-asset
 	assets/physics-material-asset
+	assets/redirector-asset
 	assets/resource-asset
 	assets/spawn-asset
 	assets/stereo-song-asset
