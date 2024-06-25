@@ -60,6 +60,7 @@
 	tire-asset
 	tool-asset
 	trap-asset
+	vehicle-paint-tool-asset
 	vehicle-repair-tool-asset
 	vest-asset
 	water-asset
