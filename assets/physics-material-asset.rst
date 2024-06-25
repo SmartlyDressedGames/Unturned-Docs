@@ -31,6 +31,8 @@ Properties
 - MeleeImpact: melee attack hitting surface.
 - ShotgunShellBounce: used by vanilla shotgun particle collision audio.
 
+**TireMotionEffect** :ref:`Asset Pointer <doc_data_assetptr>` to :ref:`Effect Asset <doc_assets_effect>`: Effect to spawn while driving on this material. Its transform is set to the ground hit position with the Z axis aligned to the wheel's up vector and rotated according to forward/reverse speed. The vanilla effects use the rate over distance emission mode.
+
 **IsArable** *bool*: If true, crops can be planted on this material.
 
 **HasOil** *bool*: If true, oil drills can be placed on this material. Note at the time of writing (2022-02-10) oil drills can only be placed on terrain materials.
