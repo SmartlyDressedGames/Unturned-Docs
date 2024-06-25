@@ -22,3 +22,5 @@ Mask Asset Properties
 ---------------------
 
 **Earpiece** *flag*: Specified if mask allows for listening on communications by walkie-talkie.
+
+**FilterDegradationRateMultiplier** *float*: Multiplier for how quickly deadzones deplete a gasmask's filter quality. For example, 2 is faster (2x) and 0.5 is slower.
