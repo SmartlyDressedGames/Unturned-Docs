@@ -60,6 +60,8 @@ Some of the launch options are primarily intended for use with the Unturned Dedi
 
 **-LogSpawnTablesAfterLoadingLevel**: Log all spawn chances.
 
+**-LogVehicleWheelConfigurations**: Log automatic creation of vehicle asset's ``WheelConfigurations`` property for older vehicles. Useful when converting vehicles to the new format.
+
 **-NetTransport=** *enum* (``SteamNetworking``, ``SteamNetworkingSockets``): SteamNetworkingSockets was used to enable the `ISteamNetworkingSockets <https://partner.steamgames.com/doc/api/ISteamNetworkingSockets>`_ networking API, but this has since become default. SteamNetworking can be used to revert to the older, deprecated `ISteamNetworking <https://partner.steamgames.com/doc/api/ISteamNetworking>`_ networking API.
 
 **-NoDefaultLog**: Disables log file creation unless a plugin calls setLogFilePath.
