@@ -37,7 +37,7 @@ Most documentation files are formatted similarly. Some important notes:
 
 - The `code-block` directive can be used to display example code with syntax highlighting. Common languages include `cs`, `json`, `text`, `shell`, `bat`, and `unturneddat` (alias: `unturnedasset`).
 
-- Including links to our Unturned Wiki can be helpful. These should use the `https://unturned.wiki/` shortlink instead of `https://unturned.wiki.gg/`. Wiki articles linked to from the Unturned Documentation should have the "[Category:Pages linked from Unturned Documentation](https://unturned.wiki.gg/wiki/Category:Pages_linked_from_Unturned_Documentation)" hidden tracking category added to them.
+- Including links to our Unturned Wiki can be helpful. These should use the `https://unturned.wiki/` shortlink instead of `https://unturned.wiki.gg/`. Wiki articles linked to from the Unturned Documentation should have the "[Category:Pages linked from Unturned Documentation](https://unturned.wiki/wiki/Category:Pages_linked_from_Unturned_Documentation)" hidden tracking category added to them.
 
 Building the Docs
 -----------------
