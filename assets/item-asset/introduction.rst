@@ -9,7 +9,7 @@ Unity Asset Bundle Contents
 ---------------------------
 
 .. figure:: /assets/img/UnityExampleItem.png
-	
+
 	An example of an item being set up in the Unity editor.
 
 To get started, create a new folder for your custom item. The name of this folder will be relevant when further configuring your item after it has been exported from Unity.
@@ -67,12 +67,15 @@ Properties
    * - :ref:`Amount <doc_item_asset_intro:amount>`
      - :ref:`uint8 <doc_data_builtin_types>`
      - ``1``
+   * - :ref:`Backward <doc_item_asset_intro:equipablemodelparent>`
+     - :ref:`flag <doc_data_flag>`
+     - *deprecated*
    * - :ref:`Bypass_Hash_Verification <doc_item_asset_intro:bypass_hash_verification>`
      - :ref:`bool <doc_data_builtin_types>`
      - ``false``
    * - :ref:`Bypass_ID_Limit <doc_item_asset_intro:bypass_id_limit>`
      - :ref:`flag <doc_data_flag>`
-     - 
+     -
    * - :ref:`Can_Player_Equip <doc_item_asset_intro:can_player_equip>`
      - :ref:`bool <doc_data_builtin_types>`
      - See description
@@ -92,7 +95,7 @@ Properties
      - :ref:`float32 <doc_data_builtin_types>`
      - ``1``
    * - :ref:`EquipableModelParent <doc_item_asset_intro:equipablemodelparent>`
-     - :ref:`enum <doc_data_builtin_types>`
+     - :ref:`EEquipableModelParent <doc_item_asset_intro:eequipablemodelparent>`
      - See description
    * - :ref:`EquipablePrefab <doc_item_asset_intro:equipableprefab>`
      - :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`
@@ -102,16 +105,16 @@ Properties
      - ``Equip``
    * - :ref:`GUID <doc_item_asset_intro:guid>`
      - :ref:`doc_data_guid`
-     - 
+     -
    * - :ref:`ID <doc_item_asset_intro:id>`
      - :ref:`uint16 <doc_data_builtin_types>`
      - ``0``
    * - :ref:`Ignore_TexRW <doc_item_asset_intro:ignore_texrw>`
      - :ref:`flag <doc_data_flag>`
-     - 
+     -
    * - :ref:`InspectAudioDef <doc_item_asset_intro:inspectaudiodef>`
      - :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`
-     - 
+     -
    * - :ref:`Instantiated_Item_Name_Override <doc_item_asset_intro:instantiated_item_name_override>`
      - :ref:`string <doc_data_builtin_types>`
      - See description
@@ -126,7 +129,7 @@ Properties
      - ``false``
    * - :ref:`Pro <doc_item_asset_intro:pro>`
      - :ref:`flag <doc_data_flag>`
-     - 
+     -
    * - :ref:`Procedurally_Animate_Inertia <doc_item_asset_intro:procedurally_animate_inertia>`
      - :ref:`bool <doc_data_builtin_types>`
      - ``true``
@@ -168,7 +171,7 @@ Properties
      - ``None``
    * - :ref:`Type <doc_item_asset_intro:type>`
      - :ref:`doc_data_eitemtype`
-     - 
+     -
    * - :ref:`Use_Auto_Icon_Measurements <doc_item_asset_intro:use_auto_icon_measurements>`
      - :ref:`bool <doc_data_builtin_types>`
      - ``true``
@@ -179,6 +182,24 @@ Properties
      - :ref:`EUseableType <doc_item_asset_intro:euseabletype>`
      - ``None``
 
+.. _doc_item_asset_intro:eequipablemodelparent:
+
+EEquipableModelParent Enumeration
+`````````````````````````````````
+
+.. list-table::
+   :widths: 25 75
+   :header-rows: 1
+
+   * - Named Value
+     - Description
+   * - ``RightHook``
+     - Does not correspond to any useable type.
+   * - ``LeftHook``
+     - Corresponds to the "Clothing" useable type.
+   * - ``Spine``
+     - Corresponds to the "Gun" useable type.
+
 .. _doc_item_asset_intro:euseabletype:
 
 EUseableType Enumeration
@@ -187,7 +208,7 @@ EUseableType Enumeration
 .. list-table::
    :widths: 25 75
    :header-rows: 1
-   
+
    * - Named Value
      - Description
    * - ``None``
@@ -335,12 +356,12 @@ Multiplies character movement speed while equipped in the player's hands. If a g
 
 .. _doc_item_asset_intro:equipablemodelparent:
 
-EquipableModelParent ``RightHook``, ``LeftHook`` or ``Spine``
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+EquipableModelParent :ref:`EEquipableModelParent <doc_item_asset_intro:eequipablemodelparent>`
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Overrides which transform to attach item to when equipped by the player. Spine may be a better interpolation space for items with animations moving the model between hands.
+Overrides which transform to attach the item to when equipped by the player. Spine may be a better interpolation space for items with animations moving the model between hands.
 
-The deprecated ``Backward`` flag sets ``EquipableModelParent`` to ``LeftHook``.
+Normally, this property defaults to ``RightHook``. However, items using the deprecated ``Backward`` flag will cause this to instead use ``LeftHook``.
 
 ----
 
