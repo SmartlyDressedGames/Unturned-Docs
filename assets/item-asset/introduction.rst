@@ -194,11 +194,11 @@ EEquipableModelParent Enumeration
    * - Named Value
      - Description
    * - ``RightHook``
-     - Does not correspond to any useable type.
+     - Item is attached to Right_Hook.
    * - ``LeftHook``
-     - Corresponds to the "Clothing" useable type.
+     - Item is attached to Left_Hook.
    * - ``Spine``
-     - Corresponds to the "Gun" useable type.
+     - Item is attached to Spine.
 
 .. _doc_item_asset_intro:euseabletype:
 
