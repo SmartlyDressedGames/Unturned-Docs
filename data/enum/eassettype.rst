@@ -3,7 +3,7 @@
 EAssetType
 ============
 
-The EAssetType enumerated type is used to determine an asset's type.
+The EAssetType enumerated type is used as a scope for legacy IDs. Each legacy ID is unique within an EAssetType (allowing multiple assets to share the same legacy ID when they are different types). This is only used in older code or for maintaining backwards compatibility.
 
 Enumerators
 ```````````
