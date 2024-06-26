@@ -38,7 +38,7 @@ Vehicle Properties
 
 **Can_Be_Locked** *bool*: Whether or not the vehicle can be locked a player. Defaults to true.
 
-**Crawler** *flag*: *deprecated* Disables the ``Wheel_#`` GameObjects from turning when steering by setting the default value of ``Num_Steering_Tires`` to 0. This property has no effect if ``Num_Steering_Tires`` has been manually set.
+**Crawler** *flag*: *This property is deprecated.* Disables the ``Wheel_#`` GameObjects from turning when steering by setting the default value of ``Num_Steering_Tires`` to 0. This property has no effect if ``Num_Steering_Tires`` has been manually set.
 
 .. note:: Replaced by the ``WheelConfigurations`` propery.
 
@@ -62,7 +62,7 @@ Vehicle Properties
 
 **LockMouse** *flag*: First-person camera movement is locked while driving. This is useful for ``Engine Plane`` and ``Engine Helicopter``, as a player's mouse movement while in first-person can be used to steer the vehicle.
 
-**Num_Steering_Tires** *int32*: *deprecated* Total number of tires that should turn when steering. Defaults to 2 when using ``Engine Car``, to 1 when using any other ``Engine`` enumerator, or to 0 if the ``Crawler`` property has been set.
+**Num_Steering_Tires** *int32*: *This property is deprecated.* Total number of tires that should turn when steering. Defaults to 2 when using ``Engine Car``, to 1 when using any other ``Engine`` enumerator, or to 0 if the ``Crawler`` property has been set.
 
 .. note:: Replaced by the ``WheelConfigurations`` propery.
 
@@ -72,7 +72,7 @@ Vehicle Properties
 
 **Should_Spawn_Seat_Capsules** *bool*: If true, capsule colliders will be attached to the ``Seat`` GameObject in order to prevent players from clipping into the ground. This is useful for vehicles that do not have a roof. Defaults to false.
 
-**Steering_Tire_#** *int32*: *deprecated* Set a ``Wheel_#`` GameObject as a steering tire, which will visibly turn when steering. By default, a number of steering tires equal to the value of ``Num_Steering_Tires`` will be automatically set. These will start at ``Steering_Tire_0 0`` (corresponding to ``Wheel_0``), and increment upwards.
+**Steering_Tire_#** *int32*: *This property is deprecated.* Set a ``Wheel_#`` GameObject as a steering tire, which will visibly turn when steering. By default, a number of steering tires equal to the value of ``Num_Steering_Tires`` will be automatically set. These will start at ``Steering_Tire_0 0`` (corresponding to ``Wheel_0``), and increment upwards.
 
 .. note:: Replaced by the ``WheelConfigurations`` propery.
 
@@ -101,6 +101,8 @@ Paint
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 If set, the vehicle can be painted with a :ref:`Vehicle Paint Tool <doc_item_asset_vehicle_paint_tool>`. Each section's material's ``_PaintColor`` property is set to the vehicle's paint color.
+
+----
 
 .. _doc_assets_vehicle:defaultpaintcolors:
 
@@ -403,7 +405,7 @@ Explosion
 **ShouldExplosionBurnMaterials** *bool*: If true, the materials of the vehicle's ``Model_#`` GameObjects will be tinted black when the vehicle is destroyed. Defaults to true if ``Explosion`` is specified.
 
 Turret
-------
+``````
 
 **Turrets** *uint8*: Number of turrets on the vehicle. All of the other turret properties require that this property is set. Defaults to 0.
 
@@ -440,11 +442,6 @@ Economy
 **Shared_Skin_Name** *string*: When generating images, the image name will contain the value of this string instead of the vehicle's file name. Often used with ``Shared_Skin_Lookup_ID``.
 
 **Size2_Z** *float*: Orthogonal camera size for economy icons.
-
-Localization
-------------
-
-**Name** *string*: Vehicle name in user interfaces.
 
 .. _doc_assets_vehicle:paintablesection_dictionary:
 
@@ -635,3 +632,9 @@ MaxVolume :ref:`float32 <doc_data_builtin_types>` ``0.0``
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 AudioSource volume when engine RPM is at :ref:`Max RPM <doc_assets_vehicle:enginemaxrpm>`.
+
+
+Localization
+------------
+
+**Name** *string*: Vehicle name in user interfaces.
