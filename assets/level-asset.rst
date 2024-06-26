@@ -5,7 +5,7 @@ Level Assets
 
 Each map can be associated with a **Level Asset**. These assets contain gameplay information not necessary for the main menus. Refer to :ref:`Level Config <doc_mapping_config>` for information on linking a level asset to a map.
 
-For examples check the ``Assets/Levels`` directory.
+For examples, check the ``Assets/Levels`` directory.
 
 **Type** *string*: ``SDG.Unturned.LevelAsset``
 
@@ -62,13 +62,13 @@ Skill Rule Properties
 Terrain Color Properties
 ------------------------
 
-**Color** :ref:`color <doc_data_color>`: Actual base color/albedo of terrain material.
+**Color** :ref:`color <doc_data_color>`: Actual base color/albedo of terrain material. Players will be kicked from multiplayer servers if their customized skin color is too similar to the value of this property.
 
-**HueThreshold** :ref:`float32 <doc_data_builtin_types>`: 0 to 1. If difference between hues is greater than this value the colors are not too similar.
+**HueThreshold** :ref:`float32 <doc_data_builtin_types>`: Values are clamped from 0 to 1. If difference between hues is greater than this threshold, the colors are not too similar.
 
-**SaturationThreshold** :ref:`float32 <doc_data_builtin_types>`: 0 to 1. If difference between saturations is greater than this value the colors are not too similar.
+**SaturationThreshold** :ref:`float32 <doc_data_builtin_types>`: Values are clamped from 0 to 1. If difference between saturations is greater than this threshold, the colors are not too similar.
 
-**ValueThreshold** :ref:`float32 <doc_data_builtin_types>`: 0 to 1. If difference between values is greater than this the colors are not too similar.
+**ValueThreshold** :ref:`float32 <doc_data_builtin_types>`: Values are clamped from 0 to 1. If difference between values is greater than this threshold, the colors are not too similar.
 
 Music Properties
 ----------------
