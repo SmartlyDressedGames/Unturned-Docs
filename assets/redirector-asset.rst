@@ -10,6 +10,11 @@ Redirector Assets
 Game Data File
 --------------
 
+Note that ``TargetAsset`` is required for this asset to function.
+
+Properties
+``````````
+
 .. list-table::
    :widths: 40 40 20
    :header-rows: 1
@@ -22,14 +27,19 @@ Game Data File
      - ``None``
    * - :ref:`TargetAsset <doc_asset_redirector:targetasset>`
      - :ref:`GUID <doc_data_guid>`
-     - Required
+     -
+
+Property Descriptions
+`````````````````````
 
 .. _doc_asset_redirector:assetcategory:
 
-AssetCategory :ref:`enum <doc_data_builtin_types>` ``None``
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+AssetCategory :ref:`EAssetType <doc_data_eassettype>` ``None``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-If set, a legacy ID can be redirected as well. For example, a redirector with legacy ID of ``4`` and ``AssetCategory Item`` would be found when using ``/give 4``.
+If set, an asset's legacy ID can be redirected as well. For example: a redirector with ``AssetCategory Item`` that is pointing to an asset with the legacy ID of ``4``, would be found when using ``/give 4``.
+
+----
 
 .. _doc_asset_redirector:targetasset:
 
