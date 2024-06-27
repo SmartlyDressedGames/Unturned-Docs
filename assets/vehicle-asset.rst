@@ -104,6 +104,15 @@ If set, the vehicle can be painted with a :ref:`Vehicle Paint Tool <doc_item_ass
 
 ----
 
+.. _doc_assets_vehicle:ispaintable:
+
+**IsPaintable** :ref:`bool <doc_data_builtin_types>`
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If true, :ref:`Vehicle Paint Tools <doc_item_asset_vehicle_paint_tool>` can be used on this vehicle. Defaults to true if :ref:`PaintableSections <doc_assets_vehicle:paintablesections>` is configured.
+
+----
+
 .. _doc_assets_vehicle:defaultpaintcolors:
 
 **DefaultPaintColors** :ref:`list of colors <doc_data_color>`
