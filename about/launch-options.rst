@@ -3,7 +3,7 @@
 Launch Options
 ==============
 
-Launch options can be added to *Unturned* to change certain game settings before running the game. This allows for recovering from certain problems (such as an unwanted resolution or UI scale), troubleshooting a wide range of issues, or toggling settings not available from in-game.
+**Launch options** can be added to *Unturned* to change certain game settings before running the game. This allows for recovering from certain problems (such as an unwanted resolution or UI scale), troubleshooting a wide range of issues, or toggling settings not available from in-game.
 
 This article lists the launch options available for *Unturned*. You can `add launch options <https://help.steampowered.com/en/faqs/view/7D01-D2DD-D75E-2955>`_ through your Steam Library.
 
