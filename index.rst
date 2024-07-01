@@ -1,3 +1,6 @@
+Unturned Documentation
+======================
+
 .. Below is the table-of-content tree for the website,
 	which is hidden from the page but appears in the sidebar.
 	...
@@ -95,7 +98,7 @@
 	:caption: Data Types
 
 	data/built-in-types
-	
+
 	data/asset-ptr
 	data/bitmask
 	data/color
@@ -107,38 +110,42 @@
 	data/struct/index
 	data/vector3
 
-Unturned Documentation
-======================
-
 Welcome to the official documentation for `Unturned <https://store.steampowered.com/app/304930>`_'s modding and server hosting features! To navigate, use the table of contents in the sidebar or the search function in the top-left corner.
-
-A lot of our older documentation was scattered between YouTube videos and Steam Guides. The main Steam Guide with links to related guides can be found here: `Workshop: Creating, Publishing & Updating <https://steamcommunity.com/sharedfiles/filedetails/?id=460136012>`_. Note that most of these older guides are outdated.
 
 Upcoming Features
 -----------------
 
 You can find modding features under consideration on this Trello board: `Unturned Roadmap <https://trello.com/b/gpe4zlW3/unturned-roadmap>`_. The cards on the board aren't ordered in any particular way. i.e., they do not dictate the order of updates.
 
-Miscellaneous requests and tasks that may pop up take priority over the roadmap, so it may go a while between progress updates. For example, work for curated maps often takes priority. Several high-priority ideas that don't yet have a solid plan, like a crafting revamp, aren't listed on the board.
+Miscellaneous requests and tasks that may pop up take priority over the roadmap, so it may go a while between progress updates. For example, work for curated maps often takes priority. Several high-priority ideas that don't yet have a solid plan, like a crafting revamp, are not listed on the board.
 
-Video Tutorials
----------------
+Legacy Tutorials
+----------------
 
-`How to host a Dedicated Server on Windows <https://www.youtube.com/watch?v=8axVrnSLlx4>`_
+Our earliest modding documentation was available through Steam Guides. Although most of these guides have been superseded by our documentation here, some still contain useful information about Unity setup that we have yet to bring over. The useful guides are:
 
-Several older tutorial videos are gradually becoming outdated and don't represent the current development direction, but are listed here for completeness:
+- `Items <https://steamcommunity.com/sharedfiles/filedetails/?id=470771503>`_: Most of the sub-sections about Unity setup are still relevant.
+- `Vehicles <https://steamcommunity.com/sharedfiles/filedetails/?id=470772671>`_: Information about Unity setup.
+- `Objects <https://steamcommunity.com/sharedfiles/filedetails/?id=470771210>`_: Information about Unity setup.
+- `Misc. Assets <https://steamcommunity.com/sharedfiles/filedetails/?id=481212147>`_: Unity setup for animals, effects, and resources.
+- `Maps <https://steamcommunity.com/sharedfiles/filedetails/?id=470770384>`_: Explaining various features.
+- `Legacy Spawn Tables <https://steamcommunity.com/sharedfiles/filedetails/?id=683668686>`_: Some notes about how legacy spawn tables interact with spawn table assets.
+- `Localization <https://steamcommunity.com/sharedfiles/filedetails/?id=470770864>`_
+- `Creating 3rd-party Modules <https://steamcommunity.com/sharedfiles/filedetails/?id=790629631>`_: Not to be confused with *mods* or *plugins*.
+- `Uploading Mods to the Steam Workshop <https://steamcommunity.com/sharedfiles/filedetails/?id=460136012>`_
+- `Upgrading from Unity 5 LTS to Unity 2017 LTS <https://steamcommunity.com/sharedfiles/filedetails/?id=1624005178>`_: Only relevant for *very* old mods, but lists the important changes between those two versions.
 
+There are several official video tutorials available, but many of these have gradually become outdated. They do not accurately represent the current modding features available, or may contain incorrect information, but are listed here for completeness:
+
+- `Hosting a Dedicated Server on Windows <https://www.youtube.com/watch?v=8axVrnSLlx4>`_
 - `Uploading Skins to the Curated Workshop <https://www.youtube.com/watch?v=rF4YvEuxse8>`_
-
 - `Creating Custom Songs <https://www.youtube.com/watch?v=wXpk7o9Dr4k>`_
-
 - `Quick Overview of First Version of Foliage Upgrade <https://www.youtube.com/watch?v=VVt2bRcAWv4>`_
-
 - `Devkit 101 + Landscapes Overview <https://www.youtube.com/watch?v=fkljCH419ug>`_
-
 - `Spawn Tables <https://www.youtube.com/watch?v=7Aiz7utMx8g>`_
-
 - `Building Models <https://www.youtube.com/watch?v=rAZ9KEGjSUk>`_
+
+If you refer to a video tutorial (official or otherwise), we recommend double-checking the information with our written documentation when possible.
 
 Offline Downloads
 -----------------
