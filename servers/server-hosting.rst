@@ -5,6 +5,8 @@ Server Hosting
 
 All multiplayer servers are hosted using the Unturned Dedicated Server tool (sometimes abbreviated to U3DS). This tool can either be installed and updated using Valve's `SteamCMD <https://developer.valvesoftware.com/wiki/SteamCMD>`_ tool, or (not recommended) managed through your Steam Library. Using SteamCMD is ideal and has several benefits, but is not strictly necessary. If you are not using SteamCMD, some of the documentation may not apply to you.
 
+Dedicated servers can be hosted on Windows and Linux operating systems. There is no support for hosting servers on macOS.
+
 **Multiplatform:**
 
 - :ref:`How to Install Server using SteamCMD <doc_server_hosting:install_with_steamcmd>`
@@ -68,11 +70,11 @@ How to Install Server using SteamCMD
 .. code-block:: shell
 
 	app_update 1110390
-	
+
 .. tip:: This command can also be used to update the server
 
 3. Close SteamCMD.
-	
+
 .. code-block:: shell
 
 	quit
@@ -131,7 +133,7 @@ How to Launch Server on Windows
 5. Add the script that will start your server when the batch script is ran.
 
    a. For an Internet server, copy-and-paste the following text into the file: ``start "" "%~dp0ServerHelper.bat" +InternetServer/MyServer``
-	
+
    b. For a LAN server, copy-and-paste the following text into the file: ``start "" "%~dp0ServerHelper.bat" +LanServer/MyServer``
 
    In this example "MyServer" is used as the ServerID for savedata and configuration purposes; you may choose to replace "MyServer" with a different name. For an example batch script, open the built-in ``ExampleServer.bat`` file in a text editor.
