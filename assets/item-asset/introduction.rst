@@ -199,6 +199,8 @@ EEquipableModelParent Enumeration
      - Item is attached to Left_Hook.
    * - ``Spine``
      - Item is attached to Spine.
+   * - ``SpineHook``
+     - Item is attached to Spine_Hook, an optional extra child bone of the Spine bone.
 
 .. _doc_item_asset_intro:euseabletype:
 
