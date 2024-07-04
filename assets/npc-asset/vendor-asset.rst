@@ -35,6 +35,8 @@ Properties pertaining to items or vehicles that the vendor is willing to sell to
 
 **Selling_#_Spawnpoint** *string*: Location to spawn the purchased vehicle, using the spawnpoint name as set in the Devkit level editor. For example, ``Liberator_Jet``.
 
+**Selling_#_PaintColor** *color*: If set, overrides color of purchased vehicle. Vehicle redirector asset's ``SpawnPaintColor`` and vehicle asset's ``DefaultPaintColors`` are bypassed.
+
 Other Properties
 ----------------
 
