@@ -234,6 +234,8 @@ Vehicle
 
 **Reward_#_Spawnpoint** *string*: Location to spawn the vehicle in as a reward, using the spawnpoint name as set in the Devkit level editor. For example, ``Liberator_Jet``.
 
+**Reward_#_PaintColor** *color*: If set, overrides color of spawned vehicle. Vehicle redirector asset's ``SpawnPaintColor`` and vehicle asset's ``DefaultPaintColors`` are bypassed.
+
 Localization
 ------------
 
