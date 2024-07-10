@@ -52,6 +52,8 @@ Object Properties
 
 **Use_Water_Height_Transparent_Sort** *flag*: Useful for transparent objects, such as glass.
 
+**Exclude_From_Satellite_Capture** *bool*: If true, object will be hidden when rendering GPS/satellite view. Defaults to true if ``Holiday_Restriction`` is other than ``None``.
+
 Decals
 ``````
 
