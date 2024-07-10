@@ -77,3 +77,10 @@ You can visualize which renderers have been included in the texture atlas by loa
 	Berlin with texture atlas preview enabled.
 
 All renderers in white were merged into a single material per shader. It is not necessarily bad that some materials were not merged. For example, the HVAC units on the rooftops in the screenshot all share a material already, so they are able to use static batching together. The same goes for the roads and overpass.
+
+Previewing renderers using static batching
+------------------------------------------
+
+You can visualize which mesh renderers are included in static batching by loading singleplayer with the ``-PreviewLevelBatchingUniqueMaterials`` launch option.
+
+Each unique material is assigned a random hue. The brightness of the color decreases in order of uniqueness. i.e., The brightest color is used by the most renderers, and the darkest color is used by only a few.

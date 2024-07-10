@@ -76,6 +76,8 @@ Some of the launch options are primarily intended for use with the Unturned Dedi
 
 **-PreviewLevelBatchingTextureAtlas**: Please refer to :ref:`Level Batching <doc_mapping_batching>` for more details.
 
+**-PreviewLevelBatchingUniqueMaterials**: Please refer to :ref:`Level Batching <doc_mapping_batching>` for more details.
+
 **-RazerChroma**: Enable Razer Chroma integration on compatible devices.
 
 **-RefreshRate=**: Monitor refresh rate override.
