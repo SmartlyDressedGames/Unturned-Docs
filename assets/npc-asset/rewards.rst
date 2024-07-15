@@ -115,7 +115,7 @@ Item
 
 **Reward_#_Amount** *int*: Amount of item to reward.
 
-**Reward_#_Auto_Equip** *bool*: Item should be automatically equipped by the player.
+**Reward_#_Auto_Equip** *bool*: If true, the item should be automatically equipped by the player (if possible). Auto-equipping isn't possible if another item in the same slot is already equipped. Defaults to false.
 
 **Reward_#_Ammo** *byte*: Override for the amount of ammuntion that should be loaded in the item reward.
 
@@ -140,7 +140,7 @@ Item_Random
 
 **Reward_#_Amount** *int*: Amount of item to reward.
 
-**Reward_#_Auto_Equip** *flag*: Item should be automatically equipped by the player.
+**Reward_#_Auto_Equip** *bool*: If true, the item should be automatically equipped by the player (if possible). Auto-equipping isn't possible if another item in the same slot is already equipped. Defaults to false.
 
 **Reward_#_Origin** :ref:`doc_data_eitemorigin`: Set the item origin. For example, setting the origin to ``Admin`` will cause items to spawn at full quality. Defaults to ``Craft``.
 
