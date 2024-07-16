@@ -10,9 +10,6 @@ project = "Unturned"
 copyright = "2023, Smartly Dressed Games"
 author = "Smartly Dressed Games"
 
-release = "0.1"
-version = "0.1.0"
-
 # -- General configuration
 sys.path.append(os.path.abspath("_extensions")) # also find extensions within this directory
 extensions = [
@@ -48,12 +45,12 @@ html_theme_options = {
     'collapse_navigation': True,
 }
 
-# Set canonical URL from the Read the Docs Domain
+# Define the canonical URL if you are using a custom domain on Read the Docs
 html_baseurl = os.environ.get("READTHEDOCS_CANONICAL_URL", "")
 
 # Tell Jinja2 templates the build is running on Read the Docs
 if os.environ.get("READTHEDOCS", "") == "True":
-	html_context["READTHEDOCS"] = True
+    html_context["READTHEDOCS"] = True
 
 # These folders are copied to the documentation's HTML output
 html_static_path = ["_static"]
