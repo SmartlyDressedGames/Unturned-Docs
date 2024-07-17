@@ -53,3 +53,5 @@ Building requires the *Read the Docs* theme. To install it, run this command in 
 With Python and Sphinx installed run `make html` in the root folder to create the site locally at `/_build/html/index.html`.
 
 Editing using [Visual Studio Code](https://code.visualstudio.com/) with the [reStructuredText Extension](https://docs.restructuredtext.net/) is recommended.
+
+The project's `requirements.txt` file is automatically generated. To update this file, install `pip-tools` and run `pip-compile requirements.in`. Important dependencies (and their versions) should be pinned in `requirements.in`.

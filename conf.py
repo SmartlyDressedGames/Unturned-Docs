@@ -10,9 +10,6 @@ project = "Unturned"
 copyright = "2023, Smartly Dressed Games"
 author = "Smartly Dressed Games"
 
-release = "0.1"
-version = "0.1.0"
-
 # -- General configuration
 sys.path.append(os.path.abspath("_extensions")) # also find extensions within this directory
 extensions = [
@@ -47,6 +44,9 @@ html_theme_options = {
     # Toc options
     'collapse_navigation': True,
 }
+
+# Define the canonical URL if you are using a custom domain on Read the Docs
+html_baseurl = os.environ.get("READTHEDOCS_CANONICAL_URL", "")
 
 # These folders are copied to the documentation's HTML output
 html_static_path = ["_static"]
