@@ -10,6 +10,9 @@ project = "Unturned"
 copyright = "2023, Smartly Dressed Games"
 author = "Smartly Dressed Games"
 
+version = "3"
+release = version
+
 # -- General configuration
 sys.path.append(os.path.abspath("_extensions")) # also find extensions within this directory
 extensions = [
