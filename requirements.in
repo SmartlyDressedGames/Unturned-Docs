@@ -1,3 +1,4 @@
 sphinx==6
 sphinx_rtd_theme
 sphinxext-opengraph
+matplotlib

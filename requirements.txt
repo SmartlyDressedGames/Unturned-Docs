@@ -14,28 +14,54 @@ charset-normalizer==3.3.2
     # via requests
 colorama==0.4.6
     # via sphinx
+contourpy==1.1.1
+    # via matplotlib
+cycler==0.12.1
+    # via matplotlib
 docutils==0.19
     # via
     #   sphinx
     #   sphinx-rtd-theme
+fonttools==4.53.1
+    # via matplotlib
 idna==3.7
     # via requests
 imagesize==1.4.1
     # via sphinx
 importlib-metadata==8.0.0
     # via sphinx
+importlib-resources==6.4.0
+    # via matplotlib
 jinja2==3.1.4
     # via sphinx
+kiwisolver==1.4.5
+    # via matplotlib
 markupsafe==2.1.5
     # via jinja2
+matplotlib==3.7.5
+    # via -r requirements.in
+numpy==1.24.4
+    # via
+    #   contourpy
+    #   matplotlib
 packaging==24.1
-    # via sphinx
+    # via
+    #   matplotlib
+    #   sphinx
+pillow==10.4.0
+    # via matplotlib
 pygments==2.18.0
     # via sphinx
+pyparsing==3.1.2
+    # via matplotlib
+python-dateutil==2.9.0.post0
+    # via matplotlib
 pytz==2024.1
     # via babel
 requests==2.32.3
     # via sphinx
+six==1.16.0
+    # via python-dateutil
 snowballstemmer==2.2.0
     # via sphinx
 sphinx==6.0.0
@@ -65,4 +91,6 @@ sphinxext-opengraph==0.9.1
 urllib3==2.2.2
     # via requests
 zipp==3.19.2
-    # via importlib-metadata
+    # via
+    #   importlib-metadata
+    #   importlib-resources
