@@ -14,7 +14,7 @@ charset-normalizer==3.3.2
     # via requests
 colorama==0.4.6
     # via sphinx
-docutils==0.20.1
+docutils==0.19
     # via
     #   sphinx
     #   sphinx-rtd-theme
@@ -38,8 +38,9 @@ requests==2.32.3
     # via sphinx
 snowballstemmer==2.2.0
     # via sphinx
-sphinx==7.1.2
+sphinx==6.0.0
     # via
+    #   -r requirements.in
     #   sphinx-rtd-theme
     #   sphinxcontrib-jquery
     #   sphinxext-opengraph
