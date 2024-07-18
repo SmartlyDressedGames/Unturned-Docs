@@ -8,7 +8,7 @@ The built documentation is hosted by [Read the Docs](https://readthedocs.org/) h
 Offline Downloads
 -----------------
 
-PDF and Epub versions of the documentation can be [downloaded](https://readthedocs.org/projects/unturned/downloads/) for offline use.
+PDF, ePub, and zipped HTML versions of the documentation can be [downloaded](https://readthedocs.org/projects/unturned/downloads/) for offline use.
 
 Contributing
 ------------
@@ -42,16 +42,24 @@ Most documentation files are formatted similarly. Some important notes:
 Building the Docs
 -----------------
 
-The documentation is written in [reStructuredText](https://www.writethedocs.org/guide/writing/reStructuredText/) and parsed/built using [Sphinx](https://github.com/sphinx-doc/sphinx).
+This section explains how to build a local copy of the documentation. Our documentation is written in [reStructuredText](https://www.writethedocs.org/guide/writing/reStructuredText/), and converted to HTML through [Sphinx](https://github.com/sphinx-doc/sphinx).
 
-Building requires the *Read the Docs* theme. To install it, run this command in the repository directory:
+When building locally, we recommend using [Visual Studio Code](https://code.visualstudio.com/). Install the [Esbonio extension](https://docs.esbon.io/en/latest/index.html) by Swyddfa, and the [reStructuredText extension](https://docs.restructuredtext.net/) by LeXtudio Inc. You can find the full documentation for those extensions on their websites.
 
-`py -m pip install -r requirements.txt`
+The version of Python used by the project is noted in the `.readthedocs.yaml` file. When building, you should use the same version of Python as used by the documentation. If you have multiple versions of Python installed, you may need to manually specify the version that should be used when running commands.
 
-*py runs the python interpreter. -m is short for -module and specifies the pip package installer module. -r is short for --requirement and specifies a file with a list of package names to install.*
+Before you can build the documentation, you will need to download all of its dependencies. From the repository's directory, run the following command:
 
-With Python and Sphinx installed run `make html` in the root folder to create the site locally at `/_build/html/index.html`.
+```shell
+py -m pip install -r requirements.txt
+```
 
-Editing using [Visual Studio Code](https://code.visualstudio.com/) with the [reStructuredText Extension](https://docs.restructuredtext.net/) is recommended.
+<small>*`py` runs the python interpreter, and can be used to specify the python version that should be used. `-m pip install` is used to select the pip package installer module. `-r requirements.txt` will install dependencies pinned in the specified requirements file.*</small>
 
-The project's `requirements.txt` file is automatically generated. To update this file, install `pip-tools` and run `pip-compile requirements.in`. Important dependencies (and their versions) should be pinned in `requirements.in`.
+With the project installed, run `make html` in the root folder. This will create the documentation locally at `/_build/html/index.html`. If you installed Esbonio correctly, you can preview how the documentation would look with the site's theme as well.
+
+The project's `requirements.txt` file is automatically generated. If you need to add or update dependencies, these should be pinned in `requirements.in` instead. Run the following command (available from `pip-tools`) to generate a new requirements file afterwards:
+
+```shell
+pip-compile requirements.in
+```

@@ -10,7 +10,7 @@ project = "Unturned"
 copyright = "2023, Smartly Dressed Games"
 author = "Smartly Dressed Games"
 
-version = "3"
+version = "3.x"
 release = version
 
 # -- General configuration
@@ -24,6 +24,7 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinxext.opengraph', # OpenGraph support (e.g., URLs posted onto our Discourse forum will appear as OneBox embeds)
     'sphinx_rtd_theme', # "Read the Docs Sphinx Theme" https://sphinx-rtd-theme.readthedocs.io/en/stable/index.html
+    'sphinx_tabs.tabs',
     # -- Locally-installed modules
     'unturned_lexer',
 ]
