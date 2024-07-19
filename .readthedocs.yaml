@@ -6,9 +6,7 @@
 version: 2
 
 # Enabling PDF and EPUB builds, for offline use
-formats:
-  - pdf
-  - epub
+formats: all
 
 build:
   os: ubuntu-22.04
