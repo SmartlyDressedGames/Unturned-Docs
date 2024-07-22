@@ -29,6 +29,10 @@ extensions = [
     'unturned_lexer',
 ]
 
+exclude_patterns = [
+    '.venv/*' # Contains installed packages which may have rst files we don't want included in source files.
+]
+
 autosectionlabel_prefix_document = True # make sure explicit target is unique
 
 intersphinx_mapping = {
