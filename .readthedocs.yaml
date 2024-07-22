@@ -5,8 +5,10 @@
 
 version: 2
 
-# Enabling PDF and EPUB builds, for offline use
-formats: all
+# Enabling PDF and EPUB builds, for offline use (unsure why HTMLzip fails to build)
+formats:
+  - epub
+  - pdf
 
 build:
   os: ubuntu-22.04
