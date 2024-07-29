@@ -53,11 +53,34 @@ Skill Rule Properties
 
 **Id** *string*: Name of skill, for example Sharpshooter.
 
-**Default_Level** *int*: Skill level when player spawns. Note server config Spawn_With_Max_Skills takes priority.
+**Default_Level** *int*: Skill level when player spawns. The ``Spawn_With_Max_Skills`` gameplay config option takes priority.
 
 **Max_Unlockable_Level** *int*: Maximum skill level attainable through gameplay. Higher levels are hidden in the skills menu.
 
-**Cost_Multiplier** *float*: multiplier for XP upgrade cost.
+**Cost_Multiplier** *float*: Multiplier for XP upgrade cost.
+
+.. code-block:: unturnedasset
+	:linenos:
+
+	Skills
+	[
+		{
+			Id Overkill
+			Default_Level 0
+			Max_Unlockable_Level 0
+		}
+		{
+			Id Parkour
+			Default_Level 2
+			Max_Unlockable_Level 2
+		}
+		{
+			Id Crafting
+			Default_Level 1
+			Max_Unlockable_Level 3
+			Cost_Multiplier 5
+		}
+	]
 
 Terrain Color Properties
 ------------------------
@@ -73,6 +96,6 @@ Terrain Color Properties
 Music Properties
 ----------------
 
-**Loop** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: looping audio clip played until loading finishes.
+**Loop** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: Looping audio clip played until loading finishes.
 
-**Outro** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: audio clip played once loading finishes.
+**Outro** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: Audio clip played once loading finishes.
