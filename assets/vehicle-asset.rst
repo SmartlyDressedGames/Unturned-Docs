@@ -680,3 +680,53 @@ Localization
 ------------
 
 **Name** *string*: Vehicle name in user interfaces.
+
+New in 3.24.5.0
+```````````````
+
+Putting here at the end of the file temporarily to make merging easier because Molt is working on upgrading the vehicle documentation.
+
+.. _doc_assets_vehicle:additionaltransparentsections:
+
+**AdditionalTransparentSections** :ref:`list of strings <doc_data_builtin_types>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Scene hierarchy paths relative to the vehicle's root transform to register as needing transparent sorting. Their render queue is periodically updated according to whether their pivot point is underwater.
+
+----
+
+.. _doc_assets_vehicle:rollangularvelocitydamping:
+
+**RollAngularVelocityDamping** :ref:`float32 <doc_data_builtin_types>` ``-1.0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If greater than zero, an acceleration is applied to angular velocity on Z axis toward zero.
+
+----
+
+.. _doc_assets_vehicle:steering_leaningforcemultiplier:
+
+**Steering_LeaningForceMultiplier** :ref:`float32 <doc_data_builtin_types>` ``-1.0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If greater than zero, torque is applied on Z axis according to steering input for bikes and motorcycles.
+
+----
+
+.. _doc_assets_vehicle:wheelbalancing_forcemultiplier:
+
+**WheelBalancing_ForceMultiplier** :ref:`float32 <doc_data_builtin_types>` ``-1.0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If greater than zero, torque is applied on the Z axis multiplied by this factor to align vehicle up with ground up.
+
+.. note:: :ref:`RollAngularVelocityDamping <doc_assets_vehicle:rollangularvelocitydamping>` is critical for damping this force.
+
+----
+
+.. _doc_assets_vehicle:wheelbalancing_uprightexponent:
+
+**WheelBalancing_UprightExponent** :ref:`float32 <doc_data_builtin_types>` ``1.5``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Exponent on the 0 to 1 factor representing how aligned the vehicle is with the ground up vector. For example, a value of 2 would apply much less force while nearly aligned with up, whereas a value of 0.5 would apply more force even while nearly aligned with up.
