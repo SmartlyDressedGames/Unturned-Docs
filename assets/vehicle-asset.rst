@@ -526,9 +526,15 @@ WheelConfiguration Dictionary
    * - :ref:`IsModelSteered <doc_assets_vehicle:wheelconfiguration_ismodelsteered>`
      - :ref:`bool <doc_data_builtin_types>`
      - ``false``
+   * - :ref:`ModelRadius <doc_assets_vehicle:wheelconfiguration_modelradius>`
+     - :ref:`float <doc_data_builtin_types>`
+     - ``-1.0``
    * - :ref:`ModelUseColliderPose <doc_assets_vehicle:wheelconfiguration_modelusecolliderpose>`
      - :ref:`bool <doc_data_builtin_types>`
      - ``false``
+   * - :ref:`CopyColliderRpmIndex <doc_assets_vehicle:wheelconfiguration_copycolliderrpmindex>`
+     - :ref:`int32 <doc_data_builtin_types>`
+     - ``-1``
 
 WheelConfiguration Dictionary Descriptions
 ``````````````````````````````````````````
@@ -580,6 +586,15 @@ Only kept for backwards compatibility. Prior to wheel configurations, only certa
 
 ----
 
+.. _doc_assets_vehicle:wheelconfiguration_modelradius:
+
+ModelRadius :ref:`float <doc_data_builtin_types>` ``-1.0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If greater than zero, visual-only wheels (without a collider) like the extra wheels of the Snowmobile use this radius to calculate their rolling speed.
+
+----
+
 .. _doc_assets_vehicle:wheelconfiguration_modelusecolliderpose:
 
 ModelUseColliderPose :ref:`bool <doc_data_builtin_types>` ``false``
@@ -588,6 +603,15 @@ ModelUseColliderPose :ref:`bool <doc_data_builtin_types>` ``false``
 If true, model ignores ``IsModelSteered`` and instead uses the wheel collider state (or an approximation when not simulating).
 
 Prior to wheel configurations, some high-fidely modded cars used a separate set of physics constraints to animate the wheel models as if they had suspension. Constraint setups like this should be completely superseded by the ``ModelUseColliderPose`` property. The constraints were awful for performance because physics for every purely-visual wheel were simulated on every client, and even then they didn't actually match the real wheel state.
+
+----
+
+.. _doc_assets_vehicle:wheelconfiguration_copycolliderrpmindex:
+
+CopyColliderRpmIndex :ref:`int32 <doc_data_builtin_types>` ``-1``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If set, visual-only wheels without a collider (like the back wheels of the snowmobile) can copy RPM from a wheel that does have a collider. Requires :ref:`ModelRadius <doc_assets_vehicle:wheelconfiguration_modelradius>` to also be set.
 
 .. _doc_assets_vehicle:enginesound_enginerpmsimple_dictionary:
 
