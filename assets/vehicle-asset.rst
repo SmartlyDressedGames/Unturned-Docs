@@ -113,12 +113,28 @@ If true, :ref:`Vehicle Paint Tools <doc_item_asset_vehicle_paint_tool>` can be u
 
 ----
 
+.. _doc_assets_vehicle:defaultpaintcolor_mode:
+
+**DefaultPaintColor_Mode** :ref:`enum <doc_data_builtin_types>` ``List`` or ``RandomHueOrGrayscale``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Defaults to ``List`` if :ref:`DefaultPaintColors <doc_assets_vehicle:defaultpaintcolors>` is set. Otherwise can be set to ``RandomHueOrGrayscale`` to pick a random HSV.
+
+----
+
 .. _doc_assets_vehicle:defaultpaintcolors:
 
 **DefaultPaintColors** :ref:`list of colors <doc_data_color>`
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 List of random colors to pick from when spawning a new vehicle. Can be overridden by a :ref:`Vehicle Redirector<doc_asset_vehicle_redirector>`'s :ref:`LoadPaintColor <doc_asset_vehicle_redirector:loadpaintcolor>` and :ref:`LoadPaintColor <doc_asset_vehicle_redirector:spawnpaintcolor>` properties.
+
+----
+
+**DefaultPaintColor_Configuration** **dictionary**
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+When :ref:`DefaultPaintColor_Mode <doc_assets_vehicle:defaultpaintcolor_mode>` is set to ``RandomHueOrGrayscale`` this should be set to a :ref:`RandomHueOrGrayscale DefaultPaintColor Dictionary <doc_assets_vehicle:defaultpaintcolor_randomhueorgrayscale_dictionary>`.
 
 Engine RPM and Gears
 ````````````````````
@@ -730,3 +746,77 @@ If greater than zero, torque is applied on the Z axis multiplied by this factor 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Exponent on the 0 to 1 factor representing how aligned the vehicle is with the ground up vector. For example, a value of 2 would apply much less force while nearly aligned with up, whereas a value of 0.5 would apply more force even while nearly aligned with up.
+
+.. _doc_assets_vehicle:defaultpaintcolor_randomhueorgrayscale_dictionary:
+
+RandomHueOrGrayscale DefaultPaintColor Dictionary
+`````````````````````````````````````````````````
+
+.. list-table::
+   :widths: 40 40 20
+   :header-rows: 1
+
+   * - Property Name
+     - Type
+     - Default Value
+   * - :ref:`MinSaturation <doc_assets_vehicle:defaultpaintcolor_randomhueorgrayscale_minsaturation>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0.0``
+   * - :ref:`MaxSaturation <doc_assets_vehicle:defaultpaintcolor_randomhueorgrayscale_maxsaturation>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0.0``
+   * - :ref:`MinValue <doc_assets_vehicle:defaultpaintcolor_randomhueorgrayscale_minvalue>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0.0``
+   * - :ref:`MaxValue <doc_assets_vehicle:defaultpaintcolor_randomhueorgrayscale_maxvalue>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0.0``
+   * - :ref:`GrayscaleChance <doc_assets_vehicle:defaultpaintcolor_randomhueorgrayscale_grayscalechance>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0.0``
+
+RandomHueOrGrayscale DefaultPaintColor Dictionary Descriptions
+``````````````````````````````````````````````````````````````
+
+.. _doc_assets_vehicle:defaultpaintcolor_randomhueorgrayscale_minsaturation:
+
+MinSaturation :ref:`float32 <doc_data_builtin_types>` ``0.0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Minimum random saturation in HSV color to generate.
+
+----
+
+.. _doc_assets_vehicle:defaultpaintcolor_randomhueorgrayscale_maxsaturation:
+
+MaxSaturation :ref:`float32 <doc_data_builtin_types>` ``0.0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Maximum random saturation in HSV color to generate.
+
+----
+
+.. _doc_assets_vehicle:defaultpaintcolor_randomhueorgrayscale_minvalue:
+
+MinValue :ref:`float32 <doc_data_builtin_types>` ``0.0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Minimum value or brightness in HSV color to generate.
+
+----
+
+.. _doc_assets_vehicle:defaultpaintcolor_randomhueorgrayscale_maxvalue:
+
+MaxValue :ref:`float32 <doc_data_builtin_types>` ``0.0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Maximum value or brightness in HSV color to generate.
+
+----
+
+.. _doc_assets_vehicle:defaultpaintcolor_randomhueorgrayscale_grayscalechance:
+
+GrayscaleChance :ref:`float32 <doc_data_builtin_types>` ``0.0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+[0, 1] color will have zero saturation if random value is less than this. For example, 0.2 means 20% of vehicles will be grayscale.
