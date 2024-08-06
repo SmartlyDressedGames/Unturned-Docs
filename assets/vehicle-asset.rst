@@ -191,6 +191,15 @@ How long to wait since the last gear change before shifting gears, measured in s
 
 ----
 
+.. _doc_assets_vehicle:gearshift_visibleinhud:
+
+**GearShift_VisibleInHUD** :ref:`bool <doc_data_builtin_types>` ``true``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If gears are configured and this is true, RPM and gear number will be shown in the user interface.
+
+----
+
 .. _doc_assets_vehicle:engineidlerpm:
 
 **EngineIdleRPM** :ref:`float32 <doc_data_builtin_types>` ``1000.0``
