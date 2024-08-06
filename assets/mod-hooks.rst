@@ -64,6 +64,11 @@ Timer Event Hook
 
 Allows events to set or cancel a timer, and triggers an event when the timer expires.
 
+Useable Event Hook
+```````````````````
+
+Events for EquipableItem prefab of any item type. These events are fired on server and client.
+
 Useable Gun Event Hook
 ``````````````````````
 
