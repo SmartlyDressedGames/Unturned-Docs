@@ -21,4 +21,8 @@ Item Asset Properties
 Fisher Asset Properties
 -----------------------
 
+**Reward_Experience_Min** *int32*: Minimum amount (inclusive) of experience to grant upon successfully catching something. Defaults to 3.
+
+**Reward_Experience_Max** *int32*: Maximum amount (inclusive) of experience to grant upon successfully catching something. Defaults to 3.
+
 **Reward_ID** *uint16*: Legacy ID of the spawn table a reward should be generated from upon successfully catching something with the fishing pole.
