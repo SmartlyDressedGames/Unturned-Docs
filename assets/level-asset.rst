@@ -35,6 +35,8 @@ For examples, check the ``Assets/Levels`` directory.
 
 **Should_Animate_Background_Image** *bool*: If true, the background image moves left/right with loading progress. Defaults to false because maps have important information on the loading screen.
 
+**Death_Music** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: Audio clip played after death.
+
 Schedulable Weather Properties
 ------------------------------
 
