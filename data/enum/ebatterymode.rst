@@ -3,7 +3,7 @@
 EBatteryMode
 ============
 
-The EBatteryMode enumerated type is used to determine how a vehicle battery should behave.
+The EBatteryMode enumerated type is used to determine how a vehicle battery should behave. This is only used by :ref:`vehicle assets <doc_assets_vehicle>`.
 
 Enumerators
 ```````````

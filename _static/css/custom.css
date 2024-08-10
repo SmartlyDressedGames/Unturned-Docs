@@ -2,6 +2,10 @@
  * Custom tweaks to the Read the Docs theme.
  */
 
+ .wy-table-responsive table {
+	width: 100%;
+}
+
 /* Wrap table contents for large screens. */
 /* COMMENTED OUT -- Reconsidering best way to implement wrapping for tables.
  * Maybe this should only apply to a custom table class (a la, .wrapping)
