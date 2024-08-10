@@ -7,7 +7,7 @@ Rewards can be granted by NPC assets, interactable objects, and item blueprints.
 
 **Rewards** *byte*: Total number of rewards.
 
-**Reward_#_Type** *enum* (``Flag_Bool``, ``Flag_Math``, ``Flag_Short``, ``Flag_Short_Random``, ``Achievement``, ``Currency``, ``Cutscene_Mode``, ``Event``, ``Experience``, ``Item``, ``Item_Random``, ``Hint``, ``Player_Life_Food``, ``Player_Life_Health``, ``Player_Life_Stamina``, ``Player_Life_Virus``, ``Player_Life_Water``, ``Player_Spawnpoint``, ``Quest``, ``Reputation``, ``Rewards_List_Asset``, ``Teleport``, ``Vehicle``)
+**Reward_#_Type** *enum* (``Flag_Bool``, ``Flag_Math``, ``Flag_Short``, ``Flag_Short_Random``, ``Achievement``, ``Currency``, ``Cutscene_Mode``, ``Effect``, ``Event``, ``Experience``, ``Item``, ``Item_Random``, ``Hint``, ``Player_Life_Food``, ``Player_Life_Health``, ``Player_Life_Stamina``, ``Player_Life_Virus``, ``Player_Life_Water``, ``Player_Spawnpoint``, ``Quest``, ``Reputation``, ``Rewards_List_Asset``, ``Teleport``, ``Vehicle``)
 
 **Reward_#_GrantDelaySeconds** *float*: If set, the reward will be queued for the specified number of seconds before being granted to the player. When the player dies any pending rewards are cancelled. Defaults to -1.
 
@@ -89,6 +89,21 @@ Not as exciting as it sounds. While active, the first-person viewmodel is hidden
 **Reward_#_Type** *enum* (``Cutscene_Mode``)
 
 **Reward_#_Value** *bool*: Whether cutscene mode should currently be active.
+
+.. _doc_npc_asset_rewards:effect:
+
+Effect
+```````
+
+**Reward_#_Type** *enum* (``Effect``)
+
+**Reward_#_GUID** :ref:`Asset Pointer <doc_data_assetptr>`: :ref:`Effect Asset<doc_assets_effect>` to spawn.
+
+**Reward_#_Spawnpoint** *string*: Location to spawn the effect, using the spawnpoint name as set in the nodes level editor. For example, ``Liberator_Jet``.
+
+**Reward_#_IsReliable** *bool*: If true, multiplayer will ensure the effect is replicated. If false, it won't be retransmitted if the packet is lost. Defaults to true.
+
+**Reward_#_RelevantDistance** *float*: If set, overrides the default multiplayer relevant distance of 128 meters. Defaults to -1.
 
 .. _doc_npc_asset_rewards:event:
 

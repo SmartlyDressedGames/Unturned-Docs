@@ -1,5 +1,8 @@
-sphinx==6
+sphinx==6.2.1
 sphinx_rtd_theme
-sphinxext-opengraph
-matplotlib
+
+sphinx-copybutton
 sphinx-tabs
+sphinxext-opengraph
+
+matplotlib
