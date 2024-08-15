@@ -114,7 +114,7 @@ Interactables
 
 **Interactability_Editor** *enum* (``None``, ``Toggle``): Determines how this interactable object should appear in the level editor. If this is set to ``Toggle``, then the object's alternative state will be shown. Defaults to ``None``.
 
-**Interactability_Effect** :ref:`doc_data_guid` or *uint16*: GUID or legacy ID of an :ref:`EffectAsset <doc_assets_effect>` to play when interacted with. When using ``Interactability Rubble``, this is effect is played when a section of the object is destroyed.
+**Interactability_Effect** :ref:`doc_data_guid` or *uint16*: GUID or legacy ID of an :ref:`EffectAsset <doc_assets_effect>` to play when interacted with. When using ``Interactability Rubble``, this effect is played when a section of the object is destroyed.
 
 **Interactability_Finale** :ref:`doc_data_guid` or *uint16*: GUID or legacy ID of an :ref:`EffectAsset <doc_assets_effect>` to play when all sections of the object using ``Interactability Rubble`` are destroyed. If this property is used, then all of the dead object's sections will also be hidden when fully destroyed.
 
