@@ -5,7 +5,7 @@ Object Assets
 
 **GUID** *32-digit hexadecimal*: Refer to :ref:`doc_data_guid` documentation.
 
-**Type** *enum* (``Small``, ``Medium``, ``Large``, ``NPC``, ``Decal``): The object's type is used for sorting, pathfinding, collision, and culling. Small objects are used for clutter and decoration, medium objects fill out the layout, and large objects make up the level. When using the ``NPC`` enumerator, refer to the documentation for :ref:`doc_object_asset_npc` as well.
+**Type** :ref:`EObjectType <doc_data_eobjecttype>`: The object's type is used for sorting, pathfinding, collision, and culling. Small objects are used for clutter and decoration, medium objects fill out the layout, and large objects make up the level. When using the ``NPC`` enumerator, refer to the documentation for :ref:`doc_object_asset_npc` as well.
 
 **ID** *uint16*: Must be a unique identifier.
 
