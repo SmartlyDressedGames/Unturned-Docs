@@ -3,7 +3,7 @@
 Curated Items
 =============
 
-Community-created cosmetic items can be submitted for inclusion in the game through the `curated workshop <https://steamcommunity.com/workshop/browse/?appid=304930&section=mtxitems>`_.
+Community-created cosmetic items can be submitted for inclusion in the game through the `"Stockpile Submissions" section of the Steam Workshop <https://steamcommunity.com/workshop/browse/?appid=304930&section=mtxitems>`_.
 
 Accepted items are sold in the `item store <https://store.steampowered.com/itemstore/304930/>`_. The default revenue share is 25%, but for items associated with maps (e.g. the `Elver Map Bundle <https://store.steampowered.com/itemstore/304930/detail/1103/>`_) the revenue share is 50%.
 
@@ -20,16 +20,20 @@ Some additional preparation is needed compared with regular gameplay items:
 Style Rules
 -----------
 
+.. |ico1| image:: img/1e1e1e.png
+	:width: 15px
+
+.. |ico2| image:: img/f0f0f0.png
+	:width: 15px
+
 There are several rules for cosmetic items to help promote consistency with the Unturned's art style, seeing as they will be integrated directly into the game:
 
-#. Please avoid super high-contrast colors. They can be painful to look at, especially when used in harsh lighting. Most of the official content has medium-intensity colors.
-#. Following this, please don't go darker than #1e1e1e or brighter than #f0f0f0. Both extremes of brightness won't play nicely with lighting.
+#. Please avoid super high-contrast colors. They can be painful to look at, especially when used in harsh lighting. Most official content has medium-intensity colors.
+#. Following this, please do not go darker than |ico1| #1e1e1e or brighter than |ico2| #f0f0f0. Both extremes of brightness will not play nicely with the game's lighting.
 #. Flat forest/snow/desert/urban camouflages are reserved for in-game items like the ghillie suit. You are, however, allowed to incorporate patterned camouflage into your cosmetics.
-#. Corners of models should not be beveled. Most objects should follow the ninety-degree edges. There isn't a limit on vertex/triangle/polygon count because anything matching the art style will naturally have a reasonable number.
-#. Edges of clothing should have a slightly darker border one pixel wide. If you wear one of the official in-game items, you can see, for example, that the cuffs and waist of shirts have these.
-#. Only use copyrighted content, trademarks, and intellectual property that belong to you.
-
-More rules may be added in the future if necessary.
+#. Corners of models should not be beveled. Most models should have sharp edges (e.g., ninety degrees). There is not a limit on vertex/triangle/polygon count because anything matching the art style will naturally have a reasonable number.
+#. Edges of clothing should have a slightly darker border one pixel wide. This can be easily seen on official clothing items, along the cuffs and bottom hem of shirts.
+#. Only use copyrighted content, trademarks, and other intellectual property that belongs to you.
 
 Unity Project Organization
 --------------------------
