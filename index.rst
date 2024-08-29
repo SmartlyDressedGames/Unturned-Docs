@@ -14,6 +14,7 @@ Unturned Documentation
 
 	about/getting-started
 	about/launch-options
+	about/steam-workshop
 
 .. First section has articles on assets (in general).
 	Second section lists asset types, alphabetically.
