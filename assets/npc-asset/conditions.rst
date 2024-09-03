@@ -160,7 +160,7 @@ Kills_Tree
 Kills_Zombie
 ````````````
 
-**Condition_#_Type** *enum* (``Kills_Resource``)
+**Condition_#_Type** *enum* (``Kills_Zombie``)
 
 **Condition_#_ID** *uint16*: ID of short flag to track stat.
 
