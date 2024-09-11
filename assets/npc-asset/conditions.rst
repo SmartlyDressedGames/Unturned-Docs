@@ -7,7 +7,7 @@ Conditions can be held by NPC assets, interactable objects, and item blueprints.
 
 **Conditions** *byte*: Total number of conditions.
 
-**Condition_#_Type** *enum* (``Compare_Flags``, ``Date_Counter``, ``Flag_Bool``, ``Flag_Short``, ``Currency``, ``Experience``, ``Item``, ``Kills_Animal``, ``Kills_Horde``, ``Kills_Object``, ``Kills_Player``, ``Kills_Tree``, ``Kills_Resource``, ``Player_Life_Food``, ``Player_Life_Health``, ``Player_Life_Stamina``, ``Player_Life_Virus``, ``Player_Life_Water``, ``Quest``, ``Reputation``, ``Skillset``, ``Holiday``, ``Time_Of_Day``, ``Weather_Blend_Alpha``, ``Weather_Status``)
+**Condition_#_Type** *enum* (``Compare_Flags``, ``Date_Counter``, ``Flag_Bool``, ``Flag_Short``, ``Currency``, ``Experience``, ``Item``, ``Kills_Animal``, ``Kills_Horde``, ``Kills_Object``, ``Kills_Player``, ``Kills_Tree``, ``Kills_Zombie``, ``Player_Life_Food``, ``Player_Life_Health``, ``Player_Life_Stamina``, ``Player_Life_Virus``, ``Player_Life_Water``, ``Quest``, ``Reputation``, ``Skillset``, ``Holiday``, ``Time_Of_Day``, ``Weather_Blend_Alpha``, ``Weather_Status``)
 
 **Condition_#_Reset** *flag*: Set back to equivalent of 0 when completed.
 
@@ -160,7 +160,7 @@ Kills_Tree
 Kills_Zombie
 ````````````
 
-**Condition_#_Type** *enum* (``Kills_Resource``)
+**Condition_#_Type** *enum* (``Kills_Zombie``)
 
 **Condition_#_ID** *uint16*: ID of short flag to track stat.
 
