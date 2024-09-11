@@ -208,7 +208,7 @@ Player Spawnpoint
 
 **Reward_#_Type** *enum* (``Player_Spawnpoint``)
 
-**Reward_#_ID** *string* Override the player's default spawn location, using the spawnpoint name set in the Devkit level editor or a map location node name. For example, ``Liberator_Jet``. Saved and loaded between sessions. If empty, the override is removed and the default spawns are used. The ``SetNpcSpawnId`` admin command is useful for testing this.
+**Reward_#_ID** *string* Override the player's default spawn location, using the ID of a spawnpoint node or the name of a map location node, as set in the level editor. For example, ``Liberator_Jet``. Saved and loaded between sessions. If empty, the override is removed and the default spawns are used. The ``SetNpcSpawnId`` admin command is useful for testing this.
 
 .. hint:: On the Buak map, the player can talk with Kira to claim a room in the Factory using this reward type.
 
@@ -238,7 +238,7 @@ Teleport
 
 **Reward_#_Type** *enum* (``Teleport``)
 
-**Reward_#_Spawnpoint** *string*: Location to teleport the player to as a reward, using the spawnpoint name as set in the Devkit level editor. For example, ``Liberator_Jet``.
+**Reward_#_Spawnpoint** *string*: Location to teleport the player to as a reward, using the ID of a spawnpoint node as set in the level editor. For example, ``Liberator_Jet``.
 
 Vehicle
 ```````
@@ -247,7 +247,7 @@ Vehicle
 
 **Reward_#_ID** : ID of Vehicle to be given.
 
-**Reward_#_Spawnpoint** *string*: Location to spawn the vehicle in as a reward, using the spawnpoint name as set in the Devkit level editor. For example, ``Liberator_Jet``.
+**Reward_#_Spawnpoint** *string*: Location to spawn the vehicle in as a reward, using the ID of a spawnpoint node as set in the level editor. For example, ``Liberator_Jet``. If an ID is not provided, the vehicle will spawn above the NPC.
 
 **Reward_#_PaintColor** *color*: If set, overrides color of spawned vehicle. Vehicle redirector asset's ``SpawnPaintColor`` and vehicle asset's ``DefaultPaintColors`` are bypassed.
 
