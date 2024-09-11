@@ -89,9 +89,9 @@ General
 
 **Use_Legacy_Clip_Borders** *bool*: Should invisible walls matching map size be created? Defaults to true.
 
-**Use_Legacy_Ground** *bool*: Should default terrain be created? Alternative is to use devkit landscape tiles. Defaults to true.
+**Use_Legacy_Ground** *bool*: Should default terrain be created? Alternative is to use landscape tiles. Defaults to true.
 
-**Use_Legacy_Water** *bool*: Should global water plane be enabled? Alternative is to use water volumes in devkit. Defaults to true.
+**Use_Legacy_Water** *bool*: Should global water plane be enabled? Alternative is to use water volumes. Defaults to true.
 
 **Use_Vanilla_Bubbles** *bool*: Should vanilla water bubble effects be enabled? Defaults to true.
 

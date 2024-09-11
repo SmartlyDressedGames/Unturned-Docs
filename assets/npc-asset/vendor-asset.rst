@@ -33,7 +33,7 @@ Properties pertaining to items or vehicles that the vendor is willing to sell to
 
 **Selling_#_Cost** *uint32*: Amount of currency to pay the vendor. Defaults to experience points as the currency, unless the Currency property has been set.
 
-**Selling_#_Spawnpoint** *string*: Location to spawn the purchased vehicle, using the spawnpoint name as set in the Devkit level editor. For example, ``Liberator_Jet``.
+**Selling_#_Spawnpoint** *string*: Location to spawn the purchased vehicle, using the ID of a spawnpoint node as set in the level editor. For example, ``Liberator_Jet``. If an ID is not provided, the vehicle will spawn above the NPC.
 
 **Selling_#_PaintColor** *color*: If set, overrides color of purchased vehicle. Vehicle redirector asset's ``SpawnPaintColor`` and vehicle asset's ``DefaultPaintColors`` are bypassed.
 
