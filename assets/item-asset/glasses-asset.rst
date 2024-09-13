@@ -27,6 +27,6 @@ Glasses Asset Properties
 
 **Nightvision_Color** :ref:`color <doc_data_color>`: Overrides the default color when using ``Vision Military``. This property supports using legacy color parsing.
 
-**Nightvision_Fog_Intensity** *float*: Intensity of fog while nightvision is active.
+**Nightvision_Fog_Intensity** *float32*: Intensity of fog while nightvision is active.
 
-**Vision** *enum* (``None``, ``Military``, ``Civilian``, ``Headlamp``): Type of unique lighting vision effect to use. Defaults to ``None``. When intending to assign a custom nightvision color via the ``Nightvision_Color`` property, it is recommended to use the ``Military`` enumerator.
+**Vision** :ref:`doc_data_elightingvision`: Determines the type of lighting vision to use. When looking to assign a custom nightvision color via the ``Nightvision_Color`` property, you should use the ``Military`` enumerator. When the ``Headlamp`` enumerator is used, you can also specify properties from the :ref:`doc_data_playerspotlightconfig` struct. Defaults to ``None``.
