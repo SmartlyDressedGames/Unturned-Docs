@@ -43,6 +43,13 @@ Equip (Audio Clip)
 
 To have a sound play when the item is equipped, include an Audio Clip named "Equip" in your custom item's folder.
 
+Skin Base Textures
+``````````````````
+
+.. note::
+
+	We should eventually add more documentation about this, but items support texture masking. This is rarely relevant for modders creating their own items, but it is important for skins. Items can optionally include ``Albedo_Base.png``, ``Metallic_Base.png``, or ``Emission_Base.png`` textures in their asset-bundled files. When using certain skins, those parts will be masked out and retain their original material.
+
 Game Data File
 --------------
 

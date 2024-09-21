@@ -3,7 +3,7 @@
 Outfit Assets
 =============
 
-A selection of clothing items that should be worn together when generating preview images for outfits. Outfit preview images can be generated with the \[F1] menu available from the Workshop section of the main menu.
+The OutfitAsset class allows for defining a selection of clothing items that should be worn together when generating preview images for outfits. Outfit preview images can be generated with the \[F1] menu available from the Workshop section of the main menu.
 
 Metadata
 --------
@@ -18,7 +18,7 @@ Outfit Properties
 **Items** *array* of :ref:`Asset Pointers <doc_data_assetptr>`: Asset pointers to clothing item(s). These clothing items will be worn together in any preview images generated of this outfit. For example:
 
 .. code-block:: unturnedasset
-	
+
 	"Asset"
 	{
 		"Items"
