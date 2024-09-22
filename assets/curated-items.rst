@@ -1,9 +1,9 @@
-.. _doc_curated_skins:
+.. _doc_curated_items:
 
 Curated Items
 =============
 
-Community-created items (such as skins, cosmetics, and mythical effects) can be submitted to the :ref:`doc_steam_workshop` for consideration to be incorporated into the actual game. These items can be found under the `Stockpile Submissions <https://steamcommunity.com/workshop/browse/?appid=304930&section=mtxitems>`_ tab, where other players can vote on whether they would like to see a specific submission added into the game.
+Community-created items (such as skins and cosmetics) can be submitted to the :ref:`doc_steam_workshop` for consideration to be incorporated into the actual game. These items can be found under the `Stockpile Submissions <https://steamcommunity.com/workshop/browse/?appid=304930&section=mtxitems>`_ tab, where other players can vote on whether they would like to see a specific submission added into the game.
 
 Accepted items may be made available for purchase, or otherwise be unlockable within the game. Most accepted items are sold in the `Stockpile <https://store.steampowered.com/itemstore/304930/>`_ (also known as the item store).
 
@@ -46,7 +46,7 @@ Most of these guidelines are intended to help promote consistency with *Unturned
 
 #. | Skins with custom models should generally respect the original item's silhouette. Be mindful that attachments (such as barrels, tacticals, sights, and grips) should still work on the custom model *and* look good.
 
-#. | Cosmetics should avoid potentially confusing players. This can seem broad, but what we tend to look at is: (1) if it doesn't look like the player is wearing an item (e.g., a hat that looks like hair with no additional details), or (2) if it looks like end-game loot (often, this means military-grade equipment).
+#. | Cosmetics should avoid potentially confusing players. For example: if a hat looks like hair, it should have some additional accessory or detail to help distinguish it as a cosmetic. Otherwise, it would look like the player isn't wearing any item at all.
 
 #. | Only use copyrighted content, trademarks, or other intellectual property that belongs to you. We cannot put other people's intellectual property into our game.
 
@@ -96,7 +96,9 @@ Mythical Effect Placement
 
 	Example "Effect" transform positioning and orientation.
 
-Most cosmetic items will want to support mythical effects. For your item to support this, the Item.prefab will need to include an "Effect" child transform. The orientation is rather unfortunate: +Z is the mythical's up direction and +Y is the mythical's forward direction.
+Most cosmetic items will want to support mythical effects. You will need to add an "Effect" child transform to both the Item.prefab and the clothing prefab (i.e., Backpack.prefab, Glasses.prefab, Hat.prefab, Mask.prefab, or Vest.prefab) for your item to support this.
+
+The orientation is rather unfortunate: +Z is the mythical's up direction and +Y is the mythical's forward direction.
 
 Creating Skins
 --------------
