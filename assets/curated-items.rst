@@ -12,7 +12,6 @@ The default revenue share is 25%, but for items associated with maps (e.g., the 
 Requirements
 ------------
 
-
 For the tools necessary to start creating skins or cosmetics, refer to the :ref:`doc_getting_started` page. Some additional preparation is needed compared to creating mods:
 
 #. Follow the submission guidelines.
