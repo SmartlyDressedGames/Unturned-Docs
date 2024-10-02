@@ -1,5 +1,5 @@
 sphinx==6.2.1
-sphinx_rtd_theme
+sphinx-rtd-theme==3.0.0rc2
 
 sphinx-copybutton
 sphinx-tabs
