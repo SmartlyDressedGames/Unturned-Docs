@@ -130,7 +130,6 @@ Our earliest modding documentation was available through Steam Guides. Although 
 - `Objects <https://steamcommunity.com/sharedfiles/filedetails/?id=470771210>`_: Information about Unity setup.
 - `Misc. Assets <https://steamcommunity.com/sharedfiles/filedetails/?id=481212147>`_: Unity setup for animals, effects, and resources.
 - `Maps <https://steamcommunity.com/sharedfiles/filedetails/?id=470770384>`_: Explaining various features.
-- `Legacy Spawn Tables <https://steamcommunity.com/sharedfiles/filedetails/?id=683668686>`_: Some notes about how legacy spawn tables interact with spawn table assets.
 - `Localization <https://steamcommunity.com/sharedfiles/filedetails/?id=470770864>`_
 - `Creating 3rd-party Modules <https://steamcommunity.com/sharedfiles/filedetails/?id=790629631>`_: Not to be confused with *mods* or *plugins*.
 - `Uploading Mods to the Steam Workshop <https://steamcommunity.com/sharedfiles/filedetails/?id=460136012>`_
