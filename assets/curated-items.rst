@@ -63,9 +63,9 @@ Cosmetics
 
 Some additional notes exist for organizing cosmetic items.
 
-- | Map-related cosmetics are in per-map folders, and prefixed with the map's name. For example, Arid's "`Arrowhead <https://unturned.wiki.gg/wiki/Arrowhead>`_" exported files are located in ``Assets/CoreMasterBundle/Items/Arid/Arid_Arrowhead`` and the source files are in ``Assets/Game/Sources/Items/Arid``.
-- | Outfits have their items in a per-outfit folder, and are prefixed with the outfit name. For example, the "`Cultist's Mask <https://unturned.wiki.gg/wiki/Cultist%27s_Mask>`_" exported files are in a per-outfit folder and prefixed with the outfit name. For example, the Cultist bundle's mask item export files are located in ``Assets/CoreMasterBundle/Items/Outfits/Cultist/Cultist_Mask`` and the source files are in ``Assets/Game/Sources/Items/Outfits/Cultist``.
-- | Miscellaneous items are in the folder matching their type. For example, the "`Backpack Turtle <https://unturned.wiki.gg/wiki/Backpack_Turtle>`_" exported files are located in ``Assets/CoreMasterBundle/Items/Backpacks/Turtle_Backpack`` and the source files are in ``Assets/Game/Sources/Items/Backpacks/Turtle_Backpack``.
+- | Map-related cosmetics are in per-map folders, and prefixed with the map's name. For example, Arid's "`Arrowhead <https://unturned.wiki/wiki/Arrowhead>`_" exported files are located in ``Assets/CoreMasterBundle/Items/Arid/Arid_Arrowhead`` and the source files are in ``Assets/Game/Sources/Items/Arid``.
+- | Outfits have their items in a per-outfit folder, and are prefixed with the outfit name. For example, the "`Cultist's Mask <https://unturned.wiki/wiki/Cultist%27s_Mask>`_" exported files are in a per-outfit folder and prefixed with the outfit name. For example, the Cultist bundle's mask item export files are located in ``Assets/CoreMasterBundle/Items/Outfits/Cultist/Cultist_Mask`` and the source files are in ``Assets/Game/Sources/Items/Outfits/Cultist``.
+- | Miscellaneous items are in the folder matching their type. For example, the "`Backpack Turtle <https://unturned.wiki/wiki/Backpack_Turtle>`_" exported files are located in ``Assets/CoreMasterBundle/Items/Backpacks/Turtle_Backpack`` and the source files are in ``Assets/Game/Sources/Items/Backpacks/Turtle_Backpack``.
 
 Exporting Unity Package
 -----------------------
