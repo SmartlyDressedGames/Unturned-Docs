@@ -42,3 +42,10 @@ Melee Asset Properties
 **Strong** *float*: Multiplier for the strong attack animation length, for when to apply damage. Defaults to 0.33.
 
 **Weak** *float*: Multiplier for the weak attack animation length, for when to apply damage. Defaults to 0.5.
+
+NPC Rewards
+-----------
+
+For more information, refer to the :ref:`Rewards <doc_npc_asset_rewards>` documentation.
+
+Rewards can be granted for weak and/or strong attacks. ``Weak_Attack_Quest_Rewards #`` with ``Weak_Attack_Quest_Reward_`` prefix or ``Strong_Attack_Quest_Rewards #`` with ``Strong_Attack_Quest_Reward_`` prefix.
