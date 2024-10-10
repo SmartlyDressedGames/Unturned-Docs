@@ -37,6 +37,18 @@ Properties pertaining to items or vehicles that the vendor is willing to sell to
 
 **Selling_#_PaintColor** *color*: If set, overrides color of purchased vehicle. Vehicle redirector asset's ``SpawnPaintColor`` and vehicle asset's ``DefaultPaintColors`` are bypassed.
 
+**Selling_#_Ammo** *byte*: Override for the amount of ammuntion that should be loaded in the item sold.
+
+**Selling_#_Barrel** *uint16*: Override for the barrel attachment that should be attached to the item sold.
+
+**Selling_#_Grip** *uint16*: Override for the grip attachment that should be attached to the item sold.
+
+**Selling_#_Magazine** *uint16*: Override for the magazine attachment that should be attached to the item sold.
+
+**Selling_#_Sight** *uint16*: Override for the sight attachment that should be attached to the item sold.
+
+**Selling_#_Tactical** *uint16*: Override for the tactical attachment that should be attached to the item sold.
+
 Other Properties
 ----------------
 
