@@ -65,6 +65,9 @@ Properties
    * - :ref:`Blueprint_#_State_Transfer <doc_item_asset_blueprints:blueprint_#_state_transfer>`
      - :ref:`flag <doc_data_flag>`
      -
+   * - :ref:`Blueprint_#_State_Transfer_Delete_Attachments <doc_item_asset_blueprints:blueprint_#_state_transfer_delete_attachments>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``false``
    * - :ref:`Blueprint_#_Supplies <doc_item_asset_blueprints:blueprint_#_supplies>`
      - :ref:`uint8 <doc_data_builtin_types>`
      - ``0``
@@ -261,6 +264,15 @@ Blueprint_#_State_Transfer :ref:`flag <doc_data_flag>`
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Transfer the current state of any supplies to the product, when applicable. For example, some states that can be transferred include: amount (e.g., rounds in an ammunition box), quality percentage, selected firing mode, or fuel units (e.g., from a gas can).
+
+----
+
+.. _doc_item_asset_blueprints:blueprint_#_state_transfer_delete_attachments:
+
+Blueprint_#_State_Transfer_Delete_Attachments :ref:`bool <doc_data_builtin_types>` ``false``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If ``true`` and ``State_Transfer`` is enabled, any output guns will have all of their attachments deleted.
 
 ----
 
