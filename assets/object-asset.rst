@@ -89,7 +89,7 @@ Interior Culling
 Interactables
 `````````````
 
-**Interactability** *enum* (``None``, ``Binary_State``, ``Dropper``, ``Note``, ``Water``, ``Fuel``, ``Rubble``, ``NPC``, ``Quest``): All ``Interactability_`` properties will require that this property has been set. The enumerator selected for this property will affect which properties can be used, how these properties will function when used, and how this object will behave in-game. Defaults to the ``NPC`` enumerator when using ``Type NPC``, otherwise this property will default to ``None``.
+**Interactability** *enum* (``None``, ``Binary_State``, ``Dropper``, ``Note``, ``Water``, ``Fuel``, ``Rubble``, ``NPC``, ``Quest``, ``Dialogue``): All ``Interactability_`` properties will require that this property has been set. The enumerator selected for this property will affect which properties can be used, how these properties will function when used, and how this object will behave in-game. Defaults to the ``NPC`` enumerator when using ``Type NPC``, otherwise this property will default to ``None``.
 
 - ``Binary_State`` objects will change between their two states when interacted with – such as an open or closed door.
 - ``Dropper`` objects can spawn items when interacted with.
@@ -98,6 +98,7 @@ Interactables
 - ``Rubble`` objects are destructible. It is preferable to use ``Rubble Destroy`` instead of ``Interactability Rubble``.
 - ``NPC`` objects can provide access to dialogue, quests, and vendors.
 - ``Quest`` objects can be interacted with, but unlike other options they have no additional functionality.
+- ``Dialogue`` objects open the dialogue screen - similar to NPCs - with a non-NPC appearance and custom interact text.
 
 .. note::
 
@@ -107,6 +108,8 @@ Interactables
 **Interactability_Blade_ID** *byte*: When using ``Interactability Rubble``, weapons are unable to damage this object unless they have a matching ``BladeID_#`` value. Defaults to 0.
 
 **Interactability_Delay** *float*: In seconds, the cooldown before the object can be interacted with again.
+
+**Interactability_Dialogue** :ref:`doc_data_guid`: Dialogue asset to open for ``Interactability Dialogue`` mode.
 
 **Interactability_Drops** *byte*: Total number of items dropped from an object using ``Interactability Dropper``. This property is used in conjunction with ``Interactability_Drop_#``. Defaults to 0. It is preferable to use the ``Interactability_Reward_ID`` property instead.
 
