@@ -34,7 +34,11 @@ Flag_Math
 
 **Reward_#_B_Value** *int16*: default value to be applied mathematically if flag B has not been set on the player or if ``B_ID`` is zero.
 
-**Reward_#_Operation** *enum* (``Addition``, ``Assign``, ``Division``, ``Modulo``, ``Multiplication``, ``Subtraction``): For example, using the Addition operation would set A to the value of A + B.
+**Reward_#_Operation** *enum* (``Addition``, ``Assign``, ``Division``, ``Modulo``, ``Multiplication``, ``Subtraction``, ``Random_Inclusive``, ``Random_Exclusive``): For example, using the Addition operation would set A to the value of A + B.
+
+``Random_Inclusive`` operation: Set flag A to random number between the value of A and B. For example if A is 1 and B is 3 the random number could be 1, 2, or 3.
+
+``Random_Exclusive`` operation: Set flag A to random number between the value of A and B, excluding B. For example if A is 1 and B is 3 the random number could be 1 or 2. If the value of A and B are the same then the exclusion rule is ignored.
 
 Flag_Short
 ``````````
