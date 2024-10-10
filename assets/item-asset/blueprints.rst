@@ -22,19 +22,19 @@ Properties
 .. list-table::
    :widths: 40 40 20
    :header-rows: 1
-   
+
    * - Property Name
      - Type
      - Default Value
    * - :ref:`Blueprint_#_Build <doc_item_asset_blueprints:blueprint_#_build>`
      - :ref:`doc_data_guid` or :ref:`uint16 <doc_data_builtin_types>`
-     - 
+     -
    * - :ref:`Blueprint_#_Level <doc_item_asset_blueprints:blueprint_#_level>`
      - :ref:`uint8 <doc_data_builtin_types>`
      - ``0``
    * - :ref:`Blueprint_#_Map <doc_item_asset_blueprints:blueprint_#_map>`
      - :ref:`string <doc_data_builtin_types>`
-     - 
+     -
    * - :ref:`Blueprint_#_Origin <doc_item_asset_blueprints:blueprint_#_origin>`
      - :ref:`doc_data_eitemorigin`
      - ``Craft``
@@ -64,7 +64,7 @@ Properties
      - ``None``
    * - :ref:`Blueprint_#_State_Transfer <doc_item_asset_blueprints:blueprint_#_state_transfer>`
      - :ref:`flag <doc_data_flag>`
-     - 
+     -
    * - :ref:`Blueprint_#_Supplies <doc_item_asset_blueprints:blueprint_#_supplies>`
      - :ref:`uint8 <doc_data_builtin_types>`
      - ``0``
@@ -73,19 +73,19 @@ Properties
      - ``0``
    * - :ref:`Blueprint_#_Supply_#_Critical <doc_item_asset_blueprints:blueprint_#_supply_#_critical>`
      - :ref:`flag <doc_data_flag>`
-     - 
+     -
    * - :ref:`Blueprint_#_Supply_#_ID <doc_item_asset_blueprints:blueprint_#_supply_#_id>`
      - :ref:`uint16 <doc_data_builtin_types>`
-     - 
+     -
    * - :ref:`Blueprint_#_Tool <doc_item_asset_blueprints:blueprint_#_tool>`
      - :ref:`uint16 <doc_data_builtin_types>`
      - ``0``
    * - :ref:`Blueprint_#_Tool_Critical <doc_item_asset_blueprints:blueprint_#_type>`
      - :ref:`flag <doc_data_flag>`
-     - 
+     -
    * - :ref:`Blueprint_#_Type <doc_item_asset_blueprints:blueprint_#_tool_critical>`
      - :ref:`EBlueprintType <doc_item_asset_blueprints:eblueprinttype_enumeration>`
-     - 
+     -
    * - :ref:`Blueprints <doc_item_asset_blueprints:blueprints>`
      - :ref:`uint8 <doc_data_builtin_types>`
      - ``0``
@@ -98,7 +98,7 @@ EBlueprintType Enumeration
 .. list-table::
    :widths: 25 75
    :header-rows: 1
-   
+
    * - Named Value
      - Description
    * - ``Ammo``
@@ -130,7 +130,7 @@ EBlueprintSkill Enumeration
 .. list-table::
    :widths: 25 75
    :header-rows: 1
-   
+
    * - Named Value
      - Description
    * - ``None``
@@ -297,6 +297,8 @@ Blueprint_#_Supply_#_ID :ref:`uint16 <doc_data_builtin_types>`
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Legacy ID of an item that is required as a supply (i.e., an input that is consumed when crafting the blueprint). This property requires ``Blueprint_#_Supplies``.
+
+Can also be set to a string "this" to use the owning item's legacy ID. Useful for salvaging blueprints to avoid accidentally writing the wrong ID.
 
 ----
 
