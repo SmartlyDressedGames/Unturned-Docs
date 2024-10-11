@@ -21,28 +21,35 @@ Unturned Documentation
 .. toctree::
 	:hidden:
 	:maxdepth: 1
-	:caption: Asset Manual
+	:caption: Introduction to Modding
 
-	assets/asset-bundle-custom-data
 	assets/asset-bundles
 	assets/asset-definitions
 	assets/data-file-format
 	assets/asset-validation
+	assets/asset-bundle-custom-data
 	assets/curated-items
+	assets/animation
+	assets/layers
+	assets/mod-hooks
+	assets/unity-2018
+	assets/unity-2019
+
+.. toctree::
+	:hidden:
+	:maxdepth: 1
+	:caption: Asset Manual
 
 	assets/airdrop-asset
 	assets/animal-asset
-	assets/animation
 	assets/character-mesh-replacement
 	assets/crafting-blacklist-asset
 	assets/currency-asset
 	assets/effect-asset
 	assets/foliage-asset
 	assets/item-asset/index
-	assets/layers
 	assets/level-asset
 	assets/material-palette-asset
-	assets/mod-hooks
 	assets/npc-asset/index
 	assets/object-asset
 	assets/outfit-asset
@@ -51,8 +58,6 @@ Unturned Documentation
 	assets/resource-asset
 	assets/spawn-asset
 	assets/stereo-song-asset
-	assets/unity-2018
-	assets/unity-2019
 	assets/vehicle-asset
 	assets/vehicle-physics-profile-asset
 	assets/vehicle-redirector-asset
