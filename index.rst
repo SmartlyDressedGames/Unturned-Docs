@@ -30,8 +30,7 @@ Unturned Documentation
 	assets/animation
 	assets/layers
 	assets/mod-hooks
-	assets/unity-2018
-	assets/unity-2019
+	assets/unity-upgrade
 
 .. toctree::
 	:hidden:
