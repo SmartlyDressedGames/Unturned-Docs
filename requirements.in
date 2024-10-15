@@ -1,5 +1,6 @@
 sphinx==6.2.1
-sphinx_rtd_theme
+sphinx_rtd_theme==3
+sphinxcontrib-jquery # Sphinx-RTD-Theme dependency
 
 sphinx-copybutton
 sphinx-tabs

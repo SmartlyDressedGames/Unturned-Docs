@@ -5,11 +5,11 @@
 
 .. toctree::
 	:maxdepth: 1
-	
+
 	introduction
 	blueprints
 	actions
-	
+
 	arrest-end-asset
 	arrest-start-asset
 	backpack-asset

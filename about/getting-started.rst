@@ -3,19 +3,23 @@
 Getting Started
 ===============
 
-To get started with creating mods for *Unturned*, certain tools need to be downloaded first. This article provides a walkthrough for downloading these tools.
+To get started with creating mods for *Unturned*, or hosting your own multiplayer server, certain tools need to be downloaded first. This page provides an explanation for the different types of tools you may need – depending on what you are trying to do.
 
 Installing Unturned
 -------------------
 
-*Unturned* must be downloaded in order to create and upload mods. The game can be downloaded from `Steam <https://store.steampowered.com/app/304930/>`_.
+*Unturned* must be downloaded in order to create, publish, and update mods. The game can be downloaded for free from `Steam <https://store.steampowered.com/app/304930/>`_.
 
-Not only do the game files include tools necessary for creating custom content, but the game's official assets can also be used as an example when creating your own items, objects, or other assets.
+Not only do the game files include some of the tools necessary for creating your own custom content, but the game's official assets can also be used as an example when creating your own items, objects, or other game assets.
+
+Adding *Unturned* to your Steam Library will also add the *Unturned Dedicated Server* application, which is necessary to host multiplayer servers. Although some server hosts may prefer to :ref:`download this tool through SteamCMD <doc_server_hosting>` instead.
 
 Installing Unity
 ----------------
 
-Installing the Unity Editor is required for exporting custom content into the game. Most 2021.3 LTS version should be compatible; Unturned currently uses 2021.3.29f1. `View Download Links <https://unity.com/releases/editor/qa/lts-releases?version=2021.3>`_
+Installing the Unity Editor is required for exporting custom content for the game. We recommend using the same version as *Unturned*, which currently uses version **2021.3.29f1**. Unity can be `downloaded from their website <https://unity.com/releases/editor/archive>`_.
+
+Although most 2021.3 LTS versions should be compatible, and some older LTS versions *can* be used with some additional setup, those versions might not function as intended.
 
 Once Unity is installed, a project can be created to house custom content. At this point, it is recommended to import Unturned's provided Unity packages.
 

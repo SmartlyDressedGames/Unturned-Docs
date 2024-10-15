@@ -77,7 +77,7 @@ sphinx==6.2.1
     #   sphinxext-opengraph
 sphinx-copybutton==0.5.2
     # via -r requirements.in
-sphinx-rtd-theme==2.0.0
+sphinx-rtd-theme==3.0.0
     # via -r requirements.in
 sphinx-tabs==3.4.5
     # via -r requirements.in
@@ -88,7 +88,9 @@ sphinxcontrib-devhelp==1.0.2
 sphinxcontrib-htmlhelp==2.0.1
     # via sphinx
 sphinxcontrib-jquery==4.1
-    # via sphinx-rtd-theme
+    # via
+    #   -r requirements.in
+    #   sphinx-rtd-theme
 sphinxcontrib-jsmath==1.0.1
     # via sphinx
 sphinxcontrib-qthelp==1.0.3
