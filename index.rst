@@ -113,6 +113,13 @@ Unturned Documentation
 	data/struct/index
 	data/vector3
 
+.. toctree::
+	:hidden:
+	:maxdepth: 1
+	:caption: Miscellaneous
+
+	unity_project
+
 Welcome to the official documentation for `Unturned <https://store.steampowered.com/app/304930>`_'s modding and server hosting features! To navigate, use the table of contents in the sidebar or the search function in the top-left corner.
 
 Upcoming Features

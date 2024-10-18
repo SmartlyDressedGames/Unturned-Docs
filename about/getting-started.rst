@@ -14,6 +14,8 @@ Not only do the game files include some of the tools necessary for creating your
 
 Adding *Unturned* to your Steam Library will also add the *Unturned Dedicated Server* application, which is necessary to host multiplayer servers. Although some server hosts may prefer to :ref:`download this tool through SteamCMD <doc_server_hosting>` instead.
 
+.. _doc_getting_started:installing_unity:
+
 Installing Unity
 ----------------
 
