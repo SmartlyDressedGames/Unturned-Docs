@@ -17,7 +17,14 @@ You'll need the same version of the Unity editor as described in :ref:`doc_getti
 
 Unfortunately, Steam needs to be running, even to launch the game in the editor. This does make certain tasks like debugging multiplayer harder. Unturned 3 is very tightly integrated with the Steam API, so this requirement is unlikely to change. Certainly an important lesson for future games: Plan ahead to support swapping out platform APIs.
 
-To run the game in the editor, open ``Assets/Game/Sources/Scenes/Setup.unity`` and click Play.
+The editor needs a copy of the core assets. The easiest option for this is to enable :ref:`Load Core Asset Bundle From Steam Install <load_core_asset_bundle_from_steam_install>`. Alternatively, :ref:`Export Core Asset Bundle <export_core_asset_bundle>`.
+
+Most gameplay requires remote procedure calls (RPCs) to function properly. Even singleplayer is essentially a one-player server. The RPC code is automatically generated, but this is still a manual step in the editor:
+
+#. Open **Window** > **Unturned** > **Net Gen**
+#. Click **Generate**
+
+Finally, to run the game in the editor, open ``Assets/Game/Sources/Scenes/Setup.unity`` and click Play.
 
 Play Mode Settings
 ------------------
@@ -27,6 +34,10 @@ An editor window is available from Window > Unturned > Editor Settings. Primaril
 **Auto Load Level and Auto Load Mode**: Set to a level's folder name to bypass the menu, going from the loading screen directly into singleplayer or the level editor.
 
 **Glazier**: Overrides default :ref:`doc_glazier`.
+
+.. _load_core_asset_bundle_from_steam_install:
+
+**Load Core Asset Bundle From Steam Install**: If enabled, core.masterbundle is loaded from the Steam version of Unturned rather than the local copy.
 
 Troubleshooting
 ---------------
@@ -46,6 +57,8 @@ One could argue "organization" is a misnomer in this case.
 
 ``Assets/Runtime`` contains all of the player code. Certain newer features have their own folders per-assembly-definition, but most game code is in the ``Assembly-CSharp`` folder. It would be nice to rename it, but as far as I'm aware we can't do this without breaking script references in asset bundles (as of 2024-10-18).
 
+``Assets/Runtime/Assembly-CSharp/NetGen`` is all generated networking code and excluded from Git.
+
 The ``Builds`` folder contains exported Unity players, the vanilla :ref:`"masterbundle" (asset bundle) <doc_asset_bundles>`, and - unintuitively - all of the important non-Unity files like :ref:`.dats <doc_asset_definitions>`.
 
 This becomes clearer when remembering the overly-tight integration with Steam. Each subdirectory of ``Builds`` is a Steam depot (except CoreAssetBundle and Test). For future games we would instead automatically **copy** the files from the project output into a Steam depot structure. *sigh*
@@ -53,6 +66,17 @@ This becomes clearer when remembering the overly-tight integration with Steam. E
 ``Economy`` contains all of the icons and configuration files for the Steam Inventory Service. It's actually gotten a lot tidier since we can refactor it without affecting mods or plugins.
 
 ``IDs`` contains spreadsheets of vanilla legacy ID usage. This is hopefully obsolete after 3.24.6.0 added the Menu > Workshop > F1 > Log Asset IDs tool.
+
+Exporting Core Asset Bundle (``core.masterbundle``)
+---------------------------------------------------
+
+.. _export_core_asset_bundle:
+
+#. Open Window > Unturned > Master Bundle Tool.
+#. Expand **Asset Bundles** and check the box next to **core.masterbundle**.
+#. Expand **Master Bundles**.
+#. Click **...** and navigate to the Unturned project root, ``Builds/CoreAssetBundle`` directory.
+#. Click **Export**.
 
 Continuous Integration
 ----------------------
