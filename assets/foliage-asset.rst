@@ -11,7 +11,7 @@ There are sub-types of foliage asset for different uses, most notably instanced 
 FoliageResourceInfoAsset Properties Reference
 ---------------------------------------------
 
-**Type** *string*: ``SDG.Unturned.FoliageResourceInfoAsset``
+**Type** *string*: ``SDG.Framework.Foliage.FoliageResourceInfoAsset``
 
 **Resource** :ref:`Asset Pointer <doc_data_assetptr>`: actual tree to spawn.
 
