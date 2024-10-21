@@ -314,7 +314,11 @@ Allows for using an ``ID`` value within the range reserved for official content.
 Can_Player_Equip :ref:`bool <doc_data_builtin_types>`
 :::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Item can be equipped by the player. If the ``Useable`` property has been set, then this defaults to ``true``. Otherwise, this defaults to ``false``.
+Controls whether or not this item can be equipped by the player. This property *technically* requires that ``Useable`` has been configured to any value other than ``None``, as items are not equippable without the functionality provided by having a Useable class.
+
+While the inclusion of this property may seem unorthodox, it does have some niche uses. For example, you could create a gun that can only be used by sentries.
+
+This property defaults to ``true`` if the ``Useable`` property has been set. Otherwise, this defaults to ``false``.
 
 ----
 
@@ -637,7 +641,9 @@ If true, properties like damage, storage, health, etc. are appended to the descr
 Useable :ref:`doc_item_asset_intro:euseabletype` ``None``
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Class for how to treat equippable items. This is often used with the ``Slot`` property, which determines which item slots an item is equippable in.
+Setting this property adds functionality from a corresponding Useable class. Unless ``Can_Player_Equip`` has been configured otherwise, this *at least* means the item is equippable.
+
+This property is often used in conjunction with the ``Slot`` property, which determines where an item can be equipped from.
 
 Blueprints and Actions
 ``````````````````````
