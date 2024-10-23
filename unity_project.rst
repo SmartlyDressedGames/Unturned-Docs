@@ -8,7 +8,7 @@ Unity Project
 Downloading
 -----------
 
-The project files are stored in a `Git <https://git-scm.com/>`_ repository. You can use the Git CLI to clone (download) the files, but I'd recommend using a GUI. Personally, I use `Fork <https://git-fork.com/>`_, though it has an upfront price of $60 USD at the time of writing (2024-10-18). The Git website `lists a variety of great, free GUI tools <https://git-scm.com/downloads/guis>`_ including `GitHub Desktop <https://github.com/apps/desktop>`_ and `Sourcetree <https://www.sourcetreeapp.com/>`_.
+The project files are stored in a `Git <https://git-scm.com/>`_ repository. You can use the Git CLI to clone (download) the files, but I'd recommend using a GUI. The Git website `lists a variety of great, free GUI tools <https://git-scm.com/downloads/guis>`_ including `GitHub Desktop <https://github.com/apps/desktop>`_ and `Sourcetree <https://www.sourcetreeapp.com/>`_. Personally, I use `Fork <https://git-fork.com/>`_, though it has an upfront price of $60 USD at the time of writing (2024-10-18).
 
 Getting Started
 ---------------
@@ -23,6 +23,7 @@ Most gameplay requires remote procedure calls (RPCs) to function properly. Even 
 
 #. Open **Window** > **Unturned** > **Net Gen**
 #. Click **Generate**
+#. Tab out and back in to ensure the scripts are imported
 
 Finally, to run the game in the editor, open ``Assets/Game/Sources/Scenes/Setup.unity`` and click Play.
 
