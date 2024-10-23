@@ -63,3 +63,10 @@ The project's `requirements.txt` file is automatically generated. If you need to
 ```shell
 pip-compile requirements.in
 ```
+
+Locally updating the TOC
+------------------------
+
+Sometimes, the Table of Contents will fail to update after changes have been made. This is an issue with the Esbonio extension, but it can be safely ignored as it should only affect your local preview of the project pages.
+
+If needed, you can force Esbonio to rebuild these pages. Delete the files at `...\AppData\Roaming\Code\User\workspaceStorage\...\swyddfa.esbonio\sphinx`, run `make html`, and restart the Sphinx language server (e.g., by closing and reopening Visual Studio Code, or by clicking the "Sphinx" button in the bottom-right).
