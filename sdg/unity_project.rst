@@ -42,7 +42,7 @@ An editor window is available from Window > Unturned > Editor Settings. Primaril
 Troubleshooting
 ---------------
 
-Check Unity's log files. On Windows there's a shortcut in the project folder to the most recent log file `Unity Editor.log` as well as the containing folder `UnityEditor Logs Folder`.
+Check Unity's log files. On Windows there's a shortcut in the project folder to the most recent log file ``Unity Editor.log`` as well as the containing folder ``UnityEditor Logs Folder``.
 
 File Organization
 -----------------

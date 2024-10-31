@@ -1,0 +1,28 @@
+/* CSS for toctree_collapse.js script.
+* TOC sections are "collapsed" by default, and only displayed when they've been "toggled".
+*/
+
+.wy-menu-vertical .caption {
+	cursor: pointer;
+}
+
+.wy-menu-vertical .caption .caption-text:before {
+	content: "❯"; /* ⮞ ⮚ ❯ */
+	display: inline-block;
+	transition: transform 0.25s;
+	transform-origin: 25% 50%;
+	width: 16px;
+	height: 32px;
+}
+
+.wy-menu-vertical .caption.toggled .caption-text:before {
+	transform: rotate(90deg);
+}
+
+.wy-menu-vertical .caption + ul {
+	display: none;
+}
+
+.wy-menu-vertical .caption.toggled + ul {
+	display: block;
+}

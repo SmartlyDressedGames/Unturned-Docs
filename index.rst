@@ -35,20 +35,37 @@ Unturned Documentation
 .. toctree::
 	:hidden:
 	:maxdepth: 1
-	:caption: Asset Manual
+	:caption: Creating Items
+	:glob:
+
+	item-asset/introduction
+	item-asset/blueprints
+	item-asset/actions
+	item-asset/*
+
+.. toctree::
+	:hidden:
+	:maxdepth: 1
+	:caption: Creating Objects and NPCs
+	:glob:
+
+	assets/object-asset
+	assets/material-palette-asset
+	npc-asset/*
+	assets/currency-asset
+
+.. toctree::
+	:hidden:
+	:maxdepth: 1
+	:caption: Creating Miscellaneous Assets
 
 	assets/airdrop-asset
 	assets/animal-asset
 	assets/character-mesh-replacement
 	assets/crafting-blacklist-asset
-	assets/currency-asset
 	assets/effect-asset
 	assets/foliage-asset
-	assets/item-asset/index
 	assets/level-asset
-	assets/material-palette-asset
-	assets/npc-asset/index
-	assets/object-asset
 	assets/outfit-asset
 	assets/physics-material-asset
 	assets/redirector-asset
@@ -116,9 +133,10 @@ Unturned Documentation
 .. toctree::
 	:hidden:
 	:maxdepth: 1
-	:caption: Miscellaneous
+	:caption: SDG / Project Info
+	:glob:
 
-	unity_project
+	sdg/*
 
 Welcome to the official documentation for `Unturned <https://store.steampowered.com/app/304930>`_'s modding and server hosting features! To navigate, use the table of contents in the sidebar or the search function in the top-left corner.
 

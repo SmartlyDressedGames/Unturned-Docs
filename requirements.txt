@@ -71,11 +71,14 @@ sphinx==6.2.1
     # via
     #   -r requirements.in
     #   sphinx-copybutton
+    #   sphinx-notfound-page
     #   sphinx-rtd-theme
     #   sphinx-tabs
     #   sphinxcontrib-jquery
     #   sphinxext-opengraph
 sphinx-copybutton==0.5.2
+    # via -r requirements.in
+sphinx-notfound-page==1.0.4
     # via -r requirements.in
 sphinx-rtd-theme==3.0.0
     # via -r requirements.in

@@ -3,6 +3,7 @@ sphinx_rtd_theme==3
 sphinxcontrib-jquery # Sphinx-RTD-Theme dependency
 
 sphinx-copybutton
+sphinx-notfound-page
 sphinx-tabs
 sphinxext-opengraph
 
