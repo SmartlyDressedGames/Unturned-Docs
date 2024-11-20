@@ -1519,7 +1519,7 @@ Physics_Profile :ref:`GUID <doc_data_guid>`
 
 GUID of a :ref:`VehiclePhysicsProfileAsset <doc_assets_vehicle_physics_profile>` to use. Physics profiles allow for increased control over vehicle settings in bulk, but are not required for anything.
 
-There are several default profiles. These are used when the vehicle's :ref:`Engine <doc_assets_vehicle:engine>` property has been set to ``Boat``, ``Car``, ``Helicopter``, or ``Plane``, if its WheelColliders also have a mass equal to 1.0. Otherwise, nothing is used by default.
+There are several default profiles. These are used when the vehicle's :ref:`Engine <doc_assets_vehicle:engine>` property has been set to ``Boat``, ``Car``, ``Helicopter``, or ``Plane``, when certain conditions are met. The Vehicle.prefab's root RigidBody component must have a mass equal to 1.0, and any of its Tires' WheelColliders must also have a mass equal to 1.0. Otherwise, nothing is used by default.
 
 - ``Boat`` defaults to ``47258d0dcad14cb8be26e24c1ef3449e``.
 - ``Car`` defaults to ``6b91a94f01b6472eaca31d9420ec2367``.
