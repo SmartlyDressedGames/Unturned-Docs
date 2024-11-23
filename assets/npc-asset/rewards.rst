@@ -49,7 +49,7 @@ Flag_Short
 
 **Reward_#_ID** *uint16*: ID of flag to modify.
 
-**Reward_#_Value** *int*: Modify flag's current value with this short value.
+**Reward_#_Value** *int16*: Modify flag's current value with this short value.
 
 **Reward_#_Modification** *enum* (``Assign``, ``Decrement``, ``Increment``): Set value, subtract value, or add value.
 
@@ -60,9 +60,9 @@ Flag_Short_Random
 
 **Reward_#_ID** *uint16*: ID of flag to modify.
 
-**Reward_#_Min_Value** *int*: Minimum short value to modify flag's current value by.
+**Reward_#_Min_Value** *int16*: Minimum short value to modify flag's current value by.
 
-**Reward_#_Max_Value** *int*: Maximum short value to modify flag's current value by.
+**Reward_#_Max_Value** *int16*: Maximum short value to modify flag's current value by.
 
 **Reward_#_Modification** *enum* (``Assign``, ``Decrement``, ``Increment``): Set value, subtract value, or add value.
 

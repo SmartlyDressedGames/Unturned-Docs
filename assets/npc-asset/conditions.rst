@@ -68,7 +68,7 @@ Short flag condition.
 
 **Condition_#_ID** *uint16*: ID of flag to check.
 
-**Condition_#_Value** *int*: Target value for the flag, as a 16-bit signed integer.
+**Condition_#_Value** *int16*: Target value for the flag, as a 16-bit signed integer.
 
 **Condition_#_Allow_Unset** *flag*: Pass condition if player does not have the flag yet.
 
