@@ -38,20 +38,27 @@ Unturned Documentation
 	:caption: Creating Items
 	:glob:
 
-	item-asset/introduction
-	item-asset/blueprints
-	item-asset/actions
-	item-asset/*
+	items/introduction
+	items/blueprints
+	items/actions
+	items/*
 
 .. toctree::
 	:hidden:
 	:maxdepth: 1
-	:caption: Creating Objects and NPCs
+	:caption: Creating Objects
 	:glob:
 
 	assets/object-asset
 	assets/material-palette-asset
-	npc-asset/*
+
+.. toctree::
+	:hidden:
+	:maxdepth: 1
+	:caption: NPCs and Logic
+	:glob:
+
+	npcs/*
 	assets/currency-asset
 
 .. toctree::
