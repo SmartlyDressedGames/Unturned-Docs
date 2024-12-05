@@ -39,6 +39,8 @@ Barricade Asset Properties
 
 **Can_Be_Damaged** *bool*: If true, this barricade can be damaged. Defaults to true.
 
+**Can_Zombies_Target** *bool*: If true, this item is eligible for zombies to detect and attack when stuck. Defaults to true.
+
 **Eligible_For_Pooling** *bool*: If true, this barricade is eligible for object pooling. Some barricades may not reset properly when pooling is enabled. Defaults to true, except when using ``Build Beacon``.
 
 **Explosion** :ref:`GUID <doc_data_guid>` or *uint16*: GUID or legacy ID of :ref:`EffectAsset <doc_assets_effect>` to play when destroyed. When using ``Build Vehicle``, this is instead the GUID or legacy ID of the vehicle that should be spawned.

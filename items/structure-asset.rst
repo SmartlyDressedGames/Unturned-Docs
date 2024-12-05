@@ -29,6 +29,8 @@ Structure Asset Properties
 
 **Can_Be_Damaged** *bool*: If true, this structure can be damaged. Defaults to true.
 
+**Can_Zombies_Target** *bool*: If true, this item is eligible for zombies to detect and attack when stuck. Defaults to true.
+
 **Eligible_For_Pooling** *bool*: If true, this structure is eligible for object pooling. Some structures may not reset properly when pooling is enabled. Defaults to true.
 
 **Explosion** :ref:`GUID <doc_data_guid>` or *uint16*: GUID or legacy ID of :ref:`EffectAsset <doc_assets_effect>` to play when destroyed.
