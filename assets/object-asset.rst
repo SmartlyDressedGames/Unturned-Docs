@@ -164,6 +164,8 @@ Rubble
 
 **Rubble_Blade_ID** *byte*: Weapons are unable to damage this object unless they have a matching ``BladeID_#`` value. Defaults to 0.
 
+**Rubble_Can_Zombies_Damage** *bool*:  If true, zombies can attack this object if it's blocking them. Defaults to false.
+
 **Rubble_Editor** *enum* (``Alive``, ``Dead``): Determines how this destructible object should appear in the level editor. If this is set to ``Dead``, the fully destroyed state of the object will be shown. Defaults to ``Alive``.
 
 **Rubble_Effect** :ref:`doc_data_guid` or *uint16*: GUID or legacy ID of an :ref:`EffectAsset <doc_assets_effect>` to play when a section of the destructible object is destroyed.
@@ -187,6 +189,8 @@ Rubble
 **Rubble_Reward_Probability** *float*: Probability of receiving a reward, as a decimal-to-percent chance. Defaults to 1.
 
 **Rubble_Reward_XP** *uint32*: Amount of experience to reward when the destructible object is destroyed.
+
+**Rubble_Zombie_Damage_Multiplier** *float*: Multiplier for damage from zombies if RubbleCanZombiesDamage is true.
 
 Conditions and Rewards
 ``````````````````````
