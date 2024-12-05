@@ -24,9 +24,9 @@ For the tools necessary to start creating skins or cosmetics, refer to the :ref:
 Guidelines
 ----------
 
-.. |ico1| image:: img/1e1e1e.png
+.. |ico1| image:: /img/1e1e1e.png
 	:width: 15px
-.. |ico2| image:: img/f0f0f0.png
+.. |ico2| image:: /img/f0f0f0.png
 	:width: 15px
 
 Most of these guidelines are intended to help promote consistency with *Unturned*'s art style. Here are the guidelines you should keep in mind:
@@ -91,7 +91,7 @@ Since these are otherwise identical, we recommend referencing the clothing items
 Mythical Effect Placement
 `````````````````````````
 
-.. figure:: img/EffectTransform.png
+.. figure:: /img/EffectTransform.png
 
 	Example "Effect" transform positioning and orientation.
 
@@ -106,7 +106,7 @@ Any item in *Unturned* could support skins, but not every item does at this time
 
 At the very least, you will want to create a custom albedo for your skin. You can also add custom metallic or emission textures. When eventually uploading your skin to the Steam Workshop, please make sure you follow the "Exporting Unity Package" steps to include your source files! This allows us to add any extra needed assets, or fix minor issues.
 
-.. figure:: img/FiestaAugewehrBundles.png
+.. figure:: /img/FiestaAugewehrBundles.png
 
 	The Fiesta Augewehr skin includes all four types of materials.
 
@@ -117,7 +117,7 @@ Unless your skin includes a custom mesh (as detailed in a later section), your a
 - | **Attachment**: The ``Skin_Attachment.mat`` (also called the "layered attachments material") is used when a secondary material has not been provided for an attachment that has texture masks. For example, the 8x Scope has its mount and knobs masked out.
 - | **Tertiary**: The ``Skin_Tertiary.mat`` (also called the "fallback attachments materials") is used when none of the other included materials are applicable for an attached attachment. You will usually want to include a tertiary material if your skin has an attachments material.
 
-.. figure:: /assets/img/FallbackLayered.png
+.. figure:: /img/FallbackLayered.png
 
 	Notice how some parts of the 8x Scope retains some of its original texture when a Layered Attachments material is included, while the Fallback Attachments material completely covers it.
 

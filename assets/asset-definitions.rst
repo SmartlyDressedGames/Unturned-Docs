@@ -17,17 +17,17 @@ Each asset has a common ``GUID`` and ``Type`` header:
 **Type** *string*: Specific guides will list individual type names. This determines which keys the game will read. It can also be set to the fully qualified name of any class in any module.
 
 .. note::
-	
+
 	``Type`` and ``GUID`` can either be specified in the root dictionary (default), or in a ``Metadata`` sub-dictionary. For example this is valid as well:
 
 	.. code-block:: text
-		
+
 		Metadata
 		{
 			GUID 7e4b847061b64272b42ea8869fd053c7
 			Type SDG.Unturned.Asset
 		}
-	
+
 	If ``GUID`` is specified in the ``Metadata`` sub-dictionary the game cannot (as of 2023-04-13) automatically prepend a newly generated one during startup.
 
 Body
@@ -40,7 +40,7 @@ The body contains any class properties. Individual asset type documentation elab
 Optionally the body properties can be placed into an ``Asset`` sub-dictionary. For example:
 
 .. code-block:: text
-	
+
 	GUID [...]
 	Type [...]
 	Asset
@@ -53,7 +53,7 @@ Optionally the body properties can be placed into an ``Asset`` sub-dictionary. F
 Is equivalent to:
 
 .. code-block:: text
-	
+
 	GUID [...]
 	Type [...]
 	ID [...]
@@ -65,7 +65,7 @@ Unity Asset Bundles
 
 Each Unturned asset is associated with a Unity asset bundle. If there is a master bundle in the file hierarchy that takes priority, otherwise a ``.unity3d`` bundle with the same name as the ``.dat`` file is used. There are several keys available to control the asset bundle:
 
-**Asset_Bundle_Version** *int*: Indicates which version of Unity this ``.unity3d`` bundle was built for. When Unturned upgrades Unity versions it tries to maintain backwards compatibility based on this number. 1 is Unity 5.5, 2 is 2017.4 LTS and 3 is 2018.4 LTS.
+**Asset_Bundle_Version** *int*: Indicates which version of Unity this ``.unity3d`` bundle was built for. When Unturned upgrades Unity versions it tries to maintain backwards compatibility based on this number. ``1`` is Unity 5.5, ``2`` is 2017.4 LTS, and ``3`` is 2018 LTS and 2019 LTS, ``4`` is 2020 LTS, and ``5`` is latest (Unity 2021 LTS).
 
 **Master_Bundle_Override** *string*: Name of a master bundle to use rather than the ``.unity3d`` bundle or master bundle found in the hierarchy.
 

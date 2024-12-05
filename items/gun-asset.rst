@@ -8,7 +8,7 @@ The ItemGunAsset class is used for ranged weapons (or "guns"), which can be used
 Unity Asset Bundle Contents
 ---------------------------
 
-.. figure:: /assets/img/UnityExampleGun.png
+.. figure:: /img/UnityExampleGun.png
 
 	An example of a gun being set up in the Unity editor.
 
@@ -28,7 +28,7 @@ When a gun can accept more than one type of magazine caliber, it may be desirabl
 Additional Setup for Bows
 :::::::::::::::::::::::::
 
-.. figure:: /assets/img/UnityExampleCrossbow.png
+.. figure:: /img/UnityExampleCrossbow.png
 
 	An example of a crossbow being set up in the Unity editor.
 

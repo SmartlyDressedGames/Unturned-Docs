@@ -16,10 +16,11 @@ release = version
 # -- General configuration
 sys.path.append(os.path.abspath("_extensions")) # also find extensions within this directory
 extensions = [
+    "notfound.extension",  # Adds "404 Not Found" pages
     'sphinx.ext.duration',
     'sphinx.ext.doctest',
     'sphinx.ext.autodoc',
-    'sphinx.ext.autosectionlabel', # create explicit targets for all sections in the form of {path/to/page}:{title-of-section}
+    'sphinx.ext.autosectionlabel', # Create explicit targets for all sections in the form of {path/to/page}:{title-of-section}
     'sphinx.ext.autosummary',
     'sphinx_copybutton',
     'sphinx.ext.intersphinx',
@@ -64,6 +65,11 @@ html_static_path = ["_static"]
 # or fully qualified paths (e.g. https://...)
 html_css_files = [
     'css/custom.css',
+    'css/toctree_collapse.css',
+]
+
+html_js_files = [
+    "js/toctree_collapse.js",
 ]
 
 # -- Options for EPUB output

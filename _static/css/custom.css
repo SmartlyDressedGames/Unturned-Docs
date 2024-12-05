@@ -1,19 +1,23 @@
-/**
- * Custom tweaks to the Read the Docs theme.
- */
+/* Custom tweaks to the Read the Docs Sphinx Theme.
+* Less generic styling should be placed in its own stylesheet.
+*/
 
- .wy-table-responsive table {
+/* Tables should take up the entire available horizontal space within their container. */
+.wy-table-responsive table {
 	width: 100%;
 }
 
-/* Wrap table contents for large screens. */
-/* COMMENTED OUT -- Reconsidering best way to implement wrapping for tables.
- * Maybe this should only apply to a custom table class (a la, .wrapping)
- * Additionally, maybe tables should always be forced to full body width
-
+/* COMMENTED OUT - Wrapping table contents.
+* This was the "intended fix" before simply maxing table width.
+* May be worth revisiting the idea for mobile devices, where horizontal scrolling can be cumbersome.
+*//*
 @media screen and (min-width: 769px) {
 	.wy-table-responsive { overflow: visible; }
 	.wy-table-responsive table td { white-space: normal; }
 }
-
 */
+
+/* Fix unreadable text when selection version from sidebar. */
+select option {
+    background: #343131 !important;
+}

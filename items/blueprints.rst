@@ -310,7 +310,7 @@ Blueprint_#_Supply_#_ID :ref:`uint16 <doc_data_builtin_types>`
 
 Legacy ID of an item that is required as a supply (i.e., an input that is consumed when crafting the blueprint). This property requires ``Blueprint_#_Supplies``.
 
-Can also be set to a string "this" to use the owning item's legacy ID. Useful for salvaging blueprints to avoid accidentally writing the wrong ID.
+This property can also be set to a string value of ``this``, which will use the the owning item's legacy ID. Useful for salvaging blueprints to avoid accidentally writing the wrong ID.
 
 ----
 

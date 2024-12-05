@@ -23,6 +23,11 @@ Installing the Unity Editor is required for exporting custom content for the gam
 
 Although most 2021.3 LTS versions should be compatible, and some older LTS versions *can* be used with some additional setup, those versions might not function as intended.
 
+When installing a Unity version, you will have the option to install some optional modules. You should at least install:
+
+- **Linux Build Support (Mono)** – Adds support for your mod on Linux devices.
+- **Mac Build Support (Mono)** – Adds support for your mod on macOS devices.
+
 Once Unity is installed, a project can be created to house custom content. At this point, it is recommended to import Unturned's provided Unity packages.
 
 Unity Packages
