@@ -23,7 +23,7 @@ The "Barrel", "Grip", "Sight", "Tactical", and "Magazine" GameObjects will deter
 
 If an "View" GameObject is added, the camera will use its position when aiming down sights if a sight attachment has not been attached to the gun.
 
-When a gun can accept more than one type of magazine caliber, it may be desirable to have the position of the magazine attachment depend on its caliber ID. Add a child to the "Magazine" GameObject, named "Caliber_#". For example, adding "Caliber_1" would cause magazine attachments using caliber ID 1 to use that position instead of the "Magazine" GameObject's position.
+When a gun can accept more than one type of magazine caliber, it may be desirable to have the position of the magazine attachment depend on its caliber ID. Add a child to the "Magazine" GameObject, named "Caliber_#". For example, adding "Caliber_1" would cause magazine attachments using caliber ID 1 to use that position instead of the "Magazine" GameObject's position. (This is supported for the other attachment types as well.)
 
 Additional Setup for Bows
 :::::::::::::::::::::::::
