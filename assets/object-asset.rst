@@ -42,6 +42,10 @@ Object Properties
 
 **Landmark_Quality** *enum* (``Off``, ``Low``, ``Medium``, ``High``, ``Ultra``): The value that the "Landmarks" graphical setting must be set to in order to see a low detail model of this object from far away distances. Defaults to ``Low``.
 
+**Load_Nav_On_Server** *bool*: If true, Nav game object will be instantiated in singleplayer and on dedicated server. Useful for objects which need to affect navmesh baking without colliding with zombies during gameplay. Defaults to true for "medium" and "large" objects.
+
+**Load_Nav_In_Editor** *bool*: If true, Nav game object will be instantiated in the level editor. Useful for objects which need collision with zombies during gameplay without affecting navmesh baking. Defaults to true for "medium" and "large" objects.
+
 **Material_Palette** :ref:`doc_data_guid`: GUID of the :ref:`Material Palette Asset <doc_assets_material_palette>` that should be used by the object.
 
 **Refill** *flag*: Water can be siphoned from this object. Deprecated in favor of ``Interactability Water``.
