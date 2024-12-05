@@ -58,8 +58,15 @@ Unturned Documentation
 	:caption: NPCs and Logic
 	:glob:
 
-	npcs/*
-	assets/currency-asset
+	npcs/introduction
+	npcs/npc-asset
+	npcs/dialogue-asset
+	npcs/quest-asset
+	npcs/vendor-asset
+	npcs/conditions
+	npcs/rewards
+	npcs/rewards-list-asset
+	npcs/currency-asset
 
 .. toctree::
 	:hidden:
