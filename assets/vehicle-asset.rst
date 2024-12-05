@@ -206,6 +206,12 @@ Properties
    * - :ref:`Steering_LeaningForceMultiplier <doc_assets_vehicle:steering_leaningforcemultiplier>`
      - :ref:`float32 <doc_data_builtin_types>`
      - ``-1.0``
+   * - :ref:`Steering_LeaningForce_ScaleWithSpeed <doc_assets_vehicle:steering_leaningforce_scalewithspeed>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``false``
+   * - :ref:`Steering_LeaningForce_SpeedExponent <doc_assets_vehicle:steering_leaningforce_speedexponent>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``1.0``
    * - :ref:`Traction <doc_assets_vehicle:traction>`
      - :ref:`flag <doc_data_flag>`
      -
@@ -1716,6 +1722,24 @@ Steering_LeaningForceMultiplier :ref:`float32 <doc_data_builtin_types>` ``-1.0``
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 If greater than zero, torque is applied on 𝘡-axis according to steering input for bikes and motorcycles.
+
+----
+
+.. _doc_assets_vehicle:steering_leaningforce_scalewithspeed:
+
+Steering_LeaningForce_ScaleWithSpeed :ref:`bool <doc_data_builtin_types>` ``false``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If true, leaning force is multiplied by normalized speed to the power of Steering_LeaningForce_SpeedExponent. Defaults to false.
+
+----
+
+.. _doc_assets_vehicle:steering_leaningforce_speedexponent:
+
+Steering_LeaningForce_SpeedExponent :ref:`float32 <doc_data_builtin_types>` ``1.0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Refer to Steering_LeaningForce_ScaleWithSpeed.
 
 ----
 
