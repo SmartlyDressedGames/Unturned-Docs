@@ -133,7 +133,7 @@ Interactables
 
 **Interactability_Invulnerable** *flag*: This resource cannot be damaged by lower-power :ref:`doc_item_asset_weapon` that do not have the ``Invulnerable`` flag, when using ``Interactability Rubble``.
 
-**Interactability_Nav** *enum* (``None``, ``On``, ``Off``): How navigation should change when the object's state is changed. Defaults to ``None``.
+**Interactability_Nav** *enum* (``None``, ``On``, ``Off``): When using ``Binary_State``, controls how on/off state affects ``Nav`` game object. Defaults to ``None`` which doesn't affect Nav. ``On`` activates Nav when object is in the on state and deactivates in the off state. (``Off`` does the opposite.)
 
 **Interactability_Power** *enum* (``None``, ``Toggle``, ``Stay``): Whether or not this object must be powered to be usable. When set to ``None``, this object cannot be powered. When set to ``Toggle``, the object must be powered to be interacted with. When set to ``Stay``, the object must be powered to remain on. For example, a door might use ``Toggle`` if it should remain open after it loses power, while a streetlight might use ``Stay`` so that the light turns off when it loses power. Defaults to ``None``.
 
