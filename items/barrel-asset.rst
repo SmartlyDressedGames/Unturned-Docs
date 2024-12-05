@@ -15,16 +15,16 @@ Barrel attachments inherit properties from the CaliberAsset class, which in turn
 .. list-table::
    :widths: 30 40 30
    :header-rows: 1
-   
+
    * - Class
      - Property Name
      - Required Value
    * - :ref:`ItemAsset <doc_item_asset_intro>`
      - :ref:`GUID <doc_item_asset_intro:guid>`
-     - 
+     -
    * - :ref:`ItemAsset <doc_item_asset_intro>`
      - :ref:`ID <doc_item_asset_intro:id>`
-     - 
+     -
    * - :ref:`ItemAsset <doc_item_asset_intro>`
      - :ref:`Type <doc_item_asset_intro:type>`
      - ``Barrel``
@@ -35,16 +35,13 @@ Properties
 .. list-table::
    :widths: 40 40 20
    :header-rows: 1
-   
+
    * - Property Name
      - Type
      - Default Value
-   * - :ref:`Ballistic_Drop <doc_item_asset_barrel:ballistic_drop>`
-     - :ref:`float32 <doc_data_builtin_types>`
-     - ``1``
    * - :ref:`Braked <doc_item_asset_barrel:braked>`
      - :ref:`flag <doc_data_flag>`
-     - 
+     -
    * - :ref:`Durability <doc_item_asset_barrel:durability>`
      - :ref:`uint8 <doc_data_builtin_types>`
      - ``0``
@@ -53,7 +50,7 @@ Properties
      - See description
    * - :ref:`Silenced <doc_item_asset_barrel:silenced>`
      - :ref:`flag <doc_data_flag>`
-     - 
+     -
    * - :ref:`Volume <doc_item_asset_barrel:volume>`
      - :ref:`float32 <doc_data_builtin_types>`
      - ``1``
@@ -66,7 +63,7 @@ Property Descriptions
 Ballistic_Drop :ref:`float32 <doc_data_builtin_types>` ``1``
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Gravity acceleration multiplier for bullets in flight.
+.. note:: Moved to :ref:`Caliber Asset <doc_item_asset_caliber:ballistic_drop>`.
 
 ----
 

@@ -16,7 +16,7 @@ Properties
 .. list-table::
    :widths: 40 40 20
    :header-rows: 1
-   
+
    * - Property Name
      - Type
      - Default Value
@@ -32,6 +32,9 @@ Properties
    * - :ref:`Ballistic_Damage_Multiplier <doc_item_asset_caliber:ballistic_damage_multiplier>`
      - :ref:`float32 <doc_data_builtin_types>`
      - See description
+   * - :ref:`Ballistic_Drop <doc_item_asset_caliber:ballistic_drop>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``1``
    * - :ref:`Calibers <doc_item_asset_caliber:calibers>`
      - :ref:`uint8 <doc_data_builtin_types>`
      - ``0``
@@ -108,6 +111,15 @@ Ballistic_Damage_Multiplier :ref:`float32 <doc_data_builtin_types>`
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Multiplier on damage. Defaults to the value of the ``Damage`` property, or ``1`` if both properties are unset.
+
+----
+
+.. _doc_item_asset_caliber:ballistic_drop:
+
+Ballistic_Drop :ref:`float32 <doc_data_builtin_types>` ``1``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Gravity acceleration multiplier for bullets in flight.
 
 ----
 
