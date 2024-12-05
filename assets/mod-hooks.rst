@@ -35,6 +35,13 @@ Destroy Event Hook
 
 Event when a component or game object is removed from the scene.
 
+Explosion Spawner
+`````````````````
+
+Allows Unity events to apply damage in a sphere. (doesn't have any visual effects)
+
+Intended to replace unsupported/unintentional use of ``Grenade.cs`` and ``Rocket.cs`` scripts.
+
 .. _doc_assets_mod_hooks:iobs_event_hook:
 
 Interactable Object Binary State Event Hook (IOBS)
