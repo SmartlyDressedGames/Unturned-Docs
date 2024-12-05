@@ -135,6 +135,8 @@ Interactables
 
 **Interactability_Nav** *enum* (``None``, ``On``, ``Off``): When using ``Binary_State``, controls how on/off state affects ``Nav`` game object. Defaults to ``None`` which doesn't affect Nav. ``On`` activates Nav when object is in the on state and deactivates in the off state. (``Off`` does the opposite.)
 
+.. note:: When ``Interactability_Nav`` is combined with ``Rubble_Nav_Mode``, the Nav game object is only active if **both** activate it. (i.e., AND)
+
 **Interactability_Power** *enum* (``None``, ``Toggle``, ``Stay``): Whether or not this object must be powered to be usable. When set to ``None``, this object cannot be powered. When set to ``Toggle``, the object must be powered to be interacted with. When set to ``Stay``, the object must be powered to remain on. For example, a door might use ``Toggle`` if it should remain open after it loses power, while a streetlight might use ``Stay`` so that the light turns off when it loses power. Defaults to ``None``.
 
 **Interactability_Proof_Explosion** *flag*: Immune to area-of-effect explosive damage, when using ``Interactability Rubble``.
@@ -175,6 +177,10 @@ Rubble
 **Rubble_Health** *uint16*: Total amount of health each section of the object has. Defaults to 0.
 
 **Rubble_Invulnerable** *flag*: This resource cannot be damaged by lower-power :ref:`doc_item_asset_weapon` that do not have the ``Invulnerable`` flag.
+
+**Rubble_Nav_Mode** *enum* (``Unaffected``, ``DeactivateIfAllDead``): Defaults to ``Unaffected``. ``DeactivateIfAllDead`` deactivates the Nav game object when all rubble sections are destroyed, but keeps it active otherwise.
+
+.. note:: When ``Rubble_Nav_Mode`` is combined with ``Interactability_Nav``, the Nav game object is only active if **both** activate it. (i.e., AND)
 
 **Rubble_Proof_Explosion** *flag*: Immune to area-of-effect explosive damage.
 
