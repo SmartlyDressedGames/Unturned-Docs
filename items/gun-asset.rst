@@ -135,6 +135,9 @@ Ranged weapons have a significant number of properties. To make navigating these
    * - :ref:`Scale_Aim_Animation_Speed <doc_item_asset_gun:scale_aim_animation_speed>`
      - :ref:`bool <doc_data_builtin_types>`
      - ``true``
+   * - :ref:`DriverTurretViewmodelMode <doc_item_asset_gun:driverturretviewmodelmode>`
+     - :ref:`EDriverTurretViewmodelMode <doc_item_asset_gun:edriverturretviewmodelmode>`
+     - ``OffscreenWhileAiming``
 
 .. list-table:: Calibers
    :widths: 40 40 20
@@ -502,6 +505,24 @@ EAction Enumeration
      - Corresponds to the "Rocket" action. Uses the physics projectile system.
    * - ``Minigun``
      - Corresponds to the "Minigun" action. Uses the ballistic projectile system.
+
+.. _doc_item_asset_gun:edriverturretviewmodelmode:
+
+EDriverTurretViewmodelMode Enumeration
+``````````````````````````````````````
+
+.. list-table::
+   :widths: 25 75
+   :header-rows: 1
+
+   * - Named Value
+     - Description
+   * - ``OffscreenWhileAiming``
+     - Default. Pushes first-person arms off-screen while aiming. Originally implemented for the Fighter Jet where it looks weird if your arms are still visible when the camera zooms in while "aiming."
+   * - ``AlwaysOffscreen``
+     - Push first-person arms off-screen when equipped.
+   * - ``AlwaysOnscreen``
+     - Included for completeness.
 
 Property Descriptions
 `````````````````````
@@ -1346,6 +1367,15 @@ Turret :ref:`flag <doc_data_flag>`
 :::::::::::::::::::::::::::::::::::::::::::
 
 This weapon should be treated as a vehicular turret. This flag affects the player's first-person viewmodel while the weapon is held.
+
+----
+
+.. _doc_item_asset_gun:driverturretviewmodelmode:
+
+DriverTurretViewmodelMode :ref:`EDriverTurretViewmodelMode <doc_item_asset_gun:edriverturretviewmodelmode>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Controls how first-person arms are moved for turrets operated from the driver's seat.
 
 ----
 
