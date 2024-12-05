@@ -109,6 +109,8 @@ Interactables
 	Although ``Interactability`` properties can be used to create a destructible object, it is preferable to use ``Rubble`` properties as they are more specific. This allows for creating destructible objects that are also interactable.
 
 
+**Interactability_Animation_Component_Path** *string*: (``Binary_State``-only) Transform path relative to object root with Animation component. Defaults to "Root".
+
 **Interactability_Blade_ID** *byte*: When using ``Interactability Rubble``, weapons are unable to damage this object unless they have a matching ``BladeID_#`` value. Defaults to 0.
 
 **Interactability_Delay** *float*: In seconds, the cooldown before the object can be interacted with again.
