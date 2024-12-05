@@ -8,7 +8,7 @@ Items in *Unturned* encompass anything that can be carried in a player's in-game
 Unity Asset Bundle Contents
 ---------------------------
 
-.. figure:: /assets/img/UnityExampleItem.png
+.. figure:: /img/UnityExampleItem.png
 
 	An example of an item being set up in the Unity editor.
 
