@@ -90,6 +90,8 @@ Some of the launch options are primarily intended for use with the Unturned Dedi
 
 **-ui_scale**: UI scale override. A common usage is to set UI scale back to its default scaling, with ``-ui_scale 1``.
 
+**-UnredactedLogs**: By default, player IPs in BattlEye's logging and the public IP for Workshop downloads are redacted. This option turns that off.
+
 **-UseLevelBatching** *bool*: Overrides whether level batching can be enabled. Per-level support for level batching is still required. For example ``-UseLevelBatching=false`` disables it. Please refer to :ref:`Level Batching <doc_mapping_batching>` for more details.
 
 **-ValidateAssets**: Perform :ref:`additional health checks <doc_asset_validation>` on assets during start-up.
