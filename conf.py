@@ -20,7 +20,6 @@ extensions = [
     'sphinx.ext.duration',
     'sphinx.ext.doctest',
     'sphinx.ext.autodoc',
-    'sphinx.ext.autosectionlabel', # Create explicit targets for all sections in the form of {path/to/page}:{title-of-section}
     'sphinx.ext.autosummary',
     'sphinx_copybutton',
     'sphinx.ext.intersphinx',
@@ -34,8 +33,6 @@ extensions = [
 exclude_patterns = [
     '.venv/*' # Contains installed packages which may have rst files we don't want included in source files.
 ]
-
-autosectionlabel_prefix_document = True # make sure explicit target is unique
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
