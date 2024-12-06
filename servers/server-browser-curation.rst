@@ -5,9 +5,11 @@ Server Browser Curation
 
 .. note:: We'll go into more detail on the *why* behind this feature in a blog post.
 
-This feature allows anyone to create and share lists of "rules" that filter or label servers in the server browser. Lists can be shared through the Steam Workshop as (asset doc link), or automatically downloaded from a URL on the Internet.
+This feature allows anyone to create and share lists of "rules" that filter or label servers in the server browser. Lists can be shared through the Steam Workshop as :ref:`Server Browser Curation Assets <doc_asset_server_browser_curation>`, or automatically downloaded from a URL on the Internet.
 
 If you're a server host, suppose you want to prevent bad actors from copying your server details. Your first rule would ``Allow`` your genuine servers, for example, matching by ``ServerID`` ("server code"). Your second rule could then ``Deny`` servers with a regex that matches your server network's branding.
+
+- :ref:`Examples <doc_server_browser_curation:examples>`
 
 Properties
 ----------
@@ -101,3 +103,46 @@ IPv4 address with optional subnet mask and optional port number or range. Here's
 **Value** *uint64* or **Values** *list of uint64*: The rule matches if any of the Steam IDs match the server's Steam ID. (binary OR)
 
 From the server console you can copy the server ID with "CopyServerCode". From the in-game server lobby screen you can copy it to the clipboard by pressing PageDown.
+
+.. _doc_server_browser_curation:examples:
+
+Examples
+--------
+
+Here's a hypothetical verification list for the "NelsonNet" network:
+
+.. code-block:: unturneddat
+	:linenos:
+
+	Name NelsonNet Verification Example
+	IconURL https://cdn.smartlydressedgames.com/ShareX/2024/12/ExampleIcon.png
+
+	Labels
+	[
+		{
+			Name Verified
+			Text <color=#708fbd>NelsonNet Official</color>
+		}
+	]
+
+	Rules
+	[
+		{
+			Action Allow
+			Description Verify NelsonNet's Steam IDs
+			Label Verified
+			Type ServerID
+			Values
+			[
+				85568392932910946
+			]
+		}
+		{
+			Action Deny
+			Description Hide fake NelsonNet servers (case-insensitive check for "NelsonNet" in the name)
+			Type Name
+			Regex (?i)(NelsonNet)
+		}
+	]
+
+For an example of adding a curator by web URL, here's the link for that list: ``https://cdn.smartlydressedgames.com/ShareX/2024/12/ExampleCurationList.txt``
