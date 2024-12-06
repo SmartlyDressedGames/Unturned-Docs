@@ -72,6 +72,9 @@ Properties
    * - :ref:`Crawler <doc_assets_vehicle:crawler>`
      - :ref:`flag <doc_data_flag>`
      - *deprecated*
+   * - :ref:`CrawlerTrackTilingMaterials <doc_assets_vehicle:crawlertracktilingmaterials>`
+     - :ref:`list of CrawlerTrackTilingMaterial <doc_assets_vehicle:crawlertracktilingmaterial_dictionary>`
+     -
    * - :ref:`Drops_Max <doc_assets_vehicle:drops_max>`
      - :ref:`uint8 <doc_data_builtin_types>`
      - ``7``
@@ -168,6 +171,15 @@ Properties
      - :ref:`vector3 <doc_data_vector3>`
      -
    * - :ref:`Carjack_Force_Multiplier <doc_assets_vehicle:carjack_force_multiplier>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``1.0``
+   * - :ref:`CrawlerTrackSteering_Torque <doc_assets_vehicle:crawlertracksteering_torque>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0.0``
+   * - :ref:`CrawlerTrackSteering_SidewaysFrictionMultiplier <doc_assets_vehicle:crawlertracksteering_sidewaysfrictionmultiplier>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``1.0``
+   * - :ref:`CrawlerTrackSteering_MaxSpeedScale <doc_assets_vehicle:crawlertracksteering_maxspeedscale>`
      - :ref:`float32 <doc_data_builtin_types>`
      - ``1.0``
    * - :ref:`Engine_Force_Multiplier <doc_assets_vehicle:engine_force_multiplier>`
@@ -600,6 +612,70 @@ EVehicleEngineSoundType Enumeration
    * - ``EngineRPMSimple``
      - Set pitch and volume of a single clip according to engine RPM.
 
+.. _doc_assets_vehicle:ewheelsteeringmode:
+
+EWheelSteeringMode Enumeration
+``````````````````````````````
+
+.. list-table::
+   :widths: 25 75
+   :header-rows: 1
+
+   * - Named Value
+     - Description
+   * - ``None``
+     - Wheel does not affect steering.
+   * - ``SteeringAngle``
+     - Set WheelCollider steering angle according to Steer_Min and Steer_Max.
+   * - ``CrawlerTrack``
+     - Increase or decrease motor torque to rotate vehicle in-place.
+
+.. _doc_assets_vehicle:ecrawlertrackforwardmode:
+
+ECrawlerTrackForwardMode Enumeration
+````````````````````````````````````
+
+.. list-table::
+   :widths: 25 75
+   :header-rows: 1
+
+   * - Named Value
+     - Description
+   * - ``Auto``
+     - Assigns a forward mode based on wheel collider position. Wheels on the left side are ``Clockwise`` and wheels on the right side are ``CounterClockwise``.
+   * - ``Clockwise``
+     - Positive motor torque on this wheel rotates the vehicle clockwise.
+   * - ``CounterClockwise``
+     - Positive motor torque on this wheel rotates the vehicle counter-clockwise.
+
+.. _doc_assets_vehicle:crawlertracktilingmaterial_dictionary:
+
+CrawlerTrackTilingMaterial Dictionary
+`````````````````````````````````````
+
+.. list-table::
+   :widths: 40 40 20
+   :header-rows: 1
+
+   * - Property Name
+     - Type
+     - Default Value
+   * - :ref:`Path <doc_assets_vehicle:crawlertracktilingmaterial_path>`
+     - :ref:`string <doc_data_builtin_types>`
+     -
+   * - :ref:`MaterialIndex <doc_assets_vehicle:crawlertracktilingmaterial_materialindex>`
+     - :ref:`int32 <doc_data_builtin_types>`
+     - ``0``
+   * - :ref:`WheelIndices <doc_assets_vehicle:crawlertracktilingmaterial_wheelindices>`
+     - :ref:`list of int32 <doc_data_builtin_types>`
+     -
+   * - :ref:`RepeatDistance <doc_assets_vehicle:crawlertracktilingmaterial_repeatdistance>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0.0``
+   * - :ref:`UV_Direction <doc_assets_vehicle:crawlertracktilingmaterial_uv_direction>`
+     - :ref:`Vector2 <doc_data_builtin_types>`
+     - ``(0.0, 0.0)``
+
 .. _doc_assets_vehicle:paintablevehiclesection_dictionary:
 
 PaintableVehicleSection Dictionary
@@ -687,25 +763,37 @@ VehicleWheelConfiguration Dictionary
    * - :ref:`CopyColliderRpmIndex <doc_assets_vehicle:wheelconfiguration_copycolliderrpmindex>`
      - :ref:`int32 <doc_data_builtin_types>`
      - ``-1``
-   * - :ref:`IsColliderPowered <doc_assets_vehicle:vehiclewheelconfiguration_iscolliderpowered>`
+   * - :ref:`CrawlerTrackForwardMode <doc_assets_vehicle:wheelconfiguration_crawlertrackforwardmode>`
+     - :ref:`doc_assets_vehicle:ecrawlertrackforwardmode`
+     - ``Auto``
+   * - :ref:`IsColliderPowered <doc_assets_vehicle:wheelconfiguration_iscolliderpowered>`
      - :ref:`bool <doc_data_builtin_types>`
      - ``false``
-   * - :ref:`IsColliderSteered <doc_assets_vehicle:vehiclewheelconfiguration_iscollidersteered>`
+   * - :ref:`IsModelSteered <doc_assets_vehicle:wheelconfiguration_ismodelsteered>`
      - :ref:`bool <doc_data_builtin_types>`
      - ``false``
-   * - :ref:`IsModelSteered <doc_assets_vehicle:vehiclewheelconfiguration_ismodelsteered>`
-     - :ref:`bool <doc_data_builtin_types>`
-     - ``false``
-   * - :ref:`ModelPath <doc_assets_vehicle:vehiclewheelconfiguration_modelpath>`
+   * - :ref:`ModelPath <doc_assets_vehicle:wheelconfiguration_modelpath>`
      - :ref:`string <doc_data_builtin_types>`
      -
    * - :ref:`ModelRadius <doc_assets_vehicle:wheelconfiguration_modelradius>`
      - :ref:`float32 <doc_data_builtin_types>`
      - ``-1.0``
-   * - :ref:`ModelUseColliderPose <doc_assets_vehicle:vehiclewheelconfiguration_modelusecolliderpose>`
+   * - :ref:`ModelSuspensionOffset <doc_assets_vehicle:wheelconfiguration_modelsuspensionoffset>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0.0``
+   * - :ref:`ModelSuspensionSpeed <doc_assets_vehicle:wheelconfiguration_modelsuspensionspeed>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``-1.0``
+   * - :ref:`ModelUseColliderPose <doc_assets_vehicle:wheelconfiguration_modelusecolliderpose>`
      - :ref:`bool <doc_data_builtin_types>`
      - ``false``
-   * - :ref:`WheelColliderPath <doc_assets_vehicle:vehiclewheelconfiguration_wheelcolliderpath>`
+   * - :ref:`SteeringAngleMultiplier <doc_assets_vehicle:wheelconfiguration_steeringanglemultiplier>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``1.0``
+   * - :ref:`SteeringMode <doc_assets_vehicle:wheelconfiguration_steeringmode>`
+     - :ref:`doc_assets_vehicle:ewheelsteeringmode`
+     - ``None``
+   * - :ref:`WheelColliderPath <doc_assets_vehicle:wheelconfiguration_wheelcolliderpath>`
      - :ref:`string <doc_data_builtin_types>`
      -
 
@@ -961,6 +1049,44 @@ The mass of official vehicles may be revisited in the future, to make collisions
 
 ----
 
+.. _doc_assets_vehicle:crawlertracksteering_torque:
+
+CrawlerTrackSteering_Torque :ref:`float32 <doc_data_builtin_types>` ``1.0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Added or subtracted from wheel motor torque in ``CrawlerTrack`` mode.
+
+For example, if the vehicle is attempting to turn left and the wheel's ``CrawlerTrackForwardMode`` is ``Clockwise`` this value is subtracted from the motor torque.
+
+----
+
+.. _doc_assets_vehicle:crawlertracksteering_sidewaysfrictionmultiplier:
+
+CrawlerTrackSteering_SidewaysFrictionMultiplier :ref:`float32 <doc_data_builtin_types>` ``1.0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+For a wheel in ``CrawlerTrack`` mode, the wheel collider's sideways friction stiffness is multiplied by this value while a steering input is applied. Potentially useful when turning in place to overcome the sideways friction.
+
+----
+
+.. _doc_assets_vehicle:crawlertracksteering_maxspeedscale:
+
+CrawlerTrackSteering_MaxSpeedScale :ref:`float32 <doc_data_builtin_types>` ``1.0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Multiplier for crawler track steering torque and sideways friction multiplier while driving at maximum speed, similar to how steering angle is reduced at maximum speed (``Steer_Max``). Useful to keep the steering controllable while driving.
+
+----
+
+.. _doc_assets_vehicle:crawlertracktilingmaterials:
+
+CrawlerTrackTilingMaterials :ref:`list of CrawlerTrackTilingMaterial <doc_assets_vehicle:crawlertracktilingmaterial_dictionary>`
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If set, offsets a crawler track's material UVs in sync with wheels rolling.
+
+----
+
 .. _doc_assets_vehicle:center_of_mass:
 
 Center_Of_Mass :ref:`vector3 <doc_data_vector3>`
@@ -1127,7 +1253,7 @@ Multiplier for the amount of torque provided to the wheels. Understanding how en
 #. If changing gears, torque is zero.
 #. If reversing, torque is multiplied by :ref:`ReverseGearRatio <doc_assets_vehicle:reversegearratio>`.
 #. Otherwise, torque is multiplied by the active :ref:`ForwardGearRatio <doc_assets_vehicle:forwardgearratios>`.
-#. Each :ref:`Powered Wheel <doc_assets_vehicle:vehiclewheelconfiguration_iscolliderpowered>` gets an equal share of the torque. To clarify, the per-wheel torque is equal to the engine output torque divided by the number of powered wheels.
+#. Each :ref:`Powered Wheel <doc_assets_vehicle:wheelconfiguration_iscolliderpowered>` gets an equal share of the torque. To clarify, the per-wheel torque is equal to the engine output torque divided by the number of powered wheels.
 
 ----
 
@@ -2037,6 +2163,60 @@ Zip :ref:`flag <doc_data_flag>`
 
 Player character should use a handlebar idle animation.
 
+----
+
+CrawlerTrackTilingMaterial Dictionary Descriptions
+```````````````````````````````````````````````````
+
+.. _doc_assets_vehicle:crawlertracktilingmaterial_path:
+
+Path :ref:`string <doc_data_builtin_types>`
+:::::::::::::::::::::::::::::::::::::::::::
+
+Scene hierarchy path to a Renderer component relative to the vehicle's root transform.
+
+----
+
+.. _doc_assets_vehicle:crawlertracktilingmaterial_materialindex:
+
+MaterialIndex :ref:`int32 <doc_data_builtin_types>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Index into Renderer component's Materials list. For example, ``0`` is the 1st material, ``1`` is the 2nd material, and so forth.
+
+----
+
+.. _doc_assets_vehicle:crawlertracktilingmaterial_wheelindices:
+
+WheelIndices :ref:`list of int32 <doc_data_builtin_types>`
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Index into wheel configurations list. For example, ``0`` is the 1st wheel, ``1`` is the 2nd wheel, and so forth.
+
+The average of these wheels' RPM is used to calculate how fast crawler track is moving.
+
+----
+
+.. _doc_assets_vehicle:crawlertracktilingmaterial_repeatdistance:
+
+RepeatDistance :ref:`float32 <doc_data_builtin_types>`
+::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+How far to travel to offset UV 1x.
+
+You can calculate RepeatDistance by selecting an edge parallel to the crawler track and dividing the UV distance by the physical 3D distance. For example, if the UV length is 2 and the 3D length is 1.5 m then the texture repeats 1.33 UV/m.
+
+----
+
+.. _doc_assets_vehicle:crawlertracktilingmaterial_uv_direction:
+
+UV_Direction :ref:`Vector2 <doc_data_builtin_types>`
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+For example, ``(-1.0, 0.0)`` will move the UV offset left as the vehicle travels forward.
+
+----
+
 PaintableVehicleSection Dictionary Descriptions
 ```````````````````````````````````````````````
 
@@ -2151,7 +2331,16 @@ If set, visual-only wheels without a collider (like the back wheels of the snowm
 
 ----
 
-.. _doc_assets_vehicle:vehiclewheelconfiguration_iscolliderpowered:
+.. _doc_assets_vehicle:wheelconfiguration_crawlertrackforwardmode:
+
+CrawlerTrackForwardMode :ref:`ECrawlerTrackForwardMode <doc_assets_vehicle:ecrawlertrackforwardmode>` ``Auto``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+For ``CrawlerTrack`` ``SteeringMode``, indicates how a positive motor torque (forward) rotates the vehicle.
+
+----
+
+.. _doc_assets_vehicle:wheelconfiguration_iscolliderpowered:
 
 IsColliderPowered :ref:`bool <doc_data_builtin_types>` ``false``
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -2160,16 +2349,19 @@ If ``true``, collider is connected to the engine and responds to player's accele
 
 ----
 
-.. _doc_assets_vehicle:vehiclewheelconfiguration_iscollidersteered:
+.. _doc_assets_vehicle:wheelconfiguration_iscollidersteered:
 
 IsColliderSteered :ref:`bool <doc_data_builtin_types>` ``false``
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 If ``true``, collider's steering angle responds to player input.
 
+.. deprecated:: 3.23.7.0
+	Replaced by the ``SteeringMode`` property.
+
 ----
 
-.. _doc_assets_vehicle:vehiclewheelconfiguration_ismodelsteered:
+.. _doc_assets_vehicle:wheelconfiguration_ismodelsteered:
 
 IsModelSteered :ref:`bool <doc_data_builtin_types>` ``false``
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -2180,7 +2372,7 @@ Only kept for backwards compatibility. Prior to wheel configurations, only certa
 
 ----
 
-.. _doc_assets_vehicle:vehiclewheelconfiguration_modelpath:
+.. _doc_assets_vehicle:wheelconfiguration_modelpath:
 
 ModelPath :ref:`string <doc_data_builtin_types>`
 ::::::::::::::::::::::::::::::::::::::::::::::::
@@ -2198,7 +2390,7 @@ If greater than zero, visual-only wheels (without a collider) like the extra whe
 
 ----
 
-.. _doc_assets_vehicle:vehiclewheelconfiguration_modelusecolliderpose:
+.. _doc_assets_vehicle:wheelconfiguration_modelusecolliderpose:
 
 ModelUseColliderPose :ref:`bool <doc_data_builtin_types>` ``false``
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -2209,7 +2401,43 @@ Prior to wheel configurations, some high-fidely modded cars used a separate set 
 
 ----
 
-.. _doc_assets_vehicle:vehiclewheelconfiguration_wheelcolliderpath:
+.. _doc_assets_vehicle:wheelconfiguration_modelsuspensionoffset:
+
+ModelSuspensionOffset :ref:`float <doc_data_builtin_types>` ``0.0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Vertical offset of model from simulated suspension position. Used by crawler tracks because the visual wheel rests on the tread above the physics wheel.
+
+----
+
+.. _doc_assets_vehicle:wheelconfiguration_modelsuspensionspeed:
+
+ModelSuspensionSpeed :ref:`float <doc_data_builtin_types>` ``-1.0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+How quickly to interpolate model toward suspension position in meters per second. If negative, position teleports immediately.
+
+----
+
+.. _doc_assets_vehicle:wheelconfiguration_steeringanglemultiplier:
+
+SteeringAngleMultiplier :ref:`float <doc_data_builtin_types>` ``1.0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Target steering angle is multiplied by this value. For example, can be set to a negative number for rear-wheel steering.
+
+----
+
+.. _doc_assets_vehicle:wheelconfiguration_steeringmode:
+
+SteeringMode :ref:`EWheelSteeringMode <doc_assets_vehicle:ewheelsteeringmode>` ``Auto``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Controls whether wheel contributes to steering and if so, which kind of steering to simulate.
+
+----
+
+.. _doc_assets_vehicle:wheelconfiguration_wheelcolliderpath:
 
 WheelColliderPath :ref:`string <doc_data_builtin_types>`
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
