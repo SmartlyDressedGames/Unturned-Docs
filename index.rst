@@ -84,6 +84,7 @@ Unturned Documentation
 	assets/physics-material-asset
 	assets/redirector-asset
 	assets/resource-asset
+	assets/server-browser-curation-asset
 	assets/spawn-asset
 	assets/stereo-song-asset
 	assets/vehicle-asset
@@ -121,6 +122,7 @@ Unturned Documentation
 	servers/port-forwarding
 	servers/rocket
 	servers/server-auto-restart
+	servers/server-browser-curation
 	servers/server-codes
 	servers/server-hosting
 	servers/server-hosting-rules
