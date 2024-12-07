@@ -780,6 +780,9 @@ VehicleWheelConfiguration Dictionary
    * - Property Name
      - Type
      - Default Value
+   * - :ref:`CanExplode <doc_assets_vehicle:wheelconfiguration_canexplode>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``true``
    * - :ref:`CopyColliderRpmIndex <doc_assets_vehicle:wheelconfiguration_copycolliderrpmindex>`
      - :ref:`int32 <doc_data_builtin_types>`
      - ``-1``
@@ -2344,6 +2347,15 @@ GrayscaleChance :ref:`float32 <doc_data_builtin_types>` ``0.0``
 
 VehicleWheelConfiguration Dictionary Descriptions
 `````````````````````````````````````````````````
+
+.. _doc_assets_vehicle:wheelconfiguration_canexplode:
+
+CanExplode :ref:`bool <doc_data_builtin_types>` ``true``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If true, wheel should fly off when vehicle explodes. Defaults to true. Used to simplify destroying vehicles with crawler tracks.
+
+----
 
 .. _doc_assets_vehicle:wheelconfiguration_copycolliderrpmindex:
 
