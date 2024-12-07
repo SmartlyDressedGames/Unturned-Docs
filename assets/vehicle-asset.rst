@@ -456,6 +456,9 @@ Properties
    * - :ref:`Explosion <doc_assets_vehicle:explosion>`
      - :ref:`GUID <doc_data_guid>` or :ref:`uint16 <doc_data_builtin_types>`
      -
+   * - :ref:`ExplosionBurnMaterialSections <doc_assets_vehicle:explosionburnmaterialsections>`
+     - :ref:`list of PaintableVehicleSection <doc_assets_vehicle:paintablevehiclesection_dictionary>`
+     -
    * - :ref:`Explosion_Force_Multiplier <doc_assets_vehicle:explosion_force_multiplier>`
      - :ref:`float32 <doc_data_builtin_types>`
      - ``1.0``
@@ -714,6 +717,9 @@ PaintableVehicleSection Dictionary
    * - :ref:`MaterialIndex <doc_assets_vehicle:paintablevehiclesection_materialindex>`
      - :ref:`int32 <doc_data_builtin_types>`
      - ``0``
+   * - :ref:`AllMaterials <doc_assets_vehicle:paintablevehiclesection_allmaterials>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``false``
 
 .. _doc_assets_vehicle:rpmenginesoundconfiguration_dictionary:
 
@@ -1778,6 +1784,17 @@ When ``true``, the materials of the vehicle's ``Model_#`` GameObjects will be ti
 
 ----
 
+.. _doc_assets_vehicle:explosionburnmaterialsections:
+
+ExplosionBurnMaterialSections :ref:`list of PaintableVehicleSection <doc_assets_vehicle:paintablevehiclesection_dictionary>`
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Only used if ``ShouldExplosionBurnMaterials`` is ``true``.
+
+If set, manually specifies which materials should be darkened after an explosion.
+
+----
+
 .. _doc_assets_vehicle:shouldexplosioncausedamage:
 
 ShouldExplosionCauseDamage :ref:`bool <doc_data_builtin_types>`
@@ -2261,6 +2278,15 @@ MaterialIndex :ref:`int32 <doc_data_builtin_types>` ``0``
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Index into Renderer component's Materials list. For example, ``0`` is the 1st material, ``1`` is the 2nd material, and so forth.
+
+----
+
+.. _doc_assets_vehicle:paintablevehiclesection_allmaterials:
+
+AllMaterials :ref:`bool <doc_data_builtin_types>` ``false``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If true, apply to all materials in Renderer component's Materials list, rather than a specific index.
 
 RpmEngineSoundConfiguration Dictionary Descriptions
 ```````````````````````````````````````````````````
