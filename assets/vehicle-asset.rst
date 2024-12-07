@@ -612,6 +612,26 @@ EVehicleEngineSoundType Enumeration
    * - ``EngineRPMSimple``
      - Set pitch and volume of a single clip according to engine RPM.
 
+.. _doc_assets_vehicle:ewheelmotioneffectsmode:
+
+EWheelMotionEffectsMode Enumeration
+```````````````````````````````````
+
+.. list-table::
+   :widths: 25 75
+   :header-rows: 1
+
+   * - Named Value
+     - Description
+   * - ``None``
+     - Turn off motion effects. Default for wheels not using collider pose.
+   * - ``BothDirections``
+     - Enable motion effects. Default for wheels using collider pose.
+   * - ``ForwardOnly``
+     - Enable motion effects, but turn them off while moving backward.
+   * - ``BackwardOnly``
+     - Enable motion effects, but turn them off while moving forward.
+
 .. _doc_assets_vehicle:ewheelsteeringmode:
 
 EWheelSteeringMode Enumeration
@@ -787,6 +807,9 @@ VehicleWheelConfiguration Dictionary
    * - :ref:`ModelUseColliderPose <doc_assets_vehicle:wheelconfiguration_modelusecolliderpose>`
      - :ref:`bool <doc_data_builtin_types>`
      - ``false``
+   * - :ref:`MotionEffects <doc_assets_vehicle:wheelconfiguration_motioneffects>`
+     - :ref:`doc_assets_vehicle:ewheelmotioneffectsmode`
+     - See description
    * - :ref:`SteeringAngleMultiplier <doc_assets_vehicle:wheelconfiguration_steeringanglemultiplier>`
      - :ref:`float32 <doc_data_builtin_types>`
      - ``1.0``
@@ -2416,6 +2439,17 @@ ModelSuspensionSpeed :ref:`float <doc_data_builtin_types>` ``-1.0``
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 How quickly to interpolate model toward suspension position in meters per second. If negative, position teleports immediately.
+
+----
+
+.. _doc_assets_vehicle:wheelconfiguration_motioneffects:
+
+MotionEffects :ref:`EWheelMotionEffectsMode <doc_assets_vehicle:ewheelmotioneffectsmode>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Controls whether wheel creates particle kickup effects for the ground surface material underneath.
+
+Defaults to ``BothDirections`` if ``ModelUseColliderPose`` is true, ``None`` otherwise.
 
 ----
 
