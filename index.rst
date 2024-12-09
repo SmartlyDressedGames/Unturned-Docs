@@ -46,6 +46,15 @@ Unturned Documentation
 .. toctree::
 	:hidden:
 	:maxdepth: 1
+	:caption: Creating Vehicles
+
+	assets/vehicle-asset
+	assets/vehicle-physics-profile-asset
+	assets/vehicle-redirector-asset
+
+.. toctree::
+	:hidden:
+	:maxdepth: 1
 	:caption: Creating Objects
 	:glob:
 
@@ -87,9 +96,6 @@ Unturned Documentation
 	assets/server-browser-curation-asset
 	assets/spawn-asset
 	assets/stereo-song-asset
-	assets/vehicle-asset
-	assets/vehicle-physics-profile-asset
-	assets/vehicle-redirector-asset
 	assets/weather-asset
 	assets/zombie-difficulty-asset
 
