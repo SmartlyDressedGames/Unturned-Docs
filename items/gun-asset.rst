@@ -668,7 +668,7 @@ Ballistic_Drop :ref:`float32 <doc_data_builtin_types>`
 .. deprecated:: 3.23.7.0
    Use ``Bullet_Gravity_Multiplier`` instead.
 
-Existing values are automatically converted if ``Bullet_Gravity_Multiplier`` has not been configured. The conversion is logged during :ref:`doc_asset_validation`.
+Existing values are automatically converted if ``Bullet_Gravity_Multiplier`` has not been configured. Running the game with the ``-LogBallisticDropConversion`` :ref:`launch option <doc_launch_options>` will log the equivalent ``Bullet_Gravity_Multiplier`` value.
 
 ----
 
