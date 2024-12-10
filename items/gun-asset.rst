@@ -1312,7 +1312,7 @@ Spread_Hip :ref:`float32 <doc_data_builtin_types>`
 .. deprecated:: 3.22.20.0
    Use ``Spread_Angle_Degrees`` instead.
 
-Maintained for backwards compatibility. Running the game with the ``-ValidateAssets`` :ref:`launch option <doc_launch_options>` will log the equivalent ``Spread_Angle_Degrees`` value.
+Maintained for backwards compatibility. Running the game with the ``-LogGunSpreadConversion`` :ref:`launch option <doc_launch_options>` will log the equivalent ``Spread_Angle_Degrees`` value.
 
 ----
 
