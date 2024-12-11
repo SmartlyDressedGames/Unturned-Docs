@@ -38,6 +38,8 @@ Resource Properties
 
 **Holiday_Restriction** *enum* (:ref:`doc_data_enpcholiday`): If a valid value is specified, then this resource will only be visible during the corresponding holiday. The specified holiday will be appended to the resource's user-friendly name. Defaults to ``None``.
 
+**Ignore_Collision_Between_Stump_And_Debris** *bool*: If true, prevent collisions between falling tree and the stump. (i.e., debris can fall through stump) Defaults to true.
+
 **Log** *uint16*: ID of an item that should be dropped when the resource is destroyed. Before multipliers, this item is dropped in bunches of 3 to 7. Defaults to 0. Deprecated in favor of ``Reward_ID``.
 
 **No_Debris** *flag*: This resource does not have debris that should appear when it has been destroyed.
