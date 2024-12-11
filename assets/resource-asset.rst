@@ -22,6 +22,8 @@ Resource Properties
 
 **Christmas_Redirect** :ref:`doc_data_guid`: GUID of the resource that should appear during the Festive holiday.
 
+**Debris_Vertical_Offset** *float*:  Distance along tree's local up axis to offset debris spawn position. Defaults to 1.0.
+
 **Exclude_From_Level_Batching** *bool*: Exclude this resource from :ref:`level batching <doc_mapping_batching>`. This property may be helpful when using elaborate setups with Unity Event components. Defaults to true when the ``SpeedTree`` flag is set.
 
 **Explosion** :ref:`GUID <doc_data_guid>` or *uint16*: GUID or legacy ID of :ref:`EffectAsset <doc_assets_effect>` to play when destroyed.
