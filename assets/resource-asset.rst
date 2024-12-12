@@ -44,6 +44,14 @@ Resource Properties
 
 **No_Debris** *flag*: This resource does not have debris that should appear when it has been destroyed.
 
+**RandomAngleDeviation_Max** *float*: Maximum angle in degrees away from the up direction. Defaults to 5.
+
+**RandomAngleDeviation_Min** *float*: Minimum angle in degrees away from the up direction. For example, can be set to 0 to allow the tree to be perfectly upright, or a higher value to prevent the tree from ever being upright. Defaults to 5.
+
+**RandomUniformScale_Max** *float*: Maximum scale. The same randomized value is used for all axes (uniform). Defaults to 1.1 for backwards compatibility.
+
+**RandomUniformScale_Min** *float*: Minimum scale. The same randomized value is used for all axes (uniform). Defaults to 1.1 for backwards compatibility.
+
 **Reset** *float*: Delay before respawning, in seconds.
 
 **Reward_ID** *uint16*: ID of an item :ref:`spawn table <doc_assets_spawn>` to use for rewards. Defaults to 0.
@@ -54,7 +62,10 @@ Resource Properties
 
 **Reward_XP** *uint32*: Amount of experience to reward when the resource is destroyed.
 
-**Scale** *float*: The value of this property is always parsed as its absolute (positive) value. An object's scale is a random number between 1.1 and the result of ``1.1 + (Scale * 2)``.
+**Scale** *float*: The tree's in-game scale is a random number between 1.1 and the result of ``1.1 + (Scale * 2)``.
+
+.. deprecated:: 3.24.7.0
+	Scale is replaced by the ``RandomUniformScale_Min`` and ``RandomUniformScale_Max`` properties.
 
 **SpeedTree** *flag*: This resource should be considered a SpeedTree when using higher graphical settings.
 
