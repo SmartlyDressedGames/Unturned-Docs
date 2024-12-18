@@ -102,3 +102,7 @@ Font Atlases Dirty
 It's possible for characters not included in the font atlases to show up while playing in Unity. For example, from workshop files on the main menu or signs in multiplayer. These get added to the fallback font atlases, marking them changed in git. There's probably a better way to work around this, but one way is to tell git not to detect them as changed:
 
 ``git update-index --skip-worktree "Assets/Resources/UI/Glazier_uGUI/LiberationSans Fallback.asset" "Assets/Resources/UI/Glazier_uGUI/NotoSansCJK Fallback.asset"``
+
+To undo this (for example, when needing to discard changes):
+
+``git update-index --no-skip-worktree "Assets/Resources/UI/Glazier_uGUI/LiberationSans Fallback.asset" "Assets/Resources/UI/Glazier_uGUI/NotoSansCJK Fallback.asset"``
