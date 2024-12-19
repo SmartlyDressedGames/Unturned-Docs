@@ -39,6 +39,8 @@ Barricade Asset Properties
 
 **Can_Be_Damaged** *bool*: If true, this barricade can be damaged. Defaults to true.
 
+**CanParentVehicleBePickedUp** *bool*: By default, vehicles with "hooks" (such as the Skycrane) cannot pick up vehicles with barricades attached. If all barricades on the vehicle set this to ``true`` then the vehicle *can* be picked up. Defaults to ``false``.
+
 **Can_Zombies_Target** *bool*: If true, this item is eligible for zombies to detect and attack when stuck. Defaults to true.
 
 **Eligible_For_Pooling** *bool*: If true, this barricade is eligible for object pooling. Some barricades may not reset properly when pooling is enabled. Defaults to true, except when using ``Build Beacon``.
