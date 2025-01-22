@@ -70,6 +70,8 @@ Some of the launch options are primarily intended for use with the Unturned Dedi
 
 **-NoDeferAssets**: Disable the deferring of loading vehicles and level objects until map load time, and instead load on startup.
 
+**-NoPreserveMissingObjects**: By default, the level editor keeps objects and foliage whose assets are missing. If this option is enabled, any missing assets are deleted instead.
+
 **-NoSteamTextFiltering**: Disable Steam text filter, and instead revert to the old naïve filter.
 
 **-NoWorkshopSubscriptions**: Disable loading of all Steam Workshop subscriptions. This can be helpful when troubleshooting issues.
