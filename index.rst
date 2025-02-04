@@ -89,6 +89,7 @@ Unturned Documentation
 	assets/effect-asset
 	assets/foliage-asset
 	assets/level-asset
+	assets/mythical-asset
 	assets/outfit-asset
 	assets/physics-material-asset
 	assets/redirector-asset
