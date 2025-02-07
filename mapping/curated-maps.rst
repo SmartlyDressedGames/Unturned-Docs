@@ -3,7 +3,7 @@
 Curated Maps
 ============
 
-.. important:: **Note**: We are not currently processing new curated map submissions or update proposals as our queue is full. We encourage you to focus on enjoying the development of your map rather than aiming solely for curated status. Creating a map is intended as a fun and rewarding hobby!
+.. important:: The **Map Curation Program** is changing! We've already `announced some of our plans <https://steamcommunity.com/app/304930/discussions/0/601894864482792245/>`_. Creating a map is intended to be a fun and rewarding hobby! Documentation will be updated as we shift towards this new program.
 
 Community-created maps that are officially linked from the game are considered **Curated Maps**. They help players find high-quality new experiences, and keep the game updated with fresh content. Modders can then earn money from their work on their hobby, and get their creations highlighted.
 

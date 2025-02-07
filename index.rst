@@ -168,7 +168,7 @@ Upcoming Features
 
 You can find modding features under consideration on this Trello board: `Unturned Roadmap <https://trello.com/b/gpe4zlW3/unturned-roadmap>`_. The cards on the board aren't ordered in any particular way. i.e., they do not dictate the order of updates.
 
-Miscellaneous requests and tasks that may pop up take priority over the roadmap, so it may go a while between progress updates. For example, work for curated maps often takes priority. Several high-priority ideas that don't yet have a solid plan, like a crafting revamp, are not listed on the board.
+Miscellaneous requests and tasks that may pop up take priority over the roadmap, so it may go a while between progress updates. Several high-priority ideas that don't yet have a solid plan, like a crafting revamp, are not listed on the board.
 
 Legacy Tutorials
 ----------------
