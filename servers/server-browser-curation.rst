@@ -3,13 +3,12 @@
 Server Browser Curation
 =======================
 
-.. note:: We'll go into more detail on the *why* behind this feature in a blog post.
-
 This feature allows anyone to create and share lists of "rules" that filter or label servers in the server browser. Lists can be shared through the Steam Workshop as :ref:`Server Browser Curation Assets <doc_asset_server_browser_curation>`, or automatically downloaded from a URL on the Internet.
 
 If you're a server host, suppose you want to prevent bad actors from copying your server details. Your first rule would ``Allow`` your genuine servers, for example, matching by ``ServerID`` ("server code"). Your second rule could then ``Deny`` servers with a regex that matches your server network's branding.
 
 - :ref:`Examples <doc_server_browser_curation:examples>`
+- :ref:`FAQ (Frequently Asked Questions)<doc_server_browser_curation:faq>`
 
 Properties
 ----------
@@ -146,3 +145,52 @@ Here's a hypothetical verification list for the "NelsonNet" network:
 	]
 
 For an example of adding a curator by web URL, here's the link for that list: ``https://cdn.smartlydressedgames.com/ShareX/2024/12/ExampleCurationList.txt``
+
+.. _doc_server_browser_curation:faq:
+
+FAQ (Frequently Asked Questions)
+--------------------------------
+
+How can I find the details for someone else's server?
+:::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Pressing the **"Clipboard Debug"** hotkey (default **PageDown**) on the server lobby screen copies a variety of public information about the server to your clipboard. For example:
+
+.. figure:: /img/ServerInfoScreen.png
+
+	An example server.
+
+Pressing the key on this server copies the following information to the clipboard:
+
+.. code-block:: text
+	:linenos:
+
+	Name: Nelson's PEI Server
+	Description:
+	Thumbnail:
+	Address: 192.168.48.73
+	Connection Port: 27016
+	Query Port: 27015
+	SteamId: 85568392932910946 (k_EAccountTypeGameServer)
+	Ping: 1ms
+	0 workshop file(s):
+
+Relevant details being:
+
+- Name (line 1) can be used in a **Name** rule.
+- Address (line 4) can be used in an **IPv4** rule.
+- SteamId (line 7) can be used in a **ServerID** rule.
+
+How do I create a regular expression (regex)?
+:::::::::::::::::::::::::::::::::::::::::::::
+
+As a starting point, ``(?i)(your text here)`` matches "your text here" (without quotes) `case-insensitively <https://en.wikipedia.org/wiki/Case_sensitivity>`_. It would also match "Your Text Here" or "yOuR tExT hErE", but not "yourtexthere".
+
+For more advanced uses, we'd recommend using an online tool. At the time of writing (2025-02-07) these are top search results for "regex tool":
+
+#. https://regex101.com/
+#. https://regexr.com/
+#. https://regex-generator.olafneumann.org/
+#. https://www.regextester.com/
+
+
