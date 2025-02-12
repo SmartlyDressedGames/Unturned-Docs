@@ -3,7 +3,7 @@
 Magazine Assets
 ===============
 
-Magazine attachments are inventory items that can be attached to ranged weapons.
+Magazines (or "magazine attachments") are created from the ItemMagazineAsset class. They can be attached to ranged weapons.
 
 This inherits the :ref:`CaliberAsset <doc_item_asset_caliber>` class.
 
@@ -15,16 +15,16 @@ Magazine attachments inherit properties from the CaliberAsset class, which in tu
 .. list-table::
    :widths: 30 40 30
    :header-rows: 1
-   
+
    * - Class
      - Property Name
      - Required Value
    * - :ref:`ItemAsset <doc_item_asset_intro>`
      - :ref:`GUID <doc_item_asset_intro:guid>`
-     - 
+     -
    * - :ref:`ItemAsset <doc_item_asset_intro>`
      - :ref:`ID <doc_item_asset_intro:id>`
-     - 
+     -
    * - :ref:`ItemAsset <doc_item_asset_intro>`
      - :ref:`Type <doc_item_asset_intro:type>`
      - ``Magazine``
@@ -35,7 +35,7 @@ Properties
 .. list-table::
    :widths: 40 40 20
    :header-rows: 1
-   
+
    * - Property Name
      - Type
      - Default Value
@@ -47,7 +47,7 @@ Properties
      - ``0``
    * - :ref:`Delete_Empty <doc_item_asset_magazine:delete_empty>`
      - :ref:`flag <doc_data_flag>`
-     - 
+     -
    * - :ref:`Explosion <doc_item_asset_magazine:explosion>`
      - :ref:`doc_data_guid` or :ref:`uint16 <doc_data_builtin_types>`
      - ``0``
@@ -56,7 +56,7 @@ Properties
      - See description
    * - :ref:`Explosive <doc_item_asset_magazine:explosive>`
      - :ref:`flag <doc_data_flag>`
-     - 
+     -
    * - :ref:`Impact <doc_item_asset_magazine:impact>`
      - :ref:`doc_data_guid` or :ref:`uint16 <doc_data_builtin_types>`
      - ``0``
@@ -89,7 +89,7 @@ Properties
      - ``false``
    * - :ref:`Spawn_Explosion_On_Dedicated_Server <doc_item_asset_magazine:spawn_explosion_on_dedicated_server>`
      - :ref:`flag <doc_data_flag>`
-     - 
+     -
    * - :ref:`Speed <doc_item_asset_magazine:speed>`
      - :ref:`float32 <doc_data_builtin_types>`
      - ``1``

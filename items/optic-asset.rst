@@ -3,7 +3,7 @@
 Optic Assets
 ============
 
-Optics can modify a player's view.
+Optics are created from the ItemOpticAsset class. They can modify a player's view.
 
 This inherits the :ref:`ItemAsset <doc_item_asset_intro>` class.
 

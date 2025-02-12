@@ -3,7 +3,7 @@
 Box Assets
 ==========
 
-Boxes are intended to be used as a part of the Steam Economy, rather than as in-game content. As such, none of its unique properties can be properly utilized by modders.
+Boxes are created from the ItemBoxAsset class. They are used to visualize certain information from the game's Steam Economy integration. Since this asset is not useful to modders, this documentation merely exists for completeness.
 
 This inherits the :ref:`ItemAsset <doc_item_asset_intro>` class.
 
@@ -25,7 +25,7 @@ Box Asset Properties
 
 **Drops** *int32*: Corresponds to the total number of items in the box, so that the correct number of UI elements are displayed when showing box contents.
 
-**Drop\_#** *int32*: The itemdefid of an item in the box, which is visually displayed as a UI element when showing box contents.
+**Drop_#** *int32*: The itemdefid of an item in the box, which is visually displayed as a UI element when showing box contents.
 
 **Item_Origin** *enum* (``Unbox``, ``Unwrap``): The localization key to use for for the unbox/unwrap menu button.
 

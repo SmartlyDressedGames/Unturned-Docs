@@ -3,7 +3,7 @@
 Tool Assets
 ===========
 
-Tools are a type of useable. The specific function of a tool significantly depends on the ``Useable`` property.
+Tools are created from the ItemToolAsset class. Their functionality depends on the configured ``Useable`` property.
 
 This inherits the :ref:`ItemAsset <doc_item_asset_intro>` class.
 

@@ -3,7 +3,7 @@
 Tactical Assets
 ===============
 
-Tactical attachments are inventory items that can be attached to ranged weapons.
+Tacticals (or "tactical attachments") are created from the ItemTacticalAsset class. They are inventory items that can be attached to ranged weapons.
 
 This inherits the :ref:`CaliberAsset <doc_item_asset_caliber>` class.
 

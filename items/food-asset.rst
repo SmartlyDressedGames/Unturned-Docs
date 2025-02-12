@@ -3,7 +3,7 @@
 Food Assets
 ===========
 
-Food is irreversibly consumed by the player on use, and directly affect a player's stats such as food or health.
+Food items are created from the ItemFoodAsset class. They can be consumed by the player.
 
 This inherits the :ref:`ConsumeableAsset <doc_item_asset_consumeable>` class.
 

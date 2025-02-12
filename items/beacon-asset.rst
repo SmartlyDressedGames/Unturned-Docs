@@ -3,7 +3,7 @@
 Beacon Assets
 =============
 
-Beacons are a placeable zombie horde spawners. Placing the beacon will start a horde event, which can be completed by killing a certain number of zombies without letting the beacon be destroyed.
+Beacons are created from the ItemBeaconAsset class. Placing the beacon will start a zombie horde event, which can be completed by killing a predetermined number of zombies before the beacon is destroyed.
 
 This inherits the :ref:`BarricadeAsset <doc_item_asset_barricade>` class.
 

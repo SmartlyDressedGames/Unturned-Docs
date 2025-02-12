@@ -3,7 +3,7 @@
 Sentry Assets
 =============
 
-Sentries (localized as "robotic turrets") are placeables that can automatically detect, track, and attack target under certain conditions. Storing a ranged weapon inside a sentry allows it to use that weapon when attacking target.
+Sentries (localized as "robotic turrets") are created from the ItemSentryAsset class. They are placeables that can automatically detect, track, and attack target under certain conditions. Storing a ranged weapon inside a sentry allows it to use that weapon when attacking target.
 
 This inherits the :ref:`StorageAsset <doc_item_asset_storage>` class.
 

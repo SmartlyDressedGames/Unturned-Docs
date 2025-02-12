@@ -3,7 +3,7 @@
 Refill Assets
 =============
 
-Refills (localized as "water canisters") are useables able to siphon, store, and deposit water. Players can also drink from water canisters in order to restore their status bars. Water canisters have four potential states: empty, salty, dirty, or clean.
+Refills (localized as "water canisters") are created from the ItemRefillAsset class. They are useables able to siphon, store, and deposit water. Players can also drink from water canisters in order to restore their status bars. Water canisters have four potential states: empty, salty, dirty, or clean.
 
 This inherits the :ref:`ItemAsset <doc_item_asset_intro>` class.
 

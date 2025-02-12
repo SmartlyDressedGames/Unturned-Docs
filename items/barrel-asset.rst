@@ -3,7 +3,7 @@
 Barrel Assets
 =============
 
-Barrel attachments are inventory items that can be attached to ranged weapons.
+Barrels (or "barrel attachments") are created from the ItemBarrelAsset class. Barrel attachments are inventory items that can be attached to ranged weapons.
 
 This inherits the :ref:`CaliberAsset <doc_item_asset_caliber>` class.
 

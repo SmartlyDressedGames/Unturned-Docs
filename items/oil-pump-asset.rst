@@ -3,7 +3,7 @@
 Oil Pump Assets
 ===============
 
-Oil pumps are placeables capable of creating fuel. When powered, oil pumps generate fuel over time.
+Oil pumps are created from the ItemOilPumpAsset class. They are placeables capable of creating fuel. When powered, oil pumps generate fuel over time.
 
 This inherits the :ref:`BarricadeAsset <doc_item_asset_barricade>` class.
 

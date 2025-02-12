@@ -3,7 +3,7 @@
 Fuel Assets
 ===========
 
-Fuel canisters are useables able to siphon, store, and deposit fuel.
+Fuel items (or "fuel canisters") are created from the ItemFuelAsset class. They are useables able to siphon, store, and deposit fuel.
 
 This inherits the :ref:`ItemAsset <doc_item_asset_intro>` class.
 

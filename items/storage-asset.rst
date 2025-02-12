@@ -3,7 +3,7 @@
 Storage Assets
 ==============
 
-Storages (localized as "item storages") are placeables used to store items.
+Storages (localized as "item storages") are created from the ItemStorageAsset class. They are placeables used to store items.
 
 This inherits the :ref:`BarricadeAsset <doc_item_asset_barricade>` class.
 

@@ -3,7 +3,7 @@
 Sight Assets
 ============
 
-Sight attachments are inventory items that can be attached to ranged weapons.
+Sights (or "sight attachments") are created from the ItemSightAsset class. They are inventory items that can be attached to ranged weapons.
 
 This inherits the :ref:`CaliberAsset <doc_item_asset_caliber>` class.
 

@@ -3,7 +3,7 @@
 Charge Assets
 =============
 
-Remote explosives can be placed and then remotely detonated with a :ref:`remote trigger <doc_item_asset_detonator>`.
+Charges (or "remote explosives") are created from the ItemChargeAsset class. They can be placed and then remotely detonated with a :ref:`remote trigger <doc_item_asset_detonator>`.
 
 This inherits the :ref:`BarricadeAsset <doc_item_asset_barricade>` class.
 

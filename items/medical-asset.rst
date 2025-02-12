@@ -3,7 +3,7 @@
 Medical Assets
 ==============
 
-Medicine is irreversibly consumed by the player on use, and directly affect a player's stats such as health or immunity.
+Medical items (or "medicine") are created from the ItemMedicalAsset class. They are irreversibly consumed by the player on use, and directly affect a player's stats such as health or immunity.
 
 This inherits the :ref:`ConsumeableAsset <doc_item_asset_consumeable>` class.
 

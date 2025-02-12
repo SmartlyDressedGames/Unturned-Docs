@@ -3,7 +3,7 @@
 Mask Assets
 ===========
 
-Masks can be worn by players and zombies.
+Masks are created from the ItemMaskAsset class. They can be worn by players and zombies.
 
 This inherits the :ref:`GearAsset <doc_item_asset_gear>` class.
 

@@ -3,7 +3,7 @@
 Glasses Assets
 ==============
 
-Glasses can be worn by players and zombies.
+Glasses are created from ItemGlassesAsset. They are clothing items that can be worn by players and zombies.
 
 This inherits the :ref:`GearAsset <doc_item_asset_gear>` class.
 

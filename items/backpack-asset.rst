@@ -3,7 +3,7 @@
 Backpack Assets
 ===============
 
-The ItemBackpackAsset class is used by clothing items occupying the "backpack" slot. Backpacks can be worn by players and zombies.
+Backpacks are created from the ItemBackpackAsset class. They can be worn by players and zombies, and occupy the player's "backpack" slot.
 
 Game Data File
 --------------
@@ -13,16 +13,16 @@ The ItemBackpackAsset class inherits properties from the :ref:`ItemBagAsset <doc
 .. list-table::
    :widths: 30 40 30
    :header-rows: 1
-   
+
    * - Class
      - Property Name
      - Required Value
    * - :ref:`ItemAsset <doc_item_asset_intro>`
      - :ref:`GUID <doc_item_asset_intro:guid>`
-     - 
+     -
    * - :ref:`ItemAsset <doc_item_asset_intro>`
      - :ref:`ID <doc_item_asset_intro:id>`
-     - 
+     -
    * - :ref:`ItemAsset <doc_item_asset_intro>`
      - :ref:`Type <doc_item_asset_intro:type>`
      - ``Backpack``
