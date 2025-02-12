@@ -43,6 +43,8 @@ Trap Asset Properties
 
 **Range2** *float*: In meters, the radius of the damaging, area-of-effect explosion.
 
+**Requires_Power** *bool*: Whether or not the trap requires power from a generator. Defaults to ``false``. Optionally, a "Powered" GameObject can be included in Unity. This GameObject is activated when powered, and deactivated when not powered.
+
 **Resource_Damage** *float*: Damage dealt to resources caught within the area-of-effect explosion.
 
 **Structure_Damage** *float*: Damage dealt to structures caught within the area-of-effect explosion.
@@ -52,8 +54,3 @@ Trap Asset Properties
 **Trap_Setup_Delay** *float*: In seconds, delay before a trap becomes active after being placed. Defaults to 0.25 seconds.
 
 **Vehicle_Damage** *float*: Damage dealt to vehicles caught within the area-of-effect explosion.
-
-Powerable
----------
-
-Traps can be made powerable by adding a "Powered" GameObject in Unity. When the trap is powered, this GameObject becomes active.
