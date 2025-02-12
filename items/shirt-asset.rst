@@ -3,7 +3,7 @@
 Shirt Assets
 ============
 
-Shirts can be worn by players and zombies.
+Shirts are created from the ItemShirtAsset class. They can be worn by players and zombies.
 
 This inherits the :ref:`BagAsset <doc_item_asset_bag>` class.
 

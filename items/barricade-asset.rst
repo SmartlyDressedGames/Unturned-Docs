@@ -3,7 +3,7 @@
 Barricade Assets
 ================
 
-Barricades can be placed by players.
+Barricades are created from the ItemBarricadeAsset class. They can be placed by players or in the level editor.
 
 This inherits the :ref:`PlaceableAsset <doc_item_asset_placeable>` class.
 

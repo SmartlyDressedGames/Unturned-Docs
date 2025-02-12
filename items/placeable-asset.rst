@@ -3,7 +3,7 @@
 Placeable Assets
 ================
 
-Placeables are able to be placed by players.
+The ItemPlaceableAsset class is a base class that other classes are derived from. Placeables are able to be placed by players.
 
 This inherits the :ref:`ItemAsset <doc_item_asset_intro>` class.
 

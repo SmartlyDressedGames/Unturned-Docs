@@ -3,7 +3,7 @@
 Structure Assets
 ================
 
-Structures can be placed by players. Some structure pieces require another structure piece in order to be placed.
+Structures are created from the ItemStructureAsset class. They can be placed by players. Some structure pieces require another structure piece in order to be placed.
 
 This inherits the :ref:`PlaceableAsset <doc_item_asset_placeable>` class.
 

@@ -3,7 +3,7 @@
 Melee Assets
 ============
 
-Melee weapons can be used as a source of damage. Melee weapons always show quality.
+Melees (or "melee weapons") are created from the ItemMeleeAsset class. They can be used as a source of damage. Melee weapons always show quality.
 
 This inherits the :ref:`WeaponAsset <doc_item_asset_weapon>` class.
 
@@ -29,7 +29,7 @@ Melee Asset Properties
 
 **ImpactAudioDef** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: AudioClip or OneShotAudioDefinition to play upon impact.
 
-**Light** *flag*: Provides a toggleable flashlight, and allows for using :ref:`PlayerSpotLightConfig <doc_data_playerspotlightconfig>` properties. 
+**Light** *flag*: Provides a toggleable flashlight, and allows for using :ref:`PlayerSpotLightConfig <doc_data_playerspotlightconfig>` properties.
 
 **Repair** *flag*: Repairs barricades, structures, and vehicles.
 

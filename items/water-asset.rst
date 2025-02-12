@@ -3,7 +3,7 @@
 Water Assets
 ============
 
-Drinks are irreversibly consumed by the player on use, and directly affect a player's stats such as water or stamina.
+Drinks are created from the ItemWaterAsset class. They are consumed by the player on use, and directly affect a player's stats such as water or stamina.
 
 This inherits the :ref:`ConsumeableAsset <doc_item_asset_consumeable>` class.
 

@@ -3,7 +3,7 @@
 Detonator Assets
 ================
 
-Remote triggers can be used to detonate :ref:`remote explosives <doc_item_asset_charge>`.
+Detonators (or "remote triggers") are created from the ItemDetonatorAsset class. They can be used to detonate :ref:`remote explosives <doc_item_asset_charge>`.
 
 This inherits the :ref:`ItemAsset <doc_item_asset_intro>` class.
 

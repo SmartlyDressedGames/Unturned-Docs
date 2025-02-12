@@ -3,7 +3,7 @@
 Fisher Assets
 =============
 
-Fishers (localized as "fishing poles") are useables that allow for catching fish.
+Fishers (or "fishing poles") are created from the ItemFisherAsset class. They are useables that allow for catching fish.
 
 This inherits the :ref:`ItemAsset <doc_item_asset_intro>` class.
 

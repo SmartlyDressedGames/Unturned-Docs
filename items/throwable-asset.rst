@@ -3,7 +3,7 @@
 Throwable Assets
 ================
 
-Throwables can be thrown by players. Throwables cannot be used in any safezones that disallow weapons.
+Throwables are created from the ItemThrowableAsset class. They can be thrown by players. Throwables cannot be used in any safezones that disallow weapons.
 
 This inherits the :ref:`WeaponAsset <doc_item_asset_weapon>` class.
 

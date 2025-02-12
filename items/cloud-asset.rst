@@ -3,7 +3,7 @@
 Cloud Assets
 ============
 
-Parachutes can affect a player's gravity when held.
+Clouds (or "parachutes") are created from the ItemCloudAsset class. They can affect a player's gravity when held.
 
 This inherits the :ref:`ItemAsset <doc_item_asset_intro>` class.
 

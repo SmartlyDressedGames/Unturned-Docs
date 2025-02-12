@@ -3,7 +3,7 @@
 Pants Assets
 ============
 
-Pants can be worn by players and zombies.
+Pants are created from the ItemPantsAsset class. They can be worn by players and zombies.
 
 This inherits the :ref:`BagAsset <doc_item_asset_bag>` class.
 

@@ -3,7 +3,7 @@
 Map Assets
 ==========
 
-Maps and compasses provide the player with additional UI information for as long as they are in the player's inventory. They can neither be held nor equipped.
+Maps and compasses are created from the ItemMapAsset class. They provide the player with additional UI information for as long as they are in the player's inventory. They can neither be held nor equipped.
 
 This inherits the :ref:`ItemAsset <doc_item_asset_intro>` class.
 

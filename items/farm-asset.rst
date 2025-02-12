@@ -3,7 +3,9 @@
 Farm Assets
 ===========
 
-Farms (localized as "plants") are a placeable seeds capable of growing into harvestable crops. When a seed is planted, it will grow over time until eventually harvestable. Growing can be finished immediately by either rainfall, or by using a :ref:`growth supplement <doc_item_asset_grower>` on the plant. A fully-grown crop can be harvested, which deals 2 damage to the crop. A crop can be harvested until it has 0 health remaining.
+Farms (or "plants") are created from the ItemFarmAsset class. They are placeable seeds capable of growing into harvestable crops.
+
+When a seed is planted, it will grow over time until eventually harvestable. Growing can be finished immediately by either rainfall, or by using a :ref:`growth supplement <doc_item_asset_grower>` on the plant. A fully-grown crop can be harvested, which deals 2 damage to the crop. A crop can be harvested until it has 0 health remaining.
 
 This inherits the :ref:`BarricadeAsset <doc_item_asset_barricade>` class.
 
@@ -42,5 +44,5 @@ Farm Asset Properties
 **Harvest_Rewards**: NPC reward list granted when harvesting the grown plant. For more information, please refer to the :ref:`Rewards <doc_npc_asset_rewards>` documentation.
 
 .. tip::
-	
+
 	The ``Health`` property from the parent ItemAsset class can be configured to allow for harvesting a crop multiple times. A plant can be harvested a number of items equal to ``Health / 2``. For example, a plant with 10 health can be harvested up to 5 times.

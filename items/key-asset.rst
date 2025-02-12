@@ -3,7 +3,7 @@
 Key Assets
 ==========
 
-Keys are intended to be used as a part of the Steam Economy, rather than as in-game content. As such, none of its unique properties can be properly utilized by modders.
+Keys are created from the ItemKeyAsset class. They are intended to be used as a part of the Steam Economy, rather than as in-game content. As such, none of its unique properties can be properly utilized by modders.
 
 This inherits the :ref:`ItemAsset <doc_item_asset_intro>` class.
 

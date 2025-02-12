@@ -3,7 +3,7 @@
 Weapon Assets
 =============
 
-Weapon assets function as a source of damage. The functional implementation of properties may differ slightly between assets.
+The ItemWeaponAsset class is a base class that other classes are derived from. This asset provides various properties related to damaging players, structures, and other entities – but its specific behavior depends on the child class being used.
 
 This inherits the :ref:`ItemAsset <doc_item_asset_intro>` class.
 

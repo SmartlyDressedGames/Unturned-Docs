@@ -3,7 +3,7 @@
 Tank Assets
 ===========
 
-Tanks (localized as "liquid storages") are placeables used to store water or fuel. Players can siphon from, or deposit into, a liquid storage with certain items. Fuel tanks require a :ref:`fuel canister <doc_item_asset_fuel>`, while water tanks require a :ref:`water canister <doc_item_asset_refill>`.
+Tanks (localized as "liquid storages") are created from the ItemTankAsset class. They are placeables used to store water or fuel. Players can siphon from, or deposit into, a liquid storage with certain items. Fuel tanks require a :ref:`fuel canister <doc_item_asset_fuel>`, while water tanks require a :ref:`water canister <doc_item_asset_refill>`.
 
 This inherits the :ref:`BarricadeAsset <doc_item_asset_barricade>` class.
 

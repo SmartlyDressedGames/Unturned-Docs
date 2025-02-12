@@ -3,7 +3,7 @@
 Grip Assets
 ===========
 
-Grip attachments are inventory items that can be attached to ranged weapons.
+Grips (or "grip attachments") are created from the ItemGripAsset class. They are inventory items that can be attached to ranged weapons.
 
 This inherits the :ref:`CaliberAsset <doc_item_asset_caliber>` class.
 

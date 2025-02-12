@@ -3,7 +3,7 @@
 Supply Assets
 =============
 
-Crafting supplies are items primarily intended to be used as ingredients in crafting blueprints. They can neither be held nor equipped.
+Supplies (or "crafting supplies") are created from the ItemSupplyAsset class. They are items primarily intended to be used as ingredients in crafting blueprints. They can neither be held nor equipped.
 
 This inherits the :ref:`ItemAsset <doc_item_asset_intro>` class.
 

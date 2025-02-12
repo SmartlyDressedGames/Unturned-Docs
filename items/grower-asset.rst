@@ -3,7 +3,7 @@
 Grower Assets
 =============
 
-Growth supplements can be used to instantly finish growing a :ref:`plant <doc_item_asset_farm>`.
+Growers (or "growth supplements") are created from the ItemGrowerAsset class. They can be used to instantly finish growing a :ref:`plant <doc_item_asset_farm>`.
 
 This inherits the :ref:`ItemAsset <doc_item_asset_intro>` class.
 

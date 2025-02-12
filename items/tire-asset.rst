@@ -3,7 +3,7 @@
 Tire Assets
 ===========
 
-Tires (localized as "tools") are useables that allow for adding and removing tires from vehicles.
+Tires (localized as "tools") are created from the ItemTireAsset class. They are useables that allow for adding and removing tires from vehicles.
 
 This inherits the :ref:`VehicleRepairToolAsset <doc_item_asset_vehicle_repair_tool>` class.
 

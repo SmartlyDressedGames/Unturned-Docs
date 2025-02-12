@@ -3,7 +3,7 @@
 Library Assets
 ==============
 
-Libraries are placeable storage containers for experience points.
+Libraries are created from the ItemLibraryAsset class. They are placeable storage containers for experience points.
 
 This inherits the :ref:`BarricadeAsset <doc_item_asset_barricade>` class.
 
