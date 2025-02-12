@@ -3,7 +3,7 @@
 Vehicle Repair Tool Assets
 ==========================
 
-Vehicle repair tools (localized as "tools") are useables for replacing vehicle batteries.
+Vehicle repair tools (localized as "tools") are created from the ItemVehicleRepairTool class. They are useables for replacing vehicle batteries.
 
 This inherits the :ref:`ToolAsset <doc_item_asset_tool>` class.
 

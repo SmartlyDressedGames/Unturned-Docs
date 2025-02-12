@@ -3,7 +3,7 @@
 Vehicle Paint Tool Assets
 =========================
 
-Vehicle paint tools are useables for changing the vehicle paint color.
+Vehicle paint tools are created from the ItemVehiclePaintToolAsset class. They are useables for changing the vehicle paint color.
 
 This inherits the :ref:`ToolAsset <doc_item_asset_tool>` class.
 
