@@ -3,7 +3,7 @@
 Trap Assets
 ===========
 
-Traps are placeable damage sources.
+Traps are created from ItemTrapAsset. They are placeable damage sources.
 
 This inherits the :ref:`BarricadeAsset <doc_item_asset_barricade>` class.
 
@@ -52,3 +52,8 @@ Trap Asset Properties
 **Trap_Setup_Delay** *float*: In seconds, delay before a trap becomes active after being placed. Defaults to 0.25 seconds.
 
 **Vehicle_Damage** *float*: Damage dealt to vehicles caught within the area-of-effect explosion.
+
+Powerable
+---------
+
+Traps can be made powerable by adding a "Powered" GameObject in Unity. When the trap is powered, this GameObject becomes active.
