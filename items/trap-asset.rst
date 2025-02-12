@@ -3,7 +3,7 @@
 Trap Assets
 ===========
 
-Traps are placeable damage sources.
+Traps are created from ItemTrapAsset. They are placeable damage sources.
 
 This inherits the :ref:`BarricadeAsset <doc_item_asset_barricade>` class.
 
@@ -42,6 +42,8 @@ Trap Asset Properties
 **Player_Damage** *float*: Damage dealt to players caught within the area-of-effect explosion.
 
 **Range2** *float*: In meters, the radius of the damaging, area-of-effect explosion.
+
+**Requires_Power** *bool*: Whether or not the trap requires power from a generator. Defaults to ``false``. Optionally, a "Powered" GameObject can be included in Unity. This GameObject is activated when powered, and deactivated when not powered.
 
 **Resource_Damage** *float*: Damage dealt to resources caught within the area-of-effect explosion.
 
