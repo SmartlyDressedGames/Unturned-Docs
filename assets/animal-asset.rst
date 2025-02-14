@@ -36,6 +36,8 @@ Animal Properties
 
 **Panics** *int*: Total number of panic sounds in Unity. A panic sound is played when the animal is startled.
 
+**Should_Prevent_Move_During_Startle** *bool*: If true, animal won't start moving until startle animation finishes. Defaults to false.
+
 **Attack\_Anim\_Variants** *int*: Total number of attack animations in Unity. Defaults to 1.
 
 **Eat\_Anim\_Variants** *int*: Total number of eat animations in Unity. Defaults to 1.
