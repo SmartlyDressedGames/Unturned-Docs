@@ -64,3 +64,7 @@ Localization
 **Name** *string*: Vendor name in user interfaces.
 
 **Description** :ref:`doc_data_richtext`: Vendor description in user interfaces.
+
+**Buying_#_Description** :ref:`doc_data_richtext`: If set, overrides item description shown in the vendor menu. I.e., how the vendor would describe the item rather than how the player would.
+
+**Selling_#_Description** :ref:`doc_data_richtext`: Same as **Buying_#_Description**.
