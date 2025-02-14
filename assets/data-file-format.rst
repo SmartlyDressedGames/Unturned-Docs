@@ -7,7 +7,7 @@ This article describes the syntax of Unturned's ``.dat`` and ``.asset`` files.
 
 Each line is a key-value pair separated by a space. The key and/or value can optionally be in quotes. For example:
 
-.. code-block:: text
+.. code-block:: unturneddat
 
 	Key1 First value
 	"Key2 in quotes" Second value
@@ -36,7 +36,7 @@ Each series of key-value pairs is a dictionary (sometimes called an object). The
 
 In this example ``object1`` is a child dictionary in the root dictionary, and ``object2`` is a grand-child:
 
-.. code-block:: text
+.. code-block:: unturneddat
 
 	object1
 	{
@@ -53,7 +53,7 @@ Lists (sometimes called an array) can be added with ``[ ]`` square brackets. Add
 
 In this example ``values`` is a list of strings:
 
-.. code-block:: text
+.. code-block:: unturneddat
 
 	values
 	[
@@ -64,7 +64,7 @@ In this example ``values`` is a list of strings:
 
 Lists can also contain dictionaries as seen in this example:
 
-.. code-block:: text
+.. code-block:: unturneddat
 
 	List_Of_Objects
 	[
@@ -82,7 +82,7 @@ Lists can also contain dictionaries as seen in this example:
 
 	Many older asset properties predate the addition of lists. In these cases arrays/lists are typically handled by a key specifying the number of items, and then appending the index number to each element's key. For example:
 
-	.. code-block:: text
+	.. code-block:: unturneddat
 
 		// Total number of elements in old-style list
 		Elements 2
@@ -100,7 +100,7 @@ Lines starting with ``//`` are comments, which means they are excluded from pars
 
 For example these comments are valid:
 
-.. code-block:: text
+.. code-block:: unturneddat
 
 	// a comment
 	key1 value1
@@ -108,9 +108,64 @@ For example these comments are valid:
 
 Whereas this comment will not be excluded from the value:
 
-.. code-block:: text
+.. code-block:: unturneddat
 
 	key value // this is not treated as a comment because the value is not in quotes
+
+FAQ (Frequently Asked Questions)
+--------------------------------
+
+**Q. How do I write a multi-line value?**
+
+The ``\n`` escape sequence starts a new line. For example:
+
+.. code-block:: unturneddat
+
+	Text First line\nSecond line
+
+Will set the value of ``Text`` to:
+
+.. code-block:: text
+
+	First line
+	Second line
+
+
+**Q. How do I write an in-line comment after a value containing quotation marks?**
+
+In-line comments require the value to enclosed in quotation marks, so quotation marks in the value must be escaped with ``\"``:
+
+.. code-block:: unturneddat
+
+	// The parser will read the comment as part of the value because it doesn't know where the value ends.
+	Text Why use so-called "scare quotes" instead of /s? // Comment here
+
+	// The parser will exclude the comment from the value and replace the \" with quotation marks.
+	Text "Why use so-called \"scare quotes\" instead of /s?" // Comment here
+
+**Q. Why can't I start a list or dictionary on the same line as a key?**
+
+This is—unfortunately—not supported because it would break backwards compatibility with the oldest ``.dat`` files. Older files may have ``[`` or ``{`` as the first letter of a value.
+
+As an example of the problem:
+
+.. code-block:: text
+
+	SomeDictionary {
+		SomeList [
+		]
+	}
+
+Instead, the opening ``[`` or ``{`` must be placed on the next line:
+
+.. code-block:: unturneddat
+
+	SomeDictionary
+	{
+		SomeList
+		[
+		]
+	}
 
 History
 -------
