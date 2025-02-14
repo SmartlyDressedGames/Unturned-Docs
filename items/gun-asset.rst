@@ -129,6 +129,9 @@ Ranged weapons have a significant number of properties. To make navigating these
    * - :ref:`Gunshot_Rolloff_Distance <doc_item_asset_gun:gunshot_rolloff_distance>`
      - :ref:`float32 <doc_data_builtin_types>`
      - See description
+   * - :ref:`Must_Aim_To_Shoot <doc_item_asset_gun:must_aim_to_shoot>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - See description
    * - :ref:`Range_Rangefinder <doc_item_asset_gun:range_rangefinder>`
      - :ref:`float32 <doc_data_builtin_types>`
      - See description
@@ -993,6 +996,19 @@ Magazine_Replacements :ref:`int <doc_data_builtin_types>` ``0``
 ``Magazine_Replacements`` and its related properties are used to add alternative magazine attachments that should be used as the weapon's default when certain condition(s) are met.
 
 This value sets the length of the array containing any alternative default magazine attachments. This property is used in conjunction with the ``Magazine_Replacement_#_ID`` property, and the value of ``Magazine_Replacements`` should be equal to the number of instances of ``Magazine_Replacement_#_ID``.
+
+----
+
+.. _doc_item_asset_gun:must_aim_to_shoot:
+
+Must_Aim_To_Shoot :ref:`bool <doc_data_builtin_types>`
+::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If true, the gun cannot shoot unless the player is aiming.
+
+Defaults to true for ``Minigun`` :ref:`doc_item_asset_gun:action`. False otherwise.
+
+``String`` :ref:`doc_item_asset_gun:action` overrides ``Must_Aim_To_Shoot`` functionality.
 
 ----
 
