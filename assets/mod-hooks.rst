@@ -128,6 +128,13 @@ Effect Spawner
 
 Allows Unity events to spawn effect assets. When the ``AuthorityOnly`` field is enabled only the server will spawn effects and replicate them to clients.
 
+Mob Alert Spawner
+`````````````````
+
+Allows Unity events to startle nearby animals and zombies.
+
+Optionally uses a nearby player as the origin of the alert.
+
 NPC Global Event Messenger
 ``````````````````````````
 
