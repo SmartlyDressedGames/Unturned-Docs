@@ -42,6 +42,11 @@ Allows Unity events to apply damage in a sphere. (doesn't have any visual effect
 
 Intended to replace unsupported/unintentional use of ``Grenade.cs`` and ``Rocket.cs`` scripts.
 
+Gun Attachment Event Hook
+`````````````````````````
+
+Allows gun item game objects (including children) to receive events when sights, tacticals, grips, barrels, and magazines are attached, replaced, and/or detached.
+
 .. _doc_assets_mod_hooks:iobs_event_hook:
 
 Interactable Object Binary State Event Hook (IOBS)
