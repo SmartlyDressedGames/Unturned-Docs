@@ -86,6 +86,8 @@ Some of the launch options are primarily intended for use with the Unturned Dedi
 
 **-RefreshRate=**: Monitor refresh rate override.
 
+**-ResetSteamStatsAndAchievements**: Reset all progress on Steam achievements and stats.
+
 **-SkipAssets**: Disable loading asset bundles and Workshop content. This is useful for quickly iterating on serverside code.
 
 **-ScrollViewSensitivity** *float*: Multiplier for uGUI scroll view distance travelled when rolling the mouse wheel.
@@ -93,6 +95,8 @@ Some of the launch options are primarily intended for use with the Unturned Dedi
 **-TimeOverlay**: Show seconds since startup under FPS in the upper-left corner.
 
 **-ui_scale**: UI scale override. A common usage is to set UI scale back to its default scaling, with ``-ui_scale 1``.
+
+**-UnlockSteamAchievements**: Unlocks all Steam achievements. This is intended for achievement hunters who've moved on from the game but want to maintain their previous 100% completion status.
 
 **-UnredactedLogs**: By default, player IPs in BattlEye's logging and the public IP for Workshop downloads are redacted. This option turns that off.
 
