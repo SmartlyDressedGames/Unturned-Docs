@@ -44,7 +44,7 @@ Some of the launch options are primarily intended for use with the Unturned Dedi
 
 **-height** *int*: Override in-game resolution height.
 
-**-Holiday=** *enum* (``AprilFools``, ``Christmas``, ``Halloween``, ``HW``, ``PrideMonth``, ``Valentines``, ``XMAS``): Override the active holiday.
+**-Holiday=** *enum* (``AprilFools``, ``Christmas``, ``Halloween``, ``HW``, ``PrideMonth``, ``Valentines``, ``XMAS``, ``LunarNewYear``, ``LNY``): Override the active holiday.
 
 **-HostPlayerLimit=** *int*: Clamps max number of players to this number. Useful for hosting providers.
 

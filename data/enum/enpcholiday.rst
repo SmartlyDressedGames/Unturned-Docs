@@ -11,7 +11,7 @@ Enumerators
 .. list-table::
    :widths: 25 75
    :header-rows: 1
-   
+
    * - Named Value
      - Description
    * - ``None``
@@ -26,5 +26,5 @@ Enumerators
      - Corresponds to the `Valentine's Day <https://en.wikipedia.org/wiki/Valentine%27s_Day>`_ holiday.
    * - ``Pride_Month``
      - Corresponds to `Pride Month <https://en.wikipedia.org/wiki/Pride_Month>`_, a month-long observance in June.
-   * - ``Max``
-     - Represents all holiday or seasonal events at the same time.
+   * - ``Lunar_New_Year``
+     - Corresponds to the `Lunar New Year <https://en.wikipedia.org/wiki/Lunar_New_Year>`_ holiday.
