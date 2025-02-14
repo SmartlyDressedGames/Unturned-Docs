@@ -164,6 +164,8 @@ Rubble
 
 **Rubble** *enum* (``None``, ``Destroy``): The destruction mode that should be used, although the only functional option for this is ``Destroy``. All ``Rubble_`` properties require that this property has been set.
 
+**Rubble_All_Sections_Destroyed_Alert_Radius** *float*: If set, alert nearby enemies when all sections are destroyed.
+
 **Rubble_Blade_ID** *byte*: Weapons are unable to damage this object unless they have a matching ``BladeID_#`` value. Defaults to 0.
 
 **Rubble_Can_Zombies_Damage** *bool*:  If true, zombies can attack this object if it's blocking them. Defaults to false.
@@ -195,6 +197,8 @@ Rubble
 **Rubble_Reward_Probability** *float*: Probability of receiving a reward, as a decimal-to-percent chance. Defaults to 1.
 
 **Rubble_Reward_XP** *uint32*: Amount of experience to reward when the destructible object is destroyed.
+
+**Rubble_Section_Destroyed_Alert_Radius** *float*: If set, alert nearby enemies when an individual section is destroyed. Not used when the final section is destroyed—in that case, **Rubble_All_Sections_Destroyed_Alert_Radius** applies instead.
 
 **Rubble_Zombie_Damage_Multiplier** *float*: Multiplier for damage from zombies if RubbleCanZombiesDamage is true.
 
