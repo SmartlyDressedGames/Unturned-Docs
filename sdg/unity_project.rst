@@ -8,7 +8,7 @@ Unity Project
 Downloading
 -----------
 
-The project files are stored in a `Git <https://git-scm.com/>`_ repository. You can use the Git CLI to clone (download) the files, but I'd recommend using a GUI. The Git website `lists a variety of great, free GUI tools <https://git-scm.com/downloads/guis>`_ including `GitHub Desktop <https://github.com/apps/desktop>`_ and `Sourcetree <https://www.sourcetreeapp.com/>`_. Personally, I use `Fork <https://git-fork.com/>`_, though it has an upfront price of $60 USD at the time of writing (2024-10-18).
+Unturned's project files are stored using the `Git <https://git-scm.com/>`_ version control system (`VCS <https://en.wikipedia.org/wiki/Version_control>`_). We have a separate document outlining how to work with Git, from downloading to contributing changes: :ref:`doc_using_git`.
 
 Getting Started
 ---------------
@@ -95,14 +95,3 @@ Launching the correct version of Unity relies on ``Build_Scripts/JenkinsBootstra
 - ``C:\Program Files\Unity\Hub\Editor``
 
 (Yeah, sadly the development and build processes are very Windows-centric.)
-
-Font Atlases Dirty
-------------------
-
-It's possible for characters not included in the font atlases to show up while playing in Unity. For example, from workshop files on the main menu or signs in multiplayer. These get added to the fallback font atlases, marking them changed in git. There's probably a better way to work around this, but one way is to tell git not to detect them as changed:
-
-``git update-index --skip-worktree "Assets/Resources/UI/Glazier_uGUI/LiberationSans Fallback.asset" "Assets/Resources/UI/Glazier_uGUI/NotoSansCJK Fallback.asset"``
-
-To undo this (for example, when needing to discard changes):
-
-``git update-index --no-skip-worktree "Assets/Resources/UI/Glazier_uGUI/LiberationSans Fallback.asset" "Assets/Resources/UI/Glazier_uGUI/NotoSansCJK Fallback.asset"``
