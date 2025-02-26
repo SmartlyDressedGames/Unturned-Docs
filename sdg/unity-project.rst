@@ -3,8 +3,6 @@
 Unity Project
 =============
 
-.. warning:: This document is **not** indicative of the project source files becoming available anytime soon. While that is a longer-term goal, this document only aims to begin formalizing the development process. Also good to write this information down since it only exists inside my head at the moment.
-
 Downloading
 -----------
 
