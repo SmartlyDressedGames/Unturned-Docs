@@ -159,6 +159,9 @@ Unturned Documentation
 	:caption: SDG / Project Info
 	:glob:
 
+	sdg/source-code
+	sdg/using-git
+	sdg/unity-project
 	sdg/*
 
 Welcome to the official documentation for `Unturned <https://store.steampowered.com/app/304930>`_'s modding and server hosting features! To navigate, use the table of contents in the sidebar or the search function in the top-left corner.
