@@ -62,6 +62,11 @@ Individual asset \*.dats can set the following keys:
 	// Used by notes to share a common object prefab.
 	Bundle_Override_Path /Objects/Medium/Furniture/Note
 
+	// If true, path within master bundle appends asset file name as subdirectory.
+	// For example:
+	// Guns/Eaglefire.asset → Guns/Eaglefire/Item.prefab
+	Bundle_Path_Include_Filename true
+
 Tool Usage
 ``````````
 
