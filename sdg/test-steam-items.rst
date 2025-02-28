@@ -47,7 +47,14 @@ Optional. Any of the ragdoll effect names.
 ParticleEffect :ref:`uint16 <doc_data_builtin_types>` ``0``
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Optional legacy ID of a mythical effect. Works as if the item were crafted with this mythical effect. Useful for testing mythical effects, however cosmetic items only work on the main menu. (Unboxed mythicals unfortunately use an older, less flexible system.)
+Optional legacy ID of a mythical effect. Works as if the item were crafted with this mythical effect. Useful for testing mythical effects on skins. (Unboxed mythicals unfortunately use an older, less flexible system.)
+
+----
+
+MythicSearchId :ref:`uint16 <doc_data_builtin_types>` ``0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Optional legacy ID of a mythical effect. Useful for testing mythical effects on cosmetic items without knowing the DefinitionId of the variant. Set DefinitionId to the ID of the non-mythical variant of the item.
 
 ----
 
