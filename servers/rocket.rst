@@ -19,8 +19,6 @@ Browse the source code for the maintained version: `Legally Distinct Missile Rep
 
 fr34kyn01535 has listed all of the original plugins in a post to the /r/RocketMod subreddit: `List of plugins from the old repository <https://www.reddit.com/r/rocketmod/comments/ek4i7b/>`_.
 
-Following closure of the original forum the recommended sites for developer discussion are the `/r/UnturnedLDM <https://www.reddit.com/r/UnturnedLDM/>`_ subreddit, `SDG Forum <https://forum.smartlydressedgames.com/c/modding/ldm>`_, or the `Steam Discussions <https://steamcommunity.com/app/304930/discussions/17/>`_.
-
 The RocketMod organization on GitHub hosts several related archived projects: `RocketMod (Abandoned) <https://github.com/RocketMod>`_
 
 History
