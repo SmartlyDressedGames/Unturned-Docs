@@ -25,6 +25,8 @@ Most gameplay requires remote procedure calls (RPCs) to function properly. Even 
 
 Finally, to run the game in the editor, open ``Assets/Game/Sources/Scenes/Setup.unity`` and click Play.
 
+.. warning:: We recommend closing Unity's **Hierarchy** window in-game except when you need it. Unturned's scenes contain mostly top-level game objects for optimization purposes with the drawback of slowing down the Hierarchy window. For more information, `Scenes Structure > Hierarchy depth and count <https://learn.unity.com/tutorial/unity-tips#64622ce0edbc2a32a219b25e>`_.
+
 Play Mode Settings
 ------------------
 
