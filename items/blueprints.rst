@@ -71,6 +71,9 @@ Properties
    * - :ref:`Blueprint_#_Supplies <doc_item_asset_blueprints:blueprint_#_supplies>`
      - :ref:`uint8 <doc_data_builtin_types>`
      - ``0``
+   * - :ref:`Blueprint_#_Supply_#_AllowEmpty <doc_item_asset_blueprints:blueprint_#_supply_#_allowempty>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``false``
    * - :ref:`Blueprint_#_Supply_#_Amount <doc_item_asset_blueprints:blueprint_#_supply_#_amount>`
      - :ref:`uint8 <doc_data_builtin_types>`
      - ``0``
@@ -79,6 +82,9 @@ Properties
      -
    * - :ref:`Blueprint_#_Supply_#_ID <doc_item_asset_blueprints:blueprint_#_supply_#_id>`
      - :ref:`uint16 <doc_data_builtin_types>`
+     -
+   * - :ref:`Blueprint_#_Supply_#_Prioritization <doc_item_asset_blueprints:blueprint_#_supply_#_prioritization>`
+     - :ref:`enum <doc_data_flag>`
      -
    * - :ref:`Blueprint_#_Tool <doc_item_asset_blueprints:blueprint_#_tool>`
      - :ref:`uint16 <doc_data_builtin_types>`
@@ -285,6 +291,15 @@ Total number of ``Blueprint_#_Supply_#_ID`` properties that have been configured
 
 ----
 
+.. _doc_item_asset_blueprints:blueprint_#_supply_#_allowempty:
+
+Blueprint_#_Supply_#_AllowEmpty :ref:`bool <doc_data_builtin_types>` ``false``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If true, items with an "amount" of zero—such as empty magazines—are treated as an amount of one. In vanilla this is used to enable salvaging empty magazines.
+
+----
+
 .. _doc_item_asset_blueprints:blueprint_#_supply_#_amount:
 
 Blueprint_#_Supply_#_Amount :ref:`uint8 <doc_data_builtin_types>` ``0``
@@ -311,6 +326,20 @@ Blueprint_#_Supply_#_ID :ref:`uint16 <doc_data_builtin_types>`
 Legacy ID of an item that is required as a supply (i.e., an input that is consumed when crafting the blueprint). This property requires ``Blueprint_#_Supplies``.
 
 This property can also be set to a string value of ``this``, which will use the the owning item's legacy ID. Useful for salvaging blueprints to avoid accidentally writing the wrong ID.
+
+----
+
+.. _doc_item_asset_blueprints:blueprint_#_supply_#_prioritization:
+
+Blueprint_#_Supply_#_Prioritization :ref:`enum <doc_data_builtin_types>`
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Controls which items are used first. Can be set to ``LowestAmount`` or ``LowestQuality``.
+
+- ``LowestAmount`` sorts items by their amount (e.g., number of bullets in magazine) from lowest to highest, and consumes the emptiest ones first.
+- ``LowestQuality`` sorts items by their quality from lowest (0%) to highest (100%), and consumes those nearest 0% first.
+
+``AMMO`` type blueprints default to ``LowestAmount``, otherwise defaults to ``LowestQuality``.
 
 ----
 
