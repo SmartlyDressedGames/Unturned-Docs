@@ -271,7 +271,8 @@ Alphabetically sorted list of curated map file IDs:
 - Hawaii: 1753134636
 - Ireland: 1411633953
 - Kuwait: 2483365750
-- Rio de Janeiro: 1821848824
+- Rio de Janeiro Remastered: 3416057692
+- Rio de Janeiro (Original): 1821848824
 
 .. _doc_server_hosting:host_over_internet:
 
