@@ -78,6 +78,8 @@ Some of the launch options are primarily intended for use with the Unturned Dedi
 
 **-OfflineOnly**: Disables requests to the internet. For LAN servers, it skips the Steam backend connection and uses locally-cached Workshop items.
 
+**-ParseAssetMetadata**: Enables parsing asset file metadata like comments and line numbers. Useful for development (e.g., error messages) at the cost of slower loading and increased memory usage. Plugin developers building on this feature may be interested in :ref:`doc_dat_editing_code`.
+
 **-PreviewLevelBatchingTextureAtlas**: Please refer to :ref:`Level Batching <doc_mapping_batching>` for more details.
 
 **-PreviewLevelBatchingUniqueMaterials**: Please refer to :ref:`Level Batching <doc_mapping_batching>` for more details.
