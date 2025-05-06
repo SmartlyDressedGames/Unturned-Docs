@@ -97,6 +97,7 @@ Unturned Documentation
 	assets/server-browser-curation-asset
 	assets/spawn-asset
 	assets/stereo-song-asset
+	assets/tag-asset
 	assets/weather-asset
 	assets/zombie-difficulty-asset
 
