@@ -20,6 +20,8 @@ General data
 
 **Gore** *bool*: Effect is hidden when gore is disabled.
 
+**OneShotAudio** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: AudioClip or OneShotAudioDefinition to play alongside effect. Useful for audio-only effects, in which case Effect prefab is unnecessary and can be excluded.
+
 **Static** *flag*: Disable randomized audio pitch change.
 
 **Randomize_Rotation** *bool*: Rolls the effect around the hit axis. Defaults to true.
