@@ -147,3 +147,23 @@ Fall Damage Override
 ````````````````````
 
 Allows any game object to override the fall damage when a character lands on it or one of its descendants.
+
+Crafting Tag Provider
+`````````````````````
+
+Allows the following entities to modify which crafting tags (workstations) are available to nearby players:
+
+- Barricades
+- Structures
+- Vehicles
+- Resources
+- Objects
+
+This component is used by vanilla for Heat Source backwards compatibility.
+
+Crafting Tag Modifier
+`````````````````````
+
+Linked from a Crafting Tag Provider. Allows Unity events to modify which crafting tags (workstations) are available to nearby players.
+
+As an example: the automatic Heat Source backwards compatibility adds a Crafting Tag Modifier to the Fire game object with an Activation Requirement of Invert and Mode Remove. This removes the Heat Source tag while the Fire is inactive.
