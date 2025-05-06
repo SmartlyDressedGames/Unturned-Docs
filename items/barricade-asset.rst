@@ -67,6 +67,12 @@ Barricade Asset Properties
 
 **Range** *float*: In meters, the maximum distance away the barricade can be placed from the player.
 
+**RequiresHeatSourceCraftingTagConversion** *bool*: Applicable to ``Oven``, ``Torch``, and ``Campfire`` Build types. Defaults to true. Performs the following modifications during load for backwards compatibility:
+
+#. Adds the vanilla Heat Source tag (``20f30322bbcc4b01a4f116d22b24c21a``) to PlaceableProvidesCraftingTags if empty.
+#. Adds a Crafting Tag Modifier component to the Fire child game object with Mode Remove, Activation Requirement Invert, and Tag ``20f30322bbcc4b01a4f116d22b24c21a``. This removes the Heat Source tag when Fire is inactive.
+#. Adds a Crafting Tag Provider component to the Barricade game object with Modifiers set to the component added to Fire.
+
 **Salvage_Duration_Multiplier** *float*: Multiplier on how long it takes to salvage this barricade. Setting this to a larger number will cause salvaging to take longer. Defaults to 1.
 
 **Unpickupable** *flag*: Disables the ability to pick up a placed barricade. For example, the `Horde Beacon <https://unturned.wiki/wiki/Horde_Beacon>`_ uses this flag.
