@@ -16,34 +16,37 @@ Properties
 .. list-table::
    :widths: 40 40 20
    :header-rows: 1
-   
+
    * - Property Name
      - Type
      - Default Value
    * - :ref:`Action_#_Blueprint_#_Index <doc_item_asset_actions:action_blueprint_index>`
      - :ref:`uint8 <doc_data_builtin_types>`
      - ``0``
+   * - :ref:`Action_#_Blueprint_#_Name <doc_item_asset_actions:action_blueprint_name>`
+     - :ref:`string <doc_data_builtin_types>`
+     - ``""``
    * - :ref:`Action_#_Blueprint_#_Link <doc_item_asset_actions:action_blueprint_link>`
      - :ref:`flag <doc_data_flag>`
-     - 
+     -
    * - :ref:`Action_#_Blueprints <doc_item_asset_actions:action_blueprints>`
      - :ref:`uint8 <doc_data_builtin_types>`
      - ``0``
    * - :ref:`Action_#_Key <doc_item_asset_actions:action_key>`
      - :ref:`string <doc_data_builtin_types>`
-     - 
+     -
    * - :ref:`Action_#_Source <doc_item_asset_actions:action_source>`
      - :ref:`uint16 <doc_data_builtin_types>`
      - See description
    * - :ref:`Action_#_Text <doc_item_asset_actions:action_text>`
      - :ref:`string <doc_data_builtin_types>`
-     - 
+     -
    * - :ref:`Action_#_Tooltip <doc_item_asset_actions:action_tooltip>`
      - :ref:`string <doc_data_builtin_types>`
-     - 
+     -
    * - :ref:`Action_#_Type <doc_item_asset_actions:action_type>`
      - :ref:`EActionType <doc_item_asset_actions:eactiontype>`
-     - 
+     -
    * - :ref:`Actions <doc_item_asset_actions:actions>`
      - :ref:`uint8 <doc_data_builtin_types>`
      - ``0``
@@ -56,7 +59,7 @@ EActionType Enumeration
 .. list-table::
    :widths: 25 75
    :header-rows: 1
-   
+
    * - Named Value
      - Description
    * - ``Blueprint``
@@ -71,6 +74,17 @@ Action_#_Blueprint_#_Index :ref:`uint8 <doc_data_builtin_types>` ``0``
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Index of the blueprint that action should perform.
+
+.. note:: ``Action_#_Blueprint_#_Name`` should be used instead of ``Action_#_Blueprint_#_Index`` where possible because the index may change if the item's Blueprints list is reorganized. This requires specifying a ``Name`` in the blueprint.
+
+----
+
+.. _doc_item_asset_actions:action_blueprint_name:
+
+Action_#_Blueprint_#_Name :ref:`string <doc_data_builtin_types>` ``""``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Name of the blueprint that action should perform. This requires specifying a ``Name`` in the blueprint, however.
 
 ----
 
