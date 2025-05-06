@@ -85,6 +85,7 @@ Unturned Documentation
 	assets/airdrop-asset
 	assets/animal-asset
 	assets/character-mesh-replacement
+	assets/crafting-asset
 	assets/crafting-blacklist-asset
 	assets/effect-asset
 	assets/foliage-asset
