@@ -88,6 +88,14 @@ Some of the launch options are primarily intended for use with the Unturned Dedi
 
 **-RefreshRate=**: Monitor refresh rate override.
 
+**-ResaveAssets**: Danger! Only use this if you have a backup of your custom assets, ideally in version control. Here be dragons:
+
+Depends on the **-ParseAssetMetadata** launch option also being enabled.
+
+This is our first experiment with automatically patching asset files. It will attempt to preserve comments and line numbers in your files (this is why asset metadata is needed). However, certain comments may not be preserved. In particular, comments with blank lines surrounding them.
+
+At the time of writing (2025-05-06) the game will convert blueprints from the legacy (Blueprint_*** prefix) format to newer list-based format. It cannot yet auto-convert blueprints with NPC conditions or rewards because we haven't written conversion code for those yet, but it's on our wishlist.
+
 **-ResetSteamStatsAndAchievements**: Reset all progress on Steam achievements and stats.
 
 **-SkipAssets**: Disable loading asset bundles and Workshop content. This is useful for quickly iterating on serverside code.
