@@ -88,6 +88,8 @@ Some of the launch options are primarily intended for use with the Unturned Dedi
 
 **-RefreshRate=**: Monitor refresh rate override.
 
+.. _doc_launch_options:resaveassets:
+
 **-ResaveAssets**: Danger! Only use this if you have a backup of your custom assets, ideally in version control. Here be dragons:
 
 Depends on the **-ParseAssetMetadata** launch option also being enabled.

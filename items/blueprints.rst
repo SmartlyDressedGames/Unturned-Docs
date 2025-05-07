@@ -389,6 +389,8 @@ Game Data File v2
 
 .. warning:: Under construction! We might move this to a different page.
 
+The game can auto-convert most blueprints to this new format! For more information, please refer to :ref:`the ResaveAssets launch option <doc_launch_options:resaveassets>`.
+
 Starting with version 3.25.5.0, Blueprints can be specified as a :ref:`list <doc_data_file_format>` rather than prefixing each property with ``Blueprint_#_``. For example:
 
 .. code-block:: unturneddat
