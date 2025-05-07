@@ -383,3 +383,274 @@ Conditions and Rewards
 Blueprints can use quest conditions and rewards. A common usage is to make it so a blueprint is only available during a seasonal event. For more information, refer to the documentation for :ref:`Conditions <doc_npc_asset_conditions>` and :ref:`Rewards <doc_npc_asset_rewards>` respectively.
 
 Blueprint conditions and rewards are prefixed with ``Blueprint_#_``. For example, ``Blueprint_0_Condition_0_Type Holiday``.
+
+Game Data File v2
+-----------------
+
+.. warning:: Under construction! We might move this to a different page.
+
+Starting with version 3.25.5.0, Blueprints can be specified as a :ref:`list <doc_data_file_format>` rather than prefixing each property with ``Blueprint_#_``. For example:
+
+.. code-block:: unturneddat
+
+	Blueprints
+	[
+		{
+			// First blueprint properties
+		}
+		{
+			// Second blueprint properties
+		}
+	]
+
+Each blueprint dictionary has the following properties:
+
+Properties
+``````````
+
+.. list-table::
+   :widths: 40 40 20
+   :header-rows: 1
+
+   * - Property Name
+     - Type
+     - Default Value
+   * - :ref:`CategoryTag <doc_item_asset_blueprints:blueprint_v2_categorytag>`
+     - :ref:`Asset Pointer <doc_data_assetptr>` to :ref:`doc_assets_tag`
+     -
+   * - :ref:`Conditions <doc_item_asset_blueprints:blueprint_v2_conditions>`
+     - :ref:`doc_npc_asset_conditions`
+     -
+   * - :ref:`Effect <doc_item_asset_blueprints:blueprint_v2_effect>`
+     - :ref:`Asset Pointer <doc_data_assetptr>` to :ref:`doc_assets_effect`
+     -
+   * - :ref:`InputItems <doc_item_asset_blueprints:blueprint_v2_inputitems>`
+     - :ref:`list <doc_data_file_format>` of :ref:`doc_item_asset_blueprints_inputitem`
+     -
+   * - :ref:`Map <doc_item_asset_blueprints:blueprint_v2_map>`
+     - :ref:`string <doc_data_builtin_types>`
+     - ``""``
+   * - :ref:`Name <doc_item_asset_blueprints:blueprint_v2_name>`
+     - :ref:`string <doc_data_builtin_types>`
+     - ``""``
+   * - :ref:`Operation <doc_item_asset_blueprints:blueprint_v2_operation>`
+     - :ref:`EBlueprintOperation <doc_item_asset_blueprints:eblueprintoperation_enumeration>`
+     - ``None``
+   * - :ref:`OutputItems <doc_item_asset_blueprints:blueprint_v2_outputitems>`
+     - :ref:`list <doc_data_file_format>` of :ref:`doc_item_asset_blueprints_outputitem`
+     -
+   * - :ref:`RequiresNearbyCraftingTags <doc_item_asset_blueprints:blueprint_v2_requiresnearbycraftingtags>`
+     - :ref:`list <doc_data_file_format>` of :ref:`Asset Pointer <doc_data_assetptr>` to :ref:`doc_assets_tag`
+     -
+   * - :ref:`Rewards <doc_item_asset_blueprints:blueprint_v2_rewards>`
+     - :ref:`doc_npc_asset_rewards`
+     -
+   * - :ref:`Searchable <doc_item_asset_blueprints:blueprint_v2_searchable>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``true``
+   * - :ref:`Skill <doc_item_asset_blueprints:blueprint_v2_skill>`
+     - :ref:`EBlueprintSkill <doc_item_asset_blueprints:eblueprintskill_enumeration>`
+     - ``None``
+   * - :ref:`Skill_Level <doc_item_asset_blueprints:blueprint_v2_skill_level>`
+     - :ref:`int32 <doc_data_builtin_types>`
+     - ``0``
+   * - :ref:`StateTransfer <doc_item_asset_blueprints:blueprint_v2_statetransfer>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``false``
+   * - :ref:`StateTransfer_DeleteAttachments <doc_item_asset_blueprints:blueprint_v2_statetransfer_deleteattachments>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``false``
+   * - :ref:`Type <doc_item_asset_blueprints:blueprint_v2_type>`
+     - :ref:`EBlueprintType <doc_item_asset_blueprints:eblueprinttype_enumeration>`
+     - Deprecated.
+   * - :ref:`VisibleWithUnmetConditions <doc_item_asset_blueprints:blueprint_v2_visiblewithunmetconditions>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``false``
+
+.. _doc_item_asset_blueprints:eblueprintoperation_enumeration:
+
+EBlueprintOperation Enumeration
+```````````````````````````````
+
+.. list-table::
+   :widths: 25 75
+   :header-rows: 1
+
+   * - Named Value
+     - Description
+   * - ``None``
+     - No special modification.
+   * - ``RepairTargetItem``
+     - Restore target item to full quality.
+   * - ``FillTargetItem``
+     - Transfer amount from first input item to target item.
+
+----
+
+.. _doc_item_asset_blueprints:blueprint_v2_categorytag:
+
+CategoryTag :ref:`Asset Pointer <doc_data_assetptr>` to :ref:`doc_assets_tag`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Determines which category the blueprint appears under in the crafting menu. Enables the creation of custom categories.
+
+This replaces the ``Type`` property which acted as both a hardcoded category and modified behavior of crafting.
+
+----
+
+.. _doc_item_asset_blueprints:blueprint_v2_conditions:
+
+Conditions :ref:`doc_npc_asset_conditions`
+::::::::::::::::::::::::::::::::::::::::::
+
+NPC conditions which must be met before the blueprint can be crafted.
+
+.. note:: By default, the blueprint will be hidden until all of the conditions are met. If you have configured display text for your conditions you can enable :ref:`VisibleWithUnmetConditions <doc_item_asset_blueprints:blueprint_v2_visiblewithunmetconditions>`.
+
+----
+
+.. _doc_item_asset_blueprints:blueprint_v2_effect:
+
+Effect :ref:`Asset Pointer <doc_data_assetptr>` to :ref:`doc_assets_effect`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+An effect to play upon successfully crafting.
+
+----
+
+.. _doc_item_asset_blueprints:blueprint_v2_inputitems:
+
+InputItems :ref:`list <doc_data_file_format>` of :ref:`doc_item_asset_blueprints_inputitem`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Required ingredients/supplies needed to craft this blueprint.
+
+----
+
+.. _doc_item_asset_blueprints:blueprint_v2_map:
+
+Map :ref:`string <doc_data_builtin_types>` ``""``
+:::::::::::::::::::::::::::::::::::::::::::::::::
+
+Name of a map that this blueprint is restricted to. The blueprint will only be visible while on this map. For other maps, the blueprint is hidden from view.
+
+----
+
+.. _doc_item_asset_blueprints:blueprint_v2_name:
+
+Name :ref:`string <doc_data_builtin_types>` ``""``
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Optional case-sensitive identifier in list of blueprints. Can be used, for example, to reference this blueprint from a context menu action or a list of prohibited blueprints.
+
+----
+
+.. _doc_item_asset_blueprints:blueprint_v2_operation:
+
+Operation :ref:`EBlueprintOperation <doc_item_asset_blueprints:eblueprintoperation_enumeration>` ``None``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Controls what blueprint does with input items.
+
+----
+
+.. _doc_item_asset_blueprints:blueprint_v2_outputitems:
+
+OutputItems :ref:`list <doc_data_file_format>` of :ref:`doc_item_asset_blueprints_outputitem`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Items created by this blueprint.
+
+----
+
+.. _doc_item_asset_blueprints:blueprint_v2_requiresnearbycraftingtags:
+
+RequiresNearbyCraftingTags :ref:`list <doc_data_file_format>` of :ref:`Asset Pointer <doc_data_assetptr>` to :ref:`doc_assets_tag`
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:ref:`doc_assets_tag` that must be available from nearby crafting tag providers (workstations).
+
+For example, to require both Chemical Mixing and Workbench:
+
+.. code-block:: unturneddat
+
+	RequiresNearbyCraftingTags
+	[
+		// Chemical Mixing
+		99896da563a748148460c67b9962874f
+
+		// Workbench
+		7b82c125a5a54984b8bb26576b59e977
+	]
+
+----
+
+.. _doc_item_asset_blueprints:blueprint_v2_rewards:
+
+Rewards :ref:`doc_npc_asset_rewards`
+::::::::::::::::::::::::::::::::::::
+
+NPC rewards granted when crafting this blueprint.
+
+----
+
+.. _doc_item_asset_blueprints:blueprint_v2_searchable:
+
+Searchable :ref:`bool <doc_data_builtin_types>` ``true``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+When ``true``, this blueprint is visible in the search results even when the player lacks the required items. This property can be used to hide blueprints intended for debugging that are not acquirable through normal gameplay.
+
+----
+
+.. _doc_item_asset_blueprints:blueprint_v2_skill:
+
+Skill :ref:`EBlueprintSkill <doc_item_asset_blueprints:eblueprintskill_enumeration>` ``None``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+The player must have leveled the specified skill in order to craft this blueprint. This property is used in conjunction with ``Skill_Level``.
+
+----
+
+.. _doc_item_asset_blueprints:blueprint_v2_skill_level:
+
+Skill_Level :ref:`int32 <doc_data_builtin_types>` ``0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If the blueprint requires a skill, its level must be greater than or equal to this value. This property is used in conjunction with ``Skill``.
+
+----
+
+.. _doc_item_asset_blueprints:blueprint_v2_statetransfer:
+
+StateTransfer :ref:`bool <doc_data_builtin_types>` ``false``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Transfer the current state the first input item to the product, when applicable. For example, some states that can be transferred include: amount (e.g., rounds in an ammunition box), quality percentage, selected firing mode, or fuel units (e.g., from a gas can).
+
+----
+
+.. _doc_item_asset_blueprints:blueprint_v2_statetransfer_deleteattachments:
+
+StateTransfer_DeleteAttachments :ref:`bool <doc_data_builtin_types>` ``false``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If ``true`` and ``StateTransfer`` is enabled, any output guns will have all of their attachments deleted.
+
+----
+
+.. _doc_item_asset_blueprints:blueprint_v2_type:
+
+Type :ref:`EBlueprintType <doc_item_asset_blueprints:eblueprinttype_enumeration>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Should not be used. Type acted as both a hardcoded category and modified behavior of crafting. These have been separated into the ``CategoryTag`` and ``Operation`` properties instead.
+
+----
+
+.. _doc_item_asset_blueprints:blueprint_v2_visiblewithunmetconditions:
+
+VisibleWithUnmetConditions :ref:`bool <doc_data_builtin_types>` ``false``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If true, blueprint can become visible in the crafting list even when NPC conditions are not met. This should typically only be enabled if all conditions are configured to be visible in the details panel. Otherwise, the default "conditions unmet" label isn't very informative for players.
