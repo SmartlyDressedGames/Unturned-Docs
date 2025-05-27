@@ -95,6 +95,12 @@ Properties
    * - :ref:`Count_Min <doc_item_asset_intro:count_min>`
      - :ref:`uint8 <doc_data_builtin_types>`
      - ``1``
+   * - :ref:`Deleted_At_Zero_Quality_Effect <doc_item_asset_intro:deleted_at_zero_quality_effect>`
+     - :ref:`doc_assets_effect`
+     - ``0``
+   * - :ref:`Deleted_At_Zero_Quality_Rewards <doc_item_asset_intro:deleted_at_zero_quality_rewards>`
+     - :ref:`doc_npc_asset_rewards`
+     - ``0``
    * - :ref:`Destroy_Item_Colliders <doc_item_asset_intro:destroy_item_colliders>`
      - :ref:`bool <doc_data_builtin_types>`
      - ``true``
@@ -346,6 +352,24 @@ Count_Max :ref:`uint8 <doc_data_builtin_types>` ``1``
 :::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Maximum amount to generate, for container-like items. Typically used with ``Count_Min`` and ``Amount``.
+
+----
+
+.. _doc_item_asset_intro:deleted_at_zero_quality_effect:
+
+Deleted_At_Zero_Quality_Effect :ref:`doc_data_assetptr` to :ref:`doc_assets_effect`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If assigned, and :ref:`Should_Delete_At_Zero_Quality <doc_item_asset_intro:should_delete_at_zero_quality>` is ``true``, this effect is played when the item breaks.
+
+----
+
+.. _doc_item_asset_intro:deleted_at_zero_quality_rewards:
+
+Deleted_At_Zero_Quality_Rewards :ref:`doc_npc_asset_rewards`
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If assigned, and :ref:`Should_Delete_At_Zero_Quality <doc_item_asset_intro:should_delete_at_zero_quality>` is ``true``, these rewards are granted to the player when the item breaks.
 
 ----
 
