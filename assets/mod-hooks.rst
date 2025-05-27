@@ -109,12 +109,27 @@ Events for a specific custom :ref:`Weather Asset <doc_assets_weather>`. Any map 
 Event Instigators
 -----------------
 
+Airdrop Spawner
+```````````````
+
+Allows Unity events to call in an airdrop. Optionally overrides the cargo and destination.
+
+Barricade Spawner
+`````````````````
+
+Allows Unity events to place barricades.
+
 Client Text Chat Messenger
 ``````````````````````````
 
 Allows Unity events to request a text chat message be sent on behalf of the client. For example, to execute a command.
 
 The ``UnityEvents.Allow_Client_Messages`` and/or ``UnityEvents.Allow_Client_Commands`` settings must be enabled in the server ``Config.json`` file before these can be triggered. This ensures hosts are aware of their usage. Singleplayer defaults to enabled.
+
+Item Spawner
+```````````````
+
+Allows Unity events to spawn dropped items.
 
 Server Text Chat Messenger
 ``````````````````````````
@@ -139,6 +154,11 @@ NPC Global Event Messenger
 ``````````````````````````
 
 Allows Unity events to broadcast Event NPC rewards. The ``NPC Global Event Hook`` can then listen for these events.
+
+Vehicle Spawner
+```````````````
+
+Allows Unity events to spawn a vehicle. Optionally overrides the paint color.
 
 Misc
 ----
@@ -167,3 +187,8 @@ Crafting Tag Modifier
 Linked from a Crafting Tag Provider. Allows Unity events to modify which crafting tags (workstations) are available to nearby players.
 
 As an example: the automatic Heat Source backwards compatibility adds a Crafting Tag Modifier to the Fire game object with an Activation Requirement of Invert and Mode Remove. This removes the Heat Source tag while the Fire is inactive.
+
+Repeat
+``````
+
+Repeats an event a configurable or random number of times. Essentially a for-loop for Unity events.
