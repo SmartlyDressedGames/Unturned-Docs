@@ -22,6 +22,19 @@ Some of the launch options are primarily intended for use with the Unturned Dedi
 
 **+connect**: Connect to a server, in the format of ``+connect <ip address>:<port>``.
 
+**-Cinematic**: Turns off many level-of-detail optimizations. This has a significant performance cost.
+
+Effects include:
+
+- 4 km draw distance and sun shadow range.
+- LOD groups always show their highest quality. (High LOD bias.)
+- Lights are always visible. (Turns off light LODs.)
+- Objects and resources are always visible. (No landmarks or culling volumes.)
+- Terrains always use splatmap shaders. (No basemap fallback texture.)
+- Terrains always use max-quality heightmaps. (No mesh simplification.)
+- Sun shadowmaps use GPU max supported resolution. (16,384 x 16,384 on some modern GPUs.)
+- Planar reflections render at 100% resolution. (Rather than 50%.)
+
 **-DisableCullingVolumes**: Disable object culling distance overrides. Please refer to :ref:`Manual Object Culling <doc_mapping_culling>` for more details.
 
 **-DisableLightLODs**: Disable fadeout of dynamic lights. Could be useful for high-quality screenshots.
