@@ -10,11 +10,17 @@ This inherits the :ref:`ItemAsset <doc_item_asset_intro>` class.
 Placeable Asset Properties
 --------------------------
 
-**Item_Dropped_On_Destroy** :ref:`Asset Pointer <doc_data_assetptr>`: Spawn table for items dropped when destroyed.
+**Item_Dropped_On_Destroy** :ref:`Asset Pointer <doc_data_assetptr>`: Item asset or spawn table for items dropped when destroyed.
+
+This property can also be set to a string value of ``this``, which will use the the owning item's GUID. Useful to avoid accidentally writing the wrong ID.
 
 **Min_Items_Dropped_On_Destroy** *int*: Minimum number of items to drop when destroyed. Defaults to 0.
 
 **Max_Items_Dropped_On_Destroy** *int*: Maximum number of items to drop when destroyed. Defaults to 0.
+
+**Min_Items_Recovered_On_Salvage** *int*: Minimum number of items to receive when picked up below 100% health. Defaults to 1.
+
+**Max_Items_Recovered_On_Salvage** *int*: Maximum number of items to receive when picked up below 100% health. Defaults to 1.
 
 **PlaceableProvidesCraftingTags** list of :ref:`Asset Pointer <doc_data_assetptr>`: :ref:`doc_assets_tag` available to nearby players for blueprint requirements. Tags are listed in the item description as "crafting capabilities."
 
@@ -30,4 +36,6 @@ For example, the vanilla Brick Oven provides two tags:
 		d2cc65b749e5477f95103601df89cdbc
 	]
 
-**SalvageItem** :ref:`Asset Pointer <doc_data_assetptr>`: Override the default salvaging behavior by pointing to a specific item that should be added when salvaging a placeable that is below 100% health. This property cannot point to a :ref:`SpawnAsset <doc_assets_spawn>` – only :ref:`ItemAssets <doc_item_asset_intro>` are supported. By default, this property will choose a random item used in the placeable's blueprints.
+**SalvageItem** :ref:`Asset Pointer <doc_data_assetptr>`: Override the default salvaging behavior by pointing to a specific item or spawn table that should be added when salvaging a placeable that is below 100% health. By default, this property will choose a random item used in the placeable's blueprints.
+
+This property can also be set to a string value of ``this``, which will use the the owning item's GUID. Useful to avoid accidentally writing the wrong ID.
