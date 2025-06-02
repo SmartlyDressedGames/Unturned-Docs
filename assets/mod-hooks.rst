@@ -163,6 +163,11 @@ Allows Unity events to spawn a vehicle. Optionally overrides the paint color.
 Misc
 ----
 
+Barricade Destroyer
+````````````````````
+
+Forcefully removes barricades within a sphere, optionally playing their Explosion effects and/or spawning their Item_Dropped_On_Destroy item(s).
+
 Fall Damage Override
 ````````````````````
 
@@ -187,6 +192,11 @@ Crafting Tag Modifier
 Linked from a Crafting Tag Provider. Allows Unity events to modify which crafting tags (workstations) are available to nearby players.
 
 As an example: the automatic Heat Source backwards compatibility adds a Crafting Tag Modifier to the Fire game object with an Activation Requirement of Invert and Mode Remove. This removes the Heat Source tag while the Fire is inactive.
+
+Music Audio Source
+```````````````````
+
+Reassigns a sibling Audio Source's output audio mixer group to the vanilla Music mixer, respecting the player's volume preferences.
 
 Repeat
 ``````
