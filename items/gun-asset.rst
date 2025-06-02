@@ -138,6 +138,9 @@ Ranged weapons have a significant number of properties. To make navigating these
    * - :ref:`Scale_Aim_Animation_Speed <doc_item_asset_gun:scale_aim_animation_speed>`
      - :ref:`bool <doc_data_builtin_types>`
      - ``true``
+   * - :ref:`Stop_Aiming_After_Shooting <doc_item_asset_gun:stop_aiming_after_shooting>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``false``
    * - :ref:`DriverTurretViewmodelMode <doc_item_asset_gun:driverturretviewmodelmode>`
      - :ref:`EDriverTurretViewmodelMode <doc_item_asset_gun:edriverturretviewmodelmode>`
      - ``OffscreenWhileAiming``
@@ -1457,6 +1460,15 @@ Spread_Swimming :ref:`float32 <doc_data_builtin_types>` ``1.1``
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Multiplier on the bullet spread while swimming.
+
+----
+
+.. _doc_item_asset_gun:stop_aiming_after_shooting:
+
+Stop_Aiming_After_Shooting :ref:`bool <doc_data_builtin_types>` ``false``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If true, the gun will stop aiming regardless of player input.
 
 ----
 
