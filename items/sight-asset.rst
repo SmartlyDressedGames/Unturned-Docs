@@ -15,16 +15,16 @@ Sight attachments inherit properties from the CaliberAsset class, which in turn 
 .. list-table::
    :widths: 30 40 30
    :header-rows: 1
-   
+
    * - Class
      - Property Name
      - Required Value
    * - :ref:`ItemAsset <doc_item_asset_intro>`
      - :ref:`GUID <doc_item_asset_intro:guid>`
-     - 
+     -
    * - :ref:`ItemAsset <doc_item_asset_intro>`
      - :ref:`ID <doc_item_asset_intro:id>`
-     - 
+     -
    * - :ref:`ItemAsset <doc_item_asset_intro>`
      - :ref:`Type <doc_item_asset_intro:type>`
      - ``Sight``
@@ -35,16 +35,25 @@ Properties
 .. list-table::
    :widths: 40 40 20
    :header-rows: 1
-   
+
    * - Property Name
      - Type
      - Default Value
+   * - :ref:`AimAlignment_LocalOffset <doc_item_asset_sight:aimalignment_localoffset>`
+     - :ref:`Vector3 <doc_data_vector3>`
+     - ``(0, 0, 0)``
+   * - :ref:`AimAlignment_Owner <doc_item_asset_sight:aimalignment_owner>`
+     - :ref:`EAimAlignmentTransformOwner <doc_item_asset_sight:eaimalignmenttransformowner>`
+     - ``Sight``
+   * - :ref:`AimAlignment_Path <doc_item_asset_sight:aimalignment_path>`
+     - :ref:`string <doc_data_builtin_types>`
+     - ``Model_0/Aim``
    * - :ref:`DistanceMarkers <doc_item_asset_sight:distancemarkers>`
      - :ref:`list of DistanceMarker <doc_item_asset_sight:distancemarker_dictionary_descriptions>`
-     - 
+     -
    * - :ref:`Holographic <doc_item_asset_sight:holographic>`
      - :ref:`flag <doc_data_flag>`
-     - 
+     -
    * - :ref:`Nightvision_Color <doc_item_asset_sight:nightvision_color>`
      - :ref:`color <doc_data_color>`
      - See description
@@ -75,7 +84,7 @@ DistanceMarker Dictionary
 .. list-table::
    :widths: 40 40 20
    :header-rows: 1
-   
+
    * - Property Name
      - Type
      - Default Value
@@ -98,6 +107,22 @@ DistanceMarker Dictionary
      - :ref:`color <doc_data_color>`
      - ``black``
 
+.. _doc_item_asset_sight:eaimalignmenttransformowner:
+
+EAimAlignmentTransformOwner Enumeration
+````````````````````````````````````````
+
+.. list-table::
+   :widths: 25 75
+   :header-rows: 1
+
+   * - Named Value
+     - Description
+   * - ``Sight``
+     - Look for aim alignment transform relative to sight model. Defaults to Model_0/Aim.
+   * - ``Gun``
+     - Look for aim alignment transform relative to equipable prefab. Requires setting AimAlignment_Path.
+
 .. _doc_item_asset_sight:eside_enumeration:
 
 ESide Enumeration
@@ -106,7 +131,7 @@ ESide Enumeration
 .. list-table::
    :widths: 25 75
    :header-rows: 1
-   
+
    * - Named Value
      - Description
    * - ``Left``
@@ -116,6 +141,33 @@ ESide Enumeration
 
 Property Descriptions
 `````````````````````
+
+.. _doc_item_asset_sight:aimalignment_localoffset:
+
+AimAlignment_LocalOffset :ref:`Vector3 <doc_data_vector3>` ``(0, 0, 0)``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Position offset relative to Aim transform or transform specified by ``AimAlignment_Path``.
+
+----
+
+.. _doc_item_asset_sight:aimalignment_owner:
+
+AimAlignment_Owner :ref:`EAimAlignmentTransformOwner <doc_item_asset_sight:eaimalignmenttransformowner>` ``Sight``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Controls where to find ``AimAlignment_Path``.
+
+----
+
+.. _doc_item_asset_sight:aimalignment_path:
+
+AimAlignment_Path :ref:`string <doc_data_builtin_types>` ``Model_0/Aim``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+While aiming down sights, the camera's position is aligned with this transform. Relative to ``AimAlignment_Owner``.
+
+----
 
 .. _doc_item_asset_sight:distancemarkers:
 
