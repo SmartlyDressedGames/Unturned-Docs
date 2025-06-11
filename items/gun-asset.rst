@@ -407,8 +407,8 @@ Ranged weapons have a significant number of properties. To make navigating these
    * - :ref:`RechamberAfterMagazineDetached <doc_item_asset_gun:rechamberaftermagazinedetached>`
      - :ref:`ERechamberGunAfterReloadMode <doc_item_asset_gun:erechambergunafterreloadmode>`
      - ``Always``
-   * - :ref:`RechamberAfterShooting <doc_item_asset_gun:rechamberaftershooting>`
-     - :ref:`bool <doc_data_builtin_types>`
+   * - :ref:`RechamberAfterShotCount <doc_item_asset_gun:rechamberaftershotcount>`
+     - :ref:`int32 <doc_data_builtin_types>`
      - See description
    * - :ref:`RechamberAfterShotDelay <doc_item_asset_gun:rechamberaftershotdelay>`
      - :ref:`float32 <doc_data_builtin_types>`
@@ -830,7 +830,7 @@ For an example, refer to ``.../Guns/Cobra_Jam/Cobra_Jam.dat`` in the game files.
 CasingEjectCountAfterRechamberingAfterShooting :ref:`int32 <doc_data_builtin_types>` ``1``
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Only applicable if :ref:`RechamberAfterShooting <doc_item_asset_gun:rechamberaftershooting>` is `true`.
+Only applicable if :ref:`RechamberAfterShotCount <doc_item_asset_gun:rechamberaftershotcount>` is non-zero.
 
 If greater than zero, emit this many bullet casing particles after :ref:`EjectAfterHammerDelay <doc_item_asset_gun:ejectafterhammerdelay>` seconds pass.
 
@@ -893,7 +893,7 @@ EjectAfterHammerDelay :ref:`float32 <doc_data_builtin_types>` ``0.45``
 
 How long in seconds after hammering to eject a bullet casing.
 
-Only applicable if :ref:`RechamberAfterShooting <doc_item_asset_gun:rechamberaftershooting>` is ``true``.
+Only applicable if :ref:`RechamberAfterShotCount <doc_item_asset_gun:rechamberaftershotcount>` is non-zero.
 
 ----
 
@@ -1174,14 +1174,16 @@ This happens when a magazine is removed from the gun without a replacement.
 
 ----
 
-.. _doc_item_asset_gun:rechamberaftershooting:
+.. _doc_item_asset_gun:rechamberaftershotcount:
 
-RechamberAfterShooting :ref:`bool <doc_data_builtin_types>`
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+RechamberAfterShotCount :ref:`int32 <doc_data_builtin_types>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-If true, hammer animation plays after shooting after :ref:`RechamberAfterShotDelay <doc_item_asset_gun:rechamberaftershotdelay>`: seconds pass.
+If non-zero, hammer animation plays after shooting after shooting this many shots and :ref:`RechamberAfterShotDelay <doc_item_asset_gun:rechamberaftershotdelay>`: seconds pass.
 
-Defaults to true for ``Bolt`` and ``Pump`` Action guns. False otherwise.
+Shot count resets after reloading, hammering, or dequipping the gun.
+
+Defaults to ``1`` for ``Bolt`` and ``Pump`` Action guns. Zero otherwise.
 
 ----
 
@@ -1192,7 +1194,7 @@ RechamberAfterShotDelay :ref:`float32 <doc_data_builtin_types>` ``0.25``
 
 How long in seconds after firing to rechamber the gun by playing the Hammer animation.
 
-Only applicable if :ref:`RechamberAfterShooting <doc_item_asset_gun:rechamberaftershooting>` is ``true``.
+Only applicable if :ref:`RechamberAfterShotCount <doc_item_asset_gun:rechamberaftershotcount>` is non-zero.
 
 ----
 
