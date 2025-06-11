@@ -42,6 +42,8 @@ Consumeable Asset Properties
 
 **Oxygen** *sbyte*: Amount of oxygen restored or depleted.
 
+**Randomize_Consume_Audio_Pitch** *bool*: If false, ``ConsumeAudioClip`` always plays with ``1.0`` pitch. Defaults to true.
+
 **Should_Delete_After_Use** *bool*: Boolean for if the item should be deleted after being consumed. Defaults to true.
 
 **Virus** *byte*: Amount of immunity depleted.
