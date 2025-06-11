@@ -401,6 +401,12 @@ Ranged weapons have a significant number of properties. To make navigating these
    * - :ref:`EjectAfterReloadDelay <doc_item_asset_gun:ejectafterreloaddelay>`
      - :ref:`float32 <doc_data_builtin_types>`
      - ``0.5``
+   * - :ref:`RechamberAfterMagazineAttached <doc_item_asset_gun:rechamberaftermagazineattached>`
+     - :ref:`ERechamberGunAfterReloadMode <doc_item_asset_gun:erechambergunafterreloadmode>`
+     - ``IfAmmoWasEmpty``
+   * - :ref:`RechamberAfterMagazineDetached <doc_item_asset_gun:rechamberaftermagazinedetached>`
+     - :ref:`ERechamberGunAfterReloadMode <doc_item_asset_gun:erechambergunafterreloadmode>`
+     - ``Always``
    * - :ref:`RechamberAfterShooting <doc_item_asset_gun:rechamberaftershooting>`
      - :ref:`bool <doc_data_builtin_types>`
      - See description
@@ -555,6 +561,24 @@ EDriverTurretViewmodelMode Enumeration
      - Push first-person arms off-screen when equipped.
    * - ``AlwaysOnscreen``
      - Included for completeness.
+
+.. _doc_item_asset_gun:erechambergunafterreloadmode:
+
+ERechamberGunAfterReloadMode Enumeration
+````````````````````````````````````````
+
+.. list-table::
+   :widths: 25 75
+   :header-rows: 1
+
+   * - Named Value
+     - Description
+   * - ``IfAmmoWasEmpty``
+     - Default. Plays "Hammer" animation if ammo count was zero.
+   * - ``Never``
+     - Regardless of ammo, does not play "Hammer" animation after reloading.
+   * - ``Always``
+     - Regardless of ammo, will play "Hammer" animation after reloading.
 
 Property Descriptions
 `````````````````````
@@ -1127,6 +1151,26 @@ Range_Rangefinder :ref:`float32 <doc_data_builtin_types>`
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Overrides the maximum distance displayed when using a "Rangefinder" tactical attachment on this weapon. For example, it may be useful to set this property when using ``Action Rocket``, as explosive projectiles use ``Range`` to determine the explosion radius rather than the maximum range of the weapon. Defaults to the value of the ``Range`` property.
+
+----
+
+.. _doc_item_asset_gun:rechamberaftermagazineattached:
+
+RechamberAfterMagazineAttached :ref:`ERechamberGunAfterReloadMode <doc_item_asset_gun:erechambergunafterreloadmode>` ``IfAmmoWasEmpty``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Determines whether "Hammer" animation plays after attaching a magazine.
+This happens when a magazine replaces another OR fills previously empty slot.
+
+----
+
+.. _doc_item_asset_gun:rechamberaftermagazinedetached:
+
+RechamberAfterMagazineDetached :ref:`ERechamberGunAfterReloadMode <doc_item_asset_gun:erechambergunafterreloadmode>` ``Always``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Determines whether "Hammer" animation plays after detached a magazine.
+This happens when a magazine is removed from the gun without a replacement.
 
 ----
 
