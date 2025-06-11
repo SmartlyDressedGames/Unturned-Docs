@@ -77,6 +77,8 @@ Effects include:
 
 **-LogVehicleWheelConfigurations**: Log automatic creation of vehicle asset's ``WheelConfigurations`` property for older vehicles. Useful when converting vehicles to the new format.
 
+**-ModulesPath** *string*: If set, search for ``.dll`` and ``.module`` files in this directory instead of in ``Unturned/Modules``.
+
 **-NetTransport=** *enum* (``SteamNetworking``, ``SteamNetworkingSockets``): SteamNetworkingSockets was used to enable the `ISteamNetworkingSockets <https://partner.steamgames.com/doc/api/ISteamNetworkingSockets>`_ networking API, but this has since become default. SteamNetworking can be used to revert to the older, deprecated `ISteamNetworking <https://partner.steamgames.com/doc/api/ISteamNetworking>`_ networking API.
 
 **-NoDefaultLog**: Disables log file creation unless a plugin calls setLogFilePath.
