@@ -11,6 +11,14 @@ To enable Fake IP, change ``Use_FakeIP`` from ``false`` to ``true`` in your serv
 
 After startup, you can run the ``CopyFakeIP`` command from the server console to copy the IP and port to your clipboard. Pasting this into the Host field of the Connect menu automatically moves the port to the Port field.
 
+Technical Details
+-----------------
+
 Connecting by Fake IP utilizes `Steam Datagram Relay (SDR) <https://partner.steamgames.com/doc/features/multiplayer/steamdatagramrelay>`_. To quote that page: "Relaying the traffic protects your servers and players from DoS attack, because IP addresses are never revealed. All traffic you receive is authenticated, encrypted, and rate-limited. Furthermore, for a surprisingly high number of players, we can also find a faster route through our network, which actually improves player ping times."
 
 The downside of Fake IP as opposed to port forwarding is that the address and port will change after every restart, so, for example, a domain name cannot be used without custom scripts.
+
+Bookmarking
+-----------
+
+Unfortunately, Fake IP is not compatible with Steam's built-in "Favorites" and "History" server lists. As an optional workaround, these servers can utilize our :ref:`Bookmarking <doc_servers_bookmark_host>` feature instead.

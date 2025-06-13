@@ -15,20 +15,14 @@ Servers that violate these rules may be temporarily or permanently banned. To re
 Recent changes
 --------------
 
-**2024-06-03:** Scaled back the degree to which the server list is moderated. The previous level was untenable especially when considering anyone can freely create an unlimited number of servers, and the moderation system is duct-taped on top of the otherwise unmoderated Steam server list.
-
-**2023-10-02:** Clarified on how subscriptions interact with currency.
-
-**2023-08-17:** Added reasoning behind flagging servers using an anycast proxy.
-
-**2023-02-15 revisions:** Many of the rules have been revised to be clearer, with regards to what is (or isn't) currently allowed. "Consumable microtransaction" is better defined, there are a couple of new examples, and deceptive pricing has its own dedicated a section. The monetization filter section also includes more information about the filter, its purpose, and which of the four options (including a newer "Monetized" option) your server should use.
-
-**2022-10-16 clarification:** Selling *vanilla* cosmetics, such as those available from the Stockpile or Steam Community Market, is not allowed. When offering cosmetics as a server microtransaction, the server network should should own (or have licensed) the rights to that content. Servers should not sell cosmetic content that they do not own the right to, such as vanilla cosmetics (either official, or community-contributed).
+**2025-06-12:** Clarified what counts as a "vanilla premium content" and what servers are allowed to do instead. (Previously, this was only detailed in the "Recent changes" section.)
 
 Monetization Types
 ------------------
 
-Hosts are not allowed to sell access to **vanilla** premium content. This includes the Gold Upgrade benefits as well as cosmetics and/or skins, such as those available on the Stockpile or Steam Community Market.
+Servers are not allowed to sell or otherwise offer access to **vanilla premium content**. This includes the Gold Upgrade benefits in addition to any vanilla cosmetics and/or skins. For example, any item purchasable from the Stockpile or the Steam Community Market for Unturned is considered a "vanilla premium content".
+
+When offering cosmetic perks to players as a microtransaction, the server should own (or have licensed) the rights to that content. For example, you could create your own custom "cosmetics" and offer those to players instead.
 
 Monetization Filter
 -------------------
