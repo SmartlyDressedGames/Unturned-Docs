@@ -17,6 +17,8 @@ Recent changes
 
 **2025-06-12:** Clarified what counts as a "vanilla premium content" and what servers are allowed to do instead. (Previously, this was only detailed in the "Recent changes" section.)
 
+**2024-06-03:** Scaled back the degree to which the server list is moderated. The previous level was untenable especially when considering anyone can freely create an unlimited number of servers, and the moderation system is duct-taped on top of the otherwise unmoderated Steam server list. For more information, please refer to our `support article about moderation and server curation as well as some behind-the-scenes details <https://support.smartlydressedgames.com/hc/en-us/articles/34633581382676>`_.
+
 Monetization Types
 ------------------
 

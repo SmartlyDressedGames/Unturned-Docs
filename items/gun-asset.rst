@@ -138,6 +138,9 @@ Ranged weapons have a significant number of properties. To make navigating these
    * - :ref:`Scale_Aim_Animation_Speed <doc_item_asset_gun:scale_aim_animation_speed>`
      - :ref:`bool <doc_data_builtin_types>`
      - ``true``
+   * - :ref:`Stop_Aiming_After_Shooting <doc_item_asset_gun:stop_aiming_after_shooting>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``false``
    * - :ref:`DriverTurretViewmodelMode <doc_item_asset_gun:driverturretviewmodelmode>`
      - :ref:`EDriverTurretViewmodelMode <doc_item_asset_gun:edriverturretviewmodelmode>`
      - ``OffscreenWhileAiming``
@@ -379,6 +382,38 @@ Ranged weapons have a significant number of properties. To make navigating these
      - :ref:`flag <doc_data_builtin_types>`
      -
 
+.. list-table:: Rechambering Properties
+   :widths: 40 40 20
+   :header-rows: 1
+
+   * - Property Name
+     - Type
+     - Default Value
+   * - :ref:`CasingEjectCountAfterRechamberingAfterShooting <doc_item_asset_gun:casingejectcountafterrechamberingaftershooting>`
+     - :ref:`int32 <doc_data_builtin_types>`
+     - ``1``
+   * - :ref:`CasingEjectCountAfterReload <doc_item_asset_gun:casingejectcountafterreload>`
+     - :ref:`int32 <doc_data_builtin_types>`
+     - See description
+   * - :ref:`EjectAfterHammerDelay <doc_item_asset_gun:ejectafterhammerdelay>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0.45``
+   * - :ref:`EjectAfterReloadDelay <doc_item_asset_gun:ejectafterreloaddelay>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0.5``
+   * - :ref:`RechamberAfterMagazineAttached <doc_item_asset_gun:rechamberaftermagazineattached>`
+     - :ref:`ERechamberGunAfterReloadMode <doc_item_asset_gun:erechambergunafterreloadmode>`
+     - ``IfAmmoWasEmpty``
+   * - :ref:`RechamberAfterMagazineDetached <doc_item_asset_gun:rechamberaftermagazinedetached>`
+     - :ref:`ERechamberGunAfterReloadMode <doc_item_asset_gun:erechambergunafterreloadmode>`
+     - ``Always``
+   * - :ref:`RechamberAfterShotCount <doc_item_asset_gun:rechamberaftershotcount>`
+     - :ref:`int32 <doc_data_builtin_types>`
+     - See description
+   * - :ref:`RechamberAfterShotDelay <doc_item_asset_gun:rechamberaftershotdelay>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``0.25``
+
 .. list-table:: Recoil
    :widths: 40 40 20
    :header-rows: 1
@@ -526,6 +561,24 @@ EDriverTurretViewmodelMode Enumeration
      - Push first-person arms off-screen when equipped.
    * - ``AlwaysOnscreen``
      - Included for completeness.
+
+.. _doc_item_asset_gun:erechambergunafterreloadmode:
+
+ERechamberGunAfterReloadMode Enumeration
+````````````````````````````````````````
+
+.. list-table::
+   :widths: 25 75
+   :header-rows: 1
+
+   * - Named Value
+     - Description
+   * - ``IfAmmoWasEmpty``
+     - Default. Plays "Hammer" animation if ammo count was zero.
+   * - ``Never``
+     - Regardless of ammo, does not play "Hammer" animation after reloading.
+   * - ``Always``
+     - Regardless of ammo, will play "Hammer" animation after reloading.
 
 Property Descriptions
 `````````````````````
@@ -772,6 +825,28 @@ For an example, refer to ``.../Guns/Cobra_Jam/Cobra_Jam.dat`` in the game files.
 
 ----
 
+.. _doc_item_asset_gun:casingejectcountafterrechamberingaftershooting:
+
+CasingEjectCountAfterRechamberingAfterShooting :ref:`int32 <doc_data_builtin_types>` ``1``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Only applicable if :ref:`RechamberAfterShotCount <doc_item_asset_gun:rechamberaftershotcount>` is non-zero.
+
+If greater than zero, emit this many bullet casing particles after :ref:`EjectAfterHammerDelay <doc_item_asset_gun:ejectafterhammerdelay>` seconds pass.
+
+----
+
+.. _doc_item_asset_gun:casingejectcountafterreload:
+
+CasingEjectCountAfterReload :ref:`int32 <doc_data_builtin_types>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If greater than zero, emit this many bullet casing particles after :ref:`EjectAfterReloadDelay <doc_item_asset_gun:ejectafterhammerdelay>` seconds pass.
+
+Defaults to :ref:`Ammo_Max <doc_item_asset_gun:ammo_max>` for ``Break`` Action guns. Zero otherwise.
+
+----
+
 .. _doc_item_asset_gun:damage_falloff_max_range:
 
 Damage_Falloff_Max_Range :ref:`float32 <doc_data_builtin_types>` ``1``
@@ -808,6 +883,28 @@ Delete_Empty_Magazines :ref:`flag <doc_data_flag>`
    Use ``Should_Delete_Empty_Magazines`` instead.
 
 When this flag is included, the attached magazine attachment is deleted when fully depleted.
+
+----
+
+.. _doc_item_asset_gun:ejectafterhammerdelay:
+
+EjectAfterHammerDelay :ref:`float32 <doc_data_builtin_types>` ``0.45``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+How long in seconds after hammering to eject a bullet casing.
+
+Only applicable if :ref:`RechamberAfterShotCount <doc_item_asset_gun:rechamberaftershotcount>` is non-zero.
+
+----
+
+.. _doc_item_asset_gun:ejectafterreloaddelay:
+
+EjectAfterReloadingDelay :ref:`float32 <doc_data_builtin_types>` ``0.5``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+How long in seconds after reloading to eject bullet casings.
+
+Only applicable if :ref:`CasingEjectCountAfterReload <doc_item_asset_gun:casingejectcountafterreload>` is greater than zero.
 
 ----
 
@@ -1054,6 +1151,50 @@ Range_Rangefinder :ref:`float32 <doc_data_builtin_types>`
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Overrides the maximum distance displayed when using a "Rangefinder" tactical attachment on this weapon. For example, it may be useful to set this property when using ``Action Rocket``, as explosive projectiles use ``Range`` to determine the explosion radius rather than the maximum range of the weapon. Defaults to the value of the ``Range`` property.
+
+----
+
+.. _doc_item_asset_gun:rechamberaftermagazineattached:
+
+RechamberAfterMagazineAttached :ref:`ERechamberGunAfterReloadMode <doc_item_asset_gun:erechambergunafterreloadmode>` ``IfAmmoWasEmpty``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Determines whether "Hammer" animation plays after attaching a magazine.
+This happens when a magazine replaces another OR fills previously empty slot.
+
+----
+
+.. _doc_item_asset_gun:rechamberaftermagazinedetached:
+
+RechamberAfterMagazineDetached :ref:`ERechamberGunAfterReloadMode <doc_item_asset_gun:erechambergunafterreloadmode>` ``Always``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Determines whether "Hammer" animation plays after detached a magazine.
+This happens when a magazine is removed from the gun without a replacement.
+
+----
+
+.. _doc_item_asset_gun:rechamberaftershotcount:
+
+RechamberAfterShotCount :ref:`int32 <doc_data_builtin_types>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If non-zero, hammer animation plays after shooting after shooting this many shots and :ref:`RechamberAfterShotDelay <doc_item_asset_gun:rechamberaftershotdelay>`: seconds pass.
+
+Shot count resets after reloading, hammering, or dequipping the gun.
+
+Defaults to ``1`` for ``Bolt`` and ``Pump`` Action guns. Zero otherwise.
+
+----
+
+.. _doc_item_asset_gun:rechamberaftershotdelay:
+
+RechamberAfterShotDelay :ref:`float32 <doc_data_builtin_types>` ``0.25``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+How long in seconds after firing to rechamber the gun by playing the Hammer animation.
+
+Only applicable if :ref:`RechamberAfterShotCount <doc_item_asset_gun:rechamberaftershotcount>` is non-zero.
 
 ----
 
@@ -1365,6 +1506,15 @@ Spread_Swimming :ref:`float32 <doc_data_builtin_types>` ``1.1``
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Multiplier on the bullet spread while swimming.
+
+----
+
+.. _doc_item_asset_gun:stop_aiming_after_shooting:
+
+Stop_Aiming_After_Shooting :ref:`bool <doc_data_builtin_types>` ``false``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If true, the gun will stop aiming regardless of player input.
 
 ----
 

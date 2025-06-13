@@ -85,9 +85,11 @@ Unturned Documentation
 	assets/airdrop-asset
 	assets/animal-asset
 	assets/character-mesh-replacement
+	assets/crafting-asset
 	assets/crafting-blacklist-asset
 	assets/effect-asset
 	assets/foliage-asset
+	assets/road-asset
 	assets/level-asset
 	assets/mythical-asset
 	assets/outfit-asset
@@ -97,6 +99,7 @@ Unturned Documentation
 	assets/server-browser-curation-asset
 	assets/spawn-asset
 	assets/stereo-song-asset
+	assets/tag-asset
 	assets/weather-asset
 	assets/zombie-difficulty-asset
 

@@ -35,6 +35,14 @@ Sentry Asset Properties
 
 **Target_Acquired_Effect** :ref:`Asset Pointer <doc_data_assetptr>`: The audio effect played when a target is detected. Defaults to ab5f0056b54545c8a051159659da8bea.
 
+**Target_Animals** *bool*: If true, this sentry can attack animals. Defaults to true.
+
 **Target_Lost_Effect** :ref:`Asset Pointer <doc_data_assetptr>`: The audio effect played when a target is no longer detected. Defaults to 288b98b718084699ba3653c592e57803.
 
 **Target_Loss_Radius** *float*: Radius for continuing to track targets after they have left the initial detection radius, in meters. Defaults to ``Detection_Radius * 1.2f`` (i.e., 20% higher than ``Detection_Radius``).
+
+**Target_Players** *bool*: If true, this sentry can attack players. Defaults to true.
+
+**Target_Vehicles** *bool*: If true, this sentry can attack vehicles. Defaults to true.
+
+**Target_Zombies** *bool*: If true, this sentry can attack zombies. Defaults to true.

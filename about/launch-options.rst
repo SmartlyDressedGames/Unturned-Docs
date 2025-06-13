@@ -22,6 +22,19 @@ Some of the launch options are primarily intended for use with the Unturned Dedi
 
 **+connect**: Connect to a server, in the format of ``+connect <ip address>:<port>``.
 
+**-Cinematic**: Turns off many level-of-detail optimizations. This has a significant performance cost.
+
+Effects include:
+
+- 4 km draw distance and sun shadow range.
+- LOD groups always show their highest quality. (High LOD bias.)
+- Lights are always visible. (Turns off light LODs.)
+- Objects and resources are always visible. (No landmarks or culling volumes.)
+- Terrains always use splatmap shaders. (No basemap fallback texture.)
+- Terrains always use max-quality heightmaps. (No mesh simplification.)
+- Sun shadowmaps use GPU max supported resolution. (16,384 x 16,384 on some modern GPUs.)
+- Planar reflections render at 100% resolution. (Rather than 50%.)
+
 **-DisableCullingVolumes**: Disable object culling distance overrides. Please refer to :ref:`Manual Object Culling <doc_mapping_culling>` for more details.
 
 **-DisableLightLODs**: Disable fadeout of dynamic lights. Could be useful for high-quality screenshots.
@@ -64,6 +77,8 @@ Some of the launch options are primarily intended for use with the Unturned Dedi
 
 **-LogVehicleWheelConfigurations**: Log automatic creation of vehicle asset's ``WheelConfigurations`` property for older vehicles. Useful when converting vehicles to the new format.
 
+**-ModulesPath** *string*: If set, search for ``.dll`` and ``.module`` files in this directory instead of in ``Unturned/Modules``.
+
 **-NetTransport=** *enum* (``SteamNetworking``, ``SteamNetworkingSockets``): SteamNetworkingSockets was used to enable the `ISteamNetworkingSockets <https://partner.steamgames.com/doc/api/ISteamNetworkingSockets>`_ networking API, but this has since become default. SteamNetworking can be used to revert to the older, deprecated `ISteamNetworking <https://partner.steamgames.com/doc/api/ISteamNetworking>`_ networking API.
 
 **-NoDefaultLog**: Disables log file creation unless a plugin calls setLogFilePath.
@@ -78,6 +93,8 @@ Some of the launch options are primarily intended for use with the Unturned Dedi
 
 **-OfflineOnly**: Disables requests to the internet. For LAN servers, it skips the Steam backend connection and uses locally-cached Workshop items.
 
+**-ParseAssetMetadata**: Enables parsing asset file metadata like comments and line numbers. Useful for development (e.g., error messages) at the cost of slower loading and increased memory usage. Plugin developers building on this feature may be interested in :ref:`doc_dat_editing_code`.
+
 **-PreviewLevelBatchingTextureAtlas**: Please refer to :ref:`Level Batching <doc_mapping_batching>` for more details.
 
 **-PreviewLevelBatchingUniqueMaterials**: Please refer to :ref:`Level Batching <doc_mapping_batching>` for more details.
@@ -85,6 +102,16 @@ Some of the launch options are primarily intended for use with the Unturned Dedi
 **-RazerChroma**: Enable Razer Chroma integration on compatible devices.
 
 **-RefreshRate=**: Monitor refresh rate override.
+
+.. _doc_launch_options:resaveassets:
+
+**-ResaveAssets**: Danger! Only use this if you have a backup of your custom assets, ideally in version control. Here be dragons:
+
+Depends on the **-ParseAssetMetadata** launch option also being enabled.
+
+This is our first experiment with automatically patching asset files. It will attempt to preserve comments and line numbers in your files (this is why asset metadata is needed). However, certain comments may not be preserved. In particular, comments with blank lines surrounding them.
+
+At the time of writing (2025-05-06) the game will convert blueprints from the legacy (Blueprint_*** prefix) format to newer list-based format. It cannot yet auto-convert blueprints with NPC conditions or rewards because we haven't written conversion code for those yet, but it's on our wishlist.
 
 **-ResetSteamStatsAndAchievements**: Reset all progress on Steam achievements and stats.
 

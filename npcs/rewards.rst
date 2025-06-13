@@ -7,7 +7,7 @@ Rewards can be granted by NPC assets, interactable objects, and item blueprints.
 
 **Rewards** *byte*: Total number of rewards.
 
-**Reward_#_Type** *enum* (``Flag_Bool``, ``Flag_Math``, ``Flag_Short``, ``Flag_Short_Random``, ``Achievement``, ``Currency``, ``Cutscene_Mode``, ``Effect``, ``Event``, ``Experience``, ``Item``, ``Item_Random``, ``Hint``, ``Player_Life_Food``, ``Player_Life_Health``, ``Player_Life_Stamina``, ``Player_Life_Virus``, ``Player_Life_Water``, ``Player_Spawnpoint``, ``Quest``, ``Reputation``, ``Rewards_List_Asset``, ``Teleport``, ``Vehicle``)
+**Reward_#_Type** *enum* (``Airdrop``, ``Flag_Bool``, ``Flag_Math``, ``Flag_Short``, ``Flag_Short_Random``, ``Achievement``, ``Currency``, ``Cutscene_Mode``, ``Effect``, ``Event``, ``Experience``, ``Item``, ``Item_Random``, ``Hint``, ``Player_Life_Food``, ``Player_Life_Health``, ``Player_Life_Stamina``, ``Player_Life_Virus``, ``Player_Life_Water``, ``Player_Spawnpoint``, ``Quest``, ``Reputation``, ``Rewards_List_Asset``, ``Teleport``, ``Vehicle``)
 
 **Reward_#_GrantDelaySeconds** *float*: If set, the reward will be queued for the specified number of seconds before being granted to the player. Defaults to -1.
 
@@ -75,6 +75,17 @@ Achievement
 **Reward_#_Type** *enum* (``Achievement``)
 
 **Reward_#_ID** *string*: ID of achievement to grant. Only specific achievements can be granted as a reward.
+
+Airdrop
+````````
+
+**Reward_#_Type** *enum* (``Airdrop``)
+
+**Reward_#_Use_Random_Airdrop_Node** *bool*: If true, call in airdrop at a random airdrop node placed in the level editor.
+
+**Reward_#_Cargo** *GUID or uint16*: Optional spawn table ID overriding which items to drop.
+
+**Reward_#_Spawnpoint** *string*: Location to call in the airdrop, using the spawnpoint name as set in the nodes level editor.
 
 Currency
 ````````
