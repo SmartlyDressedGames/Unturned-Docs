@@ -3,12 +3,20 @@
 Server Codes
 ============
 
-By default, your friends can join your server over the Internet using its **Server Code** in the Connect menu without :ref:`port forwarding <doc_servers_port_forward>`.
+A **Server Code** is a randomly generated, 17-digit numeric code assigned to your server. Your friends can join your multiplayer server by inputting its **Server Code** in the Connect Directly menu without you needing to :ref:`port forward <doc_servers_port_forward>`.
 
-The downside of Server Codes is they are incompatible with the pre-joining server info screen. The info screen uses Steam's A2S protocol, which can only be queried by IP, so joining by Server Code enters the server immediately. You can also enable :ref:`Fake IP<doc_servers_fake_ip>` to work around this limitation.
+You can find your Server Code in the Server Console after your server finishes loading. Run the ``CopyServerCode`` command from the Server Console to easily copy that code to your clipboard.
 
-After startup, you can run the ``CopyServerCode`` command from the server console to copy the code to your clipboard.
+Limitations
+-----------
 
-Connecting by Server Code utilizes `Steam Datagram Relay (SDR) <https://partner.steamgames.com/doc/features/multiplayer/steamdatagramrelay>`_. To quote that page: "Relaying the traffic protects your servers and players from DoS attack, because IP addresses are never revealed. All traffic you receive is authenticated, encrypted, and rate-limited. Furthermore, for a surprisingly high number of players, we can also find a faster route through our network, which actually improves player ping times."
+The primary downside of Server Codes is their incompatibility with the pre-joining server info screen (which displays things like the server name, installed mods, current players, and other details). The info screen uses Steam's A2S protocol, which can only be queried by IP, so joining by Server Code enters the server immediately instead. You can enable :ref:`Fake IP<doc_servers_fake_ip>` to work around this limitation.
 
-.. note:: Without a :ref:`Login Token <doc_servers_gslt>` the Server Code will change each time your server restarts.
+Your server's Server Code will change each time your server restarts. You can assign a :ref:`Game Server Login Token <doc_servers_gslt>` to keep your Server Code linked between sessions.
+
+How does it work?
+-----------------
+
+Connecting by Server Code utilizes `Steam Datagram Relay (SDR) <https://partner.steamgames.com/doc/features/multiplayer/steamdatagramrelay>`_. To quote that page:
+
+	*Relaying the traffic protects your servers and players from DoS attack, because IP addresses are never revealed. All traffic you receive is authenticated, encrypted, and rate-limited. Furthermore, for a surprisingly high number of players, we can also find a faster route through our network, which actually improves player ping times.*

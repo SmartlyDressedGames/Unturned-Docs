@@ -121,6 +121,10 @@ Unturned Documentation
 	:maxdepth: 1
 	:caption: Servers & Programming
 
+	★ Setting up a Server <servers/server-hosting>
+	★ Using SteamCMD (Advanced Setup) <servers/steamcmd>
+	★ Server Hosting Rules <servers/server-hosting-rules>
+
 	servers/bookmark-host
 	servers/command-io
 	servers/debugging-exceptions
@@ -134,8 +138,6 @@ Unturned Documentation
 	servers/server-auto-restart
 	servers/server-browser-curation
 	servers/server-codes
-	servers/server-hosting
-	servers/server-hosting-rules
 	servers/server-update-notifications
 
 .. toctree::
