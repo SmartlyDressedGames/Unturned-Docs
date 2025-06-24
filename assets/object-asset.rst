@@ -40,6 +40,10 @@ Object Properties
 
 **Is_Gore** *bool*: Whether or not this object should be visible if the player has disabled "Show Blood Splatters".
 
+**Is_Clutter** *bool*: Defaults to false. If true, object is not instantiated when player has the "Load Clutter" graphics option disabled.
+
+.. warning:: Objects the player can collide with should never be clutter. Otherwise, the player will "rubberband" on these objects in multiplayer.
+
 **Landmark_Quality** *enum* (``Off``, ``Low``, ``Medium``, ``High``, ``Ultra``): The value that the "Landmarks" graphical setting must be set to in order to see a low detail model of this object from far away distances. Defaults to ``Low``.
 
 **Load_Nav_On_Server** *bool*: If true, Nav game object will be instantiated in singleplayer and on dedicated server. Useful for objects which need to affect navmesh baking without colliding with zombies during gameplay. Defaults to true for "medium" and "large" objects.

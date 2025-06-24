@@ -127,6 +127,8 @@ General
 
 **Allow_Holiday_Redirects** *bool*: Whether certain assets like objects, trees and landscapes should load alternative versions during holiday events.
 
+**Enable_Clutter_Option** *bool*: If true, "Load Clutter" graphics option is supported on this map. Defaults to false. This is opt-in so that the map creator(s) can decide whether the removed details are an acceptable compromise.
+
 HUD
 ---
 
