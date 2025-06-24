@@ -311,12 +311,33 @@ Properties
    * - Property Name
      - Type
      - Default Value
-   * - :ref:`Bumper_Multiplier <doc_assets_vehicle:bumper_multiplier>`
+   * - :ref:`Bumper_AnimalDamage <doc_assets_vehicle:bumper_animaldamage>`
      - :ref:`float32 <doc_data_builtin_types>`
-     - ``1.0``
+     - ``15.0``
    * - :ref:`Bumper_Invulnerable <doc_assets_vehicle:bumper_invulnerable>`
      - :ref:`flag <doc_data_flag>`
      -
+   * - :ref:`Bumper_Multiplier <doc_assets_vehicle:bumper_multiplier>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``1.0``
+   * - :ref:`Bumper_ObjectDamage <doc_assets_vehicle:bumper_objectdamage>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``30.0``
+   * - :ref:`Bumper_PlayerDamage <doc_assets_vehicle:bumper_playerdamage>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``10.0``
+   * - :ref:`Bumper_ResourceDamage <doc_assets_vehicle:bumper_resourcedamage>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``85.0``
+   * - :ref:`Bumper_SelfDamageMultiplier <doc_assets_vehicle:bumper_selfdamagemultiplier>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``1.0``
+   * - :ref:`Bumper_SpeedDamageThreshold <doc_assets_vehicle:bumper_speeddamagethreshold>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``3.0``
+   * - :ref:`Bumper_ZombieDamage <doc_assets_vehicle:bumper_zombiedamage>`
+     - :ref:`float32 <doc_data_builtin_types>`
+     - ``15.0``
    * - :ref:`Can_Repair_While_Seated <doc_assets_vehicle:can_repair_while_seated>`
      - :ref:`bool <doc_data_builtin_types>`
      - ``false``
@@ -978,6 +999,15 @@ The ``Supports_Mobile_Buildables`` flag predates this property, and has since be
 
 ----
 
+.. _doc_assets_vehicle:bumper_animaldamage:
+
+Bumper_AnimalDamage :ref:`float32 <doc_data_builtin_types>` ``15``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Base damage to animals when traveling at 1 m/s (before speed and other multipliers apply).
+
+----
+
 .. _doc_assets_vehicle:bumper_invulnerable:
 
 Bumper_Invulnerable :ref:`flag <doc_data_flag>`
@@ -992,7 +1022,64 @@ The vehicle cannot be damaged by collisions (such as with other vehicles, object
 Bumper_Multiplier :ref:`float32 <doc_data_builtin_types>` ``1.0``
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Multiplier on the value for detecting collisions. When less than 1, the vehicle must be moving at a higher speed to enter a collision. When greater than 1, the vehicle can enter a collision while moving at a lower speed.
+Multiplies vehicle speed (in m/s) at time of collision. If result is less than ``Bumper_SpeedDamageThreshold``, no damage is applied.
+
+The multiplied speed is applied to outgoing damage. For example: if speed is 4 m/s with a ``Bumper_Multiplier`` of 2 and a base damage of 10, 80 damage is applied.
+
+----
+
+.. _doc_assets_vehicle:bumper_objectdamage:
+
+Bumper_ObjectDamage :ref:`float32 <doc_data_builtin_types>` ``30``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Base damage to objects when traveling at 1 m/s (before speed and other multipliers apply).
+
+----
+
+.. _doc_assets_vehicle:bumper_playerdamage:
+
+Bumper_PlayerDamage :ref:`float32 <doc_data_builtin_types>` ``10``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Base damage to players when traveling at 1 m/s (before speed and other multipliers apply).
+
+----
+
+.. _doc_assets_vehicle:bumper_resourcedamage:
+
+Bumper_ResourceDamage :ref:`float32 <doc_data_builtin_types>` ``85``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Base damage to resources when traveling at 1 m/s (before speed and other multipliers apply).
+
+----
+
+.. _doc_assets_vehicle:bumper_selfdamagemultiplier:
+
+Bumper_SelfDamageMultiplier :ref:`float32 <doc_data_builtin_types>` ``1.0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Multiplier for damage inflicted to the vehicle by crashing into things.
+Not applicable if the ``Bumper_Invulnerable`` flag is applied.
+
+----
+
+.. _doc_assets_vehicle:bumper_speeddamagethreshold:
+
+Bumper_SpeedDamageThreshold :ref:`float32 <doc_data_builtin_types>` ``3.0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If speed (in m/s) multiplied by ``Bumper_Multiplier`` is less than this threshold, no damage is applied.
+
+----
+
+.. _doc_assets_vehicle:bumper_zombiedamage:
+
+Bumper_ZombieDamage :ref:`float32 <doc_data_builtin_types>` ``15``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Base damage to zombies when traveling at 1 m/s (before speed and other multipliers apply).
 
 ----
 
