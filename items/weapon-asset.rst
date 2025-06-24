@@ -66,6 +66,8 @@ Zombie Damage
 
 **Stun_Zombie_Never** *flag*: Specified if a zombie should never be stunned when targeted by the weapon.
 
+**Zombie_Ragdoll_Force_Multiplier** *float32*: Scales force applied to zombie ragdoll. Defaults to 1.
+
 Animal Damage
 `````````````
 

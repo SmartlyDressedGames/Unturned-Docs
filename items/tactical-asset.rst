@@ -134,6 +134,8 @@ Melee-Specific Property Descriptions
 
 **Melee_Zombie_Skull_Multiplier** *float32*: Multiplier on damage targeted against a zombie's head.
 
+**Melee_Zombie_Ragdoll_Force_Multiplier** *float32*: Scales force applied to zombie ragdoll. Defaults to 1.
+
 **Melee_Stun_Zombie_Always** *flag*: Specified if a zombie should always be stunned when targeted by the weapon.
 
 **Melee_Stun_Zombie_Never** *flag*: Specified if a zombie should never be stunned when targeted by the weapon.
