@@ -70,7 +70,7 @@ Total size along the up axis.
 
 .. _doc_assets_road:offsetalongnormal:
 
-DistanceAlongNormal :ref:`float32 <doc_data_builtin_types>` ``0.0``
+OffsetAlongNormal :ref:`float32 <doc_data_builtin_types>` ``0.0``
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Distance along the terrain surface normal to move each road vertex.
