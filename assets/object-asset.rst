@@ -129,6 +129,8 @@ Interactables
 
 **Interactability_Effect** :ref:`doc_data_guid` or *uint16*: GUID or legacy ID of an :ref:`EffectAsset <doc_assets_effect>` to play when interacted with. When using ``Interactability Rubble``, this effect is played when a section of the object is destroyed.
 
+**Interactability_Emissive_Material_Mode** *enum* (``Auto`` or ``None``): (``Binary_State``-only). Defaults to ``Auto``, creating a material instance for child renderer of ``Toggle`` game object. The downside of ``Auto`` is exclusion from the level batching texture atlas. When set to ``None``, no material instance is created.
+
 **Interactability_Finale** :ref:`doc_data_guid` or *uint16*: GUID or legacy ID of an :ref:`EffectAsset <doc_assets_effect>` to play when all sections of the object using ``Interactability Rubble`` are destroyed. If this property is used, then all of the dead object's sections will also be hidden when fully destroyed.
 
 **Interactability_Health** *uint16*: Total amount of health each section of the object has, when using ``Interactability Rubble``. Defaults to 0.
