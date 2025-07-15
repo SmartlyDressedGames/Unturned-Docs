@@ -43,7 +43,7 @@ Properties
      - Type
      - Default Value
    * - :ref:`AdditionalTransparentSections <doc_assets_vehicle:additionaltransparentsections>`
-     - :ref:`list of strings <doc_data_builtin_types>`
+     - :ref:`list of PaintableVehicleSection <doc_assets_vehicle:paintablevehiclesection_dictionary>`
      -
    * - :ref:`Bicycle <doc_assets_vehicle:bicycle>`
      - :ref:`flag <doc_data_flag>`
@@ -855,10 +855,10 @@ Property Descriptions
 
 .. _doc_assets_vehicle:additionaltransparentsections:
 
-AdditionalTransparentSections :ref:`list of strings <doc_data_builtin_types>`
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+AdditionalTransparentSections :ref:`list of PaintableVehicleSection <doc_assets_vehicle:paintablevehiclesection_dictionary>`
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Scene hierarchy paths relative to the vehicle's root transform to register as needing transparent sorting. Their render queue is periodically updated according to whether their pivot point is underwater.
+Materials to register as needing transparent sorting. Their render queue is periodically updated according to whether their pivot point is underwater.
 
 ----
 
