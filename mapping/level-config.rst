@@ -129,6 +129,10 @@ General
 
 **Enable_Clutter_Option** *bool*: If true, "Load Clutter" graphics option is supported on this map. Defaults to false. This is opt-in so that the map creator(s) can decide whether the removed details are an acceptable compromise.
 
+**Batching_Version** *int*: Please refer to :ref:`doc_mapping_batching`.
+
+**Batching_Max_Texture_Size** *int*: Overrides the maximum texture size included in the :ref:`doc_mapping_batching` atlas. Please keep in mind that including bigger textures risks exceeding the maximum texture size.
+
 HUD
 ---
 

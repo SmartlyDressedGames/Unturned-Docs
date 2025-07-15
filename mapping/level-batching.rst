@@ -27,6 +27,12 @@ Purpose of atlas generation
 
 Using fewer unique materials is almost always better for performance. Combining materials which only differ in their texture allows them to benefit from static and dynamic batching. If you want you can manually create a texture atlas for your own meshes, but resizing requires updating all your mesh UVs, and is generally a hassle. Considering that most workshop maps use objects from a variety of different mod packs, atlas generation helps them all work together.
 
+The maximum included texture size defaults to 128x128. Including bigger textures risks exceeding the maximum texture size, but can be adjusted with this option in the level config:
+
+.. code-block:: json
+
+	"Batching_Max_Texture_Size": 256
+
 Materials eligible for atlas inclusion
 --------------------------------------
 
