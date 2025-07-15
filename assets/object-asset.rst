@@ -155,6 +155,8 @@ Interactables
 
 **Interactability_Reward_ID** *uint16*: ID of an item :ref:`spawn table <doc_assets_spawn>` to use for rewards, when using ``Interactability Rubble``. Defaults to 0.
 
+**Interactability_RewardItem_Origin** :ref:`doc_data_eitemorigin`: When using ``Interactability Dropper``, overrides the dropped item's state. For example, setting the origin to ``Admin`` will cause items to spawn at full quality. Defaults to ``Nature``.
+
 **Interactability_Rewards_Min** *byte*: Minimum amount of item drops to reward, when using ``Interactability Rubble``. Defaults to 1.
 
 **Interactability_Rewards_Max** *byte*: Maximum amount of item drops to reward, when using ``Interactability Rubble``. Defaults to 1.
