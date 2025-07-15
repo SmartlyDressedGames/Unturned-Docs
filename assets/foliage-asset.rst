@@ -27,6 +27,8 @@ FoliageResourceInfoAsset Properties Reference
 
 **Max_Angle** *float*: [0, 90] degrees only spawn if surface angle is less than this value. For example a tree not growing on slopes steeper than 30 degrees.
 
+**Uniform_Scale** *bool*: If true, max and min scale are floats rather than vector3. This enables an optimization for instanced mesh foliage (like grass), packing more instances per batch.
+
 Upgrade Devkit Foliage from V1 to V2
 ------------------------------------
 
