@@ -24,12 +24,15 @@ Properties
 
 - BulletCasingBounce: used by vanilla non-shotgun particle collision audio.
 - BulletImpact: fired bullet hitting surface.
-- BipedLand: player landing on a surface after falling. Could be used for other two-legged characters (zombies) in the future.
+- BipedLand: player landing on a surface after falling. Could be used for other two-legged characters in the future.
 - FootstepWalk: individual non-sprinting footstep.
 - FootstepRun: individual sprinting footstep.
 - LegacyImpact: will probably be phased-out. Still used by vehicle bumper collision and as a fallback for melee impact.
 - MeleeImpact: melee attack hitting surface.
 - ShotgunShellBounce: used by vanilla shotgun particle collision audio.
+- ZombieBipedLand: zombie equivalent of BipedLand. If unassigned, BipedLand is used with 85% pitch scaling.
+- ZombieFootstepRun: zombie equivalent of FootstepRun. If unassigned, FootstepRun is used 85% pitch scaling.
+- ZombieFootstepWalk: zombie equivalent of FootstepWalk. If unassigned, FootstepWalk is used 85% pitch scaling.
 
 **TireMotionEffect** :ref:`Asset Pointer <doc_data_assetptr>` to :ref:`Effect Asset <doc_assets_effect>`: Effect to spawn while driving on this material. Its transform is set to the ground hit position with the Z axis aligned to the wheel's up vector and rotated according to forward/reverse speed. The vanilla effects use the rate over distance emission mode.
 
