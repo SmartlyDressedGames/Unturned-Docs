@@ -37,6 +37,36 @@ For examples, check the ``Assets/Levels`` directory.
 
 **Death_Music** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: Audio clip played after death.
 
+Cloud Override Properties
+-------------------------
+
+When clouds are disabled (``Has_Clouds false``), these properties can be used to control a custom particle system using the cloud color and intensity from the lighting settings.
+
+**CloudOverride_Prefab** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: Prefab to instantiate and attach to lighting.
+
+**CloudOverride_ParticleSystems** *list*: Dictionaries describing particle systems in ``CloudOverride_Prefab`` with the following additional properties:
+
+**Path** *string*: Path to a Particle System component relative to ``CloudOverride_Prefab``. This renderer should likely use the Unturned "Particles/Standard Surface (ZClip False)" shader to prevent a harsh transition with low max draw distance.
+
+**RateOverTimeScale** *float*: Particle System's emission rate is multiplied by current time of day's cloud slider value (between zero and one) scaled by this value.
+
+For example:
+
+.. code-block:: unturnedasset
+	:linenos:
+
+	CloudOverride_ParticleSystems
+	[
+		{
+			Path System1
+			RateOverTimeScale 1.5
+		}
+		{
+			Path System2
+			RateOverTimeScale 3
+		}
+	]
+
 Schedulable Weather Properties
 ------------------------------
 
