@@ -66,7 +66,7 @@ Commonly-used configuration files are:
 
 - | **\\Server\\Commands.dat** – Configure basic server settings, such as: Map, Password, and Max Players.
 
-- | **\\Config.json** – Adjust difficulty settings and advanced server settings, such as: increasing Item Spawn Chance or assigning a Game Server Login Token. This file has separate options for adjusting the preset Easy, Normal (default), and Hard difficulty settings.
+- | **\\Config.txt** – Adjust difficulty settings and advanced server settings, such as: increasing Item Spawn Chance or assigning a Game Server Login Token. (see :ref:`doc_servers_server_configuration`)
 
 - | **\\WorkshopDownloadConfig.json** – Download mods from the Steam Workshop.
 
@@ -138,15 +138,13 @@ Learn about more commands on the `Unturned Wiki <https://unturned.wiki/Commands>
 Difficulty Settings
 ```````````````````
 
-Configure your server's game rules, public server listing, and many other options from the **Config.json** file.
+Configure your server's game rules, public server listing, and many other options from the :ref:`doc_servers_server_configuration` file.
 
-This file has separate sections for each difficulty preset – Easy, Normal, and Hard. By default, servers use the settings in the Normal difficulty section.
+By default, there are separate config files for each difficulty preset – Easy, Normal, and Hard. By default, servers use the Normal difficulty file.
 
 .. hint::
 
-	You can use the ``Difficulty`` command to use the settings configured in either the Easy or Hard sections.
-
-Learn about more commands on the `Unturned Wiki <https://unturned.wiki/Commands>`_.
+	You can use the ``Difficulty`` command to use the settings configured in either the Easy or Hard files.
 
 Steam Workshop Mods
 ```````````````````

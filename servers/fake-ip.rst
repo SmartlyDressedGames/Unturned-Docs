@@ -7,7 +7,7 @@ Using a Steam **Fake IP** allows players to join your server by IP address witho
 
 Unlike :ref:`Server Codes <doc_servers_server_codes>`, a server using Fake IP can be visible on the Internet server list (still without port forwarding) as long as you set a :ref:`Login Token <doc_servers_gslt>`.
 
-To enable Fake IP, change ``Use_FakeIP`` from ``false`` to ``true`` in your server's ``Config.json`` file.
+To enable Fake IP, set ``Use_FakeIP`` to ``true`` in your :ref:`doc_servers_server_configuration`.
 
 After startup, you can run the ``CopyFakeIP`` command from the server console to copy the IP and port to your clipboard. Pasting this into the Host field of the Connect menu automatically moves the port to the Port field.
 

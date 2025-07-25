@@ -34,7 +34,7 @@ Players can filter the in-game server list by this field. It is not required to 
 ``Unspecified``
 ```````````````
 
-The "Monetization" field in each server's Config.json file defaults to ``Unspecified``. If you are unsure what to configure your server's monetization type as, then you can leave it unspecified.
+The "Monetization" field in each :ref:`doc_servers_server_configuration` file defaults to ``Unspecified``. If you are unsure what to configure your server's monetization type as, then you can leave it unspecified.
 
 ``None``
 ````````

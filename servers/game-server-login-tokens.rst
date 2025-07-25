@@ -21,7 +21,7 @@ Unturned Configuration
 
 The GSLT can be set in one of two places depending on your preference:
 
-- With the ``Login_Token`` property in each server's ``Config.json`` file under the ``Browser`` section.
+- With the ``Login_Token`` property in each :ref:`doc_servers_server_configuration` under the ``Browser`` section.
 
 OR
 

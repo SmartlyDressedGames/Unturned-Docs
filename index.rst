@@ -138,6 +138,7 @@ Unturned Documentation
 	servers/server-auto-restart
 	servers/server-browser-curation
 	servers/server-codes
+	servers/server-configuration
 	servers/server-update-notifications
 
 .. toctree::

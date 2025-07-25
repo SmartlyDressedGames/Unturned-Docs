@@ -9,7 +9,7 @@ By default the game supports Steam's built-in Favorites and History server lists
 
 Considering the trend toward Fake IP, a replacement was necessary, not to mention a popular request from server hosts. Thankfully, with GSLTs in widespread use now and providing a stable persistent ID, the client can save custom per-server bookmark data. The intention is to make bookmarks a better alternative to the legacy favorites/history lists, including proper support for IPv6 at some point. At the time of writing (2024-05-24) the client doesn't save history using the bookmark host property yet, but it should be added once more hosts opt-in.
 
-To enable bookmarking, set ``BookmarkHost`` in your server's ``Config.json`` file to one of these formats:
+To enable bookmarking, set ``BookmarkHost`` in your :ref:`doc_servers_server_configuration` to one of these formats:
 
 1. | A DNS entry with an ``A`` record pointing to your server's public IP. For example, if you own the "example.com" domain you could add an A record "myunturnedserver" pointing at your game server IP and set ``BookmarkHost`` to "myunturnedserver.example.com". In this case the client will save your server's current port number, so the IP address can change but the port can't. If your server doesn't have a static public IP you could use dynamic DNS to update the DNS record periodically. Note that this option is inapplicable for servers using Fake IP because both the IP and port are randomly assigned after each restart.
 
