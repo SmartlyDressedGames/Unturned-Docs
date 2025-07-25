@@ -31,8 +31,10 @@ Properties
 - MeleeImpact: melee attack hitting surface.
 - ShotgunShellBounce: used by vanilla shotgun particle collision audio.
 - ZombieBipedLand: zombie equivalent of BipedLand. If unassigned, BipedLand is used with 85% pitch scaling.
-- ZombieFootstepRun: zombie equivalent of FootstepRun. If unassigned, FootstepRun is used 85% pitch scaling.
-- ZombieFootstepWalk: zombie equivalent of FootstepWalk. If unassigned, FootstepWalk is used 85% pitch scaling.
+- ZombieFootstepRun: zombie equivalent of FootstepRun. If unassigned, FootstepRun is used with 85% pitch scaling.
+- ZombieFootstepWalk: zombie equivalent of FootstepWalk. If unassigned, FootstepWalk is used with 85% pitch scaling.
+- MegaZombieFootstep: mega zombie footstep sound. If unassigned, FootstepWalk is used with 72% pitch scaling and +50% volume.
+- MegaZombieLand: mega zombie landing sound. If unassigned, BipedLand is used with 72% pitch scaling and +50% volume.
 
 **TireMotionEffect** :ref:`Asset Pointer <doc_data_assetptr>` to :ref:`Effect Asset <doc_assets_effect>`: Effect to spawn while driving on this material. Its transform is set to the ground hit position with the Z axis aligned to the wheel's up vector and rotated according to forward/reverse speed. The vanilla effects use the rate over distance emission mode.
 
