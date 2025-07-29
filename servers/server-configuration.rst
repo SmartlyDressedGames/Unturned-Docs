@@ -3,18 +3,55 @@
 Server Configuration
 ====================
 
-By default, a config text file is created per-server per-difficulty. For example, if the server ID is "ExampleServer" and difficulty is Normal (default), the file will be created at:
-``Servers/ExampleServer/Config_NormalMode.txt``
-
-You can override the config file path with the ``-GameplayConfigFile`` command-line option. Keeping the server ID "ExampleServer", here's how to use this option:
-``-GameplayConfigFile="SpecialEventConfig.txt"`` will create ``Servers/ExampleServer/SpecialEventConfig.txt``.
-Alternatively, you can provide an absolute file path like ``-GameplayConfigFile="C:/SpecialEventConfig.txt"``.
+Most server options are found in your server's ``Config.txt`` file (e.g., ``Servers/Default/Config.txt``). If your server was created before **3.25.8.0**, please refer to the **How is Config.json converted to Config.txt?** and **Legacy Json File** sections.
 
 To check which options are overridden by your config you can add the ``-LogGameplayConfig`` command-line flag to print overrides to the console.
 
 Values left empty will use the default. They can be overridden by levels unless the ``-NoLevelConfigOverrides`` command-line flag is used.
 
-Values set in the config file cannot be overridden by levels. For example, setting ``Hitmarkers true`` (the default) will prevent levels from turning off hitmarkers.
+How is Config.json converted to Config.txt?
+-------------------------------------------
+
+Servers created before **3.25.8.0** have a ``Config.json`` file rather than ``Config.txt``. The ``.json`` file stored options for each difficuly (easy, normal, hard), so during startup a per-difficulty ``.txt`` file is converted. For example, if the server ID is "ExampleServer" and difficulty is Normal (default), the file will be created at:
+``Servers/ExampleServer/Config_NormalDifficulty.txt``
+
+Only options changed from the default value are converted. This is because empty values in ``Config.txt`` indicate the default should be used.
+
+How can I change which config file is loaded?
+---------------------------------------------
+
+You can override the config file path with the ``-GameplayConfigFile`` command-line option. For example, if your server ID is "ExampleServer", here's how to use this option:
+
+``-GameplayConfigFile="SpecialEventConfig.txt"``
+
+will create
+
+``Servers/ExampleServer/SpecialEventConfig.txt``.
+
+Alternatively, you can provide an absolute file path like:
+
+``-GameplayConfigFile="C:/SpecialEventConfig.txt"``
+
+How can I remove generated comments?
+------------------------------------
+
+If you don't want explanations for each option in ``Config.txt`` you can add the ``-GameplayConfigNoGeneratedComments`` command-line flag. This removes all comments prefixed with ``>``.
+
+This is useful for a more concise config file.
+
+How can I remove unused options?
+--------------------------------
+
+If you don't want all available options listed in ``Config.txt`` you can add the ``-GameplayConfigNoEmptyValues`` command-line flag. This removes all non-overridden options.
+
+This is useful for a more concise config file.
+
+How can I prevent levels from overriding my config?
+---------------------------------------------------
+
+If you assign a value in ``Config.txt`` it will take priority over level overrides, whereas empty values (default) can be overridden by levels.
+
+To entirely prevent levels from overriding any config, you can add the ``-NoLevelConfigOverrides`` command-line flag.
 
 Legacy Json File
 ----------------
