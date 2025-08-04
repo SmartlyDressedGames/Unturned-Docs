@@ -899,7 +899,7 @@ Only applicable if :ref:`RechamberAfterShotCount <doc_item_asset_gun:rechamberaf
 
 .. _doc_item_asset_gun:ejectafterreloaddelay:
 
-EjectAfterReloadingDelay :ref:`float32 <doc_data_builtin_types>` ``0.5``
+EjectAfterReloadDelay :ref:`float32 <doc_data_builtin_types>` ``0.5``
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 How long in seconds after reloading to eject bullet casings.
