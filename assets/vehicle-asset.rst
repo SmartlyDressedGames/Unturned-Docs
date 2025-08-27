@@ -258,10 +258,10 @@ Properties
      - ``1.0``
    * - :ref:`EngineRPM_DecreaseRate <doc_assets_vehicle:enginerpm_decreaserate>`
      - :ref:`float32 <doc_data_builtin_types>`
-     - ``10000.0``
+     - ``-1.0``
    * - :ref:`EngineRPM_IncreaseRate <doc_assets_vehicle:enginerpm_increaserate>`
      - :ref:`float32 <doc_data_builtin_types>`
-     - ``10000.0``
+     - ``-1.0``
    * - :ref:`ForwardGearRatios <doc_assets_vehicle:forwardgearratios>`
      - :ref:`list of float32 <doc_data_builtin_types>`
      -
@@ -1378,10 +1378,12 @@ Multiplier for the amount of torque provided to the wheels. Understanding how en
 
 .. _doc_assets_vehicle:enginerpm_decreaserate:
 
-EngineRPM_DecreaseRate :ref:`float32 <doc_data_builtin_types>` ``10000.0``
+EngineRPM_DecreaseRate :ref:`float32 <doc_data_builtin_types>` ``-1.0``
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 How quickly engine RPM can decrease in RPM/s. For example, 1000 will take 2 seconds to go from 4000 to 2000 RPM.
+
+Defaults to -1 which instantly changes RPM.
 
 .. note:: Originally, I thought this might come in handy, but in practice tuning the torque and gear ratios worked better. Kept in case it comes in useful for somebody.
 
@@ -1416,10 +1418,12 @@ Engine RPM will never drop below this value regardless of whether wheel RPM * ge
 
 .. _doc_assets_vehicle:enginerpm_increaserate:
 
-EngineRPM_IncreaseRate :ref:`float32 <doc_data_builtin_types>` ``10000.0``
+EngineRPM_IncreaseRate :ref:`float32 <doc_data_builtin_types>` ``-1.0``
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 How quickly engine RPM can increase in RPM/s. For example, 1000 will take 2 seconds to go from 2000 to 4000 RPM.
+
+Defaults to -1 which instantly changes RPM.
 
 .. note:: Originally, I thought this might come in handy, but in practice tuning the torque and gear ratios worked better. Kept in case it comes in useful for somebody.
 
