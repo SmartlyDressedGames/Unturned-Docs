@@ -50,6 +50,8 @@ When clouds are disabled (``Has_Clouds false``), these properties can be used to
 
 **RateOverTimeScale** *float*: Particle System's emission rate is multiplied by current time of day's cloud slider value (between zero and one) scaled by this value.
 
+**MaterialColorPropertyNames** *list*: Particle System's material instance will have these color properties set to the current time of day's cloud color. Defaults to just _Color.
+
 For example:
 
 .. code-block:: unturnedasset
@@ -60,10 +62,20 @@ For example:
 		{
 			Path System1
 			RateOverTimeScale 1.5
+			MaterialColorPropertyNames
+			[
+				_Color
+				_EmissionColor
+			]
 		}
 		{
 			Path System2
 			RateOverTimeScale 3
+			MaterialColorPropertyNames
+			[
+				_Color
+				_EmissionColor
+			]
 		}
 	]
 
