@@ -401,6 +401,9 @@ Ranged weapons have a significant number of properties. To make navigating these
    * - :ref:`EjectAfterReloadDelay <doc_item_asset_gun:ejectafterreloaddelay>`
      - :ref:`float32 <doc_data_builtin_types>`
      - ``0.5``
+   * - :ref:`EjectCasingAfterShooting <doc_item_asset_gun:ejectcasingaftershooting>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - See description
    * - :ref:`RechamberAfterMagazineAttached <doc_item_asset_gun:rechamberaftermagazineattached>`
      - :ref:`ERechamberGunAfterReloadMode <doc_item_asset_gun:erechambergunafterreloadmode>`
      - ``IfAmmoWasEmpty``
@@ -844,6 +847,17 @@ CasingEjectCountAfterReload :ref:`int32 <doc_data_builtin_types>`
 If greater than zero, emit this many bullet casing particles after :ref:`EjectAfterReloadDelay <doc_item_asset_gun:ejectafterhammerdelay>` seconds pass.
 
 Defaults to :ref:`Ammo_Max <doc_item_asset_gun:ammo_max>` for ``Break`` Action guns. Zero otherwise.
+
+----
+
+.. _doc_item_asset_gun:ejectcasingaftershooting:
+
+EjectCasingAfterShooting :ref:`bool <doc_data_builtin_types>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If true, emit a bullet casing particle when a shot is fired.
+
+Defaults to true for ``Trigger`` and ``Minigun`` action guns.
 
 ----
 
