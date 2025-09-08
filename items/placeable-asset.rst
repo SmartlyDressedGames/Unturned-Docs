@@ -10,6 +10,10 @@ This inherits the :ref:`ItemAsset <doc_item_asset_intro>` class.
 Placeable Asset Properties
 --------------------------
 
+**ExplosionEffect_CopyModelPosition** *bool*: If true, effect spawns exactly at the model position without any offset. Defaults to false for backwards compatibility.
+
+**ExplosionEffect_CopyModelRotation** *bool*: If true, effects spawns with same rotation as the model. Defaults to false for backwards compatibility.
+
 **Item_Dropped_On_Destroy** :ref:`Asset Pointer <doc_data_assetptr>`: Item asset or spawn table for items dropped when destroyed.
 
 This property can also be set to a string value of ``this``, which will use the the owning item's GUID. Useful to avoid accidentally writing the wrong ID.
