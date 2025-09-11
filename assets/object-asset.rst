@@ -196,6 +196,8 @@ Rubble
 
 **Rubble_Reset** *float*: Delay before a destroyed object respawns, in seconds.
 
+**Rubble_Respawn_All_Sections_Simultaneously** *bool*: If true, all sections respawn at the same time. Defaults to false.
+
 **Rubble_Reward_ID** *uint16*: ID of an item :ref:`spawn table <doc_assets_spawn>` to use for rewards. Defaults to 0.
 
 **Rubble_Rewards_Min** *byte*: Minimum amount of item drops to reward. Defaults to 1.
