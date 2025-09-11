@@ -101,7 +101,11 @@ Skill Rule Properties
 
 **Max_Unlockable_Level** *int*: Maximum skill level attainable through gameplay. Higher levels are hidden in the skills menu.
 
-**Cost_Multiplier** *float*: Multiplier for XP upgrade cost.
+**Base_Cost** *int*: If set, overrides XP cost to purchase first level of the skill.
+
+**Per_Level_Cost_Increase** *int*: If set, overrides XP cost increase with each level. Added to ``Base_Cost`` after the first level.
+
+**Cost_Multiplier** *float*: Multiplier for total XP upgrade cost.
 
 .. code-block:: unturnedasset
 	:linenos:
