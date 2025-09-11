@@ -25,6 +25,8 @@ For examples, check the ``Assets/Levels`` directory.
 
 **Skills** *array*: Overrides skill default and max levels. Refer to skill rule properties.
 
+**Skillset_Loadouts** *dictionary*: Overrides per-skillset starting items. Can be used to prevent skillset default items in singleplayer. Server "Loadout" command takes priority over this option. Please refer to Skillset Loadout properties below for more details.
+
 **TerrainColors** *array*: Specifies which colors are too similar to terrain colors. Please refer to Terrain Color Properties below.
 
 **Enable_Admin_Faster_Salvage_Duration** *bool*: By default, players in singleplayer and admins in multiplayer have a faster salvage time.
@@ -129,6 +131,43 @@ Skill Rule Properties
 			Cost_Multiplier 5
 		}
 	]
+
+Skillset Loadout Properties
+---------------------------
+
+Can contain the following keys: ``None``, ``Fire``, ``Police``, ``Army``, ``Farm``, ``Fish``, ``Camp``, ``Work``, ``Chef``, ``Thief``, ``Medic``
+
+Each key is a list of items with the following properties:
+
+**Asset**: :ref:`Asset Pointer <doc_data_assetptr>`: Item or spawn table to grant an item from.
+
+**Amount** *int*: Number of times to grant this item. Defaults to 1.
+
+**Origin** :ref:`EItemOrigin <doc_data_eitemorigin>`: Determines starting state of the item. Defaults to World.
+
+Example:
+
+.. code-block:: unturnedasset
+	:linenos:
+
+	Skillset_Loadouts
+	{
+		Army
+		[
+			{
+				// Eaglefire at max quality with full ammo
+				Asset 4
+				Origin Admin
+			}
+			{
+				// Military magazine x2 with random ammo
+				Asset dbfb1d0d11ca438e9dffb95f76e61274
+				Amount 2
+			}
+		]
+
+		// Other skillsets will spawn with nothing
+	}
 
 Terrain Color Properties
 ------------------------
