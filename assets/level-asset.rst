@@ -54,6 +54,8 @@ When clouds are disabled (``Has_Clouds false``), these properties can be used to
 
 **MaterialColorPropertyNames** *list*: Particle System's material instance will have these color properties set to the current time of day's cloud color. Defaults to just _Color.
 
+**WarmupTime** *float*: When restarting the particle system it is simulated this number of seconds. Alternative to enabling Particle System's ``Prewarm`` option. Defaults to zero.
+
 For example:
 
 .. code-block:: unturnedasset
@@ -64,6 +66,7 @@ For example:
 		{
 			Path System1
 			RateOverTimeScale 1.5
+			WarmupTime 10
 			MaterialColorPropertyNames
 			[
 				_Color
