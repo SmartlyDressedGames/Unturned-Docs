@@ -131,6 +131,8 @@ Event
 
 **Reward_#_ID** *string*: ID of event to broadcast. This can be used by c# plugins with the ``NPCEventManager`` class, or Unity events with the :ref:`NPC Global Event component <doc_assets_mod_hooks:npc_global_event_hook>`. For example, when an event with ID "Fireworks" is broadcast all of the components with event ID "Fireworks" will have their corresponding Unity event triggered as well, in this case perhaps to spawn a fireworks effect.
 
+**Reward_#_Replicate** *bool*: If true, event is triggered on clients as well as the server. Defaults to true. If false, event is only triggered on authority (singleplayer/server).
+
 Experience
 ``````````
 
