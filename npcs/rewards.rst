@@ -118,6 +118,8 @@ Effect
 
 **Reward_#_Spawnpoint** *string*: Location to spawn the effect, using the spawnpoint name as set in the nodes level editor. For example, ``Liberator_Jet``.
 
+**Reward_#_AtPlayerPosition** *bool*: If true, spawn the effect at the target player's position.
+
 **Reward_#_IsReliable** *bool*: If true, multiplayer will ensure the effect is replicated. If false, it won't be retransmitted if the packet is lost. Defaults to true.
 
 **Reward_#_RelevantDistance** *float*: If set, overrides the default multiplayer relevant distance of 128 meters. Defaults to -1.
