@@ -111,8 +111,6 @@ General
 
 **Weather_Override** *ELevelWeatherOverride*: Can be set to rain or snow to lock weather type.
 
-**Has_Atmosphere** *bool*: If false, disable stars in skybox.
-
 **Has_Global_Electricity** *bool*: Should all powerable items and objects have power by default?
 
 **Gravity** *float*: Acceleration of gravity. Defaults to -9.81.
@@ -164,6 +162,8 @@ Deprecated
 **Can_Use_Bundles** *bool*: Used in the past for timed curated maps to disable using their assets in the level editor which could break after moving the map from the vanilla content to the workshop.
 
 **Category** *ESingleplayerMapCategory*: Mostly automated now. Can be set to Misc to explicitly show in the miscellaneous map category.
+
+**Has_Atmosphere** *bool*: If false, disable stars in skybox.
 
 **Has_Discord_Rich_Presence** *bool*: Only valid for official maps. If discord integration is enabled and this flag is true discord will check for a map icon configured in their partner page.
 
