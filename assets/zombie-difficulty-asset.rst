@@ -18,6 +18,24 @@ Properties Reference
 
 **Allow_Horde_Beacon** *bool*: Whether or not Horde Beacons can be placed in the navmesh. Defaults to true.
 
+**Speciality_Health_Override_Mode** ``None``, ``MultiplyEditorHealth``, ``MultiplyDefaultHealth``, or ``Replace``: defaults to ``None``. If set, allows zombie health to overridden per-zombie-type.
+
+- ``None``: Do not override zombie health.
+- ``MultiplyEditorHealth``: Per-speciality value is a multiplier for health configured in the level editor.
+- ``MultiplyDefaultHealth``: Per-speciality value is a multiplier for vanilla health value.
+- ``Replace``: Per-speciality value replaces zombie's health.
+
+**Speciality_Health_Overrides** *dictionary*: If using ``Speciality_Health_Override_Mode``, this pairs zombie speciality (e.g., Crawler, Sprinter, Flanker, etc) to a number. For example:
+
+.. code-block:: unturnedasset
+	:linenos:
+
+	Speciality_Health_Overrides
+	{
+		Crawler 100
+		Burner 200
+	}
+
 Spawn Chance Properties
 -----------------------
 
