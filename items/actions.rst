@@ -133,7 +133,9 @@ ID of the item to source actions from. Default source is the current item.
 Action_#_Text :ref:`string <doc_data_builtin_types>`
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Context button name. This property is usually used in combination with ``Action_#_Tooltip``.
+Context button name. If a key matching this value exists in the per-item localization file then that text is shown, otherwise this value is shown as-is.
+
+This property is usually used in combination with ``Action_#_Tooltip``.
 
 ----
 
@@ -142,7 +144,9 @@ Context button name. This property is usually used in combination with ``Action_
 Action_#_Tooltip :ref:`string <doc_data_builtin_types>`
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Context button tooltip. This property is usually used in combination with ``Action_#_Text``.
+Context button tooltip. If a key matching this value exists in the per-item localization file then that tooltip is shown, otherwise this value is shown as-is.
+
+This property is usually used in combination with ``Action_#_Text``.
 
 ----
 
