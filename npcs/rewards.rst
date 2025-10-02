@@ -185,7 +185,7 @@ Hint
 
 **Reward_#_Type** *enum* (``Hint``)
 
-**Reward_#_Text** :ref:`doc_data_richtext`: Text to display as a hint.
+**Reward_#_Text** :ref:`doc_data_richtext`: Alternative to localization file for debug text. Otherwise, translated text from **Reward_#** in the localization file is used.
 
 **Reward_#_Duration** *float*: Duration of the hint, in seconds. Defaults to 2 seconds.
 
