@@ -7,7 +7,7 @@ Conditions can be held by NPC assets, interactable objects, and item blueprints.
 
 **Conditions** *byte*: Total number of conditions.
 
-**Condition_#_Type** *enum* (``Compare_Flags``, ``Date_Counter``, ``Flag_Bool``, ``Flag_Short``, ``Currency``, ``Experience``, ``Item``, ``Kills_Animal``, ``Kills_Horde``, ``Kills_Object``, ``Kills_Player``, ``Kills_Tree``, ``Kills_Zombie``, ``Player_Life_Food``, ``Player_Life_Health``, ``Player_Life_Stamina``, ``Player_Life_Virus``, ``Player_Life_Water``, ``Quest``, ``Reputation``, ``Skillset``, ``Holiday``, ``Time_Of_Day``, ``Weather_Blend_Alpha``, ``Weather_Status``)
+**Condition_#_Type** *enum* (``Compare_Flags``, ``Date_Counter``, ``Flag_Bool``, ``Flag_Short``, ``Currency``, ``Experience``, ``Item``, ``Kills_Animal``, ``Kills_Horde``, ``Kills_Object``, ``Kills_Player``, ``Kills_Tree``, ``Kills_Zombie``, ``Player_Life_Food``, ``Player_Life_Health``, ``Player_Life_Stamina``, ``Player_Life_Virus``, ``Player_Life_Water``, ``Quest``, ``Reputation``, ``Skillset``, ``Holiday``, ``Time_Of_Day``, ``Volume_Overlap``, ``Weather_Blend_Alpha``, ``Weather_Status``)
 
 **Condition_#_Reset** *flag*: Set back to equivalent of 0 when completed.
 
@@ -263,6 +263,15 @@ Time_Of_Day
 **Condition_#_Type** *enum* (``Time_Of_Day``)
 
 **Condition_#_Second** *int*: Second of a 24-hour clock (military time) to compare against. For example: ``0`` is midnight (the start of a day), ``43200`` is noon (12 o'clock), and ``86400`` is midnight (the end of a day). This condition respects the map's configured "Bias" values, as well as the day/night cycle length of the world. As a visual reference, the `Clock <https://unturned.wiki/wiki/Clock>`_ item can be used.
+
+Volume_Overlap
+``````````````
+
+**Condition_#_Type** *enum* (``Volume_Overlap``)
+
+**Condition_#_VolumeID** *string*: ID of volume(s) placed in the level editor to test.
+
+**Condition_#_PlayerCount** *int*: Target number of players in matching volumes to compare against.
 
 Weather_Blend_Alpha
 ```````````````````
