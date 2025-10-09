@@ -25,6 +25,11 @@ Binary Random Component
 
 When triggered will invoke one of two events depending on percentage probability. For example with a probability of 0.05 the OnTrue event will be invoked 5% of the time, and OnFalse will be invoked the remaining 95% of times.
 
+Collision Damage
+``````````````````
+
+Damages players when they overlap a trigger collider.
+
 Collision Event Hook
 ````````````````````
 
