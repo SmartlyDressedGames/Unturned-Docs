@@ -16,19 +16,22 @@ Properties
 .. list-table::
    :widths: 40 40 20
    :header-rows: 1
-   
+
    * - Property Name
      - Type
      - Default Value
    * - :ref:`Beard <doc_item_asset_gear:beard>`
      - :ref:`flag <doc_data_flag>`
-     - 
+     -
+   * - :ref:`Beard_Override <doc_item_asset_gear:beard_override>`
+     - :ref:`string <doc_data_builtin_types>`
+     -
    * - :ref:`Hair <doc_item_asset_gear:hair>`
      - :ref:`flag <doc_data_flag>`
-     - 
+     -
    * - :ref:`Hair_Override <doc_item_asset_gear:hair_override>`
      - :ref:`string <doc_data_builtin_types>`
-     - 
+     -
 
 Some inherited properties behave differently when used by this class. Notably, these are:
 
@@ -45,6 +48,15 @@ Beard :ref:`flag <doc_data_flag>`
 :::::::::::::::::::::::::::::::::
 
 When this flag is not included, the parent class's :ref:`Beard_Visible <doc_item_asset_clothing:beard_visible>` property is set to false. This flag must be included if the character's facial hair should be visible.
+
+----
+
+.. _doc_item_asset_gear:beard_override:
+
+Beard_Override :ref:`string <doc_data_builtin_types>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+When this property is set, the game will look for a child Mesh Renderer component in Unity that has the same name as this property's value. If a matching Mesh Renderer is found, its material will be changed to the character's hbeardair material. This property is used by certain cosmetics that entirely cover the character's beard, so that the player's selected beard color can still be used for customization.
 
 ----
 
