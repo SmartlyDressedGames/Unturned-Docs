@@ -39,6 +39,8 @@ For examples, check the ``Assets/Levels`` directory.
 
 **Death_Music** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: Audio clip played after death.
 
+**UnderwaterFogDensity** *float*: Overrides fog effect intensity while the camera is underwater. Defaults to ``0.075``.
+
 Cloud Override Properties
 -------------------------
 
