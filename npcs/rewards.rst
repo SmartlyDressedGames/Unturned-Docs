@@ -137,6 +137,8 @@ Event
 
 **Reward_#_Replicate** *bool*: If true, event is triggered on clients as well as the server. Defaults to true. If false, event is only triggered on authority (singleplayer/server).
 
+**Reward_#_InstigatorOnly** *bool*: If true, event is run only for the player triggering the reward. Defaults to false. Takes priority over ``Replicate``. In multiplayer this means the event is only broadcast for the triggering client, not the server.
+
 Experience
 ``````````
 
