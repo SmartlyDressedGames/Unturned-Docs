@@ -54,6 +54,12 @@ Properties
    * - :ref:`Explosion_Launch_Speed <doc_item_asset_magazine:explosion_launch_speed>`
      - :ref:`float32 <doc_data_builtin_types>`
      - See description
+   * - :ref:`Explosion_Penetrate_Buildables <doc_item_asset_magazine:explosion_penetrate_buildables>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``false``
+   * - :ref:`Explosion_Plays_Impact_Effects <doc_item_asset_magazine:explosion_plays_impact_effects>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``true``
    * - :ref:`Explosive <doc_item_asset_magazine:explosive>`
      - :ref:`flag <doc_data_flag>`
      -
@@ -154,6 +160,25 @@ Explosion_Launch_Speed :ref:`float32 <doc_data_builtin_types>`
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Players caught within the area-of-effect explosion caused by projectiles when using the ``Explosive`` property are launched at this speed, in meters per second. Defaults to the resulting value of ``Player_Damage * 0.1``.
+
+----
+
+.. _doc_item_asset_magazine:explosion_penetrate_buildables:
+
+Explosion_Penetrate_Buildables :ref:`bool <doc_data_builtin_types>` ``false``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If true, explosion damage passes through buildable items.
+
+----
+
+.. _doc_item_asset_magazine:explosion_plays_impact_effects:
+
+Explosion_Plays_Impact_Effects :ref:`bool <doc_data_builtin_types>` ``true``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If true, per-surface effects like blood splatter are created.
+Defaults to true, but can be disabled particularly if a performance issue (e.g., an explosive many-pellet shotgun shell).
 
 ----
 
@@ -316,3 +341,8 @@ Zombie_Damage :ref:`float32 <doc_data_builtin_types>` ``0``
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Damage dealt to zombies caught within the area-of-effect explosion of a magazine attachment using the ``Explosive`` flag.
+
+Unity_Setup
+-----------
+
+Projectile.prefab: Optional for projectile-launching guns. If included, overrides the projectile instantiated when the gun is fired.
