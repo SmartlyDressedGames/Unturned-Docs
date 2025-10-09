@@ -124,6 +124,8 @@ Effect
 
 **Reward_#_RelevantDistance** *float*: If set, overrides the default multiplayer relevant distance of 128 meters. Defaults to -1.
 
+**Reward_#_OnlyRelevantToInstigator** *bool*: If true, only the player triggering this reward will see the effect. Defaults to false. Takes priority over ``RelevantDistance`` if set.
+
 .. _doc_npc_asset_rewards:event:
 
 Event
