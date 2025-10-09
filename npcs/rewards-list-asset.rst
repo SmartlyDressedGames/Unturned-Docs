@@ -12,3 +12,5 @@ The ``Rewards_List_Asset`` NPC reward type can either grant a rewards list asset
 A `Rewards List Volume` placed in the level editor can also reference a rewards list asset, and will grant the rewards if the conditions are met when a player enters the volume.
 
 Conditions must be met to grant the rewards. For more information, refer to the documentation for :ref:`Conditions <doc_npc_asset_conditions>` and :ref:`Rewards <doc_npc_asset_rewards>` respectively.
+
+Tip: you can use the ``/RunRewardList (guid)`` admin command to test a reward list in-game.
