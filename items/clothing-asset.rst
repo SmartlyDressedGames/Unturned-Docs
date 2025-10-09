@@ -18,7 +18,7 @@ Properties
 .. list-table::
    :widths: 40 40 20
    :header-rows: 1
-   
+
    * - Property Name
      - Type
      - Default Value
@@ -54,16 +54,16 @@ Properties
      - See description
    * - :ref:`Proof_Fire <doc_item_asset_clothing:proof_fire>`
      - :ref:`flag <doc_data_flag>`
-     - 
+     -
    * - :ref:`Proof_Radiation <doc_item_asset_clothing:proof_radiation>`
      - :ref:`flag <doc_data_flag>`
-     - 
+     -
    * - :ref:`Proof_Water <doc_item_asset_clothing:proof_water>`
      - :ref:`flag <doc_data_flag>`
-     - 
+     -
    * - :ref:`Skin_Override <doc_item_asset_clothing:skin_override>`
      - :ref:`string <doc_data_builtin_types>`
-     - 
+     -
    * - :ref:`Visible_On_Ragdoll <doc_item_asset_clothing:visible_on_ragdoll>`
      - :ref:`bool <doc_data_builtin_types>`
      - ``true``
@@ -163,6 +163,8 @@ Priority_Over_Cosmetic :ref:`bool <doc_data_builtin_types>`
 
 This property can be set to override the default cosmetic override behavior. The default behavior will differ depending on the asset. For most assets, cosmetics are displayed over clothing. For glasses using the ``Vision`` property, the clothing item has priority over the cosmetic.
 
+.. note:: This only has an effect in PvP mode servers.
+
 ----
 
 .. _doc_item_asset_clothing:proof_fire:
@@ -197,7 +199,7 @@ When this flag is included, this clothing item is considered waterproof. When wa
 Skin_Override :ref:`string <doc_data_builtin_types>`
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Optional name of a renderer that should use the player's skin material. For example, the `Conflicting Conscience <https://unturned.wiki/wiki/Conflicting_Conscience>`_ cosmetic adds miniature versions of the player sitting on their shoulder. 
+Optional name of a renderer that should use the player's skin material. For example, the `Conflicting Conscience <https://unturned.wiki/wiki/Conflicting_Conscience>`_ cosmetic adds miniature versions of the player sitting on their shoulder.
 
 ----
 
