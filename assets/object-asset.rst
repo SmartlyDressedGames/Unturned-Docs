@@ -119,7 +119,7 @@ Interactables
 
 **Interactability_Delay** *float*: In seconds, the cooldown before the object can be interacted with again.
 
-**Interactability_Dialogue** :ref:`doc_data_guid`: Dialogue asset to open for ``Interactability Dialogue`` mode.
+**Interactability_Dialogue** :ref:`doc_data_guid`: Dialogue asset to open for ``Interactability Dialogue`` mode. By default the object's name is used as the character name in dialog, but this can be overridden with the ``Dialogue_Name`` option in the localization file.
 
 **Interactability_Drops** *byte*: Total number of items dropped from an object using ``Interactability Dropper``. This property is used in conjunction with ``Interactability_Drop_#``. Defaults to 0. It is preferable to use the ``Interactability_Reward_ID`` property instead.
 
@@ -227,3 +227,5 @@ Localization
 **Interact** *string*: When an interactable object is using ``Interactability_Hint Custom``, this property is used to set the text that should be displayed as the interact prompt for the object.
 
 **Interactability_Text_Line_#** :ref:`doc_data_richtext`: A line of text that should be displayed when an object using ``Interactability Note`` is interacted with. This property is used in conjunction with ``Interactability_Text_Lines``.
+
+**Dialogue_Name** *string*: Overrides character name in dialogue. Defaults to the object name.
