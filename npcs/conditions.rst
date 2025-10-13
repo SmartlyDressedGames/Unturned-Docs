@@ -271,7 +271,7 @@ Volume_Overlap
 
 **Condition_#_VolumeID** *string*: ID of volume(s) placed in the level editor to test.
 
-**Condition_#_PlayerCount** *int*: Target number of players in matching volumes to compare against.
+**Condition_#_PlayerCount** *int*: Target number of players in matching volumes to compare against. Volumes with identical IDs are grouped together.
 
 Weather_Blend_Alpha
 ```````````````````
