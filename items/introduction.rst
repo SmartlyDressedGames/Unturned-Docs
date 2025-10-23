@@ -578,7 +578,9 @@ Item should be deleted when at 0% quality.
 Should_Drop_On_Death :ref:`bool <doc_data_builtin_types>` ``true``
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Item should be dropped on death.
+When a player dies with this item, should an item drop be spawned?
+
+.. note:: The item is not kept after respawning.
 
 ----
 
