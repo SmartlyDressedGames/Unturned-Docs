@@ -49,6 +49,10 @@ Most of these guidelines are intended to help promote consistency with *Unturned
 
 #. | Only use copyrighted content, trademarks, or other intellectual property that belongs to you. We cannot put other people's intellectual property into our game.
 
+#. | We do not support custom shaders, i.e., shaders not included in the vanilla game cannot be used.
+
+#. | Unfortunately, physics do not play well with the Unturned character, and cannot be used on cosmetics at this time.
+
 Remember: these are just guidelines. Except in specific cases (such as copyright infringement), we may occasionally accept items that break some of these guidelines. However, these are the things we are looking for in submissions. Sticking to these guidelines will help your chances of getting your item accepted.
 
 Unity Project Organization

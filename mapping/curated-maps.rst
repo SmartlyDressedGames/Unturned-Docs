@@ -51,6 +51,8 @@ Art Style
 
 Curated experiences should still look and feel like *Unturned*. Any custom content on the map should generally match the base game's art style (similar to preexisting curated maps).
 
+Human-like drawings such as faces and skulls should be blocky, similar to the in-game characters. This is a common source of revision requests from us.
+
 Quality Assurance
 `````````````````
 
@@ -70,14 +72,18 @@ Quality Assurance
 
 * | **Item Icons**: Each item should have a proper icon in the inventory. One way to quickly preview the icon is to attach an orthographic camera in Unity.
 
-Age Appropriacy
-```````````````
+Content Appropriacy
+````````````````````
 
 Content should be what is typically considered "family-friendly". For example:
 
 - | Text should be devoid of harsh profanity (anything considered heavy or mild cursing, slurs, or strongly implied). Some alternatives to traditional profanity include nonsense words (such as *gosh*, *darn*, *dang*, *drats*, and *heck*), cut-off text, or redactions (e.g., *\[REDACTED]* or *\[UNINTELLIGIBLE]*).
 
-- | Explicit depictions of drugs, alcohol, and other substances is not allowed. Similar ideas with a looser association, such as berry mixes instead of alcohol; or things like vineyards, bottles, kegs, or distilleries; is allowed.
+- | Explicit depictions of drugs, alcohol, and other substances is not allowed. Similar ideas with a looser association, such as berry mixes instead of alcohol; or things like vineyards, bottles, kegs, or distilleries; is allowed. Cigarettes, vaping, smoking, and tobacco are not allowed.
+
+- | Text should be gender-neutral. For example, "Firefighter" instead of "Fireman."
+
+- | Do not link to out-of-game content (for example, websites and phone numbers). We typically request phone numbers be changed to 555: https://en.wikipedia.org/wiki/555_(telephone_number)
 
 Menu Visibility
 ---------------
