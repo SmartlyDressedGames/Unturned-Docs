@@ -7,7 +7,7 @@ Rewards can be granted by NPC assets, interactable objects, and item blueprints.
 
 **Rewards** *byte*: Total number of rewards.
 
-**Reward_#_Type** *enum* (``Airdrop``, ``Flag_Bool``, ``Flag_Math``, ``Flag_Short``, ``Flag_Short_Random``, ``Achievement``, ``Currency``, ``Cutscene_Mode``, ``Effect``, ``Event``, ``Experience``, ``Item``, ``Item_Random``, ``Hint``, ``Player_Life_Food``, ``Player_Life_Health``, ``Player_Life_Stamina``, ``Player_Life_Virus``, ``Player_Life_Water``, ``Player_Spawnpoint``, ``Quest``, ``Reputation``, ``Rewards_List_Asset``, ``Teleport``, ``Vehicle``)
+**Reward_#_Type** *enum* (``Airdrop``, ``Flag_Bool``, ``Flag_Math``, ``Flag_Short``, ``Flag_Short_Random``, ``Achievement``, ``Currency``, ``Cutscene_Mode``, ``Effect``, ``Event``, ``Experience``, ``Item``, ``Item_Random``, ``Hint``, ``Player_Life_Food``, ``Player_Life_Health``, ``Player_Life_Stamina``, ``Player_Life_Virus``, ``Player_Life_Water``, ``Player_Spawnpoint``, ``Quest``, ``Reputation``, ``Rewards_List_Asset``, ``Teleport``, ``Vehicle``, ``Zombie``)
 
 **Reward_#_GrantDelaySeconds** *float*: If set, the reward will be queued for the specified number of seconds before being granted to the player. Defaults to -1.
 
@@ -275,6 +275,27 @@ Vehicle
 **Reward_#_Spawnpoint** *string*: Location to spawn the vehicle in as a reward, using the ID of a spawnpoint node as set in the level editor. For example, ``Liberator_Jet``. If an ID is not provided, the vehicle will spawn above the NPC.
 
 **Reward_#_PaintColor** *color*: If set, overrides color of spawned vehicle. Vehicle redirector asset's ``SpawnPaintColor`` and vehicle asset's ``DefaultPaintColors`` are bypassed.
+
+Zombie
+``````
+
+Respawns zombie(s) at named Spawnpoint nodes. If insufficient dead zombies are available to respawn, alive zombies are converted to the appropriate type and teleported.
+
+.. note:: Spawnpoints must be within a navmesh.
+
+**Reward_#_Type** *enum* (``Zombie``)
+
+**Reward_#_Zombie** *enum*: Which "type" of zombie to spawn, the same list as zombie kills condition. To-do: move to its own page.
+
+**Reward_#_Spawnpoint** *string*: Where to spawn the zombies, using the name as set in the nodes level editor. When multiple nodes share a name each zombie is spawned at a random node.
+
+**Reward_#_LevelTableOverride** *int*: Unique ID of a zombie type shown in the level editor. If set, the zombie spawned will use that type. Defaults to -1.
+
+**Reward_#_SpawnQuantity** *int*: Amount of zombies to spawn.
+
+**Reward_#_CooldownId** *string*: If set, only spawn if a named global cooldown (shared between all players) has passed.
+
+**Reward_#_CooldownDuration** *float*: Seconds since CooldownId last ran before this reward can spawn zombies again.
 
 Localization
 ------------
