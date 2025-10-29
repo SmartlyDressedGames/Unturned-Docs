@@ -75,13 +75,13 @@ Commands
 
 Commands—sometimes referred to as console commands or cheat commands—range from tweaking server settings to spawning items. Most commands are set in the **Commands.dat** file, with each command separated by a newline.
 
-Learn more about available commands on the `Unturned Wiki <https://unturned.wiki/Commands>`_. Below is an example setup that includes many commonly-used commands:
+Learn more about available commands on the `Unturned Wiki <https://unturned.wiki.gg/Commands>`_. Below is an example setup that includes many commonly-used commands:
 
 .. code-block:: unturneddat
 
 	// [[ SERVER CONFIGURATION ]]
 	// Lines starting with "//" are comments – which aren't read when launching your server.
-	// Read more about commands on the game's wiki: https://unturned.wiki/Commands
+	// Read more about commands on the game's wiki: https://unturned.wiki.gg/Commands
 
 	// Name of your server in the server list.
 	Name My Unturned Server
@@ -133,7 +133,7 @@ Use the ``Help`` command to either view a list of *all* commands, or describe a 
 
 Some runtime commands require ``Cheats`` to be enabled. For example, ``Give`` is a cheat command used to spawn items.
 
-Learn about more commands on the `Unturned Wiki <https://unturned.wiki/Commands>`_.
+Learn about more commands on the `Unturned Wiki <https://unturned.wiki.gg/Commands>`_.
 
 Difficulty Settings
 ```````````````````

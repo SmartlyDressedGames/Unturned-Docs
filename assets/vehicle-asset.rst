@@ -1160,7 +1160,7 @@ The vehicle does not spawn with a vehicle battery.
 Carjack_Force_Multiplier :ref:`float32 <doc_data_builtin_types>` ``1.0``
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-This is a multiplier on the force applied when using a `Carjack <https://unturned.wiki/Carjack>`_ on this vehicle. It is recommended that this property scales based on your vehicle's mass.
+This is a multiplier on the force applied when using a `Carjack <https://unturned.wiki.gg/Carjack>`_ on this vehicle. It is recommended that this property scales based on your vehicle's mass.
 
 Although this property was originally intended for modded vehicles, many official vehicles use this property as well. If you are creating a custom vehicle and using one of the example assets provided as a template (or have a mass that is similar to official content), you will likely want to use a value of ``2`` for this property.
 
@@ -1249,7 +1249,7 @@ Disables the ``Wheel_#`` GameObjects from turning when steering by setting the d
 Default_Battery :ref:`doc_data_guid` ``098b13be34a7411db7736b7f866ada69``
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Battery item given to the player when a specific battery hasn't been manually installed yet. Defaults to the `Vehicle Battery <unturned.wiki/Vehicle_Battery>`_ used by official vehicles.
+Battery item given to the player when a specific battery hasn't been manually installed yet. Defaults to the `Vehicle Battery <https://unturned.wiki.gg/Vehicle_Battery>`_ used by official vehicles.
 
 ----
 
@@ -1844,7 +1844,7 @@ If greater than zero, an acceleration is applied to angular velocity on 𝘡-axi
 Shared_Skin_Lookup_ID :ref:`doc_data_guid` or :ref:`uint16 <doc_data_builtin_types>`
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-GUID or legacy ID of another vehicle, which this vehicle should share skins with. This property was used by some official vehicles (such as the `Rally Car <https://unturned.wiki/Rally_Car>`_), as each paint color used to be a separate vehicle. This is no longer necessary, but some modded vehicles may still rely on this functionality. Defaults to the value of this vehicle's configured ``GUID``.
+GUID or legacy ID of another vehicle, which this vehicle should share skins with. This property was used by some official vehicles (such as the `Rally Car <https://unturned.wiki.gg/Rally_Car>`_), as each paint color used to be a separate vehicle. This is no longer necessary, but some modded vehicles may still rely on this functionality. Defaults to the value of this vehicle's configured ``GUID``.
 
 ----
 
@@ -2157,7 +2157,7 @@ Turrets :ref:`uint8 <doc_data_builtin_types>` ``0``
 
 Total number of turrets on the vehicle. All other turret-related properties require that this property has been configured.
 
-For example, this is how the `Fighter Jet <https://unturned.wiki/Fighter_Jet>`_ is configured:
+For example, this is how the `Fighter Jet <https://unturned.wiki.gg/Fighter_Jet>`_ is configured:
 
 .. code-block:: unturneddat
 	:linenos:
@@ -2251,7 +2251,7 @@ WheelConfigurations :ref:`list of VehicleWheelConfiguration <doc_assets_vehicle:
 
 Controls WheelCollider components and their corresponding visual models. When converting older vehicles, enable the ``-LogVehicleWheelConfigurations`` command-line flag to output an equivalent wheel configuration.
 
-For example, this is how the `Ambulance <https://unturned.wiki/Ambulance>`_ is configured:
+For example, this is how the `Ambulance <https://unturned.wiki.gg/Ambulance>`_ is configured:
 
 .. code-block:: unturneddat
 	:linenos:
