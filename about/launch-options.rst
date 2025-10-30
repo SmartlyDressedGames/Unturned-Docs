@@ -39,6 +39,8 @@ Effects include:
 
 **-DisableLightLODs**: Disable fadeout of dynamic lights. Could be useful for high-quality screenshots.
 
+**-EnableWheeledVehicleGizmos**: Draw locally driven vehicle's wheel torque, RPM, slip, expected RPM, etc.
+
 **-FullscreenMode=**: Window mode override.
 
 **-FallbackGizmos**: Use 3D Unity line renderer component for debug visualization rather than pixel-perfect lines. Performance with these is lower than the default, so only intended for cases where the default is unimplemented.
