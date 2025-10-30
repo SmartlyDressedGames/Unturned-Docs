@@ -262,9 +262,33 @@ Properties
    * - :ref:`EngineRPM_IncreaseRate <doc_assets_vehicle:enginerpm_increaserate>`
      - :ref:`float32 <doc_data_builtin_types>`
      - ``-1.0``
+   * - :ref:`EngineRPMMismatch_TorqueReduction_Enabled <doc_assets_vehicle:enginerpmmismatch_torquereduction_enabled>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``false``
+   * - :ref:`EngineRPMMismatch_TorqueReduction_Threshold <doc_assets_vehicle:enginerpmmismatch_torquereduction_threshold>`
+     - :ref:`float <doc_data_builtin_types>`
+     - ``0.0``
+   * - :ref:`EngineRPMMismatch_GearShift_PreventShifting <doc_assets_vehicle:enginerpmmismatch_gearshift_preventshifting>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``false``
+   * - :ref:`EngineRpmMismatch_GearShift_UpMinThreshold <doc_assets_vehicle:enginerpmmismatch_gearshift_upminthreshold>`
+     - :ref:`float <doc_data_builtin_types>`
+     - ``0.0``
+   * - :ref:`EngineRpmMismatch_GearShift_UpMaxThreshold <doc_assets_vehicle:enginerpmmismatch_gearshift_upmaxthreshold>`
+     - :ref:`float <doc_data_builtin_types>`
+     - ``0.0``
+   * - :ref:`EngineRpmMismatch_GearShift_DownMinThreshold <doc_assets_vehicle:enginerpmmismatch_gearshift_downminthreshold>`
+     - :ref:`float <doc_data_builtin_types>`
+     - ``0.0``
+   * - :ref:`EngineRpmMismatch_GearShift_DownMaxThreshold <doc_assets_vehicle:enginerpmmismatch_gearshift_downmaxthreshold>`
+     - :ref:`float <doc_data_builtin_types>`
+     - ``0.0``
    * - :ref:`ForwardGearRatios <doc_assets_vehicle:forwardgearratios>`
      - :ref:`list of float32 <doc_data_builtin_types>`
      -
+   * - :ref:`GearShift_AllowSkippingGears <doc_assets_vehicle:gearshift_allowskippinggears>`
+     - :ref:`bool <doc_data_builtin_types>`
+     - ``true``
    * - :ref:`GearShift_DownThresholdRPM <doc_assets_vehicle:gearshift_downthresholdrpm>`
      - :ref:`float32 <doc_data_builtin_types>`
      - ``1500.0``
@@ -1429,6 +1453,79 @@ Defaults to -1 which instantly changes RPM.
 
 ----
 
+.. _doc_assets_vehicle:enginerpmmismatch_torquereduction_enabled:
+
+EngineRPMMismatch_TorqueReduction_Enabled :ref:`float32 <doc_data_builtin_types>` ``false``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If true, wheel RPM is reduced according to the difference between expected and actual wheel RPM divided by torque reduction threshold.
+
+----
+
+.. _doc_assets_vehicle:enginerpmmismatch_torquereduction_threshold:
+
+EngineRPMMismatch_TorqueReduction_Threshold :ref:`float32 <doc_data_builtin_types>` ``0.0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If torque reduction is enabled, torque is reduced to zero when difference between expected and actual RPM is greater than this threshold.
+
+For non-linear reduction, you can enable **Use Engine RPM Mismatch Torque Reduction Curve** on the Engine Curves Component.
+
+----
+
+.. _doc_assets_vehicle:enginerpmmismatch_gearshift_preventshifting:
+
+EngineRPMMismatch_GearShift_PreventShifting :ref:`float32 <doc_data_builtin_types>` ``-1.0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If true, prevent changing gears when the difference between expected and actual wheel RPM exceeds threshold.
+
+----
+
+.. _doc_assets_vehicle:enginerpmmismatch_gearshift_upminthreshold:
+
+EngineRpmMismatch_GearShift_UpMinThreshold :ref:`float32 <doc_data_builtin_types>` ``0.0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If prevent shifting is enabled, prevent changing gears up when the difference between expected and actual wheel RPM is less than this threshold.
+
+I.e., if ``expected - actual < min`` it cannot shift up.
+
+----
+
+.. _doc_assets_vehicle:enginerpmmismatch_gearshift_upmaxthreshold:
+
+EngineRpmMismatch_GearShift_UpMaxThreshold :ref:`float32 <doc_data_builtin_types>` ``0.0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If prevent shifting is enabled, prevent changing gears up when the difference between expected and actual wheel RPM is greater than this threshold.
+
+I.e., if ``expected - actual > max`` it cannot shift up.
+
+----
+
+.. _doc_assets_vehicle:enginerpmmismatch_gearshift_downminthreshold:
+
+EngineRpmMismatch_GearShift_DownMinThreshold :ref:`float32 <doc_data_builtin_types>` ``0.0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If prevent shifting is enabled, prevent changing gears down when the difference between expected and actual wheel RPM is less than this threshold.
+
+I.e., if ``expected - actual < min`` it cannot shift down.
+
+----
+
+.. _doc_assets_vehicle:enginerpmmismatch_gearshift_downmaxthreshold:
+
+EngineRpmMismatch_GearShift_DownMaxThreshold :ref:`float32 <doc_data_builtin_types>` ``0.0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If prevent shifting is enabled, prevent changing gears down when the difference between expected and actual wheel RPM is greater than this threshold.
+
+I.e., if ``expected - actual > max`` it cannot shift down.
+
+----
+
 .. _doc_assets_vehicle:enginemaxrpm:
 
 EngineMaxRPM :ref:`float32 <doc_data_builtin_types>` ``7000.0``
@@ -1557,6 +1654,15 @@ Fuel_Min :ref:`uint16 <doc_data_builtin_types>` ``0``
 :::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Minimum possible fuel to spawn with.
+
+----
+
+.. _doc_assets_vehicle:gearshift_allowskippinggears:
+
+GearShift_AllowSkippingGears :ref:`bool <doc_data_builtin_types>` ``true``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+If true, engine can skip from (for example) 1st to 3rd gear if it keeps RPM within the acceptable range.
 
 ----
 
