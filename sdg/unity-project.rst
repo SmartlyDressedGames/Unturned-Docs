@@ -27,6 +27,11 @@ Finally, to run the game in the editor, open ``Assets/Game/Sources/Scenes/Setup.
 
 .. warning:: We recommend closing Unity's **Hierarchy** window in-game except when you need it. Unturned's scenes contain mostly top-level game objects for optimization purposes with the drawback of slowing down the Hierarchy window. For more information, `Scenes Structure > Hierarchy depth and count <https://learn.unity.com/tutorial/unity-tips#64622ce0edbc2a32a219b25e>`_.
 
+Editor Preferences
+------------------
+
+Unfortunately, Unturned doesn't support hot-reloading. If modifying code while Unity is open, we recommend changing **Script changes while playing** to **Recompile after playing**.
+
 Play Mode Settings
 ------------------
 
