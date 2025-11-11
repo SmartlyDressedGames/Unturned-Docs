@@ -191,7 +191,7 @@ Hint
 
 **Reward_#_Type** *enum* (``Hint``)
 
-**Reward_#_Text** :ref:`doc_data_richtext`: Alternative to localization file for debug text. Otherwise, translated text from **Reward_#** in the localization file is used.
+**Reward_#_Text** :ref:`doc_data_richtext`: Debug text that is shown when the asset's :ref:`localization file <doc_npc_asset_rewards:localization>` is empty. If a localization file has been included then the localized text is used instead.
 
 **Reward_#_Duration** *float*: Duration of the hint, in seconds. Defaults to 2 seconds.
 
@@ -312,7 +312,13 @@ Respawns zombie(s) at named Spawnpoint nodes. If insufficient dead zombies are a
 
 **Reward_#_CooldownDuration** *float*: Seconds since CooldownId last ran before this reward can spawn zombies again.
 
+.. _doc_npc_asset_rewards:localization:
+
 Localization
 ------------
 
-**Reward_#**: Name of the reward as it appears in user interfaces.
+Rewards lists properties can be localized in the asset's localization file.
+
+**Reward_#**: Localization for the name of the reward as it appears in user interfaces.
+
+.. tip:: Localization properties follow the same rules as other parts of the rewards list – including needing to use the correct prefix. For example, the property name for a localized hint on an interactable object would be ``Interactability_Reward_#``.
