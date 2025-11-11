@@ -7,7 +7,7 @@ Rewards can be granted by NPC assets, interactable objects, and item blueprints.
 
 **Rewards** *byte*: Total number of rewards.
 
-**Reward_#_Type** *enum* (``Airdrop``, ``Flag_Bool``, ``Flag_Math``, ``Flag_Short``, ``Flag_Short_Random``, ``Achievement``, ``Currency``, ``Cutscene_Mode``, ``Effect``, ``Event``, ``Experience``, ``Item``, ``Item_Random``, ``Hint``, ``Player_Life_Food``, ``Player_Life_Health``, ``Player_Life_Stamina``, ``Player_Life_Virus``, ``Player_Life_Water``, ``Player_Spawnpoint``, ``Quest``, ``Reputation``, ``Rewards_List_Asset``, ``Teleport``, ``Vehicle``, ``Zombie``)
+**Reward_#_Type** *enum* (``Airdrop``, ``Flag_Bool``, ``Flag_Math``, ``Flag_Short``, ``Flag_Short_Random``, ``Achievement``, ``Currency``, ``Cutscene_Mode``, ``Effect``, ``Event``, ``Experience``, ``Item``, ``Item_Random``, ``Hint``, ``Player_Life_Food``, ``Player_Life_Health``, ``Player_Life_Stamina``, ``Player_Life_Virus``, ``Player_Life_Water``, ``Player_Spawnpoint``, ``Quest``, ``Reputation``, ``Rewards_List_Asset``, ``Teleport``, ``Vehicle``, ``Zombie``, ``Remove_Zombies``)
 
 **Reward_#_GrantDelaySeconds** *float*: If set, the reward will be queued for the specified number of seconds before being granted to the player. Defaults to -1.
 
@@ -243,6 +243,19 @@ Quest
 **Reward_#_Type** *enum* (``Quest``)
 
 **Reward_#_ID** *uint16*: Quest ID to give as a reward.
+
+Remove Zombies
+``````````````
+
+Kills zombies that match a set of filters.
+
+**Reward_#_Type** *enum* (``Remove_Zombies``)
+
+**Reward_#_Zombie** *enum*: Which "type" of zombie to remove, the same list as zombie kills condition. To-do: move to its own page. Defaults to ``None`` in which case all zombie types match.
+
+**Reward_#_LevelTableOverride** *int*: Unique ID of a zombie type shown in the level editor. If set, only zombies spawned from this table are removed. Defaults to ``-1`` in which case all zombie tables match.
+
+**Reward_#_Nav** *byte*: Index of the navmesh that zombies should be removed from, seen as visible in the level editor. Defaults to ``255`` in which case all navmeshes match.
 
 Reputation
 ``````````
