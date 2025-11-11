@@ -13,6 +13,8 @@ Getting Started
 
 You'll need the same version of the Unity editor as described in :ref:`doc_getting_started:installing_unity`. You can double-check the editor version in ``ProjectSettings/ProjectVersion.txt``.
 
+Blender must be available during first import to load certain meshes. On Linux, ``blender`` must be in your ``PATH``.
+
 Unfortunately, Steam needs to be running, even to launch the game in the editor. This does make certain tasks like debugging multiplayer harder. Unturned 3 is very tightly integrated with the Steam API, so this requirement is unlikely to change. Certainly an important lesson for future games: Plan ahead to support swapping out platform APIs.
 
 The editor needs a copy of the core assets. The easiest option for this is to enable :ref:`Load Core Asset Bundle From Steam Install <load_core_asset_bundle_from_steam_install>`. Alternatively, :ref:`Export Core Asset Bundle <export_core_asset_bundle>`.
