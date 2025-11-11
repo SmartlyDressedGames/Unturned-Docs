@@ -13,7 +13,6 @@ Enumerators
 ```````````
 
 .. list-table::
-   :widths: 25 75
    :header-rows: 1
 
    * - Named Value
