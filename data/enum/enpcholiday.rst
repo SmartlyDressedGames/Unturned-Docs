@@ -5,7 +5,7 @@ ENPCHoliday
 
 The ENPCHoliday enumerated type consists of all of the game's recognized holidays or seasonal events. You can find the duration of scheduled seasonal events in the ``Client.log`` file generated after launching the game, or in the ``HolidayUtil.cs`` source file.
 
-The start and end times are based by the player's local time, meaning they are affected by their timezone. For Lunar New Year, the start and end dates are automatically calculated, with the duration set in the game's ``Status.json`` file.
+The start and end times for all holidays are relative to the player's local time, meaning they are affected by timezones. For Lunar New Year, the start and end dates are automatically calculated and the holiday's duration is set in the game's ``Status.json`` file.
 
 .. note:: Some assets only support a few of the game's recognized holidays. Notably: Landscape Material Assets only support Halloween, Christmas, and April Fools' Day.
 
@@ -40,7 +40,7 @@ Enumerators
      - Corresponds to the `Lunar New Year <https://en.wikipedia.org/wiki/Lunar_New_Year>`_ holiday.
      - Varies based on the Chinese calendar, being calculated as the day *before* Lunar New Year to 15 days *after* Lunar New Year. For example: January 28, 2025 (00:00) – February 13, 2025 (23:59:59).
    * - ``Unturned_Anniversary``
-     - Corresponds to the `Lunar New Year <https://en.wikipedia.org/wiki/Lunar_New_Year>`_ holiday.
+     - Corresponds to the game's anniversary on Steam.
      - July 7, 2025 (00:00) – July 7, 2025 (23:59:59)
    * - ``Max``
      - Only used/implemented in the game's source code – no practical use for game assets.
