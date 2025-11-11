@@ -3,11 +3,13 @@
 Conditions
 ==========
 
-Conditions can be held by NPC assets, interactable objects, and item blueprints. The specific property prefix may differ between asset types. For example, quests may use "Conditions" while blueprints use "Blueprint_#_Conditions".
+Conditions can be held by NPCs, interactable objects, and item blueprints. Each grouping of conditions is called a **conditions list** and starts with the ``Conditions`` property.
 
-**Conditions** *byte*: Total number of conditions.
+Properties in a conditions list are named in the format of ``ConditionPrefix_#_PropertyName``. For most conditions lists the prefix is ``Condition``, such as ``Condition_#_Type``. This is not always the case, such as for :ref:`blueprints <doc_item_asset_blueprints>` which use ``Blueprint_#_Conditions``.
 
-**Condition_#_Type** *enum* (``Compare_Flags``, ``Date_Counter``, ``Flag_Bool``, ``Flag_Short``, ``Currency``, ``Experience``, ``Item``, ``Kills_Animal``, ``Kills_Horde``, ``Kills_Object``, ``Kills_Player``, ``Kills_Tree``, ``Kills_Zombie``, ``Player_Life_Food``, ``Player_Life_Health``, ``Player_Life_Stamina``, ``Player_Life_Virus``, ``Player_Life_Water``, ``Quest``, ``Reputation``, ``Skillset``, ``Holiday``, ``Time_Of_Day``, ``Volume_Overlap``, ``Weather_Blend_Alpha``, ``Weather_Status``)
+**Conditions** *byte*: Total number of conditions. There should be a number of ``Condition_#_Type`` properties equal to this value.
+
+**Condition_#_Type** *enum* (``Compare_Flags``, ``Date_Counter``, ``Flag_Bool``, ``Flag_Short``, ``Currency``, ``Experience``, ``Item``, ``Kills_Animal``, ``Kills_Horde``, ``Kills_Object``, ``Kills_Player``, ``Kills_Tree``, ``Kills_Zombie``, ``Player_Life_Food``, ``Player_Life_Health``, ``Player_Life_Stamina``, ``Player_Life_Virus``, ``Player_Life_Water``, ``Quest``, ``Reputation``, ``Skillset``, ``Holiday``, ``Time_Of_Day``, ``Volume_Overlap``, ``Weather_Blend_Alpha``, ``Weather_Status``): Specify the type of condition. Like other indexed properties, indicing starts at ``0``.
 
 **Condition_#_Reset** *flag*: Set back to equivalent of 0 when completed.
 
