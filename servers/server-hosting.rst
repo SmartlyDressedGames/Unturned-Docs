@@ -33,16 +33,18 @@ The Server Console will open in a new window. It may take a few minutes for your
 
 You should see "Loading level: 100%" when it finishes booting, along with a :ref:`Server Code <doc_servers_server_codes>`.
 
-2. Share your Server Code
-`````````````````````````
+2. Invite your Friends
+``````````````````````
 
-Share the 17-digit **Server Code** (listed in your Server Console) with friends to let them join your server. This randomly-generated code will change each time you launch the server.
+You can invite players to your server through your Steam Friends List.
+
+Players can also join your server by using the 17-digit **Server Code** created when you opened your server. This randomly-generated code will change each time you launch the server. It can found be clicking the "Copy Server Code" button while in your server, or by copying it from your Server Console.
 
 .. hint::
 
-	Players—including yourself—can join your server by inputting the server's **Server Code** in the **Connect Directly** menu.
+	Players—including yourself—can join your server by inputting the server's **Server Code** in the **Connect Directly** menu. For friends, it's often quickest to just invite them through Steam!
 
-By default, your server is not visible to others from the Multiplayer menu unless they are on the same LAN connection. Without following more advanced setup instructions, this *functionally* means that players can only join if you share the Server Code with them.
+By default, your server is not visible to others from the Multiplayer menu unless they are on the same LAN connection. Without following more advanced setup instructions, this *functionally* means that players can only join via your Steam Friends List or if you share the Server Code with them.
 
 Save and Shutdown
 -----------------
@@ -196,7 +198,7 @@ Curated maps—and a few official arena maps—are only accessible via the Steam
 Switching to an Internet Server
 -------------------------------
 
-Servers are hosted as a **LAN server** by default. This means players can only join with your Server Code, and that your server is *not* visible from the Internet server list. There are a couple options for switching from a LAN server to an **Internet server**.
+Servers are hosted as a **LAN server** by default. This means players can only join when invited through your Steam friends list, or by using your randomly-generated Server Code. LAN servers are *not* visible from the Internet server list. There are a couple options for switching from a LAN server to an **Internet server**.
 
 .. attention::
 
