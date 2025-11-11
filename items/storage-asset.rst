@@ -30,3 +30,11 @@ Storage Asset Properties
 **Storage_X** *byte*: Number of columns (horizontal storage space). Defaults to 0.
 
 **Storage_Y** *byte*: Number of rows (vertical storage space). Defaults to 0.
+
+**Default_Contained_Items** *list of dictionaryies*: Items to create inside storage when first spawned. Each item can contain the following properties:
+
+- **Asset**: :ref:`Asset Pointer <doc_data_assetptr>`: Item or spawn table to grant an item from.
+
+- **Amount** *int*: Number of times to grant this item. Defaults to 1.
+
+- **Origin** :ref:`EItemOrigin <doc_data_eitemorigin>`: Determines starting state of the item. Defaults to World.
