@@ -96,6 +96,16 @@ Vehicle Event Hook
 
 Events for driver entering and exiting the vehicle. These events are fired on server and client.
 
+Vehicle Gear Shift Event Hook
+``````````````````````````````
+
+Events for vehicle gearbox entering and exiting a target gear.
+
+Vehicle Health Event Hook
+``````````````````````````
+
+Events for vehicle health passing a comparison against a target number.
+
 Vehicle Turret Event Hook
 `````````````````````````
 
