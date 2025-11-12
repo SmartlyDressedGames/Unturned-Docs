@@ -3,11 +3,13 @@
 Rewards
 =======
 
-Rewards can be granted by NPC assets, interactable objects, and item blueprints. The specific property prefix may differ between asset types. For example, quests may use "Rewards" while consumables use "Quest_Rewards".
+**Rewards** can be granted by NPCs, objects, and items. Each grouping of rewards is called a **rewards list** and starts with the ``Rewards`` property.
 
-**Rewards** *byte*: Total number of rewards.
+Properties in a rewards list are named in the format of ``RewardPrefix_#_PropertyName``. For most rewards lists the prefix is ``Reward``, such as ``Reward_#_Type``. This is not always the case, such as with :ref:`quests <doc_npc_asset_quest>` which have two separate rewards lists named ``Rewards`` and ``AbandonmentRewards``, or consumables which use ``Quest_Rewards``.
 
-**Reward_#_Type** *enum* (``Airdrop``, ``Flag_Bool``, ``Flag_Math``, ``Flag_Short``, ``Flag_Short_Random``, ``Achievement``, ``Currency``, ``Cutscene_Mode``, ``Effect``, ``Event``, ``Experience``, ``Item``, ``Item_Random``, ``Hint``, ``Player_Life_Food``, ``Player_Life_Health``, ``Player_Life_Stamina``, ``Player_Life_Virus``, ``Player_Life_Water``, ``Player_Spawnpoint``, ``Quest``, ``Reputation``, ``Rewards_List_Asset``, ``Teleport``, ``Vehicle``, ``Zombie``, ``Remove_Zombies``)
+**Rewards** *byte*: Total number of rewards in the rewards list. There should be a number of ``Reward_#_Type`` properties equal to this value.
+
+**Reward_#_Type** *enum* (``Airdrop``, ``Flag_Bool``, ``Flag_Math``, ``Flag_Short``, ``Flag_Short_Random``, ``Achievement``, ``Currency``, ``Cutscene_Mode``, ``Effect``, ``Event``, ``Experience``, ``Item``, ``Item_Random``, ``Hint``, ``Player_Life_Food``, ``Player_Life_Health``, ``Player_Life_Stamina``, ``Player_Life_Virus``, ``Player_Life_Water``, ``Player_Spawnpoint``, ``Quest``, ``Reputation``, ``Rewards_List_Asset``, ``Teleport``, ``Vehicle``, ``Zombie``, ``Remove_Zombies``): Specify the type of reward. Like other indexed properties, indicing starts at ``0``.
 
 **Reward_#_GrantDelaySeconds** *float*: If set, the reward will be queued for the specified number of seconds before being granted to the player. Defaults to -1.
 
@@ -189,7 +191,7 @@ Hint
 
 **Reward_#_Type** *enum* (``Hint``)
 
-**Reward_#_Text** :ref:`doc_data_richtext`: Alternative to localization file for debug text. Otherwise, translated text from **Reward_#** in the localization file is used.
+**Reward_#_Text** :ref:`doc_data_richtext`: Debug text that is shown when the asset's :ref:`localization file <doc_npc_asset_rewards:localization>` is empty. If a localization file has been included then the localized text is used instead.
 
 **Reward_#_Duration** *float*: Duration of the hint, in seconds. Defaults to 2 seconds.
 
@@ -310,7 +312,13 @@ Respawns zombie(s) at named Spawnpoint nodes. If insufficient dead zombies are a
 
 **Reward_#_CooldownDuration** *float*: Seconds since CooldownId last ran before this reward can spawn zombies again.
 
+.. _doc_npc_asset_rewards:localization:
+
 Localization
 ------------
 
-**Reward_#**: Name of the reward as it appears in user interfaces.
+Rewards lists properties can be localized in the asset's localization file.
+
+**Reward_#**: Localization for the name of the reward as it appears in user interfaces.
+
+.. tip:: Localization properties follow the same rules as other parts of the rewards list – including needing to use the correct prefix. For example, the property name for a localized hint on an interactable object would be ``Interactability_Reward_#``.

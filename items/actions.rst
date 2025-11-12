@@ -113,7 +113,7 @@ Action_#_Key :ref:`string <doc_data_builtin_types>`
 
 Translation key that should be used instead of a custom button name and tooltip. Valid translation keys and their localization can be found in the ``PlayerDashboardInventory.dat`` localization file.
 
-Valid keys include: ``Attachments``, ``Craft_Bandage``, ``Craft_Dressing``, ``Craft_Rag``, ``Craft_Seed``, ``Dequip``, ``Drop``, ``Equip``, ``Pickup``, ``Refill``, ``Repair``, ``Salvage``, ``Store``, and ``Take``.
+Valid keys include: ``Attachments``, ``Craft_Bandage``, ``Craft_Dressing``, ``Craft_Rag``, ``Craft_Seed``, ``Dequip``, ``Drop``, ``Equip``, ``Pickup``, ``Refill``, ``Repair``, ``Salvage``, ``Stack``, ``Store``, ``Take``, and ``Unstack``.
 
 This property cannot be used in combination with ``Action_#_Text`` or ``Action_#_Tooltip``. If set, the value of this property will always override any custom button name or tooltip that has been set.
 

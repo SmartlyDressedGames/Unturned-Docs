@@ -5,7 +5,7 @@ Server Codes
 
 A **Server Code** is a randomly generated, 17-digit numeric code assigned to your server. Your friends can join your multiplayer server by inputting its **Server Code** in the Connect Directly menu without you needing to :ref:`port forward <doc_servers_port_forward>`.
 
-You can find your Server Code in the Server Console after your server finishes loading. Run the ``CopyServerCode`` command from the Server Console to easily copy that code to your clipboard.
+Your server code can be found by clicking the "Copy Server Code" button while in your server. Alternatively, it appears in the Server Console immediately after your server finishes loading, and can be easily copied to your clipboard with the ``CopyServerCode`` command.
 
 Limitations
 -----------

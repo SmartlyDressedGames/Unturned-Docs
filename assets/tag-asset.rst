@@ -3,7 +3,12 @@
 Tag Assets
 ==========
 
-Although **Tags** have some display properties, they primarily serve as a unique identifier—particularly useful for compatibility between mods.
+Although **tags** have some display properties, their primary purpose is to act as a unique identifier shared across multiple assets. This makes them especially useful for cross-mod compatibility.
+
+Currently, tags are used in two ways:
+
+1. Workstation crafting capabilities.
+2. Blueprint categorization.
 
 **GUID** *32-digit hexadecimal*: Refer to :ref:`doc_data_guid` documentation.
 
