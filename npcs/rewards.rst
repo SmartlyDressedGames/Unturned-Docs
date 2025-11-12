@@ -195,6 +195,12 @@ Hint
 
 **Reward_#_Duration** *float*: Duration of the hint, in seconds. Defaults to 2 seconds.
 
+.. note::
+
+	For localized hints to work in multiplayer, please add ``Keep_Localization_Loaded true`` to the owning asset. Otherwise, the server's language is used.
+
+	This is necessary because the server doesn't currently have a way to reference the reward itself (which the client has the text loaded for), instead the asset ID and localization key are replicated.
+
 Player Life Food
 ````````````````
 
