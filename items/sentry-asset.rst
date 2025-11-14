@@ -46,3 +46,11 @@ Sentry Asset Properties
 **Target_Vehicles** *bool*: If true, this sentry can attack vehicles. Defaults to true.
 
 **Target_Zombies** *bool*: If true, this sentry can attack zombies. Defaults to true.
+
+**Sentry_Bypasses_PvE** *bool*: If true, sentry can damage players and vehicles in PvE mode. Defaults to false.
+
+**React_To_Attacks** *bool*: If true, sentry immediately focuses on attacking player. Defaults to false.
+
+**Sweep_Yaw** *float*: Yaw range the sentry sweeps left/right. Defaults to 120.
+
+**Sweep_Period** *float*: How long in seconds for the sentry to complete a sweep from left to right and back. Defaults to 6.3 seconds.
