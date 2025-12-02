@@ -41,6 +41,8 @@ For examples, check the ``Assets/Levels`` directory.
 
 **UnderwaterFogDensity** *float*: Overrides fog effect intensity while the camera is underwater. Defaults to ``0.075``.
 
+**Allow_Building_In_Safezone_In_Singleplayer** *bool*: If true, players can bypass safezone's no-buildables mode in singleplayer. Defaults to false.
+
 Cloud Override Properties
 -------------------------
 
