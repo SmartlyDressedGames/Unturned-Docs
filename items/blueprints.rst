@@ -444,6 +444,9 @@ Properties
    * - :ref:`RequiresNearbyCraftingTags <doc_item_asset_blueprints:blueprint_v2_requiresnearbycraftingtags>`
      - :ref:`list <doc_data_file_format>` of :ref:`Asset Pointer <doc_data_assetptr>` to :ref:`doc_assets_tag`
      -
+   * - :ref:`RequiresStaticTags <doc_item_asset_blueprints:blueprint_v2_requiresstatictags>`
+     - :ref:`list <doc_data_file_format>` of :ref:`Asset Pointer <doc_data_assetptr>` to :ref:`doc_assets_tag`
+     -
    * - :ref:`Rewards <doc_item_asset_blueprints:blueprint_v2_rewards>`
      - :ref:`doc_npc_asset_rewards`
      -
@@ -584,6 +587,25 @@ For example, to require both Chemical Mixing and Workbench:
 		// Workbench
 		7b82c125a5a54984b8bb26576b59e977
 	]
+
+----
+
+.. _doc_item_asset_blueprints:blueprint_v2_requiresstatictags:
+
+RequiresStaticTags :ref:`list <doc_data_file_format>` of :ref:`Asset Pointer <doc_data_assetptr>` to :ref:`doc_assets_tag`
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Similar to ``RequiresNearbyCraftingTags``, but only checked once during level startup.
+
+Can test for :ref:`doc_assets_level` ``Tags``. For example, rather than using the ``Map`` property to test for a level by name, the level can signal it supports a set of blueprints with a tag.
+
+Vanilla makes the following tags available:
+
+.. code-block:: unturneddat
+
+	"73eb818d1aa044c7bb4e61b8f9b37a3c" // Building In Safezones Allowed
+	"f663677b88de40ec80ff36b0c1cae544" // Not-singleplayer
+	"d7bd989414644b19b3299be0c6fab5f0" // Singleplayer
 
 ----
 

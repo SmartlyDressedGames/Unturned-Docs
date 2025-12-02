@@ -43,6 +43,8 @@ For examples, check the ``Assets/Levels`` directory.
 
 **Allow_Building_In_Safezone_In_Singleplayer** *bool*: If true, players can bypass safezone's no-buildables mode in singleplayer. Defaults to false.
 
+**Tags** :ref:`list <doc_data_file_format>` of :ref:`Asset Pointer <doc_data_assetptr>` to :ref:`doc_assets_tag`: Blueprints can test for these tags as an alternative to ``Map`` name check. May be extended in the future.
+
 Cloud Override Properties
 -------------------------
 
