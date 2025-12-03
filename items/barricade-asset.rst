@@ -31,6 +31,14 @@ Barricade Asset Properties
 
 **Allow_Placement_On_Vehicle** *bool*: If true, this barricade can be placed on vehicles. Defaults to true, except when using ``Build Bed``, ``Build Sentry``, or ``Build Sentry_Freeform``.
 
+.. note:: ``Armor_Falloff*`` properties are applicable to Animals, Objects, Resources, Structures, and Vehicles as well. (TODO: move into their own doc?)
+
+**Armor_FalloffMaxRange** *float*: Ranged damage (guns) from greater than this distance finishes decreasing toward ``Armor_FalloffMultiplier``. Defaults to -1, in which case armor falloff is ignored.
+
+**Armor_FalloffRange** *float*: Ranged damage (guns) from greater than this distance begins decreasing toward ``Armor_FalloffMultiplier``. Defaults to ``Armor_FalloffMaxRange`` (immediate decrease, no transition).
+
+**Armor_FalloffMultiplier** *float*: [0, 1] normalized percentage of incoming damage to apply past ``Armor_FalloffMaxRange``.
+
 **Armor_Tier** *enum* (``Low``, ``High``): Barricade armor can either be low-tier or high-tier. Defaults to low-tier, except when the barricade's name contains the word "Metal". By default, barricades with low-tier armor take 100% of the damage they receive, while barricades with high-tier armor take 50% of the damage they receive. These multipliers can be configured in the `gameplay config <https://unturned.wiki.gg/wiki/Gameplay_config>`_.
 
 **Bypass_Claim** *bool*: When ``true``, this can be placed inside someone else's claimed area. This property used to be a *flag*, and using it as such is still supported.
