@@ -19,9 +19,9 @@ Adding *Unturned* to your Steam Library will also add the *Unturned Dedicated Se
 Installing Unity
 ----------------
 
-Installing the Unity Editor is required for exporting custom content for the game. We recommend using the same version as *Unturned*, which currently uses version **2021.3.45f2**. Unity can be `downloaded from their website <https://unity.com/releases/editor/archive>`_.
+Installing the Unity Editor is required for exporting custom content for the game. We recommend using the same version as *Unturned*, which currently uses version **2022.3.62f3**. Unity can be `downloaded from their website <https://unity.com/releases/editor/archive>`_.
 
-Although most 2021.3 LTS versions should be compatible, and some older LTS versions *can* be used with some additional setup, those versions might not function as intended.
+Although most 2022.3 LTS versions should be compatible, and some older LTS versions *can* be used with some additional setup, those versions might not function as intended.
 
 When installing a Unity version, you will have the option to install some optional modules. You should at least install:
 

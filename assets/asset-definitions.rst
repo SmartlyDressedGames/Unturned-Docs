@@ -65,7 +65,7 @@ Unity Asset Bundles
 
 Each Unturned asset is associated with a Unity asset bundle. If there is a master bundle in the file hierarchy that takes priority, otherwise a ``.unity3d`` bundle with the same name as the ``.dat`` file is used. There are several keys available to control the asset bundle:
 
-**Asset_Bundle_Version** *int*: Indicates which version of Unity this ``.unity3d`` bundle was built for. When Unturned upgrades Unity versions it tries to maintain backwards compatibility based on this number. ``1`` is Unity 5.5, ``2`` is 2017.4 LTS, and ``3`` is 2018 LTS and 2019 LTS, ``4`` is 2020 LTS, and ``5`` is latest (Unity 2021 LTS).
+**Asset_Bundle_Version** *int*: Indicates which version of Unity this ``.unity3d`` bundle was built for. When Unturned upgrades Unity versions it tries to maintain backwards compatibility based on this number. ``1`` is Unity 5.5, ``2`` is 2017.4 LTS, and ``3`` is 2018 LTS and 2019 LTS, ``4`` is 2020 LTS, ``5`` is 2021 LTS, and ``6`` is latest (Unity 2022 LTS).
 
 **Master_Bundle_Override** *string*: Name of a master bundle to use rather than the ``.unity3d`` bundle or master bundle found in the hierarchy.
 
