@@ -1,8 +1,11 @@
 # Sphinx output folder as specified in Makefile and make.bat
-/_build
+/_build/
 
 # Temporary Visual Studio Code config files
-/.vscode
+/.vscode/
 
 # Generated Python files, e.g., in the _extensions directory
 __pycache__/
+
+# Virtual environment files
+/.venv/
