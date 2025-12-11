@@ -2,7 +2,10 @@
 #
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
-import sys, os
+import sphinx
+import sphinx_rtd_theme # "Read the Docs Sphinx Theme" https://sphinx-rtd-theme.readthedocs.io/en/stable/index.html
+import sys
+import os
 
 # -- Project information
 
@@ -16,7 +19,7 @@ release = version
 # -- General configuration
 sys.path.append(os.path.abspath("_extensions")) # also find extensions within this directory
 extensions = [
-    "notfound.extension",  # Adds "404 Not Found" pages
+    "notfound.extension",  # Adds custom "404 Not Found" page
     'sphinx.ext.duration',
     'sphinx.ext.doctest',
     'sphinx.ext.autodoc',
@@ -24,14 +27,13 @@ extensions = [
     'sphinx_copybutton',
     'sphinx.ext.intersphinx',
     'sphinxext.opengraph', # OpenGraph support (e.g., URLs posted offsite appear as OneBox embeds)
-    'sphinx_rtd_theme', # "Read the Docs Sphinx Theme" https://sphinx-rtd-theme.readthedocs.io/en/stable/index.html
     'sphinx_tabs.tabs',
     # -- Locally-installed modules
     'unturned_lexer',
 ]
 
 exclude_patterns = [
-    '.venv/*' # Contains installed packages which may have rst files we don't want included in source files.
+    '.venv/*' # Contains installed packages which may have .rst files we don't want included in source files.
 ]
 
 intersphinx_mapping = {
@@ -44,7 +46,7 @@ templates_path = ['_templates']
 
 # -- Options for HTML output
 
-html_theme = 'sphinx_rtd_theme'
+html_theme = "sphinx_rtd_theme"
 
 # RTD theme options are documented here: https://sphinx-rtd-theme.readthedocs.io/en/stable/configuring.html
 html_theme_options = {

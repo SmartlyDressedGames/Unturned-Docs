@@ -1,10 +1,27 @@
-sphinx==6.2.1
-sphinx_rtd_theme==3
-sphinxcontrib-jquery # Sphinx-RTD-Theme dependency
+# Base packages
+pygments==2.19.2
+sphinx==8.1.3
+sphinx_rtd_theme==3.0.2
 
-sphinx-copybutton
-sphinx-notfound-page
-sphinx-tabs
-sphinxext-opengraph
+# Sphinx/RTD dependencies
+#########################
 
-matplotlib
+# Sphinx-RTD-Theme dependency. Previously needed to be manually specified. Likely safe to remove (and let it be auto-generated in requirements.txt).
+#sphinxcontrib-jquery
+
+# Sphinx extensions
+###################
+
+# Code tabs extension to display codeblocks in different languages as tabs.
+sphinx-tabs==3.4.7
+# Adds a 'copy' button to the right of codeblocks
+sphinx-copybutton==0.5.2
+# Custom 404 error page
+sphinx-notfound-page==1.1.0
+# OpenGraph support (URLs posted offsite appear as OneBox embeds)
+sphinxext-opengraph==0.13.0
+# 2D plotting library. Not currently used but was previously required. Might be safely removable.
+matplotlib==3.8.0
+
+# Embed videos in documentation pages. Not currently used.
+#sphinxcontrib-video==0.4.1
