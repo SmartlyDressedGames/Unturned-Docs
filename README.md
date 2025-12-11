@@ -42,23 +42,87 @@ Most documentation files are formatted similarly. Some important notes:
 Building the Docs
 -----------------
 
-This section explains how to build a local copy of the documentation. Our documentation is written in [reStructuredText](https://www.writethedocs.org/guide/writing/reStructuredText/), and converted to HTML through [Sphinx](https://github.com/sphinx-doc/sphinx).
+This section explains how to build a local copy of the documentation. Our documentation is written in [reStructuredText](https://www.writethedocs.org/guide/writing/reStructuredText/) and converted to HTML through [Sphinx](https://github.com/sphinx-doc/sphinx).
 
-When building locally, we recommend using [Visual Studio Code](https://code.visualstudio.com/). Install the [Esbonio extension](https://docs.esbon.io/en/latest/index.html) by Swyddfa, and the [reStructuredText extension](https://docs.restructuredtext.net/) by LeXtudio Inc. You can find the full documentation for those extensions on their websites.
+We recommend using [Visual Studio Code](https://code.visualstudio.com/) with the [reStructuredText extension](https://docs.restructuredtext.net/) (by LeXtudio Inc.), and the [Esbonio extension](https://docs.esbon.io/en/latest/index.html) (by Swyddfa) to benefit from live preview and syntax highlighting.
 
-The version of Python used by the project is noted in the `.readthedocs.yaml` file. When building, you should use the same version of Python as used by the documentation. If you have multiple versions of Python installed, you may need to manually specify the version that should be used when running commands.
+Use the same version of Python as configured in `.readthedocs.yaml`. If you have multiple Python versions installed, you may need to manually specify the Python Interpreter that should be used.
 
-Before you can build the documentation, you will need to download all of its dependencies. From the repository's directory, run the following command:
+1. Clone the Unturned Docs repository:
 
-```shell
-py -m pip install -r requirements.txt
+	```shell
+	git clone https://github.com/SmartlyDressedGames/Unturned-Docs.git
+	```
+
+2. Change directory to the Unturned Docs repository:
+
+	```shell
+	cd Unturned-Docs
+	```
+
+3. *(Optional)* Set up a virtual environment. Virtual environments prevent potential conflicts between the Python packages installed in `requirements.txt` and any Python packages installed on your system.
+
+	1. Create the virtual environment:
+
+		```shell
+		py -3.11 -m venv .venv
+		```
+
+	2. Activate the virtual environment:
+
+		```shell
+		.\.venv\Scripts\Activate.ps1
+		```
+
+	3. Your terminal prompt will show `(venv)` at the beginning if activation worked.
+
+4. Download packages from `requirements.txt`:
+
+	```shell
+	pip install -r requirements.txt
+	```
+
+	Alternatively, `pip-sync` can be used to ensure installed packages are *exactly* the same – by adding, upgrading, or removing any packages as necessary. **Doing this outside of the virtual environment is not recommended:**
+
+	```shell
+	pip-sync requirements.txt
+	```
+
+5. Build the documentation:
+
+	```shell
+	.\make html
+	```
+
+	Alternatively, you can build the documentation by running `sphinx-build` manually. This command is more cross-platform:
+
+	```shell
+	sphinx-build -b html ./ _build/html
+	```
+
+You can now browse the documentation by opening `.../Unturned-Docs/_build/html/index.html` in your web browser. If Esbonio was installed, you can also preview the documentation in Visual Studio Code.
+
+Configure Esbonio for a virtual environment
+---------------------------------------------
+
+Esbonio v1.0.0 in a virtual environment on Windows may fail to import packages from the venv and instead used Esbonio's bundled Python environment. This causes misleading `ModuleNotFoundError` errors to appear for packages installed in the virtual environment.
+
+You can force Esbonio to use the virtual environment by configuring your `.vscode/settings.json`:
+
+```json
+{
+	"esbonio.sphinx.pythonCommand": {
+		"command": ["${venv:.venv}"]
+	}
+}
 ```
 
-<small>*`py` runs the python interpreter, and can be used to specify the python version that should be used. `-m pip install` is used to select the pip package installer module. `-r requirements.txt` will install dependencies pinned in the specified requirements file.*</small>
+Updating the `requirements.txt` file
+------------------------------------
 
-With the project installed, run `make html` in the root folder. This will create the documentation locally at `/_build/html/index.html`. If you installed Esbonio correctly, you can preview how the documentation would look with the site's theme as well.
+Packages (including specific versions) can be pinned in `requirements.in`. This file is used to automatically generate `requirements.txt`.
 
-The project's `requirements.txt` file is automatically generated. If you need to add or update dependencies, these should be pinned in `requirements.in` instead. Run the following command (available from `pip-tools`) to generate a new requirements file afterwards:
+Run the following command to generate a new `requirements.txt` file afterwards:
 
 ```shell
 pip-compile requirements.in
