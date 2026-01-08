@@ -8,7 +8,7 @@ alabaster==1.0.0
     # via sphinx
 babel==2.17.0
     # via sphinx
-certifi==2025.11.12
+certifi==2026.1.4
     # via requests
 charset-normalizer==3.4.4
     # via requests
@@ -23,7 +23,7 @@ docutils==0.21.2
     #   sphinx
     #   sphinx-rtd-theme
     #   sphinx-tabs
-fonttools==4.61.0
+fonttools==4.61.1
     # via matplotlib
 idna==3.11
     # via requests
@@ -45,14 +45,14 @@ packaging==25.0
     # via
     #   matplotlib
     #   sphinx
-pillow==12.0.0
+pillow==12.1.0
     # via matplotlib
 pygments==2.19.2
     # via
     #   -r requirements.in
     #   sphinx
     #   sphinx-tabs
-pyparsing==3.2.5
+pyparsing==3.3.1
     # via matplotlib
 python-dateutil==2.9.0.post0
     # via matplotlib
@@ -97,5 +97,5 @@ sphinxext-opengraph==0.13.0
     # via -r requirements.in
 tomli==2.3.0
     # via sphinx
-urllib3==2.6.1
+urllib3==2.6.3
     # via requests
