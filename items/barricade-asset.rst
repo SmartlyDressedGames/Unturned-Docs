@@ -41,7 +41,7 @@ Barricade Asset Properties
 
 **Armor_Tier** *enum* (``Low``, ``High``): Barricade armor can either be low-tier or high-tier. Defaults to low-tier, except when the barricade's name contains the word "Metal". By default, barricades with low-tier armor take 100% of the damage they receive, while barricades with high-tier armor take 50% of the damage they receive. These multipliers can be configured in the `gameplay config <https://unturned.wiki.gg/wiki/Gameplay_config>`_.
 
-**Bypass_Claim** *bool*: When ``true``, this can be placed inside someone else's claimed area. This property used to be a *flag*, and using it as such is still supported.
+**Bypass_Claim** *bool*: When ``true``, this can be placed inside someone else's claimed area. This property used to be a *flag*, and using it as such is still supported. Defaults to false, except when using ``Build Charge``.
 
 **Bypass_Pickup_Ownership** *bool*: If true, non-owners of the placed barricade can pick it up. Defaults to false, except when using ``Build Charge``.
 
