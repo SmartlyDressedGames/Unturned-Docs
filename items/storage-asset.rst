@@ -23,6 +23,10 @@ Item Asset Properties
 Storage Asset Properties
 ------------------------
 
+**Can_Players_Open** *bool*: If true, players can interact with the barricade to open storage. Defaults to true. Useful for pre-placed sentries to prevent stealing their guns.
+
+**Delete_Contained_Items_On_Destroy** *bool*: If true, any stored items are despawned rather than dropped when destroyed. Defaults to false.
+
 **Display** *flag*: If specified, the first item in the storage will be visibly displayed.
 
 **Should_Close_When_Outside_Range** *bool*: Whether or not the storage should automatically close when the player is outside of the interaction range. Defaults to false.
