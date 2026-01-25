@@ -2293,7 +2293,7 @@ Designates the vehicle's class. Vehicle assets are required to have this propert
 Valid_Speed_Down :ref:`float32 <doc_data_builtin_types>`
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Configuring this will override the sanity check for reversing speed, in m/s (meters per second). If reversing speed exceeds this, the movement is marked as invalid.
+Configuring this will override the sanity check for downward speed on the Y-axis, in m/s (meters per second). If downward speed exceeds this, the movement is marked as invalid.
 
 Defaults to ``25`` when using ``Engine Car`` or ``Engine Boat``, or to ``100`` otherwise.
 
@@ -2315,7 +2315,7 @@ Defaults to ``(Speed_Max * 0.125)^2`` when using ``Engine Helicopter`` or ``Engi
 Valid_Speed_Up :ref:`float32 <doc_data_builtin_types>`
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Configuring this will override the sanity check for forward speed, in m/s (meters per second). If forward speed exceeds this, the movement is marked as invalid.
+Configuring this will override the sanity check for upward speed on the Y-axis, in m/s (meters per second). If the upward speed exceeds this, the movement is marked as invalid.
 
 Defaults to 12.5 when using ``Engine Car``, to 3.25 when using ``Engine Boat``, or to 100 otherwise.
 
@@ -2717,3 +2717,4 @@ Localization
 ------------
 
 **Name** *string*: Vehicle name in user interfaces.
+
