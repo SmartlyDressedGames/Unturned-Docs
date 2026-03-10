@@ -50,6 +50,16 @@ Cloud Override Properties
 
 When clouds are disabled (``Has_Clouds false``), these properties can be used to control a custom particle system using the cloud color and intensity from the lighting settings.
 
+.. warning:: Custom clouds are *not* recommended as they behave inconsistently at lower max draw distances.
+
+	Early versions of 3.x had a very high max draw distance (~8 km). The sun, moon, clouds, and stars were 3D objects scaled almost to the edge of the far clip plane.
+
+	Later versions combined these details into a skybox shader which enabled the max draw distance to be configured by players, but at the cost of reduced customization.
+
+	As a workaround, mappers created 3D cloud particles attached to the camera. Distant particles were cut off at the far clip plane, but a shader with the ``ZClip False`` resolved this.
+
+	Unfortunately, it seems after the engine update in 3.25.9.2 this workaround broke: the particle system can be culled at low draw distances. This is understandable from the engine's perspective, as using the particle system's origin for culling is suboptimal. As of March 2026 we're not aware of a workaround to force the particle system to render.
+
 **CloudOverride_Prefab** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: Prefab to instantiate and attach to lighting.
 
 **CloudOverride_ParticleSystems** *list*: Dictionaries describing particle systems in ``CloudOverride_Prefab`` with the following additional properties:
