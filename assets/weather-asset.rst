@@ -29,6 +29,8 @@ Properties Reference
 
 **Ambient_Audio_Clip** :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`: Audio clip to play globally. Volume matches intensity.
 
+**Ambient_Audio_Takes_Priority_Over_Ambiance_Volumes** *bool*: If true, ``Ambient_Audio_Clip`` causes per-ambiance-volume audio to fade out. Defaults to false.
+
 **Override_Fog** *bool*: Should fog configured in the lighting be overridden?
 
 **Override_Atmospheric_Fog** *bool*: Should fog affect the skybox?
