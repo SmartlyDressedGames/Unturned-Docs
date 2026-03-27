@@ -116,6 +116,9 @@ Properties
    * - :ref:`EquipAudioClip <doc_item_asset_intro:equipaudioclip>`
      - :ref:`Master Bundle Pointer <doc_data_masterbundleptr>`
      - ``Equip``
+   * - :ref:`Fishing_Catchable <doc_item_asset_intro:fishing_catchable>`
+     - :ref:`FishingCatchableProperties <doc_item_fishing_catchable_properties>`
+     -
    * - :ref:`GUID <doc_item_asset_intro:guid>`
      - :ref:`doc_data_guid`
      -
@@ -417,6 +420,15 @@ EquipAudioClip :ref:`Master Bundle Pointer <doc_data_masterbundleptr>` ``Equip``
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 AudioClip to play when equipping.
+
+----
+
+.. _doc_item_asset_intro:fishing_catchable:
+
+Fishing_Catchable :ref:`Fishing Catchable Properties <doc_item_fishing_catchable_properties>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Overrides settings when caught by a fishing rod. For more information, please refer to :ref:`Fishing Catchable Properties <doc_item_fishing_catchable_properties>`.
 
 ----
 
