@@ -102,6 +102,8 @@ General
 		"Gameplay.Allow_Shoulder_Camera": false
 	}
 
+Additionally, overrides can be applied per-difficulty with the ``EasyDifficulty_Config_Overrides``, ``NormalDifficulty_Config_Overrides``, and ``HardDifficulty_Config_Overrides`` properties.
+
 **Allow_Underwater_Features** *bool*: Should legacy details and navigation bounds be restricted underwater?
 
 **Terrain_Snow_Sparkle** *bool*: Should IS_SNOWING shader keyword be enabled?
