@@ -45,6 +45,10 @@ For examples, check the ``Assets/Levels`` directory.
 
 **Tags** :ref:`list <doc_data_file_format>` of :ref:`Asset Pointer <doc_data_assetptr>` to :ref:`doc_assets_tag`: Blueprints can test for these tags as an alternative to ``Map`` name check. May be extended in the future.
 
+**Supports_Fishing_Volumes** *bool*: If true, this level has assigned fishing spawn tables to water volumes (or set the default table). Defaults to false.
+
+**Default_Fish_Spawn_Table** :ref:`Asset Pointer <doc_data_assetptr>`: Fishing rods using per-water-volume fishing spawn table fallback to this table.
+
 Cloud Override Properties
 -------------------------
 
