@@ -26,11 +26,17 @@ Properties
    * - :ref:`Beard_Override <doc_item_asset_gear:beard_override>`
      - :ref:`string <doc_data_builtin_types>`
      -
+   * - :ref:`Beard_Override_NonGoldColor <doc_item_asset_gear:beard_override_nongoldcolor>`
+     - :ref:`Color <doc_data_color>`
+     -
    * - :ref:`Hair <doc_item_asset_gear:hair>`
      - :ref:`flag <doc_data_flag>`
      -
    * - :ref:`Hair_Override <doc_item_asset_gear:hair_override>`
      - :ref:`string <doc_data_builtin_types>`
+     -
+   * - :ref:`Hair_Override_NonGoldColor <doc_item_asset_gear:hair_override_nongoldcolor>`
+     - :ref:`Color <doc_data_color>`
      -
 
 Some inherited properties behave differently when used by this class. Notably, these are:
@@ -60,6 +66,15 @@ When this property is set, the game will look for a child Mesh Renderer componen
 
 ----
 
+.. _doc_item_asset_gear:beard_override_nongoldcolor:
+
+Beard_Override_NonGoldColor :ref:`Color <doc_data_color>`
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+For items using BeardOverride, the beard material color will default to this for players without the Gold Upgrade. (Since the Gold Upgrade is required for full RGB control, the default beard colors may look boring for items that cover the beard but aren't beards in of themselves.) Also used as the color in the cosmetic preview.
+
+----
+
 .. _doc_item_asset_gear:hair:
 
 Hair :ref:`flag <doc_data_flag>`
@@ -75,3 +90,12 @@ Hair_Override :ref:`string <doc_data_builtin_types>`
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 When this property is set, the game will look for a child Mesh Renderer component in Unity that has the same name as this property's value. If a matching Mesh Renderer is found, its material will be changed to the character's hair material. This property is used by certain cosmetics that entirely cover the character's hair, so that the player's selected hair color can still be used for customization.
+
+----
+
+.. _doc_item_asset_gear:hair_override_nongoldcolor:
+
+Hair_Override_NonGoldColor :ref:`Color <doc_data_color>`
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+For items using hairOverride, the hair material color will default to this for players without the Gold Upgrade. (Since the Gold Upgrade is required for full RGB control, the default hair colors may look boring for items that cover the hair but aren't hair in of themselves.) Also used as the color in the cosmetic preview.
