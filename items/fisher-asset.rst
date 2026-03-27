@@ -29,3 +29,28 @@ Fisher Asset Properties
 
 Fishing poles can use quest rewards. Refer to :ref:`Rewards <doc_npc_asset_rewards>` documentation for additional documentation. These rewards are prefixed with ``Quest_``. For example, ``Quest_Rewards 1``.
 
+**Fish_Bite_Interval_Multiplier** *float*: Multiplier for interval before a fish takes the bait. Defaults to 1.
+
+**FishingRewardMode** *enum*: ``Rod`` or ``WaterVolumes``. Defaults to ``Rod`` for backwards compatibility.
+
+``Rod``: Fishing rod itself defines rewards. Ignore per-volume rewards.
+
+``WaterVolumes``: Use per-volume (or per-level if volume unspecified) rewards. If level doesn't support volume rewards, fallback to ``Rod`` rewards.
+
+.. seealso:: :ref:`Level Asset fishing properties <doc_assets_level:supports_fishing_volumes>`.
+
+**CatchChallenge_Enabled** *bool*: If true, player must complete a challenge when fish takes the bait before catching. Defaults to false for backwards compatibility.
+
+**CatchChallenge_CursorSize** *float*: Size of window item must be within to catch. Defaults to 0.2.
+
+**CatchChallenge_Gravity** *float*: Downward acceleration while input is not held. Defaults to 1.
+
+**CatchChallenge_Acceleration** *float*: Upward acceleration while input is held. Defaults to 1.
+
+**CatchChallenge_UpperRestitution** *float*: How much velocity to preserve when bouncing off the top. Defaults to 0.5 (50%).
+
+**CatchChallenge_LowerRestitution** *float*: How much velocity to preserve when bouncing off the bottom. Defaults to 0.5 (50%).
+
+**CatchChallenge_CaptureSpeed** *float*: Multiplier for how quickly item is caught while within cursor. Defaults to 1 (100%).
+
+**CatchChallenge_EscapeSpeed** *float*: Multiplier for how quickly the player loses while item is outside the cursor. Defaults to 1 (100%).
