@@ -14,6 +14,25 @@ Main Menus
 
 **Thanks** *string[]*: Names in credits.
 
+**CustomCredits**: Maps header internal title(s) to a list of names. The display title is formatted according to the level's localization file. For example:
+
+.. code-block:: json
+
+	"CustomCredits":
+	{
+		"Music":
+		[
+			"musician67",
+			"SoundDesigner (these names aren't localized)"
+		],
+		"Art":
+		[
+			"MyFavouriteArtist"
+		]
+	}
+
+.. note:: In that example, the keys ``Music`` and ``Art`` would be translated from the level's localization file.
+
 **Associated_Stockpile_Items** *int[]*: Economy itemdefids to feature on map screens. One is chosen at random each time the map is shown. Used by curated maps to link their items which have payment splits.
 
 **Feedback** *string*: URL to discussions. If not explicitly set, defaults to the workshop item's discussions page.
