@@ -54,7 +54,7 @@ pyparsing==3.3.1
     # via matplotlib
 python-dateutil==2.9.0.post0
     # via matplotlib
-requests==2.32.5
+requests==2.33.0
     # via sphinx
 six==1.17.0
     # via python-dateutil
