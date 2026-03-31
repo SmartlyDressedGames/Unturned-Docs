@@ -45,7 +45,7 @@ packaging==25.0
     #   sphinx
 pillow==12.1.1
     # via matplotlib
-pygments==2.19.2
+pygments==2.20.0
     # via
     #   -r requirements.in
     #   sphinx
