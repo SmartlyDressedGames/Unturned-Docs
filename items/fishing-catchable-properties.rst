@@ -1,7 +1,7 @@
 .. _doc_item_fishing_catchable_properties:
 
-Fishing Catachable Properties
-=============================
+Fishing Catchable Properties
+============================
 
 These options are specified in an item's :ref:`Fishing_Catchable<doc_item_asset_intro:fishing_catchable>` :ref:`Dictionary<doc_data_file_format>`.
 
