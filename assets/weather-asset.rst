@@ -63,6 +63,8 @@ Properties Reference
 
 **Max_Lightning_Interval** *float*: Maximum seconds between lightning strikes.
 
+**Fish_Bite_Interval_Multiplier** *float*: Multiplier for interval before a fish takes the bait. Defaults to 1.
+
 .. _doc_assets_weather:time_of_day:
 
 Time of Day Properties
