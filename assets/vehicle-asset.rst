@@ -206,10 +206,10 @@ Properties
    * - :ref:`Speed_Min <doc_assets_vehicle:speed_min>`
      - :ref:`float32 <doc_data_builtin_types>`
      - ``0``
-   * - :ref:`Steer_Max <doc_assets_vehicle:steer_max>`
+   * - :ref:`Steering_Angle_FullSpeed_Factor <doc_assets_vehicle:steering_angle_fullspeed_factor>`
      - :ref:`float32 <doc_data_builtin_types>`
      - ``0``
-   * - :ref:`Steer_Min <doc_assets_vehicle:steer_min>`
+   * - :ref:`Steering_Angle_Max <doc_assets_vehicle:steering_angle_max>`
      - :ref:`float32 <doc_data_builtin_types>`
      - ``0``
    * - :ref:`Steering_Angle_Turn_Speed <doc_assets_vehicle:steering_angle_turn_speed>`
@@ -2055,12 +2055,33 @@ The vehicle does not use fuel or a vehicle battery.
 
 ----
 
+.. _doc_assets_vehicle:steering_angle_fullspeed_factor:
+
+Steering_Angle_FullSpeed_Factor :ref:`float32 <doc_data_builtin_types>` ``0``
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Multiplier for steering angle range at target maximum speed (for the current forward/backward direction).
+Reducing steering range at higher speeds keeps the vehicle controlable with digital (non-analog) input.
+
+----
+
+.. _doc_assets_vehicle:steering_angle_max:
+
+Steering_Angle_Max :ref:`float32 <doc_data_builtin_types>` ``0``
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Steering angle range at zero speed (idle/parked). For example, 45 means the wheels connected to steering can rotate ±45 degrees.
+
+----
+
 .. _doc_assets_vehicle:steer_max:
 
 Steer_Max :ref:`float32 <doc_data_builtin_types>` ``0``
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Steering angle range at target maximum speed (for the current forward/backward direction). This value is multiplied by 0.75.
+.. tip:: This property was replaced by :ref:`Steering_Angle_Max <doc_assets_vehicle:doc_assets_vehicle:steering_angle_max>` which **isn't** multiplied by 0.75.
+
+Steering angle range at zero speed (idle/parked). This value is multiplied by 0.75.
 
 ----
 
@@ -2069,7 +2090,9 @@ Steering angle range at target maximum speed (for the current forward/backward d
 Steer_Min :ref:`float32 <doc_data_builtin_types>` ``0``
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Steering angle range at zero speed.
+.. tip:: This property was replaced by :ref:`Steering_Angle_FullSpeed_Factor <doc_assets_vehicle:doc_assets_vehicle:steering_angle_fullspeed_factor>`.
+
+Steering angle range at target maximum speed (for the current forward/backward direction).
 
 ----
 
