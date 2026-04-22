@@ -2079,7 +2079,7 @@ Steering angle range at zero speed (idle/parked). For example, 45 means the whee
 Steer_Max :ref:`float32 <doc_data_builtin_types>` ``0``
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-.. tip:: This property was replaced by :ref:`Steering_Angle_Max <doc_assets_vehicle:doc_assets_vehicle:steering_angle_max>` which **isn't** multiplied by 0.75.
+.. tip:: This property was replaced by :ref:`Steering_Angle_Max <doc_assets_vehicle:steering_angle_max>` which **isn't** multiplied by 0.75.
 
 Steering angle range at zero speed (idle/parked). This value is multiplied by 0.75.
 
@@ -2090,7 +2090,7 @@ Steering angle range at zero speed (idle/parked). This value is multiplied by 0.
 Steer_Min :ref:`float32 <doc_data_builtin_types>` ``0``
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-.. tip:: This property was replaced by :ref:`Steering_Angle_FullSpeed_Factor <doc_assets_vehicle:doc_assets_vehicle:steering_angle_fullspeed_factor>`.
+.. tip:: This property was replaced by :ref:`Steering_Angle_FullSpeed_Factor <doc_assets_vehicle:steering_angle_fullspeed_factor>`.
 
 Steering angle range at target maximum speed (for the current forward/backward direction).
 
