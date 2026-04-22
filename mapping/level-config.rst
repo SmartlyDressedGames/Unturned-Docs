@@ -46,6 +46,16 @@ Main Menus
 
 **Tips** *int*: Number of Tip_# keys defined in level's localization files, if any. Overrides vanilla tip messages on the loading screen.
 
+**RequiredWorkshopFileIds** *ulong[]*: Dependency workshop file IDs. If these file(s) are not loaded then singleplayer and editor menus display a "Missing Dependencies" message and prevent entering the map.
+
+.. code-block:: json
+
+	"RequiredWorkshopFileIds":
+	[
+		123456789,
+		123456789
+	]
+
 Arena Mode
 ----------
 
