@@ -9,6 +9,8 @@ Dialogue Assets
 
 **ID** *uint16*: Must be a unique identifier. Values less than 2,000 are reserved for official content.
 
+.. tip:: To quickly test a specific dialogue, you can use the ``/dialogue guid`` command. This opens the dialogue as if your character were an NPC.
+
 Messages
 --------
 
