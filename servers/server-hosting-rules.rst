@@ -54,12 +54,14 @@ Servers that offer *any* "pay-to-win" microtransactions (i.e., those that provid
 Online Conduct
 --------------
 
-Repeated offenders of servers violating the `Steam's Online Conduct rules <https://store.steampowered.com/online_conduct>`_ will be banned.
+Repeat violations of `Steam's Online Conduct rules <https://store.steampowered.com/online_conduct>`_ by a multiplayer server may result in moderation. For example, servers that exist to promote the sale of cheats are not allowed.
+
+If you encounter inappropriate behavior by *other players* while playing on a server, we encourage you to report it to the server's owner first so they are aware of the issue.
 
 Roleplaying Current Events
 --------------------------
 
-Simulating gameplay of current real-world tragedies is **not** allowed. For example, ongoing conflicts (such as the Russo-Ukrainian War, or Israeli-Palestinian conflict) or natural disasters.
+Simulating gameplay of current, real-world tragedies is **not** allowed and may result in reduced visibility or other moderation on the server. For example, roleplaying ongoing conflicts (such as the the Russo-Ukrainian War, or Israeli-Palestinian conflict) or natural disasters.
 
 Anycast Proxies
 ---------------
@@ -75,7 +77,7 @@ Servers using a regular proxy with ping similar to the actual in-game ping are n
 Workshop File Copyright Infringement
 ------------------------------------
 
-Mod authors can submit a notice of copyright infringement here: https://steamcommunity.com/dmca/create/
+Mod authors can submit a notice of copyright infringement here: https://steamcommunity.com/dmca/create/. These are reviewed directly by Steam's copyright agent.
 
 FAQ (Frequently Asked Questions)
 --------------------------------
