@@ -2327,9 +2327,7 @@ Defaults to ``25`` when using ``Engine Car`` or ``Engine Boat``, or to ``100`` o
 Valid_Speed_Horizontal :ref:`float32 <doc_data_builtin_types>`
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Configuring this will override the horizontal speed sanity check on the X-axis, measured in m/s (meters per second). Multiplayer checks if speed exceeds this value, and the movement is marked as invalid if so.
-
-This value is multiplied by ``PlayerInput.RATE (0.08)``, and then squared.
+Configuring this will override the horizontal speed sanity check on the XZ plane, measured in m/s (meters per second). Multiplayer checks if speed exceeds this value, and the movement is marked as invalid if so.
 
 Defaults to ``(Speed_Max * 0.125)^2`` when using ``Engine Helicopter`` or ``Engine Blimp``, or to ``(Speed_Max * 0.1)^2`` otherwise. This property is useful for vehicles with speed that the server cannot predict, such as force-applying Unity components.
 
