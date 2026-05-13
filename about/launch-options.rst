@@ -39,6 +39,8 @@ Effects include:
 
 **-DisableLightLODs**: Disable fadeout of dynamic lights. Could be useful for high-quality screenshots.
 
+**-EnableCharacterControllerOverlapRecovery**: When enabled, ``CharacterControllerExtension.CheckedMove`` passes through to ``CharacterController.Move``, and ``CharacterController.enableOverlapRecovery = true``. Using this can improve performance – which can be useful for servers – but it makes out-of-bounds exploits much easier. This can cause more problems than it solves so it's not enabled by default.
+
 **-EnableWheeledVehicleGizmos**: Draw locally driven vehicle's wheel torque, RPM, slip, expected RPM, etc.
 
 **-FullscreenMode=**: Window mode override.

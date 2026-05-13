@@ -41,13 +41,15 @@ Most of these guidelines are intended to help promote consistency with *Unturned
 
 #. | Textures should be kept to a reasonable resolution. Ideally, 2048x2048 scaled down to 1024x1024 for large items (e.g., the Maplestrike), and 1024x1024 scaled down to 512x512 for small items (e.g., the Cobra).
 
+#. | Avoid using high metallic or smoothness values. Unturned does not use reflection probes, and the only sources of metallic reflection data are limited to optional features like skybox reflections and screen-space reflections.
+
 #. | Corners of models should not be beveled. Most models have sharp edges (e.g., 90°). There is not a hard limit on vertex, triangle, or polygon count because anything matching the game's art style will naturally have a reasonable number.
 
 #. | Skins with custom models should generally respect the original item's silhouette. Be mindful that attachments (such as barrels, tacticals, sights, and grips) should still work on the custom model *and* look good.
 
 #. | Cosmetics should avoid potentially confusing players. For example: if a hat looks like hair, it should have some additional accessory or detail to help distinguish it as a cosmetic. Otherwise, it would look like the player isn't wearing any item at all.
 
-#. | Only use copyrighted content, trademarks, or other intellectual property that belongs to you. We cannot put other people's intellectual property into our game.
+#. | Only submit content that you created yourself. Do not use copyrighted material or trademarks that you do not own or have permission to use.
 
 #. | We do not support custom shaders, i.e., shaders not included in the vanilla game cannot be used.
 
