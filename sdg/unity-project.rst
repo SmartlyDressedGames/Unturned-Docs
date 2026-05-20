@@ -17,15 +17,7 @@ Blender must be available during first import to load certain meshes. On Linux, 
 
 Unfortunately, Steam needs to be running, even to launch the game in the editor. This does make certain tasks like debugging multiplayer harder. Unturned 3 is very tightly integrated with the Steam API, so this requirement is unlikely to change. Certainly an important lesson for future games: Plan ahead to support swapping out platform APIs.
 
-The editor needs a copy of the core assets. The easiest option for this is to enable :ref:`Load Core Asset Bundle From Steam Install <load_core_asset_bundle_from_steam_install>`. Alternatively, :ref:`Export Core Asset Bundle <export_core_asset_bundle>`.
-
-Most gameplay requires remote procedure calls (RPCs) to function properly. Even singleplayer is essentially a one-player server. The RPC code is automatically generated, but this is still a manual step in the editor:
-
-#. Open **Window** > **Unturned** > **Net Gen**
-#. Click **Generate**
-#. Tab out and back in to ensure the scripts are imported
-
-Finally, to run the game in the editor, open ``Assets/Game/Sources/Scenes/Setup.unity`` and click Play.
+To run the game in the editor, open the ``GameStartup.unity`` scene and click Play.
 
 .. warning:: We recommend closing Unity's **Hierarchy** window in-game except when you need it. Unturned's scenes contain mostly top-level game objects for optimization purposes with the drawback of slowing down the Hierarchy window. For more information, `Scenes Structure > Hierarchy depth and count <https://learn.unity.com/tutorial/unity-tips#64622ce0edbc2a32a219b25e>`_.
 
@@ -65,7 +57,7 @@ One could argue "organization" is a misnomer in this case.
 
 ``Assets/Runtime`` contains all of the player code. Certain newer features have their own folders per-assembly-definition, but most game code is in the ``Assembly-CSharp`` folder. It would be nice to rename it, but as far as I'm aware we can't do this without breaking script references in asset bundles (as of 2024-10-18).
 
-``Assets/Runtime/Assembly-CSharp/NetGen`` is all generated networking code and excluded from Git.
+``Assets/Runtime/Assembly-CSharp/NetGen`` is all generated networking code. It's included in Git to make the first-run process smoother.
 
 The ``Builds`` folder contains exported Unity players, the vanilla :ref:`"masterbundle" (asset bundle) <doc_asset_bundles>`, and - unintuitively - all of the important non-Unity files like :ref:`.dats <doc_asset_definitions>`.
 
@@ -85,6 +77,15 @@ Exporting Core Asset Bundle (``core.masterbundle``)
 #. Expand **Master Bundles**.
 #. Click **...** and navigate to the Unturned project root, ``Builds/CoreAssetBundle`` directory.
 #. Click **Export**.
+
+Net Code
+--------
+
+Most gameplay requires remote procedure calls (RPCs) to function properly. Even singleplayer is essentially a one-player server. The RPC code is automatically generated, but this is still a manual step in the editor:
+
+#. Open **Window** > **Unturned** > **Net Gen**
+#. Click **Generate**
+#. Tab out and back in to ensure the scripts are imported
 
 Continuous Integration
 ----------------------
