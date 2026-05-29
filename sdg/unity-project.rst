@@ -6,20 +6,22 @@ Unity Project
 Downloading
 -----------
 
-Unturned's project files are stored using the `Git <https://git-scm.com/>`_ version control system (`VCS <https://en.wikipedia.org/wiki/Version_control>`_). We have a separate document outlining how to work with Git, from downloading to contributing changes: :ref:`doc_using_git`.
+Unturned's project files are stored using the `Git <https://git-scm.com/>`_ version control system (`VCS <https://en.wikipedia.org/wiki/Version_control>`_).
+
+If you have the Git CLI installed, you can clone the files to your computer with this command:
+
+``git clone https://github.com/SmartlyDressedGames/U3-SDK.git``
 
 Getting Started
 ---------------
 
 You'll need the same version of the Unity editor as described in :ref:`doc_getting_started:installing_unity`. You can double-check the editor version in ``ProjectSettings/ProjectVersion.txt``.
 
-Blender must be available during first import to load certain meshes. On Linux, ``blender`` must be in your ``PATH``.
-
-Unfortunately, Steam needs to be running, even to launch the game in the editor. This does make certain tasks like debugging multiplayer harder. Unturned 3 is very tightly integrated with the Steam API, so this requirement is unlikely to change. Certainly an important lesson for future games: Plan ahead to support swapping out platform APIs.
+Steam needs to be running, and `Unturned <https://store.steampowered.com/app/304930>`_ must be installed. (Workshop mods and large binary files are loaded from the latest official release of the game.)
 
 To run the game in the editor, open the ``GameStartup.unity`` scene and click Play.
 
-.. warning:: We recommend closing Unity's **Hierarchy** window in-game except when you need it. Unturned's scenes contain mostly top-level game objects for optimization purposes with the drawback of slowing down the Hierarchy window. For more information, `Scenes Structure > Hierarchy depth and count <https://learn.unity.com/tutorial/unity-tips#64622ce0edbc2a32a219b25e>`_.
+.. tip:: We recommend closing Unity's **Hierarchy** window in-game except when you need it. Unturned's scenes contain mostly top-level game objects for optimization purposes with the drawback of slowing down the Hierarchy window. For more information, `Scenes Structure > Hierarchy depth and count <https://learn.unity.com/tutorial/unity-tips#64622ce0edbc2a32a219b25e>`_.
 
 Editor Preferences
 ------------------
@@ -35,10 +37,6 @@ An editor window is available from Window > Unturned > Editor Settings. Primaril
 
 **Glazier**: Overrides default :ref:`doc_glazier`.
 
-.. _load_core_asset_bundle_from_steam_install:
-
-**Load Core Asset Bundle From Steam Install**: If enabled, core.masterbundle is loaded from the Steam version of Unturned rather than the local copy.
-
 Troubleshooting
 ---------------
 
@@ -46,10 +44,6 @@ Check Unity's log files. On Windows there's a shortcut in the project folder to 
 
 File Organization
 -----------------
-
-One could argue "organization" is a misnomer in this case.
-
-``Assets/CoreMasterBundle`` contains most of the Unity assets loaded at runtime. This is the only asset bundle exported for vanilla content.
 
 ``Assets/Game/Sources`` contains all of the source (e.g., ``.blend``) and imported (e.g., ``.fbx``) files for Unity assets exported in the asset bundle.
 
@@ -59,24 +53,7 @@ One could argue "organization" is a misnomer in this case.
 
 ``Assets/Runtime/Assembly-CSharp/NetGen`` is all generated networking code. It's included in Git to make the first-run process smoother.
 
-The ``Builds`` folder contains exported Unity players, the vanilla :ref:`"masterbundle" (asset bundle) <doc_asset_bundles>`, and - unintuitively - all of the important non-Unity files like :ref:`.dats <doc_asset_definitions>`.
-
-This becomes clearer when remembering the overly-tight integration with Steam. Each subdirectory of ``Builds`` is a Steam depot (except CoreAssetBundle and Test). For future games we would instead automatically **copy** the files from the project output into a Steam depot structure. *sigh*
-
-``Economy`` contains all of the icons and configuration files for the Steam Inventory Service. It's actually gotten a lot tidier since we can refactor it without affecting mods or plugins.
-
-``IDs`` contains spreadsheets of vanilla legacy ID usage. This is hopefully obsolete after 3.24.6.0 added the Menu > Workshop > F1 > Log Asset IDs tool.
-
-Exporting Core Asset Bundle (``core.masterbundle``)
----------------------------------------------------
-
-.. _export_core_asset_bundle:
-
-#. Open Window > Unturned > Master Bundle Tool.
-#. Expand **Asset Bundles** and check the box next to **core.masterbundle**.
-#. Expand **Master Bundles**.
-#. Click **...** and navigate to the Unturned project root, ``Builds/CoreAssetBundle`` directory.
-#. Click **Export**.
+The ``Builds`` folder contains exported Unity players.
 
 Net Code
 --------
@@ -90,7 +67,7 @@ Most gameplay requires remote procedure calls (RPCs) to function properly. Even 
 Continuous Integration
 ----------------------
 
-For each commit, `Jenkins <https://www.jenkins.io/>`_ builds the project and runs tests, optionally uploading to a Steam branch.
+For each commit, we have set up `Jenkins <https://www.jenkins.io/>`_ to build the project and runs tests, optionally uploading to a Steam branch.
 
 At the time of writing (2024-10-18) the Jenkins server is locally hosted and not accessible over the Internet.
 
