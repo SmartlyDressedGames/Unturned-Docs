@@ -166,7 +166,6 @@ Unturned Documentation
 	:glob:
 
 	sdg/source-code
-	sdg/using-git
 	sdg/unity-project
 	sdg/*
 
