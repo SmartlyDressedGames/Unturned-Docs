@@ -39,3 +39,7 @@ FAQ
 **Q: Are there any restrictions on mod naming?**
 
 **A:** Your mod must not imply it was created or endorsed by SDG. For example, you cannot title your mod "Unturned 2". Please refer to the full license text for more details.
+
+**Q: Why is the SDK ignoring my settings?**
+
+**A:** The SDK stores most save data (including certain settings) separately from the base game's save data. After you apply the same settings within the SDK they will be persisted.
