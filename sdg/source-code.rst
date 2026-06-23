@@ -12,6 +12,10 @@ FAQ
 
 **A:** Unturned's greatest strength is our passionate community. Releasing the source files allows you and other players to further build upon the game as you see fit. Building a lasting legacy for the game regardless of the changes we make or how many years pass from now.
 
+**Q: How will this affect cheat development? (Will cheating be easier?)**
+
+**A:** The source code doesn't add much new information for cheat developers. High quality decompilations of Unturned already exist (reverse engineering the code), and we've previously shared the code's documentation. BattlEye's Unturned-specific anti-cheat code is still private (even we don't have access to it), and they will continue monitoring for any new cheats.
+
 **Q: Can I publish my derivate works on Steam?**
 
 **A:** We intend to support this if possible. For more information about mods on Steam, please refer to: https://store.steampowered.com/about/communitymods/
