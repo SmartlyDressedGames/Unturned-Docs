@@ -10,7 +10,7 @@ Community-created maps that are officially linked from in-game are considered **
 We have introduced a new Curation Program for 2025 and beyond. Creating maps is intended to be a fun and rewarding hobby, and our new program should be more accessible to creators.
 
 How does a map get accepted?
-````````````````````````````
+----------------------------
 
 Our streamlined program starts with you simply publishing a map to the Steam Workshop. It looks something like this:
 
@@ -58,7 +58,7 @@ Quality Assurance
 
 * | **Asset Validation**: Running the game with the :ref:`-ValidateAssets <doc_asset_validation>` command-line flag should not produce any warnings or errors.
 
-* | **English Text**: Having an English-speaking member of the mod team is recommended, and `MoltonMontro <mailto:moltonmontro@smartlydressedgames.com>`_ has offered to help with English-related questions. Most importantly in this regard is proper punctuation and grammar: while native English speakers can easily read incorrect punctuation, it is very helpful for non-native readers. Ironically this paragraph probably has some punctuation errors.
+* | **English Text**: Having at least one English-speaking member on the mod team is recommended. Clear grammar, spelling, and punctuation are important. While native English speakers can often understand poorly written text, clear and correct English is much more accessible for non-native readers and helps simplify translation into other languages.
 
 * | **Project Organization**: To prevent unintended assets from being exported into asset bundles, convention is to separate the project files into Sources and MasterBundle directories. Hawaii is split between a directory called "HawaiiMasterBundle" in the project root, and a Sources directory which contains all of the .blend, .mb, .xcf, .psd, .ai, etc files. When exporting the asset bundle this ensures only game files like .fbx and .prefab are included.
 
@@ -73,7 +73,7 @@ Quality Assurance
 * | **Item Icons**: Each item should have a proper icon in the inventory. One way to quickly preview the icon is to attach an orthographic camera in Unity.
 
 Content Appropriacy
-````````````````````
+```````````````````
 
 Content should be what is typically considered "family-friendly". For example:
 
@@ -124,25 +124,13 @@ Each curated map release is usually accompanied by a few cosmetics and skins in 
 FAQ
 ---
 
-**Q. Are any maps planned to release under the previous program?**
-
-Yes. There's several maps which predate this new program. We believe many of these will be released throughout 2025.
-
-**Q. When's the earliest we could see maps release under this new program?**
-
-Since there's already several curated maps releasing throughout this year, and some changes aren't ready for the new program yet, earliest would probably be end-of-year or sometime in 2026.
-
-**Q. Are there any upcoming changes to this program?**
-
-We're looking to revise the single-player map selection menu, and are considering additional ways players could support their favorite maps (e.g., a cosmetic that adds a small badge next to the player's name when they're playing on a specific map). This is all – to some extent – still subject to change.
-
 **Q. Do curated maps receive updates?**
 
 We may suggest some fixes or other adjustments necessary for the map to meet our expectations. However, additional content is largely left to the discretion of the map author(s).
 
 **Q. What game modes can maps be accepted for?**
 
-Maps designed for officially-supported modes (Survival, Arena) are the most likely to be accepted. We may occasionally consider some maps designed for popular custom game modes.
+Maps designed for officially-supported modes (Survival and Arena) are the most likely to be accepted. We may occasionally consider some maps designed for popular custom game modes.
 
 **Q. Can multiple maps be released together?**
 
