@@ -10,7 +10,7 @@ FAQ
 
 **Q: Why make the game's source code available?**
 
-**A:** Unturned's greatest strength is our passionate community. Releasing the source files allows you and other players to further build upon the game as you see fit. Building a lasting legacy for the game regardless of the changes we make or how many years pass from now.
+**A:** Unturned's greatest strength is our passionate community. Releasing the source files allows you and other players to further expand upon the game as you see fit, building a lasting legacy for the game regardless of the changes we make or how many years pass from now.
 
 **Q: How will this affect cheat development? (Will cheating be easier?)**
 
@@ -24,25 +24,14 @@ FAQ
 
 **A:** Yes, we plan to continue maintaining the official Steam version.
 
-**Q: Will you accept pull requests?**
-
-**A:** Our current goal is simply allowing players to create their own spin on the game. From minor balance changes and item additions, to total conversions with new gameplay elements. If there is significant community interest behind a mod we may reach out to collaborate in some form or another.
-
 **Q: Will the project files be kept up-to-date with the version used by the official game?**
 
 **A:** Yes, we plan to keep the source code in sync with the latest official releases.
 
-**Q: Has any code been removed from this release?**
+----
 
-**A:** Yes, certain code we can't redistribute has been removed. For example, third-party pathfinding and anti-cheat libraries. If you have an appropriate license to use those libraries you may use the integration from the base game in your project if you wish.
-
-**Q: Can I commercialize my mod?**
-
-**A:** No, sorry, it must be strictly non-commercial. Please refer to the full license text for more details.
-
-**Q: Are there any restrictions on mod naming?**
-
-**A:** Your mod must not imply it was created or endorsed by SDG. For example, you cannot title your mod "Unturned 2". Please refer to the full license text for more details.
+Technical
+^^^^^^^^^
 
 **Q: Why is the SDK ignoring my settings?**
 
@@ -68,6 +57,15 @@ FAQ
 
 **A:** By default, most plugins for Unturned servers should be compatible. Custom code changes to your mod may affect compatibility. For example, renaming or removing code that plugins depend on will break compatibility with those plugins.
 
+----
+
+Contributing
+^^^^^^^^^^^^
+
+**Q: How can I contribute?**
+
+**A:** Two of the best ways you can get involved are helping out with a community fork (or starting one!), or participating in `Discussions <https://github.com/SmartlyDressedGames/U3-SDK/discussions>`_ (especially answering questions!).
+
 **Q: How can I report an issue?**
 
 **A:** If it's related to the U3-SDK (as opposed to the vanilla game or a mod), please create an issue on the `GitHub Issue Tracker <https://github.com/SmartlyDressedGames/U3-SDK/issues>`_!
@@ -80,6 +78,60 @@ FAQ
 
 **A:** Many developers frequent the `GitHub Discussions <https://github.com/SmartlyDressedGames/U3-SDK/discussions>`_. It's a great place to meet fellow modders, and if you're polite someone might be kind enough to help you out!
 
-**Q: How can I contribute?**
+**Q: Will you accept pull requests?**
 
-**A:** Two of the best ways you can get involved are helping out with a community fork (or starting one!), or participating in `Discussions <https://github.com/SmartlyDressedGames/U3-SDK/discussions>`_ (especially answering questions!).
+**A:** Our current goal is simply allowing players to create their own spin on the game. From minor balance changes and item additions, to total conversions with new gameplay elements. If there is significant community interest behind a mod we may reach out to collaborate in some form or another.
+
+----
+
+Dependencies
+^^^^^^^^^^^^
+
+**Q: Has any code been removed from this release?**
+
+**A:** Yes, certain code we can't redistribute has been removed. For example, third-party pathfinding and anti-cheat libraries. If you have an appropriate license to use those libraries you may use the integration from the base game in your project if you wish.
+
+**Q: Why do zombies walk into walls?**
+
+**A:** Smarter zombie navigation depends on the `A* Pathfinding Project <https://arongranberg.com/astar/>`_. If you have a license for this library, please feel free to use the integration from the base game.
+
+**Q: Why do interaction and selection tint the entire model?**
+
+**A:** Edge highlighting depends on a `Highlighting System Plugin <https://deepdreamgames.com/highlightingsystem.html>`_. If you have a license for this plugin, please feel free to use the integration from the base game.
+
+**Q: Why does the water look so simple?**
+
+**A:** Better water shaders and planar reflections depend on `Unity 4 Pro Standard Assets <https://docs.unity3d.com/462/Documentation/Manual/HOWTO-Water.html>`_. If you have a license for these assets, please feel free to use the integration from the base game.
+
+**Q: Why are missing component warnings logged in some levels?**
+
+**A:** Certain prefabs include `NavmeshCut Components <https://arongranberg.com/astar/documentation/stable/navmeshcut.html>`_ which can't be loaded without the pathfinding library.
+
+----
+
+Restrictions
+^^^^^^^^^^^^
+
+**Q: Can I commercialize/monetize my mod?**
+
+**A:** No, sorry, it must be strictly non-commercial. Please refer to the full license text for more details.
+
+**Q: What is considered non-commercial?**
+
+**A:** Players must be able to play and access all features and content of your mod for free. Taking payments (whether inside or outside the game) in return for in-game content or services is considered commercial use.
+
+**Q: Can my mod accept donations?**
+
+**A:** Accepting voluntary donations is fine. Providing in-game items, upgrades, benefits, etc for "donations" is considered commercial use.
+
+**Q: Can I offer out-of-game benefits to Patrons?**
+
+**A:** Yes, for example, special Discord roles for your donors is fine.
+
+**Q: Can I enable ads and sponsorships on YouTube videos about my mod?**
+
+**A:** Yes, this is not considered commercial use of the SDK.
+
+**Q: Are there any restrictions on mod naming?**
+
+**A:** Your mod must not imply it was created or endorsed by SDG. For example, you cannot title your mod "Unturned 2". Please refer to the full license text for more details.
