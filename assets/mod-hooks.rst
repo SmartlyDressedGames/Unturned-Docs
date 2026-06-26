@@ -33,7 +33,9 @@ Damages players when they overlap a trigger collider.
 Collision Event Hook
 ````````````````````
 
-Events for player overlaps with a trigger collider. Primarily useful for server-side objects as collisions are not triggered by other players client-side, but this limitation may be resolved in the future.
+Events for player overlaps with a trigger collider. This is primarily useful for server-side objects as collisions are not triggered by other players client-side.
+
+On the client-side only the locally-controlled character is on the Player layer, whereas other player characters are on the Enemy layer. On the server all characters are on the Player layer. The collision event hook only reports collisions with colliders on the Player layer, which is why it is not as useful on the client.
 
 Destroy Event Hook
 ``````````````````
