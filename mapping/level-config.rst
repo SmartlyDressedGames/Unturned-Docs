@@ -116,6 +116,8 @@ Additionally, overrides can be applied per-difficulty with the ``EasyDifficulty_
 
 **Allow_Underwater_Features** *bool*: Should legacy details and navigation bounds be restricted underwater?
 
+**Enable_Static_Volumes** *bool*: Enables performance optimizations of volume overlap checks. This setting is intended for levels with high numbers of volumes *not* added through Unity prefabs. It should not be enabled if volumes move, resize, or otherwise change at runtime. Defaults to false.
+
 **Terrain_Snow_Sparkle** *bool*: Should IS_SNOWING shader keyword be enabled?
 
 **Use_Legacy_Clip_Borders** *bool*: Should invisible walls matching map size be created? Defaults to true.
@@ -194,7 +196,7 @@ Deprecated
 
 **Category** *ESingleplayerMapCategory*: Mostly automated now. Can be set to Misc to explicitly show in the miscellaneous map category.
 
-**Has_Atmosphere** *bool*: If false, disable stars in skybox.
+**Has_Atmosphere** *bool*: This property disabled stars in the skybox, but was deprecated due to changes to the skybox implementation.
 
 **Has_Discord_Rich_Presence** *bool*: Only valid for official maps. If discord integration is enabled and this flag is true discord will check for a map icon configured in their partner page.
 
