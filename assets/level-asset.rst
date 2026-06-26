@@ -51,6 +51,8 @@ For examples, check the ``Assets/Levels`` directory.
 
 **Default_Fish_Spawn_Table** :ref:`Asset Pointer <doc_data_assetptr>`: Fishing rods using per-water-volume fishing spawn table fallback to this table.
 
+**ZombieDifficultyAssetPrioritization** *enum* (``NavmeshOverridesTable``, ``TableOverridesNavmesh``): Allows the level to override whether per-table or per-navmesh difficulty asset takes priority. By default, ``NavmeshOverridesTable`` is used. Using ``TableOverridesNavmesh`` instead allows for the level to override the difficulty of zombies based on the spawn table, even if the navmesh has a different difficulty asset assigned.
+
 Cloud Override Properties
 -------------------------
 
