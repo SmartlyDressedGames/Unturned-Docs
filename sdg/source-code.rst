@@ -28,6 +28,10 @@ FAQ
 
 **A:** Yes, we plan to keep the source code in sync with the latest official releases.
 
+**Q: Is the game "Open Source" now?**
+
+*Open Source* refers to the `Open Source Initiative <https://opensource.org/>`_'s `definition <https://opensource.org/osd>`_, which the current non-commercial license doesn't meet. Ideally, once we finish another game and are hopefully able to re-acquire certain rights, we'd like to re-license the U3 SDK under the `MIT License <https://opensource.org/license/mit>`_.
+
 ----
 
 Technical
