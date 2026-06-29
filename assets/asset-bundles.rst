@@ -77,12 +77,20 @@ Tool Usage
 5. Click the checkbox next to an asset bundle's name in the tool to mark it as a master bundle. This filters the list of asset bundles to show, and tracks an export path associated with it.
 6. Click the ... to choose a destination for the bundle file.
 7. Click Export.
-8. (optional) When redistributing the asset bundle the "multiplatform" toggle should be enabled. This ensures the appropriate shaders for each platform are included, and exports a ".hash" file so the server can validate client asset bundle integrity.
+8. **(optional)** When redistributing the asset bundle the "multiplatform" toggle should be enabled. This ensures platform-specific shaders are included, and exports a ".hash" file so the server can validate client asset bundle integrity.
 
-Motivations
-```````````
+Generated Files
+```````````````
 
-When upgrading to Unity 2017.4 LTS it became apparent that all asset bundles would have to be re-exported from Unity due to shader compatibility changes. This would be an incredible amount of files, so it was time to re-approach the \*.content issue in a way that could quickly convert all existing content. This was handled by keeping the file hierarchy 1:1 and guessing the file extension for the by-name loading.
+After exporting a master bundle, the following files are generated in the export directory:
+
+***_linux.masterbundle** and ***_mac.masterbundle** – These contain platform-specific shaders for Linux and macOS, respectively. These are only generated when "multiplatform" is enabled.
+
+***.masterbundle.hash** – A hash file used by the server to verify asset bundle integrity for other platforms. For example, a server running Windows uses it to verify macOS and Linux asset bundle integrity.
+
+.. warning:: Deleting the .hash file means cheaters can modify the asset bundle. For example, to make certain materials glow in the dark or to see through certain objects. Mods should always include the .hash file when redistributing asset bundles.
+
+***.masterbundle.manifest** – A manifest file listing all assets in the bundle, their paths, and their hashes. When multiplatform is enabled, a manifest file is generated for each platform. Coincidentally, the manifest file is useful when debugging mods bundles. As it contains filepaths of all bundled assets, it can help confirm that assets were bundled as expected, and can also be useful when using master bundle pointers.
 
 Individual Asset Bundles
 ------------------------
@@ -112,11 +120,8 @@ Content Bundles (\*.content)
 
 .. deprecated:: 3.22.4.0
 
-This format was historically used by terrain, material palettes, and radio songs. After the April 23, 2021 patch (version 3.21.15.0) these assets can all use master bundles instead. As of the February 25, 2022 patch (version 3.22.4.0) any remaining support for content bundles has been removed. New references should use a master bundle name and relative path for the "Name" and "Path" properties.
-
-Reusing Content Bundles
-```````````````````````
+Content bundles were originally used by terrain, material palettes, and radio songs. Support for content bundles has been removed since February 25, 2022 and should be replaced by master bundles.
 
 Although it is preferable to properly migrate older assets into master bundles, preexisting content bundles can be easily reused as a master bundle. Rename the
-\*.content file to be
+\*.content file to be a
 \*.masterbundle file instead. Then, add a corresponding MasterBundle.dat file as described in the file setup for master bundles.

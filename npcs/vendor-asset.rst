@@ -16,7 +16,7 @@ Properties pertaining to items that the vendor is willing to buy from players. V
 
 **Buying** *byte*: Total number items being bought by the vendor.
 
-**Buying_#_ID** *uint16*: ID of item to buy from the player.
+**Buying_#_ID** *GUID* or *uint16*: GUID or legacy ID of item to buy from the player.
 
 **Buying_#_Cost** *uint32*: Amount of currency to pay the player. Defaults to experience points as the currency, unless the Currency property has been set.
 
@@ -29,7 +29,7 @@ Properties pertaining to items or vehicles that the vendor is willing to sell to
 
 **Selling_#_Type** *enum* (``Item``, ``Vehicle``): Type of asset being sold.
 
-**Selling_#_ID** *uint16*: ID of item/vehicle to sell to the player.
+**Selling_#_ID** *GUID* or *uint16*: GUID or legacy ID of item/vehicle to sell to the player.
 
 **Selling_#_Cost** *uint32*: Amount of currency to pay the vendor. Defaults to experience points as the currency, unless the Currency property has been set.
 
@@ -54,7 +54,7 @@ Other Properties
 
 **Disable_Sorting** *flag*: Disable vendor sorting.
 
-**Currency** *string*: GUID of the :ref:`currency asset <doc_assets_currency>` to use as currency instead of experience points.
+**Currency** *GUID*: GUID of the :ref:`currency asset <doc_assets_currency>` to use as currency instead of experience points.
 
 **FaceOverride** *byte*: Optional index of face image to use when this vendor is opened. Face is reset to character's default when unspecified or when a new message is opened.
 

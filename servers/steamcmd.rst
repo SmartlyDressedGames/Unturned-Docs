@@ -40,7 +40,11 @@ Install the Unturned Dedicated Server with SteamCMD
 
 	app_update 1110390
 
-.. tip:: This command can also be used to update the Unturned Dedicated Server.
+.. tip:: The same command can be used to update an existing server installation. To verify the integrity of the server files and repair any missing or corrupted files, append the ``validate`` flag:
+
+	.. code-block:: shell
+
+		app_update 1110390 validate
 
 3. | Close SteamCMD once the download finishes.
 

@@ -27,13 +27,15 @@ FoliageResourceInfoAsset Properties Reference
 
 **Max_Angle** *float*: [0, 90] degrees only spawn if surface angle is less than this value. For example a tree not growing on slopes steeper than 30 degrees.
 
-**Uniform_Scale** *bool*: If true, max and min scale are floats rather than vector3. This enables an optimization for instanced mesh foliage (like grass), packing more instances per batch.
+**Tile_Dither** *bool*: This is a performance-conscious option that fades out far-away foliage more quickly (e.g., often true for foliage near the tile border). It is ideal for small, dense, high-quantity foliage like grass and pebbles. Defaults to true.
+
+**Uniform_Scale** *bool*: If true, max and min scale are floats rather than vector3. This enables an optimization for instanced mesh foliage like grass and pebbles, packing more instances per batch. This requires shaders that support uniform scaling, such as ``Framework/Grass (Uniform Scaling)`` and ``Framework/Detail (Uniform Scaling)``.
 
 Upgrade Devkit Foliage from V1 to V2
 ------------------------------------
 
 .. note::
-	
+
 	Maps with auto-converted terrain from the 3.22.8.0 update will have already been converted to V2.
 
 V1 of devkit foliage saved each small, individual region into their own files, which made maps slow to copy, download, and install. V2 fixes this by storing pointers for each region into a single file, at the cost of RAM in the map editor.
