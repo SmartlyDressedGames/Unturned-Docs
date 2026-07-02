@@ -30,7 +30,11 @@ General
 
 **Q: Is the game "Open Source" now?**
 
-*Open Source* refers to the `Open Source Initiative <https://opensource.org/>`_'s `definition <https://opensource.org/osd>`_, which the current non-commercial license doesn't meet. Ideally, once we finish another game and are hopefully able to re-acquire certain rights, we'd like to re-license the U3 SDK under the `MIT License <https://opensource.org/license/mit>`_.
+**A:** *Open Source* refers to the `Open Source Initiative <https://opensource.org/>`_'s `definition <https://opensource.org/osd>`_, which the current non-commercial license doesn't meet. Ideally, once we finish another game and are hopefully able to re-acquire certain rights, we'd like to re-license the U3 SDK under the `MIT License <https://opensource.org/license/mit>`_.
+
+**Q: Do I need a paid Unity license?**
+
+**A:** At the time of writing (2026-07-02), individuals and hobbyists earning less than $200,000 USD/year from their use of Unity are elligible for a free Unity Personal license. That being said, you should review `Unity's terms <https://unity.com/products>`_.
 
 ----
 
@@ -139,3 +143,7 @@ Restrictions
 **Q: Are there any restrictions on mod naming?**
 
 **A:** Your mod must not imply it was created or endorsed by SDG. For example, you cannot title your mod "Unturned 2". Please refer to the full license text for more details.
+
+**Q: What platforms can I develop my mod for?**
+
+**A:** The SDK can target the same PC platforms as the Steam version of Unturned: Windows, macOS, and Linux (including Steam Deck). Please refer to the full license text for more details.
