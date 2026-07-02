@@ -162,12 +162,12 @@ Unturned Documentation
 .. toctree::
 	:hidden:
 	:maxdepth: 1
-	:caption: SDG / Project Info
+	:caption: U3 SDK
 	:glob:
 
-	sdg/source-code
-	sdg/unity-project
-	sdg/*
+	u3-sdk/faq
+	u3-sdk/unity-project
+	u3-sdk/legacy-id-availability
 
 Welcome to the official documentation for `Unturned <https://store.steampowered.com/app/304930>`_'s modding and server hosting features! To navigate, use the table of contents in the sidebar or the search function in the top-left corner.
 

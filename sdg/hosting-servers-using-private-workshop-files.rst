@@ -1,3 +1,5 @@
+:orphan:
+
 .. _doc_hosting_servers_using_private_workshop_files:
 
 Hosting Servers Using Private Workshop Files

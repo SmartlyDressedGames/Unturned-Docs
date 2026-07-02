@@ -1,3 +1,5 @@
+:orphan:
+
 .. _doc_dat_editing_code:
 
 Dat Editing Code

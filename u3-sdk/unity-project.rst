@@ -1,7 +1,7 @@
-.. _doc_unity_project:
+.. _doc_sdk_unity_project:
 
-Unity Project
-=============
+Unity Project Overview
+======================
 
 Downloading
 -----------

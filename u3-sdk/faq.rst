@@ -1,12 +1,12 @@
-.. _doc_source_code:
+.. _doc_sdk_faq:
 
-Source Code
-===========
+FAQ
+===
 
 Unturned's project files are available in a `GitHub repository <https://github.com/SmartlyDressedGames/U3-SDK>`_.
 
-FAQ
----
+General
+-------
 
 **Q: Why make the game's source code available?**
 
@@ -35,7 +35,7 @@ FAQ
 ----
 
 Technical
-^^^^^^^^^
+---------
 
 **Q: Why is the SDK ignoring my settings?**
 
@@ -64,7 +64,7 @@ Technical
 ----
 
 Contributing
-^^^^^^^^^^^^
+------------
 
 **Q: How can I contribute?**
 
@@ -89,7 +89,7 @@ Contributing
 ----
 
 Dependencies
-^^^^^^^^^^^^
+------------
 
 **Q: Has any code been removed from this release?**
 
@@ -114,7 +114,7 @@ Dependencies
 ----
 
 Restrictions
-^^^^^^^^^^^^
+------------
 
 **Q: Can I commercialize/monetize my mod?**
 

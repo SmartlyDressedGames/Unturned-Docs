@@ -1,3 +1,5 @@
+:orphan:
+
 .. _doc_test_steam_items:
 
 Testing Steam Items
