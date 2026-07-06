@@ -1542,6 +1542,8 @@ Environment_Invulnerable :ref:`flag <doc_data_flag>`
 
 This vehicle cannot be damaged by animals, zombie melee attacks, or boulders thrown by mega zombies. Zombies and animals will still pursue the vehicle, and attempt to attack any passengers directly. Other damage sources can still damage the vehicle.
 
+.. tip:: The original reason zombies attack passengers directly was for stationary turrets in boss encounters. The (vehicle) turret can be used to attack the boss without risk of getting destroyed and despawned, but the player is unsafe inside.
+
 ----
 
 .. _doc_assets_vehicle:exit:
