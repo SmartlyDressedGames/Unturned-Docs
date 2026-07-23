@@ -36,6 +36,10 @@ General
 
 **A:** At the time of writing (2026-07-02), individuals and hobbyists earning less than $200,000 USD/year from their use of Unity are elligible for a free Unity Personal license. That being said, you should review `Unity's terms <https://unity.com/products>`_.
 
+**Q: Will one-off custom forks cause fragmentation?**
+
+**A:** Our hope is to see like-minded devs join together around a shared fork, collaborating on enhancements that benefit all of their projects. (*The whole is greater than the sum of its parts!*)
+
 ----
 
 Technical
@@ -117,6 +121,23 @@ Dependencies
 
 ----
 
+Assets
+------
+
+**Q: Can I modify the core assets?**
+
+**A:** We're comfortable with our *own* in-house assets being modified, however the core asset bundle has been intentionally excluded from the SDK. It contains some third-party licensed content (examples: community-submitted skins, audio files). Unfortunately, we don't have an easy and definitive list we can share of which assets are third-party versus created in-house. Thus we're unable to provide blanket permission for redistributing the entire set of core assets, or to advise on which specific assets could be relicensed or replaced.
+
+**Q: How can large assets be included in source control?**
+
+**A:** Internally, we use `Git LFS <https://git-lfs.com/>`_. The SDK's ``.gitattributes`` file is prepared for Git LFS, with a comment on the first line describing the setup.
+
+**Q: Can I use Git LFS without enabling it on my public fork?**
+
+**A:** One option is two use two repositories: a public repository containing your fork's source code, and a private downstream repository containing your asset files.
+
+----
+
 Restrictions
 ------------
 
@@ -147,3 +168,13 @@ Restrictions
 **Q: What platforms can I develop my mod for?**
 
 **A:** The SDK can target the same PC platforms as the Steam version of Unturned: Windows, macOS, and Linux (including Steam Deck). Please refer to the full license text for more details.
+
+**Q: Do I need to publish the source code for my mod?**
+
+**A:** No, you can keep your mod's code private if you wish.
+
+**Q: How are custom forks' servers affected by moderation?**
+
+Our server hosting guidelines only apply to servers that are accessible through Unturned's public server list. By default, servers hosted on forked projects are not visible in our public server list, although it is technically possible to make them appear there. Regardless of which version of the game a server is running, if it is listed in our public server list, it should comply with our server hosting guidelines.
+
+That said, maintainers of forked projects are free to establish and enforce their own server hosting guidelines. If you host a server for a forked project, you would need to follow any rules they set, or you may be subject to moderation by that project's maintainers.
