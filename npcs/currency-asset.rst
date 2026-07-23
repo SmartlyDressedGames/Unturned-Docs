@@ -14,7 +14,7 @@ Asset Setup
 
 The currency asset defines how numbers are formatted, which items make up the currency, and their individual values. An example can be found at Bundles/Items/Supplies/CanadianCurrency.asset.
 
-**Type** *string*: ``SDG.Unturned.CurrencyAsset``
+**Type** *string*: ``SDG.Unturned.ItemCurrencyAsset``
 
 **ValueFormat** *string*: String to format numeric value into. For example "${0:N0} CAD" is the vanilla Canadian currency format.
 
