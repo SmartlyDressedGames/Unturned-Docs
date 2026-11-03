@@ -13,11 +13,13 @@ FoliageResourceInfoAsset Properties Reference
 
 **Type** *string*: ``SDG.Framework.Foliage.FoliageResourceInfoAsset``
 
-**Resource** :ref:`Asset Pointer <doc_data_assetptr>`: actual tree to spawn.
+**Resource** :ref:`Asset Pointer <doc_data_assetptr>`: Actual tree to spawn.
 
-**Obstruction_Radius** *float*: spawn position is invalid if a sphere with this radius overlaps anything.
+**Obstruction_Radius** *float*: Spawn position is invalid if a sphere with this radius overlaps anything.
 
-**Density** *float*: this value is poorly named. One tree will try to spawn per this many square meters. For example a value of 4 will spawn approximately once per 2m x 2m area.
+**Density** *float*: This value is poorly named. One tree will try to spawn per this many square meters. For example a value of 4 will spawn approximately once per 2m x 2m area.
+
+**Draw_Distance** *int32*: Sets how far from the camera the foilage is drawn for instanced-mesh foilage (grass, pebbles, small details). Minor performance option with noticeable impact on graphical fidelity.
 
 **Min_Weight** *float*: [0, 1] only spawn if landscape material weight is greater than this value.
 
@@ -27,7 +29,7 @@ FoliageResourceInfoAsset Properties Reference
 
 **Max_Angle** *float*: [0, 90] degrees only spawn if surface angle is less than this value. For example a tree not growing on slopes steeper than 30 degrees.
 
-**Tile_Dither** *bool*: This is a performance-conscious option that fades out far-away foliage more quickly (e.g., often true for foliage near the tile border). It is ideal for small, dense, high-quantity foliage like grass and pebbles. Defaults to true.
+.. **Tile_Dither** *bool*: This is a performance-conscious option that fades out far-away foliage more quickly (e.g., often true for foliage near the tile border). It is ideal for small, dense, high-quantity foliage like grass and pebbles. Defaults to true.
 
 **Uniform_Scale** *bool*: If true, max and min scale are floats rather than vector3. This enables an optimization for instanced mesh foliage like grass and pebbles, packing more instances per batch. This requires shaders that support uniform scaling, such as ``Framework/Grass (Uniform Scaling)`` and ``Framework/Detail (Uniform Scaling)``.
 
