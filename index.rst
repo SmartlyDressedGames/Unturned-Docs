@@ -116,6 +116,7 @@ Unturned Documentation
 	mapping/level-batching
 	mapping/level-config
 	mapping/manual-object-culling
+	mapping/volumes
 
 .. toctree::
 	:hidden:
