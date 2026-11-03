@@ -133,6 +133,7 @@ Unturned Documentation
 	servers/fake-ip
 	servers/game-server-login-tokens
 	servers/glazier
+	servers/modules
 	servers/openmod
 	servers/port-forwarding
 	servers/rocket
