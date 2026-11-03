@@ -90,6 +90,7 @@ Unturned Documentation
 	assets/effect-asset
 	assets/foliage-asset
 	assets/road-asset
+	assets/landscape-material-asset
 	assets/level-asset
 	assets/mythical-asset
 	assets/outfit-asset
