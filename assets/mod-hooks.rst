@@ -210,6 +210,11 @@ Linked from a Crafting Tag Provider. Allows Unity events to modify which craftin
 
 As an example: the automatic Heat Source backwards compatibility adds a Crafting Tag Modifier to the Fire game object with an Activation Requirement of Invert and Mode Remove. This removes the Heat Source tag while the Fire is inactive.
 
+Engines Curves Component
+````````````````````````
+
+Stores the curves that determine engine torque given at each engine speed (RPM) when attached to the root vehicle prefab.
+
 Music Audio Source
 ```````````````````
 
