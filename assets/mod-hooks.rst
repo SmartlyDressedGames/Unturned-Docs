@@ -118,6 +118,8 @@ Weather Event Hook
 
 Events for day, night, full moon, and weather. These events are fired on server and client.
 
+.. warning:: **WeatherEventHook** is computationally expensive and can be reasonably expected to cause performance issues when overused. For example, on foliage assets—which are often placed in large quantities.
+
 Custom Weather Event Hook
 `````````````````````````
 
