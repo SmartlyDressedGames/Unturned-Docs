@@ -91,7 +91,7 @@ Events for EquipableItem prefab of any item type. These events are fired on serv
 Useable Gun Event Hook
 ``````````````````````
 
-Events for EquipableItem prefab. Supersedes VehicleTurretEventHook. These events are fired on server and client.
+Events for EquipableItem prefab. Supersedes VehicleTurretEventHook. Will not have its events triggered when used by a sentry. These events are fired on server and client.
 
 Vehicle Event Hook
 ``````````````````
