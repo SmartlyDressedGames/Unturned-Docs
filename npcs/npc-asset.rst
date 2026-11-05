@@ -70,11 +70,11 @@ Appearance
 
 While in the Appearance menu in-game, modders can press Page Down to copy the player's current appearance to clipboard.
 
-**Face** *int*: Index of face image.
+**Face** *uint8*: Index of face image.
 
-**Hair** *int*: Index of hair mesh.
+**Hair** *uint8*: Index of hair mesh.
 
-**Beard** *int*: Index of beard mesh.
+**Beard** *uint8*: Index of beard mesh.
 
 **Color_Skin** *hex triplet*: Six-digit hexadecimal number representing RGB color.
 
