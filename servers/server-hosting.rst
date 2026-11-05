@@ -204,7 +204,10 @@ Servers are hosted as a **LAN server** by default. This means players can only j
 
 	Internet servers should follow our :ref:`Server Hosting Rules <doc_server_hosting_rules>`.
 
+
 Get started by adding a :ref:`Game Server Login Token <doc_servers_gslt>` (GSLT). This login token is necessary when hosting an Internet server. Configuring it also means your Server Code will no longer change each time you launch your server.
+
+.. This section has been reworked due to servers now operating using SDR on just server codes alone.
 
 For an Internet server, you must configure either :ref:`Fake IP <doc_servers_fake_ip>` or :ref:`Port Forwarding <doc_servers_port_forward>`. Configuring both is **not necessary**. Fake IP is easier to enable, and it should be adequate for most servers.
 

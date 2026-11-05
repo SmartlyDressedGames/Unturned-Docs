@@ -7,6 +7,8 @@ A **Server Code** is a randomly generated, 17-digit numeric code assigned to you
 
 Your server code can be found by clicking the "Copy Server Code" button while in your server. Alternatively, it appears in the Server Console immediately after your server finishes loading, and can be easily copied to your clipboard with the ``CopyServerCode`` command.
 
+If you would like to limit player connections to Server Codes, you can utilize the ``-SNS_DisableIPSocket`` launch option. Likewise you can use ``-SNS_DisableP2PSocket`` for disabling Server Code (P2P) connections.
+
 Limitations
 -----------
 

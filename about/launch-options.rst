@@ -123,6 +123,10 @@ At the time of writing (2025-05-06) the game will convert blueprints from the le
 
 **-ScrollViewSensitivity** *float*: Multiplier for uGUI scroll view distance travelled when rolling the mouse wheel.
 
+**-SNS_DisableIPSocket**: Skip Steam Networking Sockets creation of regular IP socket. Useful for limiting player connections to peer-to-peer (P2P).
+
+**-SNS_DisableP2PSocket**: Skip Steam Networking Sockets creation of non-FakeIP P2P socket. Useful for limiting connections to only :ref:`Server Codes <doc_servers_server_codes>`.
+
 **-TimeOverlay**: Show seconds since startup under FPS in the upper-left corner.
 
 **-ui_scale**: UI scale override. A common usage is to set UI scale back to its default scaling, with ``-ui_scale 1``.
