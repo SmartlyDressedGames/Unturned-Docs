@@ -35,7 +35,7 @@ Body
 
 The body contains any class properties. Individual asset type documentation elaborates on these.
 
-**ID** *uint16*: 16-bit identifier. Unfortunately this ID must be unique within each category of assets (vehicles, items, animals, etc). Objects are the exception from this legacy restriction because they have been upgraded to fully use GUIDs.
+**ID** *uint16*: 16-bit identifier. Unfortunately this ID must be unique within each category of assets (items, animals, etc). Objects and vehicles are the exception from this legacy restriction because they have been upgraded to fully use GUIDs.
 
 Optionally the body properties can be placed into an ``Asset`` sub-dictionary. For example:
 
