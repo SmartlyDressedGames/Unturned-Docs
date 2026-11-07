@@ -135,6 +135,7 @@ Unturned Documentation
 	servers/game-server-login-tokens
 	servers/glazier
 	servers/modules
+	servers/rpcs
 	servers/openmod
 	servers/port-forwarding
 	servers/rocket
