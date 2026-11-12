@@ -91,7 +91,7 @@ Events for EquipableItem prefab of any item type. These events are fired on serv
 Useable Gun Event Hook
 ``````````````````````
 
-Events for EquipableItem prefab. Supersedes VehicleTurretEventHook. These events are fired on server and client.
+Events for EquipableItem prefab. Supersedes VehicleTurretEventHook. Will not have its events triggered when used by a sentry. These events are fired on server and client.
 
 Vehicle Event Hook
 ``````````````````
@@ -117,6 +117,8 @@ Weather Event Hook
 ``````````````````
 
 Events for day, night, full moon, and weather. These events are fired on server and client.
+
+.. warning:: **WeatherEventHook** is computationally expensive and can be reasonably expected to cause performance issues when overused. For example, on foliage assets—which are often placed in large quantities.
 
 Custom Weather Event Hook
 `````````````````````````
@@ -209,6 +211,11 @@ Crafting Tag Modifier
 Linked from a Crafting Tag Provider. Allows Unity events to modify which crafting tags (workstations) are available to nearby players.
 
 As an example: the automatic Heat Source backwards compatibility adds a Crafting Tag Modifier to the Fire game object with an Activation Requirement of Invert and Mode Remove. This removes the Heat Source tag while the Fire is inactive.
+
+Engines Curves Component
+````````````````````````
+
+Stores the curves that determine engine torque given at each engine speed (RPM) when attached to the root vehicle prefab.
 
 Music Audio Source
 ```````````````````

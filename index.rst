@@ -90,6 +90,7 @@ Unturned Documentation
 	assets/effect-asset
 	assets/foliage-asset
 	assets/road-asset
+	assets/landscape-material-asset
 	assets/level-asset
 	assets/mythical-asset
 	assets/outfit-asset
@@ -115,6 +116,7 @@ Unturned Documentation
 	mapping/level-batching
 	mapping/level-config
 	mapping/manual-object-culling
+	mapping/volumes
 
 .. toctree::
 	:hidden:
@@ -132,6 +134,8 @@ Unturned Documentation
 	servers/fake-ip
 	servers/game-server-login-tokens
 	servers/glazier
+	servers/modules
+	servers/rpcs
 	servers/openmod
 	servers/port-forwarding
 	servers/rocket
